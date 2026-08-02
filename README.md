@@ -17,6 +17,8 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 │   └── 5-sinif/                ← sınıf
 │       ├── matematik/          ← ders
 │       │   └── matematik-tum.jsonl  ← final onaylı tüm konular
+│       ├── fen-bilimleri/      ← ders
+│       │   └── fen-bilimleri-tum.jsonl  ← final onaylı tüm konular
 │       └── 5-sinif-tum-dersler.jsonl ← (ileride: tüm dersler birleşik)
 ├── legal/                       ← yasal belgeler (Store gereksinimi)
 └── README.md
@@ -37,6 +39,7 @@ Her satır bir JSON nesnesi:
 | Ülke | Sınıf | Ders | Konu | Not | Soru | Durum |
 |------|-------|------|------|-----|------|-------|
 | Türkiye | 5 | Matematik | Tüm konular | 23 | 500 | ✅ Final onaylı |
+| Türkiye | 5 | Fen Bilimleri | Tüm konular | 28 | 500 | ✅ Final onaylı |
 
 ## İndirme Katmanları
 
