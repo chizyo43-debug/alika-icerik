@@ -7,7 +7,7 @@ AliKa uygulaması için indirilebilir **ders notu + soru bankası** paketleri.
 AliKa uygulaması bu repodaki paketleri otomatik çeker. Elle indirmek için:
 
 ```
-https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sinif/matematik/kesirler.jsonl
+https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sinif/matematik/matematik-tum.jsonl
 ```
 
 ## Dizin Yapısı
@@ -16,8 +16,7 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 ├── turkiye/                     ← ülke
 │   └── 5-sinif/                ← sınıf
 │       ├── matematik/          ← ders
-│       │   ├── kesirler.jsonl  ← konu paketi
-│       │   └── matematik-tum.jsonl  ← (ileride: tüm konular birleşik)
+│       │   └── matematik-tum.jsonl  ← final onaylı tüm konular
 │       └── 5-sinif-tum-dersler.jsonl ← (ileride: tüm dersler birleşik)
 ├── legal/                       ← yasal belgeler (Store gereksinimi)
 └── README.md
@@ -31,20 +30,19 @@ Her satır bir JSON nesnesi:
 |-----|----------|
 | `pack` | Üst veri (id, müfredat, sınıf, tema, lisans) |
 | `note` | Ders notu — tam konu anlatımı (Markdown) |
-| `question` | Soru — 4 şık, 5 ipucu, çeldirici analizi, seviye 1-3 |
+| `question` | Soru — 4 şık, 5 ipucu, çeldirici analizi, seviye 1-5 |
 
 ## Mevcut Paketler
 
 | Ülke | Sınıf | Ders | Konu | Not | Soru | Durum |
 |------|-------|------|------|-----|------|-------|
-| Türkiye | 5 | Matematik | Kesirler | 9 | 93 | ✅ |
+| Türkiye | 5 | Matematik | Tüm konular | 23 | 500 | ✅ Final onaylı |
 
 ## İndirme Katmanları
 
 | Katman | Açıklama | Örnek |
 |--------|----------|-------|
-| **Konu** | Sadece eksik konu | `matematik/kesirler.jsonl` |
-| **Tam kitap** | Dersin tüm konuları | `matematik/matematik-tum.jsonl` |
+| **Ders paketi** | Dersin bütün konu ve kazanımları | `matematik/matematik-tum.jsonl` |
 | **Birleşik** | Sınıftaki tüm dersler | `5-sinif-tum-dersler.jsonl` |
 
 ## Lisans

@@ -132,7 +132,7 @@
 | `id` | string | EVET | Tekil kimlik |
 | `objective` | string | **EVET (v2)** | MEB kazanım kodu |
 | `objectiveSource` | string | **EVET (v2)** | Resmî kaynak URL |
-| `level` | int | EVET | Zorluk (1-3) |
+| `level` | int | EVET | Zorluk (1-5) |
 | `difficultyReason` | string | **EVET (v2)** | Zorluk gerekçesi |
 | `question` | string | EVET | Soru metni |
 | `choices` | string[] | EVET | 4 seçenek |
