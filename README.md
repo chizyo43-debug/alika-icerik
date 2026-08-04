@@ -41,7 +41,7 @@ Her satır bir JSON nesnesi:
 |------|-------|------|------|-----|------|-------|
 | Türkiye | 5 | Matematik | Tüm konular | 23 | 500 | ✅ Final onaylı |
 | Türkiye | 5 | Fen Bilimleri | Tüm konular | 28 | 500 | ✅ Final onaylı |
-| Türkiye | 5 | Türkçe | Seçili beceriler | 4 | 20 | ✅ Kontrolü tamamlandı |
+| Türkiye | 5 | Türkçe | Tüm beceriler | 21 | 500 | ✅ Son kalite kontrolü tamamlandı |
 
 ## İndirme Katmanları
 

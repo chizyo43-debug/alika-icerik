@@ -23,11 +23,12 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 TURKIYE = ROOT / "turkiye" / "5-sinif"
 
-# Doğrulayıcıyı yükle
-sys.path.insert(0, str(ROOT.parent / "tools"))
+# Depoyla birlikte sürümlenen doğrulayıcıyı yükle. Testler temiz bir klonda,
+# çalışma alanının dışında başka bir repoya ihtiyaç duymadan çalışmalıdır.
+sys.path.insert(0, str(ROOT / "tools"))
 import importlib.util
 _spec = importlib.util.spec_from_file_location(
-    "pack_validate", ROOT.parent / "tools" / "pack_validate.py")
+    "pack_validate", ROOT / "tools" / "pack_validate.py")
 pack_validate = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(pack_validate)
 
@@ -88,7 +89,9 @@ class TestSchemaV2:
         for q in questions:
             assert q.get("difficultyReason"), f"{q['id']}: difficultyReason yok"
             assert len(q["difficultyReason"]) >= 20, f"{q['id']}: DR çok kısa"
-            assert q.get("reviewStatus") in ("pending", "reviewed", "rejected"), \
+            assert q.get("reviewStatus") in (
+                "pending", "reviewed", "ai-verified", "rejected"
+            ), \
                 f"{q['id']}: reviewStatus geçersiz"
             assert q.get("provenance"), f"{q['id']}: provenance yok"
 
