@@ -134,6 +134,32 @@ def normalize_secim_metin(s: str) -> str:
     return unicodedata.normalize("NFC", s).strip()
 
 
+def cevap_metin_sizintisi(ipucu: str, cevap: str) -> bool:
+    """Doğru şık metnini ipucunda bağımsız sözcük dizisi olarak ara.
+
+    Noktalama ve büyük/küçük harf farkını yok sayar; ancak kısa İngilizce
+    cevapların (``is``, ``in``, ``a`` gibi) başka bir sözcüğün içinde
+    geçmesini cevap sızıntısı saymaz.
+    """
+    cevap_sozcukleri = re.findall(
+        r"[^\W_]+",
+        unicodedata.normalize("NFKC", str(cevap)).casefold(),
+        flags=re.UNICODE,
+    )
+    ipucu_sozcukleri = re.findall(
+        r"[^\W_]+",
+        unicodedata.normalize("NFKC", str(ipucu)).casefold(),
+        flags=re.UNICODE,
+    )
+    if not cevap_sozcukleri or len(cevap_sozcukleri) > len(ipucu_sozcukleri):
+        return False
+    uzunluk = len(cevap_sozcukleri)
+    return any(
+        ipucu_sozcukleri[i:i + uzunluk] == cevap_sozcukleri
+        for i in range(len(ipucu_sozcukleri) - uzunluk + 1)
+    )
+
+
 def distraktor_gerekcesi_jenerik(w: object, secenek: object) -> bool:
     """Yanlış şık gerekçesinin yalnız boş/genel bir etiket olup olmadığını bulur."""
     metin = str(w or "").strip()
@@ -867,7 +893,7 @@ def validate_file(yol) -> list:
                 if re.fullmatch(r"[+-]?[\d.,/ ]+", cevap):
                     if re.search(r"(?<![\d.,/])" + re.escape(cevap) + r"(?![\d.,/])", ip_s):
                         sizinti = True
-                elif n_cevap and n_cevap in normalize_metin(ip_s):
+                elif n_cevap and cevap_metin_sizintisi(ip_s, cevap):
                     sizinti = True
                 if sizinti:
                     ekle("HATA", 18, satir_no,
