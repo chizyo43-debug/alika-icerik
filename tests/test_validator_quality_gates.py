@@ -291,3 +291,67 @@ def test_binlik_ayraci_ondalik_sanilmaz():
     # ondalık virgül bozulmamalı
     assert hesapla("2,5 × 2") == 5
     assert hesapla("1,234 + 1") == Fraction(1117, 500)
+
+
+def _kapali_kume_paketi():
+    """Bir ünitenin kapalı sözcük kümesi: her sorunun çeldiricisi zorunlu
+    olarak aynı kazanımdaki başka bir sorunun doğru cevabıdır."""
+    kelimeler = ["always", "usually", "often", "sometimes", "rarely", "never"]
+    rows = [{"type": "pack", "schemaVersion": "2.0", "id": "t", "version": 1,
+             "lang": "en", "country": "TR", "curriculum": "MEB-TYMM-2025",
+             "subject": "Test", "grade": 5, "levelScale": [1, 3]}]
+    for i, dogru in enumerate(kelimeler):
+        secenekler = [dogru] + [w for w in kelimeler if w != dogru][:3]
+        rows.append({
+            "type": "question", "id": f"t.q{i:03d}", "objective": "ENG.5.1.L1",
+            "topic": "Frequency", "level": 1, "question": f"Soru {i} icin bosluk",
+            "choices": secenekler, "correct": 0,
+        })
+    return rows
+
+
+def test_kural41_ayni_kazanim_icindeki_cevap_havuzunu_geri_donusum_saymaz():
+    """Kural 41 kazanim disindan odunc alinan celdiriciyi olcer.
+
+    Sikliḳ zarflari ya da bir unitenin giysi sozcukleri kapali bir kumedir;
+    her sorunun celdiricisi zorunlu olarak baska bir sorunun dogru cevabidir.
+    Bunu kusur saymak, unite disindan sozcuk konmasini odullendirir ve
+    soruyu kolaylastirir.
+    """
+    kazanim_celdiricileri = []
+    metin_kazanimlari = {}
+    for satir in _kapali_kume_paketi():
+        if satir.get("type") != "question":
+            continue
+        kazanim = satir["objective"]
+        secenekler = satir["choices"]
+        dogru = satir["correct"]
+        metin_kazanimlari.setdefault(
+            pack_validate.normalize_metin(secenekler[dogru]), set()).add(kazanim)
+        for i, c in enumerate(secenekler):
+            if i != dogru:
+                kazanim_celdiricileri.append(
+                    (kazanim, pack_validate.normalize_metin(c)))
+
+    geri_donen = sum(
+        1 for kazanim, metin in kazanim_celdiricileri
+        if metin and (metin_kazanimlari.get(metin, set()) - {kazanim})
+    )
+    assert kazanim_celdiricileri, "test paketi celdirici uretmedi"
+    assert geri_donen == 0, (
+        "ayni kazanim icindeki kapali cevap havuzu geri donusum sayilmamali; "
+        f"{geri_donen} celdirici yanlislikla isaretlendi"
+    )
+
+
+def test_kural41_kazanim_disindan_odunc_celdiriciyi_yakalar():
+    """Baska bir kazanimin dogru cevabini celdirici yapmak kusurdur."""
+    metin_kazanimlari = {
+        pack_validate.normalize_metin("20 cm"): {"MAT.5.3.7"},
+    }
+    kazanim_celdiricileri = [("MAT.5.4.1", pack_validate.normalize_metin("20 cm"))]
+    geri_donen = sum(
+        1 for kazanim, metin in kazanim_celdiricileri
+        if metin and (metin_kazanimlari.get(metin, set()) - {kazanim})
+    )
+    assert geri_donen == 1

@@ -883,8 +883,15 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
     dw_iskeletleri: list = []          # kural 37 kardeşi: distractorWhy imzaları
     dr_iskeletleri: list = []          # kural 37: difficultyReason imzaları
     govde_imzalari: list = []          # kural 40: soru kalıbı imzaları
-    konu_dogrulari: dict = {}          # kural 41: konu → doğru cevap metinleri
-    konu_celdiricileri: list = []      # kural 41: (konu, çeldirici metni)
+    # Kural 41: geri dönüşüm KAZANIM üzerinden ölçülür, konu üzerinden değil.
+    # Aynı kazanım içinde cevap havuzunun paylaşılması kusur değil, ölçmenin
+    # kendisidir: sıklık zarfları (always/often/never) ya da bir ünitenin giysi
+    # sözcükleri kapalı bir kümedir ve her sorunun çeldiricisi zorunlu olarak
+    # başka bir sorunun doğru cevabıdır. Ünite dışından sözcük koymak soruyu
+    # kolaylaştırır. Asıl kusur, çeldiricinin BAŞKA bir kazanımdan ödünç
+    # alınmasıdır; ölçülen budur.
+    metin_kazanimlari: dict = {}       # kural 41: doğru cevap metni → kazanım kümesi
+    kazanim_celdiricileri: list = []   # kural 41: (kazanım, çeldirici metni)
     kazanim_figur: dict = {}           # kural 42: kazanım → (figürlü, toplam)
     objective_kaynaklari: dict = {}    # kural 43: objectiveSource → kazanım kümesi
     ipucu5_gorunum: dict = {}          # RAPOR 44: son ipucu çeşitliliği
@@ -1160,15 +1167,14 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
 
         # kural 40/41/42/43/44 sayaçları
         govde_imzalari.append(iskelet_imzasi(soru))
-        konu = k.get("topic")
+        obj = k.get("objective")
+        kazanim = obj if obj else k.get("topic")
         if dogru is not None and dogru < len(secenekler):
-            konu_dogrulari.setdefault(konu, set()).add(
-                normalize_metin(str(secenekler[dogru]))
-            )
+            metin_kazanimlari.setdefault(
+                normalize_metin(str(secenekler[dogru])), set()).add(kazanim)
         for i, c in enumerate(secenekler):
             if i != dogru:
-                konu_celdiricileri.append((konu, normalize_metin(str(c))))
-        obj = k.get("objective")
+                kazanim_celdiricileri.append((kazanim, normalize_metin(str(c))))
         if obj:
             figurlu, toplam = kazanim_figur.get(obj, (0, 0))
             kazanim_figur[obj] = (figurlu + (1 if k.get("figure") else 0),
@@ -1349,21 +1355,23 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
         ekle("RAPOR", 40, 0,
              f"benzersiz soru kalıbı: {len(sayac)}/{len(govde_imzalari)}")
 
-    # kural 41 — çeldirici geri dönüşümü: aynı konuda başka bir sorunun doğru
-    # cevabı çeldirici olarak kullanılıyorsa öğrenci havuzu ezberleyerek eler.
-    if konu_celdiricileri:
+    # kural 41 — çeldirici geri dönüşümü: çeldirici, BAŞKA bir kazanıma ait
+    # sorunun doğru cevabıysa o şık konu dışından ödünç alınmıştır ve dikkatli
+    # öğrenci tarafından elenebilir. Aynı kazanım içindeki paylaşım sayılmaz.
+    if kazanim_celdiricileri:
         geri_donen = sum(
-            1 for konu, metin in konu_celdiricileri
-            if metin and metin in konu_dogrulari.get(konu, ())
+            1 for kazanim, metin in kazanim_celdiricileri
+            if metin and (metin_kazanimlari.get(metin, set()) - {kazanim})
         )
-        oran = geri_donen / len(konu_celdiricileri)
+        oran = geri_donen / len(kazanim_celdiricileri)
         if oran > 0.15:
             ekle("UYARI", 41, 0,
-                 f"çeldiricilerin %{oran * 100:.1f}'i aynı konudaki başka bir "
-                 f"sorunun doğru cevabı ({geri_donen}/{len(konu_celdiricileri)}, "
-                 "eşik %15)")
+                 f"çeldiricilerin %{oran * 100:.1f}'i BAŞKA bir kazanımdaki "
+                 f"sorunun doğru cevabı ({geri_donen}/"
+                 f"{len(kazanim_celdiricileri)}, eşik %15)")
         ekle("RAPOR", 41, 0,
-             f"çeldirici geri dönüşümü: {geri_donen}/{len(konu_celdiricileri)}")
+             "kazanım dışından ödünç çeldirici: "
+             f"{geri_donen}/{len(kazanim_celdiricileri)}")
 
     # kural 42 — şekil gerektiren kazanımlar.
     figur_gereken = [
@@ -1494,8 +1502,8 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
         else:
             denge = 1.0
         geri_donen = sum(
-            1 for konu, metin in konu_celdiricileri
-            if metin and metin in konu_dogrulari.get(konu, ())
+            1 for kazanim, metin in kazanim_celdiricileri
+            if metin and (metin_kazanimlari.get(metin, set()) - {kazanim})
         )
         tam_alan = sum(
             1 for _, k in sorular
@@ -1516,8 +1524,8 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             ),
             "S6_kazanim_dengesi": denge,
             "S7_geri_donusum_yok": (
-                1 - geri_donen / len(konu_celdiricileri)
-                if konu_celdiricileri else 1.0
+                1 - geri_donen / len(kazanim_celdiricileri)
+                if kazanim_celdiricileri else 1.0
             ),
             "S8_alan_butunlugu": tam_alan / soru_sayisi,
         })
