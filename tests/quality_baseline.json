@@ -1,6 +1,6 @@
 {
   "_aciklama": "Bilinen kalite borcu. HATA her zaman 0 olmalı; UYARI sayısı ve skor buradaki değerden kötüleşemez. Bir kusur düzeltildiğinde bu dosya AŞAĞI çekilir — asla yukarı değil. Hedef: tüm uyarılar 0, tüm skorlar >= 99.",
-  "_guncelleme": "2026-08-05 (A3 parti 1)",
+  "_guncelleme": "2026-08-05 (A3 parti 2)",
   "_a1_notu": "matematik skoru 72.76 -> 72.39 DUSURULDU. Bu bir gerileme degil, bilincli bir onarim: d133631 sik metinlerini degistirip gerekcelerini birakmisti; skorun S2/S3 olcutleri iyilesmis gorunuyordu ama 21 soruda gerekce artik ekranda olmayan bir sikki anlatiyordu. Sikler tutarli haline geri alindi, kapali havuz borcu da geri geldi. Ders: skor tek basina kapi olamaz; bagli-alan denetimi ve insan orneklemi ile birlikte okunur. Bu borc A3'te celdiriciler sik+gerekce+ipucu birlikte yeniden uretilerek kapatilacak.",
   "uyari": {
     "matematik-tum": 4,
@@ -9,11 +9,12 @@
     "turkce-tum": 1
   },
   "skor": {
-    "matematik-tum": 73.49,
+    "matematik-tum": 74.44,
     "fen-bilimleri-tum": 88.94,
     "ingilizce-tum": 92.1,
     "turkce-tum": 89.37
   },
   "_a2_notu": "Fen 24 ipucu sizintisi (kural 18 parafraz bosluğu) kapatildi, not kazanim alani objectives'e cevrildi, levelScale bildirimi eklendi, Ingilizce objectiveSource dogrulanmis program PDF'ine tasindi (UYARI 2->1). Skorlar degismedi: bu duzeltmeler HATA ve kaynak capasi tarafindaydi, skorun 8 olcutune girmiyor.",
+  "_a3_parti2_notu": "MAT.5.5.1 'Kategorik veri' ailesi (21 soru) yeniden uretildi. Once: 21 sorunun tamami 'Bir kulup anketinde kitap: X, spor: Y, muzik: Z, resim: W' kokunu paylasiyordu; bes alt soru tipi donusumlu tekrarlaniyor, 9 soruda secenek kumesi birebir ayniydi, 2./3./4. ipuclari 21 soruda ayni iki cumleydi. Sonra: notun alti ogretim adimini kapsayan 21 farkli soru tipi (arastirma sorusu tasarimi, kategori cakismasi, cetele okuma, siklik toplami denetimi, eksik kategori, fark, oran, kategori birlestirme, grafik olcegi, eksen, gosterim secimi, orneklem siniri, yorum kapsami); 21/21 benzersiz secenek kumesi, 21 farkli dogru cevap metni, dogru cevap konumu 6/5/5/5. Matematik skoru 73.49 -> 74.44 (S2 71.0->72.8, S3 93.7->94.2, S4 34.8->38.0, S7 85.7->86.9). Sik dondurme choices ve distractorWhy'a AYNI anda uygulandi. reviewStatus 'pending'.",
   "_a3_parti1_notu": "MAT.5.3.1 'Temel geometrik cizimler' ailesi (21 soru) yeniden uretildi. Once: 5 kalibin sayi degistirilmis tekrari, celdiriciler hep ayni dolgu havuzu ('yalniz silgi', 'hesap makinesi ve gonye'), 21 sorunun 9'unda cevap 'cetvel ve pergel'. Sonra: 8 farkli cizim turu, 21/21 benzersiz secenek kumesi, 21 farkli dogru cevap metni, celdiriciler gercek arac ciftleri. Matematik skoru 72.39 -> 73.49; dolgu celdirici 22 -> 12. reviewStatus 'pending' — yeniden uretilen icerik AI dogrulama hash'i tasiyamaz, insan denetimi bekliyor."
 }
