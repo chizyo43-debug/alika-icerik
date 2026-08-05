@@ -1,6 +1,6 @@
 {
   "_aciklama": "Bilinen kalite borcu. HATA her zaman 0 olmalı; UYARI sayısı ve skor buradaki değerden kötüleşemez. Bir kusur düzeltildiğinde bu dosya AŞAĞI çekilir — asla yukarı değil. Hedef: tüm uyarılar 0, tüm skorlar >= 99.",
-  "_guncelleme": "2026-08-05 (A2)",
+  "_guncelleme": "2026-08-05 (A3 parti 1)",
   "_a1_notu": "matematik skoru 72.76 -> 72.39 DUSURULDU. Bu bir gerileme degil, bilincli bir onarim: d133631 sik metinlerini degistirip gerekcelerini birakmisti; skorun S2/S3 olcutleri iyilesmis gorunuyordu ama 21 soruda gerekce artik ekranda olmayan bir sikki anlatiyordu. Sikler tutarli haline geri alindi, kapali havuz borcu da geri geldi. Ders: skor tek basina kapi olamaz; bagli-alan denetimi ve insan orneklemi ile birlikte okunur. Bu borc A3'te celdiriciler sik+gerekce+ipucu birlikte yeniden uretilerek kapatilacak.",
   "uyari": {
     "matematik-tum": 4,
@@ -9,10 +9,11 @@
     "turkce-tum": 1
   },
   "skor": {
-    "matematik-tum": 72.39,
+    "matematik-tum": 73.49,
     "fen-bilimleri-tum": 88.94,
     "ingilizce-tum": 92.1,
     "turkce-tum": 89.37
   },
-  "_a2_notu": "Fen 24 ipucu sizintisi (kural 18 parafraz bosluğu) kapatildi, not kazanim alani objectives'e cevrildi, levelScale bildirimi eklendi, Ingilizce objectiveSource dogrulanmis program PDF'ine tasindi (UYARI 2->1). Skorlar degismedi: bu duzeltmeler HATA ve kaynak capasi tarafindaydi, skorun 8 olcutune girmiyor."
+  "_a2_notu": "Fen 24 ipucu sizintisi (kural 18 parafraz bosluğu) kapatildi, not kazanim alani objectives'e cevrildi, levelScale bildirimi eklendi, Ingilizce objectiveSource dogrulanmis program PDF'ine tasindi (UYARI 2->1). Skorlar degismedi: bu duzeltmeler HATA ve kaynak capasi tarafindaydi, skorun 8 olcutune girmiyor.",
+  "_a3_parti1_notu": "MAT.5.3.1 'Temel geometrik cizimler' ailesi (21 soru) yeniden uretildi. Once: 5 kalibin sayi degistirilmis tekrari, celdiriciler hep ayni dolgu havuzu ('yalniz silgi', 'hesap makinesi ve gonye'), 21 sorunun 9'unda cevap 'cetvel ve pergel'. Sonra: 8 farkli cizim turu, 21/21 benzersiz secenek kumesi, 21 farkli dogru cevap metni, celdiriciler gercek arac ciftleri. Matematik skoru 72.39 -> 73.49; dolgu celdirici 22 -> 12. reviewStatus 'pending' — yeniden uretilen icerik AI dogrulama hash'i tasiyamaz, insan denetimi bekliyor."
 }
