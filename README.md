@@ -53,6 +53,28 @@ Her satır bir JSON nesnesi:
 | **Ders paketi** | Dersin bütün konu ve kazanımları | `matematik/matematik-tum.jsonl` |
 | **Birleşik** | Sınıftaki tüm dersler | `5-sinif-tum-dersler.jsonl` |
 
+## İçerik üretimi ve kalite
+
+İçerik üretecek veya düzeltecek herkes (insan ya da model) önce
+**[AUTHORING_RULES.md](AUTHORING_RULES.md)** okur: bu depoda gerçekten yapılmış
+hatalar ve tekrar etmemesi için uyulacak üretim disiplini.
+
+```bash
+python tools/pack_validate.py turkiye/5-sinif/matematik/matematik-tum.jsonl
+```
+
+```bash
+python tools/pack_validate.py --skor turkiye/5-sinif --json reports/quality_score.json
+```
+
+```bash
+python -m pytest tests/ -q
+```
+
+Kalite kapısı: her pakette **0 HATA** zorunlu; UYARI sayısı ve skor
+`tests/quality_baseline.json` içindeki tabandan kötüleşemez. Hedef, tüm
+paketlerde 0 uyarı ve skor ≥ 99. Şema: [SCHEMA_V2.md](SCHEMA_V2.md).
+
 ## Lisans
 
 İçerikler: [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/)
