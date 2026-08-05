@@ -68,7 +68,10 @@ def degisen_dosyalar(base: str) -> list:
     return [s for s in cikti.stdout.decode("utf-8").splitlines() if s.strip()]
 
 
-def dosyayi_denetle(base: str, yol: str) -> list:
+BAGLI_ALANLAR = ("choices", "correct", "distractorWhy", "explanation")
+
+
+def dosyayi_denetle(base: str, yol: str, revert_of: str | None = None) -> list:
     ihlaller = []
     eski_ham = git_goster(base, yol)
     if eski_ham is None:
@@ -79,10 +82,22 @@ def dosyayi_denetle(base: str, yol: str) -> list:
     eski = sorulari_ayikla(eski_ham)
     yeni = sorulari_ayikla(yeni_yol.read_text(encoding="utf-8"))
 
+    # Geri alma istisnası: bir düzenleme, bağlı alanları bilinen tutarlı bir
+    # revizyondaki hâline birebir döndürüyorsa ihlal değildir. Bu bir bypass
+    # değil, doğrulamadır — üçlü gerçekten o revizyonla aynı mı diye bakılır.
+    hedef = {}
+    if revert_of:
+        hedef_ham = git_goster(revert_of, yol)
+        if hedef_ham is not None:
+            hedef = sorulari_ayikla(hedef_ham)
+
     for kimlik, y in yeni.items():
         e = eski.get(kimlik)
         if e is None:
             continue  # yeni soru
+        h = hedef.get(kimlik)
+        if h is not None and all(h.get(a) == y.get(a) for a in BAGLI_ALANLAR):
+            continue  # bağlı alanlar bilinen tutarlı hâline geri döndürülmüş
         secenek_degisti = e.get("choices") != y.get("choices")
         dogru_degisti = e.get("correct") != y.get("correct")
         why_degisti = e.get("distractorWhy") != y.get("distractorWhy")
@@ -129,6 +144,9 @@ def main(argv=None) -> int:
                     help="karşılaştırma tabanı (varsayılan: origin/main)")
     ap.add_argument("--paths", nargs="*",
                     help="denetlenecek dosyalar; boşsa değişenler bulunur")
+    ap.add_argument("--revert-of", dest="revert_of",
+                    help="bağlı alanları bu revizyondaki hâline döndüren "
+                         "düzenlemeler ihlal sayılmaz (birebir doğrulanır)")
     args = ap.parse_args(argv)
 
     yollar = args.paths or degisen_dosyalar(args.base)
@@ -138,7 +156,7 @@ def main(argv=None) -> int:
 
     ihlaller = []
     for yol in yollar:
-        ihlaller.extend(dosyayi_denetle(args.base, yol))
+        ihlaller.extend(dosyayi_denetle(args.base, yol, args.revert_of))
 
     for ihlal in ihlaller:
         print(f"HATA {ihlal}")

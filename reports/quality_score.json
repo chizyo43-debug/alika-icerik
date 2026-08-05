@@ -52,15 +52,15 @@
       "soru": 500,
       "hata": 0,
       "uyari": 4,
-      "skor": 72.76,
+      "skor": 72.39,
       "olcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 69.6,
-        "S3_dolgu_yok": 91.4,
+        "S2_havuz_acikligi": 66.8,
+        "S3_dolgu_yok": 92.0,
         "S4_kalip_cesitliligi": 33.2,
         "S5_sekil_kapsamasi": 0.0,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 86.3,
+        "S7_geri_donusum_yok": 86.0,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": false
