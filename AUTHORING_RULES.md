@@ -121,8 +121,17 @@ Her yanlış şık **adlandırılmış bir kavram yanılgısına** karşılık g
 |---|---|---|
 | Bir şık pakette ≥4 kez geçip hiçbir soruda doğru olmamalı | 0 örnek | 39 |
 | Aynı 4'lü seçenek kümesi birden çok soruda | %5 altı | 39 |
-| Çeldirici, aynı konudaki başka sorunun doğru cevabı | %15 altı | 41 |
+| Çeldirici, **başka bir kazanımdaki** sorunun doğru cevabı | %15 altı | 41 |
 | Gerekçe iskeleti yığılması | %20 altı | 37 |
+
+**Kural 41 aynı kazanım içindeki paylaşımı kusur saymaz.** Bu bilerek böyle:
+sıklık zarfları (`always/usually/often/sometimes/rarely/never`) ya da bir
+ünitenin giysi sözcükleri **kapalı bir kümedir**. Altı zarfı ölçen altı soruda
+her çeldirici zorunlu olarak başka bir sorunun cevabıdır; kümenin dışına
+çıkmak soruyu kolaylaştırır. Ölçtüğün şeyi bozarak metrik düşürme.
+
+Ölçüt **kazanım dışından ödünç** almadır: bir çarpma sorusunun çeldiricisi
+bir alan sorusunun cevabıysa öğrenci konuyu değil paketi öğrenir.
 
 **Neden önemli:** `There is/are` ailesinde çeldiriciler `There am` ve `It are`
 idi. İkisi de hiçbir soruda doğru değildi; öğrenci kalıbı görünce eliyor,
@@ -174,6 +183,26 @@ içindeki `KATALOG`. Üçüncü bir tanım açma. İzinli `kind`:
 ```
 numberline · fraction · shape · angle · grid · coordinate · chart · table · flow · circuit
 ```
+
+### 6.1 Figür de atomik üretilir
+
+`figure` ile soru kökündeki **şekle atıf** aynı üretim biriminin parçasıdır
+(§1'in şekil hâli). A4 birinci partide 49 figür eklendi, köke dokunulmadı;
+doğrulayıcı 49 uyarı verdi: *"figure dolu ama metin ondan bahsetmiyor"*.
+Metnin anmadığı figür süstür — çocuk ona bakmayı bilmez.
+
+### 6.2 Figür kökte yazılı olanı gösterir, fazlasını değil
+
+Metinde bulunmayan bir bilgiyi — özellikle **aranan değeri** — figüre koymak
+soruyu çözer. Ölçme biter, resim bakma başlar.
+
+Belirsizse üretme, atla:
+
+- Kökte iki derece geçiyorsa hangisinin çizildiği belli değildir.
+- İki dikdörtgen karşılaştırılıyorsa tek ızgara yanıltır.
+
+A4'te bu iki durum atlandığı için 5-3-3'te 21 sorunun 13'ü figür aldı; kalan
+8'i elle üretilecek. Eksik kapsama, yanlış figürden iyidir.
 
 ---
 
@@ -234,6 +263,13 @@ Tabanın tek istisnası, içeriği doğru yapan bir onarımın metriği düşür
 (A1'de matematik 72.76 → 72.39). Böyle bir durumda gerekçesi taban dosyasına
 yazılır.
 
+İkinci ve daha ince istisna: **ölçüm düzeltmesi**. Kural 41 kazanım üzerinden
+ölçülmeye başlayınca matematik 80.77 → 79.63'e, uyarı 3 → 4'e çıktı. İçerik
+kötüleşmedi; düzeltilmiş ölçüt onun zaten var olan kusurunu maskelemeyi
+bıraktı. Burada doğru davranış tabanı yukarı çekip **neden** yazmaktır.
+Yanlış davranış kuralı gevşetip tabanı korumaktır — ölçüyü küçültmek borcu
+kapatmaz.
+
 ---
 
 ## 10. Çalışılmayan yollar
@@ -247,3 +283,149 @@ yazılır.
   (İngilizce `q489`: *"Which group belongs to the curriculum content for…"*).
 - Anlamsız doğru cevap. İngilizce `q203`'ün anahtarı
   *"he is playing golf with a guitar"* idi.
+
+---
+
+## 11. Yeniden üretimde yakalanan hata sınıfları (A3/A4)
+
+251 matematik sorusu sekiz partide yeniden üretildi. Aşağıdakilerin **hepsi
+üretici modelin kendi yeni çıktısında** çıktı, eski içerikte değil. Yani bu
+kusurlar §1–§10'u okumakla kapanmıyor; ayrıca aranmaları gerekiyor.
+
+Doğrulayıcı bunların çoğunu yakalar, ama **yazmadan önce** aranmalı: bir parti
+uygulanıp geri alınmaktansa üretim sırasında durdurulmalı.
+
+### 11.1 Çeldirici doğru cevaba çarpıyor
+
+En sık hata. Beş ayrı partide çıktı:
+
+```
+5 × ((18 − 6) ÷ 4)        → "önce çarp" sapması da 15 veriyordu
+11, 19, □, 35, 43         → aritmetik ortalama 27 = aranan terim
+sıklıklar 6, 4, 7, 3      → iki farklı okuma yanılgısı aynı sayıya çıkıyor
+çevresi 56 cm             → kısa kenar sapması doğru çevreyi üretiyordu
+```
+
+Çeldiriciyi **hesaplayarak** üret, yazarak değil; sonra dört değerin
+gerçekten farklı olduğunu doğrula. Sapma ifadesi ile doğru ifade farklı
+olduğu hâlde sonuçları eşit çıkabilir — bu gözle görülmez.
+
+### 11.2 Uydurulmuş sapma ifadesi
+
+`7 × 8 − 20 ÷ 20` sorusunda bir çeldiricinin gerekçesi şu ifadeye
+dayandırılmıştı:
+
+```
+7 * (8 - 20 // 20) * 0 + 7 * 8
+```
+
+Böyle bir öğrenci yanılgısı yok. Bu ifade, **istenen sayıyı üretmek için
+geriye doğru** kurulmuştu. Gerekçe makine tarafından doğrulanabilir olsun
+diye ifadeyi sayıya uydurmak, gerekçeyi doğru değil yalnız tutarlı yapar.
+
+Doğrusu: önce yanılgıyı adlandır (*"bölmeyi çarpmadan önce yapmış"*), sonra
+o yanılgının ifadesini yaz, çıkan sayıyı çeldirici yap. Sayı önce
+seçilirse ifade uydurulur. Bu soru tamamen değiştirildi (`84 ÷ 7 − 5`).
+
+### 11.3 Sorunun kendisi aritmetik olarak imkânsız
+
+> Çevresi 44 cm olan dikdörtgende uzun kenar kısa kenarın 4 katıdır.
+
+Yarı çevre 22, kısa kenar 22/5 — tam sayı değil. Üstelik buna
+uydurma bir açıklama yazılmıştı. Kök sayıları **çözülerek** doğrulanmalı;
+"makul görünüyor" yetmez. (Çevre 60 yapıldı.)
+
+### 11.4 Negatif ya da anlamsız çeldirici
+
+`45 ÷ 9 + 7 × 3 − 8` sorusunda bir sapma negatif sayı üretiyordu. 5. sınıf
+öğrencisi negatif sayıyı bilmez; şıkkı görünce eler, ölçme bozulur (§3'teki
+`There am` ile aynı kusur). Sapma **inanılır** olmalı.
+
+### 11.5 Farklı gösterim, aynı değer (kural 13)
+
+```
+9/20  ile  0,45      → aynı sayı, ikisi de doğru
+0,07  ile  7/100     → aynı sayı
+```
+
+Kesir ile ondalık aynı soruda şık olarak bulunuyorsa eşitlik elle kontrol
+edilmeli. Çözüm ya değeri değiştirmek (`9/25`) ya da şıkları cümleye
+çevirmektir.
+
+### 11.6 Tahmin sorusunda kökün kendisi hesaplanabiliyor (kural 15)
+
+> **4.812 + 3.196** işleminin sonucu yaklaşık kaçtır?
+
+Doğrulayıcı kökteki ifadeyi **tam** hesaplar, 8.008 bulur, yuvarlanmış
+anahtarla çelişir. Tahmin sorusunda işlemi sembolle yazma:
+*"4.812 ile 3.196 sayılarının toplamı yaklaşık kaçtır?"*
+
+### 11.7 Konuma bağlı açıklama
+
+Bir açıklama *"dördüncü yorum"* diyordu. Şıklar döndürülünce dördüncü yorum
+başka bir şey oldu. `explanation` ve `distractorWhy` **şıkkın metnine**
+atıf yapar, sırasına değil.
+
+### 11.8 Doğru cevap konumu dağılmıyor
+
+İkinci partide doğru cevap dağılımı **2 / 9 / 7 / 3** çıktı. Model
+"doğruyu ikinci sıraya koy" eğilimi taşıyor; öğrenci bunu fark eder.
+
+Çözüm, üretimden sonra belirlenimci döndürme (`_dondur`) — ve döndürme
+`choices` ile `distractorWhy`'a **aynı anda** uygulanır, yoksa §1'deki
+d133631 hatası yeniden üretilir. İşlem `assert` ile korunmalı.
+
+### 11.9 Kalıp tekrarını "yeni soru" sanma
+
+`MAT.5.5.2`'de q003 / q008 / q013 / q018 tek soruydu; yalnız kök cümlesi
+dört kez yeniden yazılmıştı. Aynı dört çeldiricinin pakette dolaşmasının
+(kural 39) sebebi buydu. Kalıp sayarken **ölçülen yanılgıyı** say, cümleyi
+değil.
+
+Aynı ailede `noteId` atamaları notlar arasında mekanik olarak dönüyordu:
+soru bir konuyu ölçerken bambaşka konudaki nota bağlanıyordu. `noteId`
+içerikten gelir, sıradan değil.
+
+### 11.10 Türkçe metin işlerken
+
+- `.lower()` Türkçe için **yanlıştır**: `I → ı`, `İ → i` elle yapılır.
+  Soru köküne önek eklerken ilk harf küçültülüyorsa bu tuzağa düşülür.
+- `.` binlik, `,` ondalık ayracıdır. Doğrulayıcıda bu yüzden gerçek bir hata
+  vardı: `4.812` ondalık 4,812 sanılıyordu. Binlik noktaları ondalık
+  virgülden **önce** atılmalı; sonra atılırsa `1,234 → 1.234` üç basamaklı
+  binlik grubuna benzeyip yanlışlıkla silinir.
+
+### 11.11 Metrik avcılığı yine denendi
+
+Yeni üretilen içerikte `karşılaştırılamaz` dört kez çeldirici olarak geçti
+ve kural 39'a takıldı. Aynı anlamı farklı sözcüklerle yazmak uyarıyı
+susturacaktı — §2 gereği yapılmadı; yerine gerçek yanılgı ifade eden
+çeldiriciler kondu (*"1 sayısı asal olduğu için ikisi eşittir"*).
+
+**Bir uyarıyı susturmak için kelime değiştirmek her zaman ihlaldir**, kusuru
+üreten sen olsan bile.
+
+---
+
+## 12. Parti uygulanmadan önce çalıştırılacak ön denetim
+
+Doğrulayıcı paketin tamamını denetler; bu liste **yazmadan önce** parti
+içinde koşar. §11'in her maddesi buradaki bir satıra karşılık gelir.
+
+| # | Denetim | Yakaladığı |
+|---|---|---|
+| 1 | `len(set(dört değer)) == 4` | 11.1 |
+| 2 | Her çeldirici bir ifadeden **hesaplanmış** mı | 11.2 |
+| 3 | Kök sayıları çözülüp tam sonuç veriyor mu | 11.3 |
+| 4 | Hiçbir şık negatif / sınıf düzeyi dışı değil | 11.4 |
+| 5 | Kesir ↔ ondalık eşitliği yok | 11.5 |
+| 6 | Tahmin sorusunda kökte açık işlem yok | 11.6 |
+| 7 | Gerekçe/açıklama sıra sözcüğü içermiyor | 11.7 |
+| 8 | Doğru cevap konumları dengeli döndürülmüş | 11.8 |
+| 9 | `len(distractorWhy) == len(choices)`, `"doğru"` doğru indekste | §1 |
+| 10 | İlk dört ipucu doğru şıkkın metnini içermiyor | §5 |
+| 11 | Ölçülen yanılgılar parti içinde benzersiz | 11.9 |
+| 12 | `noteId` sorunun konusuyla uyuşuyor | 11.9 |
+
+Bu denetimlerin **hepsi** A3 partilerinde en az bir gerçek kusur yakaladı.
+Hiçbiri süs değil.
