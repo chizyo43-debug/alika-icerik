@@ -1,0 +1,22 @@
+{
+  "_aciklama": "Dersler arasi paket sozlesmesi. Paketler henuz hicbir uygulama tarafindan okunmuyor; sozlesmeyi simdi sabitlemek en ucuz an. Kural 46 bu dosyaya gore denetler.",
+  "surum": "1.0.0",
+  "levelScale": {
+    "min": 1,
+    "max": 5,
+    "not": "Icerik olcegi 1-5'tir. Bir ders daha dar bir alt kume kullanabilir; bunu pack satirinda 'levelScale': [min, max] ile BILDIRMEK zorundadir. Bildirilmeyen paket 1-5 kabul edilir ve disina cikamaz."
+  },
+  "curriculum": {
+    "izinli": ["MEB-TYMM-2024", "MEB-TYMM-2025"],
+    "not": "Kazanim kodlari, bildirilen program surumunun kodlari olmalidir. Ingilizce 2025 programini kullaniyor; Turkce paketinin kodlari (T.O.5.5.) eski bicimde ve 2024 iddiasiyla celisiyor - A5'te insan tarafindan eslenecek."
+  },
+  "notKazanimAlani": {
+    "ad": "objectives",
+    "tip": "dizi",
+    "not": "Fen paketi tekil 'objective' kullaniyordu; A2'de diziye cevrildi."
+  },
+  "objectiveSource": {
+    "belgeOlmali": true,
+    "not": "Gezinilebilir acilis sayfasi degil, program PDF'i veya sayfa/bolum capasi. Kural 43."
+  }
+}

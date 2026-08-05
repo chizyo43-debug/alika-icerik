@@ -90,6 +90,17 @@ DURAK_SOZCUK = {
     "option", "answer", "wrong", "correct", "because", "this", "that",
 }
 
+# Kural 18: ilk dört ipucu cevabı DUYURAMAZ. Doğru şıkkın metnini birebir
+# içermese de "doğru cevap …dır" biçiminde parafrazla söylemek de sızıntıdır;
+# öğrenci ipucu merdivenini tırmanmadan sonuca ulaşır.
+# Not: yalın "doğrudur" ARANMAZ. Türkçede yön bildiren "gazdan sıvıya doğrudur"
+# ile doğruluk bildiren "doğrudur" aynı yazılır; yalın biçimi aramak fen
+# paketinde hâl değişimi sorularını yanlışlıkla yakalıyordu.
+CEVAP_DUYURU_RE = re.compile(
+    r"doğru\s+(?:cevap|seçenek|yanıt)|tam\s+çözüm|(?:cevap|yanıt)\s*[:=]",
+    re.I,
+)
+
 # Kural 10: LaTeX izleri
 LATEX_RE = re.compile(r"\$|\\frac|\\sqrt|\\begin")
 
@@ -259,6 +270,23 @@ def iskelet_imzasi(metin: object, kok: object = "") -> str:
             for s in re.split(r"(\W+)", sade)
         )
     return " ".join(sade.split())
+
+
+def sozlesmeyi_yukle(paket_yolu) -> dict:
+    """pack_contract.json'u paketin bulunduğu depo kökünden arar.
+
+    Bulunamazsa boş sözlük döner ve kural 46 sessizce atlanır; doğrulayıcı
+    sözleşme dosyası olmayan tek başına bir paket için de çalışabilmelidir.
+    """
+    for dizin in [Path(paket_yolu).resolve()] + list(
+            Path(paket_yolu).resolve().parents):
+        aday = dizin / "pack_contract.json"
+        if aday.is_file():
+            try:
+                return json.loads(aday.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                return {}
+    return {}
 
 
 def figur_zorunlu_kazanim(objective: object) -> bool:
@@ -1041,6 +1069,11 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
                 if sizinti:
                     ekle("HATA", 18, satir_no,
                          f"ipucu {i + 1} doğru şık metnini içeriyor ({cevap!r})")
+                elif CEVAP_DUYURU_RE.search(ip_s):
+                    # Parafrazla duyuru: şık metni birebir geçmese de ipucu
+                    # "doğru cevap …dır" diyerek merdiveni atlatıyor.
+                    ekle("HATA", 18, satir_no,
+                         f"ipucu {i + 1} cevabı duyuruyor: {ip_s[:70]!r}")
 
         # kural 19/20 — distractorWhy
         why = k.get("distractorWhy") if isinstance(k.get("distractorWhy"), list) else []
@@ -1359,6 +1392,46 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             ekle("UYARI", 43, 0,
                  f"{len(kazanimlar)} kazanım belge olmayan bir objectiveSource'a "
                  f"bağlı (program PDF'i veya sayfa çapası bekleniyor): {kaynak[:70]}")
+
+    # kural 46 — dersler arası paket sözleşmesi.
+    sozlesme = sozlesmeyi_yukle(yol)
+    if sozlesme and paket:
+        olcek = sozlesme.get("levelScale", {})
+        alt, ust = olcek.get("min", 1), olcek.get("max", 5)
+        bildirilen = paket.get("levelScale")
+        if bildirilen is not None:
+            if (not isinstance(bildirilen, list) or len(bildirilen) != 2
+                    or not (alt <= bildirilen[0] <= bildirilen[1] <= ust)):
+                ekle("HATA", 46, 0,
+                     f"levelScale sözleşme aralığının ({alt}-{ust}) dışında "
+                     f"veya biçimsiz: {bildirilen!r}")
+            else:
+                alt, ust = bildirilen
+        kullanilan = sorted({
+            k.get("level") for _, k in sorular if isinstance(k.get("level"), int)
+        })
+        disarida = [s for s in kullanilan if not alt <= s <= ust]
+        if disarida:
+            ekle("HATA", 46, 0,
+                 f"level değerleri bildirilen ölçek dışında ({alt}-{ust}): "
+                 f"{disarida}")
+
+        izinli_mufredat = sozlesme.get("curriculum", {}).get("izinli", [])
+        if izinli_mufredat and paket.get("curriculum") not in izinli_mufredat:
+            ekle("HATA", 46, 0,
+                 f"curriculum sözleşmede yok: {paket.get('curriculum')!r} "
+                 f"(izinli: {izinli_mufredat})")
+
+        alan = sozlesme.get("notKazanimAlani", {}).get("ad", "objectives")
+        yanlis_alanli = [
+            k.get("id") for _, k in kayitlar
+            if k.get("type") == "note" and not k.get(alan)
+            and any(k.get(a) for a in ("objective", "objectives"))
+        ]
+        if yanlis_alanli:
+            ekle("HATA", 46, 0,
+                 f"{len(yanlis_alanli)} not sözleşmedeki {alan!r} alanını "
+                 f"kullanmıyor: {yanlis_alanli[:3]}")
 
     # kural 45 — kazanım yükü dengesi.
     # Bir kazanım 83 soru alırken başkasının 1 soru alması, öğrencinin çalışma
