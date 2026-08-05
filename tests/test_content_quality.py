@@ -5,7 +5,7 @@
     python -m pytest tests/ -q
 
 Testler:
-1. Tüm paketler doğrulayıcıdan geçer (0 HATA)
+1. Tüm paketler doğrulayıcıdan geçer (0 HATA / 0 UYARI)
 2. Şema V2 alanları mevcut
 3. Cevap dağılımı dengeli (%35 eşiği)
 4. difficultyReason spesifik (≥20 karakter)
@@ -64,11 +64,15 @@ class TestValidator:
     """Doğrulayıcı tabanlı testler."""
 
     @pytest.mark.parametrize("path", PACKAGES, ids=PACKAGE_IDS)
-    def test_sifir_hata(self, path):
-        """Her paket 0 HATA ile doğrulayıcıdan geçmeli."""
+    def test_sifir_hata_ve_uyari(self, path):
+        """Her yayın paketi 0 HATA / 0 UYARI ile doğrulayıcıdan geçmeli."""
         bulgular = pack_validate.validate_file(path)
-        hatalar = [b for b in bulgular if b.seviye == "HATA"]
-        assert hatalar == [], f"HATA: {hatalar}"
+        engelleyiciler = [
+            bulgu
+            for bulgu in bulgular
+            if bulgu.seviye in ("HATA", "UYARI")
+        ]
+        assert engelleyiciler == [], f"HATA/UYARI: {engelleyiciler}"
 
 
 class TestSchemaV2:
