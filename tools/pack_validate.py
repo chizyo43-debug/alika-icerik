@@ -433,6 +433,10 @@ def ifade_degerlendir(ifade: str):
     s = ifade.replace("×", "*").replace("÷", "/").replace("−", "-")
     s = re.sub(r"([0-9)])([" + USTSIMGE + r"]+)",
                lambda m: m.group(1) + "**" + m.group(2).translate(UST2NORM), s)
+    # Türkçe yazımda "." binlik ayracı, "," ondalık ayracıdır. Binlik noktaları
+    # ÖNCE atılır: sonra atılırsa ondalık virgülden dönüşen nokta ("1,234" →
+    # "1.234") üç basamaklı bir binlik grubuna benzer ve yanlışlıkla silinir.
+    s = re.sub(r"(?<=\d)\.(?=\d{3}(?!\d))", "", s)
     s = re.sub(r"(\d),(\d)", r"\1.\2", s)  # ondalık virgül
     tokenlar = re.findall(r"\d+\.\d+|\d+|\*\*|[+\-*/()]", s)
     if "".join(tokenlar) != re.sub(r"\s+", "", s):

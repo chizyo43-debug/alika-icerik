@@ -273,3 +273,21 @@ def test_english_v3_final_hints_are_question_specific():
     for position in (3, 4):
         counts = Counter(question["hints"][position] for question in questions)
         assert counts.most_common(1)[0][1] / len(questions) < 0.10
+
+
+def test_binlik_ayraci_ondalik_sanilmaz():
+    """Kural 15: Türkçe yazımda "." binlik ayracıdır, ondalık ayracı değildir.
+
+    Bu ayrım yapılmazsa "4.812 + 3.196" ifadesi 4,812 + 3,196 diye okunur ve
+    doğrulayıcı, doğru içeriğe yanlış aritmetik hatası verir (ya da daha
+    kötüsü, yanlış bir toplamı doğru sayar).
+    """
+    from fractions import Fraction
+
+    hesapla = pack_validate.ifade_degerlendir
+
+    assert hesapla("4.812 + 3.196") == 8008
+    assert hesapla("10.000 ÷ 8") == 1250
+    # ondalık virgül bozulmamalı
+    assert hesapla("2,5 × 2") == 5
+    assert hesapla("1,234 + 1") == Fraction(1117, 500)
