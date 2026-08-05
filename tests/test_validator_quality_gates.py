@@ -1,0 +1,170 @@
+import importlib.util
+import json
+from collections import Counter
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parent.parent
+SPEC = importlib.util.spec_from_file_location(
+    "pack_validate_quality", ROOT / "tools" / "pack_validate.py"
+)
+pack_validate = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(pack_validate)
+
+REPAIR_SPEC = importlib.util.spec_from_file_location(
+    "repair_english_v3_test", ROOT / "tools" / "repair_english_v3.py"
+)
+repair_english_v3 = importlib.util.module_from_spec(REPAIR_SPEC)
+REPAIR_SPEC.loader.exec_module(repair_english_v3)
+
+ENGLISH_PACKAGE = (
+    ROOT / "turkiye" / "5-sinif" / "ingilizce" / "ingilizce-tum.jsonl"
+)
+
+
+def load_english():
+    rows = [
+        json.loads(line)
+        for line in ENGLISH_PACKAGE.read_text(encoding="utf-8").splitlines()
+    ]
+    pack = next(row for row in rows if row.get("type") == "pack")
+    questions = [row for row in rows if row.get("type") == "question"]
+    return pack, questions
+
+
+def test_long_generic_distractor_template_is_rejected():
+    reason = (
+        "Bu seçenek yanlıştır; kökün istediği kişi, yer, zaman, eylem veya "
+        "dil bilgisi ilişkilerinden en az birini karşılamaz."
+    )
+    assert pack_validate.distraktor_gerekcesi_sablon(reason)
+
+
+def test_copied_difficulty_template_is_rejected():
+    reason = (
+        "Öğrenci soru kökündeki sözcükleri kullanır; yalnız tema sözcüğünü "
+        "tanımak yeterli değildir."
+    )
+    assert pack_validate.zorluk_gerekcesi_sablon(reason)
+
+
+def test_dominant_hints_and_closed_choice_pool_are_reported(tmp_path):
+    rows = [
+        {
+            "type": "pack",
+            "schemaVersion": "2.0",
+            "id": "tr.g05.test",
+            "lang": "tr",
+            "source": "quality-test",
+            "provenance": "machine-generated:test:2026-08",
+            "coverage": {"OBJ": {"notes": ["tr.g05.test.n001"]}},
+            "labels": {},
+        },
+        {
+            "type": "note",
+            "id": "tr.g05.test.n001",
+            "topic": "Test",
+            "body": "Deneme notu.",
+            "figure": None,
+        },
+    ]
+    for index in range(20):
+        rows.append(
+            {
+                "type": "question",
+                "id": f"tr.g05.test.q{index + 1:03d}",
+                "topic": "Test",
+                "question": f"{index + 1}. bağlama göre doğru sınıf hangisidir?",
+                "choices": ["doğru sınıf", "yanlış yer", "yanlış zaman", "It are"],
+                "correct": 0,
+                "distractorWhy": [
+                    "Doğrudur; bağlamdaki sınıf bilgisiyle eşleşir.",
+                    "Yanlıştır; sınıf yerine yer bilgisi verir.",
+                    "Yanlıştır; sınıf yerine zaman bilgisi verir.",
+                    "Yanlıştır; özne ile be fiili kişi ve sayı bakımından uyuşmaz.",
+                ],
+                "explanation": "Bağlam sınıf bilgisini açıkça verir.",
+                "difficultyReason": (
+                    "2 adım gerekir: bağlam kanıtı bulunur ve yakın "
+                    "çeldiriciler bilgi türüne göre karşılaştırılır."
+                ),
+                "figure": None,
+                "hints": [
+                    f"{index + 1}. soruda istenen bilgi türünü belirle.",
+                    "Yer ve zaman bilgilerini ayır.",
+                    "Seçenekleri kökle karşılaştır.",
+                    "Aynı genel dördüncü ipucu.",
+                    "Aynı genel beşinci ipucu.",
+                ],
+                "objective": "OBJ",
+                "objectiveSource": "https://example.test/program",
+                "noteId": "tr.g05.test.n001",
+                "reviewStatus": "pending",
+                "provenance": "machine-generated:test:2026-08",
+            }
+        )
+    package = tmp_path / "quality.jsonl"
+    package.write_text(
+        "\n".join(json.dumps(row, ensure_ascii=False) for row in rows) + "\n",
+        encoding="utf-8",
+    )
+
+    findings = pack_validate.validate_file(package)
+    rules = {(finding.seviye, finding.kural) for finding in findings}
+    assert ("UYARI", 38) in rules
+    assert ("RAPOR", 39) in rules
+    assert ("UYARI", 39) in rules
+
+
+def test_english_v3_has_open_choice_pools_and_no_legacy_fillers():
+    pack, questions = load_english()
+    assert pack["version"] == 3
+    assert len(questions) == 518
+
+    choice_sets = Counter(
+        tuple(
+            sorted(
+                repair_english_v3.normalize(choice)
+                for choice in question["choices"]
+            )
+        )
+        for question in questions
+    )
+    assert max(choice_sets.values()) == 1
+
+    legacy = {
+        repair_english_v3.normalize(choice)
+        for question in questions
+        for choice in question["choices"]
+        if repair_english_v3.normalize(choice)
+        in repair_english_v3.LEGACY_FILLERS
+    }
+    assert legacy == set()
+
+
+def test_english_v3_reasons_name_the_measured_error():
+    _, questions = load_english()
+    banned = (
+        "kişi, yer, zaman, eylem veya dil bilgisi ilişkilerinden en az birini karşılamaz",
+        "yalnız tema sözcüğünü tanımak yeterli değildir",
+    )
+    for question in questions:
+        reason = question["difficultyReason"]
+        assert "adım gerektirir" in reason
+        assert "Ön bilgi" in reason
+        assert "Çeldiriciler" in reason
+        assert not any(phrase in reason for phrase in banned)
+        for index, distractor_reason in enumerate(question["distractorWhy"]):
+            assert f"“{question['choices'][index]}”" in distractor_reason
+            if index != question["correct"]:
+                assert "yanlıştır" in distractor_reason
+                assert not any(
+                    phrase in distractor_reason for phrase in banned
+                )
+
+
+def test_english_v3_final_hints_are_question_specific():
+    _, questions = load_english()
+    for position in (3, 4):
+        counts = Counter(question["hints"][position] for question in questions)
+        assert counts.most_common(1)[0][1] / len(questions) < 0.10

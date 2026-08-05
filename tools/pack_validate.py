@@ -5,7 +5,7 @@
 Kullanım:  python tools/pack_validate.py <yol.jsonl|yol.json>
 
 Stdlib-only (bağımlılık kuralı: yalnız pytest geliştirme bağımlılığıdır, o da
-burada kullanılmaz). 26 kural uygular; bulgular HATA / UYARI / RAPOR olarak
+burada kullanılmaz). 39 kural uygular; bulgular HATA / UYARI / RAPOR olarak
 listelenir, en az bir HATA varsa çıkış kodu 1'dir.
 
 Kural referansı: .claude/qoder/GOREV_ICERIK0.md §1.5 tablosu ve
@@ -70,6 +70,14 @@ FIGUR_DOGRUDAN_TR_RE = re.compile(
 )
 
 ID_KARAKTER_RE = re.compile(r"^[A-Za-z0-9._-]+$")
+
+# Paket boyunca dolaştığında gerçek çeldirici olmaktan çıkıp yalnız dolguya
+# dönüşen, açıkça bozuk İngilizce biçimler. Yalnız bu yüksek güvenli küme uyarı
+# üretir; alan terimlerinin sık görünmesi raporlanır ama otomatik kusur sayılmaz.
+BARIZ_DIL_DOLGUSU = {
+    "it are", "there am", "there be", "they is",
+    "got has", "got have", "is got", "are go to",
+}
 
 # Kural 10: LaTeX izleri
 LATEX_RE = re.compile(r"\$|\\frac|\\sqrt|\\begin")
@@ -181,6 +189,36 @@ def distraktor_gerekcesi_jenerik(w: object, secenek: object) -> bool:
         kalan = metin_norm.replace(secenek_norm, "", 1)
         return len(kalan) < 4
     return len(metin_norm) < 12
+
+
+def distraktor_gerekcesi_sablon(w: object) -> bool:
+    """Uzun görünmesine karşın öğrencinin hatasını adlandırmayan kalıpları bulur."""
+    sade = " ".join(
+        unicodedata.normalize("NFKC", str(w or "")).casefold().split()
+    )
+    genel_kaliplar = (
+        "kişi, yer, zaman, eylem veya dil bilgisi ilişkilerinden en az birini karşılamaz",
+        "kökün istediği kişi, yer, zaman, eylem veya dil bilgisi",
+    )
+    if any(kalip in sade for kalip in genel_kaliplar):
+        return True
+    return (
+        "kökündeki" in sade
+        and "ipuçları bu seçeneği desteklemez" in sade
+        and "yanlıştır" in sade
+    )
+
+
+def zorluk_gerekcesi_sablon(w: object) -> bool:
+    """Şema §4 ölçütleri yerine soru kökünü yapıştıran gerekçeleri bulur."""
+    sade = " ".join(
+        unicodedata.normalize("NFKC", str(w or "")).casefold().split()
+    )
+    yasak = (
+        "yalnız tema sözcüğünü tanımak yeterli değildir",
+        "kökten kopyalanan",
+    )
+    return any(kalip in sade for kalip in yasak)
 
 
 def figur_atfi_var(metin: str, dil: str, tip: str = "question") -> bool:
@@ -748,6 +786,11 @@ def validate_file(yol) -> list:
     kazanim_sayac: dict = {}
     objektifsiz = 0
     kind_kume: set = set()
+    secenek_kume_kayitlari: dict = {}
+    secenek_gorunum: dict = {}
+    secenek_dogru: dict = {}
+    secenek_kumeleri: dict = {}
+    ipucu_konum_sayaclari = [dict() for _ in range(5)]
 
     for satir_no, k in kayitlar:
         tip = k.get("type")
@@ -829,6 +872,32 @@ def validate_file(yol) -> list:
             else:
                 gorulen[n] = i
 
+        # Paket-geneli kapalı seçenek havuzu ölçümleri. Aynı seçenek kümesinin
+        # birden çok soruda görünmesi tek başına hata değildir; aşağıdaki
+        # sayaçlar yüksek tekrar ve sürekli yanlış dolgu birleşimini ayırır.
+        secenek_normlari = tuple(
+            sorted(
+                " ".join(
+                    unicodedata.normalize("NFKC", str(c)).casefold().split()
+                )
+                for c in secenekler
+            )
+        )
+        secenek_kume_kayitlari.setdefault(secenek_normlari, []).append(satir_no)
+        for c in secenekler:
+            c_norm = " ".join(
+                unicodedata.normalize("NFKC", str(c)).casefold().split()
+            )
+            secenek_gorunum[c_norm] = secenek_gorunum.get(c_norm, 0) + 1
+            secenek_kumeleri.setdefault(c_norm, set()).add(secenek_normlari)
+        if dogru is not None and dogru < len(secenekler):
+            dogru_norm = " ".join(
+                unicodedata.normalize(
+                    "NFKC", str(secenekler[dogru])
+                ).casefold().split()
+            )
+            secenek_dogru[dogru_norm] = secenek_dogru.get(dogru_norm, 0) + 1
+
         # kural 13 — iki şık aynı sayıya eşit
         degerler = [(i, sayi_ayristir(str(c))) for i, c in enumerate(secenekler)]
         for a in range(len(degerler)):
@@ -882,6 +951,15 @@ def validate_file(yol) -> list:
         if len(ipuclari) != 5 or any(not str(x or "").strip() for x in ipuclari):
             ekle("HATA", 17, satir_no,
                  f"hints 5 dolu basamak değil (uzunluk {len(ipuclari)})")
+        if len(ipuclari) == 5:
+            for konum, ipucu in enumerate(ipuclari):
+                ipucu_norm = " ".join(
+                    unicodedata.normalize(
+                        "NFKC", str(ipucu)
+                    ).casefold().split()
+                )
+                sayac = ipucu_konum_sayaclari[konum]
+                sayac[ipucu_norm] = sayac.get(ipucu_norm, 0) + 1
 
         # kural 18 — ilk dört ipucunda cevap sızıntısı
         if dogru is not None and dogru < len(secenekler):
@@ -915,6 +993,16 @@ def validate_file(yol) -> list:
             if jenerik:
                 ekle("UYARI", 20, satir_no,
                      f"distractorWhy boş veya yalnız jenerik hüküm içeriyor: şık {jenerik}")
+            sablon = [
+                i for i, w in enumerate(why)
+                if i != dogru and distraktor_gerekcesi_sablon(w)
+            ]
+            if sablon:
+                ekle(
+                    "HATA", 36, satir_no,
+                    "distractorWhy öğrencinin somut hatasını adlandırmayan "
+                    f"uzun şablon içeriyor: şık {sablon}",
+                )
 
         # kural 21 — açıklamada şık harfi
         if dogru is not None and isinstance(k.get("explanation"), str):
@@ -941,6 +1029,12 @@ def validate_file(yol) -> list:
             dr = k.get("difficultyReason", "")
             if len(dr) < 20:
                 ekle("HATA", 32, satir_no, f"difficultyReason çok kısa ({len(dr)} karakter)")
+            elif zorluk_gerekcesi_sablon(dr):
+                ekle(
+                    "HATA", 37, satir_no,
+                    "difficultyReason soru kökünü uzatan jenerik şablon; "
+                    "adım, ön bilgi veya çeldirici yakınlığı somutlaştırılmalı",
+                )
             rs = k.get("reviewStatus", "")
             if rs and rs not in ("pending", "reviewed", "ai-verified", "rejected"):
                 ekle("HATA", 33, satir_no, f"reviewStatus geçersiz: {rs!r}")
@@ -990,6 +1084,81 @@ def validate_file(yol) -> list:
         ekle("RAPOR", 26, 0, f"hiç sorusu olmayan not: {', '.join(map(str, bagsiz))}")
     ekle("RAPOR", 26, 0,
          f"kullanılan farklı kind: {len(kind_kume)} ({', '.join(sorted(map(str, kind_kume))) or '-'})")
+
+    # kural 38 — ipucu merdiveninin son iki basamağı dolguya dönüşmemeli.
+    if len(sorular) >= 20:
+        for konum in (3, 4):
+            sayac = ipucu_konum_sayaclari[konum]
+            if not sayac:
+                continue
+            ipucu, adet = max(sayac.items(), key=lambda item: item[1])
+            oran = adet / len(sorular)
+            if oran >= 0.70:
+                ekle(
+                    "UYARI", 38, 0,
+                    f"ipucu {konum + 1} tek kalıba yığılmış: "
+                    f"{adet}/{len(sorular)} (%{oran * 100:.1f}); "
+                    f"örnek={ipucu[:70]!r}",
+                )
+
+    # kural 39 — kapalı seçenek havuzu ve sürekli yanlış dolgu.
+    tekrarli_kumeler = [
+        (kume, satirlar)
+        for kume, satirlar in secenek_kume_kayitlari.items()
+        if kume and len(satirlar) > 1
+    ]
+    if tekrarli_kumeler:
+        etkilenen = sum(len(satirlar) for _, satirlar in tekrarli_kumeler)
+        en_yuksek = max(len(satirlar) for _, satirlar in tekrarli_kumeler)
+        ekle(
+            "RAPOR", 39, 0,
+            f"aynı seçenek kümesi: {len(tekrarli_kumeler)} küme / "
+            f"{etkilenen} soru; en yüksek tekrar={en_yuksek}",
+        )
+
+    dolgu = []
+    for secenek, adet in secenek_gorunum.items():
+        if (
+            adet >= 4
+            and secenek_dogru.get(secenek, 0) == 0
+            and len(secenek_kumeleri.get(secenek, ())) >= 2
+            and re.search(r"[^\W\d_]", secenek, flags=re.UNICODE)
+        ):
+            dolgu.append((secenek, adet))
+    if dolgu:
+        ornekler = ", ".join(
+            f"{secenek!r}×{adet}"
+            for secenek, adet in sorted(
+                dolgu, key=lambda item: (-item[1], item[0])
+            )[:8]
+        )
+        ekle(
+            "RAPOR", 39, 0,
+            "birden çok soru ailesinde dolaşan ve hiç doğru olmayan "
+            f"seçenekler var: {ornekler}",
+        )
+
+    bariz_dolgu = [
+        (secenek, adet)
+        for secenek, adet in secenek_gorunum.items()
+        if (
+            adet >= 4
+            and secenek_dogru.get(secenek, 0) == 0
+            and secenek in BARIZ_DIL_DOLGUSU
+        )
+    ]
+    if bariz_dolgu:
+        ornekler = ", ".join(
+            f"{secenek!r}×{adet}"
+            for secenek, adet in sorted(
+                bariz_dolgu, key=lambda item: (-item[1], item[0])
+            )
+        )
+        ekle(
+            "UYARI", 39, 0,
+            "açıkça bozuk dil biçimleri sürekli yanlış dolgu olarak "
+            f"tekrarlanıyor: {ornekler}",
+        )
 
     # ---- Şema V2 paket-genel kurallar ----
     if len(sorular) >= 10:

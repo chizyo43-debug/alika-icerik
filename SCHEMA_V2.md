@@ -150,7 +150,7 @@
 - `objective` boş olamaz (v2)
 - `objectiveSource` geçerli URL olmalı (http/https)
 - `difficultyReason` en az 20 karakter
-- `reviewStatus` yalnızca `pending`, `reviewed`, `rejected` olabilir
+- `reviewStatus` yalnızca `pending`, `reviewed`, `ai-verified`, `rejected` olabilir
 - `reviewStatus: "reviewed"` için `provenance` içinde `human-reviewed` bulunmalı
 - Serbest HTML veya çalıştırılabilir kod yasak
 - Tüm çıktı UTF-8
@@ -208,4 +208,7 @@ Yeni kurallar (v2):
 | 33 | HATA | `reviewStatus` geçersiz değer |
 | 34 | HATA | `reviewStatus: reviewed` ama provenance'da human-reviewed yok |
 | 35 | UYARI | Doğru cevap konumu pakette %35'i aşıyor |
-| 36 | UYARI | Aynı topic'te 5+ çok benzer soru |
+| 36 | HATA | `distractorWhy` uzun görünmesine rağmen öğrencinin somut hatasını adlandırmayan şablon içeriyor |
+| 37 | HATA | `difficultyReason` soru kökünü uzatan jenerik şablon içeriyor |
+| 38 | UYARI | 4. veya 5. ipucu paket sorularının en az %70'inde aynı |
+| 39 | RAPOR/UYARI | Tekrarlı seçenek kümeleri ve sürekli yanlış seçenekler raporlanır; yalnız açıkça bozuk dil biçimlerinin 4+ kez dolgu olarak kullanılması uyarı verir |
