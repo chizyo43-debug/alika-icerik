@@ -1,0 +1,87 @@
+{
+  "esik": 99.0,
+  "agirliklar": {
+    "S1_sizinti_yok": 0.2,
+    "S2_havuz_acikligi": 0.15,
+    "S3_dolgu_yok": 0.15,
+    "S4_kalip_cesitliligi": 0.15,
+    "S5_sekil_kapsamasi": 0.1,
+    "S6_kazanim_dengesi": 0.1,
+    "S7_geri_donusum_yok": 0.1,
+    "S8_alan_butunlugu": 0.05
+  },
+  "paketler": [
+    {
+      "paket": "turkiye/5-sinif/fen-bilimleri/fen-bilimleri-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 2,
+      "skor": 88.94,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 96.4,
+        "S3_dolgu_yok": 98.3,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 0.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 97.3,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/5-sinif/ingilizce/ingilizce-tum.jsonl",
+      "soru": 518,
+      "hata": 0,
+      "uyari": 2,
+      "skor": 92.1,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 70.7,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 65.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/5-sinif/matematik/matematik-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 4,
+      "skor": 72.76,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 69.6,
+        "S3_dolgu_yok": 91.4,
+        "S4_kalip_cesitliligi": 33.2,
+        "S5_sekil_kapsamasi": 0.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 86.3,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/5-sinif/turkce/turkce-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 1,
+      "skor": 89.37,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 99.8,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 7.2,
+        "S7_geri_donusum_yok": 86.7,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    }
+  ]
+}

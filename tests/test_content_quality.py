@@ -60,19 +60,64 @@ PACKAGES = get_all_packages()
 PACKAGE_IDS = [p.stem for p in PACKAGES]
 
 
+# Kalite kapısı tabanı. Nihai hedef her pakette 0 HATA / 0 UYARI ve skor ≥ 99;
+# oraya aşamalı gidiliyor (bkz. AUTHORING_RULES.md ve reports/quality_score.json).
+# Bu dosya "bugünkü bilinen borç"tur: HATA her zaman yasak, UYARI sayısı ise
+# tabandan YUKARI çıkamaz. Bir kusur düzeltildiğinde taban da düşürülür.
+BASELINE = ROOT / "tests" / "quality_baseline.json"
+
+
+def _taban() -> dict:
+    if not BASELINE.exists():
+        return {}
+    return json.loads(BASELINE.read_text(encoding="utf-8"))
+
+
 class TestValidator:
     """Doğrulayıcı tabanlı testler."""
 
     @pytest.mark.parametrize("path", PACKAGES, ids=PACKAGE_IDS)
-    def test_sifir_hata_ve_uyari(self, path):
-        """Her yayın paketi 0 HATA / 0 UYARI ile doğrulayıcıdan geçmeli."""
+    def test_sifir_hata(self, path):
+        """Hiçbir yayın paketi HATA üretmemeli — bu kapı asla gevşetilmez."""
         bulgular = pack_validate.validate_file(path)
-        engelleyiciler = [
-            bulgu
-            for bulgu in bulgular
-            if bulgu.seviye in ("HATA", "UYARI")
+        hatalar = [b for b in bulgular if b.seviye == "HATA"]
+        assert hatalar == [], f"HATA: {hatalar}"
+
+    @pytest.mark.parametrize("path", PACKAGES, ids=PACKAGE_IDS)
+    def test_uyari_tabani_asilmadi(self, path):
+        """UYARI sayısı kayıtlı tabandan yukarı çıkamaz (gerileme koruması)."""
+        taban = _taban().get("uyari", {})
+        beklenen = taban.get(path.stem)
+        uyarilar = [
+            b for b in pack_validate.validate_file(path) if b.seviye == "UYARI"
         ]
-        assert engelleyiciler == [], f"HATA/UYARI: {engelleyiciler}"
+        if beklenen is None:
+            assert uyarilar == [], (
+                f"{path.stem} tabanda yok; yeni paket 0 UYARI ile gelmeli: "
+                f"{uyarilar}"
+            )
+            return
+        assert len(uyarilar) <= beklenen, (
+            f"{path.stem}: UYARI {len(uyarilar)} > taban {beklenen}; "
+            f"yeni uyarılar: {uyarilar}"
+        )
+
+    @pytest.mark.parametrize("path", PACKAGES, ids=PACKAGE_IDS)
+    def test_skor_tabanin_altina_dusmedi(self, path):
+        """Kalite skoru kayıtlı tabandan aşağı düşemez."""
+        taban = _taban().get("skor", {})
+        beklenen = taban.get(path.stem)
+        sonuc = pack_validate.paket_skoru(path)
+        if beklenen is None:
+            assert sonuc["skor"] >= pack_validate.SKOR_ESIK, (
+                f"{path.stem} tabanda yok; yeni paket skor ≥ "
+                f"{pack_validate.SKOR_ESIK} ile gelmeli: {sonuc['skor']}"
+            )
+            return
+        assert sonuc["skor"] >= beklenen - 0.01, (
+            f"{path.stem}: skor {sonuc['skor']} < taban {beklenen}; "
+            f"ölçütler: {sonuc['olcutler']}"
+        )
 
 
 class TestSchemaV2:

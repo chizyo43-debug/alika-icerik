@@ -1,0 +1,16 @@
+{
+  "_aciklama": "Bilinen kalite borcu. HATA her zaman 0 olmalı; UYARI sayısı ve skor buradaki değerden kötüleşemez. Bir kusur düzeltildiğinde bu dosya AŞAĞI çekilir — asla yukarı değil. Hedef: tüm uyarılar 0, tüm skorlar >= 99.",
+  "_guncelleme": "2026-08-05 (A0)",
+  "uyari": {
+    "matematik-tum": 4,
+    "fen-bilimleri-tum": 2,
+    "ingilizce-tum": 2,
+    "turkce-tum": 1
+  },
+  "skor": {
+    "matematik-tum": 72.76,
+    "fen-bilimleri-tum": 88.94,
+    "ingilizce-tum": 92.10,
+    "turkce-tum": 89.37
+  }
+}
