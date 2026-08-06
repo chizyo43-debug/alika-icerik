@@ -475,12 +475,12 @@ def test_sayisal_sik_geri_donusum_sayilmaz():
         assert not pack_validate.sik_sayisal_mi(sik), sik
 
 
-def test_polygon_sides_katalogda(tmp_path):
-    """figure_spec 1.2.0: shape/polygon kenar sayısı taşır."""
+def test_polygon_sides_katalog_disi(tmp_path):
+    """Kanonik figure_spec 1.1.0 katalog dışı ``sides`` alanını reddeder."""
     k = temiz_paket()
     k[1]["figure"] = {"kind": "shape", "type": "polygon", "sides": 7,
                       "altTextKey": "tr.g05.tur.ana-fikir.n001.visual.a1"}
-    assert 4 not in kosu(tmp_path, k)
+    assert 4 in kosu(tmp_path, k)
 
 
 def test_polygon_disinda_sides_hata(tmp_path):

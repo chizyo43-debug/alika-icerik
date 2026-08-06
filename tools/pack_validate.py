@@ -132,11 +132,8 @@ KATALOG = {
     "numberline": {"zorunlu": {"min", "max"},
                    "opsiyonel": {"step", "marks", "highlight"}},
     "fraction": {"zorunlu": {"style", "parts"}, "opsiyonel": {"filled"}},
-    # sides: figure_spec 1.2.0. Yalnız polygon ile; düzgün n-gen çizilir.
-    # Kenar sayısı MAT.5.3.5/5.3.6'nın ölçtüğü şeydir ve figürde yanlış
-    # çizilirse çocuk şekli sayıp yanlış cevaba varır.
     "shape": {"zorunlu": {"type"},
-              "opsiyonel": {"dims", "sideLabels", "marks", "sides"}},
+              "opsiyonel": {"dims", "sideLabels", "marks"}},
     "angle": {"zorunlu": {"degrees"}, "opsiyonel": {"rays", "labelKey"}},
     "grid": {"zorunlu": {"cols", "rows"}, "opsiyonel": {"shaded", "labels"}},
     "coordinate": {"zorunlu": {"xRange", "yRange"},
@@ -145,7 +142,8 @@ KATALOG = {
               "opsiyonel": {"axisKeys"}},
     "table": {"zorunlu": {"headerKeys", "rows"}, "opsiyonel": {"highlight"}},
     "flow": {"zorunlu": {"nodes", "edges"}, "opsiyonel": {"direction"}},
-    "circuit": {"zorunlu": {"elements"}, "opsiyonel": {"layout"}},
+    "circuit": {"zorunlu": {"elements"},
+                "opsiyonel": {"layout", "labelKeys"}},
 }
 CIRCUIT_ELEM = {"battery", "lamp", "switch", "resistor", "wire"}
 
@@ -733,6 +731,16 @@ def figur_kontrol(fig: dict, sema: str = "2.0") -> list:
                     h.append(f"circuit: eleman beyaz liste dışı: {e!r}")
         if "layout" in fig and fig["layout"] not in ("series", "parallel"):
             h.append("circuit: layout ∈ series|parallel değil")
+        etiketler = fig.get("labelKeys")
+        if not isinstance(etiketler, dict):
+            h.append("circuit: labelKeys sözlük olmalı")
+        else:
+            gereken = set(elemanlar or [])
+            if fig.get("layout"):
+                gereken.add(fig["layout"])
+            eksik = gereken - set(etiketler)
+            if eksik:
+                h.append(f"circuit: labelKeys eksik: {sorted(eksik)}")
     return h
 
 
@@ -745,7 +753,7 @@ def figur_i18n_anahtarlari(fig) -> set:
             for k, alt in v.items():
                 if k == "key" and isinstance(alt, str):
                     anahtarlar.add(alt)
-                elif k in ("labels", "sideLabels", "axisKeys") and isinstance(alt, dict):
+                elif k in ("labels", "sideLabels", "axisKeys", "labelKeys") and isinstance(alt, dict):
                     for x in alt.values():
                         if isinstance(x, str):
                             anahtarlar.add(x)

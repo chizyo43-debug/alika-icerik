@@ -35,16 +35,16 @@ Her satır bir JSON nesnesi:
 |-----|----------|
 | `pack` | Üst veri (id, müfredat, sınıf, tema, lisans) |
 | `note` | Ders notu — tam konu anlatımı (Markdown) |
-| `question` | Soru — 4 şık, 5 ipucu, çeldirici analizi, seviye 1-5 |
+| `question` | Soru — seçenekler, çeldirici analizi, açıklama ve seviye 1-5 |
 
 ## Mevcut Paketler
 
 | Ülke | Sınıf | Ders | Konu | Not | Soru | Durum |
 |------|-------|------|------|-----|------|-------|
-| Türkiye | 5 | Matematik | Tüm konular | 23 | 500 | ✅ Final onaylı |
-| Türkiye | 5 | Fen Bilimleri | Tüm konular | 28 | 500 | ✅ Final onaylı |
+| Türkiye | 5 | Matematik | Tüm konular | 23 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 5 | Fen Bilimleri | Tüm konular | 28 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 5 | Türkçe | Tüm beceriler | 22 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 5 | İngilizce | Tüm temalar | 23 | 500 | ✅ Son kalite kontrolü tamamlandı |
+| Türkiye | 5 | İngilizce | Tüm temalar | 24 | 518 | ⚠️ Eski 2.0 sözleşmesi; 2.2 geçişi bekliyor |
 
 ## İndirme Katmanları
 
