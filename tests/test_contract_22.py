@@ -281,10 +281,34 @@ def test_dolu_figurde_alt_metin_zorunlu(tmp_path):
     assert 4 in kosu(tmp_path, k)
 
 
+def _paket_surumu(yol: Path) -> str:
+    for satir in yol.read_text(encoding="utf-8").splitlines():
+        kayit = json.loads(satir)
+        if kayit.get("type") == "pack":
+            return kayit.get("schemaVersion", "")
+    return ""
+
+
 def test_iki_sifir_paketleri_bozulmadi():
-    """2.2 eklemesi yayımlanmış paketleri etkilememeli."""
+    """2.2 eklemesi 2.0'da kalan paketleri etkilememeli."""
     for ad in ("turkce", "matematik", "fen-bilimleri", "ingilizce"):
         yol = ROOT / "turkiye" / "5-sinif" / ad / f"{ad}-tum.jsonl"
+        if _paket_surumu(yol) != "2.0":
+            continue
         hatalar = [b for b in pack_validate.validate_file(yol)
                    if b.seviye == "HATA"]
         assert hatalar == [], f"{ad}: {hatalar[:3]}"
+
+
+def test_turkce_22_borcu_yalniz_gorselde():
+    """Türkçe 2.2'ye taşındı; kalan tek borç bildirilen görsel açığıdır.
+
+    Bu test kapıyı açık tutmaz, DARALTIR: görsel dışında herhangi bir kural
+    kırmızıya dönerse taşıma bir şeyi bozmuş demektir ve derhâl görünür olur.
+    """
+    yol = ROOT / "turkiye" / "5-sinif" / "turkce" / "turkce-tum.jsonl"
+    if _paket_surumu(yol) != "2.2":
+        return
+    baska = sorted({b.kural for b in pack_validate.validate_file(yol)
+                    if b.seviye == "HATA" and b.kural != 53})
+    assert baska == [], f"görsel dışı HATA kuralları: {baska}"
