@@ -32,53 +32,16 @@ import argparse
 import json
 import re
 import sys
-import unicodedata
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 KOK = Path(__file__).resolve().parent.parent
 PAKET = KOK / "turkiye" / "5-sinif" / "turkce" / "turkce-tum.jsonl"
 
-# Aile tavanı sözleşmeden gelir; buraya ikinci bir sayı yazılmaz.
-AILE_TAVANI = 8
-
-TURKCE_HARF = {
-    "ç": "c", "ğ": "g", "ı": "i", "ö": "o", "ş": "s", "ü": "u",
-    "â": "a", "î": "i", "û": "u", "Ç": "c", "Ğ": "g", "İ": "i",
-    "I": "i", "Ö": "o", "Ş": "s", "Ü": "u",
-}
-
-
-def slug(metin: object, uzunluk: int = 48) -> str:
-    """Türkçe metni kararlı ASCII slug'a çevirir.
-
-    Python'un lower()'ı Türkçe için yanlıştır (I→ı, İ→i) ve unicodedata
-    ile ayrıştırma 'ı' harfini boşa düşürür; harf eşlemesi elle yapılır.
-    """
-    # Kesme işareti ayraca DÖNÜŞMEZ, silinir: "Atatürk'ü" → "ataturku".
-    # Ayraca dönüşürse anahtar "ataturk-u" olur ve sözcük ortadan bölünür.
-    s = re.sub(r"['’‘`]", "", str(metin or ""))
-    s = "".join(TURKCE_HARF.get(ch, ch) for ch in s)
-    s = unicodedata.normalize("NFKD", s)
-    s = "".join(ch for ch in s if not unicodedata.combining(ch))
-    s = s.lower()
-    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-    s = re.sub(r"-{2,}", "-", s)
-    if len(s) > uzunluk:
-        s = s[:uzunluk].rstrip("-")
-    return s
-
-
-def iskelet(metin: object) -> str:
-    """difficultyReason'ın sayı ve özel addan arındırılmış imzası.
-
-    Aynı imzayı taşıyan sorular aynı şeyi ölçer; aile bu imzadan kurulur.
-    Aile, kökü isim/sayı değiştirerek çoğaltmanın kabı değil, neyin
-    ölçüldüğünün görünür hâlidir.
-    """
-    s = unicodedata.normalize("NFKC", str(metin or "")).casefold()
-    s = re.sub(r"\d+", "#", s)
-    s = re.sub(r"[^\w\s#]", " ", s, flags=re.UNICODE)
-    return " ".join(s.split())
+# Ortak yardımcılar tek yerde: kopyalanmış bir slug ya da döndürme işlevi,
+# birinde düzeltilip diğerinde unutulan bir kural demektir.
+from pack_migrate_lib import AILE_TAVANI, aile_ata, iskelet, slug  # noqa: E402
 
 
 def hiyerarsi_uret(notlar: list) -> dict:
@@ -109,26 +72,6 @@ def hiyerarsi_uret(notlar: list) -> dict:
             "noteKey": alt,
         }
     return harita
-
-
-def aile_ata(sorular: list) -> dict:
-    """Soru kimliği → familyId. Aile: aynı not + aynı ölçülen beceri."""
-    kumeler: dict = {}
-    for q in sorular:
-        anahtar = (q.get("noteId"), iskelet(q.get("difficultyReason")))
-        kumeler.setdefault(anahtar, []).append(q["id"])
-    atama: dict = {}
-    sayaclar: dict = {}
-    for (nid, _imza), kimlikler in sorted(
-            kumeler.items(), key=lambda x: (str(x[0][0]), str(x[0][1]))):
-        taban = slug(nid, 34)
-        # Tavanı aşan küme parçalara bölünür; tek bir aile 8'i geçemez.
-        for bas in range(0, len(kimlikler), AILE_TAVANI):
-            sayaclar[taban] = sayaclar.get(taban, 0) + 1
-            fid = f"{taban}-f{sayaclar[taban]:02d}"
-            for kimlik in kimlikler[bas:bas + AILE_TAVANI]:
-                atama[kimlik] = fid
-    return atama
 
 
 def tasi(kayitlar: list) -> tuple[list, dict]:

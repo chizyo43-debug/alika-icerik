@@ -29,15 +29,8 @@ from pathlib import Path
 KOK = Path(__file__).resolve().parent.parent
 PAKET = KOK / "turkiye" / "5-sinif" / "turkce" / "turkce-tum.jsonl"
 
-BASLIKLAR = [
-    "Kavramlar",
-    "Adım adım öğrenelim",
-    "Çözümlü örnek 1",
-    "Çözümlü örnek 2",
-    "Sık yapılan hata",
-    "Öz kontrol",
-    "Görselle çalışma",
-]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pack_migrate_lib import bolumlere_ayir, oz_kontrol_listele  # noqa: E402
 
 # Not kimliği → (ne öğreneceğim, ön bilgiler, özet).
 EK_BOLUMLER = {
@@ -225,33 +218,6 @@ EK_BOLUMLER = {
  "sıralı ögeleri ayırır, kesme işareti özel ada gelen eki ayırır. Yanlış "
  "yerdeki bir virgül cümlenin anlamını değiştirebilir."),
 }
-
-
-def bolumlere_ayir(govde: str) -> dict:
-    """Düzyazı gövdeyi bilinen başlıklara göre parçalara ayırır."""
-    satirlar = [s for s in govde.split("\n") if s.strip()]
-    parcalar: dict = {}
-    su_an = None
-    for satir in satirlar:
-        temiz = satir.strip()
-        if temiz in BASLIKLAR:
-            su_an = temiz
-            parcalar[su_an] = []
-            continue
-        if su_an:
-            parcalar[su_an].append(temiz)
-    return {k: "\n".join(v).strip() for k, v in parcalar.items()}
-
-
-def oz_kontrol_listele(metin: str) -> list:
-    """Öz kontrol düzyazısını tek tek denetlenebilir maddelere böler.
-
-    Metin kimi notta madde imli, kimi notta akan cümlelerdir; ikisi de tek
-    bir cümle sonu kuralıyla ayrılabilir.
-    """
-    ham = re.sub(r"^\s*[-•]\s*", "", metin, flags=re.M)
-    maddeler = [p.strip() for p in re.split(r"(?<=[.!?])\s+", ham) if p.strip()]
-    return [m for m in maddeler if len(m) >= 15]
 
 
 def govdeyi_kur(not_kaydi: dict) -> dict | None:
