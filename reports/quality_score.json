@@ -15,16 +15,16 @@
       "paket": "turkiye/5-sinif/fen-bilimleri/fen-bilimleri-tum.jsonl",
       "soru": 500,
       "hata": 0,
-      "uyari": 2,
-      "skor": 89.12,
+      "uyari": 0,
+      "skor": 94.19,
       "olcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 96.4,
-        "S3_dolgu_yok": 98.3,
+        "S2_havuz_acikligi": 96.6,
+        "S3_dolgu_yok": 100.0,
         "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 0.0,
+        "S5_sekil_kapsamasi": 48.6,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.2,
+        "S7_geri_donusum_yok": 98.3,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": false
