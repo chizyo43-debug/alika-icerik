@@ -132,8 +132,11 @@ KATALOG = {
     "numberline": {"zorunlu": {"min", "max"},
                    "opsiyonel": {"step", "marks", "highlight"}},
     "fraction": {"zorunlu": {"style", "parts"}, "opsiyonel": {"filled"}},
+    # sides: figure_spec 1.2.0. Yalnız polygon ile; düzgün n-gen çizilir.
+    # Kenar sayısı MAT.5.3.5/5.3.6'nın ölçtüğü şeydir ve figürde yanlış
+    # çizilirse çocuk şekli sayıp yanlış cevaba varır.
     "shape": {"zorunlu": {"type"},
-              "opsiyonel": {"dims", "sideLabels", "marks"}},
+              "opsiyonel": {"dims", "sideLabels", "marks", "sides"}},
     "angle": {"zorunlu": {"degrees"}, "opsiyonel": {"rays", "labelKey"}},
     "grid": {"zorunlu": {"cols", "rows"}, "opsiyonel": {"shaded", "labels"}},
     "coordinate": {"zorunlu": {"xRange", "yRange"},
@@ -176,6 +179,30 @@ GECICI_ETIKET_RE = re.compile(r"\.(repaired|temp|fixed|new|old|v\d+)$")
 # Her kind için geçerli ortak figür alanları (shared/figure_spec.json §common).
 FIGUR_ORTAK_ZORUNLU = frozenset({"altTextKey"})
 FIGUR_ORTAK_OPSIYONEL = frozenset({"captionKey"})
+
+# Kural 41: yalnız SAYISAL bir şık geri dönüştürülemez.
+# "7", "2/5", "0,45", "20 cm" bir kazanımda doğru cevap, başkasında çeldirici
+# olabilir; bu kusur değildir. Çeldirici geri dönüşümünün zararı öğrencinin
+# konuyu değil PAKETİ öğrenmesidir: bir sözcük ya da ifade pakette dolaşınca
+# öğrenci "bu şık hep yanlış" diye ezberleyebilir. Çıplak bir sayıda
+# ezberlenecek bir şey yoktur — doğruluğu tamamen sorunun kendisine bağlıdır.
+# Matematikte ödünç çeldiricilerin %76'sı tam olarak budur.
+# Bir ölçünün pakette dolgu olarak dolaşması ayrı bir kusurdur ve onu kural 39
+# yakalar; bu istisna orayı gevşetmez.
+SAYISAL_SIK_RE = re.compile(
+    r"^[%\s]*[\d.,/\s]+\s*"
+    r"(?:cm²|m²|cm|mm|km|m|tl|kg|gr|g|lt|l|derece|°|%|birim kare|birim|"
+    r"saat|dakika|saniye)?\s*[.]?$",
+    re.I,
+)
+
+
+def sik_sayisal_mi(metin: object) -> bool:
+    """Şık yalnız bir sayı (isteğe bağlı birimle) mi?"""
+    s = str(metin or "").strip()
+    return bool(s) and bool(SAYISAL_SIK_RE.fullmatch(s)) and any(
+        ch.isdigit() for ch in s)
+
 
 # 2.2 konu anlatımının dokuz bölümü. Sıra öğretim sırasıdır: ne öğreneceğim →
 # kavramlar → ön bilgiler → adım adım → örnekler → yanılgılar → öz kontrol →
@@ -623,6 +650,12 @@ def figur_kontrol(fig: dict, sema: str = "2.0") -> list:
                     h.append(f"shape: dims alanı tanımsız: {k}")
                 elif not _sayi_mi(v) or v <= 0:
                     h.append(f"shape: dims.{k} > 0 değil")
+        if "sides" in fig:
+            kenar = fig.get("sides")
+            if fig.get("type") != "polygon":
+                h.append("shape: sides yalnız type='polygon' ile kullanılır")
+            elif not isinstance(kenar, int) or not 3 <= kenar <= 12:
+                h.append(f"shape: sides 3-12 aralığında tam sayı değil: {kenar!r}")
     elif kind == "angle":
         d = fig.get("degrees")
         if not _sayi_mi(d) or not 0 < d <= 360:
@@ -1441,7 +1474,9 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             metin_kazanimlari.setdefault(
                 normalize_metin(str(secenekler[dogru])), set()).add(kazanim)
         for i, c in enumerate(secenekler):
-            if i != dogru:
+            # Sayısal şık geri dönüşüm ölçümüne girmez: ezberlenecek bir
+            # anlamı yoktur (bkz. SAYISAL_SIK_RE açıklaması).
+            if i != dogru and not sik_sayisal_mi(c):
                 kazanim_celdiricileri.append((kazanim, normalize_metin(str(c))))
         if obj:
             figurlu, toplam = kazanim_figur.get(obj, (0, 0))

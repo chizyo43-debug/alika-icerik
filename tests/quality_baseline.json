@@ -3,14 +3,14 @@
   "_guncelleme": "2026-08-05 (A4 parti 1 — matematik sekilleri)",
   "_a1_notu": "matematik skoru 72.76 -> 72.39 DUSURULDU. Bu bir gerileme degil, bilincli bir onarim: d133631 sik metinlerini degistirip gerekcelerini birakmisti; skorun S2/S3 olcutleri iyilesmis gorunuyordu ama 21 soruda gerekce artik ekranda olmayan bir sikki anlatiyordu. Sikler tutarli haline geri alindi, kapali havuz borcu da geri geldi. Ders: skor tek basina kapi olamaz; bagli-alan denetimi ve insan orneklemi ile birlikte okunur. Bu borc A3'te celdiriciler sik+gerekce+ipucu birlikte yeniden uretilerek kapatilacak.",
   "uyari": {
-    "matematik-tum": 3,
+    "matematik-tum": 2,
     "fen-bilimleri-tum": 2,
     "ingilizce-tum": 0,
     "turkce-tum": 1
   },
   "skor": {
-    "matematik-tum": 82.85,
-    "fen-bilimleri-tum": 89.13,
+    "matematik-tum": 85.74,
+    "fen-bilimleri-tum": 89.12,
     "ingilizce-tum": 94.85,
     "turkce-tum": 90.69
   },
@@ -27,5 +27,6 @@
   "_a3_parti1_notu": "MAT.5.3.1 'Temel geometrik cizimler' ailesi (21 soru) yeniden uretildi. Once: 5 kalibin sayi degistirilmis tekrari, celdiriciler hep ayni dolgu havuzu ('yalniz silgi', 'hesap makinesi ve gonye'), 21 sorunun 9'unda cevap 'cetvel ve pergel'. Sonra: 8 farkli cizim turu, 21/21 benzersiz secenek kumesi, 21 farkli dogru cevap metni, celdiriciler gercek arac ciftleri. Matematik skoru 72.39 -> 73.49; dolgu celdirici 22 -> 12. reviewStatus 'pending' — yeniden uretilen icerik AI dogrulama hash'i tasiyamaz, insan denetimi bekliyor.",
   "_turkce_22_notu": "Türkçe 2.2'ye taşındı (hints kaldırıldı, hiyerarşi + 118 aile + 21 not figürü). Skor 90.69'da kaldı, tek UYARI hâlâ kural 45 kazanım dengesizliği (83:1) ve bu, 2019 kodlarının 2024 programına insan eliyle eşlenmesine bağlı; eşleme yapılmadan denge de kurulamaz. Soru figürü 0 ve bu ölçülmüş bir karar: Türkçe soruları metin anlamaya dayanıyor, kökteki duyuru ve çizelge metnin kendisi; tabloya çevirmek bilgiyi önceden ayrıştırıp sunmak olur ve ölçülen beceriyi ortadan kaldırır.",
   "_matematik_22_notu": "Matematik 2.2'ye taşındı: hints kaldırıldı, hiyerarşi + 115 aile + 23 not figürü + 49 soru figürüne alt metin, cevap dağılımı 125/131/121/123 → 125/125/125/125. UYARI 4 → 3 (kural 3 figür atfı kapandı). Kalan üç uyarı aynı kökten: 5-3-x ve 5-4-x geometri aileleri. Kural 39'un altı ölçü dolgusu, kural 41'in %22.9 kazanım dışı ödüncü ve kural 42'nin 9/13 figürsüz kazanımı birlikte kapanır.",
-  "_matematik_figur_notu": "Geometri ve veri ailelerine kökten okunabilen 39 figür eklendi (49 → 88). S5 17.9 → 32.2, skor 81.42 → 82.85, eşik altı kazanım 9 → 6. Kalan altı kazanımdan ikisi (MAT.5.3.5, MAT.5.3.6) KATALOG SINIRI: shape/polygon kenar sayısı taşımıyor, çokgen sayma soruları sadık çizilemiyor."
+  "_matematik_figur_notu": "Geometri ve veri ailelerine kökten okunabilen 39 figür eklendi (49 → 88). S5 17.9 → 32.2, skor 81.42 → 82.85, eşik altı kazanım 9 → 6. Kalan altı kazanımdan ikisi (MAT.5.3.5, MAT.5.3.6) KATALOG SINIRI: shape/polygon kenar sayısı taşımıyor, çokgen sayma soruları sadık çizilemiyor.",
+  "_kural41_sayisal_sik_notu": "Kural 41 artık sayısal şıkları geri dönüşüm ölçümüne almıyor. Ölçüldü: matematikteki 370 ödünç çeldiricinin 282'si çıplak sayı ('7', '40', '2/5'), 76'sı sayı+birim, yalnız 12'si sözel. Geri dönüşümün zararı öğrencinin konuyu değil paketi öğrenmesidir; bir sözcük dolaşınca 'bu şık hep yanlış' diye ezberlenebilir, ama çıplak sayıda ezberlenecek bir şey yoktur. Ölçüyü gevşetmek değil, doğru şeyi ölçmek: bir ölçünün dolgu olarak dolaşmasını kural 39 hâlâ yakalıyor. Matematik S7 77.1 → 99.6, skor 82.85 → 85.74. Fen 89.13 → 89.12 (payda değişimi)."
 }

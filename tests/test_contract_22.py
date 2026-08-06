@@ -432,3 +432,42 @@ def test_turkce_notlari_dokuz_bolumlu():
         assert not eksik, f"{n['id']}: eksik bölüm {eksik}"
         assert len(govde["workedExamples"]) >= 2, n["id"]
         assert len(govde["selfCheck"]) >= 3, n["id"]
+
+
+# ---- kural 41: sayısal şık geri dönüştürülemez ----
+
+def test_sayisal_sik_geri_donusum_sayilmaz():
+    """Çıplak bir sayının 'ödünç çeldirici' sayılması ölçüm hatasıdır.
+
+    Geri dönüşümün zararı öğrencinin konuyu değil paketi öğrenmesidir: bir
+    sözcük pakette dolaşınca 'bu şık hep yanlış' diye ezberlenebilir. Çıplak
+    bir sayıda ezberlenecek bir şey yoktur; doğruluğu tamamen sorunun
+    kendisine bağlıdır.
+    """
+    for sik in ("7", "40", "2/5", "0,45", "20 cm", "36 cm²", "%30", "12 TL"):
+        assert pack_validate.sik_sayisal_mi(sik), sik
+    for sik in ("Yedigen", "Dar açı", "7 kenarı vardır", "a rubber",
+                "İkisi de eşittir"):
+        assert not pack_validate.sik_sayisal_mi(sik), sik
+
+
+def test_polygon_sides_katalogda(tmp_path):
+    """figure_spec 1.2.0: shape/polygon kenar sayısı taşır."""
+    k = temiz_paket()
+    k[1]["figure"] = {"kind": "shape", "type": "polygon", "sides": 7,
+                      "altTextKey": "tr.g05.tur.ana-fikir.n001.visual.a1"}
+    assert 4 not in kosu(tmp_path, k)
+
+
+def test_polygon_disinda_sides_hata(tmp_path):
+    k = temiz_paket()
+    k[1]["figure"] = {"kind": "shape", "type": "rect", "sides": 7,
+                      "altTextKey": "tr.g05.tur.ana-fikir.n001.visual.a1"}
+    assert 4 in kosu(tmp_path, k)
+
+
+def test_sides_araligi_disinda_hata(tmp_path):
+    k = temiz_paket()
+    k[1]["figure"] = {"kind": "shape", "type": "polygon", "sides": 2,
+                      "altTextKey": "tr.g05.tur.ana-fikir.n001.visual.a1"}
+    assert 4 in kosu(tmp_path, k)
