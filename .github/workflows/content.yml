@@ -1,0 +1,48 @@
+name: içerik kalite kapısı
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  kalite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # check_paired_edit.py taban revizyonu ile karşılaştırma yapar.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: pytest
+        run: |
+          python -m pip install --quiet pytest
+          python -m pytest tests/ -q
+
+      - name: doğrulayıcı (her paket)
+        run: |
+          for f in turkiye/*/*/*.jsonl; do
+            echo "== $f"
+            python tools/pack_validate.py "$f"
+          done
+
+      - name: kalite skoru
+        run: |
+          python tools/pack_validate.py --skor turkiye \
+            --json reports/quality_score.json || true
+          cat reports/quality_score.json
+
+      # Bağlı alanların birlikte düzenlenmesi. Bir sorunun şıkları değişip
+      # gerekçesi olduğu gibi kalırsa gerekçe artık ekranda olmayan bir şıkkı
+      # anlatır; bu kapı o değişikliği birleştirmeden önce durdurur.
+      - name: bağlı-alan denetimi
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch --no-tags --depth=1 origin \
+            "${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}"
+          python tools/check_paired_edit.py \
+            --base "origin/${{ github.base_ref }}"

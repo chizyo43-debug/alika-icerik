@@ -1,0 +1,28 @@
+{
+  "_aciklama": "Dersler arasi paket sozlesmesi. Kural 46 bu dosyaya gore denetler; Question Contract 2.2'nin kanonik semasi AliKa uygulama deposundaki shared/question-2.2.schema.json dosyasidir.",
+  "surum": "1.1.0",
+  "questionContract": {
+    "version": "2.2",
+    "sha256": "74b5ee649f01933fd50dfeb7e29706e7dc1ddf0fe3e014ead2fe5cd0896ae7a1",
+    "noteBody": "Uygulamada gosterilecek UTF-8 metin body alaninda, dokuz pedagojik bolum lessonSections nesnesinde tutulur.",
+    "noteIdentity": "Note kaydinda id=noteId=noteKey; soru kaydinda noteId=noteKey zorunludur."
+  },
+  "levelScale": {
+    "min": 1,
+    "max": 5,
+    "not": "Icerik olcegi 1-5'tir. Bir ders daha dar bir alt kume kullanabilir; bunu pack satirinda 'levelScale': [min, max] ile BILDIRMEK zorundadir. Bildirilmeyen paket 1-5 kabul edilir ve disina cikamaz."
+  },
+  "curriculum": {
+    "izinli": ["MEB-TYMM-2024", "MEB-TYMM-2025"],
+    "not": "Kazanim kodlari, bildirilen program surumunun kodlari olmalidir. Turkce T.O.5.5., T.O.5.6. ve T.Y.5.21. kodlari MEB TYMM 2024 programindan gelir; bilinmeyen kod uydurulmaz."
+  },
+  "notKazanimAlani": {
+    "ad": "objectives",
+    "tip": "dizi",
+    "not": "Fen paketi tekil 'objective' kullaniyordu; A2'de diziye cevrildi."
+  },
+  "objectiveSource": {
+    "belgeOlmali": true,
+    "not": "Gezinilebilir acilis sayfasi degil, program PDF'i veya sayfa/bolum capasi. Kural 43."
+  }
+}

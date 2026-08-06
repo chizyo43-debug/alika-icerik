@@ -40,7 +40,7 @@ FIGUR_ATIF_RE = {
     "tr": (
         re.compile(
             r"\b(?:yukarıdaki|aşağıdaki)\s+"
-            r"(?:şekilde|grafikte|tabloda|görselde|diyagramda)\b",
+            r"(?:şekilde|grafikte|tabloda|görselde|diyagramda|şemada)\b",
             re.I,
         ),
         re.compile(
@@ -48,8 +48,13 @@ FIGUR_ATIF_RE = {
             r"(?:şekle|grafiğe|tabloya|görsele|diyagrama)\s+göre\b",
             re.I,
         ),
+        # "şema" yalnız GÖSTERİLENE açıkça işaret eden kalıplarda sayılır.
+        # "bu şemaya göre" güvenilir değildir: fen sorularında şema çoğu kez
+        # senaryonun içindeki bir nesnedir ("öğrenci bir devre şeması çizer,
+        # bu şemaya göre deney kurar") ve okura gösterilen bir figür değildir.
+        re.compile(r"\b(?:yukarıdaki|aşağıdaki)\s+şemaya\s+göre\b", re.I),
         re.compile(
-            r"\b(?:şekli|grafiği|tabloyu|görseli|diyagramı)\s+"
+            r"\b(?:şekli|grafiği|tabloyu|görseli|diyagramı|şemayı)\s+"
             r"(?:incele(?:yin|yiniz)?|kullan(?:ın|ınız)?|yorumla(?:yın|yınız)?)\b",
             re.I,
         ),
@@ -78,6 +83,28 @@ BARIZ_DIL_DOLGUSU = {
     "it are", "there am", "there be", "they is",
     "got has", "got have", "is got", "are go to",
 }
+
+# Kural 19/36: gerekçe ile şık arasındaki anlam bağı aranırken yok sayılan,
+# her cümlede geçen sözcükler. Bunlar "gerekçe şıkkı anıyor" kanıtı sayılmaz.
+DURAK_SOZCUK = {
+    "seçenek", "seçeneği", "seçeneğinde", "şıkkı", "şıkta", "cevap", "cevabı",
+    "yanlış", "yanlıştır", "doğru", "doğrudur", "değil", "değildir", "olduğu",
+    "olduğundan", "için", "ancak", "fakat", "çünkü", "bunu", "bunun", "gibi",
+    "daha", "göre", "yerine", "birlikte", "üzerinde", "arasında", "sorunun",
+    "soruda", "sorusunda", "kökündeki", "metinde", "metnin", "ifade", "ifadesi",
+    "option", "answer", "wrong", "correct", "because", "this", "that",
+}
+
+# Kural 18: ilk dört ipucu cevabı DUYURAMAZ. Doğru şıkkın metnini birebir
+# içermese de "doğru cevap …dır" biçiminde parafrazla söylemek de sızıntıdır;
+# öğrenci ipucu merdivenini tırmanmadan sonuca ulaşır.
+# Not: yalın "doğrudur" ARANMAZ. Türkçede yön bildiren "gazdan sıvıya doğrudur"
+# ile doğruluk bildiren "doğrudur" aynı yazılır; yalın biçimi aramak fen
+# paketinde hâl değişimi sorularını yanlışlıkla yakalıyordu.
+CEVAP_DUYURU_RE = re.compile(
+    r"doğru\s+(?:cevap|seçenek|yanıt)|tam\s+çözüm|(?:cevap|yanıt)\s*[:=]",
+    re.I,
+)
 
 # Kural 10: LaTeX izleri
 LATEX_RE = re.compile(r"\$|\\frac|\\sqrt|\\begin")
@@ -115,9 +142,73 @@ KATALOG = {
               "opsiyonel": {"axisKeys"}},
     "table": {"zorunlu": {"headerKeys", "rows"}, "opsiyonel": {"highlight"}},
     "flow": {"zorunlu": {"nodes", "edges"}, "opsiyonel": {"direction"}},
-    "circuit": {"zorunlu": {"elements"}, "opsiyonel": {"layout"}},
+    "circuit": {"zorunlu": {"elements"},
+                "opsiyonel": {"layout", "labelKeys"}},
 }
 CIRCUIT_ELEM = {"battery", "lamp", "switch", "resistor", "wire"}
+
+# Kural 42: görsel temsil olmadan öğretilemeyen kazanım alanları.
+# MAT.5.3 geometri/çizim · MAT.5.4 alan-çevre · MAT.5.5 veri · MAT.5.6 olasılık
+# FB.5.2 kuvvet-hareket · FB.5.3 canlı yapısı · FB.5.5 madde · FB.5.6 ışık/devre
+FIGUR_ZORUNLU_KAZANIM_ONEKLERI = (
+    "MAT.5.3", "MAT.5.4", "MAT.5.5",
+    "FB.5.2", "FB.5.3", "FB.5.5", "FB.5.6",
+)
+
+# ---- Question Contract 2.2 ----
+# 2.0 paketleri olduğu gibi çalışmaya devam eder: sürüm başına kural kümesi
+# ayrılır ki tek dosyada iki sözleşme yan yana yaşayabilsin. 2.1 hiçbir zaman
+# onaylanmadı (görsel pilotta tek taraflı açılmıştı) ve desteklenmez.
+SEMA_22 = "2.2"
+SEMA_DESTEKLENEN = frozenset({"2.0", SEMA_22})
+
+# 2.2 hiyerarşisi: Sınıf → Ders → Ünite/Tema → Üst konu → Alt konu → Not → Soru.
+# Halka atlanamaz; eksik halka, sorunun hangi kavramı ölçtüğünü kaybettirir.
+HIYERARSI_ANAHTARLARI = ("unitKey", "topicKey", "subtopicKey", "noteKey")
+
+# Anahtar makine kimliğidir: ASCII slug. Türkçe karakter ve büyük harf yasak —
+# görünen metin labels sözlüğünden gelir, anahtardan değil.
+ANAHTAR_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
+
+# Kalıcı veriye bir iş turunun adını yazmak yasak: '.repaired' bir sonraki
+# onarımda ne anlama geldiğini kaybeder ve yetim anahtar bırakır.
+GECICI_ETIKET_RE = re.compile(r"\.(repaired|temp|fixed|new|old|v\d+)$")
+
+# Her kind için geçerli ortak figür alanları (shared/figure_spec.json §common).
+FIGUR_ORTAK_ZORUNLU = frozenset({"altTextKey"})
+FIGUR_ORTAK_OPSIYONEL = frozenset({"captionKey"})
+
+# Kural 41: yalnız SAYISAL bir şık geri dönüştürülemez.
+# "7", "2/5", "0,45", "20 cm" bir kazanımda doğru cevap, başkasında çeldirici
+# olabilir; bu kusur değildir. Çeldirici geri dönüşümünün zararı öğrencinin
+# konuyu değil PAKETİ öğrenmesidir: bir sözcük ya da ifade pakette dolaşınca
+# öğrenci "bu şık hep yanlış" diye ezberleyebilir. Çıplak bir sayıda
+# ezberlenecek bir şey yoktur — doğruluğu tamamen sorunun kendisine bağlıdır.
+# Matematikte ödünç çeldiricilerin %76'sı tam olarak budur.
+# Bir ölçünün pakette dolgu olarak dolaşması ayrı bir kusurdur ve onu kural 39
+# yakalar; bu istisna orayı gevşetmez.
+SAYISAL_SIK_RE = re.compile(
+    r"^[%\s]*[\d.,/\s]+\s*"
+    r"(?:cm²|m²|cm|mm|km|m|tl|kg|gr|g|lt|l|derece|°|%|birim kare|birim|"
+    r"saat|dakika|saniye)?\s*[.]?$",
+    re.I,
+)
+
+
+def sik_sayisal_mi(metin: object) -> bool:
+    """Şık yalnız bir sayı (isteğe bağlı birimle) mi?"""
+    s = str(metin or "").strip()
+    return bool(s) and bool(SAYISAL_SIK_RE.fullmatch(s)) and any(
+        ch.isdigit() for ch in s)
+
+
+# 2.2 konu anlatımının dokuz bölümü. Sıra öğretim sırasıdır: ne öğreneceğim →
+# kavramlar → ön bilgiler → adım adım → örnekler → yanılgılar → öz kontrol →
+# özet → görsel yönergesi.
+NOT_BOLUMLERI = (
+    "whatIWillLearn", "keyConcepts", "priorKnowledge", "steps",
+    "workedExamples", "commonMistakes", "selfCheck", "summary", "figureNote",
+)
 
 
 # ---------------------------------------------------------------- yardımcılar
@@ -191,45 +282,105 @@ def distraktor_gerekcesi_jenerik(w: object, secenek: object) -> bool:
     return len(metin_norm) < 12
 
 
-def distraktor_gerekcesi_sablon(w: object) -> bool:
-    """Uzun görünmesine karşın öğrencinin hatasını adlandırmayan kalıpları bulur."""
-    sade = " ".join(
-        unicodedata.normalize("NFKC", str(w or "")).casefold().split()
-    )
-    genel_kaliplar = (
-        "kişi, yer, zaman, eylem veya dil bilgisi ilişkilerinden en az birini karşılamaz",
-        "kökün istediği kişi, yer, zaman, eylem veya dil bilgisi",
-    )
-    if any(kalip in sade for kalip in genel_kaliplar):
-        return True
-    return (
-        "kökündeki" in sade
-        and "ipuçları bu seçeneği desteklemez" in sade
-        and "yanlıştır" in sade
-    )
+def icerik_sozcukleri(metin: object) -> set:
+    """Metnin ayırt edici sözcükleri: 3 harften uzun, durak sözcük olmayan."""
+    sade = unicodedata.normalize("NFKC", str(metin or "")).casefold()
+    return {
+        s for s in re.findall(r"[^\W_]+", sade, flags=re.UNICODE)
+        if len(s) > 3 and s not in DURAK_SOZCUK
+    }
 
 
-def zorluk_gerekcesi_sablon(w: object) -> bool:
-    """Şema §4 ölçütleri yerine soru kökünü yapıştıran gerekçeleri bulur."""
-    sade = " ".join(
-        unicodedata.normalize("NFKC", str(w or "")).casefold().split()
-    )
-    yasak = (
-        "yalnız tema sözcüğünü tanımak yeterli değildir",
-        "kökten kopyalanan",
-    )
-    return any(kalip in sade for kalip in yasak)
+def gerekce_yabanci_sik_anlatiyor(w: object, secenek: object,
+                                  soru_sozcukleri: set,
+                                  havuz_sozcukleri: set) -> set:
+    """Gerekçe, bu soruda bulunmayan bir şıkkın sözcüklerini anlatıyorsa döner.
+
+    Şık metni değiştirilip gerekçesi güncellenmediğinde ortaya çıkan hatayı
+    yakalar: şık ``şablon`` olurken gerekçe ``Açıölçer açı ölçer…`` kalmıştır.
+    ``açıölçer`` pakette başka soruların şık sözlüğünde vardır ama bu sorunun
+    ne kökünde ne şıklarında geçer — güçlü ve dar bir imzadır.
+
+    Parafraz yapan meşru gerekçeleri elemek için üç koşul birlikte aranır:
+    gerekçe kendi şıkkına hiç değinmiyor, şıkkın ayırt edici sözcüğü var
+    (yani değinmediğini söyleyebiliyoruz) ve yabancı sözcük paketin şık
+    sözlüğünden geliyor.
+    """
+    gerekce_sozcukler = icerik_sozcukleri(w)
+    kendi = icerik_sozcukleri(secenek)
+    if not gerekce_sozcukler or not kendi:
+        return set()
+    if kendi & gerekce_sozcukler:
+        return set()  # kendi şıkkını anıyor
+    return gerekce_sozcukler & havuz_sozcukleri - soru_sozcukleri
 
 
-def figur_atfi_var(metin: str, dil: str, tip: str = "question") -> bool:
-    """Metnin paket dışındaki bir görsele açıkça bağlı olup olmadığını söyler."""
+def iskelet_imzasi(metin: object, kok: object = "") -> str:
+    """Tırnaklı alanları, sayıları ve kökten kopyalanan sözcükleri maskeler.
+
+    Geriye kalan dizge gerekçenin "iskeleti"dir; aynı iskeletin pakette
+    yığılması, uzunluğuna bakılmaksızın şablon üretimin işaretidir.
+    """
+    sade = unicodedata.normalize("NFKC", str(metin or "")).casefold()
+    sade = re.sub(r"[“\"'«»][^“\"'«»]*[”\"'«»]", " <X> ", sade)
+    sade = re.sub(r"\d+(?:[.,/]\d+)*", "#", sade)
+    kok_sozcukler = icerik_sozcukleri(kok)
+    if kok_sozcukler:
+        sade = " ".join(
+            "<K>" if s in kok_sozcukler else s
+            for s in re.split(r"(\W+)", sade)
+        )
+    return " ".join(sade.split())
+
+
+def sozlesmeyi_yukle(paket_yolu) -> dict:
+    """pack_contract.json'u paketin bulunduğu depo kökünden arar.
+
+    Bulunamazsa boş sözlük döner ve kural 46 sessizce atlanır; doğrulayıcı
+    sözleşme dosyası olmayan tek başına bir paket için de çalışabilmelidir.
+    """
+    for dizin in [Path(paket_yolu).resolve()] + list(
+            Path(paket_yolu).resolve().parents):
+        aday = dizin / "pack_contract.json"
+        if aday.is_file():
+            try:
+                return json.loads(aday.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                return {}
+    return {}
+
+
+def figur_zorunlu_kazanim(objective: object) -> bool:
+    """Görsel temsil olmadan öğretilemeyen kazanım kodlarını tanır.
+
+    Liste bilinçli olarak dardır: yalnız geometri/ölçme, veri-grafik ve fen'in
+    yapı/devre/ışık öğrenme alanları. Genişletmek insan yargısı gerektirir.
+    """
+    kod = str(objective or "").upper()
+    return kod.startswith(FIGUR_ZORUNLU_KAZANIM_ONEKLERI)
+
+
+def figur_atfi_var(metin: str, dil: str, tip: str = "question",
+                   satirici_kacis: bool = True) -> bool:
+    """Metnin paket dışındaki bir görsele açıkça bağlı olup olmadığını söyler.
+
+    ``satirici_kacis`` iki farklı sorunun aynı işlevle sorulmasını ayırır:
+
+    * Kural 2 "figür eksik mi?" — satır içi tablo gömülüyse figür gerekmez,
+      kaçış açıktır.
+    * Kural 3 "dolu figür anılmış mı?" — burada kaçış KAPALI olmalıdır. Aksi
+      hâlde gövdesinde tablo bulunan bir konu anlatımı, figürüne açıkça atıf
+      yapsa bile "metin ondan bahsetmiyor" uyarısı alır; kaçış geçerli atfı
+      bastırır ve yazarı atfı düzeltmek yerine silmeye iter.
+    """
     if not isinstance(metin, str) or not metin.strip():
         return False
     kucuk = metin.casefold()
     # Tablo/listenin hücreleri soru metnine erişilebilir düz metin olarak
     # gömülmüşse figure eksik değildir.
     satirici_tablo = (
-        "tablo" in kucuk
+        satirici_kacis
+        and "tablo" in kucuk
         and (
             "\n" in metin
             or "\t" in metin
@@ -355,6 +506,10 @@ def ifade_degerlendir(ifade: str):
     s = ifade.replace("×", "*").replace("÷", "/").replace("−", "-")
     s = re.sub(r"([0-9)])([" + USTSIMGE + r"]+)",
                lambda m: m.group(1) + "**" + m.group(2).translate(UST2NORM), s)
+    # Türkçe yazımda "." binlik ayracı, "," ondalık ayracıdır. Binlik noktaları
+    # ÖNCE atılır: sonra atılırsa ondalık virgülden dönüşen nokta ("1,234" →
+    # "1.234") üç basamaklı bir binlik grubuna benzer ve yanlışlıkla silinir.
+    s = re.sub(r"(?<=\d)\.(?=\d{3}(?!\d))", "", s)
     s = re.sub(r"(\d),(\d)", r"\1.\2", s)  # ondalık virgül
     tokenlar = re.findall(r"\d+\.\d+|\d+|\*\*|[+\-*/()]", s)
     if "".join(tokenlar) != re.sub(r"\s+", "", s):
@@ -430,15 +585,25 @@ def ifade_degerlendir(ifade: str):
 
 # --- şekil kataloğu denetimi (kural 4) --------------------------------------
 
-def figur_kontrol(fig: dict) -> list:
-    """Şerit A figürünü katalog kısıtlarına göre denetler; hata listesi döner."""
+def figur_kontrol(fig: dict, sema: str = "2.0") -> list:
+    """Şerit A figürünü katalog kısıtlarına göre denetler; hata listesi döner.
+
+    ``altTextKey`` / ``captionKey`` her kind için geçerli ortak alanlardır ve
+    kind başına tekrarlanmaz; tekrarlanan tanım birinde güncellenip diğerinde
+    unutulur. 2.2'de alt metin ZORUNLUDUR: alt metni olmayan bir figür, ekran
+    okuyucu kullanan çocuk için var olmayan figürdür.
+    """
     h = []
     kind = fig.get("kind")
     if kind not in KATALOG:
         return [f"bilinmeyen kind: {kind!r}"]
     spec = KATALOG[kind]
-    izinli = spec["zorunlu"] | spec["opsiyonel"] | {"kind", "notToScale"}
-    for alan in spec["zorunlu"]:
+    izinli = (spec["zorunlu"] | spec["opsiyonel"] | {"kind", "notToScale"}
+              | FIGUR_ORTAK_ZORUNLU | FIGUR_ORTAK_OPSIYONEL)
+    zorunlu = set(spec["zorunlu"])
+    if sema == SEMA_22:
+        zorunlu |= set(FIGUR_ORTAK_ZORUNLU)
+    for alan in zorunlu:
         if alan not in fig:
             h.append(f"{kind}: zorunlu alan eksik: {alan}")
     for alan in fig:
@@ -483,6 +648,12 @@ def figur_kontrol(fig: dict) -> list:
                     h.append(f"shape: dims alanı tanımsız: {k}")
                 elif not _sayi_mi(v) or v <= 0:
                     h.append(f"shape: dims.{k} > 0 değil")
+        if "sides" in fig:
+            kenar = fig.get("sides")
+            if fig.get("type") != "polygon":
+                h.append("shape: sides yalnız type='polygon' ile kullanılır")
+            elif not isinstance(kenar, int) or not 3 <= kenar <= 12:
+                h.append(f"shape: sides 3-12 aralığında tam sayı değil: {kenar!r}")
     elif kind == "angle":
         d = fig.get("degrees")
         if not _sayi_mi(d) or not 0 < d <= 360:
@@ -560,6 +731,16 @@ def figur_kontrol(fig: dict) -> list:
                     h.append(f"circuit: eleman beyaz liste dışı: {e!r}")
         if "layout" in fig and fig["layout"] not in ("series", "parallel"):
             h.append("circuit: layout ∈ series|parallel değil")
+        etiketler = fig.get("labelKeys")
+        if not isinstance(etiketler, dict):
+            h.append("circuit: labelKeys sözlük olmalı")
+        else:
+            gereken = set(elemanlar or [])
+            if fig.get("layout"):
+                gereken.add(fig["layout"])
+            eksik = gereken - set(etiketler)
+            if eksik:
+                h.append(f"circuit: labelKeys eksik: {sorted(eksik)}")
     return h
 
 
@@ -572,7 +753,7 @@ def figur_i18n_anahtarlari(fig) -> set:
             for k, alt in v.items():
                 if k == "key" and isinstance(alt, str):
                     anahtarlar.add(alt)
-                elif k in ("labels", "sideLabels", "axisKeys") and isinstance(alt, dict):
+                elif k in ("labels", "sideLabels", "axisKeys", "labelKeys") and isinstance(alt, dict):
                     for x in alt.values():
                         if isinstance(x, str):
                             anahtarlar.add(x)
@@ -678,6 +859,221 @@ def svg_kontrol(svg: str, labels: dict, ekle, kullanilan: set):
 
 # --- metin toplayıcılar -------------------------------------------------------
 
+def kural_22(kayitlar, paket, labels, kullanilan, ekle, olcum) -> None:
+    """Question Contract 2.2 kuralları (47-57).
+
+    Şema (shared/question-2.2.schema.json) kayıt biçimini denetler; buradaki
+    kurallar şemanın YAPAMADIĞI şeyleri ölçer: iki alanın birbiriyle
+    tutarlılığı, paket geneli sayımlar ve bildirilen hedefle ölçülen değerin
+    karşılaştırılması. Şemayı tekrarlamazlar.
+    """
+    sorular = [(s, k) for s, k in kayitlar if k.get("type") == "question"]
+    notlar = {k.get("noteId") or k.get("id"): k
+              for _, k in kayitlar if k.get("type") == "note"}
+    politika = (paket or {}).get("contractPolicy") or {}
+
+    # kural 56 — hints alanı bulunmamalı.
+    # Boş dizi de ihlaldir: boş dizi "bu alan var, doldurulmayı bekliyor" der.
+    for satir_no, k in kayitlar:
+        if "hints" in k:
+            ekle("HATA", 56, satir_no,
+                 f"2.2'de hints alanı yoktur (tür={type(k['hints']).__name__})")
+
+    # kural 47 — hiyerarşi halkaları. Sınıf → Ders → Ünite → Üst konu →
+    # Alt konu → Not zincirinde atlanan halka, sorunun hangi kavramı ölçtüğünü
+    # kaybettirir. unit/topic/subtopic ASCII slug, noteKey ise AliKa'nın
+    # açtığı tam not kimliğidir.
+    for satir_no, k in kayitlar:
+        if k.get("type") not in ("question", "note"):
+            continue
+        for alan in HIYERARSI_ANAHTARLARI:
+            deger = k.get(alan)
+            if not deger:
+                ekle("HATA", 47, satir_no, f"hiyerarşi halkası eksik: {alan}")
+            elif alan == "noteKey" and not ID_KARAKTER_RE.fullmatch(str(deger)):
+                ekle("HATA", 47, satir_no,
+                     f"noteKey geçerli kayıt kimliği değil: {deger!r}")
+            elif alan != "noteKey" and not ANAHTAR_RE.fullmatch(str(deger)):
+                ekle("HATA", 47, satir_no,
+                     f"{alan} kararlı slug değil: {deger!r} "
+                     "(yalnız ASCII küçük harf, rakam, tek tire)")
+
+    # kural 48 — noteKey uygulamanın açacağı notun kararlı kimliğidir.
+    # AliKa 2.2'de ayrı bir slug değildir: notta id/noteId/noteKey, soruda ise
+    # noteId/noteKey aynı değeri taşır. Aksi durumda uygulama yanlış ekranda
+    # doğru notu bulamaz.
+    for satir_no, k in kayitlar:
+        if k.get("type") != "note":
+            continue
+        nid = k.get("noteId") or k.get("id")
+        if k.get("id") != nid or k.get("noteKey") != nid:
+            ekle("HATA", 48, satir_no,
+                 "not id/noteId/noteKey değerleri aynı olmalı")
+    for satir_no, k in sorular:
+        nid = k.get("noteId")
+        nkey = k.get("noteKey")
+        hedef = notlar.get(nid)
+        if hedef is None:
+            ekle("HATA", 48, satir_no, f"noteId hiçbir nota karşılık gelmiyor: {nid!r}")
+        elif nkey != nid:
+            ekle("HATA", 48, satir_no,
+                 f"soru noteKey ile noteId aynı değil: {nkey!r} != {nid!r}")
+        elif hedef.get("noteKey") != nid:
+            ekle("HATA", 48, satir_no,
+                 f"bağlı notun noteKey değeri noteId ile aynı değil: {nid!r}")
+
+    # kural 49 — soru ailesi ve aile tavanı.
+    aileler: dict = {}
+    for satir_no, k in sorular:
+        fid = k.get("familyId")
+        if not fid:
+            ekle("HATA", 49, satir_no, "familyId yok")
+        else:
+            aileler.setdefault(str(fid), []).append(satir_no)
+    tavan = politika.get("maxPerFamily")
+    if tavan:
+        for fid, satirlar in sorted(aileler.items()):
+            if len(satirlar) > tavan:
+                ekle("HATA", 49, satirlar[0],
+                     f"aile tavanı aşıldı: {fid!r} {len(satirlar)} soru (tavan {tavan})")
+
+    # kural 50 — en az N gerçek aile. Az aile, kökü isim/sayı değiştirerek
+    # çoğaltmanın işaretidir.
+    asgari_aile = politika.get("minFamilies")
+    if asgari_aile and aileler and len(aileler) < asgari_aile:
+        ekle("HATA", 50, 0,
+             f"soru ailesi sayısı yetersiz: {len(aileler)} (asgari {asgari_aile})")
+    if aileler:
+        ekle("RAPOR", 50, 0,
+             f"soru ailesi: {len(aileler)}, en kalabalık aile "
+             f"{max(len(v) for v in aileler.values())} soru")
+
+    # kural 51 — geçici etiket adı. '.repaired' kalıcı veriye bir iş turunun
+    # adını yazmaktır ve bir sonraki onarımda anlamını kaybeder.
+    for a in sorted(labels):
+        if GECICI_ETIKET_RE.search(a):
+            ekle("HATA", 51, 0, f"labels anahtarında geçici sonek: {a!r}")
+
+    # kural 52 — bildirilen cevap dağılımı ile ölçülen dağılım.
+    hedef_dagilim = politika.get("answerBalance")
+    if hedef_dagilim and sorular:
+        olculen = [0, 0, 0, 0]
+        for _, k in sorular:
+            d = k.get("correct")
+            if isinstance(d, int) and 0 <= d < 4:
+                olculen[d] += 1
+        if olculen != list(hedef_dagilim):
+            ekle("HATA", 52, 0,
+                 f"doğru cevap dağılımı bildirileni tutmuyor: "
+                 f"ölçülen {olculen}, bildirilen {list(hedef_dagilim)}")
+
+    # kural 53 — asgari görselli soru sayısı ve her notta görsel.
+    figurlu = sum(1 for _, k in sorular if k.get("figure"))
+    asgari_figur = politika.get("minFiguredQuestions")
+    if asgari_figur and figurlu < asgari_figur:
+        ekle("HATA", 53, 0,
+             f"görselli soru sayısı yetersiz: {figurlu} (asgari {asgari_figur})")
+    if politika.get("everyNoteHasFigure"):
+        for satir_no, k in kayitlar:
+            if k.get("type") == "note" and not (k.get("figure") or k.get("svg")):
+                ekle("HATA", 53, satir_no, "notta görsel yok")
+    if sorular:
+        ekle("RAPOR", 53, 0,
+             f"görselli soru: {figurlu}/{len(sorular)} "
+             f"(%{100 * figurlu / len(sorular):.1f})")
+
+    # kural 54 — damga bütünlüğü.
+    # Şema alanların varlığını denetler ama iki alanı KARŞILAŞTIRAMAZ: bayat
+    # damga (içerik değişmiş, inceleme hash'i eski) ancak burada yakalanır.
+    for satir_no, k in kayitlar:
+        if k.get("type") not in ("question", "note"):
+            continue
+        durum = k.get("reviewStatus")
+        if durum == "ai-verified":
+            ich, inch = k.get("contentHash"), k.get("reviewedHash")
+            if not inch or not ich:
+                ekle("HATA", 54, satir_no,
+                     "ai-verified ama contentHash/reviewedHash eksik")
+            elif ich != inch:
+                ekle("HATA", 54, satir_no,
+                     "damga bayat: içerik hash'i inceleme hash'inden farklı")
+            uretici = str(k.get("provenance") or "")
+            inceleyen = str(k.get("reviewedBy") or "")
+            if inceleyen and inceleyen in uretici:
+                ekle("HATA", 54, satir_no,
+                     f"üretici kendi çıktısını incelemiş: {inceleyen!r}")
+        if k.get("humanReviewed") and durum != "human-verified":
+            ekle("HATA", 54, satir_no,
+                 "humanReviewed true ama reviewStatus human-verified değil")
+
+    # kural 57 — konu anlatımının dokuz bölümü.
+    # ``body`` uygulamanın doğrudan gösterebildiği UTF-8 metindir;
+    # ``lessonSections`` ise üretim/denetim için yapılandırılmış kaynaktır.
+    # İkisi bir arada tutulur: uygulama ham JSON göstermez, denetleyici de
+    # pedagojik bölümleri kaybetmez.
+    for satir_no, k in kayitlar:
+        if k.get("type") != "note":
+            continue
+        govde = k.get("body")
+        if not isinstance(govde, str) or not govde.strip():
+            ekle("HATA", 57, satir_no,
+                 "2.2'de body uygulamada gösterilecek dolu metin olmalı")
+        bolumler = k.get("lessonSections")
+        if not isinstance(bolumler, dict):
+            ekle("HATA", 57, satir_no,
+                 "2.2'de lessonSections dokuz bölümlü nesne olmalı")
+            continue
+        for bolum in NOT_BOLUMLERI:
+            deger = bolumler.get(bolum)
+            if not deger:
+                ekle("HATA", 57, satir_no, f"konu anlatımı bölümü eksik: {bolum}")
+        ornekler = bolumler.get("workedExamples")
+        if isinstance(ornekler, list) and len(ornekler) < 2:
+            ekle("HATA", 57, satir_no,
+                 f"en az iki çözümlü örnek gerekir (var: {len(ornekler)})")
+        oz = bolumler.get("selfCheck")
+        if isinstance(oz, list) and len(oz) < 3:
+            ekle("HATA", 57, satir_no,
+                 f"öz kontrol listesi çok kısa (madde: {len(oz)})")
+
+    # kural 55 — paket beyanı ve yayın kilidi.
+    if paket is not None:
+        if not paket.get("disclosure"):
+            ekle("HATA", 55, 0, "paket beyanı (disclosure) yok")
+        bekleyen = sum(
+            1 for _, k in kayitlar
+            if k.get("objectiveSource") == "PENDING"
+            or "PENDING" in (k.get("sourceRefs") or [])
+        )
+        if bekleyen and not paket.get("publishBlocked"):
+            ekle("HATA", 55, 0,
+                 f"{bekleyen} kayıtta PENDING kaynak var ama publishBlocked açık değil")
+        if bekleyen:
+            ekle("RAPOR", 55, 0,
+                 f"PENDING kaynaklı kayıt: {bekleyen} (paket yayına kapalı)")
+
+    # 2.2 skoru: hints kalktığı için S1 (ipucu sızıntısı) ölçülemez. Yerine
+    # aynı ağırlıkla gerekçe özgüllüğü ölçülür — sözleşmenin asıl derdi budur.
+    if sorular:
+        jenerik = 0
+        toplam_gerekce = 0
+        for _, k in sorular:
+            why = k.get("distractorWhy") or []
+            secenekler = k.get("choices") or []
+            dogru = k.get("correct")
+            if len(why) != len(secenekler):
+                continue
+            for i, w in enumerate(why):
+                if i == dogru:
+                    continue
+                toplam_gerekce += 1
+                if distraktor_gerekcesi_jenerik(w, secenekler[i]):
+                    jenerik += 1
+        olcum["S1_gerekce_ozgullugu"] = (
+            1 - jenerik / toplam_gerekce if toplam_gerekce else 1.0
+        )
+
+
 def kayit_metinleri(k: dict) -> list:
     """Kural 10/22/23 taraması için kaydın insan-okur metin alanları."""
     m = []
@@ -700,10 +1096,16 @@ def latin_cjk_sayimi(metin: str):
 
 # ---------------------------------------------------------------- ana denetim
 
-def validate_file(yol) -> list:
-    """Dosyayı doğrular, Bulgu listesi döner (testler bunu import eder)."""
+def validate_file(yol, metrikler: dict | None = None) -> list:
+    """Dosyayı doğrular, Bulgu listesi döner (testler bunu import eder).
+
+    ``metrikler`` verilirse kalite skorunun alt ölçütleri bu sözlüğe yazılır;
+    böylece skor, kuralların saydığı aynı sayaçlardan türetilir ve ikinci bir
+    ölçüm koduyla ayrışamaz.
+    """
     yol = Path(yol)
     bulgular: list = []
+    olcum: dict = metrikler if metrikler is not None else {}
 
     def ekle(seviye, kural, satir, mesaj):
         bulgular.append(Bulgu(seviye, kural, satir, mesaj))
@@ -736,13 +1138,15 @@ def validate_file(yol) -> list:
     paket_id = paket.get("id") if paket else None
     labels = (paket or {}).get("labels") or {}
     dil = (paket or {}).get("lang", "")
+    sema = (paket or {}).get("schemaVersion", "") or "2.0"
+    ikibucuk = sema == SEMA_22
     if paket is None:
         ekle("HATA", 11, 0, "paket satırı (type=pack) yok; id şeması doğrulanamaz")
 
     # ---- Şema V2 paket kuralları ----
     if paket:
         sv = paket.get("schemaVersion", "")
-        if sv and sv != "2.0":
+        if sv and sv not in SEMA_DESTEKLENEN:
             ekle("HATA", 27, 0, f"desteklenmeyen schemaVersion: {sv!r}")
         src = paket.get("source", "")
         if sv == "2.0" and (not src or src == "unknown"):
@@ -791,6 +1195,22 @@ def validate_file(yol) -> list:
     secenek_dogru: dict = {}
     secenek_kumeleri: dict = {}
     ipucu_konum_sayaclari = [dict() for _ in range(5)]
+    dw_bag_toplam = [0, 0]             # kural 36: (ölçülen, kendi şıkkına bağlı)
+    dw_iskeletleri: list = []          # kural 37 kardeşi: distractorWhy imzaları
+    dr_iskeletleri: list = []          # kural 37: difficultyReason imzaları
+    govde_imzalari: list = []          # kural 40: soru kalıbı imzaları
+    # Kural 41: geri dönüşüm KAZANIM üzerinden ölçülür, konu üzerinden değil.
+    # Aynı kazanım içinde cevap havuzunun paylaşılması kusur değil, ölçmenin
+    # kendisidir: sıklık zarfları (always/often/never) ya da bir ünitenin giysi
+    # sözcükleri kapalı bir kümedir ve her sorunun çeldiricisi zorunlu olarak
+    # başka bir sorunun doğru cevabıdır. Ünite dışından sözcük koymak soruyu
+    # kolaylaştırır. Asıl kusur, çeldiricinin BAŞKA bir kazanımdan ödünç
+    # alınmasıdır; ölçülen budur.
+    metin_kazanimlari: dict = {}       # kural 41: doğru cevap metni → kazanım kümesi
+    kazanim_celdiricileri: list = []   # kural 41: (kazanım, çeldirici metni)
+    kazanim_figur: dict = {}           # kural 42: kazanım → (figürlü, toplam)
+    objective_kaynaklari: dict = {}    # kural 43: objectiveSource → kazanım kümesi
+    ipucu5_gorunum: dict = {}          # RAPOR 44: son ipucu çeşitliliği
 
     for satir_no, k in kayitlar:
         tip = k.get("type")
@@ -819,11 +1239,19 @@ def validate_file(yol) -> list:
 
         # kural 2/3 — şekil atfı ↔ figure alanı
         fig = k.get("figure")
-        ana_metin = k.get("question") if tip == "question" else (k.get("body") or "")
-        atif_var = figur_atfi_var(ana_metin or "", dil, tip)
-        if atif_var and not fig:
+        if tip == "question":
+            ana_metin = k.get("question")
+        else:
+            # 2.2'de not gövdesi dokuz bölümlü bir nesnedir; figüre yapılan
+            # atıf figureNote bölümünde durur. 2.0'da gövde düz metindir.
+            govde = k.get("body") or ""
+            ana_metin = ("\n".join(
+                str(v) for v in govde.values() if isinstance(v, str))
+                if isinstance(govde, dict) else govde)
+        if figur_atfi_var(ana_metin or "", dil, tip) and not fig:
             ekle("HATA", 2, satir_no, "metin şekle atıf yapıyor ama figure boş")
-        if fig and not atif_var:
+        if fig and not figur_atfi_var(ana_metin or "", dil, tip,
+                                      satirici_kacis=False):
             ekle("UYARI", 3, satir_no, "figure dolu ama metin ondan bahsetmiyor")
 
         # kural 4/5-9 — figür denetimi
@@ -834,7 +1262,7 @@ def validate_file(yol) -> list:
                             kullanilan_anahtarlar)
             elif "kind" in fig:
                 kind_kume.add(fig.get("kind"))
-                for hata in figur_kontrol(fig):
+                for hata in figur_kontrol(fig, sema):
                     ekle("HATA", 4, satir_no, hata)
                 anahtarlar = figur_i18n_anahtarlari(fig)
                 kullanilan_anahtarlar |= anahtarlar
@@ -946,12 +1374,16 @@ def validate_file(yol) -> list:
                          "noteId ilişkisini coverage doğrulamıyor ve topic uyuşmuyor: "
                          f"soru={k.get('topic')!r} not={hedef.get('topic')!r}")
 
-        # kural 17 — hints 5 basamak, boşsuz
+        # kural 17 — hints 5 basamak, boşsuz (yalnız 2.0).
+        # 2.2'de hints alanı yoktur; kural 56 varlığını HATA sayar. İki sürümün
+        # kuralı birbirini iptal ettiği için ikisi de koşulsuz çalışamaz.
         ipuclari = k.get("hints") if isinstance(k.get("hints"), list) else []
-        if len(ipuclari) != 5 or any(not str(x or "").strip() for x in ipuclari):
+        if not ikibucuk and (
+                len(ipuclari) != 5
+                or any(not str(x or "").strip() for x in ipuclari)):
             ekle("HATA", 17, satir_no,
                  f"hints 5 dolu basamak değil (uzunluk {len(ipuclari)})")
-        if len(ipuclari) == 5:
+        if not ikibucuk and len(ipuclari) == 5:
             for konum, ipucu in enumerate(ipuclari):
                 ipucu_norm = " ".join(
                     unicodedata.normalize(
@@ -976,6 +1408,11 @@ def validate_file(yol) -> list:
                 if sizinti:
                     ekle("HATA", 18, satir_no,
                          f"ipucu {i + 1} doğru şık metnini içeriyor ({cevap!r})")
+                elif CEVAP_DUYURU_RE.search(ip_s):
+                    # Parafrazla duyuru: şık metni birebir geçmese de ipucu
+                    # "doğru cevap …dır" diyerek merdiveni atlatıyor.
+                    ekle("HATA", 18, satir_no,
+                         f"ipucu {i + 1} cevabı duyuruyor: {ip_s[:70]!r}")
 
         # kural 19/20 — distractorWhy
         why = k.get("distractorWhy") if isinstance(k.get("distractorWhy"), list) else []
@@ -983,8 +1420,17 @@ def validate_file(yol) -> list:
             ekle("HATA", 19, satir_no,
                  f"distractorWhy uzunluğu şık sayısına eşit değil ({len(why)}≠{len(secenekler)})")
         elif dogru is not None:
-            if "doğru" not in str(why[dogru]).casefold():
+            dogru_gerekce = str(why[dogru]).strip()
+            if "doğru" not in dogru_gerekce.casefold():
                 ekle("HATA", 19, satir_no, "doğru indekste 'doğru' yazmıyor")
+            elif ikibucuk and (
+                    len(dogru_gerekce) < 8 or dogru_gerekce.casefold() in {
+                        "doğru", "doğrudur", "doğru cevap"
+                    }
+            ):
+                ekle("HATA", 19, satir_no,
+                     "doğru seçenek gerekçesi yalnız sonuç etiketi; "
+                     "somut çözüm doğrulaması gerekli")
             jenerik = [
                 i for i, w in enumerate(why)
                 if i != dogru
@@ -993,16 +1439,28 @@ def validate_file(yol) -> list:
             if jenerik:
                 ekle("UYARI", 20, satir_no,
                      f"distractorWhy boş veya yalnız jenerik hüküm içeriyor: şık {jenerik}")
-            sablon = [
-                i for i, w in enumerate(why)
-                if i != dogru and distraktor_gerekcesi_sablon(w)
-            ]
-            if sablon:
-                ekle(
-                    "HATA", 36, satir_no,
-                    "distractorWhy öğrencinin somut hatasını adlandırmayan "
-                    f"uzun şablon içeriyor: şık {sablon}",
-                )
+            # kural 36 — gerekçe kendi şıkkına bağlı olmalı.
+            # (a) Gerekçe, anlattığı şıkkın hiçbir ayırt edici sözcüğünü
+            #     anmıyorsa izlenebilir değildir.
+            # (b) Gerekçe BAŞKA bir şıkkın tamamını anlatıyorsa şık metni
+            #     değiştirilip gerekçe güncellenmemiş demektir — bu, öğrenciye
+            #     doğrudan yanlış bilgi gösterir.
+            # kural 36 sayacı — gerekçenin kendi şıkkıyla sözcük bağı.
+            # Bu bir ihlal ölçütü DEĞİLDİR: okuduğunu anlama sorularında
+            # gerekçe şıkkı parafraz eder ("… metinde belirtilmemiştir").
+            # Yalnız paket profili olarak raporlanır; şık değiştirilip
+            # gerekçenin güncellenmemesini yakalayan gerçek kapı
+            # tools/check_paired_edit.py'dir (fark zamanı denetimi).
+            for i, w in enumerate(why):
+                if i == dogru or not icerik_sozcukleri(secenekler[i]):
+                    continue
+                dw_bag_toplam[0] += 1
+                if icerik_sozcukleri(secenekler[i]) & icerik_sozcukleri(w):
+                    dw_bag_toplam[1] += 1
+            # Paket geneli iskelet yığılması için imza topla.
+            for i, w in enumerate(why):
+                if i != dogru:
+                    dw_iskeletleri.append(iskelet_imzasi(w, soru))
 
         # kural 21 — açıklamada şık harfi
         if dogru is not None and isinstance(k.get("explanation"), str):
@@ -1029,12 +1487,9 @@ def validate_file(yol) -> list:
             dr = k.get("difficultyReason", "")
             if len(dr) < 20:
                 ekle("HATA", 32, satir_no, f"difficultyReason çok kısa ({len(dr)} karakter)")
-            elif zorluk_gerekcesi_sablon(dr):
-                ekle(
-                    "HATA", 37, satir_no,
-                    "difficultyReason soru kökünü uzatan jenerik şablon; "
-                    "adım, ön bilgi veya çeldirici yakınlığı somutlaştırılmalı",
-                )
+            else:
+                # kural 37 imzası: yığılma paket düzeyinde değerlendirilir.
+                dr_iskeletleri.append((satir_no, iskelet_imzasi(dr, soru)))
             rs = k.get("reviewStatus", "")
             if rs and rs not in ("pending", "reviewed", "ai-verified", "rejected"):
                 ekle("HATA", 33, satir_no, f"reviewStatus geçersiz: {rs!r}")
@@ -1046,6 +1501,31 @@ def validate_file(yol) -> list:
                 q_prov = k.get("provenance", "")
                 if not q_prov.startswith("ai-verified:"):
                     ekle("HATA", 34, satir_no, "reviewStatus=ai-verified ama provenance AI karar hash'i taşımıyor")
+
+        # kural 40/41/42/43/44 sayaçları
+        govde_imzalari.append(iskelet_imzasi(soru))
+        obj = k.get("objective")
+        kazanim = obj if obj else k.get("topic")
+        if dogru is not None and dogru < len(secenekler):
+            metin_kazanimlari.setdefault(
+                normalize_metin(str(secenekler[dogru])), set()).add(kazanim)
+        for i, c in enumerate(secenekler):
+            # Sayısal şık geri dönüşüm ölçümüne girmez: ezberlenecek bir
+            # anlamı yoktur (bkz. SAYISAL_SIK_RE açıklaması).
+            if i != dogru and not sik_sayisal_mi(c):
+                kazanim_celdiricileri.append((kazanim, normalize_metin(str(c))))
+        if obj:
+            figurlu, toplam = kazanim_figur.get(obj, (0, 0))
+            kazanim_figur[obj] = (figurlu + (1 if k.get("figure") else 0),
+                                  toplam + 1)
+            kaynak = k.get("objectiveSource")
+            if kaynak:
+                objective_kaynaklari.setdefault(kaynak, set()).add(obj)
+        if len(ipuclari) == 5:
+            son = " ".join(
+                unicodedata.normalize("NFKC", str(ipuclari[4])).casefold().split()
+            )
+            ipucu5_gorunum[son] = ipucu5_gorunum.get(son, 0) + 1
 
         # kural 26 sayaçları
         konu_sayac[k.get("topic")] = konu_sayac.get(k.get("topic"), 0) + 1
@@ -1071,6 +1551,10 @@ def validate_file(yol) -> list:
     # kural 25 — kullanılmayan labels anahtarları
     for a in sorted(set(labels) - kullanilan_anahtarlar):
         ekle("UYARI", 25, 0, f"labels anahtarı hiç kullanılmamış: {a!r}")
+
+    # ---- Question Contract 2.2 kuralları (47-56) ----
+    if ikibucuk:
+        kural_22(kayitlar, paket, labels, kullanilan_anahtarlar, ekle, olcum)
 
     # kural 26 — kapsama raporu
     for konu, adet in sorted(konu_sayac.items(), key=lambda x: str(x[0])):
@@ -1132,10 +1616,13 @@ def validate_file(yol) -> list:
                 dolgu, key=lambda item: (-item[1], item[0])
             )[:8]
         )
+        # Dolgu çeldirici, kalıbı fark eden öğrencinin eleyebildiği seçenektir;
+        # etkin şık sayısını düşürerek ölçmeyi zayıflatır. UYARI seviyesi:
+        # birim/tarih gibi meşru tekrarlar olabildiği için HATA değil.
         ekle(
-            "RAPOR", 39, 0,
-            "birden çok soru ailesinde dolaşan ve hiç doğru olmayan "
-            f"seçenekler var: {ornekler}",
+            "UYARI", 39, 0,
+            f"{len(dolgu)} seçenek birden çok soru ailesinde dolaşıyor ve "
+            f"hiçbirinde doğru değil: {ornekler}",
         )
 
     bariz_dolgu = [
@@ -1160,6 +1647,271 @@ def validate_file(yol) -> list:
             f"tekrarlanıyor: {ornekler}",
         )
 
+    # kural 36 — gerekçe/şık sözcük bağı profili (yalnız rapor).
+    if dw_bag_toplam[0]:
+        ekle("RAPOR", 36, 0,
+             f"kendi şıkkına sözcük bağı olan gerekçe: "
+             f"{dw_bag_toplam[1]}/{dw_bag_toplam[0]}")
+
+    # kural 37 — gerekçelerin iskelet yığılması.
+    # Tırnaklı alan, sayı ve soru kökünden kopyalanan sözcükler maskelendikten
+    # sonra kalan iskelet pakette yığılıyorsa gerekçe uzun olsa da şablondur.
+    for alan, imzalar, esik in (
+        ("difficultyReason", [imza for _, imza in dr_iskeletleri], 0.20),
+        ("distractorWhy", dw_iskeletleri, 0.20),
+    ):
+        if len(imzalar) < 40:
+            continue
+        sayac: dict = {}
+        for imza in imzalar:
+            sayac[imza] = sayac.get(imza, 0) + 1
+        imza, adet = max(sayac.items(), key=lambda item: item[1])
+        oran = adet / len(imzalar)
+        if oran > esik:
+            ekle(
+                "HATA", 37, 0,
+                f"{alan} tek iskelete yığılmış: {adet}/{len(imzalar)} "
+                f"(%{oran * 100:.1f} > %{esik * 100:.0f}); "
+                f"iskelet={imza[:70]!r}",
+            )
+        ekle("RAPOR", 37, 0,
+             f"{alan} benzersiz iskelet: {len(sayac)}/{len(imzalar)}")
+
+    # kural 40 — soru kalıbı çeşitliliği.
+    if len(govde_imzalari) >= 40:
+        sayac = {}
+        for imza in govde_imzalari:
+            sayac[imza] = sayac.get(imza, 0) + 1
+        benzersiz_oran = len(sayac) / len(govde_imzalari)
+        imza, adet = max(sayac.items(), key=lambda item: item[1])
+        # Dil paketlerinde "Boşluğu doğru tamamla" gibi meşru soru aileleri
+        # tek kalıp altında toplanır; eşik bu yüzden gevşek tutulur. Asıl
+        # ölçüt aşağıdaki genel çeşitlilik oranıdır.
+        if adet / len(govde_imzalari) > 0.10:
+            ekle("UYARI", 40, 0,
+                 f"aynı soru kalıbı {adet}/{len(govde_imzalari)} kez "
+                 f"(%{adet / len(govde_imzalari) * 100:.1f} > %10): {imza[:70]!r}")
+        if benzersiz_oran < 0.60:
+            ekle("UYARI", 40, 0,
+                 f"soru kalıbı çeşitliliği düşük: {len(sayac)}/"
+                 f"{len(govde_imzalari)} (%{benzersiz_oran * 100:.1f} < %60)")
+        ekle("RAPOR", 40, 0,
+             f"benzersiz soru kalıbı: {len(sayac)}/{len(govde_imzalari)}")
+
+    # kural 41 — çeldirici geri dönüşümü: çeldirici, BAŞKA bir kazanıma ait
+    # sorunun doğru cevabıysa o şık konu dışından ödünç alınmıştır ve dikkatli
+    # öğrenci tarafından elenebilir. Aynı kazanım içindeki paylaşım sayılmaz.
+    if kazanim_celdiricileri:
+        geri_donen = sum(
+            1 for kazanim, metin in kazanim_celdiricileri
+            if metin and (metin_kazanimlari.get(metin, set()) - {kazanim})
+        )
+        oran = geri_donen / len(kazanim_celdiricileri)
+        if oran > 0.15:
+            ekle("UYARI", 41, 0,
+                 f"çeldiricilerin %{oran * 100:.1f}'i BAŞKA bir kazanımdaki "
+                 f"sorunun doğru cevabı ({geri_donen}/"
+                 f"{len(kazanim_celdiricileri)}, eşik %15)")
+        ekle("RAPOR", 41, 0,
+             "kazanım dışından ödünç çeldirici: "
+             f"{geri_donen}/{len(kazanim_celdiricileri)}")
+
+    # kural 42 — şekil gerektiren kazanımlar.
+    figur_gereken = [
+        (obj, figurlu, toplam)
+        for obj, (figurlu, toplam) in sorted(kazanim_figur.items())
+        if figur_zorunlu_kazanim(obj) and toplam >= 5
+    ]
+    eksik_figur = [
+        (obj, figurlu, toplam) for obj, figurlu, toplam in figur_gereken
+        if figurlu / toplam < 0.30
+    ]
+    if eksik_figur:
+        ornek = ", ".join(f"{obj} {f}/{t}" for obj, f, t in eksik_figur[:6])
+        ekle("UYARI", 42, 0,
+             f"görsel gerektiren {len(eksik_figur)}/{len(figur_gereken)} "
+             f"kazanımda figure oranı %30 altında: {ornek}"
+             + (" …" if len(eksik_figur) > 6 else ""))
+
+    # kural 43 — objectiveSource belge çapası olmalı.
+    # Bir dersin bütün kazanımlarının aynı program PDF'ine bağlanması normaldir;
+    # sorun, kaynağın belge değil gezinilebilir bir açılış sayfası olmasıdır.
+    for kaynak, kazanimlar in objective_kaynaklari.items():
+        if len(kazanimlar) < 5:
+            continue
+        belge_mi = (
+            kaynak.lower().endswith((".pdf", ".doc", ".docx"))
+            or "#" in kaynak
+        )
+        if not belge_mi:
+            ekle("UYARI", 43, 0,
+                 f"{len(kazanimlar)} kazanım belge olmayan bir objectiveSource'a "
+                 f"bağlı (program PDF'i veya sayfa çapası bekleniyor): {kaynak[:70]}")
+
+    # kural 46 — dersler arası paket sözleşmesi.
+    sozlesme = sozlesmeyi_yukle(yol)
+    if sozlesme and paket:
+        olcek = sozlesme.get("levelScale", {})
+        alt, ust = olcek.get("min", 1), olcek.get("max", 5)
+        bildirilen = paket.get("levelScale")
+        if bildirilen is not None:
+            if (not isinstance(bildirilen, list) or len(bildirilen) != 2
+                    or not (alt <= bildirilen[0] <= bildirilen[1] <= ust)):
+                ekle("HATA", 46, 0,
+                     f"levelScale sözleşme aralığının ({alt}-{ust}) dışında "
+                     f"veya biçimsiz: {bildirilen!r}")
+            else:
+                alt, ust = bildirilen
+        kullanilan = sorted({
+            k.get("level") for _, k in sorular if isinstance(k.get("level"), int)
+        })
+        disarida = [s for s in kullanilan if not alt <= s <= ust]
+        if disarida:
+            ekle("HATA", 46, 0,
+                 f"level değerleri bildirilen ölçek dışında ({alt}-{ust}): "
+                 f"{disarida}")
+
+        izinli_mufredat = sozlesme.get("curriculum", {}).get("izinli", [])
+        if izinli_mufredat and paket.get("curriculum") not in izinli_mufredat:
+            ekle("HATA", 46, 0,
+                 f"curriculum sözleşmede yok: {paket.get('curriculum')!r} "
+                 f"(izinli: {izinli_mufredat})")
+
+        alan = sozlesme.get("notKazanimAlani", {}).get("ad", "objectives")
+        yanlis_alanli = [
+            k.get("id") for _, k in kayitlar
+            if k.get("type") == "note" and not k.get(alan)
+            and any(k.get(a) for a in ("objective", "objectives"))
+        ]
+        if yanlis_alanli:
+            ekle("HATA", 46, 0,
+                 f"{len(yanlis_alanli)} not sözleşmedeki {alan!r} alanını "
+                 f"kullanmıyor: {yanlis_alanli[:3]}")
+
+    # kural 45 — kazanım yükü dengesi.
+    # Bazı derslerde kazanımların kapsamı eşit değildir. Paket açıkça
+    # objectiveBalanceMode=coverage diyorsa oranı keyfî biçimde eşitlemek
+    # yerine her kazanımın not ve soru kapsamının doğru beyan edildiğini ölç.
+    denge_modu = ((paket or {}).get("contractPolicy") or {}).get(
+        "objectiveBalanceMode", "ratio")
+    kapsam_dengeli = True
+    if denge_modu == "coverage":
+        for objective, adet in kazanim_sayac.items():
+            kapsam = coverage.get(objective)
+            if (
+                not isinstance(kapsam, dict)
+                or kapsam.get("questions") != adet
+                or not kapsam.get("notes")
+            ):
+                kapsam_dengeli = False
+                ekle("HATA", 45, 0,
+                     f"kazanım kapsam beyanı eksik/tutarsız: {objective!r}")
+        eksik_kazanim = sorted(set(coverage) - set(kazanim_sayac))
+        if eksik_kazanim:
+            kapsam_dengeli = False
+            ekle("HATA", 45, 0,
+                 f"sorusu olmayan coverage kazanımı: {eksik_kazanim}")
+        ekle("RAPOR", 45, 0,
+             f"kazanım dengesi kapsam modunda; {len(kazanim_sayac)} kazanımın "
+             "not ve soru beyanı doğrulandı")
+    elif denge_modu != "ratio":
+        kapsam_dengeli = False
+        ekle("HATA", 45, 0,
+             f"objectiveBalanceMode tanınmıyor: {denge_modu!r}")
+
+    if len(kazanim_sayac) >= 5:
+        en_cok = max(kazanim_sayac.values())
+        en_az = min(kazanim_sayac.values())
+        if denge_modu == "ratio" and en_az and en_cok / en_az > 6:
+            yuklu = max(kazanim_sayac.items(), key=lambda x: x[1])
+            zayif = min(kazanim_sayac.items(), key=lambda x: x[1])
+            ekle("UYARI", 45, 0,
+                 f"kazanım yükü dengesiz: {yuklu[0]}={yuklu[1]} soru, "
+                 f"{zayif[0]}={zayif[1]} soru (oran {en_cok / en_az:.1f} > 6)")
+        ekle("RAPOR", 45, 0,
+             f"kazanım başına soru: en az {en_az}, en çok {en_cok}, "
+             f"kazanım sayısı {len(kazanim_sayac)}")
+
+    # kural 44 — son ipucu çeşitliliği (RAPOR).
+    # SKILL.md yalnız ilk dört ipucunun cevabı vermemesini şart koşar; 5. ipucu
+    # tam çözüm verebilir. Burada yalnız çeşitlilik ölçülür, ihlal üretilmez.
+    if ipucu5_gorunum:
+        toplam5 = sum(ipucu5_gorunum.values())
+        ekle("RAPOR", 44, 0,
+             f"son ipucu benzersizliği: {len(ipucu5_gorunum)}/{toplam5}")
+
+    # ---- kalite skoru alt ölçütleri ----
+    # Hepsi yukarıdaki kuralların saydığı sayaçlardan türer; ayrı bir ölçüm
+    # kodu yoktur ki skor ile kural birbirinden ayrışmasın.
+    soru_sayisi = len(sorular)
+    if soru_sayisi:
+        sizintili = len({b.satir for b in bulgular if b.kural == 18})
+        paylasilan = sum(
+            len(satirlar) for satirlar in secenek_kume_kayitlari.values()
+            if len(satirlar) > 1
+        )
+        secenek_ornegi = sum(secenek_gorunum.values()) or 1
+        dolgu_ornegi = sum(
+            adet for secenek, adet in secenek_gorunum.items()
+            if adet >= 4 and secenek_dogru.get(secenek, 0) == 0
+            and len(secenek_kumeleri.get(secenek, ())) >= 2
+        )
+        imza_sayaci: dict = {}
+        for imza in govde_imzalari:
+            imza_sayaci[imza] = imza_sayaci.get(imza, 0) + 1
+        figur_gereken_toplam = sum(
+            t for o, (_f, t) in kazanim_figur.items()
+            if figur_zorunlu_kazanim(o)
+        )
+        figur_gereken_figurlu = sum(
+            f for o, (f, _t) in kazanim_figur.items()
+            if figur_zorunlu_kazanim(o)
+        )
+        if denge_modu == "coverage":
+            denge = 1.0 if kapsam_dengeli else 0.0
+        elif len(kazanim_sayac) >= 2:
+            _oran = max(kazanim_sayac.values()) / max(min(kazanim_sayac.values()), 1)
+            denge = min(1.0, 6 / _oran) if _oran > 6 else 1.0
+        else:
+            denge = 1.0
+        geri_donen = sum(
+            1 for kazanim, metin in kazanim_celdiricileri
+            if metin and (metin_kazanimlari.get(metin, set()) - {kazanim})
+        )
+        # Alan bütünlüğü sürüme bağlıdır: 2.0'da beş dolu ipucu zorunlu alandır,
+        # 2.2'de hints hiç yoktur ve yerine hiyerarşi zinciri zorunludur.
+        def _alanlari_tam(k) -> bool:
+            temel = (
+                str(k.get("explanation") or "").strip()
+                and str(k.get("difficultyReason") or "").strip()
+                and str(k.get("objective") or "").strip()
+            )
+            if not temel:
+                return False
+            if ikibucuk:
+                return all(k.get(a) for a in HIYERARSI_ANAHTARLARI) and bool(
+                    k.get("familyId"))
+            return isinstance(k.get("hints"), list) and len(k["hints"]) == 5
+
+        tam_alan = sum(1 for _, k in sorular if _alanlari_tam(k))
+        olcum.update({
+            "soru": soru_sayisi,
+            "S1_sizinti_yok": 1 - sizintili / soru_sayisi,
+            "S2_havuz_acikligi": 1 - paylasilan / soru_sayisi,
+            "S3_dolgu_yok": 1 - dolgu_ornegi / secenek_ornegi,
+            "S4_kalip_cesitliligi": len(imza_sayaci) / soru_sayisi,
+            "S5_sekil_kapsamasi": (
+                figur_gereken_figurlu / figur_gereken_toplam
+                if figur_gereken_toplam else 1.0
+            ),
+            "S6_kazanim_dengesi": denge,
+            "S7_geri_donusum_yok": (
+                1 - geri_donen / len(kazanim_celdiricileri)
+                if kazanim_celdiricileri else 1.0
+            ),
+            "S8_alan_butunlugu": tam_alan / soru_sayisi,
+        })
+
     # ---- Şema V2 paket-genel kurallar ----
     if len(sorular) >= 10:
         from collections import Counter as _C
@@ -1174,13 +1926,110 @@ def validate_file(yol) -> list:
     return bulgular
 
 
+# 2.2'de S1 yer değiştirir: ipucu kalktığı için "sızıntı yok" ölçütü her zaman
+# 1.0 döner ve skoru sahte biçimde şişirirdi. Aynı ağırlık, sözleşmenin asıl
+# derdi olan gerekçe özgüllüğüne verilir.
+SKOR_AGIRLIK_22 = {"S1_gerekce_ozgullugu": "S1_sizinti_yok"}
+
+SKOR_AGIRLIK = {
+    "S1_sizinti_yok": 0.20,       # ilk dört ipucunda cevap sızıntısı (kural 18)
+    "S2_havuz_acikligi": 0.15,    # tekrarlı seçenek kümesi (kural 39)
+    "S3_dolgu_yok": 0.15,         # sürekli yanlış dolgu çeldirici (kural 39)
+    "S4_kalip_cesitliligi": 0.15,  # soru kalıbı çeşitliliği (kural 40)
+    "S5_sekil_kapsamasi": 0.10,   # görsel gerektiren kazanımlar (kural 42)
+    "S6_kazanim_dengesi": 0.10,   # kazanım yükü dengesi (kural 45)
+    "S7_geri_donusum_yok": 0.10,  # çeldirici geri dönüşümü (kural 41)
+    "S8_alan_butunlugu": 0.05,    # zorunlu alanların doluluğu
+}
+SKOR_ESIK = 99.0
+
+
+def paket_skoru(yol) -> dict:
+    """Bir paketin alt ölçütlerini, skorunu ve bulgu sayımını döner."""
+    olcum: dict = {}
+    bulgular = validate_file(yol, metrikler=olcum)
+    hata = sum(1 for b in bulgular if b.seviye == "HATA")
+    uyari = sum(1 for b in bulgular if b.seviye == "UYARI")
+    # 2.2 paketinde S1 yerine gerekçe özgüllüğü konur; ağırlık aynı kalır.
+    for yeni_ad, eski_ad in SKOR_AGIRLIK_22.items():
+        if yeni_ad in olcum:
+            olcum[eski_ad] = olcum[yeni_ad]
+    skor = 100.0 * sum(
+        SKOR_AGIRLIK[ad] * max(0.0, min(1.0, olcum.get(ad, 0.0)))
+        for ad in SKOR_AGIRLIK
+    )
+    return {
+        "paket": str(yol).replace("\\", "/"),
+        "soru": olcum.get("soru", 0),
+        "hata": hata,
+        "uyari": uyari,
+        "skor": round(skor, 2),
+        "olcutler": {
+            ad: round(100.0 * olcum.get(ad, 0.0), 1) for ad in SKOR_AGIRLIK
+        },
+        "gecti": bool(skor >= SKOR_ESIK and hata == 0 and uyari == 0),
+    }
+
+
+def _skor_modu(hedefler: list, json_yolu: str | None) -> int:
+    yollar: list = []
+    for hedef in hedefler:
+        p = Path(hedef)
+        if p.is_dir():
+            yollar.extend(sorted(p.rglob("*.jsonl")))
+        elif p.exists():
+            yollar.append(p)
+        else:
+            print(f"HATA  dosya yok: {p}")
+            return 1
+    if not yollar:
+        print("HATA  doğrulanacak paket bulunamadı")
+        return 1
+
+    sonuclar = [paket_skoru(y) for y in yollar]
+    olcut_adlari = list(SKOR_AGIRLIK)
+    basliklar = [ad.split("_", 1)[0] for ad in olcut_adlari]
+    print(f"{'paket':28s} {'soru':>5s} {'skor':>7s}  "
+          + " ".join(f"{b:>5s}" for b in basliklar) + "  HATA UYARI")
+    for s in sonuclar:
+        ad = Path(s["paket"]).stem[:28]
+        print(f"{ad:28s} {s['soru']:5d} {s['skor']:7.2f}  "
+              + " ".join(f"{s['olcutler'][o]:5.1f}" for o in olcut_adlari)
+              + f"  {s['hata']:4d} {s['uyari']:5d}")
+    gecen = sum(1 for s in sonuclar if s["gecti"])
+    print(f"TOPLAM: {gecen}/{len(sonuclar)} paket eşiği geçti "
+          f"(skor ≥ {SKOR_ESIK:.0f}, 0 HATA, 0 UYARI)")
+
+    if json_yolu:
+        Path(json_yolu).parent.mkdir(parents=True, exist_ok=True)
+        Path(json_yolu).write_text(
+            json.dumps({"esik": SKOR_ESIK,
+                        "agirliklar": SKOR_AGIRLIK,
+                        "paketler": sonuclar},
+                       ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        print(f"skor dosyası yazıldı: {json_yolu}")
+    return 0 if gecen == len(sonuclar) else 1
+
+
 def main(argv=None) -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(description="AliKa içerik paketi doğrulayıcısı")
-    ap.add_argument("paket", help="doğrulanacak .jsonl veya .json dosyası")
+    ap.add_argument("paket", nargs="+",
+                    help="doğrulanacak .jsonl/.json dosyası (--skor ile dizin)")
+    ap.add_argument("--skor", action="store_true",
+                    help="kalite skorunu hesapla ve tablo bas")
+    ap.add_argument("--json", dest="json_yolu",
+                    help="--skor ile: sonucu bu JSON dosyasına yaz")
     args = ap.parse_args(argv)
-    yol = Path(args.paket)
+    if args.skor:
+        return _skor_modu(args.paket, args.json_yolu)
+    if len(args.paket) != 1:
+        print("HATA  tek paket bekleniyor (çoklu kullanım için --skor)")
+        return 1
+    yol = Path(args.paket[0])
     if not yol.exists():
         print(f"HATA  dosya yok: {yol}")
         return 1
