@@ -312,3 +312,40 @@ def test_turkce_22_borcu_yalniz_gorselde():
     baska = sorted({b.kural for b in pack_validate.validate_file(yol)
                     if b.seviye == "HATA" and b.kural != 53})
     assert baska == [], f"görsel dışı HATA kuralları: {baska}"
+
+
+# ---- kural 2/3: figür atfının iki ayrı sorusu ----
+
+def test_satirici_tablo_kacisi_dolu_figurun_atfini_bastirmaz():
+    """Kural 2 ile kural 3 aynı soruyu sormaz.
+
+    Gövdesinde satır içi tablo bulunan bir konu anlatımı, figürüne açıkça atıf
+    yapsa bile eski kod "metin ondan bahsetmiyor" diyordu: kaçış geçerli atfı
+    bastırıyor ve yazarı atfı düzeltmek yerine figürü silmeye itiyordu.
+    """
+    govde = ("Aşağıdaki tabloda ölçütler verilmiştir.\n"
+             "1- birinci ölçüt\n2- ikinci ölçüt")
+    # Kural 2 yönü: satır içi tablo gömülüyse figür istemeye gerek yok.
+    assert pack_validate.figur_atfi_var(govde, "tr", "note") is False
+    # Kural 3 yönü: dolu figüre yapılan atıf görülmelidir.
+    assert pack_validate.figur_atfi_var(
+        govde, "tr", "note", satirici_kacis=False) is True
+
+
+def test_sema_gosterilene_isaret_ederse_atif_sayilir():
+    for metin in ("Aşağıdaki şemada süreç gösterilmiştir.",
+                  "Şemayı inceleyin ve adımları izleyin.",
+                  "Aşağıdaki şemaya göre hangi adım eksiktir?"):
+        assert pack_validate.figur_atfi_var(metin, "tr", "note",
+                                            satirici_kacis=False), metin
+
+
+def test_anlatidaki_sema_atif_sayilmaz():
+    """Fen sorularında şema çoğu kez senaryonun içindeki bir nesnedir.
+
+    'Öğrenci bir devre şeması çizer, bu şemaya göre deney kurar' cümlesi
+    okura gösterilen bir figüre işaret etmez; figür istemek yanlış olur.
+    """
+    metin = ("Bir öğrenci basit bir devre şeması çizer. Daha sonra bu şemaya "
+             "göre deney kurar ancak ampul yanmaz.")
+    assert pack_validate.figur_atfi_var(metin, "tr", "question") is False

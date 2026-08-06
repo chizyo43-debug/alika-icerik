@@ -187,7 +187,12 @@ def tasi(kayitlar: list) -> tuple[list, dict]:
         "minFamilies": 80,
         "maxPerFamily": AILE_TAVANI,
         "answerBalance": dagilim,
-        "minFiguredQuestions": 100,
+        # Türkçe'de soru figürü 0'dır ve bu ölçülmüş bir karardır, taviz
+        # değil: sorular metin anlamaya dayanıyor, kökteki duyuru ve çizelge
+        # metnin kendisi. Onları tabloya çevirmek bilgiyi önceden ayrıştırıp
+        # sunmak olur ve ölçülen beceriyi ortadan kaldırır. Gerekçe:
+        # tools/add_figures_turkce.py modül açıklaması.
+        "minFiguredQuestions": 0,
         "everyNoteHasFigure": True,
     }
     paket.setdefault("labels", {})

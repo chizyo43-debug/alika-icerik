@@ -40,7 +40,7 @@ FIGUR_ATIF_RE = {
     "tr": (
         re.compile(
             r"\b(?:yukarıdaki|aşağıdaki)\s+"
-            r"(?:şekilde|grafikte|tabloda|görselde|diyagramda)\b",
+            r"(?:şekilde|grafikte|tabloda|görselde|diyagramda|şemada)\b",
             re.I,
         ),
         re.compile(
@@ -48,8 +48,13 @@ FIGUR_ATIF_RE = {
             r"(?:şekle|grafiğe|tabloya|görsele|diyagrama)\s+göre\b",
             re.I,
         ),
+        # "şema" yalnız GÖSTERİLENE açıkça işaret eden kalıplarda sayılır.
+        # "bu şemaya göre" güvenilir değildir: fen sorularında şema çoğu kez
+        # senaryonun içindeki bir nesnedir ("öğrenci bir devre şeması çizer,
+        # bu şemaya göre deney kurar") ve okura gösterilen bir figür değildir.
+        re.compile(r"\b(?:yukarıdaki|aşağıdaki)\s+şemaya\s+göre\b", re.I),
         re.compile(
-            r"\b(?:şekli|grafiği|tabloyu|görseli|diyagramı)\s+"
+            r"\b(?:şekli|grafiği|tabloyu|görseli|diyagramı|şemayı)\s+"
             r"(?:incele(?:yin|yiniz)?|kullan(?:ın|ınız)?|yorumla(?:yın|yınız)?)\b",
             re.I,
         ),
@@ -322,15 +327,27 @@ def figur_zorunlu_kazanim(objective: object) -> bool:
     return kod.startswith(FIGUR_ZORUNLU_KAZANIM_ONEKLERI)
 
 
-def figur_atfi_var(metin: str, dil: str, tip: str = "question") -> bool:
-    """Metnin paket dışındaki bir görsele açıkça bağlı olup olmadığını söyler."""
+def figur_atfi_var(metin: str, dil: str, tip: str = "question",
+                   satirici_kacis: bool = True) -> bool:
+    """Metnin paket dışındaki bir görsele açıkça bağlı olup olmadığını söyler.
+
+    ``satirici_kacis`` iki farklı sorunun aynı işlevle sorulmasını ayırır:
+
+    * Kural 2 "figür eksik mi?" — satır içi tablo gömülüyse figür gerekmez,
+      kaçış açıktır.
+    * Kural 3 "dolu figür anılmış mı?" — burada kaçış KAPALI olmalıdır. Aksi
+      hâlde gövdesinde tablo bulunan bir konu anlatımı, figürüne açıkça atıf
+      yapsa bile "metin ondan bahsetmiyor" uyarısı alır; kaçış geçerli atfı
+      bastırır ve yazarı atfı düzeltmek yerine silmeye iter.
+    """
     if not isinstance(metin, str) or not metin.strip():
         return False
     kucuk = metin.casefold()
     # Tablo/listenin hücreleri soru metnine erişilebilir düz metin olarak
     # gömülmüşse figure eksik değildir.
     satirici_tablo = (
-        "tablo" in kucuk
+        satirici_kacis
+        and "tablo" in kucuk
         and (
             "\n" in metin
             or "\t" in metin
@@ -1130,10 +1147,10 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
         # kural 2/3 — şekil atfı ↔ figure alanı
         fig = k.get("figure")
         ana_metin = k.get("question") if tip == "question" else (k.get("body") or "")
-        atif_var = figur_atfi_var(ana_metin or "", dil, tip)
-        if atif_var and not fig:
+        if figur_atfi_var(ana_metin or "", dil, tip) and not fig:
             ekle("HATA", 2, satir_no, "metin şekle atıf yapıyor ama figure boş")
-        if fig and not atif_var:
+        if fig and not figur_atfi_var(ana_metin or "", dil, tip,
+                                      satirici_kacis=False):
             ekle("UYARI", 3, satir_no, "figure dolu ama metin ondan bahsetmiyor")
 
         # kural 4/5-9 — figür denetimi
