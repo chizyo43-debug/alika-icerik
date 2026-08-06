@@ -127,10 +127,16 @@ class TestSchemaV2:
     def test_pack_v2_alanlari(self, path):
         pack, _, _ = load_package(path)
         assert pack is not None
-        assert pack.get("schemaVersion") == "2.0"
+        sema = pack.get("schemaVersion")
+        assert sema in pack_validate.SEMA_DESTEKLENEN, f"sürüm: {sema!r}"
         assert pack.get("source"), "source boş"
         assert pack.get("provenance"), "provenance boş"
         assert pack.get("objectives"), "objectives boş"
+        if sema == pack_validate.SEMA_22:
+            # 2.2'de paket kendi kabul hedefini veriye yazar ve nasıl
+            # üretildiğini açıkça beyan eder.
+            assert pack.get("disclosure"), "2.2 paketinde beyan yok"
+            assert pack.get("contractPolicy"), "2.2 paketinde contractPolicy yok"
 
     @pytest.mark.parametrize("path", PACKAGES, ids=PACKAGE_IDS)
     def test_soru_v2_alanlari(self, path):

@@ -1,5 +1,18 @@
 # AliKa İçerik Üretim Sözleşmesi
 
+> **Sözleşme sürümü.** Yayımlanmış dört paket **2.0**'dır. Yeni üretim
+> **Question Contract 2.2** ile yapılır: `hints` yoktur, hiyerarşi anahtarları
+> (`unitKey` → `topicKey` → `subtopicKey` → `noteKey`) zorunludur, dolu her
+> figür `altTextKey` taşır. Notta `id = noteId = noteKey`, soruda
+> `noteId = noteKey` olmalıdır. AI-only son denetim yapılmadan hiçbir kayıt
+> `ai-verified` damgası alamaz. Ayrıntı §13.
+>
+> Kanonik şema **AliKa uygulama deposundadır**: `shared/question-2.2.schema.json`
+> ve `shared/figure_spec.json`. Bu depoya kopyalanmaz — iki kopya, birinde
+> güncellenip diğerinde unutulan bir sözleşme demektir. `tools/pack_validate.py`
+> kuralları kendi kodunda uygular ve iki sürümü paketin `schemaVersion`
+> alanına göre ayırır.
+
 Bu belge **üretici modele** yöneliktir. Kuralları tanımlamaz — onlar
 `SCHEMA_V2.md` ve `.claude/skills/alika-icerik/SKILL.md` içindedir. Burada
 yalnız **bu depoda gerçekten yapılmış hatalar**, nedenleri ve tekrar etmemesi
@@ -429,3 +442,63 @@ içinde koşar. §11'in her maddesi buradaki bir satıra karşılık gelir.
 
 Bu denetimlerin **hepsi** A3 partilerinde en az bir gerçek kusur yakaladı.
 Hiçbiri süs değil.
+
+---
+
+## 13. Question Contract 2.2
+
+2.0 paketleri olduğu gibi geçerlidir; doğrulayıcı iki sürümü paketin
+`schemaVersion` alanına göre ayırır. Yeni ve onarılan paketler 2.2'dir.
+
+### Neyi değiştirdi
+
+| Konu | 2.0 | 2.2 |
+|---|---|---|
+| `hints` | tam 5 dolu basamak (kural 17, HATA) | **alan yok** (kural 56, HATA) |
+| Hiyerarşi | `topic` + `objective` | `unitKey`→`topicKey`→`subtopicKey`→`noteKey` (47) |
+| Aile | yok | `familyId` zorunlu, ≥80 aile, ≤8 soru (49, 50) |
+| Figür alt metni | yok | dolu figürde `altTextKey` zorunlu (kural 4) |
+| Not gövdesi | düz metin | uygulama metni `body`, dokuz bölüm `lessonSections` (57) |
+| Not bağı | yalnız `noteId` | notta `id=noteId=noteKey`, soruda `noteId=noteKey` (48) |
+| Damga | `reviewStatus` serbest | yalnız ayrı AI-only son denetim damgalayabilir (54) |
+| Kabul hedefi | rapor metninde | `pack.contractPolicy` içinde, ölçülenle karşılaştırılır (52, 53) |
+
+`hints` **boş dizi olarak bile** yazılmaz. Boş dizi "bu alan var, doldurulmayı
+bekliyor" der; 2.2'de alan yoktur.
+
+### İki sürüm neden tek dosyada
+
+`hints` kuralları birbirini iptal ediyor: 2.0 beş ipucu yoksa HATA verir,
+2.2 ipucu **varsa** HATA verir. Sürüm kapısı kırılırsa yayımlanmış dört paket
+sessizce 500'er HATA üretir. `tests/test_contract_22.py` bunu bekçiliyor —
+kapıyı test etmeden kurala dokunma.
+
+### Skor: S1 yer değiştirir
+
+2.2'de ipucu olmadığı için "ilk dört ipucunda sızıntı yok" ölçütü her zaman
+1.0 döner ve skoru sahte biçimde şişirirdi. Aynı ağırlık (0.20) **gerekçe
+özgüllüğüne** verilir: jenerik olmayan `distractorWhy` oranı. Sözleşmenin asıl
+derdi zaten budur.
+
+### Kaynak, konu anlatımı ve görsel politikası
+
+`objectiveSource` uydurulmaz. Bilinmiyorsa üçü birlikte `PENDING` olur ve
+`pack.publishBlocked: true` yazılır (kural 55). Yarısı dolu bir kaynak,
+uydurulmuş kaynaktan daha tehlikelidir: doğrulanmış görünür.
+
+Konu anlatımı bağımsız öğretim içeriğidir. `body`, Windows ve Android'in
+doğrudan göstereceği okunabilir UTF-8 metindir. Aynı içeriğin dokuz zorunlu
+bölümü (`whatIWillLearn`, `keyConcepts`, `priorKnowledge`, `steps`,
+`workedExamples`, `commonMistakes`, `selfCheck`, `summary`, `figureNote`)
+`lessonSections` nesnesinde tutulur. `body` içine JSON nesnesi yazılmaz.
+
+Görsel oranı dersin pedagojik ihtiyacına göre paket politikasında açıkça
+bildirilir. Türkçe için soru görseli hedefi `0` olabilir; bu durumda
+`visualPolicy.questionMinimumPercent: 0` ve `balancedByObjective: false`
+yazılır. Konu anlatımlarında anlamlı görsel zorunluluğu korunur. Doğrulayıcı
+genel bir yüzdeyi bütün derslere zorla uygulamaz.
+
+Türkçe TYMM 2024 kazanım kodları (`T.O.5.5.`, `T.O.5.6.`, `T.O.5.21.`,
+`T.Y.5.21.` gibi) resmî program PDF'iyle ilişkilendirilir. `ki` yazımı
+`T.Y.5.21.` kapsamındaki yazım notuna; eş/zıt/eş sesli, deyim, atasözü ve
+gerçek-mecaz anlam çalışmaları `T.O.5.21.` söz varlığı notuna bağlanır.

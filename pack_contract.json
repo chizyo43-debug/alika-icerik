@@ -1,6 +1,12 @@
 {
-  "_aciklama": "Dersler arasi paket sozlesmesi. Paketler henuz hicbir uygulama tarafindan okunmuyor; sozlesmeyi simdi sabitlemek en ucuz an. Kural 46 bu dosyaya gore denetler.",
-  "surum": "1.0.0",
+  "_aciklama": "Dersler arasi paket sozlesmesi. Kural 46 bu dosyaya gore denetler; Question Contract 2.2'nin kanonik semasi AliKa uygulama deposundaki shared/question-2.2.schema.json dosyasidir.",
+  "surum": "1.1.0",
+  "questionContract": {
+    "version": "2.2",
+    "sha256": "74b5ee649f01933fd50dfeb7e29706e7dc1ddf0fe3e014ead2fe5cd0896ae7a1",
+    "noteBody": "Uygulamada gosterilecek UTF-8 metin body alaninda, dokuz pedagojik bolum lessonSections nesnesinde tutulur.",
+    "noteIdentity": "Note kaydinda id=noteId=noteKey; soru kaydinda noteId=noteKey zorunludur."
+  },
   "levelScale": {
     "min": 1,
     "max": 5,
@@ -8,7 +14,7 @@
   },
   "curriculum": {
     "izinli": ["MEB-TYMM-2024", "MEB-TYMM-2025"],
-    "not": "Kazanim kodlari, bildirilen program surumunun kodlari olmalidir. Ingilizce 2025 programini kullaniyor; Turkce paketinin kodlari (T.O.5.5.) eski bicimde ve 2024 iddiasiyla celisiyor - A5'te insan tarafindan eslenecek."
+    "not": "Kazanim kodlari, bildirilen program surumunun kodlari olmalidir. Turkce T.O.5.5., T.O.5.6. ve T.Y.5.21. kodlari MEB TYMM 2024 programindan gelir; bilinmeyen kod uydurulmaz."
   },
   "notKazanimAlani": {
     "ad": "objectives",
