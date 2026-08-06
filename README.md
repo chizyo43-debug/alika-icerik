@@ -20,7 +20,7 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 │       ├── fen-bilimleri/      ← ders
 │       │   └── fen-bilimleri-tum.jsonl  ← final onaylı tüm konular
 │       ├── turkce/             ← ders
-│       │   └── turkce-tum.jsonl ← kontrolü tamamlanan içerik
+│       │   └── turkce-tum.jsonl ← AI-only kalite kontrolü tamamlanan içerik
 │       └── ingilizce/          ← ders
 │           └── ingilizce-tum.jsonl ← final onaylı tüm konular
 ├── legal/                       ← yasal belgeler (Store gereksinimi)
@@ -43,7 +43,7 @@ Her satır bir JSON nesnesi:
 |------|-------|------|------|-----|------|-------|
 | Türkiye | 5 | Matematik | Tüm konular | 23 | 500 | ✅ Final onaylı |
 | Türkiye | 5 | Fen Bilimleri | Tüm konular | 28 | 500 | ✅ Final onaylı |
-| Türkiye | 5 | Türkçe | Tüm beceriler | 21 | 500 | ✅ Son kalite kontrolü tamamlandı |
+| Türkiye | 5 | Türkçe | Tüm beceriler | 22 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 5 | İngilizce | Tüm temalar | 23 | 500 | ✅ Son kalite kontrolü tamamlandı |
 
 ## İndirme Katmanları

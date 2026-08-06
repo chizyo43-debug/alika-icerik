@@ -852,7 +852,7 @@ def svg_kontrol(svg: str, labels: dict, ekle, kullanilan: set):
 # --- metin toplayıcılar -------------------------------------------------------
 
 def kural_22(kayitlar, paket, labels, kullanilan, ekle, olcum) -> None:
-    """Question Contract 2.2 kuralları (47-56).
+    """Question Contract 2.2 kuralları (47-57).
 
     Şema (shared/question-2.2.schema.json) kayıt biçimini denetler; buradaki
     kurallar şemanın YAPAMADIĞI şeyleri ölçer: iki alanın birbiriyle
@@ -873,7 +873,8 @@ def kural_22(kayitlar, paket, labels, kullanilan, ekle, olcum) -> None:
 
     # kural 47 — hiyerarşi halkaları. Sınıf → Ders → Ünite → Üst konu →
     # Alt konu → Not zincirinde atlanan halka, sorunun hangi kavramı ölçtüğünü
-    # kaybettirir; anahtar ASCII slug olmalıdır (makine kimliği).
+    # kaybettirir. unit/topic/subtopic ASCII slug, noteKey ise AliKa'nın
+    # açtığı tam not kimliğidir.
     for satir_no, k in kayitlar:
         if k.get("type") not in ("question", "note"):
             continue
@@ -881,24 +882,37 @@ def kural_22(kayitlar, paket, labels, kullanilan, ekle, olcum) -> None:
             deger = k.get(alan)
             if not deger:
                 ekle("HATA", 47, satir_no, f"hiyerarşi halkası eksik: {alan}")
-            elif not ANAHTAR_RE.fullmatch(str(deger)):
+            elif alan == "noteKey" and not ID_KARAKTER_RE.fullmatch(str(deger)):
+                ekle("HATA", 47, satir_no,
+                     f"noteKey geçerli kayıt kimliği değil: {deger!r}")
+            elif alan != "noteKey" and not ANAHTAR_RE.fullmatch(str(deger)):
                 ekle("HATA", 47, satir_no,
                      f"{alan} kararlı slug değil: {deger!r} "
                      "(yalnız ASCII küçük harf, rakam, tek tire)")
 
-    # kural 48 — noteKey ile noteId aynı notu göstermeli.
-    # İkisi ayrıştığında soru, kavramını öğretmeyen bir nota bağlanır ve bu
-    # ancak ikisi karşılaştırılarak görülür.
+    # kural 48 — noteKey uygulamanın açacağı notun kararlı kimliğidir.
+    # AliKa 2.2'de ayrı bir slug değildir: notta id/noteId/noteKey, soruda ise
+    # noteId/noteKey aynı değeri taşır. Aksi durumda uygulama yanlış ekranda
+    # doğru notu bulamaz.
+    for satir_no, k in kayitlar:
+        if k.get("type") != "note":
+            continue
+        nid = k.get("noteId") or k.get("id")
+        if k.get("id") != nid or k.get("noteKey") != nid:
+            ekle("HATA", 48, satir_no,
+                 "not id/noteId/noteKey değerleri aynı olmalı")
     for satir_no, k in sorular:
         nid = k.get("noteId")
         nkey = k.get("noteKey")
         hedef = notlar.get(nid)
         if hedef is None:
             ekle("HATA", 48, satir_no, f"noteId hiçbir nota karşılık gelmiyor: {nid!r}")
-        elif nkey and hedef.get("noteKey") and nkey != hedef.get("noteKey"):
+        elif nkey != nid:
             ekle("HATA", 48, satir_no,
-                 f"noteKey ile noteId çelişiyor: soru={nkey!r} "
-                 f"not={hedef.get('noteKey')!r}")
+                 f"soru noteKey ile noteId aynı değil: {nkey!r} != {nid!r}")
+        elif hedef.get("noteKey") != nid:
+            ekle("HATA", 48, satir_no,
+                 f"bağlı notun noteKey değeri noteId ile aynı değil: {nid!r}")
 
     # kural 49 — soru ailesi ve aile tavanı.
     aileler: dict = {}
@@ -985,26 +999,31 @@ def kural_22(kayitlar, paket, labels, kullanilan, ekle, olcum) -> None:
                  "humanReviewed true ama reviewStatus human-verified değil")
 
     # kural 57 — konu anlatımının dokuz bölümü.
-    # Konu anlatımı bağımsız ve öğretici olmalıdır: sorunun explanation'ı tek
-    # bir çözümü DOĞRULAR, not kavramı ÖĞRETİR. Biri diğerinin yerine yazılamaz,
-    # bu yüzden notun kendi başına ayakta duracak bölümleri aranır.
+    # ``body`` uygulamanın doğrudan gösterebildiği UTF-8 metindir;
+    # ``lessonSections`` ise üretim/denetim için yapılandırılmış kaynaktır.
+    # İkisi bir arada tutulur: uygulama ham JSON göstermez, denetleyici de
+    # pedagojik bölümleri kaybetmez.
     for satir_no, k in kayitlar:
         if k.get("type") != "note":
             continue
         govde = k.get("body")
-        if not isinstance(govde, dict):
+        if not isinstance(govde, str) or not govde.strip():
             ekle("HATA", 57, satir_no,
-                 "2.2'de not gövdesi dokuz bölümlü nesnedir, düz metin değil")
+                 "2.2'de body uygulamada gösterilecek dolu metin olmalı")
+        bolumler = k.get("lessonSections")
+        if not isinstance(bolumler, dict):
+            ekle("HATA", 57, satir_no,
+                 "2.2'de lessonSections dokuz bölümlü nesne olmalı")
             continue
         for bolum in NOT_BOLUMLERI:
-            deger = govde.get(bolum)
+            deger = bolumler.get(bolum)
             if not deger:
                 ekle("HATA", 57, satir_no, f"konu anlatımı bölümü eksik: {bolum}")
-        ornekler = govde.get("workedExamples")
+        ornekler = bolumler.get("workedExamples")
         if isinstance(ornekler, list) and len(ornekler) < 2:
             ekle("HATA", 57, satir_no,
                  f"en az iki çözümlü örnek gerekir (var: {len(ornekler)})")
-        oz = govde.get("selfCheck")
+        oz = bolumler.get("selfCheck")
         if isinstance(oz, list) and len(oz) < 3:
             ekle("HATA", 57, satir_no,
                  f"öz kontrol listesi çok kısa (madde: {len(oz)})")
@@ -1393,8 +1412,17 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             ekle("HATA", 19, satir_no,
                  f"distractorWhy uzunluğu şık sayısına eşit değil ({len(why)}≠{len(secenekler)})")
         elif dogru is not None:
-            if "doğru" not in str(why[dogru]).casefold():
+            dogru_gerekce = str(why[dogru]).strip()
+            if "doğru" not in dogru_gerekce.casefold():
                 ekle("HATA", 19, satir_no, "doğru indekste 'doğru' yazmıyor")
+            elif ikibucuk and (
+                    len(dogru_gerekce) < 8 or dogru_gerekce.casefold() in {
+                        "doğru", "doğrudur", "doğru cevap"
+                    }
+            ):
+                ekle("HATA", 19, satir_no,
+                     "doğru seçenek gerekçesi yalnız sonuç etiketi; "
+                     "somut çözüm doğrulaması gerekli")
             jenerik = [
                 i for i, w in enumerate(why)
                 if i != dogru
@@ -1753,12 +1781,40 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
                  f"kullanmıyor: {yanlis_alanli[:3]}")
 
     # kural 45 — kazanım yükü dengesi.
-    # Bir kazanım 83 soru alırken başkasının 1 soru alması, öğrencinin çalışma
-    # oturumunu ve kazanım kapsamasını bozar.
+    # Bazı derslerde kazanımların kapsamı eşit değildir. Paket açıkça
+    # objectiveBalanceMode=coverage diyorsa oranı keyfî biçimde eşitlemek
+    # yerine her kazanımın not ve soru kapsamının doğru beyan edildiğini ölç.
+    denge_modu = ((paket or {}).get("contractPolicy") or {}).get(
+        "objectiveBalanceMode", "ratio")
+    kapsam_dengeli = True
+    if denge_modu == "coverage":
+        for objective, adet in kazanim_sayac.items():
+            kapsam = coverage.get(objective)
+            if (
+                not isinstance(kapsam, dict)
+                or kapsam.get("questions") != adet
+                or not kapsam.get("notes")
+            ):
+                kapsam_dengeli = False
+                ekle("HATA", 45, 0,
+                     f"kazanım kapsam beyanı eksik/tutarsız: {objective!r}")
+        eksik_kazanim = sorted(set(coverage) - set(kazanim_sayac))
+        if eksik_kazanim:
+            kapsam_dengeli = False
+            ekle("HATA", 45, 0,
+                 f"sorusu olmayan coverage kazanımı: {eksik_kazanim}")
+        ekle("RAPOR", 45, 0,
+             f"kazanım dengesi kapsam modunda; {len(kazanim_sayac)} kazanımın "
+             "not ve soru beyanı doğrulandı")
+    elif denge_modu != "ratio":
+        kapsam_dengeli = False
+        ekle("HATA", 45, 0,
+             f"objectiveBalanceMode tanınmıyor: {denge_modu!r}")
+
     if len(kazanim_sayac) >= 5:
         en_cok = max(kazanim_sayac.values())
         en_az = min(kazanim_sayac.values())
-        if en_az and en_cok / en_az > 6:
+        if denge_modu == "ratio" and en_az and en_cok / en_az > 6:
             yuklu = max(kazanim_sayac.items(), key=lambda x: x[1])
             zayif = min(kazanim_sayac.items(), key=lambda x: x[1])
             ekle("UYARI", 45, 0,
@@ -1803,7 +1859,9 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             f for o, (f, _t) in kazanim_figur.items()
             if figur_zorunlu_kazanim(o)
         )
-        if len(kazanim_sayac) >= 2:
+        if denge_modu == "coverage":
+            denge = 1.0 if kapsam_dengeli else 0.0
+        elif len(kazanim_sayac) >= 2:
             _oran = max(kazanim_sayac.values()) / max(min(kazanim_sayac.values()), 1)
             denge = min(1.0, 6 / _oran) if _oran > 6 else 1.0
         else:

@@ -14,13 +14,9 @@ Yaptıkları:
   4. Damgayı düşürür: değiştirilen kayıt 'ai-verified' kalamaz.
   5. Kazanım kanıtını PENDING'e çeker ve paketi yayına kapatır.
 
-Kazanım kodları neden PENDING: paket `MEB-TYMM-2024` diyor ve
-objectiveSource gerçekten 2024 program PDF'i. Ama kodlar (`T.O.5.5.`) o
-programın kodları değil ve provenance zincirinde eşlemenin bir AI tarafından
-yapıldığı yazıyor (`curriculum-mapped:codex`). objectiveEvidenceId de sayfa
-çapası değil, 'program-web'. Doğrulanmamış bir eşlemeyi doğrulanmış gibi
-bırakmak, uydurulmuş kaynaktan daha tehlikelidir; çünkü denetlenmiş görünür.
-Belge tutulur, kanıt PENDING olur, paket yayına kapanır.
+Bu araç yalnız ilk yapısal geçiş içindir ve çıktıyı ``pending`` durumda
+bırakır. Yayın onarımı ve doğrulanmış MEB kanıt bağlantıları için
+``tools/repair_turkce_release.py`` çalıştırılmalıdır.
 
 Kullanım:
     python tools/migrate_turkce_22.py            # yalnız rapor
@@ -65,11 +61,9 @@ def hiyerarsi_uret(notlar: list) -> dict:
         harita[n["id"]] = {
             "unitKey": birim,
             "topicKey": ust,
-            # Bugün her alt konuya tam bir not düşüyor, bu yüzden ikisi aynı
-            # değeri alıyor. Kalabalık notlar alt konulara bölündüğünde
-            # ayrışacaklar; anahtar henüz yayımlanmadığı için değişebilir.
             "subtopicKey": alt,
-            "noteKey": alt,
+            # AliKa 2.2 not bağını doğrudan bu kararlı kimlikle açar.
+            "noteKey": n["id"],
         }
     return harita
 
@@ -99,6 +93,8 @@ def tasi(kayitlar: list) -> tuple[list, dict]:
 
         nid = k["id"] if k.get("type") == "note" else k.get("noteId")
         k.update(harita.get(nid, {}))
+        if k.get("type") == "note":
+            k["noteId"] = k["id"]
 
         if k.get("type") == "question":
             k["familyId"] = aileler[k["id"]]

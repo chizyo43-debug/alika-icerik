@@ -244,6 +244,33 @@ def govdeyi_kur(not_kaydi: dict) -> dict | None:
     }
 
 
+def uygulama_govdesi(bolumler: dict) -> str:
+    """Yapılandırılmış bölümleri AliKa'nın göstereceği metne dönüştürür."""
+    basliklar = (
+        ("whatIWillLearn", "Bu konuda ne öğreneceğim?"),
+        ("keyConcepts", "Temel kavramlar"),
+        ("priorKnowledge", "Ön bilgiler"),
+        ("steps", "Adım adım anlatım"),
+        ("workedExamples", "Çözümlü örnekler"),
+        ("commonMistakes", "Sık yapılan hata"),
+        ("selfCheck", "Kısa öz kontrol listesi"),
+        ("summary", "Özet"),
+        ("figureNote", "Görselle çalışma"),
+    )
+    cikti = []
+    for anahtar, baslik in basliklar:
+        deger = bolumler.get(anahtar)
+        if not deger:
+            continue
+        cikti.append(baslik)
+        if isinstance(deger, list):
+            cikti.extend(f"• {madde}" for madde in deger)
+        else:
+            cikti.append(str(deger))
+        cikti.append("")
+    return "\n".join(cikti).strip()
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--yaz", action="store_true")
@@ -256,14 +283,15 @@ def main(argv=None) -> int:
     for k in kayitlar:
         if k.get("type") != "note":
             continue
-        if isinstance(k.get("body"), dict):
+        if isinstance(k.get("lessonSections"), dict):
             donusen += 1
             continue
-        govde = govdeyi_kur(k)
-        if govde is None:
+        bolumler = govdeyi_kur(k)
+        if bolumler is None:
             basarisiz.append(k["id"])
             continue
-        k["body"] = govde
+        k["lessonSections"] = bolumler
+        k["body"] = uygulama_govdesi(bolumler)
         donusen += 1
 
     print(f"  dokuz bölüme ayrılan not  {donusen}")
@@ -271,7 +299,10 @@ def main(argv=None) -> int:
         print(f"  AYRIŞTIRILAMAYAN          {basarisiz}")
         return 1
     ornek = next(k for k in kayitlar if k.get("type") == "note")
-    print(f"  örnek öz kontrol maddesi  {len(ornek['body']['selfCheck'])}")
+    print(
+        "  örnek öz kontrol maddesi  "
+        f"{len(ornek['lessonSections']['selfCheck'])}"
+    )
 
     if not ns.yaz:
         print("(yazmak için --yaz)")
