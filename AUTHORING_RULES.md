@@ -1,5 +1,17 @@
 # AliKa İçerik Üretim Sözleşmesi
 
+> **Sözleşme sürümü.** Yayımlanmış dört paket **2.0**'dır. Yeni üretim
+> **Question Contract 2.2** ile yapılır: `hints` yoktur, hiyerarşi anahtarları
+> (`unitKey` → `topicKey` → `subtopicKey` → `noteKey`) zorunludur, dolu her
+> figür `altTextKey` taşır ve üretici kendi çıktısını `ai-verified`
+> damgalayamaz. Ayrıntı §13.
+>
+> Kanonik şema **AliKa uygulama deposundadır**: `shared/question-2.2.schema.json`
+> ve `shared/figure_spec.json`. Bu depoya kopyalanmaz — iki kopya, birinde
+> güncellenip diğerinde unutulan bir sözleşme demektir. `tools/pack_validate.py`
+> kuralları kendi kodunda uygular ve iki sürümü paketin `schemaVersion`
+> alanına göre ayırır.
+
 Bu belge **üretici modele** yöneliktir. Kuralları tanımlamaz — onlar
 `SCHEMA_V2.md` ve `.claude/skills/alika-icerik/SKILL.md` içindedir. Burada
 yalnız **bu depoda gerçekten yapılmış hatalar**, nedenleri ve tekrar etmemesi
@@ -429,3 +441,48 @@ içinde koşar. §11'in her maddesi buradaki bir satıra karşılık gelir.
 
 Bu denetimlerin **hepsi** A3 partilerinde en az bir gerçek kusur yakaladı.
 Hiçbiri süs değil.
+
+---
+
+## 13. Question Contract 2.2
+
+2.0 paketleri olduğu gibi geçerlidir; doğrulayıcı iki sürümü paketin
+`schemaVersion` alanına göre ayırır. Yeni ve onarılan paketler 2.2'dir.
+
+### Neyi değiştirdi
+
+| Konu | 2.0 | 2.2 |
+|---|---|---|
+| `hints` | tam 5 dolu basamak (kural 17, HATA) | **alan yok** (kural 56, HATA) |
+| Hiyerarşi | `topic` + `objective` | `unitKey`→`topicKey`→`subtopicKey`→`noteKey` (47) |
+| Aile | yok | `familyId` zorunlu, ≥80 aile, ≤8 soru (49, 50) |
+| Figür alt metni | yok | dolu figürde `altTextKey` zorunlu (kural 4) |
+| Damga | `reviewStatus` serbest | üretici kendini damgalayamaz (54) |
+| Kabul hedefi | rapor metninde | `pack.contractPolicy` içinde, ölçülenle karşılaştırılır (52, 53) |
+
+`hints` **boş dizi olarak bile** yazılmaz. Boş dizi "bu alan var, doldurulmayı
+bekliyor" der; 2.2'de alan yoktur.
+
+### İki sürüm neden tek dosyada
+
+`hints` kuralları birbirini iptal ediyor: 2.0 beş ipucu yoksa HATA verir,
+2.2 ipucu **varsa** HATA verir. Sürüm kapısı kırılırsa yayımlanmış dört paket
+sessizce 500'er HATA üretir. `tests/test_contract_22.py` bunu bekçiliyor —
+kapıyı test etmeden kurala dokunma.
+
+### Skor: S1 yer değiştirir
+
+2.2'de ipucu olmadığı için "ilk dört ipucunda sızıntı yok" ölçütü her zaman
+1.0 döner ve skoru sahte biçimde şişirirdi. Aynı ağırlık (0.20) **gerekçe
+özgüllüğüne** verilir: jenerik olmayan `distractorWhy` oranı. Sözleşmenin asıl
+derdi zaten budur.
+
+### Kaynağı bilinmeyen kazanım
+
+`objectiveSource` uydurulmaz. Bilinmiyorsa üçü birlikte `PENDING` olur ve
+`pack.publishBlocked: true` yazılır (kural 55). Yarısı dolu bir kaynak,
+uydurulmuş kaynaktan daha tehlikelidir: doğrulanmış görünür.
+
+Türkçe paketinde kazanım kodları 2019 biçimindedir (`T.O.5.5.`) ama paket
+`MEB-TYMM-2024` diyor. Bu eşleme program belgesinden **insan eliyle** çıkarılır;
+o zamana kadar paket teknik olarak tam, yayına kapalıdır.
