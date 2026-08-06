@@ -109,7 +109,44 @@ def not_kaydi() -> dict:
         "id": "tr.g05.tur.ana-fikir.n001",
         "noteId": "tr.g05.tur.ana-fikir.n001",
         "title": "Ana Fikir",
-        "body": "Ana fikir, metnin tamamını kapsayan tek yargıdır.",
+        "body": {
+            "whatIWillLearn": ("Bir metnin ana fikrini, yani tamamını kapsayan "
+                               "tek yargıyı bulmayı öğreneceksin."),
+            "keyConcepts": ("Ana fikir metnin tamamını kapsar; yardımcı "
+                            "düşünceler onu destekler. Konu metnin neden söz "
+                            "ettiğidir, ana fikir ise onun hakkında ne "
+                            "söylendiğidir."),
+            "priorKnowledge": ("Paragrafın ne olduğunu ve bir metnin konusunu "
+                               "bulabiliyor olman gerekir."),
+            "steps": ("Önce her paragrafın ne anlattığını tek cümleyle yaz. "
+                      "Sonra bu cümlelerin ortak yargısını ara. Ortak yargıyı "
+                      "kapsayan tek cümle ana fikirdir; yalnız bir paragrafa "
+                      "uyan cümle ayrıntıdır ve ana fikir olamaz."),
+            "workedExamples": [
+                ("Üç paragraflık bir metinde sırasıyla kütüphanenin sessiz "
+                 "olması, kitapların düzenli dizilmesi ve görevlinin yardımcı "
+                 "olması anlatılıyor. Her paragrafın ortak yargısı okumayı "
+                 "kolaylaştıran koşullardır; ana fikir budur."),
+                ("Bir metinde bisikletle okula gitmenin ucuz olduğu, hava "
+                 "kirliliğini azalttığı ve kişiyi zinde tuttuğu anlatılıyor. "
+                 "Üç paragraf da yararları sıraladığı için ana fikir "
+                 "bisikletin yararlı bir ulaşım biçimi olduğudur."),
+            ],
+            "commonMistakes": ("Başlığı ana fikir sanmak yaygın bir "
+                               "yanılgıdır: başlık konuyu verir, yargıyı "
+                               "değil. İkinci yanılgı, çarpıcı bir ayrıntıyı "
+                               "ana fikir sanmaktır; ayrıntı yalnız bir "
+                               "paragrafa uyar."),
+            "selfCheck": [
+                "Her paragrafın ne anlattığını tek cümleyle yazdım.",
+                "Bulduğum yargı metnin tamamını kapsıyor mu diye denetledim.",
+                "Kendi görüşümü metne yüklemedim.",
+            ],
+            "summary": ("Ana fikir metnin tamamını kapsayan tek yargıdır; "
+                        "yalnız bir paragrafa uyan cümle ayrıntıdır."),
+            "figureNote": ("Aşağıdaki tabloyu inceleyin ve her satırın hangi "
+                           "ölçüte karşılık geldiğini belirleyin."),
+        },
         "figure": {"kind": "grid", "cols": 2, "rows": 2,
                    "altTextKey": "tr.g05.tur.ana-fikir.n001.visual.a1"},
         "topic": "Metin Anlama",
@@ -349,3 +386,49 @@ def test_anlatidaki_sema_atif_sayilmaz():
     metin = ("Bir öğrenci basit bir devre şeması çizer. Daha sonra bu şemaya "
              "göre deney kurar ancak ampul yanmaz.")
     assert pack_validate.figur_atfi_var(metin, "tr", "question") is False
+
+
+# ---- kural 57: konu anlatımının dokuz bölümü ----
+
+def test_duz_metin_not_govdesi_hata(tmp_path):
+    """2.0'ın düz metin gövdesi 2.2'de yeterli değildir."""
+    k = temiz_paket()
+    k[1]["body"] = "Ana fikir, metnin tamamını kapsayan tek yargıdır."
+    assert 57 in kosu(tmp_path, k)
+
+
+def test_eksik_bolum_hata(tmp_path):
+    k = temiz_paket()
+    del k[1]["body"]["commonMistakes"]
+    assert 57 in kosu(tmp_path, k)
+
+
+def test_tek_cozumlu_ornek_yetersiz(tmp_path):
+    """Sözleşme en az iki ayrıntılı çözümlü örnek istiyor."""
+    k = temiz_paket()
+    k[1]["body"]["workedExamples"] = k[1]["body"]["workedExamples"][:1]
+    assert 57 in kosu(tmp_path, k)
+
+
+def test_kisa_oz_kontrol_yetersiz(tmp_path):
+    k = temiz_paket()
+    k[1]["body"]["selfCheck"] = ["Tek madde yeterli değildir."]
+    assert 57 in kosu(tmp_path, k)
+
+
+def test_turkce_notlari_dokuz_bolumlu():
+    """Yayındaki Türkçe paketi gerçekten dokuz bölümü taşımalı."""
+    yol = ROOT / "turkiye" / "5-sinif" / "turkce" / "turkce-tum.jsonl"
+    if _paket_surumu(yol) != "2.2":
+        return
+    notlar = [json.loads(s) for s in
+              yol.read_text(encoding="utf-8").splitlines()
+              if json.loads(s).get("type") == "note"]
+    assert notlar, "not bulunamadı"
+    for n in notlar:
+        govde = n["body"]
+        assert isinstance(govde, dict), n["id"]
+        eksik = [b for b in pack_validate.NOT_BOLUMLERI if not govde.get(b)]
+        assert not eksik, f"{n['id']}: eksik bölüm {eksik}"
+        assert len(govde["workedExamples"]) >= 2, n["id"]
+        assert len(govde["selfCheck"]) >= 3, n["id"]

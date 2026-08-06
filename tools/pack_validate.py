@@ -177,6 +177,14 @@ GECICI_ETIKET_RE = re.compile(r"\.(repaired|temp|fixed|new|old|v\d+)$")
 FIGUR_ORTAK_ZORUNLU = frozenset({"altTextKey"})
 FIGUR_ORTAK_OPSIYONEL = frozenset({"captionKey"})
 
+# 2.2 konu anlatımının dokuz bölümü. Sıra öğretim sırasıdır: ne öğreneceğim →
+# kavramlar → ön bilgiler → adım adım → örnekler → yanılgılar → öz kontrol →
+# özet → görsel yönergesi.
+NOT_BOLUMLERI = (
+    "whatIWillLearn", "keyConcepts", "priorKnowledge", "steps",
+    "workedExamples", "commonMistakes", "selfCheck", "summary", "figureNote",
+)
+
 
 # ---------------------------------------------------------------- yardımcılar
 
@@ -943,6 +951,31 @@ def kural_22(kayitlar, paket, labels, kullanilan, ekle, olcum) -> None:
             ekle("HATA", 54, satir_no,
                  "humanReviewed true ama reviewStatus human-verified değil")
 
+    # kural 57 — konu anlatımının dokuz bölümü.
+    # Konu anlatımı bağımsız ve öğretici olmalıdır: sorunun explanation'ı tek
+    # bir çözümü DOĞRULAR, not kavramı ÖĞRETİR. Biri diğerinin yerine yazılamaz,
+    # bu yüzden notun kendi başına ayakta duracak bölümleri aranır.
+    for satir_no, k in kayitlar:
+        if k.get("type") != "note":
+            continue
+        govde = k.get("body")
+        if not isinstance(govde, dict):
+            ekle("HATA", 57, satir_no,
+                 "2.2'de not gövdesi dokuz bölümlü nesnedir, düz metin değil")
+            continue
+        for bolum in NOT_BOLUMLERI:
+            deger = govde.get(bolum)
+            if not deger:
+                ekle("HATA", 57, satir_no, f"konu anlatımı bölümü eksik: {bolum}")
+        ornekler = govde.get("workedExamples")
+        if isinstance(ornekler, list) and len(ornekler) < 2:
+            ekle("HATA", 57, satir_no,
+                 f"en az iki çözümlü örnek gerekir (var: {len(ornekler)})")
+        oz = govde.get("selfCheck")
+        if isinstance(oz, list) and len(oz) < 3:
+            ekle("HATA", 57, satir_no,
+                 f"öz kontrol listesi çok kısa (madde: {len(oz)})")
+
     # kural 55 — paket beyanı ve yayın kilidi.
     if paket is not None:
         if not paket.get("disclosure"):
@@ -1146,7 +1179,15 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
 
         # kural 2/3 — şekil atfı ↔ figure alanı
         fig = k.get("figure")
-        ana_metin = k.get("question") if tip == "question" else (k.get("body") or "")
+        if tip == "question":
+            ana_metin = k.get("question")
+        else:
+            # 2.2'de not gövdesi dokuz bölümlü bir nesnedir; figüre yapılan
+            # atıf figureNote bölümünde durur. 2.0'da gövde düz metindir.
+            govde = k.get("body") or ""
+            ana_metin = ("\n".join(
+                str(v) for v in govde.values() if isinstance(v, str))
+                if isinstance(govde, dict) else govde)
         if figur_atfi_var(ana_metin or "", dil, tip) and not fig:
             ekle("HATA", 2, satir_no, "metin şekle atıf yapıyor ama figure boş")
         if fig and not figur_atfi_var(ana_metin or "", dil, tip,
