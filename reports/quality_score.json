@@ -16,7 +16,7 @@
       "soru": 500,
       "hata": 0,
       "uyari": 2,
-      "skor": 88.94,
+      "skor": 89.13,
       "olcutler": {
         "S1_sizinti_yok": 100.0,
         "S2_havuz_acikligi": 96.4,
@@ -24,7 +24,7 @@
         "S4_kalip_cesitliligi": 100.0,
         "S5_sekil_kapsamasi": 0.0,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 97.3,
+        "S7_geri_donusum_yok": 99.2,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": false
@@ -33,8 +33,8 @@
       "paket": "turkiye/5-sinif/ingilizce/ingilizce-tum.jsonl",
       "soru": 518,
       "hata": 0,
-      "uyari": 1,
-      "skor": 92.1,
+      "uyari": 0,
+      "skor": 94.85,
       "olcutler": {
         "S1_sizinti_yok": 100.0,
         "S2_havuz_acikligi": 100.0,
@@ -42,7 +42,7 @@
         "S4_kalip_cesitliligi": 70.7,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 65.0,
+        "S7_geri_donusum_yok": 92.5,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": false
@@ -52,15 +52,15 @@
       "soru": 500,
       "hata": 0,
       "uyari": 4,
-      "skor": 73.49,
+      "skor": 81.42,
       "olcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 71.0,
-        "S3_dolgu_yok": 93.7,
-        "S4_kalip_cesitliligi": 34.8,
-        "S5_sekil_kapsamasi": 0.0,
+        "S2_havuz_acikligi": 80.0,
+        "S3_dolgu_yok": 96.1,
+        "S4_kalip_cesitliligi": 70.0,
+        "S5_sekil_kapsamasi": 17.9,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 85.7,
+        "S7_geri_donusum_yok": 77.1,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": false
@@ -69,19 +69,19 @@
       "paket": "turkiye/5-sinif/turkce/turkce-tum.jsonl",
       "soru": 500,
       "hata": 0,
-      "uyari": 1,
-      "skor": 89.37,
+      "uyari": 0,
+      "skor": 99.97,
       "olcutler": {
         "S1_sizinti_yok": 100.0,
         "S2_havuz_acikligi": 100.0,
         "S3_dolgu_yok": 100.0,
         "S4_kalip_cesitliligi": 99.8,
         "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 7.2,
-        "S7_geri_donusum_yok": 86.7,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
         "S8_alan_butunlugu": 100.0
       },
-      "gecti": false
+      "gecti": true
     }
   ]
 }

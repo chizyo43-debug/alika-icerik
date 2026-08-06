@@ -3,8 +3,9 @@
 > **Sözleşme sürümü.** Yayımlanmış dört paket **2.0**'dır. Yeni üretim
 > **Question Contract 2.2** ile yapılır: `hints` yoktur, hiyerarşi anahtarları
 > (`unitKey` → `topicKey` → `subtopicKey` → `noteKey`) zorunludur, dolu her
-> figür `altTextKey` taşır ve üretici kendi çıktısını `ai-verified`
-> damgalayamaz. Ayrıntı §13.
+> figür `altTextKey` taşır. Notta `id = noteId = noteKey`, soruda
+> `noteId = noteKey` olmalıdır. AI-only son denetim yapılmadan hiçbir kayıt
+> `ai-verified` damgası alamaz. Ayrıntı §13.
 >
 > Kanonik şema **AliKa uygulama deposundadır**: `shared/question-2.2.schema.json`
 > ve `shared/figure_spec.json`. Bu depoya kopyalanmaz — iki kopya, birinde
@@ -457,7 +458,9 @@ Hiçbiri süs değil.
 | Hiyerarşi | `topic` + `objective` | `unitKey`→`topicKey`→`subtopicKey`→`noteKey` (47) |
 | Aile | yok | `familyId` zorunlu, ≥80 aile, ≤8 soru (49, 50) |
 | Figür alt metni | yok | dolu figürde `altTextKey` zorunlu (kural 4) |
-| Damga | `reviewStatus` serbest | üretici kendini damgalayamaz (54) |
+| Not gövdesi | düz metin | uygulama metni `body`, dokuz bölüm `lessonSections` (57) |
+| Not bağı | yalnız `noteId` | notta `id=noteId=noteKey`, soruda `noteId=noteKey` (48) |
+| Damga | `reviewStatus` serbest | yalnız ayrı AI-only son denetim damgalayabilir (54) |
 | Kabul hedefi | rapor metninde | `pack.contractPolicy` içinde, ölçülenle karşılaştırılır (52, 53) |
 
 `hints` **boş dizi olarak bile** yazılmaz. Boş dizi "bu alan var, doldurulmayı
@@ -477,12 +480,25 @@ kapıyı test etmeden kurala dokunma.
 özgüllüğüne** verilir: jenerik olmayan `distractorWhy` oranı. Sözleşmenin asıl
 derdi zaten budur.
 
-### Kaynağı bilinmeyen kazanım
+### Kaynak, konu anlatımı ve görsel politikası
 
 `objectiveSource` uydurulmaz. Bilinmiyorsa üçü birlikte `PENDING` olur ve
 `pack.publishBlocked: true` yazılır (kural 55). Yarısı dolu bir kaynak,
 uydurulmuş kaynaktan daha tehlikelidir: doğrulanmış görünür.
 
-Türkçe paketinde kazanım kodları 2019 biçimindedir (`T.O.5.5.`) ama paket
-`MEB-TYMM-2024` diyor. Bu eşleme program belgesinden **insan eliyle** çıkarılır;
-o zamana kadar paket teknik olarak tam, yayına kapalıdır.
+Konu anlatımı bağımsız öğretim içeriğidir. `body`, Windows ve Android'in
+doğrudan göstereceği okunabilir UTF-8 metindir. Aynı içeriğin dokuz zorunlu
+bölümü (`whatIWillLearn`, `keyConcepts`, `priorKnowledge`, `steps`,
+`workedExamples`, `commonMistakes`, `selfCheck`, `summary`, `figureNote`)
+`lessonSections` nesnesinde tutulur. `body` içine JSON nesnesi yazılmaz.
+
+Görsel oranı dersin pedagojik ihtiyacına göre paket politikasında açıkça
+bildirilir. Türkçe için soru görseli hedefi `0` olabilir; bu durumda
+`visualPolicy.questionMinimumPercent: 0` ve `balancedByObjective: false`
+yazılır. Konu anlatımlarında anlamlı görsel zorunluluğu korunur. Doğrulayıcı
+genel bir yüzdeyi bütün derslere zorla uygulamaz.
+
+Türkçe TYMM 2024 kazanım kodları (`T.O.5.5.`, `T.O.5.6.`, `T.O.5.21.`,
+`T.Y.5.21.` gibi) resmî program PDF'iyle ilişkilendirilir. `ki` yazımı
+`T.Y.5.21.` kapsamındaki yazım notuna; eş/zıt/eş sesli, deyim, atasözü ve
+gerçek-mecaz anlam çalışmaları `T.O.5.21.` söz varlığı notuna bağlanır.

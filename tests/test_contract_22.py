@@ -1,4 +1,4 @@
-"""Question Contract 2.2 kuralları (47-56) ve sürüm ayrımı.
+"""Question Contract 2.2 kuralları (47-57) ve sürüm ayrımı.
 
 Bu testlerin asıl işi, 2.2'nin 2.0'ı BOZMADIĞINI güvence altına almak: iki
 sözleşme tek dosyada yan yana yaşıyor ve hints kuralları birbirini iptal
@@ -26,7 +26,7 @@ HIYERARSI = {
     "unitKey": "okuma",
     "topicKey": "metin-anlama",
     "subtopicKey": "ana-fikir",
-    "noteKey": "ana-fikir-nedir",
+    "noteKey": "tr.g05.tur.ana-fikir.n001",
 }
 DAMGA = {
     "reviewStatus": "pending",
@@ -109,7 +109,13 @@ def not_kaydi() -> dict:
         "id": "tr.g05.tur.ana-fikir.n001",
         "noteId": "tr.g05.tur.ana-fikir.n001",
         "title": "Ana Fikir",
-        "body": {
+        "body": (
+            "Bu konuda ne öğreneceğim?\n"
+            "Bir metnin ana fikrini bulmayı öğreneceksin.\n\n"
+            "Görselle çalışma\n"
+            "Aşağıdaki kareli zemini inceleyin."
+        ),
+        "lessonSections": {
             "whatIWillLearn": ("Bir metnin ana fikrini, yani tamamını kapsayan "
                                "tek yargıyı bulmayı öğreneceksin."),
             "keyConcepts": ("Ana fikir metnin tamamını kapsar; yardımcı "
@@ -219,6 +225,12 @@ def test_anahtar_slug_degilse_hata(tmp_path):
 def test_notekey_noteid_celisirse_hata(tmp_path):
     k = temiz_paket()
     k[2]["noteKey"] = "bambaska-not"
+    assert 48 in kosu(tmp_path, k)
+
+
+def test_notun_notekey_degeri_kendi_idsi_olmali(tmp_path):
+    k = temiz_paket()
+    k[1]["noteKey"] = "ana-fikir-nedir"
     assert 48 in kosu(tmp_path, k)
 
 
@@ -337,18 +349,14 @@ def test_iki_sifir_paketleri_bozulmadi():
         assert hatalar == [], f"{ad}: {hatalar[:3]}"
 
 
-def test_turkce_22_borcu_yalniz_gorselde():
-    """Türkçe 2.2'ye taşındı; kalan tek borç bildirilen görsel açığıdır.
-
-    Bu test kapıyı açık tutmaz, DARALTIR: görsel dışında herhangi bir kural
-    kırmızıya dönerse taşıma bir şeyi bozmuş demektir ve derhâl görünür olur.
-    """
+def test_turkce_22_paketi_hatasiz():
+    """Yayın paketi hiçbir 2.2 hata istisnasına ihtiyaç duymamalıdır."""
     yol = ROOT / "turkiye" / "5-sinif" / "turkce" / "turkce-tum.jsonl"
     if _paket_surumu(yol) != "2.2":
         return
-    baska = sorted({b.kural for b in pack_validate.validate_file(yol)
-                    if b.seviye == "HATA" and b.kural != 53})
-    assert baska == [], f"görsel dışı HATA kuralları: {baska}"
+    hatalar = [b for b in pack_validate.validate_file(yol)
+               if b.seviye == "HATA"]
+    assert hatalar == []
 
 
 # ---- kural 2/3: figür atfının iki ayrı sorusu ----
@@ -390,30 +398,45 @@ def test_anlatidaki_sema_atif_sayilmaz():
 
 # ---- kural 57: konu anlatımının dokuz bölümü ----
 
-def test_duz_metin_not_govdesi_hata(tmp_path):
-    """2.0'ın düz metin gövdesi 2.2'de yeterli değildir."""
+def test_yapilandirilmis_bolumler_yoksa_hata(tmp_path):
+    """Uygulama metni tek başına pedagojik bölüm sözleşmesini kanıtlamaz."""
     k = temiz_paket()
-    k[1]["body"] = "Ana fikir, metnin tamamını kapsayan tek yargıdır."
+    del k[1]["lessonSections"]
     assert 57 in kosu(tmp_path, k)
 
 
 def test_eksik_bolum_hata(tmp_path):
     k = temiz_paket()
-    del k[1]["body"]["commonMistakes"]
+    del k[1]["lessonSections"]["commonMistakes"]
     assert 57 in kosu(tmp_path, k)
 
 
 def test_tek_cozumlu_ornek_yetersiz(tmp_path):
     """Sözleşme en az iki ayrıntılı çözümlü örnek istiyor."""
     k = temiz_paket()
-    k[1]["body"]["workedExamples"] = k[1]["body"]["workedExamples"][:1]
+    k[1]["lessonSections"]["workedExamples"] = (
+        k[1]["lessonSections"]["workedExamples"][:1]
+    )
     assert 57 in kosu(tmp_path, k)
 
 
 def test_kisa_oz_kontrol_yetersiz(tmp_path):
     k = temiz_paket()
-    k[1]["body"]["selfCheck"] = ["Tek madde yeterli değildir."]
+    k[1]["lessonSections"]["selfCheck"] = ["Tek madde yeterli değildir."]
     assert 57 in kosu(tmp_path, k)
+
+
+def test_uygulama_govdesi_dolu_metin_olmali(tmp_path):
+    k = temiz_paket()
+    k[1]["body"] = {"yanlis": "uygulama ham JSON görmemeli"}
+    assert 57 in kosu(tmp_path, k)
+
+
+def test_dogru_secenek_gerekcesi_tek_sozcuk_olamaz(tmp_path):
+    k = temiz_paket()
+    dogru = k[2]["correct"]
+    k[2]["distractorWhy"][dogru] = "doğru"
+    assert 19 in kosu(tmp_path, k)
 
 
 def test_turkce_notlari_dokuz_bolumlu():
@@ -426,9 +449,10 @@ def test_turkce_notlari_dokuz_bolumlu():
               if json.loads(s).get("type") == "note"]
     assert notlar, "not bulunamadı"
     for n in notlar:
-        govde = n["body"]
-        assert isinstance(govde, dict), n["id"]
-        eksik = [b for b in pack_validate.NOT_BOLUMLERI if not govde.get(b)]
+        assert isinstance(n["body"], str) and n["body"].strip(), n["id"]
+        bolumler = n["lessonSections"]
+        assert isinstance(bolumler, dict), n["id"]
+        eksik = [b for b in pack_validate.NOT_BOLUMLERI if not bolumler.get(b)]
         assert not eksik, f"{n['id']}: eksik bölüm {eksik}"
-        assert len(govde["workedExamples"]) >= 2, n["id"]
-        assert len(govde["selfCheck"]) >= 3, n["id"]
+        assert len(bolumler["workedExamples"]) >= 2, n["id"]
+        assert len(bolumler["selfCheck"]) >= 3, n["id"]
