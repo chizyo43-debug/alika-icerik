@@ -1,12 +1,40 @@
-# AliKa İçerik Şeması v2.0
+# AliKa İçerik Şemaları — 2.2 Güncel, 2.0 Geriye Uyumlu
 
-**Sürüm:** 2.0  
-**Durum:** Zorunlu (tüm yeni paketler), kademeli migrasyon (mevcut)  
+**Güncel üretim sürümü:** 2.2
+**Eski paket sürümü:** 2.0 (yalnız geriye uyumluluk)
+**Durum:** Tüm yeni ve onarılan paketlerde 2.2 zorunlu
 **Uyumluluk:** v1 paketleri `schemaVersion` alanı yoksa v1 kabul edilir.
 
 ---
 
-## 1. Pack (Paket) Satırı
+## 0. Güncel Question Contract 2.2
+
+Kanonik şema AliKa uygulama deposundaki
+`shared/question-2.2.schema.json`, görsel sözleşmesi ise
+`shared/figure_spec.json` dosyasıdır. Bu depodaki `tools/pack_validate.py`
+aynı yayın kapılarını uygular.
+
+2.2 için bağlayıcı farklar:
+
+- `hints` alanı yoktur; boş dizi olarak bile yazılması HATA'dır.
+- Hiyerarşi `unitKey → topicKey → subtopicKey → noteKey` biçimindedir.
+- Notta `id = noteId = noteKey`; soruda `noteId = noteKey` olmalıdır.
+- Her soru bir `familyId` taşır; paket en az 80 aile içerir ve bir ailede en
+  fazla 8 soru bulunur.
+- Dolu her görsel anlamlı bir `altTextKey` taşır.
+- Her soru geçerli bir konu anlatımına bağlıdır. `explanation` yalnız o
+  sorunun çözümüdür; konu anlatımının yerine geçmez.
+- `ai-verified`, yalnız ayrı AI son denetimi ve geçerli içerik/karar hash'leri
+  ile kullanılabilir. İnsan onayı yapılmadığı açıkça belirtilir.
+- `pack.contractPolicy`, `contentContractVersion`,
+  `contentContractHash` ve `visualPolicy` yayın öncesinde zorunludur.
+
+Aşağıdaki 2.0 alan açıklamaları, mevcut eski İngilizce paketinin içe
+aktarılabilmesi için korunmuştur; yeni üretime örnek değildir.
+
+---
+
+## 1. Pack (Paket) Satırı — Eski 2.0 Referansı
 
 ```json
 {
@@ -140,7 +168,7 @@
 | `distractorWhy` | string[] | EVET | Her seçenek için gerekçe |
 | `explanation` | string | EVET | Çözüm açıklaması |
 | `figure` | object/null | EVET | Şekil tanımı |
-| `hints` | string[] | EVET | 5 kademeli ipucu |
+| `hints` | string[] | Yalnız 2.0 | Eski paketlerde 5 kademeli ipucu; 2.2'de yasak |
 | `tags` | string[] | HAYIR | Konu etiketleri |
 | `reviewStatus` | string | **EVET (v2)** | `pending`/`reviewed`/`rejected` |
 | `provenance` | string | **EVET (v2)** | Üretim izi |
@@ -210,5 +238,5 @@ Yeni kurallar (v2):
 | 35 | UYARI | Doğru cevap konumu pakette %35'i aşıyor |
 | 36 | HATA | `distractorWhy` uzun görünmesine rağmen öğrencinin somut hatasını adlandırmayan şablon içeriyor |
 | 37 | HATA | `difficultyReason` soru kökünü uzatan jenerik şablon içeriyor |
-| 38 | UYARI | 4. veya 5. ipucu paket sorularının en az %70'inde aynı |
+| 38 | UYARI | Yalnız 2.0: 4. veya 5. ipucu paket sorularının en az %70'inde aynı |
 | 39 | RAPOR/UYARI | Tekrarlı seçenek kümeleri ve sürekli yanlış seçenekler raporlanır; yalnız açıkça bozuk dil biçimlerinin 4+ kez dolgu olarak kullanılması uyarı verir |

@@ -75,6 +75,10 @@ Kalite kapısı: her pakette **0 HATA** zorunlu; UYARI sayısı ve skor
 `tests/quality_baseline.json` içindeki tabandan kötüleşemez. Hedef, tüm
 paketlerde 0 uyarı ve skor ≥ 99. Şema: [SCHEMA_V2.md](SCHEMA_V2.md).
 
+`tools/regen_*` ve `tools/migrate_*` dosyaları geçmiş onarımların
+tekrarlanabilir kayıtlarıdır; yeni üretim girişi değildir. Yeni paketler
+Question Contract 2.2 ile, `hints` alanı olmadan üretilir.
+
 ## Lisans
 
 İçerikler: [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/)

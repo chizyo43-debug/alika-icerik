@@ -1,7 +1,9 @@
 # AliKa İçerik Üretim Sözleşmesi
 
-> **Sözleşme sürümü.** Yayımlanmış dört paket **2.0**'dır. Yeni üretim
-> **Question Contract 2.2** ile yapılır: `hints` yoktur, hiyerarşi anahtarları
+> **Sözleşme sürümü.** Türkçe, Matematik ve Fen Bilimleri paketleri
+> **Question Contract 2.2**'dir. İngilizce paketi geçici olarak geriye uyumlu
+> **2.0** sürümündedir. Yeni üretim **Question Contract 2.2** ile yapılır:
+> `hints` yoktur, hiyerarşi anahtarları
 > (`unitKey` → `topicKey` → `subtopicKey` → `noteKey`) zorunludur, dolu her
 > figür `altTextKey` taşır. Notta `id = noteId = noteKey`, soruda
 > `noteId = noteKey` olmalıdır. AI-only son denetim yapılmadan hiçbir kayıt
@@ -32,8 +34,10 @@ Hiçbirini tek başına düzenleme, hiçbirini tek başına "iyileştirme".
 
 ## 1. Atomiklik ilkesi (en önemli madde)
 
-`choices`, `correct`, `distractorWhy`, `hints`, `explanation` **tek üretim
-birimidir**. Biri değişiyorsa hepsi birlikte yeniden üretilir.
+2.2'de `choices`, `correct`, `distractorWhy`, `explanation` ve çözümle ilişkili
+`figure` **tek üretim birimidir**. Biri değişiyorsa hepsi birlikte yeniden
+üretilir. Yalnız geriye uyumlu 2.0 kaydı onarılıyorsa `hints` de aynı atomik
+birime dahildir.
 
 ### Ne olmuştu
 
@@ -167,9 +171,12 @@ okuma, ters yönde sorma (cevaptan soruya), hata bulma.
 
 ---
 
-## 5. İpucu merdiveni
+## 5. İpucu merdiveni — yalnız geriye uyumlu 2.0
 
-`hints` **tam 5 dolu basamak**. İlk dördü doğru şıkkın metnini vermez
+Yeni 2.2 içerikte `hints` alanı **yasaktır**. Aşağıdaki kurallar yalnız
+mevcut 2.0 paketinin geçici geriye uyumluluğu içindir.
+
+2.0'da `hints` **tam 5 dolu basamak**. İlk dördü doğru şıkkın metnini vermez
 (kural 18, HATA). Beşinci basamak tam çözüm verebilir — bu şartname gereği
 serbesttir.
 
@@ -436,7 +443,7 @@ içinde koşar. §11'in her maddesi buradaki bir satıra karşılık gelir.
 | 7 | Gerekçe/açıklama sıra sözcüğü içermiyor | 11.7 |
 | 8 | Doğru cevap konumları dengeli döndürülmüş | 11.8 |
 | 9 | `len(distractorWhy) == len(choices)`, `"doğru"` doğru indekste | §1 |
-| 10 | İlk dört ipucu doğru şıkkın metnini içermiyor | §5 |
+| 10 | Yalnız 2.0: ilk dört ipucu doğru şıkkın metnini içermiyor; 2.2'de `hints` yok | §5 |
 | 11 | Ölçülen yanılgılar parti içinde benzersiz | 11.9 |
 | 12 | `noteId` sorunun konusuyla uyuşuyor | 11.9 |
 
