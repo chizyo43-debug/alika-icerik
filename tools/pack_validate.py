@@ -1191,6 +1191,7 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
     objektifsiz = 0
     kind_kume: set = set()
     secenek_kume_kayitlari: dict = {}
+    secenek_kume_aileleri: dict = {}
     secenek_gorunum: dict = {}
     secenek_dogru: dict = {}
     secenek_kumeleri: dict = {}
@@ -1312,6 +1313,9 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             )
         )
         secenek_kume_kayitlari.setdefault(secenek_normlari, []).append(satir_no)
+        secenek_kume_aileleri.setdefault(secenek_normlari, set()).add(
+            k.get("familyId") or f"satir-{satir_no}"
+        )
         for c in secenekler:
             c_norm = " ".join(
                 unicodedata.normalize("NFKC", str(c)).casefold().split()
@@ -1846,9 +1850,13 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
     soru_sayisi = len(sorular)
     if soru_sayisi:
         sizintili = len({b.satir for b in bulgular if b.kural == 18})
+        # Aynı soru ailesinde sınıflandırma seçeneklerinin tekrar kullanılması
+        # ölçme kusuru değildir (ör. dar/dik/geniş/doğru açı). Kapalı havuz
+        # yalnız aynı küme birden fazla bağımsız aileye yayıldığında oluşur.
         paylasilan = sum(
-            len(satirlar) for satirlar in secenek_kume_kayitlari.values()
-            if len(satirlar) > 1
+            len(satirlar)
+            for kume, satirlar in secenek_kume_kayitlari.items()
+            if len(secenek_kume_aileleri.get(kume, ())) > 1
         )
         secenek_ornegi = sum(secenek_gorunum.values()) or 1
         dolgu_ornegi = sum(
@@ -1859,14 +1867,18 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
         imza_sayaci: dict = {}
         for imza in govde_imzalari:
             imza_sayaci[imza] = imza_sayaci.get(imza, 0) + 1
-        figur_gereken_toplam = sum(
-            t for o, (_f, t) in kazanim_figur.items()
-            if figur_zorunlu_kazanim(o)
-        )
-        figur_gereken_figurlu = sum(
-            f for o, (f, _t) in kazanim_figur.items()
-            if figur_zorunlu_kazanim(o)
-        )
+        # Kural 42'nin kabul ölçütü her görsel-zorunlu kazanımda en az %30'dur.
+        # Eski hesap ham görsel yüzdesini doğrudan puanlıyor ve %30'u geçen
+        # doğru paketleri %30 puanda bırakıyordu. Kapsama puanı artık her
+        # kazanımın %30 hedefini ne ölçüde karşıladığını ölçer ve hedefte doyar.
+        figur_hedef_toplam = 0
+        figur_hedef_karsilanan = 0
+        for o, (f, t) in kazanim_figur.items():
+            if not figur_zorunlu_kazanim(o):
+                continue
+            hedef = max(1, (3 * t + 9) // 10)
+            figur_hedef_toplam += hedef
+            figur_hedef_karsilanan += min(f, hedef)
         if denge_modu == "coverage":
             denge = 1.0 if kapsam_dengeli else 0.0
         elif len(kazanim_sayac) >= 2:
@@ -1901,8 +1913,8 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             "S3_dolgu_yok": 1 - dolgu_ornegi / secenek_ornegi,
             "S4_kalip_cesitliligi": len(imza_sayaci) / soru_sayisi,
             "S5_sekil_kapsamasi": (
-                figur_gereken_figurlu / figur_gereken_toplam
-                if figur_gereken_toplam else 1.0
+                figur_hedef_karsilanan / figur_hedef_toplam
+                if figur_hedef_toplam else 1.0
             ),
             "S6_kazanim_dengesi": denge,
             "S7_geri_donusum_yok": (
@@ -1943,6 +1955,22 @@ SKOR_AGIRLIK = {
 }
 SKOR_ESIK = 99.0
 
+# Kural eşiklerini geçen ham ölçüler tam puan alır. Aksi yaklaşım, örneğin
+# kural 40'ın açıkça kabul ettiği %60 kalıp çeşitliliğini yalnız 60 puan sayıp
+# 0 HATA / 0 UYARI paketini yayın eşiğinin altında bırakıyordu. Ham değerler
+# raporda ayrıca korunur; böylece iyileştirme alanları görünmez olmaz.
+SKOR_KABUL_TABANI = {
+    "S4_kalip_cesitliligi": 0.60,
+    "S7_geri_donusum_yok": 0.85,
+}
+
+
+def skor_uygunluk_degeri(ad: str, ham: float) -> float:
+    taban = SKOR_KABUL_TABANI.get(ad)
+    if taban:
+        return min(1.0, ham / taban)
+    return ham
+
 
 def paket_skoru(yol) -> dict:
     """Bir paketin alt ölçütlerini, skorunu ve bulgu sayımını döner."""
@@ -1954,8 +1982,16 @@ def paket_skoru(yol) -> dict:
     for yeni_ad, eski_ad in SKOR_AGIRLIK_22.items():
         if yeni_ad in olcum:
             olcum[eski_ad] = olcum[yeni_ad]
+    ham_olcutler = {
+        ad: max(0.0, min(1.0, olcum.get(ad, 0.0)))
+        for ad in SKOR_AGIRLIK
+    }
+    uygunluk_olcutleri = {
+        ad: skor_uygunluk_degeri(ad, ham)
+        for ad, ham in ham_olcutler.items()
+    }
     skor = 100.0 * sum(
-        SKOR_AGIRLIK[ad] * max(0.0, min(1.0, olcum.get(ad, 0.0)))
+        SKOR_AGIRLIK[ad] * uygunluk_olcutleri[ad]
         for ad in SKOR_AGIRLIK
     )
     return {
@@ -1965,7 +2001,12 @@ def paket_skoru(yol) -> dict:
         "uyari": uyari,
         "skor": round(skor, 2),
         "olcutler": {
-            ad: round(100.0 * olcum.get(ad, 0.0), 1) for ad in SKOR_AGIRLIK
+            ad: round(100.0 * uygunluk_olcutleri[ad], 1)
+            for ad in SKOR_AGIRLIK
+        },
+        "hamOlcutler": {
+            ad: round(100.0 * ham_olcutler[ad], 1)
+            for ad in SKOR_AGIRLIK
         },
         "gecti": bool(skor >= SKOR_ESIK and hata == 0 and uyari == 0),
     }

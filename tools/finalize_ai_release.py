@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Finalize the reviewed Grade 5 math and science Question 2.2 packages.
+"""Finalize independently reviewed Grade 5 Question 2.2 packages.
 
 This tool does not generate or rewrite educational content. It:
 
@@ -13,6 +13,7 @@ This tool does not generate or rewrite educational content. It:
 
 from __future__ import annotations
 
+import argparse
 import copy
 import hashlib
 import json
@@ -89,7 +90,26 @@ PACKAGES = {
         / "ingilizce"
         / "ingilizce-tum.jsonl",
         "producer": "chatgpt-pro; repair=codex-sol",
-        "schema_version": "2.0",
+        "schema_version": "2.2",
+        "visual_minimum_percent": 20,
+        "visual_rationale": (
+            "İngilizce görselleri program, sınıflandırma ve bağlam "
+            "kanıtlarını erişilebilir biçimde düzenler; süs amaçlı kullanılmaz."
+        ),
+    },
+    "sosyal-bilgiler": {
+        "path": ROOT
+        / "turkiye"
+        / "5-sinif"
+        / "sosyal-bilgiler"
+        / "sosyal-bilgiler-tum.jsonl",
+        "producer": "chatgpt-pro; repair=codex-sol",
+        "schema_version": "2.2",
+        "visual_minimum_percent": 20,
+        "visual_rationale": (
+            "Sosyal Bilgiler görselleri olay sırası, kurum ilişkisi ve veri "
+            "kanıtlarını erişilebilir tablo veya akış olarak düzenler."
+        ),
     },
 }
 
@@ -522,8 +542,18 @@ def finalize_package(name: str, config: dict) -> None:
     print(f"{name}: {len(rows)} records finalized")
 
 
-def main() -> None:
-    for name, config in PACKAGES.items():
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "packages",
+        nargs="*",
+        choices=sorted(PACKAGES),
+        help="Boş bırakılırsa tüm paketler sonlandırılır.",
+    )
+    args = parser.parse_args(argv)
+    targets = args.packages or list(PACKAGES)
+    for name in targets:
+        config = PACKAGES[name]
         finalize_package(name, config)
 
 

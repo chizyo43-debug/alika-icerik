@@ -16,62 +16,130 @@
       "soru": 500,
       "hata": 0,
       "uyari": 0,
-      "skor": 94.19,
+      "skor": 99.61,
       "olcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 96.6,
+        "S2_havuz_acikligi": 97.4,
         "S3_dolgu_yok": 100.0,
         "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 48.6,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 97.4,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
         "S7_geri_donusum_yok": 98.3,
         "S8_alan_butunlugu": 100.0
       },
-      "gecti": false
+      "gecti": true
     },
     {
       "paket": "turkiye/5-sinif/ingilizce/ingilizce-tum.jsonl",
-      "soru": 518,
+      "soru": 500,
       "hata": 0,
       "uyari": 0,
-      "skor": 94.85,
+      "skor": 100.0,
       "olcutler": {
         "S1_sizinti_yok": 100.0,
         "S2_havuz_acikligi": 100.0,
         "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 70.7,
+        "S4_kalip_cesitliligi": 100.0,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 92.5,
+        "S7_geri_donusum_yok": 100.0,
         "S8_alan_butunlugu": 100.0
       },
-      "gecti": false
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 72.6,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 92.3,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": true
     },
     {
       "paket": "turkiye/5-sinif/matematik/matematik-tum.jsonl",
       "soru": 500,
       "hata": 0,
       "uyari": 0,
-      "skor": 87.07,
+      "skor": 99.25,
       "olcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 83.6,
+        "S2_havuz_acikligi": 97.0,
         "S3_dolgu_yok": 98.0,
-        "S4_kalip_cesitliligi": 70.8,
-        "S5_sekil_kapsamasi": 42.5,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 97.0,
+        "S3_dolgu_yok": 98.0,
+        "S4_kalip_cesitliligi": 71.2,
+        "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
         "S7_geri_donusum_yok": 99.6,
         "S8_alan_butunlugu": 100.0
       },
-      "gecti": false
+      "gecti": true
+    },
+    {
+      "paket": "turkiye/5-sinif/sosyal-bilgiler/sosyal-bilgiler-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 0,
+      "skor": 100.0,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 99.3,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": true
     },
     {
       "paket": "turkiye/5-sinif/turkce/turkce-tum.jsonl",
       "soru": 500,
       "hata": 0,
       "uyari": 0,
-      "skor": 99.97,
+      "skor": 100.0,
       "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
         "S1_sizinti_yok": 100.0,
         "S2_havuz_acikligi": 100.0,
         "S3_dolgu_yok": 100.0,

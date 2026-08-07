@@ -16,13 +16,15 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 ├── turkiye/                     ← ülke
 │   └── 5-sinif/                ← sınıf
 │       ├── matematik/          ← ders
-│       │   └── matematik-tum.jsonl  ← final onaylı tüm konular
+│       │   └── matematik-tum.jsonl  ← AI-only doğrulanmış paket
 │       ├── fen-bilimleri/      ← ders
-│       │   └── fen-bilimleri-tum.jsonl  ← final onaylı tüm konular
+│       │   └── fen-bilimleri-tum.jsonl  ← AI-only doğrulanmış paket
 │       ├── turkce/             ← ders
 │       │   └── turkce-tum.jsonl ← AI-only kalite kontrolü tamamlanan içerik
-│       └── ingilizce/          ← ders
-│           └── ingilizce-tum.jsonl ← final onaylı tüm konular
+│       ├── ingilizce/          ← ders
+│       │   └── ingilizce-tum.jsonl ← AI-only doğrulanmış paket
+│       └── sosyal-bilgiler/    ← ders
+│           └── sosyal-bilgiler-tum.jsonl ← AI-only doğrulanmış paket
 ├── legal/                       ← yasal belgeler (Store gereksinimi)
 └── README.md
 ```
@@ -44,14 +46,12 @@ Her satır bir JSON nesnesi:
 | Türkiye | 5 | Matematik | Tüm konular | 23 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 5 | Fen Bilimleri | Tüm konular | 28 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 5 | Türkçe | Tüm beceriler | 22 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 5 | İngilizce | Tüm temalar | 24 | 518 | ⚠️ Eski 2.0 sözleşmesi; 2.2 geçişi bekliyor |
+| Türkiye | 5 | İngilizce | Tüm temalar | 24 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 5 | Sosyal Bilgiler | Tüm öğrenme alanları | 19 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 
-## İndirme Katmanları
-
-| Katman | Açıklama | Örnek |
-|--------|----------|-------|
-| **Ders paketi** | Dersin bütün konu ve kazanımları | `matematik/matematik-tum.jsonl` |
-| **Birleşik** | Sınıftaki tüm dersler | `5-sinif-tum-dersler.jsonl` |
+Toplam: **5 ders, 116 konu anlatımı ve 2.500 soru**. Beş paket de
+Question Contract 2.2 kullanır; soru kayıtlarında `hints` alanı bulunmaz.
+Her soru geçerli bir konu anlatımına bağlıdır.
 
 ## İçerik üretimi ve kalite
 
@@ -74,6 +74,9 @@ python -m pytest tests/ -q
 Kalite kapısı: her pakette **0 HATA** zorunlu; UYARI sayısı ve skor
 `tests/quality_baseline.json` içindeki tabandan kötüleşemez. Hedef, tüm
 paketlerde 0 uyarı ve skor ≥ 99. Şema: [SCHEMA_V2.md](SCHEMA_V2.md).
+
+Güncel yayın kanıtı:
+[5. Sınıf Yayın Hazırlık Raporu](reports/GRADE5_RELEASE_READINESS.md).
 
 `tools/regen_*` ve `tools/migrate_*` dosyaları geçmiş onarımların
 tekrarlanabilir kayıtlarıdır; yeni üretim girişi değildir. Yeni paketler
