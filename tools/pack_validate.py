@@ -865,7 +865,7 @@ def svg_kontrol(svg: str, labels: dict, ekle, kullanilan: set):
 # --- metin toplayıcılar -------------------------------------------------------
 
 def kural_22(kayitlar, paket, labels, kullanilan, ekle, olcum) -> None:
-    """Question Contract 2.2 kuralları (47-57).
+    """Question Contract 2.2 kuralları (47-58).
 
     Şema (shared/question-2.2.schema.json) kayıt biçimini denetler; buradaki
     kurallar şemanın YAPAMADIĞI şeyleri ölçer: iki alanın birbiriyle
@@ -898,6 +898,101 @@ def kural_22(kayitlar, paket, labels, kullanilan, ekle, olcum) -> None:
                 0,
                 "ders soru dağılımı bildirileni tutmuyor: "
                 f"ölçülen {ders_sayaci}, bildirilen {ders_hedefleri}",
+            )
+
+    # kural 58 — resmî kaynak zinciri dosyaya ve sayfaya kadar çözülmeli.
+    # URL'nin çalışıyor görünmesi kanıt değildir: indirilen belgenin hash'i,
+    # sayfa sayısı ve her kaydın o belgedeki sayfa çapası birlikte saklanır.
+    kaynaklar = (paket or {}).get("sources")
+    kaynak_haritasi: dict[str, dict] = {}
+    if not isinstance(kaynaklar, list) or not kaynaklar:
+        ekle("HATA", 58, 0, "2.2 paketinde sources listesi boş veya eksik")
+    else:
+        for item in kaynaklar:
+            if not isinstance(item, dict):
+                ekle("HATA", 58, 0, "sources girdisi nesne değil")
+                continue
+            source_id = item.get("sourceId")
+            if not isinstance(source_id, str) or not source_id.strip():
+                ekle("HATA", 58, 0, "sources girdisinde sourceId boş")
+                continue
+            if source_id in kaynak_haritasi:
+                ekle("HATA", 58, 0, f"sourceId tekrar ediyor: {source_id!r}")
+            kaynak_haritasi[source_id] = item
+            url = item.get("downloadUrl")
+            if (
+                not isinstance(url, str)
+                or not re.match(r"^https?://", url, flags=re.I)
+                or not url.lower().split("?", 1)[0].endswith(
+                    (".pdf", ".doc", ".docx")
+                )
+            ):
+                ekle(
+                    "HATA", 58, 0,
+                    f"{source_id}: indirilebilir belge URL'si yok: {url!r}",
+                )
+            sha = item.get("sha256")
+            if (
+                not isinstance(sha, str)
+                or re.fullmatch(r"[0-9a-fA-F]{64}", sha) is None
+            ):
+                ekle("HATA", 58, 0, f"{source_id}: sha256 eksik/bozuk")
+            page_count = item.get("pageCount")
+            if not isinstance(page_count, int) or page_count < 1:
+                ekle("HATA", 58, 0, f"{source_id}: pageCount eksik/bozuk")
+
+    evidence_re = re.compile(r"^(.+?)(?::pdf-page-|#p)(\d+)$", re.I)
+    for satir_no, record in kayitlar:
+        if record.get("type") not in {"note", "question"}:
+            continue
+        refs = record.get("sourceRefs")
+        if not isinstance(refs, list) or not refs:
+            ekle("HATA", 58, satir_no, "sourceRefs boş veya eksik")
+            ref_ids: set[str] = set()
+        else:
+            ref_ids = {
+                str(ref).split("#", 1)[0]
+                for ref in refs
+                if isinstance(ref, str)
+            }
+            eksik_refs = sorted(ref_ids - set(kaynak_haritasi))
+            if eksik_refs:
+                ekle(
+                    "HATA", 58, satir_no,
+                    f"sourceRefs pakette tanımlı değil: {eksik_refs}",
+                )
+        evidence = record.get("objectiveEvidenceId")
+        match = evidence_re.fullmatch(str(evidence or ""))
+        if not match:
+            ekle(
+                "HATA", 58, satir_no,
+                f"objectiveEvidenceId sayfa çapası değil: {evidence!r}",
+            )
+            continue
+        source_id, page_text = match.groups()
+        source_item = kaynak_haritasi.get(source_id)
+        if source_item is None:
+            ekle(
+                "HATA", 58, satir_no,
+                f"objectiveEvidenceId kaynağı pakette yok: {source_id!r}",
+            )
+            continue
+        if source_id not in ref_ids:
+            ekle(
+                "HATA", 58, satir_no,
+                f"objectiveEvidenceId kaynağı sourceRefs içinde yok: {source_id!r}",
+            )
+        page = int(page_text)
+        page_count = source_item.get("pageCount")
+        if isinstance(page_count, int) and not 1 <= page <= page_count:
+            ekle(
+                "HATA", 58, satir_no,
+                f"kanıt sayfası belge dışında: {page}/{page_count}",
+            )
+        if record.get("objectiveSource") != source_item.get("downloadUrl"):
+            ekle(
+                "HATA", 58, satir_no,
+                "objectiveSource, objectiveEvidenceId belgesiyle uyuşmuyor",
             )
 
     # kural 56 — hints alanı bulunmamalı.

@@ -257,6 +257,7 @@ def build() -> tuple[list[dict], dict]:
     all_notes: list[dict] = []
     all_questions: list[dict] = []
     all_labels: dict[str, str] = {}
+    all_sources: dict[str, dict] = {}
     source_packages = []
     visual_by_subject: dict[str, dict[str, int]] = {}
 
@@ -289,6 +290,18 @@ def build() -> tuple[list[dict], dict]:
             if previous is not None and previous != value:
                 raise ValueError(f"labels çakışması: {key}")
             all_labels[key] = value
+        for item in pack.get("sources") or []:
+            source_id = item.get("sourceId")
+            if not source_id:
+                raise ValueError(f"{subject}: sourceId boş")
+            normalized_item = copy.deepcopy(item)
+            # ``reused`` yalnız kaynak paketin kendi üretim geçmişini anlatır;
+            # aynı resmî belgenin kimliği veya doğrulama kanıtı değildir.
+            normalized_item.pop("reused", None)
+            previous = all_sources.get(source_id)
+            if previous is not None and previous != normalized_item:
+                raise ValueError(f"kaynak tanımı çakışması: {source_id}")
+            all_sources[source_id] = normalized_item
 
     if len({note["id"] for note in all_notes}) != len(all_notes):
         raise ValueError("Dersler arasında not kimliği çakışıyor")
@@ -347,6 +360,7 @@ def build() -> tuple[list[dict], dict]:
         "theme": "Türkiye 5. Sınıf — 2.000 Soruluk Tüm Dersler Soru Bankası",
         "license": "CC-BY-NC-4.0",
         "source": "alika-grade5-ai-verified-course-packs",
+        "sources": [all_sources[key] for key in sorted(all_sources)],
         "sourcePackages": source_packages,
         "selectionPolicy": {
             "version": "grade5-bank-v1",

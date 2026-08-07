@@ -2,7 +2,7 @@
 
 Tarih: 7 Ağustos 2026
 
-Karar: **AI-only yayın adayı**
+Karar: **AI-only yayına hazır**
 
 İnsan incelemesi: **Yok**
 
@@ -23,8 +23,25 @@ değiştirmeden korur.
 | Aile başına üst sınır | 8 |
 | Doğru cevap konumları | 500 / 500 / 500 / 500 |
 | Görselli soru | 477 |
+| Resmî kaynak belgesi | 12 |
+| Kesin PDF sayfasına bağlı içerik | 2.116 / 2.116 |
+| Geçerli konu anlatımı bağlantısı | 2.000 / 2.000 |
+| `hints` alanı | 0 |
 | Validator | 0 hata / 0 uyarı |
 | Kalite skoru | 99,78 |
+
+## Kaynak ve kazanım güvencesi
+
+- Paket içindeki 12 resmî belgenin indirilebilir adresi, SHA-256 özeti ve sayfa
+  sayısı saklanır.
+- Her konu anlatımı ve soru `objectiveEvidenceId` ile kesin bir PDF sayfasına
+  bağlanır.
+- `objectiveSource`, `objectiveEvidenceId` ve `sourceRefs` aynı kaynak kaydına
+  çözülmeden paket doğrulamadan geçemez.
+- Sayfa numarası belge sınırının dışındaysa veya kaynak dosya özeti eksikse
+  yayın engellenir.
+- Banka başlığındaki `sourcePackages` alanı, seçkinin üretildiği beş ders
+  paketinin SHA-256 özetlerini taşır.
 
 ## Görsel güvencesi
 
@@ -76,5 +93,6 @@ korunmuştur.
 python tools/build_grade5_question_bank.py --write
 python tools/finalize_ai_release.py soru-bankasi
 python tools/pack_validate.py turkiye/5-sinif/soru-bankasi/5-sinif-tum-dersler-2000-soru.jsonl --skor
+ALIKA_APP_REPO=<AliKa program klasörü> python -m pytest tests/test_alika_app_compat.py -q
 python -m pytest -q
 ```

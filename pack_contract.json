@@ -27,6 +27,9 @@
   },
   "objectiveSource": {
     "belgeOlmali": true,
-    "not": "Gezinilebilir acilis sayfasi degil, program PDF'i veya sayfa/bolum capasi. Kural 43."
+    "sha256Zorunlu": true,
+    "pageCountZorunlu": true,
+    "objectiveEvidencePageZorunlu": true,
+    "not": "Gezinilebilir acilis sayfasi degil, sources icinde sha256 ve pageCount ile tanimli indirilebilir resmi belge kullanilir. Her objectiveEvidenceId sourceId:pdf-page-N veya sourceId#pN biciminde belge sayfasina baglanir; objectiveSource ayni sourceId'nin downloadUrl degeriyle birebir uyusur. Kural 58."
   }
 }

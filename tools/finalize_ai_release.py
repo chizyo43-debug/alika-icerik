@@ -83,6 +83,21 @@ PACKAGES = {
             "görselleri çözümün kanıtını taşıdığı ölçüde kullanılır."
         ),
     },
+    "turkce": {
+        "path": ROOT
+        / "turkiye"
+        / "5-sinif"
+        / "turkce"
+        / "turkce-tum.jsonl",
+        "producer": "chatgpt-pro; repair=codex-sol",
+        "schema_version": "2.2",
+        "visual_minimum_percent": 0,
+        "visual_rationale": (
+            "Türkçe sorularında görsel yalnız metin yapısı veya olay akışı "
+            "ölçüldüğünde kullanılır; sözcük ve anlam sorularına süs görseli "
+            "eklenmez. Bütün konu anlatımlarının kendi öğretici görseli vardır."
+        ),
+    },
     "ingilizce": {
         "path": ROOT
         / "turkiye"
@@ -315,6 +330,18 @@ def evidence_id(source_id: str, objectives: list[str]) -> str:
     return f"{source_id}#{codes}"
 
 
+def assert_page_evidence(record: dict, source_id: str) -> None:
+    evidence = str(record.get("objectiveEvidenceId") or "")
+    if re.fullmatch(
+        rf"{re.escape(source_id)}(?::pdf-page-|#p)\d+",
+        evidence,
+        flags=re.I,
+    ) is None:
+        raise ValueError(
+            f"{record.get('id')}: exact PDF page evidence is required"
+        )
+
+
 def finalize_math(rows: list[dict], config: dict) -> None:
     source_id = config["source_id"]
     source_url = config["source_url"]
@@ -331,8 +358,8 @@ def finalize_math(rows: list[dict], config: dict) -> None:
             raise ValueError(f"{record.get('id')}: unexpected objective {objective!r}")
         note_objectives[str(record.get("noteId"))].add(objective)
         record["objectiveSource"] = source_url
-        record["objectiveEvidenceId"] = evidence_id(source_id, [objective])
         record["sourceRefs"] = [source_id]
+        assert_page_evidence(record, source_id)
 
     for record in rows:
         figure = record.get("figure")
@@ -395,8 +422,8 @@ def finalize_math(rows: list[dict], config: dict) -> None:
             raise ValueError(f"{record.get('id')}: linked outcome not found")
         record["objectives"] = objectives
         record["objectiveSource"] = source_url
-        record["objectiveEvidenceId"] = evidence_id(source_id, objectives)
         record["sourceRefs"] = [source_id]
+        assert_page_evidence(record, source_id)
 
 
 def finalize_science(rows: list[dict]) -> None:
