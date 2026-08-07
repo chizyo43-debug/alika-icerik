@@ -111,6 +111,22 @@ PACKAGES = {
             "kanıtlarını erişilebilir tablo veya akış olarak düzenler."
         ),
     },
+    "soru-bankasi": {
+        "path": ROOT
+        / "turkiye"
+        / "5-sinif"
+        / "soru-bankasi"
+        / "5-sinif-tum-dersler-2000-soru.jsonl",
+        "producer": "compiled-from-ai-verified-grade5-packs; curator=codex-sol",
+        "schema_version": "2.2",
+        "visual_minimum_percent": 0,
+        "visual_rationale": (
+            "Ortak banka kaynak beş ders paketindeki görselli soruların "
+            "tamamını korur; derslerin farklı görsel politikaları değiştirilmez."
+        ),
+        "preserve_record_reviews": True,
+        "preserve_visual_policy": True,
+    },
 }
 
 MATH_POLYGON_TABLE_REWRITES = {
@@ -276,6 +292,22 @@ def apply_ai_review(record: dict, producer: str) -> None:
         }
     )
     record.pop("reviewedBy", None)
+
+
+def assert_current_ai_review(record: dict) -> None:
+    content_sha = canonical_sha256(strip_review_fields(record))
+    expected = f"sha256:{content_sha}"
+    if (
+        record.get("reviewStatus") != "ai-verified"
+        or record.get("humanReviewed") is not False
+        or record.get("reviewDeclaration") != REVIEW_DECLARATION
+        or record.get("contentHash") != expected
+        or record.get("reviewedHash") != expected
+        or record.get("reviewedContentSha256") != content_sha
+    ):
+        raise ValueError(
+            f"{record.get('id')}: kaynak AI inceleme damgası güncel değil"
+        )
 
 
 def evidence_id(source_id: str, objectives: list[str]) -> str:
@@ -489,6 +521,7 @@ def finalize_package(name: str, config: dict) -> None:
 
     remove_orphan_labels(rows)
 
+    preserve_reviews = bool(config.get("preserve_record_reviews"))
     for record in rows:
         if record.get("type") in {"note", "question"}:
             if (
@@ -497,7 +530,10 @@ def finalize_package(name: str, config: dict) -> None:
                 or "PENDING" in (record.get("sourceRefs") or [])
             ):
                 raise ValueError(f"{record.get('id')}: PENDING evidence remains")
-            apply_ai_review(record, config["producer"])
+            if preserve_reviews:
+                assert_current_ai_review(record)
+            else:
+                apply_ai_review(record, config["producer"])
 
     pack_update = {
         "reviewStatus": "ai-verified",
@@ -511,17 +547,22 @@ def finalize_package(name: str, config: dict) -> None:
     if config["schema_version"] == CONTRACT_VERSION:
         questions = [r for r in rows if r.get("type") == "question"]
         figured_questions = sum(bool(r.get("figure")) for r in questions)
+        visual_policy = (
+            pack.get("visualPolicy")
+            if config.get("preserve_visual_policy")
+            else {
+                "version": "1.0",
+                "everyNote": True,
+                "questionMinimumPercent": config["visual_minimum_percent"],
+                "balancedByObjective": False,
+                "rationale": config["visual_rationale"],
+            }
+        )
         pack_update.update(
             {
                 "contentContractVersion": CONTRACT_VERSION,
                 "contentContractHash": f"sha256:{CONTRACT_SHA256}",
-                "visualPolicy": {
-                    "version": "1.0",
-                    "everyNote": True,
-                    "questionMinimumPercent": config["visual_minimum_percent"],
-                    "balancedByObjective": False,
-                    "rationale": config["visual_rationale"],
-                },
+                "visualPolicy": visual_policy,
             }
         )
         contract_policy = pack.setdefault("contractPolicy", {})

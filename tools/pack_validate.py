@@ -412,6 +412,7 @@ def id_semasi_gecerli(
         tip: str,
         paket_id: object,
         coverage_note_ids: set[str],
+        cok_dersli: bool = False,
 ) -> bool:
     """Eski ve yapılandırılmış kimlik ailelerini paket kapsamıyla doğrular.
 
@@ -435,10 +436,14 @@ def id_semasi_gecerli(
     if kayit_parca[:2] != paket_parca[:2]:
         return False
 
-    paket_ders = paket_parca[2]
-    kayit_ders = kayit_parca[2]
-    if not (paket_ders.startswith(kayit_ders) or kayit_ders.startswith(paket_ders)):
-        return False
+    if not cok_dersli:
+        paket_ders = paket_parca[2]
+        kayit_ders = kayit_parca[2]
+        if not (
+            paket_ders.startswith(kayit_ders)
+            or kayit_ders.startswith(paket_ders)
+        ):
+            return False
 
     if tip == "question":
         return re.search(r"(?:^|[._-])q\d+$", kid, re.I) is not None
@@ -871,6 +876,29 @@ def kural_22(kayitlar, paket, labels, kullanilan, ekle, olcum) -> None:
     notlar = {k.get("noteId") or k.get("id"): k
               for _, k in kayitlar if k.get("type") == "note"}
     politika = (paket or {}).get("contractPolicy") or {}
+    beklenen_soru_sayisi = politika.get("questionCount")
+    if beklenen_soru_sayisi is not None and len(sorular) != beklenen_soru_sayisi:
+        ekle(
+            "HATA",
+            52,
+            0,
+            f"soru sayısı bildirileni tutmuyor: ölçülen {len(sorular)}, "
+            f"bildirilen {beklenen_soru_sayisi}",
+        )
+    ders_hedefleri = politika.get("perSubjectQuestionCount")
+    if isinstance(ders_hedefleri, dict):
+        ders_sayaci: dict[str, int] = {}
+        for _, soru in sorular:
+            ders = str(soru.get("subject") or "")
+            ders_sayaci[ders] = ders_sayaci.get(ders, 0) + 1
+        if ders_sayaci != ders_hedefleri:
+            ekle(
+                "HATA",
+                52,
+                0,
+                "ders soru dağılımı bildirileni tutmuyor: "
+                f"ölçülen {ders_sayaci}, bildirilen {ders_hedefleri}",
+            )
 
     # kural 56 — hints alanı bulunmamalı.
     # Boş dizi de ihlaldir: boş dizi "bu alan var, doldurulmayı bekliyor" der.
@@ -1195,6 +1223,9 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
     secenek_gorunum: dict = {}
     secenek_dogru: dict = {}
     secenek_kumeleri: dict = {}
+    secenek_gorunum_ders: dict[str, dict] = {}
+    secenek_dogru_ders: dict[str, dict] = {}
+    secenek_kumeleri_ders: dict[str, dict] = {}
     ipucu_konum_sayaclari = [dict() for _ in range(5)]
     dw_bag_toplam = [0, 0]             # kural 36: (ölçülen, kendi şıkkına bağlı)
     dw_iskeletleri: list = []          # kural 37 kardeşi: distractorWhy imzaları
@@ -1231,8 +1262,12 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             ekle("HATA", 11, satir_no, f"id tekrarı: {kid!r} (ilk: satır {idler[kid]})")
         else:
             idler[kid] = satir_no
+        cok_dersli = (
+            ((paket or {}).get("contractPolicy") or {}).get("idScopeMode")
+            == "multi-subject"
+        )
         if paket_id is not None and not id_semasi_gecerli(
-                kid, tip, paket_id, coverage_note_ids):
+                kid, tip, paket_id, coverage_note_ids, cok_dersli):
             beklenen = "not" if tip == "note" else "soru"
             ekle("HATA", 11, satir_no,
                  f"{beklenen} id'si paket ülke/sınıf/ders kapsamı veya türüyle "
@@ -1322,6 +1357,11 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             )
             secenek_gorunum[c_norm] = secenek_gorunum.get(c_norm, 0) + 1
             secenek_kumeleri.setdefault(c_norm, set()).add(secenek_normlari)
+            ders_adi = str(k.get("subject") or "")
+            ders_gorunum = secenek_gorunum_ders.setdefault(ders_adi, {})
+            ders_kumeleri = secenek_kumeleri_ders.setdefault(ders_adi, {})
+            ders_gorunum[c_norm] = ders_gorunum.get(c_norm, 0) + 1
+            ders_kumeleri.setdefault(c_norm, set()).add(secenek_normlari)
         if dogru is not None and dogru < len(secenekler):
             dogru_norm = " ".join(
                 unicodedata.normalize(
@@ -1329,6 +1369,9 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
                 ).casefold().split()
             )
             secenek_dogru[dogru_norm] = secenek_dogru.get(dogru_norm, 0) + 1
+            ders_adi = str(k.get("subject") or "")
+            ders_dogru = secenek_dogru_ders.setdefault(ders_adi, {})
+            ders_dogru[dogru_norm] = ders_dogru.get(dogru_norm, 0) + 1
 
         # kural 13 — iki şık aynı sayıya eşit
         degerler = [(i, sayi_ayristir(str(c))) for i, c in enumerate(secenekler)]
@@ -1604,15 +1647,34 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             f"{etkilenen} soru; en yüksek tekrar={en_yuksek}",
         )
 
+    cok_dersli_paket = (
+        ((paket or {}).get("contractPolicy") or {}).get("idScopeMode")
+        == "multi-subject"
+    )
     dolgu = []
-    for secenek, adet in secenek_gorunum.items():
-        if (
-            adet >= 4
-            and secenek_dogru.get(secenek, 0) == 0
-            and len(secenek_kumeleri.get(secenek, ())) >= 2
-            and re.search(r"[^\W\d_]", secenek, flags=re.UNICODE)
-        ):
-            dolgu.append((secenek, adet))
+    dolgu_kapsamlari = (
+        (
+            (
+                ders,
+                secenek_gorunum_ders.get(ders, {}),
+                secenek_dogru_ders.get(ders, {}),
+                secenek_kumeleri_ders.get(ders, {}),
+            )
+            for ders in secenek_gorunum_ders
+        )
+        if cok_dersli_paket
+        else (("", secenek_gorunum, secenek_dogru, secenek_kumeleri),)
+    )
+    for ders, gorunum, dogrular, kumeler in dolgu_kapsamlari:
+        for secenek, adet in gorunum.items():
+            if (
+                adet >= 4
+                and dogrular.get(secenek, 0) == 0
+                and len(kumeler.get(secenek, ())) >= 2
+                and re.search(r"[^\W\d_]", secenek, flags=re.UNICODE)
+            ):
+                etiket = f"{ders}: {secenek}" if ders else secenek
+                dolgu.append((etiket, adet))
     if dolgu:
         ornekler = ", ".join(
             f"{secenek!r}×{adet}"
@@ -1629,15 +1691,28 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             f"hiçbirinde doğru değil: {ornekler}",
         )
 
-    bariz_dolgu = [
-        (secenek, adet)
-        for secenek, adet in secenek_gorunum.items()
-        if (
-            adet >= 4
-            and secenek_dogru.get(secenek, 0) == 0
-            and secenek in BARIZ_DIL_DOLGUSU
+    bariz_dolgu = []
+    bariz_kapsamlari = (
+        (
+            (
+                ders,
+                secenek_gorunum_ders.get(ders, {}),
+                secenek_dogru_ders.get(ders, {}),
+            )
+            for ders in secenek_gorunum_ders
         )
-    ]
+        if cok_dersli_paket
+        else (("", secenek_gorunum, secenek_dogru),)
+    )
+    for ders, gorunum, dogrular in bariz_kapsamlari:
+        for secenek, adet in gorunum.items():
+            if (
+                adet >= 4
+                and dogrular.get(secenek, 0) == 0
+                and secenek in BARIZ_DIL_DOLGUSU
+            ):
+                etiket = f"{ders}: {secenek}" if ders else secenek
+                bariz_dolgu.append((etiket, adet))
     if bariz_dolgu:
         ornekler = ", ".join(
             f"{secenek!r}×{adet}"
@@ -1859,11 +1934,10 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
             if len(secenek_kume_aileleri.get(kume, ())) > 1
         )
         secenek_ornegi = sum(secenek_gorunum.values()) or 1
-        dolgu_ornegi = sum(
-            adet for secenek, adet in secenek_gorunum.items()
-            if adet >= 4 and secenek_dogru.get(secenek, 0) == 0
-            and len(secenek_kumeleri.get(secenek, ())) >= 2
-        )
+        # Uyarı ile skor aynı kapsamı ölçer. Çok dersli derlemede ``dolgu``
+        # yukarıda ders bazında hesaplanmıştır; farklı derslerdeki doğal ortak
+        # ölçü/sözcükler skoru yapay biçimde düşürmemelidir.
+        dolgu_ornegi = sum(adet for _, adet in dolgu)
         imza_sayaci: dict = {}
         for imza in govde_imzalari:
             imza_sayaci[imza] = imza_sayaci.get(imza, 0) + 1
