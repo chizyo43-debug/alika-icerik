@@ -124,3 +124,71 @@ def test_grade5_packages_round_trip_through_alika(tmp_path, monkeypatch):
         assert result.success
         assert result.state == ImportState.ACTIVATED
         assert result.content_id == content_id
+
+
+def test_grade5_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    path = (
+        ROOT
+        / "turkiye"
+        / "5-sinif"
+        / "soru-bankasi"
+        / "5-sinif-tum-dersler-2000-soru.jsonl"
+    )
+    init_all.init()
+    importer = Importer()
+    result = importer.import_file(path)
+    assert result.success, (result.error_code, result.error)
+    assert result.state == ImportState.AWAITING_APPROVAL
+    assert result.preview["subject"] == "Tüm Dersler"
+    assert result.preview["note_count"] == 116
+    assert result.preview["question_count"] == 2000
+    assert importer.approve(result.content_id)
+
+    with connect() as connection:
+        questions = connection.execute(
+            "SELECT subject, metadata, note_content_id "
+            "FROM question_items WHERE active=1"
+        ).fetchall()
+        notes = connection.execute(
+            "SELECT COUNT(*) FROM content_items "
+            "WHERE active=1 AND media_type='note'"
+        ).fetchone()[0]
+        collection = connection.execute(
+            "SELECT subject, question_count, trust_state "
+            "FROM question_collections WHERE active=1"
+        ).fetchone()
+
+    assert notes == 116
+    assert len(questions) == 2000
+    assert collection["subject"] == "Tüm Dersler"
+    assert collection["question_count"] == 2000
+    assert collection["trust_state"] == "approved"
+    subject_counts: dict[str, int] = {}
+    figured = 0
+    for row in questions:
+        subject_counts[row["subject"]] = subject_counts.get(row["subject"], 0) + 1
+        metadata = json.loads(row["metadata"])
+        assert row["note_content_id"]
+        assert "hints" not in metadata
+        if metadata.get("figure"):
+            figured += 1
+            assert metadata["figure"].get("altTextKey")
+    assert subject_counts == {
+        "Fen Bilimleri": 400,
+        "Matematik": 400,
+        "Sosyal Bilgiler": 400,
+        "Türkçe": 400,
+        "İngilizce": 400,
+    }
+    assert figured == 477
+
+    # Aynı dosya ikinci kez yüklendiğinde kopya banka oluşturmamalı.
+    second = importer.import_file(path)
+    assert second.success
+    assert second.state == ImportState.ACTIVATED
+    assert second.content_id == result.content_id

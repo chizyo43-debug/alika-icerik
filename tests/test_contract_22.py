@@ -1,4 +1,4 @@
-"""Question Contract 2.2 kuralları (47-57) ve sürüm ayrımı.
+"""Question Contract 2.2 kuralları (47-58) ve sürüm ayrımı.
 
 Bu testlerin asıl işi, 2.2'nin 2.0'ı BOZMADIĞINI güvence altına almak: iki
 sözleşme tek dosyada yan yana yaşıyor ve hints kuralları birbirini iptal
@@ -61,9 +61,9 @@ def soru(sira: int, dogru: int = 0, aile: str = "ana-fikir-cikarim") -> dict:
         "tags": ["ana fikir"],
         "topic": "Metin Anlama",
         "objective": "T.O.5.5.",
-        "objectiveSource": "PENDING",
-        "objectiveEvidenceId": "T.O.5.5.",
-        "sourceRefs": ["PENDING"],
+        "objectiveSource": "https://ornek.local/y.pdf",
+        "objectiveEvidenceId": "s1:pdf-page-1",
+        "sourceRefs": ["s1"],
     }
     kayit.update(HIYERARSI)
     kayit.update(DAMGA)
@@ -89,8 +89,13 @@ def paket_kaydi() -> dict:
                    "İki sütun ve iki satırlık kareli zemin."},
         "source": "deneme",
         "provenance": "machine-generated:test:2026-08",
-        "sources": [{"sourceId": "s1", "title": "t",
-                     "downloadUrl": "https://ornek.local/y.pdf"}],
+        "sources": [{
+            "sourceId": "s1",
+            "title": "t",
+            "downloadUrl": "https://ornek.local/y.pdf",
+            "sha256": "a" * 64,
+            "pageCount": 10,
+        }],
         "disclosure": "ai-generated-and-ai-reviewed-no-human-review",
         "publishBlocked": True,
         "contractPolicy": {
@@ -157,9 +162,9 @@ def not_kaydi() -> dict:
                    "altTextKey": "tr.g05.tur.ana-fikir.n001.visual.a1"},
         "topic": "Metin Anlama",
         "objective": "T.O.5.5.",
-        "objectiveSource": "PENDING",
-        "objectiveEvidenceId": "T.O.5.5.",
-        "sourceRefs": ["PENDING"],
+        "objectiveSource": "https://ornek.local/y.pdf",
+        "objectiveEvidenceId": "s1:pdf-page-1",
+        "sourceRefs": ["s1"],
     }
     kayit.update(HIYERARSI)
     kayit.update(DAMGA)
@@ -314,8 +319,36 @@ def test_insan_incelemesi_taklit_edilemez(tmp_path):
 def test_pending_kaynak_yayini_kilitler(tmp_path):
     """PENDING kaynak varken publishBlocked kapalıysa paket yayına çıkabilirdi."""
     k = temiz_paket()
+    k[2]["objectiveSource"] = "PENDING"
+    k[2]["objectiveEvidenceId"] = "PENDING"
+    k[2]["sourceRefs"] = ["PENDING"]
     k[0]["publishBlocked"] = False
     assert 55 in kosu(tmp_path, k)
+
+
+def test_kaynak_hashi_ve_sayfa_sayisi_zorunlu(tmp_path):
+    k = temiz_paket()
+    del k[0]["sources"][0]["sha256"]
+    del k[0]["sources"][0]["pageCount"]
+    assert 58 in kosu(tmp_path, k)
+
+
+def test_kazanim_kaniti_belge_sayfasina_baglanmali(tmp_path):
+    k = temiz_paket()
+    k[2]["objectiveEvidenceId"] = "s1#T.O.5.5."
+    assert 58 in kosu(tmp_path, k)
+
+
+def test_objective_source_kanit_belgesiyle_uyusmali(tmp_path):
+    k = temiz_paket()
+    k[2]["objectiveSource"] = "https://ornek.local/baska.pdf"
+    assert 58 in kosu(tmp_path, k)
+
+
+def test_source_ref_pakette_tanimli_olmali(tmp_path):
+    k = temiz_paket()
+    k[2]["sourceRefs"] = ["bilinmeyen-kaynak"]
+    assert 58 in kosu(tmp_path, k)
 
 
 def test_beyan_yoksa_hata(tmp_path):

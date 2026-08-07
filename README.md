@@ -23,8 +23,10 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 │       │   └── turkce-tum.jsonl ← AI-only kalite kontrolü tamamlanan içerik
 │       ├── ingilizce/          ← ders
 │       │   └── ingilizce-tum.jsonl ← AI-only doğrulanmış paket
-│       └── sosyal-bilgiler/    ← ders
-│           └── sosyal-bilgiler-tum.jsonl ← AI-only doğrulanmış paket
+│       ├── sosyal-bilgiler/    ← ders
+│       │   └── sosyal-bilgiler-tum.jsonl ← AI-only doğrulanmış paket
+│       └── soru-bankasi/
+│           └── 5-sinif-tum-dersler-2000-soru.jsonl ← ortak seçki
 ├── legal/                       ← yasal belgeler (Store gereksinimi)
 └── README.md
 ```
@@ -48,8 +50,12 @@ Her satır bir JSON nesnesi:
 | Türkiye | 5 | Türkçe | Tüm beceriler | 22 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 5 | İngilizce | Tüm temalar | 24 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 5 | Sosyal Bilgiler | Tüm öğrenme alanları | 19 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 5 | Tüm Dersler | Beş dersin dengeli seçkisi | 116 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
 
-Toplam: **5 ders, 116 konu anlatımı ve 2.500 soru**. Beş paket de
+Beş bağımsız ders paketinde toplam **116 konu anlatımı ve 2.500 soru** vardır.
+Ortak soru bankası bunlardan ders başına 400 soru seçen bir derlemedir; 2.000
+yeni soru olduğu iddia edilmez. Kaynak paketlerdeki 477 görselli sorunun tamamı
+ortak bankada korunur. Altı paket de
 Question Contract 2.2 kullanır; soru kayıtlarında `hints` alanı bulunmaz.
 Her soru geçerli bir konu anlatımına bağlıdır.
 
@@ -76,7 +82,8 @@ Kalite kapısı: her pakette **0 HATA** zorunlu; UYARI sayısı ve skor
 paketlerde 0 uyarı ve skor ≥ 99. Şema: [SCHEMA_V2.md](SCHEMA_V2.md).
 
 Güncel yayın kanıtı:
-[5. Sınıf Yayın Hazırlık Raporu](reports/GRADE5_RELEASE_READINESS.md).
+[5. Sınıf Yayın Hazırlık Raporu](reports/GRADE5_RELEASE_READINESS.md) ve
+[2.000 Soruluk Banka Hazırlık Raporu](reports/GRADE5_QUESTION_BANK_READINESS.md).
 
 `tools/regen_*` ve `tools/migrate_*` dosyaları geçmiş onarımların
 tekrarlanabilir kayıtlarıdır; yeni üretim girişi değildir. Yeni paketler

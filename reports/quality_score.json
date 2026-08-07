@@ -72,11 +72,11 @@
       "soru": 500,
       "hata": 0,
       "uyari": 0,
-      "skor": 99.25,
+      "skor": 99.55,
       "olcutler": {
         "S1_sizinti_yok": 100.0,
         "S2_havuz_acikligi": 97.0,
-        "S3_dolgu_yok": 98.0,
+        "S3_dolgu_yok": 100.0,
         "S4_kalip_cesitliligi": 100.0,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
@@ -86,11 +86,39 @@
       "hamOlcutler": {
         "S1_sizinti_yok": 100.0,
         "S2_havuz_acikligi": 97.0,
-        "S3_dolgu_yok": 98.0,
+        "S3_dolgu_yok": 100.0,
         "S4_kalip_cesitliligi": 71.2,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
         "S7_geri_donusum_yok": 99.6,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": true
+    },
+    {
+      "paket": "turkiye/5-sinif/soru-bankasi/5-sinif-tum-dersler-2000-soru.jsonl",
+      "soru": 2000,
+      "hata": 0,
+      "uyari": 0,
+      "skor": 99.78,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 98.5,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 98.5,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 88.8,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 97.3,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": true

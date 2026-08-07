@@ -13,7 +13,11 @@
     "not": "Icerik olcegi 1-5'tir. Bir ders daha dar bir alt kume kullanabilir; bunu pack satirinda 'levelScale': [min, max] ile BILDIRMEK zorundadir. Bildirilmeyen paket 1-5 kabul edilir ve disina cikamaz."
   },
   "curriculum": {
-    "izinli": ["MEB-TYMM-2024", "MEB-TYMM-2025"],
+    "izinli": [
+      "MEB-TYMM-2024",
+      "MEB-TYMM-2025",
+      "MEB-TYMM-2024+2025"
+    ],
     "not": "Kazanim kodlari, bildirilen program surumunun kodlari olmalidir. Turkce T.O.5.5., T.O.5.6. ve T.Y.5.21. kodlari MEB TYMM 2024 programindan gelir; bilinmeyen kod uydurulmaz."
   },
   "notKazanimAlani": {
@@ -23,6 +27,9 @@
   },
   "objectiveSource": {
     "belgeOlmali": true,
-    "not": "Gezinilebilir acilis sayfasi degil, program PDF'i veya sayfa/bolum capasi. Kural 43."
+    "sha256Zorunlu": true,
+    "pageCountZorunlu": true,
+    "objectiveEvidencePageZorunlu": true,
+    "not": "Gezinilebilir acilis sayfasi degil, sources icinde sha256 ve pageCount ile tanimli indirilebilir resmi belge kullanilir. Her objectiveEvidenceId sourceId:pdf-page-N veya sourceId#pN biciminde belge sayfasina baglanir; objectiveSource ayni sourceId'nin downloadUrl degeriyle birebir uyusur. Kural 58."
   }
 }

@@ -201,13 +201,34 @@ class TestIntegrity:
         assert dupes == [], f"Duplikat pack ID: {dupes}"
 
     def test_soru_id_tekil(self):
-        """Tüm soru ID'leri depo genelinde tekil olmalı."""
+        """Bağımsız ders paketlerinde soru ID'leri depo genelinde tekil olmalı.
+
+        ``curated-aggregate`` paketler yeni soru yazmaz; kaynak kaydın kararlı
+        kimliğini ve AI inceleme hash'ini bilerek korur. Bu nedenle derlemeler
+        bağımsız paketlerin kimlik teklik hesabına katılmaz.
+        """
         all_ids = []
         for path in PACKAGES:
-            _, _, questions = load_package(path)
+            pack, _, questions = load_package(path)
+            if (pack.get("selectionPolicy") or {}).get("mode") == "curated-aggregate":
+                continue
             all_ids.extend(q["id"] for q in questions)
         dupes = [i for i, c in Counter(all_ids).items() if c > 1]
         assert dupes == [], f"Duplikat soru ID ({len(dupes)}): {dupes[:5]}"
+
+    def test_derleme_sorulari_kaynak_kaydi_aynen_korur(self):
+        """Derleme, kaynak soruyu değiştirmeden ve yeniymiş gibi göstermeden seçer."""
+        canonical = {}
+        aggregates = []
+        for path in PACKAGES:
+            pack, _, questions = load_package(path)
+            if (pack.get("selectionPolicy") or {}).get("mode") == "curated-aggregate":
+                aggregates.extend(questions)
+            else:
+                canonical.update((question["id"], question) for question in questions)
+        for question in aggregates:
+            assert question["id"] in canonical
+            assert question == canonical[question["id"]]
 
     @pytest.mark.parametrize("path", PACKAGES, ids=PACKAGE_IDS)
     def test_noteid_baglanti(self, path):
