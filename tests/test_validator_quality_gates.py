@@ -20,12 +20,29 @@ REPAIR_SPEC.loader.exec_module(repair_english_v3)
 ENGLISH_PACKAGE = (
     ROOT / "turkiye" / "5-sinif" / "ingilizce" / "ingilizce-tum.jsonl"
 )
+SOCIAL_PACKAGE = (
+    ROOT
+    / "turkiye"
+    / "5-sinif"
+    / "sosyal-bilgiler"
+    / "sosyal-bilgiler-tum.jsonl"
+)
 
 
 def load_english():
     rows = [
         json.loads(line)
         for line in ENGLISH_PACKAGE.read_text(encoding="utf-8").splitlines()
+    ]
+    pack = next(row for row in rows if row.get("type") == "pack")
+    questions = [row for row in rows if row.get("type") == "question"]
+    return pack, questions
+
+
+def load_social():
+    rows = [
+        json.loads(line)
+        for line in SOCIAL_PACKAGE.read_text(encoding="utf-8").splitlines()
     ]
     pack = next(row for row in rows if row.get("type") == "pack")
     questions = [row for row in rows if row.get("type") == "question"]
@@ -221,10 +238,14 @@ def test_dominant_hints_and_closed_choice_pool_are_reported(tmp_path):
     assert ("UYARI", 39) in rules
 
 
-def test_english_v3_has_open_choice_pools_and_no_legacy_fillers():
+def test_english_v22_has_open_choice_pools_and_no_legacy_fillers():
     pack, questions = load_english()
-    assert pack["version"] == 3
-    assert len(questions) == 518
+    assert pack["schemaVersion"] == "2.2"
+    assert len(questions) == 500
+    assert Counter(question["correct"] for question in questions) == {
+        0: 125, 1: 125, 2: 125, 3: 125,
+    }
+    assert sum(bool(question.get("figure")) for question in questions) >= 100
 
     choice_sets = Counter(
         tuple(
@@ -268,11 +289,78 @@ def test_english_v3_reasons_name_the_measured_error():
                 )
 
 
-def test_english_v3_final_hints_are_question_specific():
+def test_english_v22_has_no_hints_and_complete_lesson_links():
     _, questions = load_english()
-    for position in (3, 4):
-        counts = Counter(question["hints"][position] for question in questions)
-        assert counts.most_common(1)[0][1] / len(questions) < 0.10
+    for question in questions:
+        assert "hints" not in question
+        assert question["noteId"] == question["noteKey"]
+        assert all(
+            question.get(field)
+            for field in ("unitKey", "topicKey", "subtopicKey", "familyId")
+        )
+
+
+def test_english_explanations_are_concrete_and_aligned():
+    _, questions = load_english()
+    generic = "ipuçları birlikte değerlendirilir"
+    for question in questions:
+        assert generic not in question["explanation"]
+        correct = question["choices"][question["correct"]]
+        assert correct in question["distractorWhy"][question["correct"]]
+
+
+def test_social_visual_evidence_is_not_left_in_the_stem():
+    pack, questions = load_social()
+    labels = pack["labels"]
+    instruction_fragments = (
+        "Kanıtları birlikte değerlendirin.",
+        "Bilgileri karşılaştırın.",
+        "Açık kanıtlardan yararlanın.",
+        "Verilen ayrıntıları ilişkilendirin.",
+        "Kararınızı tablodaki kanıtlara dayandırın.",
+        "Bütün kanıtları hesaba katın.",
+        "Bilgilerin tümünü birlikte düşünün.",
+        "Kanıtlar arasındaki ilişkiyi belirleyin.",
+        "Önce açık bilgileri ayırın.",
+        "Sonucu bütün verilere dayandırın.",
+        "Ayrıntıları tek tek kontrol edin.",
+    )
+    for question in questions:
+        figure = question.get("figure")
+        if not isinstance(figure, dict) or figure.get("kind") != "table":
+            continue
+        assert "\n" not in question["question"]
+        for row in figure.get("rows", []):
+            for cell in row:
+                value = labels.get(cell.get("key"), "")
+                assert not any(
+                    value.startswith(fragment)
+                    for fragment in instruction_fragments
+                )
+
+
+def test_social_current_residence_service_is_accurate():
+    _, questions = load_social()
+    by_id = {question["id"]: question for question in questions}
+    residence = by_id["tr-g05-sosyal-q367"]
+    assert residence["choices"][residence["correct"]] == "e-Devlet Kapısı"
+    assert "Nüfus ve Vatandaşlık İşleri" in residence["explanation"]
+
+
+def test_score_thresholds_match_validator_acceptance_rules():
+    """A passing rule threshold must not remain a hidden score penalty."""
+    assert pack_validate.skor_uygunluk_degeri(
+        "S4_kalip_cesitliligi", 0.60
+    ) == 1.0
+    assert pack_validate.skor_uygunluk_degeri(
+        "S7_geri_donusum_yok", 0.85
+    ) == 1.0
+    assert pack_validate.skor_uygunluk_degeri(
+        "S4_kalip_cesitliligi", 0.30
+    ) == 0.5
+    assert pack_validate.skor_uygunluk_degeri(
+        "S2_havuz_acikligi", 0.90
+    ) == 0.90
 
 
 def test_binlik_ayraci_ondalik_sanilmaz():
