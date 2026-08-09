@@ -142,6 +142,22 @@ PACKAGES = {
         "preserve_record_reviews": True,
         "preserve_visual_policy": True,
     },
+    "soru-bankasi-6": {
+        "path": ROOT
+        / "turkiye"
+        / "6-sinif"
+        / "soru-bankasi"
+        / "6-sinif-tum-dersler-2000-soru.jsonl",
+        "producer": "compiled-from-ai-verified-grade6-packs; curator=codex-sol",
+        "schema_version": "2.2",
+        "visual_minimum_percent": 0,
+        "visual_rationale": (
+            "Ortak banka kaynak yedi ders paketinden seçilir; görselli sorular "
+            "önceliklendirilir ve seçilen soruların görsel yapıları korunur."
+        ),
+        "preserve_record_reviews": False,
+        "preserve_visual_policy": True,
+    },
 }
 
 MATH_POLYGON_TABLE_REWRITES = {
