@@ -34,7 +34,9 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 │       ├── ingilizce/ingilizce-tum.jsonl
 │       ├── sosyal-bilgiler/sosyal-bilgiler-tum.jsonl
 │       ├── din-kulturu/din-kulturu-tum.jsonl
-│       └── bilisim-teknolojileri/bilisim-teknolojileri-tum.jsonl
+│       ├── bilisim-teknolojileri/bilisim-teknolojileri-tum.jsonl
+│       └── soru-bankasi/
+│           └── 6-sinif-tum-dersler-2000-soru.jsonl ← ortak seçki
 ├── legal/                       ← yasal belgeler (Store gereksinimi)
 └── README.md
 ```
@@ -66,6 +68,7 @@ Her satır bir JSON nesnesi:
 | Türkiye | 6 | Sosyal Bilgiler | Tüm öğrenme alanları | 18 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 6 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 18 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 6 | Bilişim Teknolojileri ve Yazılım | Tüm konular | 25 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 6 | Tüm Dersler | Yedi dersin ağırlıklı seçkisi | 168 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
 
 Beş bağımsız ders paketinde toplam **116 konu anlatımı ve 2.500 soru** vardır.
 Ortak soru bankası bunlardan ders başına 400 soru seçen bir derlemedir; 2.000
@@ -74,7 +77,11 @@ ortak bankada korunur. Altı paket de
 Question Contract 2.2 kullanır; soru kayıtlarında `hints` alanı bulunmaz.
 Her soru geçerli bir konu anlatımına bağlıdır.
 
-Yedi bağımsız 6. sınıf ders paketinde toplam **168 konu anlatımı ve 3.500 soru** vardır.
+Yedi bağımsız 6. sınıf ders paketinde toplam **168 konu anlatımı ve 3.500 soru**
+vardır. Ortak 6. sınıf soru bankası yeni soru üretmez: Matematik, Fen, Türkçe,
+İngilizce ve Sosyal Bilgilerden 380'er; Bilişim ile Din Kültüründen 50'şer
+soru seçer. Bütün 168 konu anlatımı ve kazanım korunur; doğru cevap konumları
+500 / 500 / 500 / 500'dür.
 
 ## İçerik üretimi ve kalite
 
@@ -100,7 +107,8 @@ paketlerde 0 uyarı ve skor ≥ 99. Şema: [SCHEMA_V2.md](SCHEMA_V2.md).
 
 Güncel yayın kanıtı:
 [5. Sınıf Yayın Hazırlık Raporu](reports/GRADE5_RELEASE_READINESS.md) ve
-[2.000 Soruluk Banka Hazırlık Raporu](reports/GRADE5_QUESTION_BANK_READINESS.md).
+[5. Sınıf 2.000 Soruluk Banka Hazırlık Raporu](reports/GRADE5_QUESTION_BANK_READINESS.md),
+[6. Sınıf 2.000 Soruluk Banka Hazırlık Raporu](reports/GRADE6_QUESTION_BANK_READINESS.md).
 
 `tools/regen_*` ve `tools/migrate_*` dosyaları geçmiş onarımların
 tekrarlanabilir kayıtlarıdır; yeni üretim girişi değildir. Yeni paketler

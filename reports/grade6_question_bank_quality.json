@@ -1,0 +1,43 @@
+{
+  "esik": 99.0,
+  "agirliklar": {
+    "S1_sizinti_yok": 0.2,
+    "S2_havuz_acikligi": 0.15,
+    "S3_dolgu_yok": 0.15,
+    "S4_kalip_cesitliligi": 0.15,
+    "S5_sekil_kapsamasi": 0.1,
+    "S6_kazanim_dengesi": 0.1,
+    "S7_geri_donusum_yok": 0.1,
+    "S8_alan_butunlugu": 0.05
+  },
+  "paketler": [
+    {
+      "paket": "turkiye/6-sinif/soru-bankasi/6-sinif-tum-dersler-2000-soru.jsonl",
+      "soru": 2000,
+      "hata": 0,
+      "uyari": 0,
+      "skor": 99.87,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 99.1,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 99.1,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 99.8,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 97.4,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": true
+    }
+  ]
+}
