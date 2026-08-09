@@ -27,6 +27,14 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 │       │   └── sosyal-bilgiler-tum.jsonl ← AI-only doğrulanmış paket
 │       └── soru-bankasi/
 │           └── 5-sinif-tum-dersler-2000-soru.jsonl ← ortak seçki
+│   └── 6-sinif/                ← sınıf
+│       ├── matematik/matematik-tum.jsonl
+│       ├── fen-bilimleri/fen-bilimleri-tum.jsonl
+│       ├── turkce/turkce-tum.jsonl
+│       ├── ingilizce/ingilizce-tum.jsonl
+│       ├── sosyal-bilgiler/sosyal-bilgiler-tum.jsonl
+│       ├── din-kulturu/din-kulturu-tum.jsonl
+│       └── bilisim-teknolojileri/bilisim-teknolojileri-tum.jsonl
 ├── legal/                       ← yasal belgeler (Store gereksinimi)
 └── README.md
 ```
@@ -51,6 +59,13 @@ Her satır bir JSON nesnesi:
 | Türkiye | 5 | İngilizce | Tüm temalar | 24 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 5 | Sosyal Bilgiler | Tüm öğrenme alanları | 19 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 5 | Tüm Dersler | Beş dersin dengeli seçkisi | 116 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 6 | Matematik | Tüm konular | 24 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 6 | Fen Bilimleri | Tüm konular | 36 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 6 | Türkçe | Tüm beceriler | 28 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 6 | İngilizce | Tüm temalar | 19 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 6 | Sosyal Bilgiler | Tüm öğrenme alanları | 18 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 6 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 18 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 6 | Bilişim Teknolojileri ve Yazılım | Tüm konular | 25 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 
 Beş bağımsız ders paketinde toplam **116 konu anlatımı ve 2.500 soru** vardır.
 Ortak soru bankası bunlardan ders başına 400 soru seçen bir derlemedir; 2.000
@@ -58,6 +73,8 @@ yeni soru olduğu iddia edilmez. Kaynak paketlerdeki 477 görselli sorunun tamam
 ortak bankada korunur. Altı paket de
 Question Contract 2.2 kullanır; soru kayıtlarında `hints` alanı bulunmaz.
 Her soru geçerli bir konu anlatımına bağlıdır.
+
+Yedi bağımsız 6. sınıf ders paketinde toplam **168 konu anlatımı ve 3.500 soru** vardır.
 
 ## İçerik üretimi ve kalite
 
