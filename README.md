@@ -69,6 +69,10 @@ Her satır bir JSON nesnesi:
 | Türkiye | 6 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 18 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 6 | Bilişim Teknolojileri ve Yazılım | Tüm konular | 25 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 6 | Tüm Dersler | Yedi dersin ağırlıklı seçkisi | 168 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 7 | Türkçe | Tüm beceriler | 152 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | Türkçe | Tüm beceriler | 154 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Matematik | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Türk Dili ve Edebiyatı | Tüm temalar | 54 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 
 Beş bağımsız ders paketinde toplam **116 konu anlatımı ve 2.500 soru** vardır.
 Ortak soru bankası bunlardan ders başına 400 soru seçen bir derlemedir; 2.000
@@ -108,7 +112,8 @@ paketlerde 0 uyarı ve skor ≥ 99. Şema: [SCHEMA_V2.md](SCHEMA_V2.md).
 Güncel yayın kanıtı:
 [5. Sınıf Yayın Hazırlık Raporu](reports/GRADE5_RELEASE_READINESS.md) ve
 [5. Sınıf 2.000 Soruluk Banka Hazırlık Raporu](reports/GRADE5_QUESTION_BANK_READINESS.md),
-[6. Sınıf 2.000 Soruluk Banka Hazırlık Raporu](reports/GRADE6_QUESTION_BANK_READINESS.md).
+[6. Sınıf 2.000 Soruluk Banka Hazırlık Raporu](reports/GRADE6_QUESTION_BANK_READINESS.md),
+[7–9. Sınıf Tamamlanan Dersler Yayın Hazırlık Raporu](reports/GRADE7_9_COMPLETED_COURSES_READINESS.md).
 
 `tools/regen_*` ve `tools/migrate_*` dosyaları geçmiş onarımların
 tekrarlanabilir kayıtlarıdır; yeni üretim girişi değildir. Yeni paketler
