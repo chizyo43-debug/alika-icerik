@@ -381,6 +381,26 @@ def test_binlik_ayraci_ondalik_sanilmaz():
     assert hesapla("1,234 + 1") == Fraction(1117, 500)
 
 
+def test_yalniz_sayi_aritmetik_ifadesi_sayilmaz():
+    """Kural 15, soruda verilen negatif sayıyı istenen işlem sanmamalıdır."""
+    for metin in ("−3,5 sayısının sonucu nedir?", "−3/4 sayısının sonucu nedir?"):
+        ifade = pack_validate.ifade_bul(metin)
+        assert pack_validate.sayi_ayristir(ifade) is not None
+
+
+def test_figur_dizi_etiketleri_kullanilmis_sayilir():
+    """Katalogdaki liste biçimli labels/sideLabels alanları yetim değildir."""
+    anahtarlar = pack_validate.figur_i18n_anahtarlari({
+        "kind": "shape",
+        "altTextKey": "fig.alt",
+        "sideLabels": ["fig.side-a", "fig.side-b"],
+        "labels": ["fig.point-a", "fig.point-b"],
+    })
+    assert anahtarlar == {
+        "fig.alt", "fig.side-a", "fig.side-b", "fig.point-a", "fig.point-b"
+    }
+
+
 def _kapali_kume_paketi():
     """Bir ünitenin kapalı sözcük kümesi: her sorunun çeldiricisi zorunlu
     olarak aynı kazanımdaki başka bir sorunun doğru cevabıdır."""

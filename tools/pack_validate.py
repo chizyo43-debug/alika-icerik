@@ -766,7 +766,14 @@ def figur_i18n_anahtarlari(fig) -> set:
                     gez(alt, k)
         elif isinstance(v, list):
             for x in v:
-                gez(x, ad)
+                # Several catalog fields (for example grid.labels,
+                # shape.sideLabels and coordinate.labels) are arrays of
+                # translation keys. Preserve the parent field name while
+                # traversing so those keys count as referenced.
+                if isinstance(x, str) and ad in ("labels", "sideLabels", "axisKeys", "labelKeys"):
+                    anahtarlar.add(x)
+                else:
+                    gez(x, ad)
         elif isinstance(v, str) and (ad.endswith("Key") or ad.endswith("Keys")):
             anahtarlar.add(v)
 
@@ -1491,7 +1498,10 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
         if dogru is not None and dogru < len(secenekler) \
                 and any(kal in soru.casefold() for kal in SONUC_KALIP):
             ifade = ifade_bul(soru)
-            if ifade:
+            # A lone signed number or fraction is often input data (for example
+            # "−3,5" or "−3/4"), not the operation requested by the question.
+            # Rule 15 must only evaluate a genuine arithmetic expression.
+            if ifade and sayi_ayristir(ifade) is None:
                 hesap = ifade_degerlendir(ifade)
                 secenek_deger = sayi_ayristir(str(secenekler[dogru]))
                 if hesap is not None and secenek_deger is not None and hesap != secenek_deger:
