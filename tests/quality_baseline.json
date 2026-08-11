@@ -1,6 +1,6 @@
 {
   "_aciklama": "Bilinen kalite borcu. HATA her zaman 0 olmalı; UYARI sayısı ve skor buradaki değerden kötüleşemez. Bir kusur düzeltildiğinde bu dosya AŞAĞI çekilir — asla yukarı değil. Hedef: tüm uyarılar 0, tüm skorlar >= 99.",
-  "_guncelleme": "2026-08-07 (5. sınıf ortak 2.000 soru bankası)",
+  "_guncelleme": "2026-08-11 (10. sınıf ders paketleri ve ortak 2.000 soru bankası)",
   "_a1_notu": "matematik skoru 72.76 -> 72.39 DUSURULDU. Bu bir gerileme degil, bilincli bir onarim: d133631 sik metinlerini degistirip gerekcelerini birakmisti; skorun S2/S3 olcutleri iyilesmis gorunuyordu ama 21 soruda gerekce artik ekranda olmayan bir sikki anlatiyordu. Sikler tutarli haline geri alindi, kapali havuz borcu da geri geldi. Ders: skor tek basina kapi olamaz; bagli-alan denetimi ve insan orneklemi ile birlikte okunur. Bu borc A3'te celdiriciler sik+gerekce+ipucu birlikte yeniden uretilerek kapatilacak.",
   "uyari": {
     "matematik-tum": 0,
@@ -8,7 +8,18 @@
     "ingilizce-tum": 0,
     "5-sinif-tum-dersler-2000-soru": 0,
     "sosyal-bilgiler-tum": 0,
-    "turkce-tum": 0
+    "turkce-tum": 0,
+    "turkiye/10-sinif/biyoloji/biyoloji-tum": 28,
+    "turkiye/10-sinif/cografya/cografya-tum": 6,
+    "turkiye/10-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum": 28,
+    "turkiye/10-sinif/felsefe/felsefe-tum": 24,
+    "turkiye/10-sinif/fizik/fizik-tum": 2,
+    "turkiye/10-sinif/ingilizce/ingilizce-tum": 2,
+    "turkiye/10-sinif/kimya/kimya-tum": 2,
+    "turkiye/10-sinif/matematik/matematik-tum": 85,
+    "turkiye/10-sinif/soru-bankasi/10-sinif-tum-dersler-2000-soru": 79,
+    "turkiye/10-sinif/tarih/tarih-tum": 36,
+    "turkiye/10-sinif/turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum": 32
   },
   "skor": {
     "matematik-tum": 99.25,
@@ -16,7 +27,18 @@
     "ingilizce-tum": 100.0,
     "5-sinif-tum-dersler-2000-soru": 99.78,
     "sosyal-bilgiler-tum": 100.0,
-    "turkce-tum": 100.0
+    "turkce-tum": 100.0,
+    "turkiye/10-sinif/biyoloji/biyoloji-tum": 99.22,
+    "turkiye/10-sinif/cografya/cografya-tum": 98.79,
+    "turkiye/10-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum": 97.9,
+    "turkiye/10-sinif/felsefe/felsefe-tum": 99.01,
+    "turkiye/10-sinif/fizik/fizik-tum": 98.83,
+    "turkiye/10-sinif/ingilizce/ingilizce-tum": 99.29,
+    "turkiye/10-sinif/kimya/kimya-tum": 97.24,
+    "turkiye/10-sinif/matematik/matematik-tum": 93.73,
+    "turkiye/10-sinif/soru-bankasi/10-sinif-tum-dersler-2000-soru": 99.12,
+    "turkiye/10-sinif/tarih/tarih-tum": 99.65,
+    "turkiye/10-sinif/turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum": 99.69
   },
   "_soru_bankasi_notu": "Ortak banka yeni içerik değildir: beş AI-only doğrulanmış 500 soruluk paketten ders başına 400 kayıt seçer. Kaynaklardaki 477 görselli sorunun tamamını, 116 notu, bütün kazanımları ve bütün aileleri korur; cevap dağılımı 500/500/500/500'dür. Çok dersli derlemede kapalı seçenek havuzu ders bazında ölçülür; farklı derslerdeki doğal ölçü ve sözcük tekrarları birbirini kirletmez.",
   "_v22_skor_kalibrasyonu": "Skor artık kural eşikleriyle aynı şeyi ölçer: soru kalıbı çeşitliliği kural 40'ın %60 kabul eşiğinde, kazanım dışı çeldirici geri dönüşümü kural 41'in %15 üst sınırında doyar; görsel kapsamı kural 42'nin her zorunlu kazanım için %30 hedefini ölçer. Aynı seçenek kümesi yalnız birden fazla bağımsız aileye yayıldığında S2'yi düşürür. Ham metrikler raporda hamOlcutler altında korunur.",

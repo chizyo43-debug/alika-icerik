@@ -1,0 +1,323 @@
+{
+  "esik": 99.0,
+  "agirliklar": {
+    "S1_sizinti_yok": 0.2,
+    "S2_havuz_acikligi": 0.15,
+    "S3_dolgu_yok": 0.15,
+    "S4_kalip_cesitliligi": 0.15,
+    "S5_sekil_kapsamasi": 0.1,
+    "S6_kazanim_dengesi": 0.1,
+    "S7_geri_donusum_yok": 0.1,
+    "S8_alan_butunlugu": 0.05
+  },
+  "paketler": [
+    {
+      "paket": "turkiye/10-sinif/biyoloji/biyoloji-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 28,
+      "skor": 99.22,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 95.4,
+        "S3_dolgu_yok": 99.4,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 95.4,
+        "S3_dolgu_yok": 99.4,
+        "S4_kalip_cesitliligi": 99.4,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 99.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/10-sinif/cografya/cografya-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 6,
+      "skor": 98.79,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 98.0,
+        "S3_dolgu_yok": 94.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 98.0,
+        "S3_dolgu_yok": 94.0,
+        "S4_kalip_cesitliligi": 99.8,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 99.8,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/10-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 28,
+      "skor": 97.9,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 96.0,
+        "S3_dolgu_yok": 90.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 96.0,
+        "S3_dolgu_yok": 90.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/10-sinif/felsefe/felsefe-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 24,
+      "skor": 99.01,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 93.4,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 93.4,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/10-sinif/fizik/fizik-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 2,
+      "skor": 98.83,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 93.4,
+        "S3_dolgu_yok": 98.8,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 93.4,
+        "S3_dolgu_yok": 98.8,
+        "S4_kalip_cesitliligi": 78.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 95.8,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/10-sinif/ingilizce/ingilizce-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 2,
+      "skor": 99.29,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 96.0,
+        "S3_dolgu_yok": 99.2,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 96.0,
+        "S3_dolgu_yok": 99.2,
+        "S4_kalip_cesitliligi": 99.6,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/10-sinif/kimya/kimya-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 2,
+      "skor": 97.24,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 84.2,
+        "S3_dolgu_yok": 97.4,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 84.2,
+        "S3_dolgu_yok": 97.4,
+        "S4_kalip_cesitliligi": 91.4,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 97.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/10-sinif/matematik/matematik-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 85,
+      "skor": 93.73,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 74.0,
+        "S3_dolgu_yok": 94.7,
+        "S4_kalip_cesitliligi": 90.7,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 98.3,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 74.0,
+        "S3_dolgu_yok": 94.7,
+        "S4_kalip_cesitliligi": 54.4,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 83.5,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/10-sinif/soru-bankasi/10-sinif-tum-dersler-2000-soru.jsonl",
+      "soru": 2000,
+      "hata": 0,
+      "uyari": 79,
+      "skor": 99.12,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 95.8,
+        "S3_dolgu_yok": 98.4,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 95.8,
+        "S3_dolgu_yok": 98.4,
+        "S4_kalip_cesitliligi": 94.8,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 98.9,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/10-sinif/tarih/tarih-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 36,
+      "skor": 99.65,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 97.7,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 97.7,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 99.9,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    },
+    {
+      "paket": "turkiye/10-sinif/turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum.jsonl",
+      "soru": 500,
+      "hata": 0,
+      "uyari": 32,
+      "skor": 99.69,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 98.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 100.0,
+        "S3_dolgu_yok": 98.0,
+        "S4_kalip_cesitliligi": 99.8,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": false
+    }
+  ]
+}

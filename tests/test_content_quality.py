@@ -57,7 +57,13 @@ def load_package(path):
 
 
 PACKAGES = get_all_packages()
-PACKAGE_IDS = [p.stem for p in PACKAGES]
+PACKAGE_IDS = [p.relative_to(ROOT).with_suffix("").as_posix() for p in PACKAGES]
+
+
+def _baseline_value(section: dict, path: Path):
+    """Prefer grade-aware keys; retain compatibility with the original Grade 5 baseline."""
+    key = path.relative_to(ROOT).with_suffix("").as_posix()
+    return section.get(key, section.get(path.stem))
 
 
 # Kalite kapısı tabanı. Nihai hedef her pakette 0 HATA / 0 UYARI ve skor ≥ 99;
@@ -87,7 +93,7 @@ class TestValidator:
     def test_uyari_tabani_asilmadi(self, path):
         """UYARI sayısı kayıtlı tabandan yukarı çıkamaz (gerileme koruması)."""
         taban = _taban().get("uyari", {})
-        beklenen = taban.get(path.stem)
+        beklenen = _baseline_value(taban, path)
         uyarilar = [
             b for b in pack_validate.validate_file(path) if b.seviye == "UYARI"
         ]
@@ -106,7 +112,7 @@ class TestValidator:
     def test_skor_tabanin_altina_dusmedi(self, path):
         """Kalite skoru kayıtlı tabandan aşağı düşemez."""
         taban = _taban().get("skor", {})
-        beklenen = taban.get(path.stem)
+        beklenen = _baseline_value(taban, path)
         sonuc = pack_validate.paket_skoru(path)
         if beklenen is None:
             assert sonuc["skor"] >= pack_validate.SKOR_ESIK, (
