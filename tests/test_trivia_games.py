@@ -38,6 +38,7 @@ def test_archives_are_data_only_and_match_catalog():
         with zipfile.ZipFile(path) as archive:
             assert set(archive.namelist()) == {"manifest.json", "data/questions.json"}
             assert all(info.compress_type == zipfile.ZIP_STORED for info in archive.infolist())
+            assert all(info.create_system == 3 for info in archive.infolist())
             manifest = json.loads(archive.read("manifest.json"))
             questions = json.loads(archive.read("data/questions.json"))
         assert manifest["game_type"] == "quiz_race"

@@ -147,6 +147,7 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
             ("data/questions.json", questions),
         ):
             info = zipfile.ZipInfo(name, ZIP_TIME)
+            info.create_system = 3
             info.compress_type = zipfile.ZIP_STORED
             info.external_attr = 0o100644 << 16
             archive.writestr(info, payload, compress_type=zipfile.ZIP_STORED)
