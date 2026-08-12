@@ -23,6 +23,9 @@ jobs:
           python -m pip install --quiet pytest
           python -m pytest tests/ -q
 
+      - name: oyun paketleri güncel
+        run: python tools/build_trivia_games.py --check
+
       - name: doğrulayıcı (her paket)
         run: |
           for f in turkiye/*/*/*.jsonl; do
