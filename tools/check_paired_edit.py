@@ -71,6 +71,23 @@ def degisen_dosyalar(base: str) -> list:
 BAGLI_ALANLAR = ("choices", "correct", "distractorWhy", "explanation")
 
 
+def secenekleri_karsilastirma_icin_normallestir(secenekler: object) -> object:
+    """JSON sayılarını aynı görünen metin şıklarıyla eşdeğer kabul eder.
+
+    AliKa şıkları boş olmayan metin olarak saklar. Eski paketlerdeki ``48``
+    sayısının ``"48"`` metnine kayıpsız taşınması, öğrencinin gördüğü seçeneği
+    değiştirmez. Bool ve bileşik JSON değerleri özellikle dönüştürülmez.
+    """
+    if not isinstance(secenekler, list):
+        return secenekler
+    return [
+        str(secenek)
+        if isinstance(secenek, (int, float)) and not isinstance(secenek, bool)
+        else secenek
+        for secenek in secenekler
+    ]
+
+
 def dosyayi_denetle(base: str, yol: str, revert_of: str | None = None) -> list:
     ihlaller = []
     eski_ham = git_goster(base, yol)
@@ -98,7 +115,10 @@ def dosyayi_denetle(base: str, yol: str, revert_of: str | None = None) -> list:
         h = hedef.get(kimlik)
         if h is not None and all(h.get(a) == y.get(a) for a in BAGLI_ALANLAR):
             continue  # bağlı alanlar bilinen tutarlı hâline geri döndürülmüş
-        secenek_degisti = e.get("choices") != y.get("choices")
+        secenek_degisti = (
+            secenekleri_karsilastirma_icin_normallestir(e.get("choices"))
+            != secenekleri_karsilastirma_icin_normallestir(y.get("choices"))
+        )
         dogru_degisti = e.get("correct") != y.get("correct")
         why_degisti = e.get("distractorWhy") != y.get("distractorWhy")
         exp_degisti = e.get("explanation") != y.get("explanation")
