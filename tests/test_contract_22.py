@@ -85,6 +85,13 @@ def paket_kaydi() -> dict:
         "subject": "Türkçe",
         "grade": 5,
         "license": "CC-BY-NC-4.0",
+        "visualPolicy": {
+            "version": "1.0",
+            "everyNote": False,
+            "questionMinimumPercent": 0,
+            "balancedByObjective": False,
+            "rationale": "Görsel yalnız öğrenmeye katkı sağladığında kullanılır.",
+        },
         "labels": {"tr.g05.tur.ana-fikir.n001.visual.a1":
                    "İki sütun ve iki satırlık kareli zemin."},
         "source": "deneme",

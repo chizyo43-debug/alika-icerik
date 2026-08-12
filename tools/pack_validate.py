@@ -1278,6 +1278,30 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
         sv = paket.get("schemaVersion", "")
         if sv and sv not in SEMA_DESTEKLENEN:
             ekle("HATA", 27, 0, f"desteklenmeyen schemaVersion: {sv!r}")
+        if sv == SEMA_22:
+            visual_policy = paket.get("visualPolicy")
+            if not isinstance(visual_policy, dict):
+                ekle("HATA", 60, 0, "2.2 visualPolicy nesne olmalıdır")
+            else:
+                if not isinstance(visual_policy.get("everyNote"), bool):
+                    ekle("HATA", 60, 0, "visualPolicy.everyNote boolean olmalıdır")
+                minimum = visual_policy.get("questionMinimumPercent")
+                if (
+                    isinstance(minimum, bool)
+                    or not isinstance(minimum, (int, float))
+                    or not 0 <= minimum <= 100
+                ):
+                    ekle(
+                        "HATA", 60, 0,
+                        "visualPolicy.questionMinimumPercent 0-100 olmalıdır",
+                    )
+                if not isinstance(
+                    visual_policy.get("balancedByObjective"), bool
+                ):
+                    ekle(
+                        "HATA", 60, 0,
+                        "visualPolicy.balancedByObjective boolean olmalıdır",
+                    )
         src = paket.get("source", "")
         if sv == "2.0" and (not src or src == "unknown"):
             ekle("HATA", 28, 0, "source boş veya 'unknown'")
@@ -1423,6 +1447,9 @@ def validate_file(yol, metrikler: dict | None = None) -> list:
         # kural 12 — correct aralığı, şık sayısı, aynı metin
         if not 2 <= len(secenekler) <= 5:
             ekle("HATA", 12, satir_no, f"şık sayısı 2-5 dışında: {len(secenekler)}")
+        if any(not isinstance(secenek, str) or not secenek.strip()
+               for secenek in secenekler):
+            ekle("HATA", 12, satir_no, "şıklar boş olmayan metin olmalıdır")
         if not isinstance(dogru, int) or not 0 <= dogru < max(len(secenekler), 1):
             ekle("HATA", 12, satir_no, f"correct aralık dışı: {dogru!r}")
             dogru = None

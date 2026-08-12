@@ -11,6 +11,59 @@ SPEC = importlib.util.spec_from_file_location(
 pack_validate = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(pack_validate)
 
+
+def test_schema_22_visual_policy_nesne_olmali(tmp_path):
+    package = tmp_path / "visual-policy-string.jsonl"
+    package.write_text(
+        json.dumps(
+            {
+                "type": "pack",
+                "schemaVersion": "2.2",
+                "id": "tr.test.visual-policy",
+                "visualPolicy": "Görsel gerektiğinde kullanılır.",
+            },
+            ensure_ascii=False,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+    findings = pack_validate.validate_file(package)
+
+    assert any(
+        finding.seviye == "HATA" and finding.kural == 60
+        for finding in findings
+    )
+
+
+def test_sayisal_sik_alika_sozlesmesine_aykiri(tmp_path):
+    package = tmp_path / "numeric-choice.jsonl"
+    package.write_text(
+        "\n".join(
+            json.dumps(row, ensure_ascii=False)
+            for row in (
+                {"type": "pack", "schemaVersion": "2.0", "id": "tr.test"},
+                {
+                    "type": "question",
+                    "id": "tr-test-q1",
+                    "choices": [1, 2, 3, 4],
+                    "correct": 0,
+                },
+            )
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+    findings = pack_validate.validate_file(package)
+
+    assert any(
+        finding.seviye == "HATA"
+        and finding.kural == 12
+        and "boş olmayan metin" in finding.mesaj
+        for finding in findings
+    )
+
 REPAIR_SPEC = importlib.util.spec_from_file_location(
     "repair_english_v3_test", ROOT / "tools" / "repair_english_v3.py"
 )
