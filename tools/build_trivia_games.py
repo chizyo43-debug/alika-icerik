@@ -140,15 +140,16 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
         "created_at": CREATED_AT,
     }
     output = io.BytesIO()
-    with zipfile.ZipFile(output, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+    # Stored entries keep the package bytes identical across Python/zlib builds.
+    with zipfile.ZipFile(output, "w", zipfile.ZIP_STORED) as archive:
         for name, payload in (
             ("manifest.json", _json_bytes(manifest)),
             ("data/questions.json", questions),
         ):
             info = zipfile.ZipInfo(name, ZIP_TIME)
-            info.compress_type = zipfile.ZIP_DEFLATED
+            info.compress_type = zipfile.ZIP_STORED
             info.external_attr = 0o100644 << 16
-            archive.writestr(info, payload, compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
+            archive.writestr(info, payload, compress_type=zipfile.ZIP_STORED)
     return output.getvalue(), manifest
 
 
