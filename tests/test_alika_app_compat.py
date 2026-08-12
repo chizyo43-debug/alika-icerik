@@ -25,6 +25,12 @@ EXPECTED = {
     "turkce/turkce-tum.jsonl": ("Türkçe", 22, 500),
 }
 
+ALL_PACKAGES = sorted((ROOT / "turkiye").rglob("*.jsonl"))
+ALL_PACKAGE_IDS = [
+    path.relative_to(ROOT).with_suffix("").as_posix()
+    for path in ALL_PACKAGES
+]
+
 
 def _load_app(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
     raw = os.environ.get("ALIKA_APP_REPO", "").strip()
@@ -63,6 +69,61 @@ def _load_app(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
         for name, value in replacements.items():
             monkeypatch.setattr(module, name, value, raising=False)
     return library
+
+
+@pytest.mark.parametrize("path", ALL_PACKAGES, ids=ALL_PACKAGE_IDS)
+def test_every_package_round_trips_through_alika(
+    path: Path,
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+):
+    """GitHub'daki her paket gerçek AliKa importer'ı ile kurulabilmeli."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    records = [
+        json.loads(line)
+        for line in path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    expected_notes = sum(row.get("type") == "note" for row in records)
+    expected_questions = sum(row.get("type") == "question" for row in records)
+
+    init_all.init()
+    importer = Importer()
+    result = importer.import_file(path)
+    relative = path.relative_to(ROOT).as_posix()
+    assert result.success, (relative, result.error_code, result.error)
+    assert result.state == ImportState.AWAITING_APPROVAL, relative
+    assert result.preview["note_count"] == expected_notes, relative
+    assert result.preview["question_count"] == expected_questions, relative
+    assert importer.approve(result.content_id), relative
+
+    with connect() as connection:
+        active_notes = connection.execute(
+            "SELECT COUNT(*) FROM content_items "
+            "WHERE active=1 AND media_type='note'"
+        ).fetchone()[0]
+        active_questions = connection.execute(
+            "SELECT COUNT(*) FROM question_items WHERE active=1"
+        ).fetchone()[0]
+        orphan_links = connection.execute(
+            "SELECT COUNT(*) FROM question_items q "
+            "LEFT JOIN content_items n "
+            "ON n.content_id=q.note_content_id AND n.active=1 "
+            "WHERE q.active=1 AND (q.note_content_id IS NULL OR n.content_id IS NULL)"
+        ).fetchone()[0]
+        invalid_answers = connection.execute(
+            "SELECT COUNT(*) FROM question_items "
+            "WHERE active=1 AND (correct < 0 OR correct > 3)"
+        ).fetchone()[0]
+
+    assert active_notes == expected_notes, relative
+    assert active_questions == expected_questions, relative
+    assert orphan_links == 0, relative
+    assert invalid_answers == 0, relative
 
 
 def test_grade5_packages_round_trip_through_alika(tmp_path, monkeypatch):
