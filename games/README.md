@@ -22,6 +22,12 @@ Kaynak kayıtlardaki `source` ve `culture_tags` denetim bilgisidir; çocuk
 cihazına giden pakete yalnız AliKa'nın beyaz listedeki soru alanları yazılır.
 Katalog insan kültürel incelemesi tamamlanana kadar `ai-draft` durumundadır.
 
+```powershell
+python tools/build_trivia_games.py
+python tools/build_trivia_games.py --check
+python -m pytest tests/test_trivia_games.py -q
+```
+
 ## Ülke–Başkent Hafızası v1
 
 `memory` kataloğu da aynı dokuz dil ve dört yaş bandında 36 ayrı paket sunar.
@@ -41,8 +47,16 @@ python tools/build_memory_games.py --check
 python -m pytest tests/test_memory_games.py -q
 ```
 
+## Çarkıfelek v1
+
+`word-wheel` kataloğu dokuz dil ve dört yaş bandında 36 paket sunar. Her pakette
+sistemin tur başında otomatik seçtiği tam 200 kelime bulmacası vardır; toplam
+7.200 bulmaca bulunur. Ortak ekrana cevap değil, yalnız kategori, ipucu ve kapalı
+harf tahtası gider.
+
 ```powershell
-python tools/build_trivia_games.py
-python tools/build_trivia_games.py --check
-python -m pytest tests/test_trivia_games.py -q
+python tools/generate_word_wheel_geography.py
+python tools/build_word_wheel_games.py
+python tools/build_word_wheel_games.py --check
+python -m pytest tests/test_word_wheel_games.py -q
 ```
