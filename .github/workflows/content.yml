@@ -34,6 +34,7 @@ jobs:
           python tools/build_charades_games.py --check
           python tools/build_draw_guess_games.py --check
           python tools/build_story_adventure_games.py --check
+          python tools/build_word_hunt_games.py --check
 
       - name: doğrulayıcı (her paket)
         run: |

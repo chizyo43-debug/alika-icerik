@@ -106,6 +106,21 @@ def gameplay_config(game: str, band: str) -> bytes:
             "safety": {"skip_without_explanation": True, "no_mocking_stories": True,
                        "personal_disclosure_required": False, "frightening_twists_for_young": False},
         },
+        "word-hunt": {
+            "modes": ["clue_hunt", "quick_10", "family_team", "letter_duel"],
+            "round": {"seconds": {"young": 120, "mid": 90, "teen": 60, "senior": 45}[band],
+                      "default_puzzles": 10, "pass_tokens": 3 if young else 2,
+                      "first_letter_hint": young},
+            "rack": {"shuffle_unlimited": young, "shuffle_tokens": 5 if young else 3,
+                     "decoy_letters": {"young": 0, "mid": 1, "teen": 2, "senior": 3}[band],
+                     "accented_letters_preserved": True},
+            "bonuses": {"golden_letter": 2, "streak_starts_at": 3,
+                        "streak_bonus": 1, "cooperative_target": 8 if young else 12},
+            "events": ["golden_letter", "time_freeze", "double_word",
+                       "remove_decoy", "shuffle_boost"],
+            "safety": {"skip_without_explanation": True, "no_public_spelling_shame": True,
+                       "personal_words_required": False},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)
