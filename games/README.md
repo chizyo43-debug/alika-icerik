@@ -238,3 +238,18 @@ python tools/build_light_laboratory_games.py
 python tools/build_light_laboratory_games.py --check
 python -m pytest tests/test_light_laboratory_games.py -q
 ```
+
+## Robot Kodlama Arenası v1
+
+`robot-coding-arena` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket
+sunar. Her pakette 200 çalıştırılabilir robot programı, toplamda 7.200 görev vardır.
+Oyuncu ileri, sağ ve sol komutlarını sıralayıp robotu enerji çekirdeğine ulaştırır.
+Yaş büyüdükçe tekrar blokları, renk koşulları, daha büyük tabla ve daha fazla engel
+eklenir. Her çözüm programı paketleme sırasında adım adım çalıştırılarak doğrulanır.
+
+```powershell
+python tools/generate_robot_coding_games.py
+python tools/build_robot_coding_games.py
+python tools/build_robot_coding_games.py --check
+python -m pytest tests/test_robot_coding_games.py -q
+```

@@ -50,6 +50,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   yağmur, altın arı, kompost, gölge bulutu ve rüzgâr sürprizleri.
 - Işık Laboratuvarı: ışın kurma, aile ortak çözümü, iki kişilik devre ve tayf görevi;
   altın ayna, enerji küresi, donmuş ayna, portal çifti ve renk patlaması.
+- Robot Kodlama Arenası: komut sıralama, aile hata ayıklama, iki kişilik program ve
+  verimlilik görevi; turbo yol, manyetik fırtına, altın pil, portal ve kod hatası turları.
 
 ## Yeni oyun kabul kapısı
 
