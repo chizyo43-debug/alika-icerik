@@ -17,7 +17,8 @@ from word_wheel_design import LABELS, wheel_config
 
 def test_every_current_game_has_rich_age_aware_play_and_visual_design():
     games = ("trivia", "memory", "who-is-it", "taboo", "liar", "charades", "draw-guess",
-             "story-adventure", "word-hunt", "route-masters", "rhythm-stage")
+             "story-adventure", "word-hunt", "route-masters", "rhythm-stage",
+             "balance-workshop")
     bands = ("young", "mid", "teen", "senior")
     for game in games:
         for band in bands:

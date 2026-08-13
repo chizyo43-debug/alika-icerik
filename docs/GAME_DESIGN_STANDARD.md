@@ -44,6 +44,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   dönen yol taşları, anahtar, kapı, enerji küresi ve hareketli duvar sürprizleri.
 - Ritim Sahnesi: dinle–tekrarla, aile ritim zinciri, iki kişilik eşzamanlı oyun ve
   eksik vuruş; altın vuruş, süre dondurma, yankı ve hızlanan tempo sürprizleri.
+- Denge Atölyesi: serbest yapım, aile ortak yapımı, sırayla parça yerleştirme ve
+  plan görevi; rüzgâr, hareketli platform, mıknatıs, altın sabitleyici ve deprem turları.
 
 ## Yeni oyun kabul kapısı
 

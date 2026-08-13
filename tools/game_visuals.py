@@ -58,6 +58,10 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#18D9FF", "accent_2": "#FF45C8", "highlight": "#FFD24F",
         "correct": "#39E99D", "wrong": "#FF5878", "card": "#24215C",
     },
+    "balance-workshop": {
+        "accent": "#19D9FF", "accent_2": "#FF5A75", "highlight": "#FFD34F",
+        "correct": "#39E89C", "wrong": "#FF526E", "card": "#1D2858",
+    },
 }
 
 

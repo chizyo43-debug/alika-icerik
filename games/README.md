@@ -193,3 +193,18 @@ python tools/build_rhythm_stage_games.py
 python tools/build_rhythm_stage_games.py --check
 python -m pytest tests/test_rhythm_stage_games.py -q
 ```
+
+## Denge Atölyesi v1
+
+`balance-workshop` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket
+sunar. Her pakette 200 özgün ve dengesi doğrulanmış yapı görevi, toplamda 7.200
+bölüm bulunur. Küçük yaşta beş büyük parça, geniş taban ve yerleştirme yardımı;
+büyük yaşlarda on bir parça, dar taban, kırılgan parçalar, rüzgâr ve hareketli
+platform kullanılır. Her dilde beş kültürel atölye–malzeme–süsleme takımı vardır.
+
+```powershell
+python tools/generate_balance_workshop.py
+python tools/build_balance_workshop_games.py
+python tools/build_balance_workshop_games.py --check
+python -m pytest tests/test_balance_workshop_games.py -q
+```
