@@ -26,7 +26,10 @@ def test_packages_are_data_only_with_two_truths_and_one_lie_contract():
     catalog = json.loads((ROOT / "games" / "liar" / "catalog.json").read_text(encoding="utf-8"))
     for item in catalog["games"]:
         with zipfile.ZipFile(ROOT / item["path"]) as archive:
-            assert set(archive.namelist()) == {"manifest.json", "data/cards.json"}
+            assert set(archive.namelist()) == {
+                "manifest.json", "data/cards.json", "visual/game_art.webp",
+                "visual/theme.json", "data/gameplay.json",
+            }
             manifest = json.loads(archive.read("manifest.json"))
             cards = json.loads(archive.read("data/cards.json"))
         assert manifest["game_type"] == "liar"

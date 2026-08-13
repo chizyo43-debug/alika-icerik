@@ -30,13 +30,37 @@ def test_packages_are_data_only_and_do_not_reveal_answers_in_clues():
     catalog = json.loads((ROOT / "games" / "word-wheel" / "catalog.json").read_text(encoding="utf-8"))
     for item in catalog["games"]:
         with zipfile.ZipFile(ROOT / item["path"]) as archive:
-            assert set(archive.namelist()) == {"manifest.json", "data/words.json"}
+            assert set(archive.namelist()) == {
+                "manifest.json", "data/words.json", "data/wheel.json",
+                "visual/game_art.webp", "visual/theme.json",
+            }
             manifest = json.loads(archive.read("manifest.json"))
             words = json.loads(archive.read("data/words.json"))
+            wheel = json.loads(archive.read("data/wheel.json"))
+            theme = json.loads(archive.read("visual/theme.json"))
         assert manifest["game_type"] == "word_wheel"
         assert len(words) == 200
         assert all(set(row) == set(builder.RUNTIME_FIELDS) for row in words)
         assert all(builder._key(row["answer"]) not in builder._key(row["clue"]) for row in words)
+        assert wheel["segment_count"] == len(wheel["segments"]) == 24
+        assert sum(segment["kind"] == "points" for segment in wheel["segments"]) == 14
+        assert {"multiplier", "jackpot", "free_letter", "shield", "extra_turn",
+                "spin_again", "mystery", "lose_turn", "half_round_score",
+                "reset_round_score"} <= {segment["kind"] for segment in wheel["segments"]}
+        assert wheel["scoring"]["bankrupt_scope"] == "current_round_only"
+        assert wheel["scoring"]["match_score_is_protected"] is True
+        assert wheel["fairness"]["no_real_money"] is True
+        assert theme["feedback"]["streak_confetti"] == 3
+        assert theme["accessibility"]["color_only_feedback"] is False
+
+
+def test_young_wheel_uses_gentle_penalties_and_older_groups_keep_strategy():
+    young = json.loads(builder.wheel_config("tr", "young"))
+    teen = json.loads(builder.wheel_config("tr", "teen"))
+    assert young["age_profile"]["bankrupt_becomes_lose_turn"] is True
+    assert young["age_profile"]["starting_shields"] == 1
+    assert teen["age_profile"]["bankrupt_becomes_lose_turn"] is False
+    assert teen["age_profile"]["starting_shields"] == 0
 
 
 def test_each_language_has_four_distinct_age_pools():
