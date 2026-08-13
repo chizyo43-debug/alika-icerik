@@ -223,3 +223,18 @@ python tools/build_garden_masters_games.py
 python tools/build_garden_masters_games.py --check
 python -m pytest tests/test_garden_masters_games.py -q
 ```
+
+## Işık Laboratuvarı v1
+
+`light-laboratory` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket
+sunar. Her pakette 200 çözülebilir ışık yolu, toplamda 7.200 bölüm bulunur.
+Oyuncu aynaları çevirip renk filtrelerini kullanarak ışını hedef kristale ulaştırır.
+Küçük yaşta 5×5 tabla ve tek dönen ayna; büyük yaşlarda 8×8 tabla, dört dönen
+ayna, daha uzun ışık yolu ve üç renk filtresi kullanılır.
+
+```powershell
+python tools/generate_light_laboratory.py
+python tools/build_light_laboratory_games.py
+python tools/build_light_laboratory_games.py --check
+python -m pytest tests/test_light_laboratory_games.py -q
+```

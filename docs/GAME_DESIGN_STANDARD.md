@@ -48,6 +48,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   plan görevi; rüzgâr, hareketli platform, mıknatıs, altın sabitleyici ve deprem turları.
 - Bahçe Ustaları: bahçe kurma, aile ortak bahçesi, hasat yarışı ve hava görevi;
   yağmur, altın arı, kompost, gölge bulutu ve rüzgâr sürprizleri.
+- Işık Laboratuvarı: ışın kurma, aile ortak çözümü, iki kişilik devre ve tayf görevi;
+  altın ayna, enerji küresi, donmuş ayna, portal çifti ve renk patlaması.
 
 ## Yeni oyun kabul kapısı
 
