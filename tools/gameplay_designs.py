@@ -195,6 +195,23 @@ def gameplay_config(game: str, band: str) -> bytes:
                        "no_player_elimination": True, "no_timed_pressure_for_young": True,
                        "color_and_shape_feedback": True, "photosensitive_safe_pulses": True},
         },
+        "robot-coding-arena": {
+            "modes": ["code_mission", "family_debug", "duo_program", "efficiency_challenge"],
+            "round": {"board_size": {"young": 5, "mid": 6, "teen": 7, "senior": 8}[band],
+                      "loop_blocks": {"young": 0, "mid": 1, "teen": 2, "senior": 3}[band],
+                      "condition_blocks": {"young": 0, "mid": 0, "teen": 1, "senior": 2}[band],
+                      "undo_tokens": 8 if young else 4, "step_preview": young},
+            "coding": {"drag_drop_blocks": True, "step_by_step_run": True,
+                       "route_highlight": True, "error_cell_highlight": True,
+                       "commands_have_shapes_and_colors": True},
+            "bonuses": {"under_block_budget": 2, "first_run_success": 1,
+                        "debug_recovery": 1, "cooperative_target": 6 if young else 10},
+            "events": ["turbo_lane", "magnetic_storm", "golden_battery",
+                       "portal_pair", "debug_glitch"],
+            "safety": {"skip_without_explanation": True, "no_player_elimination": True,
+                       "no_timed_pressure_for_young": True, "mistakes_are_reversible": True,
+                       "no_open_chat": True, "reduced_motion_supported": True},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)

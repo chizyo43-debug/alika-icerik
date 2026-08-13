@@ -70,6 +70,10 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#18D9FF", "accent_2": "#B85CFF", "highlight": "#FFD34D",
         "correct": "#3AE99D", "wrong": "#FF5775", "card": "#172654",
     },
+    "robot-coding-arena": {
+        "accent": "#16D9FF", "accent_2": "#A95CFF", "highlight": "#FFD23F",
+        "correct": "#58E65D", "wrong": "#FF5B70", "card": "#172758",
+    },
 }
 
 
