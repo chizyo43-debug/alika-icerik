@@ -75,3 +75,17 @@ python tools/build_who_is_it_games.py
 python tools/build_who_is_it_games.py --check
 python -m pytest tests/test_who_is_it_games.py -q
 ```
+
+## Tabu v1
+
+`taboo` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket sunar.
+Her pakette 200 kart, her kartta bir hedef ve dört yasak kelime vardır; toplam
+7.200 kart bulunur. Sistem uygun havuzdan kartı otomatik seçer. Kaynak bağlantıları
+denetim dosyalarında kalır, çocuk cihazına giden pakete eklenmez.
+
+```powershell
+python tools/generate_taboo_geography.py
+python tools/build_taboo_games.py
+python tools/build_taboo_games.py --check
+python -m pytest tests/test_taboo_games.py -q
+```
