@@ -92,6 +92,20 @@ def gameplay_config(game: str, band: str) -> bytes:
             "safety": {"skip_without_explanation": True, "no_mocking_drawings": True,
                        "eyes_closed_required": False, "unsafe_grip_required": False},
         },
+        "story-adventure": {
+            "modes": ["solo_story", "family_chain", "quick_60", "hidden_twist"],
+            "round": {"seconds": 120 if young else 60, "sentences_per_turn": 2 if young else 1,
+                      "required_elements": 3 if young else 5, "cards_per_game": 5,
+                      "pass_tokens": 3 if young else 2},
+            "story_structure": {"steps": ["beginning", "challenge", "surprise", "solution", "ending"],
+                                "previous_sentence_visible": True, "ending_choice": True},
+            "bonuses": {"use_every_element": 2, "connect_previous_turn": 1,
+                        "creative_ending": 1, "cooperative_target": 10 if young else 14},
+            "events": ["new_character", "reverse_ending", "sound_effect",
+                       "forbidden_word", "happy_ending"],
+            "safety": {"skip_without_explanation": True, "no_mocking_stories": True,
+                       "personal_disclosure_required": False, "frightening_twists_for_young": False},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)

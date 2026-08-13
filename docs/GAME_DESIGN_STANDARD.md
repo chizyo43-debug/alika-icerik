@@ -36,6 +36,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   zorluk puanı, güvenli pas, donuk poz, ters oyuncu ve sessiz aktarım sürprizleri.
 - Çiz ve Bil: klasik takım, hızlı beş kart, herkes çizer ve ortak aile; tek çizgi,
   tek renk, yardımcı çizgi, hızlı tur ve aynı resmi çizme sürprizleri.
+- Hikâye Macerası: tek anlatıcı, aile zinciri, 60 saniyelik tur ve gizli sürpriz;
+  kahraman, mekân, eşya, görev ve beklenmedik olayla ortak bir hikâye kurulur.
 
 ## Yeni oyun kabul kapısı
 
