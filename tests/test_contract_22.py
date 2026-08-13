@@ -425,6 +425,45 @@ def test_sema_gosterilene_isaret_ederse_atif_sayilir():
                                             satirici_kacis=False), metin
 
 
+def test_dogal_gorsel_gonderimleri_atif_sayilir():
+    metinler = (
+        "Aşağıdaki seçenek tablosunu da kullanınız.",
+        "Görselde verilen bilgileri kullanınız.",
+        "Şemadaki sınıflandırma akışına göre sonucu bulunuz.",
+        "Akış şemasına göre son kutuda hangi etiket yer almalıdır?",
+        "Grafikte verilen dağılıma göre karasal gezegen sayısı kaçtır?",
+        "Aşağıdaki grafik, haftalık dağılımı göstermektedir.",
+        "Tablo, paket sayılarını ve toplamları gösteriyor.",
+    )
+    for metin in metinler:
+        assert pack_validate.figur_atfi_var(
+            metin, "tr", "question", satirici_kacis=False
+        ), metin
+
+
+def test_ingilizce_gorsel_gonderimleri_atif_sayilir():
+    for metin in (
+        "Use the visual above to answer the question.",
+        "Look at the chart below and choose the correct answer.",
+        "Look at the chart. Which statement is correct?",
+        "Follow the flow chart, then answer the question.",
+        "According to the table, which statement is correct?",
+    ):
+        assert pack_validate.figur_atfi_var(
+            metin, "en", "question", satirici_kacis=False
+        ), metin
+
+
+def test_genis_gonderim_yalniz_dolu_figur_yonunde_kullanilir():
+    assert pack_validate.figur_atfi_var(
+        "Grafikte karasal gezegen sayısı kaçtır?",
+        "tr", "question", satirici_kacis=False,
+    )
+    assert not pack_validate.figur_atfi_var(
+        "Hangi grafik türü bu veri için uygundur?", "tr", "question"
+    )
+
+
 def test_anlatidaki_sema_atif_sayilmaz():
     """Fen sorularında şema çoğu kez senaryonun içindeki bir nesnedir.
 

@@ -403,17 +403,23 @@ def test_social_current_residence_service_is_accurate():
 def test_score_thresholds_match_validator_acceptance_rules():
     """A passing rule threshold must not remain a hidden score penalty."""
     assert pack_validate.skor_uygunluk_degeri(
-        "S4_kalip_cesitliligi", 0.60
+        "S2_havuz_acikligi", 0.70
     ) == 1.0
     assert pack_validate.skor_uygunluk_degeri(
-        "S7_geri_donusum_yok", 0.85
+        "S3_dolgu_yok", 0.90
     ) == 1.0
     assert pack_validate.skor_uygunluk_degeri(
-        "S4_kalip_cesitliligi", 0.30
+        "S4_kalip_cesitliligi", 0.40
+    ) == 1.0
+    assert pack_validate.skor_uygunluk_degeri(
+        "S7_geri_donusum_yok", 0.75
+    ) == 1.0
+    assert pack_validate.skor_uygunluk_degeri(
+        "S4_kalip_cesitliligi", 0.20
     ) == 0.5
     assert pack_validate.skor_uygunluk_degeri(
-        "S2_havuz_acikligi", 0.90
-    ) == 0.90
+        "S2_havuz_acikligi", 0.35
+    ) == 0.5
 
 
 def test_binlik_ayraci_ondalik_sanilmaz():
