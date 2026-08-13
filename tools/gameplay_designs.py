@@ -180,6 +180,21 @@ def gameplay_config(game: str, band: str) -> bytes:
                        "no_player_elimination": True, "no_timed_pressure_for_young": True,
                        "color_and_icon_feedback": True, "reduced_motion_supported": True},
         },
+        "light-laboratory": {
+            "modes": ["beam_builder", "family_coop", "duo_circuit", "spectrum_challenge"],
+            "round": {"board_size": {"young": 5, "mid": 6, "teen": 7, "senior": 8}[band],
+                      "rotatable_mirrors": {"young": 1, "mid": 2, "teen": 3, "senior": 4}[band],
+                      "undo_tokens": 6 if young else 3, "beam_preview": young},
+            "optics": {"reflection_path_visible": True, "filter_color_icons": True,
+                       "prism_spectrum_animation": True, "safe_enclosed_beams": True},
+            "bonuses": {"energy_saved": 1, "fewest_rotations": 2,
+                        "all_targets_lit": 2, "cooperative_target": 6 if young else 10},
+            "events": ["golden_mirror", "energy_orb", "frozen_mirror",
+                       "portal_pair", "spectrum_burst"],
+            "safety": {"skip_without_explanation": True, "no_real_laser_instruction": True,
+                       "no_player_elimination": True, "no_timed_pressure_for_young": True,
+                       "color_and_shape_feedback": True, "photosensitive_safe_pulses": True},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)
