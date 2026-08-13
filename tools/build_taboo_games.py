@@ -135,7 +135,8 @@ def build(*, check: bool) -> None:
                                     "games": entries})
     if check:
         stale = [path.relative_to(ROOT).as_posix() for path, data in outputs.items()
-                 if not path.is_file() or path.read_bytes() != data]
+                 if not path.is_file() or (path.read_bytes().replace(b"\r\n", b"\n") != data
+                                           if path.suffix == ".json" else path.read_bytes() != data)]
         if stale:
             raise TabooBuildError("generated files are stale: " + ", ".join(stale))
         return

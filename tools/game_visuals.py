@@ -34,6 +34,10 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#A968FF", "accent_2": "#20D9D2", "highlight": "#FFD34E",
         "correct": "#3BE8A0", "wrong": "#FF4D70", "card": "#231C52",
     },
+    "charades": {
+        "accent": "#00D5FF", "accent_2": "#FF4DB8", "highlight": "#FFD34A",
+        "correct": "#38E69A", "wrong": "#FF5A72", "card": "#202158",
+    },
 }
 
 
