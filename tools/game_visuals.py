@@ -54,6 +54,10 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#12D9F4", "accent_2": "#A84DFF", "highlight": "#FFD24A",
         "correct": "#38E79B", "wrong": "#FF5B73", "card": "#15345B",
     },
+    "rhythm-stage": {
+        "accent": "#18D9FF", "accent_2": "#FF45C8", "highlight": "#FFD24F",
+        "correct": "#39E99D", "wrong": "#FF5878", "card": "#24215C",
+    },
 }
 
 

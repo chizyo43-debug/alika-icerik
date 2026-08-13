@@ -42,6 +42,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   düellosu; altın harf, süre dondurma, yanıltıcı harf kaldırma ve seri bonusları.
 - Rota Ustaları: tek oyuncu, ortak aile, hazine yarışı ve önceden rota programlama;
   dönen yol taşları, anahtar, kapı, enerji küresi ve hareketli duvar sürprizleri.
+- Ritim Sahnesi: dinle–tekrarla, aile ritim zinciri, iki kişilik eşzamanlı oyun ve
+  eksik vuruş; altın vuruş, süre dondurma, yankı ve hızlanan tempo sürprizleri.
 
 ## Yeni oyun kabul kapısı
 
