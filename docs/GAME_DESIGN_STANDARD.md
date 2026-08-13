@@ -52,6 +52,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   altın ayna, enerji küresi, donmuş ayna, portal çifti ve renk patlaması.
 - Robot Kodlama Arenası: komut sıralama, aile hata ayıklama, iki kişilik program ve
   verimlilik görevi; turbo yol, manyetik fırtına, altın pil, portal ve kod hatası turları.
+- Renkli Pazar: alışveriş listesi, aile bütçesi, iki kişilik sepet ve kupon görevi;
+  altın kupon, pazar telaşı, bonus sepet, fiyat dondurma ve paylaşma turları.
 
 ## Yeni oyun kabul kapısı
 

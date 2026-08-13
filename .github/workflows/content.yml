@@ -41,6 +41,7 @@ jobs:
           python tools/build_garden_masters_games.py --check
           python tools/build_light_laboratory_games.py --check
           python tools/build_robot_coding_games.py --check
+          python tools/build_colorful_market_games.py --check
 
       - name: doğrulayıcı (her paket)
         run: |

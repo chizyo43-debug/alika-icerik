@@ -212,6 +212,23 @@ def gameplay_config(game: str, band: str) -> bytes:
                        "no_timed_pressure_for_young": True, "mistakes_are_reversible": True,
                        "no_open_chat": True, "reduced_motion_supported": True},
         },
+        "colorful-market": {
+            "modes": ["shopping_list", "family_budget", "duo_basket", "coupon_challenge"],
+            "round": {"offer_count": {"young": 6, "mid": 7, "teen": 8, "senior": 9}[band],
+                      "basket_size": {"young": 2, "mid": 3, "teen": 3, "senior": 4}[band],
+                      "undo_tokens": 8 if young else 4, "running_total_visible": True},
+            "budgeting": {"fictional_star_tokens": True, "real_currency_used": False,
+                          "category_icons": True, "coupon_preview": True,
+                          "exact_budget_feedback": True},
+            "bonuses": {"exact_budget": 2, "required_categories": 2,
+                        "coupon_used": 1, "cooperative_target": 6 if young else 10},
+            "events": ["golden_coupon", "market_rush", "bonus_basket",
+                       "price_freeze", "sharing_round"],
+            "safety": {"skip_without_explanation": True, "no_real_money": True,
+                       "no_brand_ads": True, "no_purchase_pressure": True,
+                       "no_player_elimination": True, "no_timed_pressure_for_young": True,
+                       "color_and_icon_feedback": True},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)
