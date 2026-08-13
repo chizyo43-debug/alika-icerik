@@ -17,6 +17,17 @@ from pathlib import Path
 from typing import Any
 
 from build_trivia_games import BANDS, LANGUAGES, QUESTIONS, ROOT, SUBJECTS
+from trivia_language import (
+    CONTESTED_CAPITALS,
+    CONTINENT_ALIASES,
+    CONTINENT_NAMES,
+    RU_CONTINENT_PREPOSITIONAL,
+    SAME_NAME_CAPITALS,
+    TEMPLATES,
+    country_forms,
+    display_capital,
+    display_name,
+)
 
 
 DATA_PATH = ROOT / "games" / "trivia" / "data" / "wikidata_countries.json"
@@ -59,81 +70,6 @@ TOPICS = {
     "tr": "Dünya ve kültür", "en": "World and culture", "de": "Welt und Kultur",
     "es": "Mundo y cultura", "fr": "Monde et culture", "pt": "Mundo e cultura",
     "ru": "Мир и культура", "ja": "世界と文化", "ko": "세계와 문화",
-}
-
-TEXT = {
-    "tr": {
-        "capital": "{country} ülkesinin başkenti hangisidir?",
-        "country": "{capital} hangi ülkenin başkentidir?",
-        "continent": "{country} hangi kıtadadır?",
-        "capital_explanation": "{country} ülkesinin başkenti {capital} şehridir.",
-        "country_explanation": "{capital}, {country} ülkesinin başkentidir.",
-        "continent_explanation": "{country}, {continent} kıtasındadır.",
-    },
-    "en": {
-        "capital": "Which city is the capital of the country named {country}?",
-        "country": "{capital} is the capital of which country?",
-        "continent": "On which continent is {country}?",
-        "capital_explanation": "The city {capital} is the capital of the country {country}.",
-        "country_explanation": "{capital} is the capital of {country}.",
-        "continent_explanation": "{country} is in {continent}.",
-    },
-    "de": {
-        "capital": "Welche Stadt ist die Hauptstadt des Landes {country}?",
-        "country": "{capital} ist die Hauptstadt welches Landes?",
-        "continent": "Zu welchem Kontinent gehört das Land {country}?",
-        "capital_explanation": "Die Hauptstadt des Landes {country} ist {capital}.",
-        "country_explanation": "{capital} ist die Hauptstadt von {country}.",
-        "continent_explanation": "{country} liegt in {continent}.",
-    },
-    "es": {
-        "capital": "¿Cuál es la capital de {country}?",
-        "country": "¿De qué país es capital {capital}?",
-        "continent": "¿En qué continente está {country}?",
-        "capital_explanation": "La capital de {country} es {capital}.",
-        "country_explanation": "{capital} es la capital de {country}.",
-        "continent_explanation": "{country} está en {continent}.",
-    },
-    "fr": {
-        "capital": "Quelle ville est la capitale du pays nommé {country} ?",
-        "country": "{capital} est la capitale de quel pays ?",
-        "continent": "Sur quel continent se trouve {country} ?",
-        "capital_explanation": "La ville {capital} est la capitale du pays {country}.",
-        "country_explanation": "{capital} est la capitale de {country}.",
-        "continent_explanation": "{country} se trouve en {continent}.",
-    },
-    "pt": {
-        "capital": "Qual cidade é a capital do país chamado {country}?",
-        "country": "{capital} é a capital de que país?",
-        "continent": "Em que continente fica {country}?",
-        "capital_explanation": "A cidade {capital} é a capital do país {country}.",
-        "country_explanation": "{capital} é a capital de {country}.",
-        "continent_explanation": "{country} fica em {continent}.",
-    },
-    "ru": {
-        "capital": "Какой город является столицей государства «{country}»?",
-        "country": "Столицей какой страны является {capital}?",
-        "continent": "К какому континенту относится государство «{country}»?",
-        "capital_explanation": "Столица государства «{country}» — {capital}.",
-        "country_explanation": "{capital} — столица страны {country}.",
-        "continent_explanation": "Континент для государства «{country}»: {continent}.",
-    },
-    "ja": {
-        "capital": "{country}の首都はどこですか？",
-        "country": "{capital}はどの国の首都ですか？",
-        "continent": "{country}はどの大州にありますか？",
-        "capital_explanation": "{country}の首都は{capital}です。",
-        "country_explanation": "{capital}は{country}の首都です。",
-        "continent_explanation": "{country}は{continent}にあります。",
-    },
-    "ko": {
-        "capital": "나라: {country}. 수도는 어디인가요?",
-        "country": "수도: {capital}. 어느 나라인가요?",
-        "continent": "나라: {country}. 어느 대륙에 있나요?",
-        "capital_explanation": "나라 {country} · 수도 {capital}.",
-        "country_explanation": "수도 {capital} · 나라 {country}.",
-        "continent_explanation": "나라 {country} · 대륙 {continent}.",
-    },
 }
 
 
@@ -239,47 +175,105 @@ def _age_ordered(
     return local + global_preferred + rest
 
 
-def generate(snapshot: dict[str, list[dict[str, str]]]) -> None:
+def _prepare(snapshot: dict[str, list[dict[str, str]]]) -> dict[str, list[dict[str, Any]]]:
+    """Ham etiketi görünen ada indirger, kıtaları altı kanona eşler.
+
+    Anık görüntü dokunulmadan kalır: sürüm izlenebilirliği kaynakta,
+    okunabilirlik burada. Kıta eşlemesi olmayan etiket (Avrasya) düşer.
+    """
+    prepared: dict[str, list[dict[str, Any]]] = {}
     for language in LANGUAGES:
-        base = snapshot[language]
+        rows = []
+        for item in snapshot[language]:
+            iso = item["iso2"]
+            rows.append({
+                "iso2": iso,
+                "country_qid": item["country_qid"],
+                "country": display_name(language, iso, item["country"]),
+                "capital": display_capital(language, iso, item["capital"]),
+                "continents": sorted({CONTINENT_ALIASES[label]
+                                      for label in item["continents"]
+                                      if label in CONTINENT_ALIASES}),
+            })
+        prepared[language] = rows
+    return prepared
+
+
+def _specs(ordered: list[dict[str, Any]], focus: list[str]) -> list[tuple[str, dict[str, Any]]]:
+    """Havuzun 100 başkent + 60 ülke + 40 kıta sorusunu seçer.
+
+    Başkent ve ülke yönü aynı ülkeyi paylaşırsa bir soru diğerinin cevabını
+    verir. Paylaşım yalnız kültür-yerel ülkelerde bırakılır: paket başına en
+    az 40 yerel soru kapısı (bkz. `build_trivia_games._load_pool`) yalnız 20
+    yerel ülkeden besleniyor, çift yön olmadan kota dolmuyor. Küresel
+    ülkelerin tamamı tek yönde sorulur; çift soru 60'tan 20'ye iner.
+
+    Adı başkentiyle aynı veya doğrudan şehir türevi olan devletler (Monako,
+    Lüksemburg, Cibuti, Vatikan) iki yönde de cevabı ele verir; kıta sorusuna
+    ve çeldirici havuzuna girerler, başkent/ülke sorusuna girmezler.
+    """
+    local = set(focus)
+    ready = [item for item in ordered
+             if item["iso2"] not in CONTESTED_CAPITALS
+             and item["iso2"] not in SAME_NAME_CAPITALS
+             and item["country"] != item["capital"]]
+    capitals = ready[:100]
+    asked = {item["iso2"] for item in capitals}
+    countries = ([item for item in capitals if item["iso2"] in local]
+                 + [item for item in ready if item["iso2"] not in asked])[:60]
+    continents = [item for item in ordered if len(item["continents"]) == 1][:40]
+    if len(capitals) < 100 or len(countries) < 60 or len(continents) < 40:
+        raise ValueError("not enough country facts for a 200-question pool")
+    return ([("capital", item) for item in capitals]
+            + [("country", item) for item in countries]
+            + [("continent", item) for item in continents])
+
+
+def generate(snapshot: dict[str, list[dict[str, str]]]) -> None:
+    prepared = _prepare(snapshot)
+    for language in LANGUAGES:
+        base = prepared[language]
         if len(base) < 160:
             raise ValueError(f"not enough country facts for {language}: {len(base)}")
+        continent_names = CONTINENT_NAMES[language]
+        template = TEMPLATES[language]
         for band in BANDS:
             rng = random.Random(f"alika-trivia-v1:{language}:{band}")
             ordered = _age_ordered(base, FOCUS[language], band, rng)
-            continent_ordered = [item for item in ordered if len(item["continents"]) == 1]
             # Older bands receive closer distractors from the same continent.
             hard = band in {"teen", "senior"}
             rows: list[dict[str, Any]] = []
-            specs = ([('capital', item) for item in ordered[:100]]
-                     + [('country', item) for item in ordered[:60]]
-                     + [('continent', item) for item in continent_ordered[:40]])
             culture_set = set(FOCUS[language])
-            for number, (kind, item) in enumerate(specs, 1):
-                item = dict(item)
-                item["continent"] = item["continents"][0]
-                same_continent = [other for other in base
-                                  if item["continent"] in other["continents"]]
+            for number, (kind, item) in enumerate(_specs(ordered, FOCUS[language]), 1):
+                key = item["continents"][0] if item["continents"] else None
+                continent = continent_names[key] if key else ""
+                same_continent = [other for other in base if key in other["continents"]]
                 candidates = same_continent if hard and len(same_continent) >= 4 else base
                 if kind == "capital":
                     answer = item["capital"]
-                    values = [other["capital"] for other in candidates]
+                    values = [other["capital"] for other in candidates
+                              if other["iso2"] not in CONTESTED_CAPITALS]
                 elif kind == "country":
                     answer = item["country"]
                     values = [other["country"] for other in candidates]
                 else:
-                    answer = item["continent"]
-                    values = [continent for other in base for continent in other["continents"]]
+                    answer = continent
+                    values = list(continent_names.values())
                 choices, correct = _options(answer, values, rng, (number - 1) % 4)
-                template = TEXT[language]
+                context = {
+                    **country_forms(language, item["iso2"], item["country"]),
+                    "capital": item["capital"],
+                    "continent": continent,
+                    "continent_prep": RU_CONTINENT_PREPOSITIONAL.get(continent, continent),
+                }
                 row = {
                     "question_id": f"gk-{language}-{band}-{number:03d}",
-                    "question": template[kind].format(**item),
+                    "question": template[kind].format(**context),
                     "choices": choices,
                     "correct": correct,
                     "subject": SUBJECTS[language],
                     "topic": TOPICS[language],
-                    "explanation": template[f"{kind}_explanation"].format(**item),
+                    "explanation": template[f"{kind}_explanation"].format(**context),
                     "source": {
                         "title": f"Wikidata {item['country_qid']}",
                         "url": f"https://www.wikidata.org/wiki/{item['country_qid']}",
