@@ -74,6 +74,10 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#16D9FF", "accent_2": "#A95CFF", "highlight": "#FFD23F",
         "correct": "#58E65D", "wrong": "#FF5B70", "card": "#172758",
     },
+    "colorful-market": {
+        "accent": "#22D4CE", "accent_2": "#FF7186", "highlight": "#FFD34E",
+        "correct": "#60DF6A", "wrong": "#FF5B70", "card": "#283065",
+    },
 }
 
 

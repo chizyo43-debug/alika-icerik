@@ -253,3 +253,17 @@ python tools/build_robot_coding_games.py
 python tools/build_robot_coding_games.py --check
 python -m pytest tests/test_robot_coding_games.py -q
 ```
+
+## Renkli Pazar v1
+
+`colorful-market` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket
+sunar. Her pakette 200 tek çözümlü bütçe görevi, toplamda 7.200 görev vardır.
+Oyuncu yıldız paralarıyla gerekli ürün kategorilerini tamamlar ve bütçeyi tam
+tutturur. Yaş büyüdükçe ürün, sepet, kategori şartı ve kupon indirimi artar.
+
+```powershell
+python tools/generate_colorful_market_games.py
+python tools/build_colorful_market_games.py
+python tools/build_colorful_market_games.py --check
+python -m pytest tests/test_colorful_market_games.py -q
+```
