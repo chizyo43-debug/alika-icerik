@@ -34,6 +34,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   yok, yalnız olgular arasındaki yanlış ifade bulunur.
 - Sessiz Sinema: klasik takım, beş kartlık hızlı tur, ortak aile ve oyuncu zinciri;
   zorluk puanı, güvenli pas, donuk poz, ters oyuncu ve sessiz aktarım sürprizleri.
+- Çiz ve Bil: klasik takım, hızlı beş kart, herkes çizer ve ortak aile; tek çizgi,
+  tek renk, yardımcı çizgi, hızlı tur ve aynı resmi çizme sürprizleri.
 
 ## Yeni oyun kabul kapısı
 

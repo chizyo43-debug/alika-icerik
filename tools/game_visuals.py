@@ -38,6 +38,10 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#00D5FF", "accent_2": "#FF4DB8", "highlight": "#FFD34A",
         "correct": "#38E69A", "wrong": "#FF5A72", "card": "#202158",
     },
+    "draw-guess": {
+        "accent": "#18CFFF", "accent_2": "#FF4AAB", "highlight": "#FFC83D",
+        "correct": "#31E59A", "wrong": "#FF536F", "card": "#1A2458",
+    },
 }
 
 
