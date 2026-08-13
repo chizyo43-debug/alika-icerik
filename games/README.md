@@ -178,3 +178,18 @@ python tools/build_route_masters_games.py
 python tools/build_route_masters_games.py --check
 python -m pytest tests/test_route_masters_games.py -q
 ```
+
+## Ritim Sahnesi v1
+
+`rhythm-stage` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket
+sunar. Her pakette 200 özgün ritim, toplamda 7.200 ritim bölümü bulunur. Küçük
+yaşta yavaş ve sekiz adımlı tek ses; büyük yaşlarda 24 adım, iki ses, aksan ve
+salınım kullanılır. Her dilde beş kültürel sahne–çalgı takımı vardır. Paketler
+telifli şarkı veya ses kaydı içermez; ritimler uygulamanın yerel sesleriyle çalınır.
+
+```powershell
+python tools/generate_rhythm_stage.py
+python tools/build_rhythm_stage_games.py
+python tools/build_rhythm_stage_games.py --check
+python -m pytest tests/test_rhythm_stage_games.py -q
+```

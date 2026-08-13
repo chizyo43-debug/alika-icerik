@@ -134,6 +134,21 @@ def gameplay_config(game: str, band: str) -> bytes:
             "safety": {"skip_without_explanation": True, "no_timed_pressure_for_young": True,
                        "no_player_elimination": True, "replay_solution_visible": True},
         },
+        "rhythm-stage": {
+            "modes": ["echo_repeat", "family_relay", "duo_sync", "missing_beat"],
+            "round": {"practice_replays": 3 if young else 2,
+                      "count_in_beats": 4, "mistakes_before_reset": 3 if young else 2,
+                      "speed_increase_percent": 0 if young else 5},
+            "timing": {"calibration_available": True, "audio_latency_compensation": True,
+                       "visual_timing_line": True, "haptic_pulse": True},
+            "bonuses": {"perfect_streak_starts_at": 4, "perfect_bonus": 2,
+                        "team_sync_bonus": 2, "cooperative_target": 8 if young else 12},
+            "events": ["golden_beat", "time_freeze", "echo_round",
+                       "missing_beat", "tempo_lift"],
+            "safety": {"skip_without_explanation": True, "microphone_required": False,
+                       "copyrighted_music_required": False, "photosensitive_safe_pulses": True,
+                       "mute_visual_mode": True, "no_player_elimination": True},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)
