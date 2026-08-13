@@ -149,6 +149,22 @@ def gameplay_config(game: str, band: str) -> bytes:
                        "copyrighted_music_required": False, "photosensitive_safe_pulses": True,
                        "mute_visual_mode": True, "no_player_elimination": True},
         },
+        "balance-workshop": {
+            "modes": ["free_build", "family_coop", "turn_by_turn", "blueprint_challenge"],
+            "round": {"piece_count": {"young": 5, "mid": 7, "teen": 9, "senior": 11}[band],
+                      "undo_tokens": 6 if young else 3, "blueprint_preview": young,
+                      "placement_seconds": 0 if young else 30},
+            "physics": {"center_of_mass_line": True, "stability_meter": True,
+                        "slow_motion_before_fall": True, "snap_assist": young,
+                        "reduced_motion_supported": True},
+            "bonuses": {"perfect_balance": 2, "use_all_pieces": 2,
+                        "survive_special_event": 2, "cooperative_target": 6 if young else 10},
+            "events": ["golden_anchor", "wind_gust", "moving_platform",
+                       "magnetic_lock", "earthquake_wave"],
+            "safety": {"skip_without_explanation": True, "no_timed_pressure_for_young": True,
+                       "no_player_elimination": True, "replay_blueprint_visible": True,
+                       "photosensitive_safe_motion": True},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)

@@ -37,6 +37,7 @@ jobs:
           python tools/build_word_hunt_games.py --check
           python tools/build_route_masters_games.py --check
           python tools/build_rhythm_stage_games.py --check
+          python tools/build_balance_workshop_games.py --check
 
       - name: doğrulayıcı (her paket)
         run: |
