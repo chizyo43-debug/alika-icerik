@@ -2,6 +2,10 @@
 
 AliKa uygulaması için indirilebilir **ders notu + soru bankası** paketleri.
 
+Ayrıca AliKa'nın veri-only ortak ekran motoru için indirilebilir oyun
+paketleri `games/` altında yayımlanır. Oyun paketleri uygulama kodu veya
+eklenti taşımaz.
+
 ## Kullanım
 
 AliKa uygulaması bu repodaki paketleri otomatik çeker. Elle indirmek için:
@@ -38,6 +42,7 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 │       └── soru-bankasi/
 │           └── 6-sinif-tum-dersler-2000-soru.jsonl ← ortak seçki
 ├── legal/                       ← yasal belgeler (Store gereksinimi)
+├── games/trivia/                ← yaş ve dile göre Bilgi Yarışması paketleri
 └── README.md
 ```
 
@@ -118,6 +123,15 @@ Güncel yayın kanıtı:
 `tools/regen_*` ve `tools/migrate_*` dosyaları geçmiş onarımların
 tekrarlanabilir kayıtlarıdır; yeni üretim girişi değildir. Yeni paketler
 Question Contract 2.2 ile, `hints` alanı olmadan üretilir.
+
+## Oyun paketleri
+
+Bilgi Yarışması v1 kataloğu 9 dil × 4 yaş bandında 36 ayrı
+`.alika-game` paketi sunar. Her pakette 200 soru vardır. Kaynaklar, paket
+karmaları ve inceleme durumu için [`games/README.md`](games/README.md) ve
+[`reports/TRIVIA_V1_READINESS.md`](reports/TRIVIA_V1_READINESS.md) belgelerine
+bakın. Bu ilk katalog insan kültürel incelemesi tamamlanana kadar
+**AI-only taslak** durumundadır.
 
 ## Lisans
 
