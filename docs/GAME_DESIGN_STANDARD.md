@@ -40,6 +40,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   kahraman, mekân, eşya, görev ve beklenmedik olayla ortak bir hikâye kurulur.
 - Kelime Avı: ipucundan karışık harfleri çözme, hızlı onlu tur, aile takımı ve harf
   düellosu; altın harf, süre dondurma, yanıltıcı harf kaldırma ve seri bonusları.
+- Rota Ustaları: tek oyuncu, ortak aile, hazine yarışı ve önceden rota programlama;
+  dönen yol taşları, anahtar, kapı, enerji küresi ve hareketli duvar sürprizleri.
 
 ## Yeni oyun kabul kapısı
 

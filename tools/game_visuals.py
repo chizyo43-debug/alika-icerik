@@ -50,6 +50,10 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#15D8FF", "accent_2": "#FF4DC8", "highlight": "#FFD052",
         "correct": "#37E69B", "wrong": "#FF5874", "card": "#18295C",
     },
+    "route-masters": {
+        "accent": "#12D9F4", "accent_2": "#A84DFF", "highlight": "#FFD24A",
+        "correct": "#38E79B", "wrong": "#FF5B73", "card": "#15345B",
+    },
 }
 
 

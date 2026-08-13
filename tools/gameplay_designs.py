@@ -121,6 +121,19 @@ def gameplay_config(game: str, band: str) -> bytes:
             "safety": {"skip_without_explanation": True, "no_public_spelling_shame": True,
                        "personal_words_required": False},
         },
+        "route-masters": {
+            "modes": ["solo_path", "family_coop", "treasure_race", "program_route"],
+            "round": {"board_size": {"young": 5, "mid": 6, "teen": 7, "senior": 8}[band],
+                      "rotatable_tiles": {"young": 1, "mid": 2, "teen": 3, "senior": 4}[band],
+                      "undo_tokens": 5 if young else 3, "path_preview": young},
+            "actions": ["rotate_left", "rotate_right", "move", "use_key", "activate_special"],
+            "bonuses": {"under_move_limit": 2, "collect_star": 1,
+                        "no_undo": 1, "cooperative_target": 6 if young else 10},
+            "events": ["shifting_wall", "portal_pair", "bridge_repair",
+                       "energy_orb", "treasure_swap"],
+            "safety": {"skip_without_explanation": True, "no_timed_pressure_for_young": True,
+                       "no_player_elimination": True, "replay_solution_visible": True},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)

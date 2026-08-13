@@ -163,3 +163,18 @@ python tools/build_word_hunt_games.py
 python tools/build_word_hunt_games.py --check
 python -m pytest tests/test_word_hunt_games.py -q
 ```
+
+## Rota Ustaları v1
+
+`route-masters` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket
+sunar. Her pakette 200 çözülebilir labirent bölümü, toplamda 7.200 bölüm bulunur.
+Küçük yaşta 5×5 tahta ve tek dönen yol taşı; büyük yaşlarda 8×8 tahta, dört dönen
+taş, anahtar, kapı, enerji ve tuzaklar vardır. Her bölümün en kısa yolu ve hamle
+sınırı otomatik doğrulanır. Beş kültürel tema her dilde 40'ar bölümde kullanılır.
+
+```powershell
+python tools/generate_route_masters.py
+python tools/build_route_masters_games.py
+python tools/build_route_masters_games.py --check
+python -m pytest tests/test_route_masters_games.py -q
+```
