@@ -46,6 +46,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   eksik vuruş; altın vuruş, süre dondurma, yankı ve hızlanan tempo sürprizleri.
 - Denge Atölyesi: serbest yapım, aile ortak yapımı, sırayla parça yerleştirme ve
   plan görevi; rüzgâr, hareketli platform, mıknatıs, altın sabitleyici ve deprem turları.
+- Bahçe Ustaları: bahçe kurma, aile ortak bahçesi, hasat yarışı ve hava görevi;
+  yağmur, altın arı, kompost, gölge bulutu ve rüzgâr sürprizleri.
 
 ## Yeni oyun kabul kapısı
 

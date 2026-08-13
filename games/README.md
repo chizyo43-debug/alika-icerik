@@ -208,3 +208,18 @@ python tools/build_balance_workshop_games.py
 python tools/build_balance_workshop_games.py --check
 python -m pytest tests/test_balance_workshop_games.py -q
 ```
+
+## Bahçe Ustaları v1
+
+`garden-masters` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket
+sunar. Her pakette 200 çözülebilir bahçe planı, toplamda 7.200 bölüm bulunur.
+Oyuncu bitkileri güneş ve nem ihtiyacına uygun alanlara yerleştirir, suyu planlar
+ve tozlaştırıcı komşuluklarından bonus kazanır. Küçük yaşta 3×3 bahçe ve dört
+bitki; büyük yaşlarda 6×6 bahçe, on bitki ve daha sıkı kaynak sınırı kullanılır.
+
+```powershell
+python tools/generate_garden_masters.py
+python tools/build_garden_masters_games.py
+python tools/build_garden_masters_games.py --check
+python -m pytest tests/test_garden_masters_games.py -q
+```

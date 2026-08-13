@@ -62,6 +62,10 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#19D9FF", "accent_2": "#FF5A75", "highlight": "#FFD34F",
         "correct": "#39E89C", "wrong": "#FF526E", "card": "#1D2858",
     },
+    "garden-masters": {
+        "accent": "#19D9FF", "accent_2": "#68E35D", "highlight": "#FFD44F",
+        "correct": "#35E99A", "wrong": "#FF5A72", "card": "#173A55",
+    },
 }
 
 

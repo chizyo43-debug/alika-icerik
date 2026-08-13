@@ -165,6 +165,21 @@ def gameplay_config(game: str, band: str) -> bytes:
                        "no_player_elimination": True, "replay_blueprint_visible": True,
                        "photosensitive_safe_motion": True},
         },
+        "garden-masters": {
+            "modes": ["garden_builder", "family_coop", "harvest_race", "weather_challenge"],
+            "round": {"board_size": {"young": 3, "mid": 4, "teen": 5, "senior": 6}[band],
+                      "plant_count": {"young": 4, "mid": 6, "teen": 8, "senior": 10}[band],
+                      "undo_tokens": 6 if young else 3, "solution_preview": young},
+            "resources": {"water_visible": True, "sun_and_moisture_icons": True,
+                          "compost_tokens": 2 if young else 1, "resource_refund_on_undo": True},
+            "bonuses": {"pollinator_pair": 1, "perfect_harvest": 2,
+                        "water_saved": 1, "cooperative_target": 6 if young else 10},
+            "events": ["gentle_rain", "golden_bee", "compost_boost",
+                       "shade_cloud", "wind_breeze"],
+            "safety": {"skip_without_explanation": True, "no_pesticides": True,
+                       "no_player_elimination": True, "no_timed_pressure_for_young": True,
+                       "color_and_icon_feedback": True, "reduced_motion_supported": True},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)
