@@ -6,10 +6,18 @@ import hashlib
 import io
 import json
 import re
+import sys
 import uuid
 import zipfile
 from pathlib import Path
 from typing import Any
+
+
+TOOLS = Path(__file__).resolve().parent
+if str(TOOLS) not in sys.path:
+    sys.path.insert(0, str(TOOLS))
+from game_visuals import asset_records, visual_payloads
+from word_wheel_design import wheel_config
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -95,6 +103,8 @@ def _load_pool(language: str, band: str) -> list[dict[str, Any]]:
 def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[bytes, dict[str, Any]]:
     age_min, age_max = BANDS[band]
     words = _json_bytes([{field: row[field] for field in RUNTIME_FIELDS} for row in rows])
+    extras = visual_payloads("word-wheel", band)
+    extras["data/wheel.json"] = wheel_config(language, band)
     manifest = {
         "schema_version": 1,
         "game_id": str(uuid.uuid5(uuid.NAMESPACE_URL,
@@ -105,13 +115,16 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
         "min_players": 1, "max_players": 8, "age_min": age_min, "age_max": age_max,
         "subject": SUBJECTS[language], "topic": f"{age_min}–{age_max}", "language": language,
         "license": "CC-BY-NC-4.0", "author": "AliKa Atölye",
-        "assets": [{"path": "data/words.json", "sha256": hashlib.sha256(words).hexdigest(),
-                    "asset_type": "words", "size_bytes": len(words)}],
-        "total_size_bytes": len(words), "created_at": CREATED_AT,
+        "assets": ([{"path": "data/words.json", "sha256": hashlib.sha256(words).hexdigest(),
+                     "asset_type": "words", "size_bytes": len(words)}]
+                   + asset_records(extras)),
+        "total_size_bytes": len(words) + sum(map(len, extras.values())), "created_at": CREATED_AT,
     }
     output = io.BytesIO()
     with zipfile.ZipFile(output, "w", zipfile.ZIP_STORED) as archive:
-        for name, payload in (("manifest.json", _json_bytes(manifest)), ("data/words.json", words)):
+        entries = (("manifest.json", _json_bytes(manifest)), ("data/words.json", words),
+                   *extras.items())
+        for name, payload in entries:
             info = zipfile.ZipInfo(name, ZIP_TIME)
             info.create_system = 3
             info.compress_type = zipfile.ZIP_STORED

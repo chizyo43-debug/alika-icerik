@@ -6,11 +6,19 @@ import hashlib
 import io
 import json
 import re
+import sys
 import uuid
 import zipfile
 from collections import Counter
 from pathlib import Path
 from typing import Any
+
+
+TOOLS = Path(__file__).resolve().parent
+if str(TOOLS) not in sys.path:
+    sys.path.insert(0, str(TOOLS))
+from game_visuals import asset_records, visual_payloads
+from gameplay_designs import gameplay_config
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -112,6 +120,8 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
     age_min, age_max = BANDS[band]
     runtime_rows = [{key: row[key] for key in QUESTION_FIELDS} for row in rows]
     questions = _json_bytes(runtime_rows)
+    visuals = visual_payloads("trivia", band)
+    extras = {**visuals, "data/gameplay.json": gameplay_config("trivia", band)}
     game_id = str(uuid.uuid5(uuid.NAMESPACE_URL, f"https://alika.tr/games/trivia/v1/{language}/{band}"))
     manifest = {
         "schema_version": 1,
@@ -135,8 +145,8 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
             "sha256": hashlib.sha256(questions).hexdigest(),
             "asset_type": "questions",
             "size_bytes": len(questions),
-        }],
-        "total_size_bytes": len(questions),
+        }] + asset_records(extras),
+        "total_size_bytes": len(questions) + sum(map(len, extras.values())),
         "created_at": CREATED_AT,
     }
     output = io.BytesIO()
@@ -145,6 +155,7 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
         for name, payload in (
             ("manifest.json", _json_bytes(manifest)),
             ("data/questions.json", questions),
+            *extras.items(),
         ):
             info = zipfile.ZipInfo(name, ZIP_TIME)
             info.create_system = 3

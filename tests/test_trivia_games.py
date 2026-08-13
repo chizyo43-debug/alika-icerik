@@ -36,17 +36,26 @@ def test_archives_are_data_only_and_match_catalog():
     for item in catalog["games"]:
         path = ROOT / item["path"]
         with zipfile.ZipFile(path) as archive:
-            assert set(archive.namelist()) == {"manifest.json", "data/questions.json"}
+            assert set(archive.namelist()) == {
+                "manifest.json", "data/questions.json", "visual/game_art.webp",
+                "visual/theme.json", "data/gameplay.json",
+            }
             assert all(info.compress_type == zipfile.ZIP_STORED for info in archive.infolist())
             assert all(info.create_system == 3 for info in archive.infolist())
             manifest = json.loads(archive.read("manifest.json"))
             questions = json.loads(archive.read("data/questions.json"))
+            theme = json.loads(archive.read("visual/theme.json"))
+            gameplay = json.loads(archive.read("data/gameplay.json"))
         assert manifest["game_type"] == "quiz_race"
         assert manifest["language"] == item["language"]
         assert manifest["age_min"] == item["age_min"]
         assert manifest["age_max"] == item["age_max"]
         assert len(questions) == 200
         assert all(set(question) == set(builder.QUESTION_FIELDS) for question in questions)
+        assert theme["feedback"]["correct_burst"] is True
+        assert theme["motion"]["reduce_motion_supported"] is True
+        assert gameplay["modes"] == ["classic", "quick_5", "family_team"]
+        assert len(gameplay["events"]) >= 4
 
 
 def test_archives_round_trip_through_real_alika_reader_when_available(monkeypatch):

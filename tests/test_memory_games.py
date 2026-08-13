@@ -30,7 +30,10 @@ def test_archives_are_data_only_and_match_catalog():
     catalog = json.loads((ROOT / "games" / "memory" / "catalog.json").read_text(encoding="utf-8"))
     for item in catalog["games"]:
         with zipfile.ZipFile(ROOT / item["path"]) as archive:
-            assert set(archive.namelist()) == {"manifest.json", "data/cards.json"}
+            assert set(archive.namelist()) == {
+                "manifest.json", "data/cards.json", "visual/game_art.webp",
+                "visual/theme.json", "data/gameplay.json",
+            }
             assert all(info.compress_type == zipfile.ZIP_STORED for info in archive.infolist())
             assert all(info.create_system == 3 for info in archive.infolist())
             manifest = json.loads(archive.read("manifest.json"))

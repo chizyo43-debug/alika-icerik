@@ -32,7 +32,10 @@ def test_packages_are_data_only_and_hide_answers_from_clues():
     catalog = json.loads((ROOT / "games" / "who-is-it" / "catalog.json").read_text(encoding="utf-8"))
     for item in catalog["games"]:
         with zipfile.ZipFile(ROOT / item["path"]) as archive:
-            assert set(archive.namelist()) == {"manifest.json", "data/identities.json"}
+            assert set(archive.namelist()) == {
+                "manifest.json", "data/identities.json", "visual/game_art.webp",
+                "visual/theme.json", "data/gameplay.json",
+            }
             manifest = json.loads(archive.read("manifest.json"))
             identities = json.loads(archive.read("data/identities.json"))
         assert manifest["game_type"] == "who_is_it"
