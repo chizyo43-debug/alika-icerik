@@ -66,6 +66,18 @@ def gameplay_config(game: str, band: str) -> bytes:
                        "swap_one_statement"],
             "safety": {"facts_not_personal_accusations": True, "no_player_is_called_liar": True},
         },
+        "charades": {
+            "modes": ["classic_team", "quick_5", "family_coop", "spotlight_chain"],
+            "round": {"seconds": 90 if young else 60, "cards_per_turn": 5,
+                      "pass_tokens": 3 if young else 2, "sound_allowed": False,
+                      "speaking_allowed": False, "mouth_spelling_allowed": False},
+            "bonuses": {"difficulty_points": [1, 2, 3, 4], "streak_starts_at": 3,
+                        "streak_bonus": 1, "cooperative_target": 12 if young else 16},
+            "events": ["double_card", "freeze_pose", "reverse_actor", "silent_relay",
+                       "custom_family_card"],
+            "safety": {"skip_without_explanation": True, "no_mocking_prompts": True,
+                       "physical_contact_required": False},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)

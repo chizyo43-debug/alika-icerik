@@ -32,6 +32,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   çift puan kartı ve takım kurtarma.
 - Yalanı Bul: gizli oy, açıklamalı doğru cevap ve takım dedektifi; kişisel suçlama
   yok, yalnız olgular arasındaki yanlış ifade bulunur.
+- Sessiz Sinema: klasik takım, beş kartlık hızlı tur, ortak aile ve oyuncu zinciri;
+  zorluk puanı, güvenli pas, donuk poz, ters oyuncu ve sessiz aktarım sürprizleri.
 
 ## Yeni oyun kabul kapısı
 

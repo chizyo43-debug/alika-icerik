@@ -103,3 +103,18 @@ python tools/build_liar_games.py
 python tools/build_liar_games.py --check
 python -m pytest tests/test_liar_games.py -q
 ```
+
+## Sessiz Sinema v1
+
+`charades` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket sunar.
+Her pakette 200 hareket kartı vardır; toplam 7.200 kart bulunur. Kartların 40'ı
+doğrudan ilgili dilin kültüründen gelen karakter veya meslekleri kullanır. Oyun;
+klasik takım, beş kartlık hızlı tur, ortak aile ve oyuncu zinciri seçeneklerini,
+ayrıca yaşa göre güvenli pas ve süre ayarlarını taşır.
+
+```powershell
+python tools/generate_charades.py
+python tools/build_charades_games.py
+python tools/build_charades_games.py --check
+python -m pytest tests/test_charades_games.py -q
+```
