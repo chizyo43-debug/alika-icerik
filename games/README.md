@@ -60,3 +60,18 @@ python tools/build_word_wheel_games.py
 python tools/build_word_wheel_games.py --check
 python -m pytest tests/test_word_wheel_games.py -q
 ```
+
+## Bu Kim? v1
+
+`who-is-it` kataloğu dokuz dil ve dört yaş bandında 36 paket sunar. Her pakette
+sistemin tur başında otomatik seçtiği 200 kaynaklı kişi vardır; toplam 7.200
+oyun girdisi bulunur. Kişinin adı çözülene kadar ortak ekrana çıkmaz. İpuçları
+sırayla açılır ve erken doğru tahmin daha yüksek puan getirir.
+
+```powershell
+python tools/fetch_who_is_it_wikidata.py
+python tools/generate_who_is_it.py
+python tools/build_who_is_it_games.py
+python tools/build_who_is_it_games.py --check
+python -m pytest tests/test_who_is_it_games.py -q
+```

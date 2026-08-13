@@ -45,6 +45,7 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 ├── games/trivia/                ← yaş ve dile göre Bilgi Yarışması paketleri
 ├── games/memory/                ← yaş ve dile göre Ülke–Başkent Hafızası
 ├── games/word-wheel/            ← yaş ve dile göre Çarkıfelek kelimeleri
+├── games/who-is-it/             ← yaş ve dile göre Bu Kim? kişi havuzları
 └── README.md
 ```
 
