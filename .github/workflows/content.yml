@@ -24,7 +24,10 @@ jobs:
           python -m pytest tests/ -q
 
       - name: oyun paketleri güncel
-        run: python tools/build_trivia_games.py --check
+        run: |
+          python tools/build_trivia_games.py --check
+          python tools/build_memory_games.py --check
+          python tools/build_word_wheel_games.py --check
 
       - name: doğrulayıcı (her paket)
         run: |
