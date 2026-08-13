@@ -47,6 +47,7 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 ├── games/word-wheel/            ← yaş ve dile göre Çarkıfelek kelimeleri
 ├── games/who-is-it/             ← yaş ve dile göre Bu Kim? kişi havuzları
 ├── games/taboo/                 ← yaş ve dile göre Tabu kartları
+├── games/liar/                  ← yaş ve dile göre Yalancı kartları
 └── README.md
 ```
 
