@@ -133,3 +133,18 @@ python tools/build_draw_guess_games.py
 python tools/build_draw_guess_games.py --check
 python -m pytest tests/test_draw_guess_games.py -q
 ```
+
+## Hikâye Macerası v1
+
+`story-adventure` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket
+sunar. Her pakette sistemin otomatik birleştirdiği 200 macera kartı, toplamda 7.200
+kart bulunur. Her kart bir kahraman, mekân, eşya, görev ve sürpriz taşır; havuzdaki
+40 kart ilgili dilin kültürel karakterlerini kullanır. Tek anlatıcı, aile zinciri,
+60 saniyelik hızlı oyun ve sürprizi sonradan açılan oyun seçenekleri bulunur.
+
+```powershell
+python tools/generate_story_adventure.py
+python tools/build_story_adventure_games.py
+python tools/build_story_adventure_games.py --check
+python -m pytest tests/test_story_adventure_games.py -q
+```
