@@ -89,3 +89,17 @@ python tools/build_taboo_games.py
 python tools/build_taboo_games.py --check
 python -m pytest tests/test_taboo_games.py -q
 ```
+
+## Yalancı v1
+
+`liar` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket sunar.
+Her pakette 200 kart vardır. Bir kartta üç cümleden ikisi doğru, biri yanlıştır;
+oyuncular yalanı seçer ve cevap açılınca doğru bilgi gösterilir. Toplam 7.200
+kartın kaynak bağlantıları yalnız denetim kayıtlarında tutulur.
+
+```powershell
+python tools/generate_liar_geography.py
+python tools/build_liar_games.py
+python tools/build_liar_games.py --check
+python -m pytest tests/test_liar_games.py -q
+```
