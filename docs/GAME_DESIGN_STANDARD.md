@@ -38,6 +38,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   tek renk, yardımcı çizgi, hızlı tur ve aynı resmi çizme sürprizleri.
 - Hikâye Macerası: tek anlatıcı, aile zinciri, 60 saniyelik tur ve gizli sürpriz;
   kahraman, mekân, eşya, görev ve beklenmedik olayla ortak bir hikâye kurulur.
+- Kelime Avı: ipucundan karışık harfleri çözme, hızlı onlu tur, aile takımı ve harf
+  düellosu; altın harf, süre dondurma, yanıltıcı harf kaldırma ve seri bonusları.
 
 ## Yeni oyun kabul kapısı
 

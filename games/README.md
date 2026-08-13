@@ -148,3 +148,18 @@ python tools/build_story_adventure_games.py
 python tools/build_story_adventure_games.py --check
 python -m pytest tests/test_story_adventure_games.py -q
 ```
+
+## Kelime Avı v1
+
+`word-hunt` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket sunar.
+Her pakette 200 karışık harf bulmacası, toplamda 7.200 bulmaca bulunur. Sistem
+istenen sayıda bulmacayı havuzdan otomatik seçer. Küçük yaşta ilk harf ipucu ve
+daha uzun süre; büyük yaşlarda artan yanıltıcı harfler bulunur. Her dilin kendine
+özgü harfleri ve kültürel kelimeleri değiştirilmeden korunur.
+
+```powershell
+python tools/generate_word_hunt.py
+python tools/build_word_hunt_games.py
+python tools/build_word_hunt_games.py --check
+python -m pytest tests/test_word_hunt_games.py -q
+```
