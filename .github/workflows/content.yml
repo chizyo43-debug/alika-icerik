@@ -27,13 +27,13 @@ jobs:
         run: |
           for f in turkiye/*/*/*.jsonl; do
             echo "== $f"
-            python tools/pack_validate.py "$f"
+            python tools/pack_validate.py --strict "$f"
           done
 
       - name: kalite skoru
         run: |
           python tools/pack_validate.py --skor turkiye \
-            --json reports/quality_score.json || true
+            --json reports/quality_score.json
           cat reports/quality_score.json
 
       # Bağlı alanların birlikte düzenlenmesi. Bir sorunun şıkları değişip
