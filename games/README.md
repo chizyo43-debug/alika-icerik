@@ -22,6 +22,25 @@ Kaynak kayıtlardaki `source` ve `culture_tags` denetim bilgisidir; çocuk
 cihazına giden pakete yalnız AliKa'nın beyaz listedeki soru alanları yazılır.
 Katalog insan kültürel incelemesi tamamlanana kadar `ai-draft` durumundadır.
 
+## Ülke–Başkent Hafızası v1
+
+`memory` kataloğu da aynı dokuz dil ve dört yaş bandında 36 ayrı paket sunar.
+Her pakette, oyun başında seçilen 2–12 çiftlik turu besleyen 100 ülke–başkent
+çifti vardır. Kaynak JSONL dosyaları `games/memory/pairs`, deterministik ve
+yalnız veri taşıyan arşivler `games/memory/dist` altındadır.
+
+Kaynak kayıtlar izlenebilirlik için HTTPS Wikidata bağlantısı ve kültür etiketi
+taşır; çalışma zamanı paketine yalnız `pair_id`, `left`, `right`, `category` ve
+`explanation` alanları girer. Katalog insan onayı gerektirmeyen AI-only yayın
+akışında `ai-draft` ve `human_approved: false` olarak açıkça işaretlenir.
+
+```powershell
+python tools/generate_memory_geography.py
+python tools/build_memory_games.py
+python tools/build_memory_games.py --check
+python -m pytest tests/test_memory_games.py -q
+```
+
 ```powershell
 python tools/build_trivia_games.py
 python tools/build_trivia_games.py --check

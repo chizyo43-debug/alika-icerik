@@ -43,6 +43,7 @@ https://raw.githubusercontent.com/chizyo43-debug/alika-icerik/main/turkiye/5-sin
 │           └── 6-sinif-tum-dersler-2000-soru.jsonl ← ortak seçki
 ├── legal/                       ← yasal belgeler (Store gereksinimi)
 ├── games/trivia/                ← yaş ve dile göre Bilgi Yarışması paketleri
+├── games/memory/                ← yaş ve dile göre Ülke–Başkent Hafızası
 └── README.md
 ```
 
@@ -126,8 +127,9 @@ Question Contract 2.2 ile, `hints` alanı olmadan üretilir.
 
 ## Oyun paketleri
 
-Bilgi Yarışması v1 kataloğu 9 dil × 4 yaş bandında 36 ayrı
-`.alika-game` paketi sunar. Her pakette 200 soru vardır. Kaynaklar, paket
+Bilgi Yarışması ve Ülke–Başkent Hafızası v1 katalogları ayrı ayrı 9 dil × 4
+yaş bandında 36 `.alika-game` paketi sunar. Bilgi Yarışması paketlerinde 200
+soru, Hafıza paketlerinde 100 eşleştirme çifti vardır. Kaynaklar, paket
 karmaları ve inceleme durumu için [`games/README.md`](games/README.md) ve
 [`reports/TRIVIA_V1_READINESS.md`](reports/TRIVIA_V1_READINESS.md) belgelerine
 bakın. Bu ilk katalog insan kültürel incelemesi tamamlanana kadar
