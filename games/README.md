@@ -118,3 +118,18 @@ python tools/build_charades_games.py
 python tools/build_charades_games.py --check
 python -m pytest tests/test_charades_games.py -q
 ```
+
+## Çiz ve Bil v1
+
+`draw-guess` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket sunar.
+Her pakette 200 çizim sahnesi, toplamda 7.200 kart bulunur. Her havuzdaki 40 kart
+ilgili dilin kültürel karakter ve uğraşlarını kullanır. Küçük yaş grubunda şekil
+ipucu ve iki kat süre; diğer gruplarda artan zorluk, seri bonusu ve özel çizim
+turları vardır.
+
+```powershell
+python tools/generate_draw_guess.py
+python tools/build_draw_guess_games.py
+python tools/build_draw_guess_games.py --check
+python -m pytest tests/test_draw_guess_games.py -q
+```

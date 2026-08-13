@@ -78,6 +78,20 @@ def gameplay_config(game: str, band: str) -> bytes:
             "safety": {"skip_without_explanation": True, "no_mocking_prompts": True,
                        "physical_contact_required": False},
         },
+        "draw-guess": {
+            "modes": ["classic_team", "quick_5", "all_draw", "family_coop"],
+            "round": {"seconds": 120 if young else 60, "cards_per_turn": 5,
+                      "pass_tokens": 3 if young else 2, "letters_allowed": False,
+                      "numbers_allowed": False, "speaking_allowed": False},
+            "canvas": {"colors": 8, "brush_sizes": 3, "undo_count": 5 if young else 3,
+                       "clear_canvas": True, "shape_hint": young},
+            "bonuses": {"difficulty_points": [1, 2, 3, 4], "streak_starts_at": 3,
+                        "streak_bonus": 1, "cooperative_target": 12 if young else 16},
+            "events": ["one_line", "one_color", "helper_stroke", "speed_round",
+                       "all_draw_same_clue"],
+            "safety": {"skip_without_explanation": True, "no_mocking_drawings": True,
+                       "eyes_closed_required": False, "unsafe_grip_required": False},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)

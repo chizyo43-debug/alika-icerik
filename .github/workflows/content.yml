@@ -32,6 +32,7 @@ jobs:
           python tools/build_taboo_games.py --check
           python tools/build_liar_games.py --check
           python tools/build_charades_games.py --check
+          python tools/build_draw_guess_games.py --check
 
       - name: doğrulayıcı (her paket)
         run: |
