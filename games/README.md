@@ -267,3 +267,17 @@ python tools/build_colorful_market_games.py
 python tools/build_colorful_market_games.py --check
 python -m pytest tests/test_colorful_market_games.py -q
 ```
+
+## Aile Kaçış Gecesi v1
+
+`family-escape-night` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir
+paket sunar. Her pakette 200 tek çözümlü ortak kaçış macerası, toplamda 7.200
+macera vardır. Aile üyeleri ipucu kâşifi, desen çözücü, anahtar koruyucu ve kasa
+uzmanı rollerini paylaşarak sembol kodunu birlikte bulur. Süre isteğe bağlıdır.
+
+```powershell
+python tools/generate_family_escape_games.py
+python tools/build_family_escape_games.py
+python tools/build_family_escape_games.py --check
+python -m pytest tests/test_family_escape_games.py -q
+```

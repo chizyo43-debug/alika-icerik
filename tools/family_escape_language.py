@@ -1,0 +1,35 @@
+"""Localized rooms and treasures for AliKa Family Escape Night."""
+from __future__ import annotations
+
+
+THEMES = {
+    "tr": [("İstanbul oyuncak müzesi", "lale desenli müzik kutusu"),
+           ("Kapadokya yıldız odası", "gökyüzü kristali"),
+           ("Anadolu masal konağı", "işlemeli anahtar"),
+           ("Ege deniz feneri", "pirinç pusula"),
+           ("İznik renk atölyesi", "çini desenli kasa")],
+    "en": [("old toy museum", "clockwork music box"), ("coastal lighthouse", "brass compass"),
+           ("starlight observatory", "sky crystal"), ("community story house", "golden key"),
+           ("color workshop", "mosaic vault")],
+    "de": [("Spielzeugmuseum", "Spieluhr"), ("Alpensternwarte", "Himmelskristall"),
+           ("Küstenleuchtturm", "Messingkompass"), ("Märchenhaus", "goldener Schlüssel"),
+           ("Farbenwerkstatt", "Mosaiktresor")],
+    "es": [("museo de juguetes", "caja de música"), ("observatorio andino", "cristal celeste"),
+           ("faro costero", "brújula de latón"), ("casa de cuentos", "llave dorada"),
+           ("taller de mosaicos", "caja de colores")],
+    "fr": [("musée du jouet", "boîte à musique"), ("observatoire alpin", "cristal céleste"),
+           ("phare côtier", "boussole en laiton"), ("maison des contes", "clé dorée"),
+           ("atelier des couleurs", "coffre en mosaïque")],
+    "pt": [("museu de brinquedos", "caixa de música"), ("observatório serrano", "cristal celeste"),
+           ("farol costeiro", "bússola de latão"), ("casa de histórias", "chave dourada"),
+           ("ateliê de azulejos", "cofre colorido")],
+    "ru": [("музей игрушек", "музыкальная шкатулка"), ("северная обсерватория", "небесный кристалл"),
+           ("прибрежный маяк", "латунный компас"), ("дом сказок", "золотой ключ"),
+           ("мастерская узоров", "мозаичный сейф")],
+    "ja": [("からくり玩具博物館", "からくり音楽箱"), ("星空観測所", "空の結晶"),
+           ("海辺の灯台", "真鍮の羅針盤"), ("昔話の館", "金色の鍵"),
+           ("色彩工房", "模様の宝箱")],
+    "ko": [("전통 장난감 박물관", "태엽 음악 상자"), ("별빛 관측소", "하늘 결정"),
+           ("바닷가 등대", "황동 나침반"), ("이야기 저택", "황금 열쇠"),
+           ("무늬 공방", "색동 보물함")],
+}
