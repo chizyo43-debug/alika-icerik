@@ -19,7 +19,7 @@ def test_every_current_game_has_rich_age_aware_play_and_visual_design():
     games = ("trivia", "memory", "who-is-it", "taboo", "liar", "charades", "draw-guess",
              "story-adventure", "word-hunt", "route-masters", "rhythm-stage",
              "balance-workshop", "garden-masters", "light-laboratory", "robot-coding-arena",
-             "colorful-market", "family-escape-night")
+             "colorful-market", "family-escape-night", "name-city", "word-garden")
     bands = ("young", "mid", "teen", "senior")
     for game in games:
         for band in bands:

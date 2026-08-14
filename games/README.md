@@ -281,3 +281,32 @@ python tools/build_family_escape_games.py
 python tools/build_family_escape_games.py --check
 python -m pytest tests/test_family_escape_games.py -q
 ```
+
+## İsim Şehir v1
+
+`name-city` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket sunar.
+Her pakette 200 harf–kategori turu, toplamda 7.200 tur vardır. İsim ve şehir her
+turda korunur; yaş büyüdükçe kategori sayısı artar ve süre kısalır. Japonca kana
+satırlarını, Korece ise ilk ses işaretlerini kullanır. Ortak cevaplar elenir,
+tartışmalı cevaplar aile oylamasıyla çözülür.
+
+```powershell
+python tools/generate_name_city_games.py
+python tools/build_name_city_games.py
+python tools/build_name_city_games.py --check
+python -m pytest tests/test_name_city_games.py -q
+```
+
+## Adam Asmaca · Kelime Bahçesi v1
+
+`word-garden` kataloğu dokuz dil ve dört yaş bandında 36 indirilebilir paket sunar.
+Her pakette 200 kelime, toplamda 7.200 bulmaca vardır. Sistem kelimeyi otomatik
+seçer; doğru harflerle bahçe çiçeklenir. Darağacı, ip veya korkutucu kaybetme
+görseli kullanılmaz. Küçük yaşta daha fazla deneme ve ipucu bulunur.
+
+```powershell
+python tools/generate_word_garden_games.py
+python tools/build_word_garden_games.py
+python tools/build_word_garden_games.py --check
+python -m pytest tests/test_word_garden_games.py -q
+```

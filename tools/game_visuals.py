@@ -82,6 +82,14 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#20D8EA", "accent_2": "#A95BFF", "highlight": "#FFD044",
         "correct": "#55E092", "wrong": "#FF6178", "card": "#252052",
     },
+    "name-city": {
+        "accent": "#13DDE8", "accent_2": "#FF5E78", "highlight": "#FFD33D",
+        "correct": "#48E28B", "wrong": "#FF627B", "card": "#173A5B",
+    },
+    "word-garden": {
+        "accent": "#42D9F5", "accent_2": "#E65CFF", "highlight": "#FFD35A",
+        "correct": "#64E678", "wrong": "#FF6882", "card": "#25205B",
+    },
 }
 
 

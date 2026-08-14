@@ -56,6 +56,10 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   altın kupon, pazar telaşı, bonus sepet, fiyat dondurma ve paylaşma turları.
 - Aile Kaçış Gecesi: ortak kaçış, rol değişimi, hikâye odaları ve rahat gizem;
   gizli çekmece, altın ipucu, anahtar yağmuru, yankı ipucu ve hareketli tablo turları.
+- İsim Şehir: klasik tur, hızlı üçlü, aile takımları ve yaratıcı cevap; özgün cevap
+  puanı, aile oylaması, kültür yıldızı, kategori değişimi ve geri dönüş hakkı.
+- Adam Asmaca · Kelime Bahçesi: harf tahmini, aile takımı, hızlı kelimeler ve bahçe
+  kurtarma; darağacı yerine çiçeklenen bahçe, harf hediyesi, arı ipucu ve ek taç yaprak.
 
 ## Yeni oyun kabul kapısı
 

@@ -43,6 +43,8 @@ jobs:
           python tools/build_robot_coding_games.py --check
           python tools/build_colorful_market_games.py --check
           python tools/build_family_escape_games.py --check
+          python tools/build_name_city_games.py --check
+          python tools/build_word_garden_games.py --check
 
       - name: doğrulayıcı (her paket)
         run: |
