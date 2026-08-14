@@ -78,6 +78,10 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#22D4CE", "accent_2": "#FF7186", "highlight": "#FFD34E",
         "correct": "#60DF6A", "wrong": "#FF5B70", "card": "#283065",
     },
+    "family-escape-night": {
+        "accent": "#20D8EA", "accent_2": "#A95BFF", "highlight": "#FFD044",
+        "correct": "#55E092", "wrong": "#FF6178", "card": "#252052",
+    },
 }
 
 

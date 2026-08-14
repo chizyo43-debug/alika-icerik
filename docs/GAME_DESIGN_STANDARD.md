@@ -54,6 +54,8 @@ dönüştürmektir; herhangi bir programın adı, görünümü veya kuralları b
   verimlilik görevi; turbo yol, manyetik fırtına, altın pil, portal ve kod hatası turları.
 - Renkli Pazar: alışveriş listesi, aile bütçesi, iki kişilik sepet ve kupon görevi;
   altın kupon, pazar telaşı, bonus sepet, fiyat dondurma ve paylaşma turları.
+- Aile Kaçış Gecesi: ortak kaçış, rol değişimi, hikâye odaları ve rahat gizem;
+  gizli çekmece, altın ipucu, anahtar yağmuru, yankı ipucu ve hareketli tablo turları.
 
 ## Yeni oyun kabul kapısı
 

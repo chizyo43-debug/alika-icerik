@@ -229,6 +229,23 @@ def gameplay_config(game: str, band: str) -> bytes:
                        "no_player_elimination": True, "no_timed_pressure_for_young": True,
                        "color_and_icon_feedback": True},
         },
+        "family-escape-night": {
+            "modes": ["family_escape", "role_swap", "story_rooms", "relaxed_mystery"],
+            "roles": ["clue_explorer", "pattern_solver", "key_keeper", "vault_operator"],
+            "round": {"symbol_count": {"young": 3, "mid": 4, "teen": 5, "senior": 6}[band],
+                      "clue_count": {"young": 3, "mid": 4, "teen": 5, "senior": 6}[band],
+                      "hint_tokens": {"young": 4, "mid": 3, "teen": 2, "senior": 2}[band],
+                      "timer_optional": True, "timer_default_on": False},
+            "cooperation": {"shared_team_goal": True, "role_handoff": True,
+                            "clues_can_be_pinned": True, "everyone_confirms_final_code": True},
+            "events": ["secret_drawer", "golden_hint", "key_rain", "echo_clue", "moving_portrait"],
+            "bonuses": {"no_hint": 2, "all_roles_used": 2, "first_code_success": 1,
+                        "cooperative_target": 8 if young else 12},
+            "safety": {"skip_without_explanation": True, "no_player_elimination": True,
+                       "no_timed_pressure_for_young": True, "no_horror": True,
+                       "no_locked_child_story": True, "mistakes_are_reversible": True,
+                       "color_and_symbol_feedback": True},
+        },
     }
     base.update(designs[game])
     return _json_bytes(base)
