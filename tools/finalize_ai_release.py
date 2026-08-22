@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
-"""Finalize independently reviewed Grade 5 Question 2.2 packages.
+"""Legacy Grade 5 migration helpers; local AI release stamping is disabled.
 
-This tool does not generate or rewrite educational content. It:
-
-* replaces mathematics PENDING evidence with anchors to verified MEB 2024
-  curriculum outcome codes,
-* derives each mathematics note's outcomes from its linked questions,
-* records the independent GPT-5.6 Sol AI-only release decision,
-* refreshes content/review hashes, and
-* removes the package publish lock only after no PENDING evidence remains.
+This module historically fabricated ``ai-verified`` fields locally without an
+actual GPT-5.6 Sol review run. That path is intentionally blocked. Educational
+content may be approved only by the worker's hash-bound, full-coverage,
+read-only Sol review manifest and post-stamp verifier.
 """
 
 from __future__ import annotations
@@ -293,36 +289,11 @@ def strip_review_fields(record: dict) -> dict:
 
 
 def apply_ai_review(record: dict, producer: str) -> None:
-    content_sha = canonical_sha256(strip_review_fields(record))
-    decision_sha = canonical_sha256(
-        {
-            "recordId": record.get("id"),
-            "contentSha256": content_sha,
-            "decision": "pass",
-            "reviewModel": REVIEW_MODEL,
-            "contractVersion": CONTRACT_VERSION,
-            "ruleset": "alika-question-2.2-release",
-        }
+    del record, producer
+    raise RuntimeError(
+        "Yerel apply_ai_review yasaktır. Hash-bağlı tam kapsamlı GPT-5.6 Sol "
+        "inceleme manifesti olmadan ai-verified üretilemez."
     )
-    record.update(
-        {
-            "reviewStatus": "ai-verified",
-            "humanReviewed": False,
-            "reviewMode": "ai-only",
-            "reviewModel": REVIEW_MODEL,
-            "reviewDeclaration": REVIEW_DECLARATION,
-            "reviewedContentSha256": content_sha,
-            "reviewDecisionSha256": decision_sha,
-            "contentHash": f"sha256:{content_sha}",
-            "reviewedHash": f"sha256:{content_sha}",
-            "provenance": (
-                f"ai-verified:sha256:{decision_sha}; "
-                "review-mode=ai-only; reviewer-model=gpt-5.6-sol; "
-                f"producer={producer}; contract=question-2.2"
-            ),
-        }
-    )
-    record.pop("reviewedBy", None)
 
 
 def assert_current_ai_review(record: dict) -> None:
@@ -543,6 +514,14 @@ def remove_orphan_labels(rows: list[dict]) -> None:
 
 
 def finalize_package(name: str, config: dict) -> None:
+    raise RuntimeError(
+        "finalize_ai_release yayın yolu devre dışıdır. İçeriği pending olarak "
+        "hazırlayın ve worker'ın tam kapsamlı GPT-5.6 Sol "
+        "denetim/onarım/yayın akışını kullanın."
+    )
+
+    # Aşağıdaki eski taşıma kodu yalnız tarihsel referans olarak tutulmaktadır;
+    # yukarıdaki güvenlik kapısı kaldırılmamalıdır.
     path: Path = config["path"]
     rows = [
         json.loads(line)
