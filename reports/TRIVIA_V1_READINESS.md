@@ -1,70 +1,57 @@
-# Bilgi Yarışması v1 — yayın hazırlık raporu
+# Bilgi Yarışması v2 — karma genel kültür hazırlık raporu
 
-> Durum: **AI-only taslak; insan kültürel onayı yok.** Bu paketler teknik
-> inceleme ve AliKa uyumluluk testi için hazırdır; insan onayı tamamlanmadan
-> “final onaylı” etiketi alamaz.
+> Durum: Otomatik kalite kapılarından geçen, indirilebilir veri paketleri.
+> İnsan onayı yayın için beklenmez; katalog kaydı, içeriğin AI destekli
+> üretildiğini açıkça korur.
 
 ## Kapsam
 
 - 9 dil: `tr`, `en`, `de`, `es`, `fr`, `pt`, `ru`, `ja`, `ko`
 - 4 yaş bandı: 5–7, 8–11, 12–14, 15–18
-- 36 ayrı paket, paket başına 200, toplam 7.200 soru
-- Her havuzda 54–58 dil-kültür çevresine öncelikli soru; kalanı küresel
-  dünya/kültür coğrafyası
-- 5–7 bandında tanınırlığı yüksek ülkeler öncelikli; 12–18
-  bantlarında aynı kıtadan daha yakın çeldiriciler kullanılır
+- 36 paket, paket başına 200, toplam 7.200 soru
+- Her 200 soruda tam olarak:
+  - 40 coğrafya
+  - 60 insanlar ve kültür (tarih, sanat, edebiyat, bilim ve spor kişileri)
+  - 50 matematik ve mantık
+  - 50 bilim, doğa ve teknoloji
+- Aynı konu ailesi arka arkaya gelmez. Soru sırası her havuzda konular
+  arasında geçiş yapar.
+- Her dilde en az 40 kültür-yerel soru vardır. Kişi ve ülke seçimleri dilin
+  kültür çevresine göre değiştiği için dokuz dil aynı havuzun çevirisi değildir.
 
-## Kaynak ve sınırlar
+## Kaynaklar
 
-- Olgular Wikidata'nın çok dilli ülke, başkent ve kıta kayıtlarından
-  yazar zamanında donduruldu; uygulama ve CI ağa çıkmaz.
-- Ham kaynak anık görüntüsü `games/trivia/data/wikidata_countries.json`;
-  her soru ayrıca ilgili Wikidata varlığına HTTPS kaynak bağı taşır.
-- Güncel lider, nüfus, fiyat ve benzeri hızla eskiyen olgular üretilmez.
-- Birden fazla başkenti olan devletler havuzdan çıkarılır; birden fazla
-  kıtada gösterilen devletlerden kıta sorusu üretilmez.
-- Wikidata etiketi doğrudan cümleye girmez. `tools/trivia_language.py`
-  etiketi görünen ada indirir (resmî uzun ad, idari ek, bozuk etiket) ve
-  cümlenin istediği çekimli/edatlı biçimi üretir. Anık görüntü ham kalır.
-- Kıta etiketleri altı kanona eşlenir. Wikidata'nın dile göre değişen
-  bölümlemesi (`Okyanusya` ↔ `Ada Okyanusyası`, `Океания` ↔ `Австралия и
-  Океания`) aynı soruda iki savunulabilir doğru üretiyordu. Avrasya bir kıta
-  adı olarak sorulmaz ve çeldirici havuzunda yer almaz.
-- Başkenti geçişte/yerelleştirilmemiş ya da siyasi olarak tartışmalı
-  devletlerden (Ekvator Ginesi, İsrail) başkent ve ülke sorusu üretilmez;
-  kıta sorusuna girerler. Ekvator Ginesi için Ciudad de la Paz'ın başkent
-  ilanı ve bir yıllık kurum taşıma süresi [2 Ocak 2026 tarihli resmî
-  karara](https://www.guineaecuatorialpress.com/index.php/noticias/decreto_ley_por_el_que_se_declara_la_ciudad_de_la_paz_djibloho_capital_de_la_republica_de_guinea_ecuatorial)
-  dayanır. Adı başkentiyle aynı veya doğrudan şehir türevi olan devletler
-  (Monako, Lüksemburg, Cibuti, Vatikan) de cevabı ele verdiği için bu iki
-  yönün dışındadır.
-- V1 genel kültürünün odağı dünya ve kültürel coğrafyadır. Sanat,
-  bilim, spor ve edebiyat kategorileri ayrı kaynak/insan inceleme dalgasıdır.
+- Ülke, başkent ve kıta olguları: dondurulmuş çok dilli Wikidata anık görüntüsü.
+- Tarihî ve güncel olmayan kişi bilgileri: AliKa'nın dondurulmuş çok dilli
+  Wikidata kişi anık görüntüsü.
+- Matematik ve mantık: yaş bandına göre belirlenimci işlemler; Khan Academy
+  matematik kaynağına bağlanır.
+- Elementler: IUPAC periyodik tablosu.
+- Gezegenler: NASA Solar System Exploration.
+- SI birimleri: BIPM SI Brochure.
+- Temel bilim/doğa soruları: Smithsonian Science Education Center.
 
-## Otomatik kapılar
+Uygulama ve normal paketleme sırasında internet kullanılmaz. Her soru HTTPS
+kaynak bağı taşır; kaynaklar üretim zamanında dondurulmuş veriden okunur.
+
+## Otomatik kalite kapıları
 
 - Her havuz tam 200 soru ve dört benzersiz şık taşır.
-- Soru kimlikleri, metinler ve şıklar havuz içinde benzersizdir.
-- Doğru şık konumu her havuzda dengelidir.
-- Ham `Q...` varlık kimliği, bozuk Unicode ve cevabı anmayan açıklama yoktur.
-- Arşivler deterministiktir; `catalog.json` SHA-256 ve boyutları kaydeder.
-- 36/36 arşiv AliKa `windows/library/game_package.py` gerçek okuyucusunda
-  kabul edilmiş, her birinden 200 soru geri okunmuştur.
+- Soru kimlikleri ve soru metinleri havuz içinde benzersizdir.
+- Doğru şık konumları 50/50/50/50 dengelidir.
+- Coğrafya oranı %20 ile sınırlıdır; başkent–ülke–kıta soruları artık oyunun
+  tamamını oluşturmaz.
+- Konu dağılımı ve kültür kotası 36 havuzun tamamında test edilir.
+- Üreteç çalıştırıldığında kaydedilmiş 7.200 soruyu bayt düzeyinde yeniden
+  oluşturur.
+- 36 arşiv veri-only `.alika-game` biçimindedir; katalog SHA-256 ve boyutlarını
+  kaydeder.
+- İçerik sürümü `2` yapıldı; kurulu eski coğrafya paketleri güncelleme olarak
+  algılanabilir.
 
-## Bilinen borç
+## Açık sınır
 
-- Başkent ve ülke yönü, kültür-yerel ülkelerde hâlâ aynı havuzda
-  eşleşiyor: havuz başına 17–20 soru, bir başka sorunun cevabını veriyor.
-  Kasıtlı: paket başına ≥40 yerel soru kapısı yalnız 20 yerel ülkeden
-  besleniyor, çift yön kaldırılırsa kota dolmuyor. Küresel ülkelerin
-  tamamı tek yönde soruluyor; eşleşme 60'tan 17–20'ye indi. Kalıcı çözüm
-  yerel havuzu genişletmek ya da dördüncü bir soru türü eklemektir.
-- Havuz hâlâ üç cümle kalıbından üretiliyor (100 başkent + 60 ülke +
-  40 kıta). Kalıp çeşitliliği v2'nin konusudur.
-
-## İnsan inceleme kapısı
-
-Her dil için ana dili o dil olan veya o dilde ileri yetkin bir inceleyici,
-dört havuzun en az %10 belirlenimci örneklemini okuyacak; yanlış olgu,
-doğal olmayan dil, yaşa uygunsuzluk ve hassas kültürel ifade sıfır olmadan
-`human_approved` değeri `true` yapılmayacaktır.
+Kişi açıklamaları dondurulmuş Wikidata etiketlerinden gelir. Otomatik testler
+cevabın soruda görünmesini ve yinelenen soruları engeller; ancak bazı meslek
+adları günlük dilde beklenenden daha özel olabilir. Bu durum paketin teknik
+yayınını durdurmaz ve sonraki içerik sürümlerinde sadeleştirilebilir.

@@ -49,7 +49,7 @@ SUBJECTS = {
     "es": "Cultura general", "fr": "Culture générale", "pt": "Conhecimentos gerais",
     "ru": "Общие знания", "ja": "一般知識", "ko": "상식",
 }
-CREATED_AT = "2026-08-13T00:00:00Z"
+CREATED_AT = "2026-08-22T00:00:00Z"
 QUESTION_FIELDS = (
     "question_id", "question", "choices", "correct", "subject", "topic", "explanation",
 )
@@ -126,7 +126,7 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
     manifest = {
         "schema_version": 1,
         "game_id": game_id,
-        "game_version": 1,
+        "game_version": 2,
         "name": f"{NAMES[language]} · {age_min}–{age_max}",
         "description": f"{language.upper()} · {age_min}–{age_max} · 200",
         "game_type": "quiz_race",
