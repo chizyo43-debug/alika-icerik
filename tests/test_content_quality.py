@@ -223,7 +223,52 @@ class TestIntegrity:
         assert dupes == [], f"Duplikat soru ID ({len(dupes)}): {dupes[:5]}"
 
     def test_derleme_sorulari_kaynak_kaydi_aynen_korur(self):
-        """Derleme, kaynak soruyu değiştirmeden ve yeniymiş gibi göstermeden seçer."""
+        """Derleme, kaynak sorunun pedagojik içeriğini aynen korur.
+
+        İnceleme kararı dosya ve satır konumuna bağlı olduğundan derleme
+        kopyasının attestation zarfı kaynak kayıttan farklı olabilir. İçerik
+        projeksiyonu ve onu bağlayan hash ise aynı kalmalıdır.
+        """
+        review_envelope_fields = {
+            "contentHash",
+            "disclosure",
+            "humanReviewed",
+            "provenance",
+            "reviewAttestation",
+            "reviewDecisionSha256",
+            "reviewDeclaration",
+            "reviewManifestSha256",
+            "reviewMethodVersion",
+            "reviewMode",
+            "reviewModel",
+            "reviewRubricSha256",
+            "reviewStatus",
+            "reviewedBy",
+            "reviewedContentSha256",
+            "reviewedHash",
+        }
+
+        def content_projection(question):
+            return {
+                key: value
+                for key, value in question.items()
+                if key not in review_envelope_fields
+            }
+
+        def remove_label_namespace(value, source_pack_id):
+            """Derleme çakışmalarını önleyen ``<pack-id>.`` etiket önekini kaldır."""
+            prefix = f"{source_pack_id}."
+            if isinstance(value, dict):
+                return {
+                    key: remove_label_namespace(item, source_pack_id)
+                    for key, item in value.items()
+                }
+            if isinstance(value, list):
+                return [remove_label_namespace(item, source_pack_id) for item in value]
+            if isinstance(value, str) and value.startswith(prefix):
+                return value[len(prefix):]
+            return value
+
         canonical = {}
         aggregates = []
         for path in PACKAGES:
@@ -231,10 +276,22 @@ class TestIntegrity:
             if (pack.get("selectionPolicy") or {}).get("mode") == "curated-aggregate":
                 aggregates.extend(questions)
             else:
-                canonical.update((question["id"], question) for question in questions)
+                canonical.update(
+                    (question["id"], (question, pack["id"]))
+                    for question in questions
+                )
         for question in aggregates:
             assert question["id"] in canonical
-            assert question == canonical[question["id"]]
+            source, source_pack_id = canonical[question["id"]]
+            derived_projection = content_projection(question)
+            if derived_projection.get("figure") is not None:
+                derived_projection["figure"] = remove_label_namespace(
+                    derived_projection["figure"], source_pack_id
+                )
+            assert derived_projection == content_projection(source)
+            assert question["reviewManifestSha256"] == source["reviewManifestSha256"]
+            assert question["reviewStatus"] == source["reviewStatus"] == "ai-verified"
+            assert question["humanReviewed"] is source["humanReviewed"] is False
 
     @pytest.mark.parametrize("path", PACKAGES, ids=PACKAGE_IDS)
     def test_noteid_baglanti(self, path):

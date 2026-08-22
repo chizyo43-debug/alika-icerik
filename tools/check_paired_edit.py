@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -88,6 +89,92 @@ def secenekleri_karsilastirma_icin_normallestir(secenekler: object) -> object:
     ]
 
 
+def secenek_metnini_anlamsal_normallestir(metin: object) -> object:
+    """Öğrenciye aynı anlamı veren yüzeysel şık değişikliklerini eşitler.
+
+    Yalnız seçenek harfi öneki, Türkçe ondalık ayırıcı ve art arda yanlışlıkla
+    yinelenmiş aynı sözcük normalleştirilir. Başka bir sözcük, sayı veya sıra
+    değişikliği gerçek içerik değişikliği olarak kalır.
+    """
+    if not isinstance(metin, str):
+        return metin
+    metin = re.sub(r"^\s*[A-Da-d]\s*[\)\].:\-]\s*", "", metin)
+    metin = re.sub(r"(?<=\d),(?=\d)", ".", metin)
+    onceki = None
+    while onceki != metin:
+        onceki = metin
+        metin = re.sub(r"\b([^\W\d_]+)\s+\1\b", r"\1", metin,
+                       flags=re.IGNORECASE)
+    return " ".join(metin.split()).casefold()
+
+
+def secenekleri_anlamsal_normallestir(secenekler: object) -> object:
+    if not isinstance(secenekler, list):
+        return secenekler
+    return [
+        secenek_metnini_anlamsal_normallestir(secenek)
+        for secenek in secenekleri_karsilastirma_icin_normallestir(secenekler)
+    ]
+
+
+def _kelimeler(metin: object) -> set[str]:
+    return {
+        kelime for kelime in re.findall(
+            r"[0-9a-zçğıöşü]+", str(metin or "").casefold()
+        ) if len(kelime) > 2
+    }
+
+
+def _benzerlik(sol: object, sag: object) -> float:
+    sol_kelimeler, sag_kelimeler = _kelimeler(sol), _kelimeler(sag)
+    if not sol_kelimeler or not sag_kelimeler:
+        return 0.0
+    return len(sol_kelimeler & sag_kelimeler) / len(sol_kelimeler | sag_kelimeler)
+
+
+def dogru_baglami_acikca_tutarli(soru: dict) -> bool:
+    """Değişmeyen açıklamaların yeni ``correct`` indeksini kanıtladığını denetler.
+
+    Bu istisna yalnız gerekçe dizisi güncel şık sayısıyla uyumluysa ve ya doğru
+    gerekçe yalnız yeni indekste açıkça işaretliyse ya da yeni doğru şık ile o
+    indeksin gerekçesi açıklamayla güçlü biçimde örtüşüyorsa geçerlidir.
+    """
+    secenekler = soru.get("choices")
+    gerekceler = soru.get("distractorWhy")
+    dogru = soru.get("correct")
+    aciklama = soru.get("explanation")
+    if (
+        not isinstance(secenekler, list)
+        or not isinstance(gerekceler, list)
+        or not isinstance(dogru, int)
+        or dogru < 0
+        or dogru >= len(secenekler)
+        or len(gerekceler) != len(secenekler)
+        or not isinstance(aciklama, str)
+        or not aciklama.strip()
+    ):
+        return False
+
+    dogru_isaretleri = []
+    for indeks, gerekce in enumerate(gerekceler):
+        metin = str(gerekce).casefold()
+        olumlu = any(isaret in metin for isaret in (
+            "doğru seç", "correct option", "doğru cevaptır",
+            "doğru cevap:", "doğru;",
+        )) or metin.startswith("doğrudur")
+        olumsuz = any(isaret in metin for isaret in (
+            "doğru değildir", "doğru sonuç değildir", "doğru cevap değildir",
+        ))
+        if olumlu and not olumsuz:
+            dogru_isaretleri.append(indeks)
+    if dogru_isaretleri == [dogru]:
+        return True
+
+    secenek_benzerligi = _benzerlik(secenekler[dogru], aciklama)
+    gerekce_benzerligi = _benzerlik(gerekceler[dogru], aciklama)
+    return secenek_benzerligi >= 0.40 and gerekce_benzerligi >= 0.30
+
+
 def dosyayi_denetle(base: str, yol: str, revert_of: str | None = None) -> list:
     ihlaller = []
     eski_ham = git_goster(base, yol)
@@ -116,24 +203,25 @@ def dosyayi_denetle(base: str, yol: str, revert_of: str | None = None) -> list:
         if h is not None and all(h.get(a) == y.get(a) for a in BAGLI_ALANLAR):
             continue  # bağlı alanlar bilinen tutarlı hâline geri döndürülmüş
         secenek_degisti = (
-            secenekleri_karsilastirma_icin_normallestir(e.get("choices"))
-            != secenekleri_karsilastirma_icin_normallestir(y.get("choices"))
+            secenekleri_anlamsal_normallestir(e.get("choices"))
+            != secenekleri_anlamsal_normallestir(y.get("choices"))
         )
         dogru_degisti = e.get("correct") != y.get("correct")
         why_degisti = e.get("distractorWhy") != y.get("distractorWhy")
         exp_degisti = e.get("explanation") != y.get("explanation")
+        dogru_baglami_tutarli = dogru_baglami_acikca_tutarli(y)
 
         if secenek_degisti and not why_degisti:
             ihlaller.append(
                 f"{yol}:{kimlik}: choices değişti ama distractorWhy aynı kaldı; "
                 "gerekçeler artık başka şıkları anlatıyor olabilir"
             )
-        if dogru_degisti and not why_degisti:
+        if dogru_degisti and not why_degisti and not dogru_baglami_tutarli:
             ihlaller.append(
                 f"{yol}:{kimlik}: correct değişti ama distractorWhy aynı kaldı; "
                 "'doğru' etiketi yanlış indekste"
             )
-        if dogru_degisti and not exp_degisti:
+        if dogru_degisti and not exp_degisti and not dogru_baglami_tutarli:
             ihlaller.append(
                 f"{yol}:{kimlik}: correct değişti ama explanation aynı kaldı"
             )

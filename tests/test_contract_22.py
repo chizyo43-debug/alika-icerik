@@ -168,7 +168,7 @@ def not_kaydi() -> dict:
         "figure": {"kind": "grid", "cols": 2, "rows": 2,
                    "altTextKey": "tr.g05.tur.ana-fikir.n001.visual.a1"},
         "topic": "Metin Anlama",
-        "objective": "T.O.5.5.",
+        "objectives": ["T.O.5.5."],
         "objectiveSource": "https://ornek.local/y.pdf",
         "objectiveEvidenceId": "s1:pdf-page-1",
         "sourceRefs": ["s1"],
@@ -368,6 +368,42 @@ def test_dolu_figurde_alt_metin_zorunlu(tmp_path):
     k = temiz_paket()
     del k[1]["figure"]["altTextKey"]
     assert 4 in kosu(tmp_path, k)
+
+
+def test_coordinate_labels_nokta_indeksi_sozlugu_olmali():
+    fig = {
+        "kind": "coordinate",
+        "altTextKey": "alt",
+        "xRange": [-2, 2],
+        "yRange": [-2, 2],
+        "points": [[1, 1]],
+        "labels": [{"at": [1, 1], "labelKey": "p"}],
+    }
+    assert any("labels" in hata for hata in pack_validate.figur_kontrol(fig, "2.2"))
+
+
+def test_coordinate_segments_uç_nokta_cifti_olmali():
+    fig = {
+        "kind": "coordinate",
+        "altTextKey": "alt",
+        "xRange": [-2, 2],
+        "yRange": [-2, 2],
+        "segments": [{"from": [-1, 0], "to": [1, 0]}],
+    }
+    assert any("segment" in hata for hata in pack_validate.figur_kontrol(fig, "2.2"))
+
+
+def test_coordinate_windows_android_ortak_bicimi_gecerli():
+    fig = {
+        "kind": "coordinate",
+        "altTextKey": "alt",
+        "xRange": [-2, 2],
+        "yRange": [-2, 2],
+        "points": [[1, 1]],
+        "labels": {"0": "p"},
+        "segments": [[[-1, 0], [1, 0]]],
+    }
+    assert pack_validate.figur_kontrol(fig, "2.2") == []
 
 
 def _paket_surumu(yol: Path) -> str:
