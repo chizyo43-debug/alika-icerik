@@ -12,6 +12,7 @@ TOOLS = ROOT / "tools"
 sys.path.insert(0, str(TOOLS))
 
 import generate_trivia_geography as generator  # noqa: E402
+import generate_trivia_variety as variety  # noqa: E402
 from trivia_language import (  # noqa: E402
     CONTESTED_CAPITALS,
     CONTINENT_ALIASES,
@@ -59,48 +60,39 @@ def test_continent_aliases_use_six_canonical_values_without_eurasia():
     assert "Евразия" not in CONTINENT_ALIASES
 
 
-def test_geography_generator_matches_committed_pools(monkeypatch, tmp_path):
-    snapshot = json.loads(generator.DATA_PATH.read_text(encoding="utf-8"))
-    monkeypatch.setattr(generator, "QUESTIONS", tmp_path)
-    generator.generate(snapshot)
+def test_variety_generator_matches_committed_pools(monkeypatch, tmp_path):
+    monkeypatch.setattr(variety, "QUESTIONS", tmp_path)
+    variety.generate()
     for language in generator.LANGUAGES:
         for band in generator.BANDS:
             expected = ROOT / "games" / "trivia" / "questions" / language / f"{band}.jsonl"
             assert (tmp_path / language / f"{band}.jsonl").read_bytes() == expected.read_bytes()
 
 
-def test_generated_pools_exclude_sensitive_and_self_revealing_capitals():
-    snapshot = json.loads(generator.DATA_PATH.read_text(encoding="utf-8"))
-    excluded = CONTESTED_CAPITALS | SAME_NAME_CAPITALS
-    for language in generator.LANGUAGES:
-        qids = {
-            item["iso2"]: item["country_qid"]
-            for item in snapshot[language]
-            if item["iso2"] in excluded
-        }
-        excluded_urls = {f"https://www.wikidata.org/wiki/{qid}" for qid in qids.values()}
-        canonical_continents = set(CONTINENT_NAMES[language].values())
-        for band in generator.BANDS:
-            path = ROOT / "games" / "trivia" / "questions" / language / f"{band}.jsonl"
-            rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
-            assert not ({row["source"]["url"] for row in rows[:160]} & excluded_urls)
-            assert {
-                choice for row in rows[160:] for choice in row["choices"]
-            } <= canonical_continents
-
-
-def test_reverse_pairs_are_local_only_and_within_documented_range():
+def test_generated_pools_have_four_unrelated_topic_families():
     for language in generator.LANGUAGES:
         for band in generator.BANDS:
             path = ROOT / "games" / "trivia" / "questions" / language / f"{band}.jsonl"
             rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
-            capital_sources = {row["source"]["url"] for row in rows[:100]}
-            inverse_rows = {
-                row["source"]["url"]: row for row in rows[100:160]
-                if row["source"]["url"] in capital_sources
+            expected_topics = set(variety.TOPICS[language])
+            counts = {topic: sum(row["topic"] == topic for row in rows) for topic in expected_topics}
+            assert counts == {
+                variety.TOPICS[language][0]: 40,
+                variety.TOPICS[language][1]: 60,
+                variety.TOPICS[language][2]: 50,
+                variety.TOPICS[language][3]: 50,
             }
-            assert 17 <= len(inverse_rows) <= 20
-            assert all(
-                f"culture:{language}" in row["culture_tags"]
-                for row in inverse_rows.values()
-            )
+            assert sum(f"culture:{language}" in row["culture_tags"] for row in rows) >= 40
+            assert max(
+                sum(rows[index + offset]["topic"] == rows[index]["topic"] for offset in range(5))
+                for index in range(len(rows) - 4)
+            ) < 5
+
+
+def test_geography_is_capped_at_one_fifth_of_each_pool():
+    for language in generator.LANGUAGES:
+        for band in generator.BANDS:
+            path = ROOT / "games" / "trivia" / "questions" / language / f"{band}.jsonl"
+            rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
+            geography_topic = variety.TOPICS[language][0]
+            assert sum(row["topic"] == geography_topic for row in rows) == 40

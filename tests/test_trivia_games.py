@@ -23,6 +23,7 @@ def test_all_language_age_pools_build_and_generated_files_are_current():
     assert catalog["review_status"] == "ai-draft"
     assert catalog["human_approved"] is False
     assert len(catalog["games"]) == 36
+    assert {item["game_version"] for item in catalog["games"]} == {2}
     assert sum(item["question_count"] for item in catalog["games"]) == 7200
     assert {(item["language"], item["age_min"], item["age_max"]) for item in catalog["games"]} == {
         (language, ages[0], ages[1])
