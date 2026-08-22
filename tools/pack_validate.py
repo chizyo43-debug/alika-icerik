@@ -40,12 +40,12 @@ FIGUR_ATIF_RE = {
     "tr": (
         re.compile(
             r"\b(?:yukarıdaki|aşağıdaki)\s+"
-            r"(?:şekilde|grafikte|tabloda|görselde|diyagramda|şemada)\b",
+            r"(?:şekilde|grafikte|tabloda|görselde|diyagramda|şemada|haritada)\b",
             re.I,
         ),
         re.compile(
             r"\b(?:yukarıdaki|aşağıdaki|bu|verilen|gösterilen)\s+"
-            r"(?:şekle|grafiğe|tabloya|görsele|diyagrama)\s+göre\b",
+            r"(?:şekle|grafiğe|tabloya|görsele|diyagrama|haritaya)\s+göre\b",
             re.I,
         ),
         # "şema" yalnız GÖSTERİLENE açıkça işaret eden kalıplarda sayılır.
@@ -54,7 +54,7 @@ FIGUR_ATIF_RE = {
         # bu şemaya göre deney kurar") ve okura gösterilen bir figür değildir.
         re.compile(r"\b(?:yukarıdaki|aşağıdaki)\s+şemaya\s+göre\b", re.I),
         re.compile(
-            r"\b(?:şekli|grafiği|tabloyu|görseli|diyagramı|şemayı)\s+"
+            r"\b(?:şekli|grafiği|tabloyu|görseli|diyagramı|şemayı|haritayı)\s+"
             r"(?:incele(?:yin|yiniz)?|kullan(?:ın|ınız)?|yorumla(?:yın|yınız)?)\b",
             re.I,
         ),
@@ -64,17 +64,17 @@ FIGUR_ATIF_RE = {
         # bilgileri kullanınız" cümlelerini yanlışlıkla atıfsız sayıyordu.
         re.compile(
             r"\b(?:yukarıdaki|aşağıdaki)\s+(?:seçenek\s+)?"
-            r"(?:şekli|grafiği|tabloyu|görseli|diyagramı|şemayı|tablosunu)\s+"
+            r"(?:şekli|grafiği|tabloyu|görseli|diyagramı|şemayı|haritayı|tablosunu)\s+"
             r"(?:da\s+)?(?:incele(?:yin|yiniz)?|kullan(?:ın|ınız)?)\b",
             re.I,
         ),
         re.compile(
-            r"\b(?:şekilde|grafikte|tabloda|görselde|diyagramda|şemada)\s+"
+            r"\b(?:şekilde|grafikte|tabloda|görselde|diyagramda|şemada|haritada)\s+"
             r"(?:verilen|gösterilen)\b",
             re.I,
         ),
         re.compile(
-            r"(?<!bu )(?<!bu\s)\b(?:şekle|grafiğe|tabloya|görsele|diyagrama|şemaya|akış\s+şemasına)\s+göre\b",
+            r"(?<!bu )(?<!bu\s)\b(?:şekle|grafiğe|tabloya|görsele|diyagrama|şemaya|haritaya|akış\s+şemasına)\s+göre\b",
             re.I,
         ),
         re.compile(
@@ -756,14 +756,33 @@ def figur_kontrol(fig: dict, sema: str = "2.0") -> list:
                 if not isinstance(i, int) or not 0 <= i < c * r:
                     h.append(f"grid: shaded indeksi cols*rows dışı: {i!r}")
     elif kind == "coordinate":
+        ranges = {}
         for alan in ("xRange", "yRange"):
             rng = fig.get(alan)
             if (not isinstance(rng, list) or len(rng) != 2
                     or not all(_sayi_mi(v) for v in rng) or not rng[0] < rng[1]):
                 h.append(f"coordinate: {alan} [min,max] ve min<max değil")
-        for p in fig.get("points", []) or []:
+            else:
+                ranges[alan] = rng
+        points = fig.get("points", []) or []
+        for p in points:
             if not (isinstance(p, list) and len(p) == 2 and all(_sayi_mi(v) for v in p)):
                 h.append(f"coordinate: point [x,y] değil: {p!r}")
+        etiketler = fig.get("labels")
+        if etiketler is not None:
+            if not isinstance(etiketler, dict):
+                h.append("coordinate: labels nokta-indeksi → labelKey sözlüğü değil")
+            else:
+                for indeks, anahtar in etiketler.items():
+                    if (not isinstance(indeks, str) or not indeks.isdigit()
+                            or int(indeks) >= len(points)
+                            or not isinstance(anahtar, str) or not anahtar):
+                        h.append(f"coordinate: labels girdisi geçersiz: {indeks!r}: {anahtar!r}")
+        for parca in fig.get("segments", []) or []:
+            if not (isinstance(parca, list) and len(parca) == 2
+                    and all(isinstance(uç, list) and len(uç) == 2
+                            and all(_sayi_mi(v) for v in uç) for uç in parca)):
+                h.append(f"coordinate: segment [[x1,y1],[x2,y2]] değil: {parca!r}")
     elif kind == "chart":
         stil = fig.get("style")
         if stil not in ("bar", "line", "pie"):

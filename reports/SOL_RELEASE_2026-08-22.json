@@ -1,0 +1,76 @@
+{
+  "schema": "alika-sol-release-receipt/1.0.0",
+  "releaseDate": "2026-08-22",
+  "status": "PASS",
+  "publishReady": true,
+  "reviewMode": "ai-only",
+  "reviewDeclaration": "ai-generated-and-ai-reviewed-no-human-review",
+  "model": "gpt-5.6-sol",
+  "humanReviewed": false,
+  "canonical": {
+    "records": 20987,
+    "mainRootRecords": 14424,
+    "mainDerivedRecords": 6490,
+    "reviewedStagingRecords": 73,
+    "notes": 1384,
+    "questions": 19573,
+    "packs": 30,
+    "openFindings": 0,
+    "validationErrors": 0,
+    "validationWarnings": 0,
+    "legacyAttestationRemaining": 0,
+    "invalidHashCount": 0,
+    "coverageGapCount": 0,
+    "reviewManifestSha256": "24b84d71be9f2347926cfd59ae1009ae00ac78f91074402a799005048f7f70e9",
+    "inventorySha256": "b888c5dd58e085a7e69197366e00b9b406b1850ad41aa7272563a961fbe43e58",
+    "findingsSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "gates": {
+    "strictPackages": {
+      "checked": 30,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "contractTests": {
+      "passed": 48,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "recordReview": {
+      "checked": 20987,
+      "openFindings": 0,
+      "status": "PASS"
+    },
+    "visualRuntime": {
+      "figures": 2979,
+      "status": "PASS"
+    },
+    "derivedBankParity": {
+      "records": 6490,
+      "status": "PASS"
+    }
+  },
+  "reviewedStaging": [
+    {
+      "path": "staging/sol-repair/g07/tr_g07_fen_bilimleri_sorular_grup16_q0361_q0384_v2_sol_repair.jsonl",
+      "records": 24,
+      "sha256": "9504482bb4371771b365ef63362ec2802126b5973a9731d9480b2ba786dabcd3"
+    },
+    {
+      "path": "staging/sol-repair/g08/tr_g08_fen_bilimleri_sorular_grup08_q0149_q0172_v2_sol_repair.jsonl",
+      "records": 24,
+      "sha256": "933f9e1a6223b927803d6caabcc6866d3387e59e457f5bab5af1121d1e5dfe2a"
+    },
+    {
+      "path": "staging/sol-repair/g09/tr_g09_kimya_sorular_grup02_q0026_q0050_v2_sol_repair.jsonl",
+      "records": 25,
+      "sha256": "abe8bd6a605c6cf3fbdc6a4d227df0ae0a006971b61a02f41d4b449aec84b923"
+    }
+  ],
+  "excludedPendingProduction": {
+    "records": 52,
+    "status": "CLEAN_PENDING_AI_ONLY",
+    "publishReady": false,
+    "reason": "Canonical paket kapsamına henüz alınmamış küçük üretim dilimleri; bu sürümde main'e eklenmedi."
+  }
+}
