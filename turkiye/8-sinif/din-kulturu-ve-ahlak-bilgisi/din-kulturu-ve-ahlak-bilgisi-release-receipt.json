@@ -1,0 +1,77 @@
+{
+  "boundary": {
+    "canonicalWritten": false,
+    "gitTouched": false,
+    "mainTouched": false
+  },
+  "counts": {
+    "note": 19,
+    "pack": 1,
+    "question": 152,
+    "total": 172
+  },
+  "createdAt": "2026-08-24T19:03:21.780975+03:00",
+  "decision": "PASS",
+  "gates": {
+    "contentFindings": 0,
+    "exactDuplicates": 0,
+    "nearDuplicates": 0,
+    "postStampFindings": 0,
+    "scoreReceipt": {
+      "bytes": 2779,
+      "lines": 70,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\release-candidate\\tr_g08_dkab_full_single-pack_score_receipt_v4_f00e3899.json",
+      "sha256": "f00e3899436d577eba0607e0736051f8f331ca8e2cdc3671451420376745ff3b"
+    },
+    "strict": {
+      "canonicalRelativePath": "turkiye\\8-sinif\\dkab\\dkab-tum.jsonl",
+      "contract": {
+        "bytes": 1848,
+        "lines": 37,
+        "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\alika_icerik_current\\pack_contract.json",
+        "sha256": "2a204725b971cca45e2d652db15f92f5bfb3531925833b45e09758ffe235b2fe"
+      },
+      "errors": 0,
+      "exitCode": 0,
+      "summary": "TOPLAM: 0 HATA, 0 UYARI",
+      "warnings": 0
+    }
+  },
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 1099195,
+    "lines": 172,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\release-candidate\\tr_g08_dkab_full_single-pack_release_v4_01883c47.jsonl",
+    "sha256": "01883c478cf372a8fc34f24e53efc2a1bcb86220bf938ddddce3e982bef0ed95"
+  },
+  "packagePreStampScopeSha256": "5cc7c7a882471f374f064e44157acad8e7981f66a979f262fb29ec1a9db90aef",
+  "protectedContentSha256": "0a759ff9550679eda0b9eef8c424a01932b20b1e54a3d3ecff125c66aa1cc0cb",
+  "publishBlocked": false,
+  "publishReady": true,
+  "qf009": {
+    "after": {
+      "genericNeverCorrectDistractors": 0,
+      "genericNeverCorrectOccurrences": 0,
+      "questionsInOptionSetsSharedAcrossFamilies": 0
+    },
+    "answerIndexDrift": 0,
+    "before": {
+      "genericNeverCorrectDistractors": 76,
+      "genericNeverCorrectOccurrences": 456,
+      "questionsInOptionSetsSharedAcrossFamilies": 152
+    },
+    "changedQuestionRecords": 152,
+    "objectiveSourceEvidenceFigureDrift": 0,
+    "restampedRecords": 172
+  },
+  "ruleset": "alika-g08-qf009-content-repair-v4",
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/4.0.0",
+  "sourceV3": {
+    "bytes": 966111,
+    "lines": 172,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\release-candidate\\tr_g08_dkab_full_single-pack_release_v3_c15ae64a.jsonl",
+    "sha256": "c15ae64a59f039eb539fecb0a86ed5996d4625d8f4d3eadfc969bdecbef9233b"
+  },
+  "subject": "dkab"
+}

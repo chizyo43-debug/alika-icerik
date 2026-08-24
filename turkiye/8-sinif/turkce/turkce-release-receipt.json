@@ -1,0 +1,87 @@
+{
+  "boundary": {
+    "canonicalWritten": false,
+    "gitTouched": false,
+    "integrationAuthority": "root-only",
+    "mainTouched": false
+  },
+  "candidatePlan": {
+    "bytes": 781,
+    "lines": 28,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\baseline-audit\\checkpoint\\g08_turkce_qf008_frozen_v2_input_plan_v1_76813930.json",
+    "role": "candidate-merge-plan",
+    "sha256": "7681393006c7b63d8991a3973d307101bb6907d65baf1051ca8473ba87ddf675"
+  },
+  "counts": {
+    "note": 170,
+    "pack": 1,
+    "question": 628,
+    "total": 799
+  },
+  "createdAt": "2026-08-24T15:07:41.662307+00:00",
+  "curriculum": "MEB-TYMM-2024",
+  "decision": "PASS",
+  "gates": {
+    "canonicalShapedPreflightStrict": {
+      "errors": 0,
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "contentFinding": 0,
+    "duplicateId": 0,
+    "exactDuplicate": 0,
+    "jsonlParse": "PASS 799/799",
+    "labelsConflict": 0,
+    "nearDuplicate": 0,
+    "packageWideDistractorRationaleDiversification": {
+      "meaningPreservedFromBoundInputs": true,
+      "rewrittenIncorrectReasons": 1884
+    },
+    "postStampStrict": {
+      "errors": 0,
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "postStampVerifier": {
+      "findings": 0,
+      "records": 799
+    },
+    "qf008NoteObjectives": {
+      "addedOrCorrected": 16,
+      "findings": 0,
+      "verified": 170
+    },
+    "sourceHashDrift": 0,
+    "sourcesConflict": 0
+  },
+  "grade": 8,
+  "humanReviewed": false,
+  "inputs": [
+    {
+      "bytes": 7414226,
+      "lines": 799,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\release-candidate\\tr_g08_turkce_full_single-pack_release_v2_32db6179.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "32db61794bc59958c8672c93b1d16d7336d01891d257623d29476494237b93a0"
+    }
+  ],
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 7537411,
+    "lines": 799,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\release-candidate\\tr_g08_turkce_full_single-pack_release_v3_1c95c397.jsonl",
+    "role": "single-pack-release-candidate",
+    "sha256": "1c95c397e231a96db5f8ff4030ba6c4e31c500b71ac354cc906e79472d36e09c"
+  },
+  "packagePreStampScopeSha256": "8a7348c1a3f1b5841efe9dcb8694c6fb6f913242adcf109abf6db23865a39e2c",
+  "publishBlocked": false,
+  "publishReady": true,
+  "questionRange": [
+    1,
+    628
+  ],
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/3.0.0",
+  "subjectSlug": "turkce",
+  "title": "8. Sınıf Türkçe Mevcut 500 ve Yeni 128 Birleşik Tam Kapsam"
+}

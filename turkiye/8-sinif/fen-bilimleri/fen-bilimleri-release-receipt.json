@@ -1,0 +1,325 @@
+{
+  "boundary": {
+    "canonicalWritten": false,
+    "gitTouched": false,
+    "integrationAuthority": "root-only",
+    "mainTouched": false
+  },
+  "candidatePlan": {
+    "bytes": 170004,
+    "lines": 2607,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\baseline-audit\\checkpoint\\g08_fen_q0149_q0444_candidate_package_plan_v1_c0e974b7.json",
+    "role": "candidate-merge-plan",
+    "sha256": "c0e974b7b6f7623ff7eface745617564eb1e3a10f0a4c329a43b825b103a5569"
+  },
+  "counts": {
+    "note": 36,
+    "pack": 1,
+    "question": 296,
+    "total": 333
+  },
+  "createdAt": "2026-08-24T15:07:06.481472+00:00",
+  "curriculum": "MEB-TYMM-2024",
+  "decision": "PASS",
+  "gates": {
+    "canonicalShapedPreflightStrict": {
+      "errors": 0,
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "contentFinding": 0,
+    "duplicateId": 0,
+    "exactDuplicate": 0,
+    "jsonlParse": "PASS 333/333",
+    "labelsConflict": 0,
+    "nearDuplicate": 0,
+    "packageWideDistractorRationaleDiversification": {
+      "meaningPreservedFromBoundInputs": true,
+      "rewrittenIncorrectReasons": 888
+    },
+    "postStampStrict": {
+      "errors": 0,
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "postStampVerifier": {
+      "findings": 0,
+      "records": 333
+    },
+    "qf008NoteObjectives": {
+      "addedOrCorrected": 36,
+      "findings": 0,
+      "verified": 36
+    },
+    "sourceHashDrift": 0,
+    "sourcesConflict": 0
+  },
+  "grade": 8,
+  "humanReviewed": false,
+  "inputs": [
+    {
+      "bytes": 182080,
+      "lines": 27,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_q0149_q0172_v2_current-review_ad1ac1d5.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "ad1ac1d51c909fc855ec53745230a2002652b9717e0c07e83c221b7e54a9fc93"
+    },
+    {
+      "bytes": 75539,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit03_mutasyon-bilgisi-toplama_q0173_q0180_v2_862e64c5.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "862e64c50fc769499426b9ca177f80639fb06d2c2a1f9b8b5d781e97d578d9fe"
+    },
+    {
+      "bytes": 82535,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit03_mutasyon-kaydi-ve-adaptasyon-cikarimi_q0181_q0188_v2_6caa9d61.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "6caa9d61588abe4e4775342d03e0b3754021a26cde6d9273d84a34bbb153e71c"
+    },
+    {
+      "bytes": 52047,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_q0189_q0196_pack_v2_df8f514e.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "df8f514e8f32df1b6b4d21684339007d9102e52649315b5fcd9ca3a2e3a6e338"
+    },
+    {
+      "bytes": 79397,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit04_sesin-olusumuna-yonelik-bilimsel-cikarim_q0197_q0204_v2_1c01c834.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "1c01c834297498014b88dc16f38b78163995b97f996b83a6383a811ae8237ab1"
+    },
+    {
+      "bytes": 78097,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit04_sesin-yayilabildigi-ortamlara-yonelik-deney_q0205_q0212_v2_be029bd6.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "be029bd6ed9fa5991478ea1c50e6624da10fe8dba7a658970b25f86afbd18b1d"
+    },
+    {
+      "bytes": 78185,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit04_sesin-frekansina-gore-ince-kalin-isitilme-deneyi_q0213_q0220_v2_fbc996e8.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "fbc996e8d68a45196263345f7fee2866cd758c9167c3738348fa1bdcb88b60f8"
+    },
+    {
+      "bytes": 79406,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit04_ses-degiskenlerinin-isitmeye-etkisi-hipotez_q0221_q0228_v2_767d3c2a.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "767d3c2a24f2d3d00a4829d86a4688cff32d52aa84658b0ff41ff00ccbd5ea40"
+    },
+    {
+      "bytes": 79883,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit04_sesin-iletilmesi-yansimasi-sogurulmasi-cikarim_q0229_q0236_v2_1b8f8ee2.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "1b8f8ee2c0ed4f94fa04fca25d977495e7b96615324748cea1eac997225fd82f"
+    },
+    {
+      "bytes": 86188,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit04_ses-kirliligini-onlemeye-yonelik-bilimsel-sorgulama_q0237_q0244_v2_d582f165.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "d582f165ba297c9d14446fe159912bba5c2eb9fcf95ea884baf64c32832d0711"
+    },
+    {
+      "bytes": 77649,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit05_periyodik-tabloda-elementlerin-siniflandirilmasi_q0245_q0252_v2_19b9dc20.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "19b9dc20794160b6d698c8cdccd4f96e1b8de27a267789af245cdbaf919b1ab5"
+    },
+    {
+      "bytes": 79590,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit05_fiziksel-ve-kimyasal-degisimlerde-gozleme-dayali-tahmin_q0253_q0260_v2_995183a9.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "995183a9ab79df40b4292cb7e17066c51fc4cb809b2a201aa82dc6ff7a7765a4"
+    },
+    {
+      "bytes": 76500,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit05_kimyasal-tepkimelerle-ilgili-bilimsel-cikarim_q0261_q0268_v2_011df8ca.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "011df8ca5bc6faa9f8c6710607269f889faa0ba0f1e3490cae94e09386abed91"
+    },
+    {
+      "bytes": 79440,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit05_kimyasal-tepkimelerin-gunluk-yasamdaki-etkilerini-arastirma_q0269_q0276_v2_ed8f1195.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "ed8f11957c2e5d7302d8146fbb4f3cf333f3bd5b2efa789877e7ef64ab3a208c"
+    },
+    {
+      "bytes": 73110,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit05_asit-ve-bazlarin-genel-ozelliklerini-karsilastirma_q0277_q0284_v2_84c1e7c6.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "84c1e7c65186b2dc1c37c1725ece3dd7d6f5f891590173c5db988f8ae96ca04e"
+    },
+    {
+      "bytes": 80279,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit05_ayiraclarla-asit-baz-tahmini_q0285_q0292_v2_4fac87e2.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "4fac87e27b24573676895677ab167b81f251e9bd1a1400800b66799a8d5f9f13"
+    },
+    {
+      "bytes": 69565,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit05_ph-degerleriyle-tumevarimsal-akil-yurutme_q0293_q0300_v2_08452614.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "0845261460e33f62831b9c412066ca256f1198d6e0db8b4d040696263e21a65c"
+    },
+    {
+      "bytes": 78011,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_unit05_asit-baz-etkileri-deneyleri_q0301_q0308_v2_399e98a8.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "399e98a879752ebe1d309a9dfdfa850962463d19d9a73c9685dd7aad0f07e769"
+    },
+    {
+      "bytes": 93465,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr-g08-fen-u06-fb-8-6-1-1-ampullerin-baglanma-durumu-ve-parlaklik-q0309-q0316_v2_58b76894.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "58b76894c3c45263c99d62b0084ac41d94e985c0fd0757f6c307daa346333992"
+    },
+    {
+      "bytes": 89215,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr-g08-fen-u06-fb-8-6-1-2-elektrik-akimi-q0317-q0324_v2_430d2e57.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "430d2e575e313216d9aa5d8260f963f95f625d69b1907262c022f18e6226ff94"
+    },
+    {
+      "bytes": 89758,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr-g08-fen-u06-fb-8-6-1-3-potansiyel-fark-gerilim-q0325-q0332_v2_17c0e7de.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "17c0e7de83b984e5d956ab39b6c996c05efdd54b0d78074d66aa9ea2534f5979"
+    },
+    {
+      "bytes": 93315,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr-g08-fen-u06-fb-8-6-1-4-akim-gerilim-iliskisi-q0333-q0340_v2_ba96c4fc.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "ba96c4fcb396315ae73fe29990143b00492e5feedf377662bd8679ea73956042"
+    },
+    {
+      "bytes": 93333,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr-g08-fen-u06-fb-8-6-1-5-ozgun-aydinlatma-araci-modeli-q0341-q0348_v2_8ccb2163.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "8ccb2163b2865a8cdb5d33e8af71c44b2530f0889c158e4ba4e106331d361c07"
+    },
+    {
+      "bytes": 91959,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr-g08-fen-u06-fb-8-6-2-1-elektrik-enerjisi-donusumlerini-siniflandirma-q0349-q0356_v2_5f8e6d4c.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "5f8e6d4cfbc616e9a87dcb533e8ac39302f02ed60870deca53629b6dc5b517b5"
+    },
+    {
+      "bytes": 96629,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr-g08-fen-u06-fb-8-6-2-2-elektrik-enerjisi-donusum-modeli-q0357-q0364_v2_ac86d65e.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "ac86d65e8b041d8bc395464a96ad664d9c6abe1fed86c67237adb5470c572fcf"
+    },
+    {
+      "bytes": 91211,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr-g08-fen-u06-fb-8-6-2-3-elektrik-enerjisi-uretim-santrallerini-siniflandirma-q0365-q0372_v2_0f24137c.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "0f24137c2ec384d19c8147a0fcc0e3390ef11e6664206e4975976bfee08e0480"
+    },
+    {
+      "bytes": 98115,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr-g08-fen-u06-fb-8-6-2-4-santrallerin-avantaj-ve-dezavantajlari-q0373-q0380_v2_c3e74129.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "c3e74129d89bfb88b00f1504f47a6d8553a82c5fec1b1bd977ba408d9f2c6659"
+    },
+    {
+      "bytes": 93280,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr-g08-fen-u06-fb-8-6-2-5-elektrigi-bilincli-ve-tasarruflu-kullanma-q0381-q0388_v2_ec48e519.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "ec48e51983cbb570e3c2b61657764970c3e1b6db3ecbbd58c45c4035c4ea51f1"
+    },
+    {
+      "bytes": 45215,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_u07_fb-8-7-1-1_q0389_q0396_v3_ba28c1da.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "ba28c1dad078440bfbe60b78f30348d89e9b9015d67a47b4f7b1a018beac2d6d"
+    },
+    {
+      "bytes": 45206,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_u07_fb-8-7-1-2_q0397_q0404_v3_7a9497f1.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "7a9497f1cf380fda2c2ca261bf95a15d24d408af8c206cd03643ee3a972da055"
+    },
+    {
+      "bytes": 42160,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_u07_fb-8-7-1-3_q0405_q0412_v3_da5f9ce2.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "da5f9ce2a8feb5aecfa3444a120a06861d18880fb49e31e1f628137345bfd178"
+    },
+    {
+      "bytes": 45701,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_u07_fb-8-7-2-1_q0413_q0420_v3_e59abf6d.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "e59abf6de8e0537813922400dc17d0282978c62578250456a20c9fbc4248ef06"
+    },
+    {
+      "bytes": 43262,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_u07_fb-8-7-2-2_q0421_q0428_v3_ca46a2bc.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "ca46a2bc90ef85daaf14194f02f3768852d663b5b88ed08cb2f683d038e72388"
+    },
+    {
+      "bytes": 46263,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_u07_fb-8-7-2-3_q0429_q0436_v3_41b53b96.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "41b53b96daa634e76b4639ae1405d7749f32618019979ff5516ffd66a1d44de2"
+    },
+    {
+      "bytes": 46512,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\tr_g08_fen_u07_fb-8-7-2-4_q0437_q0444_v3_b3714318.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "b37143186b5ff33e5f7a0c5a78bfd8027e80133a89ac51da3b44749a466fea03"
+    }
+  ],
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 2810669,
+    "lines": 333,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\release-candidate\\tr_g08_fen-q0149-q0444_full_single-pack_release_v3_093477fa.jsonl",
+    "role": "single-pack-release-candidate",
+    "sha256": "093477fa126ba7ab26f7d28a08eacc8b9366934b0726890dba46fe15fbfe4d38"
+  },
+  "packagePreStampScopeSha256": "1eefb46b6f7013257a2b6ba335356f4609110a435a65428a130c498c534fd164",
+  "publishBlocked": false,
+  "publishReady": true,
+  "questionRange": [
+    149,
+    444
+  ],
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/3.0.0",
+  "subjectSlug": "fen-q0149-q0444",
+  "title": "8. Sınıf Fen Bilimleri Kanıtlı q0149-q0444 Kapsamı"
+}
