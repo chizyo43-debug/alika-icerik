@@ -65,7 +65,10 @@ jobs:
       - name: bağlı-alan denetimi
         if: github.event_name == 'pull_request'
         run: |
+          # PR birleşme yarışı sırasında checkout içindeki origin/main daha yeni
+          # bir commit'e işaret edebilir. O ref'i geriye/ileriye taşımak yerine
+          # denetime özel, güvenle üzerine yazılabilen ayrı bir ref kullan.
           git fetch --no-tags --depth=1 origin \
-            "${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}"
+            "+refs/heads/${{ github.base_ref }}:refs/remotes/audit/${{ github.base_ref }}"
           python tools/check_paired_edit.py \
-            --base "origin/${{ github.base_ref }}"
+            --base "audit/${{ github.base_ref }}"
