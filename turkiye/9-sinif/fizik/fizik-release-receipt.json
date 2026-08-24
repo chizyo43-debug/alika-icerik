@@ -1,0 +1,254 @@
+{
+  "candidate": {
+    "bytes": 1436041,
+    "file": "tr_g09_fizik_full_release_candidate_v4_b8aef2b1.jsonl",
+    "lines": 217,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\release-candidate\\tr_g09_fizik_full_release_candidate_v4_b8aef2b1.jsonl",
+    "sha256": "1014dc9361e5d17dae68d7ff7632179f9671fa8cb9ea036dca39e7230d4de6fa"
+  },
+  "canonicalIntegration": "blocked-for-root",
+  "canonicalPreflight": {
+    "bytes": 2656,
+    "file": "g09_fizik_full_canonical_preflight_v4_ca639735.json",
+    "lines": 53,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\release-candidate\\g09_fizik_full_canonical_preflight_v4_ca639735.json",
+    "sha256": "ca6397359c0094c4813b80913676129243e5c9cc22c14bf5b2094608bcb2ce35"
+  },
+  "canonicalWrite": false,
+  "counts": {
+    "families": 48,
+    "notes": 24,
+    "pack": 1,
+    "questions": 192,
+    "records": 217
+  },
+  "gates": {
+    "contentFindings": 0,
+    "exactDuplicates": 0,
+    "legacyAttestationRemaining": 0,
+    "nearDuplicates": 0,
+    "openPostStampFindings": 0,
+    "strictErrors": 0,
+    "strictWarnings": 0
+  },
+  "gitWrite": false,
+  "postStampVerifier": {
+    "bytes": 811,
+    "file": "g09_fizik_full_post_stamp_verification_v4_10c6feb0.json",
+    "lines": 20,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\release-candidate\\g09_fizik_full_post_stamp_verification_v4_10c6feb0.json",
+    "sha256": "10c6feb02b8a6244f8e8788a7ac9b4dfb69084371c1e24f02127bc883a721bed"
+  },
+  "publishBlocked": false,
+  "publishReady": true,
+  "qualityScoreReceipt": {
+    "bytes": 1543,
+    "file": "g09_fizik_full_quality_score_receipt_v4_81c8386c.json",
+    "lines": 39,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\release-candidate\\g09_fizik_full_quality_score_receipt_v4_81c8386c.json",
+    "sha256": "81c8386c070986ccb7335f8fe140cbb3bb5705cf56dfcf14c09b3907788c6eb1"
+  },
+  "recordReviewLedger": {
+    "bytes": 87539,
+    "file": "g09_fizik_full_record_review_ledger_v4_a7f0357a.jsonl",
+    "lines": 217,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\release-candidate\\g09_fizik_full_record_review_ledger_v4_a7f0357a.jsonl",
+    "sha256": "a7f0357afcb5355d034473c11e37f9a5300541b476659e022df5886af99f0e61"
+  },
+  "releaseEvidenceBundle": {
+    "bytes": 2831,
+    "file": "g09_fizik_full_release_bundle_v4_6f5947db.json",
+    "lines": 56,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\release-candidate\\g09_fizik_full_release_bundle_v4_6f5947db.json",
+    "sha256": "6f5947dbedfa06ed4699df6f10a14b7afaef12fae418757e3efdf6938775dc64"
+  },
+  "reviewManifest": {
+    "bytes": 11067,
+    "file": "g09_fizik_full_review_manifest_v4_d39955f6.json",
+    "lines": 225,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\release-candidate\\g09_fizik_full_review_manifest_v4_d39955f6.json",
+    "sha256": "d39955f64d5e41204a548116036c4a1cdace0320295bacbb40d8e0e94117e4e0"
+  },
+  "reviewModel": "gpt-5.6-sol",
+  "reviewStatus": "ai-verified",
+  "rubric": {
+    "bytes": 504,
+    "file": "g09_full_coverage_review_rubric_v4_5c35af79.json",
+    "lines": 18,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\release-candidate\\g09_full_coverage_review_rubric_v4_5c35af79.json",
+    "sha256": "5c35af79a14c6540e7c7be76a1a596e0114d8b68a410e8af3c013078056cf1bb"
+  },
+  "schema": "alika-g09-subject-release-candidate-receipt/4.0.0",
+  "sourceArtifacts": [
+    {
+      "bytes": 41035,
+      "file": "tr_g09_fizik_unit01_fiz_9_1_1_q0001_q0008_v1_38aa0772.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit01_fiz_9_1_1_q0001_q0008_v1_38aa0772.jsonl",
+      "sha256": "38aa077225fbbe5abf457af974ce6021e0583b6aa736a36931e359c74c5f1a49"
+    },
+    {
+      "bytes": 39504,
+      "file": "tr_g09_fizik_unit01_fiz_9_1_2_q0009_q0016_v1_48280b27.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit01_fiz_9_1_2_q0009_q0016_v1_48280b27.jsonl",
+      "sha256": "48280b27c2b4de8e8f8e2c80a73b9899fefd620216f24cd0d2b56c99221dd3af"
+    },
+    {
+      "bytes": 41202,
+      "file": "tr_g09_fizik_unit01_fiz_9_1_3_q0017_q0024_v1_d2c2362e.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit01_fiz_9_1_3_q0017_q0024_v1_d2c2362e.jsonl",
+      "sha256": "d2c2362eb1334db533e9ca3c03be310cf6a5ed532c507612de77a9592e14d050"
+    },
+    {
+      "bytes": 41405,
+      "file": "tr_g09_fizik_unit01_fiz_9_1_4_q0025_q0032_v1_f820b1df.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit01_fiz_9_1_4_q0025_q0032_v1_f820b1df.jsonl",
+      "sha256": "f820b1df557949991e2d16387840a29c6c4f7f0552697ac3d10abc3986455778"
+    },
+    {
+      "bytes": 47651,
+      "file": "tr_g09_fizik_unit02_fiz_9_2_1_q0033_q0040_v1_5aef4da0.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit02_fiz_9_2_1_q0033_q0040_v1_5aef4da0.jsonl",
+      "sha256": "5aef4da012221b0dd97ef72c399c08a45c768596759d4be34742b099b3f7d229"
+    },
+    {
+      "bytes": 47102,
+      "file": "tr_g09_fizik_unit02_fiz_9_2_2_q0041_q0048_v1_84c7f49f.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit02_fiz_9_2_2_q0041_q0048_v1_84c7f49f.jsonl",
+      "sha256": "84c7f49f436b1224dc2365cdd4dba73b46d157d242ece0f09094bba2a73e03d9"
+    },
+    {
+      "bytes": 47929,
+      "file": "tr_g09_fizik_unit02_fiz_9_2_3_q0049_q0056_v1_5097430c.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit02_fiz_9_2_3_q0049_q0056_v1_5097430c.jsonl",
+      "sha256": "5097430c2c9ac7e5301a7bac0bd3b31a484666b77366b490af8a994771198965"
+    },
+    {
+      "bytes": 49841,
+      "file": "tr_g09_fizik_unit02_fiz_9_2_4_q0057_q0064_v1_2870e963.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit02_fiz_9_2_4_q0057_q0064_v1_2870e963.jsonl",
+      "sha256": "2870e9631c19ad345007fb7551dcb1c3b8bb37e0e43dae2cd6f2c917b43cb9f5"
+    },
+    {
+      "bytes": 48705,
+      "file": "tr_g09_fizik_unit02_fiz_9_2_5_q0065_q0072_v1_dac4a701.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit02_fiz_9_2_5_q0065_q0072_v1_dac4a701.jsonl",
+      "sha256": "dac4a7015d9d125550ffea0c61cad6e69ffe3a4a2986ab402053c602a5826157"
+    },
+    {
+      "bytes": 47554,
+      "file": "tr_g09_fizik_unit02_fiz_9_2_6_q0073_q0080_v1_0fd55ec1.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit02_fiz_9_2_6_q0073_q0080_v1_0fd55ec1.jsonl",
+      "sha256": "0fd55ec1d7b8e0927e4736f7125c75853e9fd1adb5a7b6e94676bd8ab4a750e8"
+    },
+    {
+      "bytes": 46757,
+      "file": "tr_g09_fizik_unit02_fiz_9_2_7_q0081_q0088_v1_e0aea6f5.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit02_fiz_9_2_7_q0081_q0088_v1_e0aea6f5.jsonl",
+      "sha256": "e0aea6f5138f98223f34d25984fbd0c7287279a45974187fe3be2b0d2b18ca45"
+    },
+    {
+      "bytes": 43744,
+      "file": "tr_g09_fizik_unit03_fiz_9_3_1_q0089_q0096_v1_28d4872a.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit03_fiz_9_3_1_q0089_q0096_v1_28d4872a.jsonl",
+      "sha256": "28d4872a9af5a2aee175732c8887defaa940649e864b511579a9a10a84d24314"
+    },
+    {
+      "bytes": 45665,
+      "file": "tr_g09_fizik_unit03_fiz_9_3_2_q0097_q0104_v1_6100bf18.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit03_fiz_9_3_2_q0097_q0104_v1_6100bf18.jsonl",
+      "sha256": "6100bf18edf2c6d07a6f364043d8e29606077a20a61ee40cf21fe716f1c01c58"
+    },
+    {
+      "bytes": 49271,
+      "file": "tr_g09_fizik_unit03_fiz_9_3_3_q0105_q0112_v1_1b5db8e8.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit03_fiz_9_3_3_q0105_q0112_v1_1b5db8e8.jsonl",
+      "sha256": "1b5db8e824637ea587d599d69412fb23d68a1d7891b9138182feff5ac50905e3"
+    },
+    {
+      "bytes": 44950,
+      "file": "tr_g09_fizik_unit03_fiz_9_3_4_q0113_q0120_v1_fd909129.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit03_fiz_9_3_4_q0113_q0120_v1_fd909129.jsonl",
+      "sha256": "fd909129994abd836a979dc84e073d021143e8153aa09f19e48028494172a5df"
+    },
+    {
+      "bytes": 49754,
+      "file": "tr_g09_fizik_unit03_fiz_9_3_5_q0121_q0128_v1_b4ab589a.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit03_fiz_9_3_5_q0121_q0128_v1_b4ab589a.jsonl",
+      "sha256": "b4ab589a903c639c589cb29413f3e3e22395e7bf4a8ee8562b5af6a3c9c5f230"
+    },
+    {
+      "bytes": 48729,
+      "file": "tr_g09_fizik_unit03_fiz_9_3_6_q0129_q0136_v1_c0755101.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit03_fiz_9_3_6_q0129_q0136_v1_c0755101.jsonl",
+      "sha256": "c07551017403ce4f35e726202998e971aea7b4a8718eba39303d8d7de1f28091"
+    },
+    {
+      "bytes": 48870,
+      "file": "tr_g09_fizik_unit03_fiz_9_3_7_q0137_q0144_v1_5b576508.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit03_fiz_9_3_7_q0137_q0144_v1_5b576508.jsonl",
+      "sha256": "5b576508c86d0b50a2d07e5ad14f18a747016d7600344fb30eebdba5445d74e0"
+    },
+    {
+      "bytes": 48439,
+      "file": "tr_g09_fizik_unit04_fiz_9_4_1_q0145_q0152_v1_2dc8d41a.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit04_fiz_9_4_1_q0145_q0152_v1_2dc8d41a.jsonl",
+      "sha256": "2dc8d41a649bc78d61d7894bdfa0d16ccc0a0489b882501bd8ba3a698e117940"
+    },
+    {
+      "bytes": 48139,
+      "file": "tr_g09_fizik_unit04_fiz_9_4_2_q0153_q0160_v1_aadc8251.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit04_fiz_9_4_2_q0153_q0160_v1_aadc8251.jsonl",
+      "sha256": "aadc825185998e0e6e9c4c97b89116f2bd360d76acbd056c4c319cae0dbbcb48"
+    },
+    {
+      "bytes": 49700,
+      "file": "tr_g09_fizik_unit04_fiz_9_4_3_q0161_q0168_v1_78b40f13.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit04_fiz_9_4_3_q0161_q0168_v1_78b40f13.jsonl",
+      "sha256": "78b40f137c40a2ae35e250b28d2bca982914a35190b838d59c33adf65d22aaa6"
+    },
+    {
+      "bytes": 46872,
+      "file": "tr_g09_fizik_unit04_fiz_9_4_4_q0169_q0176_v1_bec0d8dd.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit04_fiz_9_4_4_q0169_q0176_v1_bec0d8dd.jsonl",
+      "sha256": "bec0d8dd8f03755fb4655e83c56316e1c730441dd3fda9e90f665cd45d1c7999"
+    },
+    {
+      "bytes": 46239,
+      "file": "tr_g09_fizik_unit04_fiz_9_4_5_q0177_q0184_v1_8da80272.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit04_fiz_9_4_5_q0177_q0184_v1_8da80272.jsonl",
+      "sha256": "8da802725a37d14c6142ee74cc638757fb1267e7ca476127016e8b1a1a1b2709"
+    },
+    {
+      "bytes": 50025,
+      "file": "tr_g09_fizik_unit04_fiz_9_4_6_q0185_q0192_v1_70242d12.jsonl",
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\fizik\\paket\\onayli-aday\\tr_g09_fizik_unit04_fiz_9_4_6_q0185_q0192_v1_70242d12.jsonl",
+      "sha256": "70242d12057b7648738e856f221088f36d1d0b481af704eee551056704ef9472"
+    }
+  ],
+  "status": "PASS",
+  "subject": "Fizik"
+}
