@@ -1,0 +1,180 @@
+{
+  "boundary": {
+    "canonicalWritten": false,
+    "gitTouched": false,
+    "integrationAuthority": "root-only",
+    "mainTouched": false
+  },
+  "candidatePlan": {
+    "bytes": 25316,
+    "lines": 635,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\baseline-audit\\checkpoint\\g08_inkilap_candidate_package_plan_v1_6c2a3943.json",
+    "role": "candidate-merge-plan",
+    "sha256": "6c2a3943bd0fe97855af446d7fb5c5a60df2e2ab1ccf4d3a8eb4ba6773b4289d"
+  },
+  "counts": {
+    "note": 15,
+    "pack": 1,
+    "question": 120,
+    "total": 136
+  },
+  "createdAt": "2026-08-24T14:45:24.275445+00:00",
+  "curriculum": "MEB-TYMM-2024",
+  "decision": "PASS",
+  "gates": {
+    "canonicalShapedPreflightStrict": {
+      "errors": 0,
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "contentFinding": 0,
+    "duplicateId": 0,
+    "exactDuplicate": 0,
+    "jsonlParse": "PASS 136/136",
+    "labelsConflict": 0,
+    "nearDuplicate": 0,
+    "packageWideDistractorRationaleDiversification": {
+      "meaningPreservedFromBoundInputs": true,
+      "rewrittenIncorrectReasons": 360
+    },
+    "postStampStrict": {
+      "errors": 0,
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "postStampVerifier": {
+      "findings": 0,
+      "records": 136
+    },
+    "sourceHashDrift": 0,
+    "sourcesConflict": 0
+  },
+  "grade": 8,
+  "humanReviewed": false,
+  "inputs": [
+    {
+      "bytes": 49001,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u01_ita-8-1-1_q0001_q0008_v1_957e0605.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "957e06055610b451d152007c10dd0c7874634a4720aa8c9741b703714ad9c7f4"
+    },
+    {
+      "bytes": 44529,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u01_ita-8-1-2_q0009_q0016_v1_c721b738.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "c721b73853b4d7f1ced4155841d3082dce557f4853fdec92e1b15b24d32c72fa"
+    },
+    {
+      "bytes": 41008,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u01_ita-8-1-3_q0017_q0024_v1_e419132a.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "e419132ad94c94ed256470b82c50b1ddc076633f7fc2a255137f08ae9dfe4fcd"
+    },
+    {
+      "bytes": 45450,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u02_ita-8-2-1_q0025_q0032_v1_da79d99f.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "da79d99ffb93488f381836e1cdaf36a105cf6e438393f5ea500347ec109e77f8"
+    },
+    {
+      "bytes": 44379,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u02_ita-8-2-2_q0033_q0040_v1_263ac587.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "263ac587b44fc208b6d74ce3ee20548002f6387b8d9b824f93d9971ab0d1f657"
+    },
+    {
+      "bytes": 44245,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u02_ita-8-2-3_q0041_q0048_v1_6708c727.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "6708c727e59eda23ffe98d4f31ea4aac60e8923295d04c594aadc10d30ddc2cd"
+    },
+    {
+      "bytes": 46924,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u02_ita-8-2-4_q0049_q0056_v1_1e219916.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "1e219916b20fa796fd0895774dc36b341d863460609fdb0fb32a13f3236dba19"
+    },
+    {
+      "bytes": 43332,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u02_ita-8-2-5_q0057_q0064_v1_a47939e4.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "a47939e49a698a7be1bb065ac549ab1e8ee0a15437aef1e9cab618564818c537"
+    },
+    {
+      "bytes": 44480,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u03_ita-8-3-1_q0065_q0072_v1_fcfea233.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "fcfea233f40a91018c2fda2007d0410b0f434393a6580a149dd7d07fced31e9b"
+    },
+    {
+      "bytes": 42959,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u03_ita-8-3-2_q0073_q0080_v1_31ba0854.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "31ba0854775b0e279a2e35c98c356bb6c1630e194ccb4f0fc2b871899017df1e"
+    },
+    {
+      "bytes": 43720,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u03_ita-8-3-3_q0081_q0088_v1_4a93dd69.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "4a93dd69b62e0a28ece8665d432372428ad3d58313b349b0d8263af632569011"
+    },
+    {
+      "bytes": 43326,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u03_ita-8-3-4_q0089_q0096_v1_c90eed01.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "c90eed0188a0ae414ddb1590e823a47237299e0674e594e970cadce6ed8bfa9a"
+    },
+    {
+      "bytes": 44603,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u04_ita-8-4-1_q0097_q0104_v1_f89f3839.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "f89f3839a0facfe1cf4d042b337c113e8b582cac7b1fbcf9acfe42f425b7b8af"
+    },
+    {
+      "bytes": 45004,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u04_ita-8-4-2_q0105_q0112_v1_1ce18634.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "1ce18634d6c9d98064a06fd540ebdc583d7aa14e5268a80449ecb7f025771381"
+    },
+    {
+      "bytes": 43722,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\tr_g08_inkilap_u04_ita-8-4-3_q0113_q0120_v1_0b460909.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "0b46090973cca859a252efa325c0584e1c54b5c96d97ca23a107f29d897f1a1a"
+    }
+  ],
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 756578,
+    "lines": 136,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\release-candidate\\tr_g08_inkilap_full_single-pack_release_v2_78dcefa5.jsonl",
+    "role": "single-pack-release-candidate",
+    "sha256": "78dcefa5b9be168d867095b3fb6d156dbfe18b156a618592ef418b6412e0d2ab"
+  },
+  "packagePreStampScopeSha256": "97936fa92a1a990f0938a33c4c79e1630342d6250a48a6feb3fc2810fb23745f",
+  "publishBlocked": false,
+  "publishReady": true,
+  "questionRange": [
+    1,
+    120
+  ],
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/1.0.0",
+  "subjectSlug": "inkilap",
+  "title": "8. Sınıf T.C. İnkılap Tarihi ve Atatürkçülük Tam Resmî Kapsam"
+}

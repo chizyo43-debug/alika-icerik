@@ -1,0 +1,208 @@
+{
+  "boundary": {
+    "canonicalWritten": false,
+    "gitTouched": false,
+    "integrationAuthority": "root-only",
+    "mainTouched": false
+  },
+  "candidatePlan": {
+    "bytes": 26005,
+    "lines": 718,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\baseline-audit\\checkpoint\\g08_dkab_candidate_package_plan_v1_fafdd9ad.json",
+    "role": "candidate-merge-plan",
+    "sha256": "fafdd9ad33453c79796a89b63b613d13a4b6241f9564c99ea5c6d6d6832475e7"
+  },
+  "counts": {
+    "note": 19,
+    "pack": 1,
+    "question": 152,
+    "total": 172
+  },
+  "createdAt": "2026-08-24T14:45:40.857430+00:00",
+  "curriculum": "MEB-TYMM-2024",
+  "decision": "PASS",
+  "gates": {
+    "canonicalShapedPreflightStrict": {
+      "errors": 0,
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "contentFinding": 0,
+    "duplicateId": 0,
+    "exactDuplicate": 0,
+    "jsonlParse": "PASS 172/172",
+    "labelsConflict": 0,
+    "nearDuplicate": 0,
+    "packageWideDistractorRationaleDiversification": {
+      "meaningPreservedFromBoundInputs": true,
+      "rewrittenIncorrectReasons": 456
+    },
+    "postStampStrict": {
+      "errors": 0,
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "postStampVerifier": {
+      "findings": 0,
+      "records": 172
+    },
+    "sourceHashDrift": 0,
+    "sourcesConflict": 0
+  },
+  "grade": 8,
+  "humanReviewed": false,
+  "inputs": [
+    {
+      "bytes": 47107,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u01_dkab-8-1-1_q0001_q0008_v5_e04e259a.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "e04e259adadba331b77f443c1f620d947cc00c69a11fa358ba9cf80cd6ccbf29"
+    },
+    {
+      "bytes": 43089,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u01_dkab-8-1-2_q0009_q0016_v5_7d8c8302.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "7d8c830292943f717cc14f3aceb818736306aa9085dcd0c9c0fe86809ea52720"
+    },
+    {
+      "bytes": 44567,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u01_dkab-8-1-3_q0017_q0024_v5_362e770b.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "362e770b63da6b2bc2152297c5c3887afbb9bcbe373dcce90c12fb8ba430068b"
+    },
+    {
+      "bytes": 45091,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u01_dkab-8-1-4_q0025_q0032_v5_145c51e6.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "145c51e6a74a804ba808c9d5aff77ee9ec4a311587a5b5abb872c5d32e07c735"
+    },
+    {
+      "bytes": 43682,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u02_dkab-8-2-1_q0033_q0040_v5_3ffaf27e.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "3ffaf27e5ad8fe6e199cc562cb9c1e7da9cf1961e3f1196fad712808a99fc8f6"
+    },
+    {
+      "bytes": 45047,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u02_dkab-8-2-2_q0041_q0048_v5_b1495254.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "b1495254ab3cf2ad21c81774562ffc12bea2dd15f1cc71d4bbb85b6ee6464205"
+    },
+    {
+      "bytes": 46317,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u02_dkab-8-2-3_q0049_q0056_v5_a826945f.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "a826945f13d5b5ada85519e420f2dc8422609ecd597d3de041490a18a63d40c6"
+    },
+    {
+      "bytes": 43725,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u02_dkab-8-2-4_q0057_q0064_v5_2359b25a.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "2359b25afc9e89d7b51b6e1129fb81f6568cc0c921d385a36019d3b94c568584"
+    },
+    {
+      "bytes": 43551,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u03_dkab-8-3-1_q0065_q0072_v5_bd2e007f.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "bd2e007f4b5d4ce77f322bfb4984bd2b2bcc58d4b3e93a0b25a58af32f74a1c3"
+    },
+    {
+      "bytes": 43697,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u03_dkab-8-3-2_q0073_q0080_v5_f118d73c.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "f118d73cf45754b7b34352605c0685a8d23acdd42f8a3eaf88a517acf3de29eb"
+    },
+    {
+      "bytes": 44345,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u03_dkab-8-3-3_q0081_q0088_v5_57ce6106.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "57ce6106fb04e0fd2789de15077b69fb3fca7194618b7b6a6e4097df56aad2ca"
+    },
+    {
+      "bytes": 44581,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u04_dkab-8-4-1_q0089_q0096_v5_24548e4a.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "24548e4a03ea61c4c5da1ea24920fe2ae890b33d2b94a58dc1704665ef041c37"
+    },
+    {
+      "bytes": 43717,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u04_dkab-8-4-2_q0097_q0104_v5_65129912.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "6512991280af6cfbc15d5b589a32da09e9da5b26af24a9ae2f46bcbe083ec210"
+    },
+    {
+      "bytes": 45169,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u04_dkab-8-4-3_q0105_q0112_v5_3f93f602.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "3f93f60241e96362989f8521d8bd9baf4b2275cdf7dc2cf5335448fb6194d1f2"
+    },
+    {
+      "bytes": 43895,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u04_dkab-8-4-4_q0113_q0120_v5_51bf155e.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "51bf155ec245bdeeceb9af6d307914b5e3c313c598719913e739a5369a9662d2"
+    },
+    {
+      "bytes": 43557,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u04_dkab-8-4-5_q0121_q0128_v5_c645aee3.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "c645aee39d095e52021677de408d56d989d539fce49dca08ec52adc3adaafea6"
+    },
+    {
+      "bytes": 45499,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u05_dkab-8-5-1_q0129_q0136_v5_56ae3137.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "56ae3137c0f0d20de8f3932629dd90b4113b25551f03ab4d9d5c3d1b6cdfa3da"
+    },
+    {
+      "bytes": 45417,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u05_dkab-8-5-2_q0137_q0144_v5_20f51b79.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "20f51b790968b75823d21a14bd7a3d59c251450b4280f553009033b3514dd16b"
+    },
+    {
+      "bytes": 47411,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\tr_g08_dkab_u05_dkab-8-5-3_q0145_q0152_v5_38918a58.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "38918a58901cb75903df332fc8f05672e8b00c2d0a987d0c39846676a5842443"
+    }
+  ],
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 965579,
+    "lines": 172,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\release-candidate\\tr_g08_dkab_full_single-pack_release_v2_a76a5a5a.jsonl",
+    "role": "single-pack-release-candidate",
+    "sha256": "a76a5a5a7802a072a4de50e99e97ee483e63323fc8511c684285c4b6593386dc"
+  },
+  "packagePreStampScopeSha256": "af9c2a2af7702515feb4f447cb521c60f9d8aec0a5270114048556f7100594cd",
+  "publishBlocked": false,
+  "publishReady": true,
+  "questionRange": [
+    1,
+    152
+  ],
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/1.0.0",
+  "subjectSlug": "dkab",
+  "title": "8. Sınıf Din Kültürü ve Ahlak Bilgisi Tam Resmî Kapsam"
+}

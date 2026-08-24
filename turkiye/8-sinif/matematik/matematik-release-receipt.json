@@ -1,0 +1,236 @@
+{
+  "boundary": {
+    "canonicalWritten": false,
+    "gitTouched": false,
+    "integrationAuthority": "root-only",
+    "mainTouched": false
+  },
+  "candidatePlan": {
+    "bytes": 66803,
+    "lines": 1370,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\baseline-audit\\checkpoint\\g08_matematik_candidate_package_plan_v1_cbdafd9b.json",
+    "role": "candidate-merge-plan",
+    "sha256": "cbdafd9b625f34c63785e288644c9eed5476de35d4c324ec257ef1e7dcbd9bc1"
+  },
+  "counts": {
+    "note": 23,
+    "pack": 1,
+    "question": 184,
+    "total": 208
+  },
+  "createdAt": "2026-08-24T14:44:46.882133+00:00",
+  "curriculum": "MEB-TYMM-2024",
+  "decision": "PASS",
+  "gates": {
+    "canonicalShapedPreflightStrict": {
+      "errors": 0,
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "contentFinding": 0,
+    "duplicateId": 0,
+    "exactDuplicate": 0,
+    "jsonlParse": "PASS 208/208",
+    "labelsConflict": 0,
+    "nearDuplicate": 0,
+    "packageWideDistractorRationaleDiversification": {
+      "meaningPreservedFromBoundInputs": true,
+      "rewrittenIncorrectReasons": 552
+    },
+    "postStampStrict": {
+      "errors": 0,
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "postStampVerifier": {
+      "findings": 0,
+      "records": 208
+    },
+    "sourceHashDrift": 0,
+    "sourcesConflict": 0
+  },
+  "grade": 8,
+  "humanReviewed": false,
+  "inputs": [
+    {
+      "bytes": 44127,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u01_mat-8-1-1_q0001_q0008_v1_6ed789ce.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "6ed789ce2f06aa0fe38f11725fba0ee2df9b1c7a36d3a1ae753aa823f6b10f76"
+    },
+    {
+      "bytes": 41582,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u01_mat-8-1-2_q0009_q0016_v1_447986ac.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "447986ac1362fba252faed1bd819820b7788230ee75aa034536863a46f64850a"
+    },
+    {
+      "bytes": 41105,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u01_mat-8-1-3_q0017_q0024_v1_4a55de22.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "4a55de22951cac7e08622b6282240a66078f6e45e3d03b4dabcfda8efbc0c90c"
+    },
+    {
+      "bytes": 42223,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u01_mat-8-1-4_q0025_q0032_v1_090c3c0c.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "090c3c0cb6c46f18ee51864ff46433b9484e8a8e6bfb6da64887ad605105fce9"
+    },
+    {
+      "bytes": 42654,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u02_mat-8-2-1_q0033_q0040_v1_3e822d94.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "3e822d94efecd6da423862fce9be9863fec4fe1255592fb8beaec4690ffffcf4"
+    },
+    {
+      "bytes": 42275,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u02_mat-8-2-2_q0041_q0048_v1_debbb1b7.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "debbb1b7d849b96d13389080f4edc471e49d1afe781d15a24809d29383070f98"
+    },
+    {
+      "bytes": 42781,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u02_mat-8-2-3_q0049_q0056_v1_0278a36a.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "0278a36af9497bc1d2696e4c2e53199f5e71ca80dbfce91da7f2268a80a9d117"
+    },
+    {
+      "bytes": 42999,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u02_mat-8-2-4_q0057_q0064_v1_9708257d.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "9708257d8b41d3f3a930c2fea0cd8bf6640d7c6c8a093387411111be34b3ad81"
+    },
+    {
+      "bytes": 41497,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u03_mat-8-3-1_q0065_q0072_v1_6d631794.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "6d6317943305b7a318bf1dbd839ddad6b907fcd5b0a79f988ad87a88ff6921e7"
+    },
+    {
+      "bytes": 40283,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u03_mat-8-3-2_q0073_q0080_v1_e4f8bab2.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "e4f8bab2417530f5290e9c7836b618305c36f081fea07e67679267a68bcb04ad"
+    },
+    {
+      "bytes": 42791,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u03_mat-8-3-3_q0081_q0088_v1_d6e47005.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "d6e470050ee8e93273836847afbb6177ac01ce422658f0a368fad060d5ea76b4"
+    },
+    {
+      "bytes": 40668,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u03_mat-8-3-4_q0089_q0096_v1_bd8e31d2.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "bd8e31d2854389b4e4eacd0d32cc77fbb2f8bd6240529adc194c4a27c4a93582"
+    },
+    {
+      "bytes": 42248,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u03_mat-8-3-5_q0097_q0104_v1_758df361.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "758df361f49cc3e7d5eab0ab2e2d10e1ce9335b312d8f0d822b82c4fe0f50160"
+    },
+    {
+      "bytes": 37681,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u03_mat-8-3-6_q0105_q0112_v1_970f1c46.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "970f1c46d22f5212ff26ce333260aa7297f9e4f4174780347182a894bbeb78d0"
+    },
+    {
+      "bytes": 43508,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u04_mat-8-4-1_q0113_q0120_v1_f13f0f1b.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "f13f0f1b7cb6d1731a3b5900092b7a759cebef21ae3f8e8888d920ea46b03196"
+    },
+    {
+      "bytes": 39227,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u04_mat-8-4-2_q0121_q0128_v1_f7ea7dd7.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "f7ea7dd7d6505a55322734b3516784187f9d05734d2c891f05f8fc41f0cab41a"
+    },
+    {
+      "bytes": 40036,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u04_mat-8-4-3_q0129_q0136_v1_77284cc8.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "77284cc8da26c7088d365ebf69eccccaeb5e6578c637865b31c59ad360e6b7f0"
+    },
+    {
+      "bytes": 42006,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u05_mat-8-5-1_q0137_q0144_v1_a67a167f.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "a67a167f628d8db167ea31c9ca9de9d631cdb0377003db8b14ce92475bcdc438"
+    },
+    {
+      "bytes": 41588,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u05_mat-8-5-2_q0145_q0152_v1_04fd0ff4.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "04fd0ff4d3863bdff5af6e93c0a02a7db2490f3357bd691fc28da853873d9ea8"
+    },
+    {
+      "bytes": 39713,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u05_mat-8-5-3_q0153_q0160_v1_04a81b22.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "04a81b22e939009554831712b4de8901c8e17d42ae4f925ea2136db39f2a322c"
+    },
+    {
+      "bytes": 43729,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u06_mat-8-6-1_q0161_q0168_v1_0ad26761.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "0ad26761683523f7593b5e54e4318d54253f7c82d9e7ca907021b88b191f7868"
+    },
+    {
+      "bytes": 45162,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u06_mat-8-6-2_q0169_q0176_v1_750e7261.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "750e7261defa48958569504cbd9c49aa89fdd81e95e5c965a99a5069b1b8f5ed"
+    },
+    {
+      "bytes": 43733,
+      "lines": 10,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\tr_g08_matematik_u07_mat-8-7-1_q0177_q0184_v1_b81ac54f.jsonl",
+      "role": "approved-jsonl-or-current-authority",
+      "sha256": "b81ac54f7b5dcd7e4dc4beed91490ec99172ef92ccda9bebdd53f853ca346e42"
+    }
+  ],
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 1112706,
+    "lines": 208,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\matematik\\paket\\onayli-aday\\release-candidate\\tr_g08_matematik_full_single-pack_release_v2_369c7e91.jsonl",
+    "role": "single-pack-release-candidate",
+    "sha256": "369c7e918880866ed3c3fe20d10212adf8c58716fbbb4351715ba4958e1d013e"
+  },
+  "packagePreStampScopeSha256": "00136c5ceeb0e76d88bce21730ad5215117953f0830d5a3cd6abcbf6d61be7f7",
+  "publishBlocked": false,
+  "publishReady": true,
+  "questionRange": [
+    1,
+    184
+  ],
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/1.0.0",
+  "subjectSlug": "matematik",
+  "title": "8. Sınıf Matematik Tam Resmî Kapsam"
+}
