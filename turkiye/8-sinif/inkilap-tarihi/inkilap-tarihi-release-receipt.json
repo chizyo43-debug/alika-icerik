@@ -18,7 +18,7 @@
     "question": 120,
     "total": 136
   },
-  "createdAt": "2026-08-24T14:45:24.275445+00:00",
+  "createdAt": "2026-08-24T15:07:07.017057+00:00",
   "curriculum": "MEB-TYMM-2024",
   "decision": "PASS",
   "gates": {
@@ -45,6 +45,11 @@
     "postStampVerifier": {
       "findings": 0,
       "records": 136
+    },
+    "qf008NoteObjectives": {
+      "addedOrCorrected": 15,
+      "findings": 0,
+      "verified": 15
     },
     "sourceHashDrift": 0,
     "sourcesConflict": 0
@@ -161,20 +166,20 @@
   "mode": "ai-only",
   "model": "gpt-5.6-sol",
   "package": {
-    "bytes": 756578,
+    "bytes": 756998,
     "lines": 136,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\release-candidate\\tr_g08_inkilap_full_single-pack_release_v2_78dcefa5.jsonl",
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\inkilap-tarihi\\paket\\onayli-aday\\release-candidate\\tr_g08_inkilap_full_single-pack_release_v3_6659b01b.jsonl",
     "role": "single-pack-release-candidate",
-    "sha256": "78dcefa5b9be168d867095b3fb6d156dbfe18b156a618592ef418b6412e0d2ab"
+    "sha256": "6659b01b6cff9a53462f33f2f3d670547a2d41d91e1bce3638edace4d7a109d9"
   },
-  "packagePreStampScopeSha256": "97936fa92a1a990f0938a33c4c79e1630342d6250a48a6feb3fc2810fb23745f",
+  "packagePreStampScopeSha256": "3752900e01e1f29629e32af05656ad9a2bcecc84dd0ca083c8fafd1b29695368",
   "publishBlocked": false,
   "publishReady": true,
   "questionRange": [
     1,
     120
   ],
-  "schema": "alika-hash-bound-sol-single-pack-release-receipt/1.0.0",
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/3.0.0",
   "subjectSlug": "inkilap",
   "title": "8. Sınıf T.C. İnkılap Tarihi ve Atatürkçülük Tam Resmî Kapsam"
 }

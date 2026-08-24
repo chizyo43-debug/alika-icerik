@@ -18,7 +18,7 @@
     "question": 296,
     "total": 333
   },
-  "createdAt": "2026-08-24T14:45:07.388435+00:00",
+  "createdAt": "2026-08-24T15:07:06.481472+00:00",
   "curriculum": "MEB-TYMM-2024",
   "decision": "PASS",
   "gates": {
@@ -45,6 +45,11 @@
     "postStampVerifier": {
       "findings": 0,
       "records": 333
+    },
+    "qf008NoteObjectives": {
+      "addedOrCorrected": 36,
+      "findings": 0,
+      "verified": 36
     },
     "sourceHashDrift": 0,
     "sourcesConflict": 0
@@ -301,20 +306,20 @@
   "mode": "ai-only",
   "model": "gpt-5.6-sol",
   "package": {
-    "bytes": 2809846,
+    "bytes": 2810669,
     "lines": 333,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\release-candidate\\tr_g08_fen-q0149-q0444_full_single-pack_release_v2_c8f3ec18.jsonl",
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\fen-bilimleri\\paket\\onayli-aday\\release-candidate\\tr_g08_fen-q0149-q0444_full_single-pack_release_v3_093477fa.jsonl",
     "role": "single-pack-release-candidate",
-    "sha256": "c8f3ec1853c6332bea620dcb6d75028c22472bbee7eadfcdacf2e789a9e5d128"
+    "sha256": "093477fa126ba7ab26f7d28a08eacc8b9366934b0726890dba46fe15fbfe4d38"
   },
-  "packagePreStampScopeSha256": "b28552bd5e18f82b8d6a2ff82099e524e4eccb48e2e9c325525f53e4d1d51b22",
+  "packagePreStampScopeSha256": "1eefb46b6f7013257a2b6ba335356f4609110a435a65428a130c498c534fd164",
   "publishBlocked": false,
   "publishReady": true,
   "questionRange": [
     149,
     444
   ],
-  "schema": "alika-hash-bound-sol-single-pack-release-receipt/1.0.0",
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/3.0.0",
   "subjectSlug": "fen-q0149-q0444",
   "title": "8. Sınıf Fen Bilimleri Kanıtlı q0149-q0444 Kapsamı"
 }

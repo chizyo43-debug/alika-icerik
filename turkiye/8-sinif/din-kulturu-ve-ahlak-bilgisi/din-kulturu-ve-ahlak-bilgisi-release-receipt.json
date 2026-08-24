@@ -18,7 +18,7 @@
     "question": 152,
     "total": 172
   },
-  "createdAt": "2026-08-24T14:45:40.857430+00:00",
+  "createdAt": "2026-08-24T15:07:07.652830+00:00",
   "curriculum": "MEB-TYMM-2024",
   "decision": "PASS",
   "gates": {
@@ -45,6 +45,11 @@
     "postStampVerifier": {
       "findings": 0,
       "records": 172
+    },
+    "qf008NoteObjectives": {
+      "addedOrCorrected": 19,
+      "findings": 0,
+      "verified": 19
     },
     "sourceHashDrift": 0,
     "sourcesConflict": 0
@@ -189,20 +194,20 @@
   "mode": "ai-only",
   "model": "gpt-5.6-sol",
   "package": {
-    "bytes": 965579,
+    "bytes": 966111,
     "lines": 172,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\release-candidate\\tr_g08_dkab_full_single-pack_release_v2_a76a5a5a.jsonl",
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\release-candidate\\tr_g08_dkab_full_single-pack_release_v3_c15ae64a.jsonl",
     "role": "single-pack-release-candidate",
-    "sha256": "a76a5a5a7802a072a4de50e99e97ee483e63323fc8511c684285c4b6593386dc"
+    "sha256": "c15ae64a59f039eb539fecb0a86ed5996d4625d8f4d3eadfc969bdecbef9233b"
   },
-  "packagePreStampScopeSha256": "af9c2a2af7702515feb4f447cb521c60f9d8aec0a5270114048556f7100594cd",
+  "packagePreStampScopeSha256": "cbf8ae528ee8b013798a051f44360a1d51f456b81dbed19ea2c22eef21a72caf",
   "publishBlocked": false,
   "publishReady": true,
   "questionRange": [
     1,
     152
   ],
-  "schema": "alika-hash-bound-sol-single-pack-release-receipt/1.0.0",
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/3.0.0",
   "subjectSlug": "dkab",
   "title": "8. Sınıf Din Kültürü ve Ahlak Bilgisi Tam Resmî Kapsam"
 }

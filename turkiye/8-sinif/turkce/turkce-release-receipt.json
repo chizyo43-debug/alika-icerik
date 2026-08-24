@@ -6,11 +6,11 @@
     "mainTouched": false
   },
   "candidatePlan": {
-    "bytes": 267568,
-    "lines": 2545,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\baseline-audit\\checkpoint\\g08_turkce_candidate_package_plan_v1_25563189.json",
+    "bytes": 781,
+    "lines": 28,
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\baseline-audit\\checkpoint\\g08_turkce_qf008_frozen_v2_input_plan_v1_76813930.json",
     "role": "candidate-merge-plan",
-    "sha256": "255631896c8e10ce6329b4a1dfa37d1ee2576bbfd76ded69525565f7fea36957"
+    "sha256": "7681393006c7b63d8991a3973d307101bb6907d65baf1051ca8473ba87ddf675"
   },
   "counts": {
     "note": 170,
@@ -18,7 +18,7 @@
     "question": 628,
     "total": 799
   },
-  "createdAt": "2026-08-24T14:46:26.967282+00:00",
+  "createdAt": "2026-08-24T15:07:41.662307+00:00",
   "curriculum": "MEB-TYMM-2024",
   "decision": "PASS",
   "gates": {
@@ -46,6 +46,11 @@
       "findings": 0,
       "records": 799
     },
+    "qf008NoteObjectives": {
+      "addedOrCorrected": 16,
+      "findings": 0,
+      "verified": 170
+    },
     "sourceHashDrift": 0,
     "sourcesConflict": 0
   },
@@ -53,142 +58,30 @@
   "humanReviewed": false,
   "inputs": [
     {
-      "bytes": 6516583,
-      "lines": 655,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\alika_icerik_current\\turkiye\\8-sinif\\turkce\\turkce-tum.jsonl",
+      "bytes": 7414226,
+      "lines": 799,
+      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\release-candidate\\tr_g08_turkce_full_single-pack_release_v2_32db6179.jsonl",
       "role": "approved-jsonl-or-current-authority",
-      "sha256": "84f92326ee48350d43d83fed2193cd79132ae6ccc62605c8f94279dc633b26d2"
-    },
-    {
-      "bytes": 49821,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u02_t-k-8-17_q0509_q0516_v2_370f8d38.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "370f8d38bf8cfab2f1c61fb7eda1cadff8437f7053665d5a66de13bebb1a383f"
-    },
-    {
-      "bytes": 49173,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u02_t-k-8-1_q0501_q0508_v2_3e7db17e.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "3e7db17e741bd1a5b67e35504a9140bb9b0737025d639645b8613452a395e661"
-    },
-    {
-      "bytes": 51981,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u02_t-k-8-22_q0517_q0524_v2_fc35b62d.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "fc35b62d1d01d13def131f9cb7eb0b5cab523bf9d4b733f58b5de68655a6630f"
-    },
-    {
-      "bytes": 50575,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u02_t-k-8-25_q0525_q0532_v2_3ddc54f1.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "3ddc54f1b2dcc1f3a81c4ebab0cee95b9b59089e8f3ca6f795cbca968b8a87c5"
-    },
-    {
-      "bytes": 52181,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u02_t-k-8-26_q0533_q0540_v2_c88bf271.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "c88bf27156572eb3439af9717e06a722f2177f8aa5554a8385d3f55d17a02b3d"
-    },
-    {
-      "bytes": 50393,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u02_t-k-8-4_q0541_q0548_v2_5886c3cc.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "5886c3cc53a2059459ef5a4e68c90a549eb244a902c078df0b27de638c4fbcae"
-    },
-    {
-      "bytes": 49625,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u02_t-k-8-9_q0549_q0556_v2_ec919f05.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "ec919f059515efba2ad1c995bcea6bd647ee1c48bc1b4dedf993799e6581db95"
-    },
-    {
-      "bytes": 52031,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u02_t-o-8-28_q0557_q0564_v2_697aeb14.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "697aeb1410b8da0f47275f781623dba66b455d9843e2e95dc9ab9f35ef8ad9ac"
-    },
-    {
-      "bytes": 53882,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u04_t-d-8-18_q0565_q0572_v2_509540f5.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "509540f5ed99ded68570315b116a4e900f97150c5e02749c80e5dd6159555979"
-    },
-    {
-      "bytes": 53260,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u04_t-d-8-27_q0573_q0580_v2_7644d92c.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "7644d92ccb3db05f268c966bb8d1ae64c4bc6958bd8f27fbae267dbade5a7ed0"
-    },
-    {
-      "bytes": 52958,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u04_t-o-8-11_q0589_q0596_v2_daae6188.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "daae6188c7d1b6554bb0b6d7f36c007dc4031074e1ff3627acd34d0b2c1c8444"
-    },
-    {
-      "bytes": 53504,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u04_t-o-8-13_q0597_q0604_v2_e5aee01e.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "e5aee01e9ab86bfb3f065a5ef06f330e66f880606dc9443142417c27cbdc5209"
-    },
-    {
-      "bytes": 52622,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u04_t-o-8-19_q0605_q0612_v2_12a4f005.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "12a4f0050c20f5838bc2e64502c07ac6f3e53a96b93155f810e0a7de05199988"
-    },
-    {
-      "bytes": 50930,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u04_t-o-8-1_q0581_q0588_v2_511a0d4e.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "511a0d4e2bb772dbda41d4ab50f2bb1ffa859567876d46b5a9f2eb520d3e08f1"
-    },
-    {
-      "bytes": 51212,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u04_t-o-8-23_q0621_q0628_v2_337ba2fc.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "337ba2fce2b278fdfdf694edf3bbc64b4de67455a37fae4e069f6064d99dcd73"
-    },
-    {
-      "bytes": 52554,
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\tr_g08_turkce_u04_t-o-8-2_q0613_q0620_v2_dc856340.jsonl",
-      "role": "approved-jsonl-or-current-authority",
-      "sha256": "dc856340cb1362da7dfe6233f4f708c0909a5b783dbd04589fde00e20c9cd23a"
+      "sha256": "32db61794bc59958c8672c93b1d16d7336d01891d257623d29476494237b93a0"
     }
   ],
   "mode": "ai-only",
   "model": "gpt-5.6-sol",
   "package": {
-    "bytes": 7414226,
+    "bytes": 7537411,
     "lines": 799,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\release-candidate\\tr_g08_turkce_full_single-pack_release_v2_32db6179.jsonl",
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\turkce\\paket\\onayli-aday\\release-candidate\\tr_g08_turkce_full_single-pack_release_v3_1c95c397.jsonl",
     "role": "single-pack-release-candidate",
-    "sha256": "32db61794bc59958c8672c93b1d16d7336d01891d257623d29476494237b93a0"
+    "sha256": "1c95c397e231a96db5f8ff4030ba6c4e31c500b71ac354cc906e79472d36e09c"
   },
-  "packagePreStampScopeSha256": "e249a793dccb0c54644324f030ebbe17483095489017347ed10347e29ba0b9ed",
+  "packagePreStampScopeSha256": "8a7348c1a3f1b5841efe9dcb8694c6fb6f913242adcf109abf6db23865a39e2c",
   "publishBlocked": false,
   "publishReady": true,
   "questionRange": [
     1,
     628
   ],
-  "schema": "alika-hash-bound-sol-single-pack-release-receipt/1.0.0",
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/3.0.0",
   "subjectSlug": "turkce",
   "title": "8. Sınıf Türkçe Mevcut 500 ve Yeni 128 Birleşik Tam Kapsam"
 }

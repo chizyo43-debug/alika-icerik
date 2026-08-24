@@ -18,7 +18,7 @@
     "question": 1536,
     "total": 1729
   },
-  "createdAt": "2026-08-24T14:46:04.665984+00:00",
+  "createdAt": "2026-08-24T15:07:12.901571+00:00",
   "curriculum": "MEB-TYMM-2025",
   "decision": "PASS",
   "gates": {
@@ -45,6 +45,11 @@
     "postStampVerifier": {
       "findings": 0,
       "records": 1729
+    },
+    "qf008NoteObjectives": {
+      "addedOrCorrected": 192,
+      "findings": 0,
+      "verified": 192
     },
     "sourceHashDrift": 0,
     "sourcesConflict": 0
@@ -1400,20 +1405,20 @@
   "mode": "ai-only",
   "model": "gpt-5.6-sol",
   "package": {
-    "bytes": 12236979,
+    "bytes": 12242355,
     "lines": 1729,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\ingilizce\\paket\\onayli-aday\\release-candidate\\tr_g08_ingilizce_full_single-pack_release_v2_7f2f20d8.jsonl",
+    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\ingilizce\\paket\\onayli-aday\\release-candidate\\tr_g08_ingilizce_full_single-pack_release_v3_884a1c7c.jsonl",
     "role": "single-pack-release-candidate",
-    "sha256": "7f2f20d87f018b4765c7aeeaa647eefc1ee1aa8f685e9a1e79d94635709c430f"
+    "sha256": "884a1c7cb88fd4fbd9d61ce478574af40a99b594f867fe6b75bdb9c484357e30"
   },
-  "packagePreStampScopeSha256": "6fa06b4bb34594486f82a3a27a3694f707fd357ed1f60200b0f61e7b86e4056c",
+  "packagePreStampScopeSha256": "db7063a1890375d8a99badb006f1af64f822558570dac453734d8d3f8bfd6541",
   "publishBlocked": false,
   "publishReady": true,
   "questionRange": [
     1,
     1536
   ],
-  "schema": "alika-hash-bound-sol-single-pack-release-receipt/1.0.0",
+  "schema": "alika-hash-bound-sol-single-pack-release-receipt/3.0.0",
   "subjectSlug": "ingilizce",
   "title": "8. Sınıf İngilizce Tam Resmî Kapsam"
 }
