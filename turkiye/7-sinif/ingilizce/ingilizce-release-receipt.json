@@ -1,0 +1,79 @@
+{
+  "gates": {
+    "allRecordsAiVerified": true,
+    "byteIdenticalApprovedCandidate": true,
+    "canonicalShapedStrictValidator": {
+      "curriculum": "MEB-TYMM-2025",
+      "ephemeralRelativePath": "turkiye/7-sinif/ingilizce/ingilizce-tum.jsonl",
+      "errors": 0,
+      "packContractSha256": "2a204725b971cca45e2d652db15f92f5bfb3531925833b45e09758ffe235b2fe",
+      "rule46Exercised": true,
+      "status": "PASS",
+      "warnings": 0
+    },
+    "contentFindings": 0,
+    "exactDuplicate": 0,
+    "nearDuplicateAt092": 0,
+    "packPublishReady": true,
+    "postStampHashVerifier": {
+      "attestationMismatch": 0,
+      "decisionMismatch": 0,
+      "projectionMismatch": 0,
+      "status": "PASS",
+      "verifiedRecords": 1729
+    },
+    "shaByteLineBindings": true,
+    "strictValidator": {
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "grade": 7,
+  "package": {
+    "bytes": 13102324,
+    "filename": "tr_g07_ingilizce_subject_q0001_q1536_v10_5b465c1a.jsonl",
+    "lines": 1729,
+    "sha256": "5b465c1ad975282dd90e80b90cf5c9f5ff63f6c4e587b678818157b6d588b770"
+  },
+  "packageManifest": {
+    "bytes": 1996,
+    "filename": "tr_g07_ingilizce_ai_verified_subject_manifest_v10_1a5ce97c.json",
+    "sha256": "1a5ce97cbb6d5b9f6b9827f9427dd3eb5bc732a8aadcbb57857ee00142fc5809"
+  },
+  "prohibitions": {
+    "canonicalWritePerformed": false,
+    "gitOperationPerformed": false,
+    "mainModified": false
+  },
+  "publishReady": true,
+  "recordCounts": {
+    "note": 192,
+    "pack": 1,
+    "question": 1536,
+    "total": 1729
+  },
+  "recordReviewLedger": {
+    "filename": "tr_g07_ingilizce_subject_record_review_ledger_v2_9035f83c.jsonl",
+    "lines": 1729,
+    "sha256": "9035f83cc43f17ff67d78b547b0a97a8a9ba73250e3789fc10f441cd4595b199"
+  },
+  "reviewManifest": {
+    "bytes": 2254,
+    "filename": "tr_g07_ingilizce_immutable_subject_release_review_manifest_v2_2d743c74.json",
+    "sha256": "2d743c749ca1c15304e220ca5a72cf98af5b7166c8d61810b615a6ea97d6181c"
+  },
+  "reviewRubric": {
+    "filename": "tr_g07_ingilizce_subject_review_rubric_v2_34ef0656.json",
+    "sha256": "34ef06564a2357e536aa16182e9a3a9b72ea097e1f6ff211a6c5fc0abbfd3fa2"
+  },
+  "reviewer": {
+    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
+    "humanReviewed": false,
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol"
+  },
+  "schema": "alika-sol-hash-bound-subject-final-attestation-receipt/1.0.0",
+  "scope": "candidate-only; canonical/main/Git untouched",
+  "status": "PASS",
+  "subject": "İngilizce"
+}
