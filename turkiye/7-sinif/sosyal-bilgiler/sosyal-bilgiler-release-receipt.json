@@ -1,0 +1,79 @@
+{
+  "gates": {
+    "allRecordsAiVerified": true,
+    "byteIdenticalApprovedCandidate": true,
+    "canonicalShapedStrictValidator": {
+      "curriculum": "MEB-TYMM-2026",
+      "ephemeralRelativePath": "turkiye/7-sinif/sosyal-bilgiler/sosyal-tum.jsonl",
+      "errors": 0,
+      "packContractSha256": "2a204725b971cca45e2d652db15f92f5bfb3531925833b45e09758ffe235b2fe",
+      "rule46Exercised": true,
+      "status": "PASS",
+      "warnings": 0
+    },
+    "contentFindings": 0,
+    "exactDuplicate": 0,
+    "nearDuplicateAt092": 0,
+    "packPublishReady": true,
+    "postStampHashVerifier": {
+      "attestationMismatch": 0,
+      "decisionMismatch": 0,
+      "projectionMismatch": 0,
+      "status": "PASS",
+      "verifiedRecords": 154
+    },
+    "shaByteLineBindings": true,
+    "strictValidator": {
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "grade": 7,
+  "package": {
+    "bytes": 1185385,
+    "filename": "tr_g07_sosyal_subject_q0001_q0136_v4_61ba249e.jsonl",
+    "lines": 154,
+    "sha256": "61ba249ec4333f66ddf2a550d7a8f38892a1600683c3ed2abf536bcea85b1fe5"
+  },
+  "packageManifest": {
+    "bytes": 1984,
+    "filename": "tr_g07_sosyal_ai_verified_subject_manifest_v4_a143d535.json",
+    "sha256": "a143d535c7c5d11b2074b2c86490fee3bbf1f8df320845fbb73ac7ab6f773dfd"
+  },
+  "prohibitions": {
+    "canonicalWritePerformed": false,
+    "gitOperationPerformed": false,
+    "mainModified": false
+  },
+  "publishReady": true,
+  "recordCounts": {
+    "note": 17,
+    "pack": 1,
+    "question": 136,
+    "total": 154
+  },
+  "recordReviewLedger": {
+    "filename": "tr_g07_sosyal_subject_record_review_ledger_v2_9787d818.jsonl",
+    "lines": 154,
+    "sha256": "9787d818e28e5dbd3a5eff7ebe8ce1b8eec11bd3cf7ce76e45d3786d215d898a"
+  },
+  "reviewManifest": {
+    "bytes": 2242,
+    "filename": "tr_g07_sosyal_immutable_subject_release_review_manifest_v2_c1e2531c.json",
+    "sha256": "c1e2531c85aa51a76db548ffa43074e74c911d61ed9e070538581f08e70212bc"
+  },
+  "reviewRubric": {
+    "filename": "tr_g07_sosyal_subject_review_rubric_v2_34ef0656.json",
+    "sha256": "34ef06564a2357e536aa16182e9a3a9b72ea097e1f6ff211a6c5fc0abbfd3fa2"
+  },
+  "reviewer": {
+    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
+    "humanReviewed": false,
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol"
+  },
+  "schema": "alika-sol-hash-bound-subject-final-attestation-receipt/1.0.0",
+  "scope": "candidate-only; canonical/main/Git untouched",
+  "status": "PASS",
+  "subject": "Sosyal Bilgiler"
+}
