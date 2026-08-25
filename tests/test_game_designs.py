@@ -41,6 +41,14 @@ def test_word_wheel_has_local_labels_and_24_fair_equal_segments():
         assert config["fairness"]["equal_slice_angles"] is True
         assert config["fairness"]["result_committed_before_animation"] is True
         assert all(segment["label"] for segment in config["segments"])
+        by_kind = {segment["kind"]: segment for segment in config["segments"]}
+        assert by_kind["lose_turn"]["label"] == LABELS[language]["lose_turn"]
+        assert by_kind["reset_round_score"]["label"] == LABELS[language]["bankrupt"]
+
+    turkish = json.loads(wheel_config("tr", "mid"))
+    labels = {segment["kind"]: segment["label"] for segment in turkish["segments"]}
+    assert labels["lose_turn"] == "SIRA GEÇER"
+    assert labels["reset_round_score"] == "TUR PUANI SİLİNİR"
 
 
 def test_missing_visual_asset_fails_openly(monkeypatch, tmp_path):

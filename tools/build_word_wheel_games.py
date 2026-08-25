@@ -113,7 +113,7 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
         "schema_version": 1,
         "game_id": str(uuid.uuid5(uuid.NAMESPACE_URL,
                                   f"https://alika.tr/games/word-wheel/v1/{language}/{band}")),
-        "game_version": 2, "name": f"{NAMES[language]} · {age_min}–{age_max}",
+        "game_version": 3, "name": f"{NAMES[language]} · {age_min}–{age_max}",
         "description": f"{language.upper()} · {age_min}–{age_max} · {PUZZLES_PER_POOL} {WORD_LABELS[language]}",
         "game_type": "word_wheel", "min_app_version": "1.1.24",
         "min_players": 1, "max_players": 8, "age_min": age_min, "age_max": age_max,
