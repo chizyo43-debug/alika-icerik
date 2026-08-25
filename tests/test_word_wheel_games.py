@@ -70,6 +70,28 @@ def test_each_language_has_four_distinct_age_pools():
         assert len(set(pools)) == 4
 
 
+def test_each_pool_is_mixed_and_uses_only_familiar_people():
+    allowed_people = {
+        f"https://www.wikidata.org/wiki/{qid}"
+        for qid in __import__("generate_word_wheel_variety").FAMILIAR_PEOPLE
+    }
+    for language in builder.LANGUAGES:
+        for band in builder.BANDS:
+            rows = builder._load_pool(language, band)
+            categories = {row["category"] for row in rows}
+            geography = sum(row["category"] in builder_categories(language) for row in rows)
+            people = [row for row in rows if row["source"]["url"].startswith("https://www.wikidata.org/wiki/")
+                      and row["category"] not in builder_categories(language)]
+            assert len(categories) >= 7
+            assert geography == 70
+            assert {row["source"]["url"] for row in people} <= allowed_people
+
+
+def builder_categories(language: str) -> set[str]:
+    from generate_word_wheel_geography import CATEGORIES
+    return set(CATEGORIES[language])
+
+
 def test_packages_round_trip_through_real_alika_reader(monkeypatch):
     raw = os.environ.get("ALIKA_APP_REPO", "").strip()
     if not raw:

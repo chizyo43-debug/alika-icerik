@@ -41,7 +41,7 @@ SUBJECTS = {
 WORD_LABELS = {"tr": "kelime", "en": "words", "de": "Wörter", "es": "palabras",
                "fr": "mots", "pt": "palavras", "ru": "слов", "ja": "語", "ko": "개 낱말"}
 RUNTIME_FIELDS = ("puzzle_id", "answer", "category", "clue", "explanation")
-CREATED_AT = "2026-08-13T00:00:00Z"
+CREATED_AT = "2026-08-25T00:00:00Z"
 ID_RE = re.compile(r"^[A-Za-z0-9_-]{8,80}$")
 ZIP_TIME = (1980, 1, 1, 0, 0, 0)
 
@@ -69,6 +69,7 @@ def _load_pool(language: str, band: str) -> list[dict[str, Any]]:
     ids: set[str] = set()
     answers: set[str] = set()
     cultural = 0
+    categories: set[str] = set()
     for index, row in enumerate(rows, 1):
         if not isinstance(row, dict) or set(RUNTIME_FIELDS) - set(row):
             raise WordWheelBuildError(f"{language}/{band}:{index}: invalid row")
@@ -93,10 +94,13 @@ def _load_pool(language: str, band: str) -> list[dict[str, Any]]:
         if not isinstance(tags, list):
             raise WordWheelBuildError(f"{language}/{band}:{index}: culture_tags must be a list")
         cultural += any(str(tag).startswith(f"culture:{language}") for tag in tags)
+        categories.add(category.strip())
         ids.add(puzzle_id)
         answers.add(normalized)
     if cultural < 30:
         raise WordWheelBuildError(f"{language}/{band}: at least 30 culture-local words required")
+    if len(categories) < 7:
+        raise WordWheelBuildError(f"{language}/{band}: at least 7 mixed categories required")
     return rows
 
 
@@ -109,7 +113,7 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
         "schema_version": 1,
         "game_id": str(uuid.uuid5(uuid.NAMESPACE_URL,
                                   f"https://alika.tr/games/word-wheel/v1/{language}/{band}")),
-        "game_version": 1, "name": f"{NAMES[language]} · {age_min}–{age_max}",
+        "game_version": 2, "name": f"{NAMES[language]} · {age_min}–{age_max}",
         "description": f"{language.upper()} · {age_min}–{age_max} · {PUZZLES_PER_POOL} {WORD_LABELS[language]}",
         "game_type": "word_wheel", "min_app_version": "1.1.24",
         "min_players": 1, "max_players": 8, "age_min": age_min, "age_max": age_max,
@@ -144,7 +148,7 @@ def build(*, check: bool) -> None:
             outputs[ROOT / relative] = payload
             entries.append({"path": relative.as_posix(), "sha256": hashlib.sha256(payload).hexdigest(),
                             "size_bytes": len(payload), "word_count": len(rows),
-                            "game_id": manifest["game_id"], "game_version": 1,
+                            "game_id": manifest["game_id"], "game_version": manifest["game_version"],
                             "language": language, "age_min": manifest["age_min"],
                             "age_max": manifest["age_max"], "name": manifest["name"]})
     outputs[CATALOG] = _json_bytes({"schema_version": 1, "generated_at": CREATED_AT,
