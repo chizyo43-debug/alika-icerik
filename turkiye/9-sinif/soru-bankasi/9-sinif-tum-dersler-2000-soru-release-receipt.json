@@ -41,7 +41,7 @@
       500,
       500
     ],
-    "bankDecisionSha256": "5d07cdcd849960aa01338dd329b942ee8c48ce5dff2c8ed08d81b61500891e5d",
+    "bankDecisionSha256": "9a6546d6dc9613b87ccad6d6eeae78136e06c78f600dd7c3a574afd8db34e930",
     "decision": "PASS",
     "grade": 9,
     "humanReviewed": false,
@@ -76,21 +76,21 @@
         "id": "tr-g09-cografya-subject500-pack-v1",
         "path": "turkiye/9-sinif/cografya/cografya-tum.jsonl",
         "questions": 223,
-        "sha256": "97d50444c8b180fc71408abe6104e9d1ffa4f5bb0bfd0fc637fcb084f3982b7d"
+        "sha256": "99eb131e8cf8882fa81a33cd0cc7865655a04440557dfef466d172c0ab50e846"
       },
       {
         "hashScope": "raw-file-sha256",
         "id": "tr-g09-dkab-subject500-pack-v1",
         "path": "turkiye/9-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
         "questions": 222,
-        "sha256": "09f91215c6a93863b09adb0abddee8343969c6123197babcc0378500003676f5"
+        "sha256": "75bf3c05db9b0035a9cf7054a454e2e27e14571409e3a89e4459f5796bba80b6"
       },
       {
         "hashScope": "raw-file-sha256",
         "id": "tr-g09-fizik-subject500-pack-v1",
         "path": "turkiye/9-sinif/fizik/fizik-tum.jsonl",
         "questions": 222,
-        "sha256": "8839034aa4e4787c25c95a64f50c4dad510e07ca802673ba27884ed608fe9302"
+        "sha256": "2239cf3749138ea91f4450929d87dcfd666c2f71f31d6b02644e986bdfd6f9af"
       },
       {
         "hashScope": "raw-file-sha256",
@@ -130,6 +130,6 @@
     ]
   },
   "schema": "alika-missing-question-bank-release-receipt/1.0.0",
-  "sha256": "5874a01e6ce67baac8eaae65b0ab72695efc80afd60bfb1b786ea79952fa211b",
+  "sha256": "c4720299420c1e881a335908a12a03214ed8a25d6c3f85a4e50037ae7f8bf1b3",
   "status": "PASS"
 }

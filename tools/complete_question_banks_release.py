@@ -143,9 +143,13 @@ def contextualize_repeated_choices(rows: list[dict[str, Any]]) -> set[str]:
             context = question
         used_contexts.add(context)
         suffix = f" — “{context}” bağlamında."
-        row["choices"] = [str(choice).rstrip().rstrip(".") + suffix for choice in choices]
         correct = int(row["correct"])
+        old_correct_option = str(choices[correct])
+        row["choices"] = [str(choice).rstrip().rstrip(".") + suffix for choice in choices]
         row["correctOption"] = row["choices"][correct]
+        explanation = str(row.get("explanation") or "")
+        if old_correct_option in explanation:
+            row["explanation"] = explanation.replace(old_correct_option, row["correctOption"])
         changed.add(str(row.get("id")))
     return changed
 

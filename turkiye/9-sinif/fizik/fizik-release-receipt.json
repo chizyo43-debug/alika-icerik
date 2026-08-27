@@ -12,7 +12,7 @@
     "path": "turkiye/9-sinif/fizik/fizik-tum.jsonl",
     "questions": 500,
     "records": 536,
-    "sha256": "8839034aa4e4787c25c95a64f50c4dad510e07ca802673ba27884ed608fe9302"
+    "sha256": "2239cf3749138ea91f4450929d87dcfd666c2f71f31d6b02644e986bdfd6f9af"
   },
   "gates": {
     "aiVerifiedRecords": "PASS 536/536",
