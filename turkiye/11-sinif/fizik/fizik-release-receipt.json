@@ -1,0 +1,3819 @@
+{
+  "counts": {
+    "note": 31,
+    "pack": 1,
+    "question": 500,
+    "total": 532
+  },
+  "curriculum": "MEB-TYMM-2024",
+  "decision": "PASS",
+  "gates": {
+    "duplicateId": 0,
+    "jsonlParse": "PASS 532/532",
+    "manifestContentHashes": "PASS 500/500",
+    "manifestCoverage": "PASS 500/500",
+    "noteQuestionLinks": "PASS 500/500",
+    "noteRichness": "PASS 31/31",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0
+  },
+  "grade": 11,
+  "humanReviewed": false,
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 4387975,
+    "path": "turkiye/11-sinif/fizik/fizik-tum.jsonl",
+    "records": 532,
+    "sha256": "6240c447729f6f3f2d81a1ed4e155cb82d975a7e0c54b271c2bd86afd53aa284"
+  },
+  "publishBlocked": false,
+  "publishReady": true,
+  "quality": {
+    "answerBalance": [
+      126,
+      126,
+      124,
+      124
+    ],
+    "duplicateNoteBodies": 0,
+    "duplicateQuestionTexts": 0,
+    "errors": 0,
+    "families": 165,
+    "figuredQuestions": 0,
+    "largestFamily": 4,
+    "minimumNoteEvidenceCharacters": 7853,
+    "warnings": 0
+  },
+  "questionRange": [
+    1,
+    500
+  ],
+  "review": {
+    "changedRecords": {
+      "tr-g11-fizik-note-001": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-002": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-003": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-004": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-005": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-006": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-007": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-008": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-009": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-010": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-011": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-012": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-013": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-014": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-015": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-016": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-017": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-018": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-019": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-020": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-021": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-022": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-023": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-024": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-025": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-026": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-027": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-028": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-029": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-030": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-note-031": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-fizik-q0001": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0002": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0003": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0004": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0005": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0006": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0007": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0008": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0009": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0010": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0011": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0012": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0013": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0014": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0015": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0016": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0017": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0018": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0019": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0020": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0021": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0022": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0023": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0024": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0025": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0026": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0027": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0028": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0029": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0030": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0031": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0032": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0033": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0034": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0035": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0036": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0037": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0038": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0039": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0040": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0041": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0042": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0043": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0044": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0045": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0046": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0047": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0048": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0049": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0050": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0051": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0052": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0053": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0054": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0055": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0056": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0057": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0058": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0059": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0060": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0061": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0062": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0063": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0064": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0065": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0066": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0067": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0068": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0069": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0070": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0071": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0072": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0073": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0074": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0075": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0076": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0077": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0078": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0079": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0080": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0081": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0082": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0083": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0084": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0085": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0086": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0087": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0088": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0089": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0090": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0091": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0092": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0093": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0094": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0095": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0096": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0097": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0098": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0099": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0100": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0101": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0102": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0103": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0104": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0105": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0106": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0107": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0108": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0109": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0110": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0111": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0112": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0113": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0114": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0115": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0116": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0117": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0118": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0119": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0120": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0121": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0122": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0123": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0124": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0125": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0126": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0127": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0128": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0129": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0130": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0131": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0132": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0133": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0134": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0135": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0136": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0137": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0138": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0139": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0140": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0141": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0142": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0143": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0144": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0145": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0146": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0147": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0148": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0149": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0150": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0151": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0152": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0153": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0154": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0155": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0156": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0157": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0158": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0159": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0160": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0161": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0162": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0163": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0164": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0165": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0166": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0167": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0168": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0169": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0170": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0171": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0172": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0173": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0174": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0175": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0176": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0177": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0178": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0179": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0180": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0181": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0182": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0183": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0184": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0185": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0186": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0187": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0188": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0189": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0190": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0191": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0192": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0193": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0194": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0195": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0196": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0197": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0198": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0199": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0200": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0201": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0202": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0203": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0204": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0205": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0206": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0207": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0208": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0209": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0210": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0211": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0212": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0213": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0214": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0215": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0216": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0217": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0218": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0219": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0220": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0221": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0222": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0223": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0224": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0225": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0226": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0227": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0228": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0229": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0230": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0231": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0232": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0233": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0234": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0235": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0236": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0237": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0238": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0239": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0240": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0241": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0242": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0243": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0244": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0245": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0246": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0247": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0248": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0249": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0250": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0251": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0252": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0253": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0254": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0255": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0256": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0257": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0258": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0259": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0260": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0261": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0262": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0263": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0264": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0265": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0266": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0267": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0268": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0269": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0270": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0271": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0272": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0273": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0274": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0275": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0276": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0277": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0278": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0279": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0280": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0281": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0282": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0283": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0284": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0285": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0286": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0287": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0288": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0289": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0290": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0291": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0292": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0293": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0294": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0295": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0296": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0297": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0298": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0299": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0300": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0301": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0302": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0303": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0304": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0305": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0306": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0307": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0308": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0309": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0310": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0311": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0312": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0313": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0314": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0315": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0316": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0317": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0318": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0319": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0320": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0321": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0322": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0323": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0324": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0325": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0326": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0327": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0328": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0329": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0330": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0331": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0332": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0333": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0334": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0335": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0336": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0337": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0338": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0339": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0340": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0341": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0342": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0343": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0344": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0345": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0346": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0347": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0348": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0349": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0350": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0351": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0352": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0353": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0354": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0355": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0356": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0357": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0358": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0359": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0360": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0361": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0362": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0363": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0364": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0365": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0366": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0367": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0368": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0369": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0370": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0371": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0372": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0373": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0374": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0375": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0376": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0377": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0378": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0379": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0380": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0381": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0382": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0383": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0384": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0385": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0386": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0387": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0388": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0389": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0390": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0391": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0392": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0393": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0394": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0395": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0396": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0397": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0398": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0399": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0400": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0401": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0402": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0403": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0404": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0405": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0406": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0407": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0408": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0409": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0410": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0411": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0412": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0413": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0414": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0415": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0416": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0417": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0418": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0419": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0420": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0421": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0422": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0423": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0424": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0425": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0426": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0427": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0428": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0429": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0430": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0431": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0432": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0433": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0434": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0435": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0436": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0437": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0438": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0439": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0440": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0441": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0442": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0443": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0444": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0445": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0446": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0447": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0448": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0449": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0450": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0451": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0452": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0453": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0454": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0455": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0456": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0457": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0458": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0459": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0460": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0461": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0462": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0463": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0464": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0465": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0466": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0467": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0468": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0469": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0470": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0471": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0472": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0473": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0474": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0475": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0476": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0477": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0478": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0479": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0480": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0481": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0482": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0483": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0484": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0485": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0486": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0487": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0488": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0489": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0490": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0491": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0492": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0493": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0494": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0495": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0496": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0497": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0498": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0499": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-fizik-q0500": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr.g11.fizik.full": [
+        "productionStatus"
+      ]
+    },
+    "contentProjectionSetSha256": "5f6966ee90badcbdf63cffa5fabf9df0864485f61089261fe3f6a78b369d0120",
+    "decision": "PASS",
+    "gates": {
+      "duplicateIds": 0,
+      "duplicateNoteBodies": 0,
+      "duplicateQuestionTexts": 0,
+      "manifestContentHashes": "PASS 500/500",
+      "manifestCoverage": "PASS 500/500",
+      "noteQuestionLinks": "PASS 500/500",
+      "noteRichness": "PASS 31/31",
+      "strictErrors": 0,
+      "strictWarnings": 0
+    },
+    "grade": 11,
+    "humanReviewed": false,
+    "manifestReviewedQuestions": 500,
+    "manifests": [
+      {
+        "firstQuestionId": "tr-g11-fizik-q0001",
+        "lastQuestionId": "tr-g11-fizik-q0050",
+        "path": "fizik/staging/sol-repair/question-2.2/tr_g11_fizik_q0001_q0050_repair_manifest_v17_a5035493.json",
+        "questionCount": 50,
+        "sha256": "a5035493be86750435d9283b00b4c1c57a301ae9b923c1877352af74a6f69720"
+      },
+      {
+        "firstQuestionId": "tr-g11-fizik-q0051",
+        "lastQuestionId": "tr-g11-fizik-q0100",
+        "path": "fizik/staging/sol-repair/question-2.2/tr_g11_fizik_q0051_q0100_repair_manifest_v18_8aeae785.json",
+        "questionCount": 50,
+        "sha256": "8aeae785b6adbe8a8f121f278394ffc16e8cabeb34326bac391d4bc31685f5bc"
+      },
+      {
+        "firstQuestionId": "tr-g11-fizik-q0101",
+        "lastQuestionId": "tr-g11-fizik-q0150",
+        "path": "fizik/staging/sol-repair/question-2.2/tr_g11_fizik_q0101_q0150_repair_manifest_v19_6b1e245e.json",
+        "questionCount": 50,
+        "sha256": "6b1e245e56d9e45cd22146ca6ded25b6f6c59316f5f9e1af02bdf1f5596b9016"
+      },
+      {
+        "firstQuestionId": "tr-g11-fizik-q0151",
+        "lastQuestionId": "tr-g11-fizik-q0200",
+        "path": "fizik/staging/sol-repair/question-2.2/tr_g11_fizik_q0151_q0200_repair_manifest_v20_fc5a0da9.json",
+        "questionCount": 50,
+        "sha256": "fc5a0da956a46fd917ffa24ea08300728b5de71477badb0f25bf24f5e5eafed7"
+      },
+      {
+        "firstQuestionId": "tr-g11-fizik-q0201",
+        "lastQuestionId": "tr-g11-fizik-q0250",
+        "path": "fizik/staging/sol-repair/question-2.2/tr_g11_fizik_q0201_q0250_repair_manifest_v21_aae7e488.json",
+        "questionCount": 50,
+        "sha256": "aae7e488a672ef7832476fd8b94f8b26d3bd42079acf3ae7eef7dd275f1336ba"
+      },
+      {
+        "firstQuestionId": "tr-g11-fizik-q0251",
+        "lastQuestionId": "tr-g11-fizik-q0300",
+        "path": "fizik/staging/sol-repair/question-2.2/tr_g11_fizik_q0251_q0300_repair_manifest_v22_7ddf37b4.json",
+        "questionCount": 50,
+        "sha256": "7ddf37b431d6b3635df96221e5c4533c045267e85b8294171bb9deddcf601bb9"
+      },
+      {
+        "firstQuestionId": "tr-g11-fizik-q0301",
+        "lastQuestionId": "tr-g11-fizik-q0350",
+        "path": "fizik/staging/sol-repair/question-2.2/tr_g11_fizik_q0301_q0350_repair_manifest_v23_4d07d8d9.json",
+        "questionCount": 50,
+        "sha256": "4d07d8d97063fbec085bee730c87edb355346c13801e35679eb823513a77f2e5"
+      },
+      {
+        "firstQuestionId": "tr-g11-fizik-q0351",
+        "lastQuestionId": "tr-g11-fizik-q0400",
+        "path": "fizik/staging/sol-repair/question-2.2/tr_g11_fizik_q0351_q0400_repair_manifest_v24_cf3f49e7.json",
+        "questionCount": 50,
+        "sha256": "cf3f49e77cd9933938a6e3608202a4e6561a061b7b24364786355159571f52d2"
+      },
+      {
+        "firstQuestionId": "tr-g11-fizik-q0401",
+        "lastQuestionId": "tr-g11-fizik-q0450",
+        "path": "fizik/staging/sol-repair/question-2.2/tr_g11_fizik_q0401_q0450_repair_manifest_v25_18ac6bdb.json",
+        "questionCount": 50,
+        "sha256": "18ac6bdb4b1cd3ec59ed7674892fc29a7b260994d2b66a02c2a5ea2fb9b9cc1a"
+      },
+      {
+        "firstQuestionId": "tr-g11-fizik-q0451",
+        "lastQuestionId": "tr-g11-fizik-q0500",
+        "path": "fizik/staging/sol-repair/question-2.2/tr_g11_fizik_q0451_q0500_repair_manifest_v26_a9df32f1.json",
+        "questionCount": 50,
+        "sha256": "a9df32f184c706ed60b13139e57736d60f665327513be2125c03560d588f9f47"
+      }
+    ],
+    "methodVersion": "alika-g11-manifest-backed-ai-only-release/1.0.0",
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol",
+    "packageDecisionSha256": "b2b104edb5e5b4f15d8682cbee1e7e683a93000777e89692d67939ae56818733",
+    "questionManifestCount": 10,
+    "questionManifestSetSha256": "a6ccda2648d8de9f866262b89e50ecbebfb0da25670eede6a0ffe53c966fd07f",
+    "schema": "alika-g11-manifest-backed-package-decision/1.0.0",
+    "sourceCandidateSha256": "cc1532440a43b1f351510ab5224668b920e2748ffd22d60fc6a8ed83cd6136fc",
+    "subject": "Fizik"
+  },
+  "schema": "alika-g11-manifest-backed-ai-only-release-receipt/1.0.0",
+  "sourceCandidate": {
+    "path": "chatgpt/11-sinif/fizik/staging/sol-repair/physics-full-validation-v2-cc153244.jsonl",
+    "sha256": "cc1532440a43b1f351510ab5224668b920e2748ffd22d60fc6a8ed83cd6136fc"
+  },
+  "subject": "Fizik",
+  "subjectSlug": "fizik"
+}
