@@ -1,184 +1,41 @@
 {
-  "candidate": {
-    "bytes": 858948,
-    "file": "tr_g09_biyoloji_full_release_candidate_v4_e9deb8b9.jsonl",
-    "lines": 127,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\release-candidate\\tr_g09_biyoloji_full_release_candidate_v4_e9deb8b9.jsonl",
-    "sha256": "9fb4b2158c4a04f201aaf15d31d77573266bad06dd0f22a167b3c4859333738d"
-  },
-  "canonicalIntegration": "blocked-for-root",
-  "canonicalPreflight": {
-    "bytes": 2694,
-    "file": "g09_biyoloji_full_canonical_preflight_v4_acc19b64.json",
-    "lines": 53,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\release-candidate\\g09_biyoloji_full_canonical_preflight_v4_acc19b64.json",
-    "sha256": "acc19b643769c8f676c58ddc9008ded469f64f018adf06d3415940aa04f74555"
-  },
-  "canonicalWrite": false,
-  "counts": {
-    "families": 28,
-    "notes": 14,
+  "canonical": {
+    "answerBalance": [
+      135,
+      122,
+      122,
+      121
+    ],
+    "families": 125,
+    "notes": 28,
     "pack": 1,
-    "questions": 112,
-    "records": 127
+    "path": "turkiye/9-sinif/biyoloji/biyoloji-tum.jsonl",
+    "questions": 500,
+    "records": 529,
+    "sha256": "21be99b751553b3446d5ebad8c84a6286160e3ebfe135233b88556308ac17091"
   },
   "gates": {
-    "contentFindings": 0,
-    "exactDuplicates": 0,
-    "legacyAttestationRemaining": 0,
-    "nearDuplicates": 0,
-    "openPostStampFindings": 0,
+    "aiVerifiedRecords": "PASS 529/529",
+    "duplicateIds": 0,
+    "duplicateQuestionTexts": 0,
+    "noteLinks": "PASS 500/500",
+    "questionRange": "PASS 1/500-500/500",
     "strictErrors": 0,
     "strictWarnings": 0
   },
-  "gitWrite": false,
-  "postStampVerifier": {
-    "bytes": 822,
-    "file": "g09_biyoloji_full_post_stamp_verification_v4_2c463685.json",
-    "lines": 20,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\release-candidate\\g09_biyoloji_full_post_stamp_verification_v4_2c463685.json",
-    "sha256": "2c463685da7461f2d44bc9a8539da94e32f64c05e6ea7e2b880e52dda15abc27"
-  },
-  "publishBlocked": false,
+  "grade": 9,
   "publishReady": true,
-  "qualityScoreReceipt": {
-    "bytes": 1551,
-    "file": "g09_biyoloji_full_quality_score_receipt_v4_044c0aa1.json",
-    "lines": 39,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\release-candidate\\g09_biyoloji_full_quality_score_receipt_v4_044c0aa1.json",
-    "sha256": "044c0aa1ac36ef4d0cd88eb46a1d7dfb02db6a4c36aa4961f2d455b90da55eac"
+  "review": {
+    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
+    "humanReviewed": false,
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol"
   },
-  "recordReviewLedger": {
-    "bytes": 52713,
-    "file": "g09_biyoloji_full_record_review_ledger_v4_d8d33df5.jsonl",
-    "lines": 127,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\release-candidate\\g09_biyoloji_full_record_review_ledger_v4_d8d33df5.jsonl",
-    "sha256": "d8d33df542b09c961a3a19e5dea10076984ce39c0202fa0c3201cf3df1a601e6"
+  "schema": "alika-local-final-subject-publish-receipt/1.0.0",
+  "sourceCandidate": {
+    "path": "chatgpt/9-sinif/biyoloji/paket/final-bank-candidate/tr_g09_biyoloji_subject500_ai_verified_v1_c810154b.jsonl",
+    "sha256": "c810154b6a3051c594dbbd94d7cb52b44ce6f1a62a37fc71acda123dcf06ef6c"
   },
-  "releaseEvidenceBundle": {
-    "bytes": 2895,
-    "file": "g09_biyoloji_full_release_bundle_v4_045c4f7b.json",
-    "lines": 56,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\release-candidate\\g09_biyoloji_full_release_bundle_v4_045c4f7b.json",
-    "sha256": "045c4f7b84de6d9e0190918f89426de9f6c87b8053f0783d5845955c1ee73c74"
-  },
-  "reviewManifest": {
-    "bytes": 7421,
-    "file": "g09_biyoloji_full_review_manifest_v4_0c92a51a.json",
-    "lines": 155,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\release-candidate\\g09_biyoloji_full_review_manifest_v4_0c92a51a.json",
-    "sha256": "0c92a51a7465b775634f11c7b67b26dcfce328ae2bce2411e063893ab1a3a8ff"
-  },
-  "reviewModel": "gpt-5.6-sol",
-  "reviewStatus": "ai-verified",
-  "rubric": {
-    "bytes": 504,
-    "file": "g09_full_coverage_review_rubric_v4_5c35af79.json",
-    "lines": 18,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\release-candidate\\g09_full_coverage_review_rubric_v4_5c35af79.json",
-    "sha256": "5c35af79a14c6540e7c7be76a1a596e0114d8b68a410e8af3c013078056cf1bb"
-  },
-  "schema": "alika-g09-subject-release-candidate-receipt/4.0.0",
-  "sourceArtifacts": [
-    {
-      "bytes": 49679,
-      "file": "tr_g09_biyoloji_unit01_biy_9_1_1_q0001_q0008_v1_01ba234c.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit01_biy_9_1_1_q0001_q0008_v1_01ba234c.jsonl",
-      "sha256": "01ba234c73ab05d7a2f18f7a469be34a99f721cbd1dad6837d280e110bccdd68"
-    },
-    {
-      "bytes": 48252,
-      "file": "tr_g09_biyoloji_unit01_biy_9_1_2_q0009_q0016_v1_0d1c7c87.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit01_biy_9_1_2_q0009_q0016_v1_0d1c7c87.jsonl",
-      "sha256": "0d1c7c8768fdc7ecdc9191826440099ca2c6724bd2c766aee682418670c187ea"
-    },
-    {
-      "bytes": 48106,
-      "file": "tr_g09_biyoloji_unit01_biy_9_1_3_q0017_q0024_v1_fe9ec10f.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit01_biy_9_1_3_q0017_q0024_v1_fe9ec10f.jsonl",
-      "sha256": "fe9ec10f5181843dd92db4f0c12cabe3530896d3eacfe02466b2f1499b1d0f8f"
-    },
-    {
-      "bytes": 50387,
-      "file": "tr_g09_biyoloji_unit01_biy_9_1_4_q0025_q0032_v1_dd75eb50.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit01_biy_9_1_4_q0025_q0032_v1_dd75eb50.jsonl",
-      "sha256": "dd75eb500f56515e4f9f775c3bc0559419d00e842c0aa281a46e075d3c6936ef"
-    },
-    {
-      "bytes": 46445,
-      "file": "tr_g09_biyoloji_unit01_biy_9_1_5_q0033_q0040_v1_60d7529a.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit01_biy_9_1_5_q0033_q0040_v1_60d7529a.jsonl",
-      "sha256": "60d7529af2d6d261e7f467b50171bbde659da6e6998bdaf1142c39e2637472ef"
-    },
-    {
-      "bytes": 47579,
-      "file": "tr_g09_biyoloji_unit01_biy_9_1_6_q0041_q0048_v1_07295022.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit01_biy_9_1_6_q0041_q0048_v1_07295022.jsonl",
-      "sha256": "072950221bb93d69afb1780ec25c4001fc9453b643c9f31fdb7a69095cac89ba"
-    },
-    {
-      "bytes": 48885,
-      "file": "tr_g09_biyoloji_unit01_biy_9_1_7_q0049_q0056_v1_0d3c63ad.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit01_biy_9_1_7_q0049_q0056_v1_0d3c63ad.jsonl",
-      "sha256": "0d3c63adcae43ace061b67126a645db83f6c6ebcbf69d982f2b5adc31f6a8e77"
-    },
-    {
-      "bytes": 49055,
-      "file": "tr_g09_biyoloji_unit01_biy_9_1_8_q0057_q0064_v1_61dba945.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit01_biy_9_1_8_q0057_q0064_v1_61dba945.jsonl",
-      "sha256": "61dba9455c6c99c6b00b291d3930734cf79d4147816069eeba1487d2455c47e4"
-    },
-    {
-      "bytes": 47821,
-      "file": "tr_g09_biyoloji_unit02_biy_9_2_1_q0065_q0072_v1_7f34ceb2.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit02_biy_9_2_1_q0065_q0072_v1_7f34ceb2.jsonl",
-      "sha256": "7f34ceb2d7c37b635838c2bd9df60d86b1cd1d724e820b92ce54ba09a330b550"
-    },
-    {
-      "bytes": 47651,
-      "file": "tr_g09_biyoloji_unit02_biy_9_2_2_q0073_q0080_v1_e8492eb7.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit02_biy_9_2_2_q0073_q0080_v1_e8492eb7.jsonl",
-      "sha256": "e8492eb7d72eddeb8ade10e1ab261037eeeecea7c53b667dde9adea3b0026612"
-    },
-    {
-      "bytes": 48162,
-      "file": "tr_g09_biyoloji_unit02_biy_9_2_3_q0081_q0088_v1_0baa9bf6.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit02_biy_9_2_3_q0081_q0088_v1_0baa9bf6.jsonl",
-      "sha256": "0baa9bf669c71c5eea3b4a86b06d335e8e5e8b1db7fe653da72f854feb15efe2"
-    },
-    {
-      "bytes": 47513,
-      "file": "tr_g09_biyoloji_unit02_biy_9_2_4_q0089_q0096_v1_981da42c.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit02_biy_9_2_4_q0089_q0096_v1_981da42c.jsonl",
-      "sha256": "981da42c80a1822ef2b76533890ea2a5fb5b5272f61e5ed2f223113af858395c"
-    },
-    {
-      "bytes": 48514,
-      "file": "tr_g09_biyoloji_unit02_biy_9_2_5_q0097_q0104_v1_fddc76b9.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit02_biy_9_2_5_q0097_q0104_v1_fddc76b9.jsonl",
-      "sha256": "fddc76b929adfc49b97b90cd07fbf09022b5d0b8ac1dfbeb06ad361e709735ee"
-    },
-    {
-      "bytes": 48174,
-      "file": "tr_g09_biyoloji_unit02_biy_9_2_6_q0105_q0112_v1_4165828b.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\biyoloji\\paket\\onayli-aday\\tr_g09_biyoloji_unit02_biy_9_2_6_q0105_q0112_v1_4165828b.jsonl",
-      "sha256": "4165828b76ae983be68a1ac50f016376edac95e6cd98798a1fd4fe7c6f959fca"
-    }
-  ],
   "status": "PASS",
   "subject": "Biyoloji"
 }

@@ -1,0 +1,108 @@
+{
+  "bank": "turkiye/7-sinif/soru-bankasi/7-sinif-tum-dersler-2000-soru.jsonl",
+  "counts": {
+    "notes": 267,
+    "pack": 1,
+    "questions": 2000,
+    "records": 2268
+  },
+  "grade": 7,
+  "publishReady": true,
+  "quality": {
+    "answerBalance": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "brokenNoteLinks": 0,
+    "duplicateIds": 0,
+    "duplicateQuestionTexts": 0,
+    "families": 752,
+    "largestFamily": 4,
+    "perSubject": {
+      "Din Kültürü ve Ahlak Bilgisi": 334,
+      "Fen Bilimleri": 334,
+      "Matematik": 333,
+      "Sosyal Bilgiler": 333,
+      "Türkçe": 333,
+      "İngilizce": 333
+    },
+    "strictErrors": 0,
+    "strictWarnings": 0
+  },
+  "review": {
+    "answerBalance": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "bankDecisionSha256": "42d323f0ff4d4e0796186e0885042d7cb9d31ebbda0cfd7ccde723a0abd6981e",
+    "decision": "PASS",
+    "grade": 7,
+    "humanReviewed": false,
+    "methodVersion": "alika-missing-banks-ai-only-release/1.0.0",
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol",
+    "notes": 267,
+    "perSubject": {
+      "Din Kültürü ve Ahlak Bilgisi": 334,
+      "Fen Bilimleri": 334,
+      "Matematik": 333,
+      "Sosyal Bilgiler": 333,
+      "Türkçe": 333,
+      "İngilizce": 333
+    },
+    "questions": 2000,
+    "schema": "alika-missing-question-bank-decision/1.0.0",
+    "selectionSha256": "624aa26c76cb38351f380f253f1ca69339a65c513d01fbce04cfaa2fda156e0c",
+    "sourcePackages": [
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr-g07-dkab-subject-q0001-q0500-pack-v5",
+        "path": "turkiye/7-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
+        "questions": 334,
+        "sha256": "efbb4469d198a10318a1b61ad97e79f58313b40d0b6ffd56c7c873e4366cfbcb"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr-g07-fen-subject-q0385-q0884-pack-v1",
+        "path": "turkiye/7-sinif/fen-bilimleri/fen-bilimleri-tum.jsonl",
+        "questions": 334,
+        "sha256": "c5de60174270e8084a86ecfcf9bf78ded6dd3344802a17e26351d6c4beefe4f6"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr-g07-ingilizce-subject-q0001-q1536-pack-v8",
+        "path": "turkiye/7-sinif/ingilizce/ingilizce-tum.jsonl",
+        "questions": 333,
+        "sha256": "fcfe9d8c6d12261182d0903d1135f1bc9f88bea11aef62792e9a304deece544d"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g07.matematik.full",
+        "path": "turkiye/7-sinif/matematik/matematik-tum.jsonl",
+        "questions": 333,
+        "sha256": "1b00180ad1f0214e157a53f764d8257923befe202a3146a6c16caff02b0b19a6"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr-g07-sosyal-subject-q0001-q0500-pack-v3",
+        "path": "turkiye/7-sinif/sosyal-bilgiler/sosyal-bilgiler-tum.jsonl",
+        "questions": 333,
+        "sha256": "86b486e93f1f19f7f7fac36d0991b620d14d6fb72f5931a2fddff726019869be"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g07.turkce.full",
+        "path": "turkiye/7-sinif/turkce/turkce-tum.jsonl",
+        "questions": 333,
+        "sha256": "f55516717561eca960880c8a52be538779b6b7b3792bcfdcb930faa785add86d"
+      }
+    ]
+  },
+  "schema": "alika-missing-question-bank-release-receipt/1.0.0",
+  "sha256": "f9e9d53eeff7ec45dd883242a62dac377e2e96826582cd81cdf65163992981b1",
+  "status": "PASS"
+}

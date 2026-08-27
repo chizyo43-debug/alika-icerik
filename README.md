@@ -83,23 +83,37 @@ Her satır bir JSON nesnesi:
 | Türkiye | 7 | Matematik | Tüm konular | 30 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 7 | Fen Bilimleri | Tüm konular | 11 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 7 | İngilizce | Tüm temalar | 192 | 1.536 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 7 | Sosyal Bilgiler | Tüm konular | 17 | 136 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 7 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 17 | 136 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 7 | Sosyal Bilgiler | Tüm konular | 17 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 7 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 17 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 7 | Tüm Dersler | Altı dersin dengeli seçkisi | 267 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 8 | Türkçe | Tüm beceriler | 170 | 628 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 8 | Matematik | Tüm konular | 23 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 8 | Fen Bilimleri | Tüm konular | 37 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 8 | İngilizce | Tüm temalar | 192 | 1.536 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 8 | T.C. İnkılap Tarihi ve Atatürkçülük | Tüm konular | 15 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 8 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 19 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | Tüm Dersler | Altı dersin dengeli seçkisi | 278 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | Türk Dili ve Edebiyatı | Tüm temalar | 54 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | Matematik | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 9 | Fizik | Tüm konular | 24 | 192 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Fizik | Tüm konular | 35 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | Kimya | Tüm konular | 31 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 9 | Biyoloji | Tüm konular | 14 | 112 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 9 | Tarih | Tüm konular | 13 | 104 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 9 | Coğrafya | Tüm konular | 19 | 152 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Biyoloji | Tüm konular | 28 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Tarih | Tüm konular | 28 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Coğrafya | Tüm konular | 31 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | İngilizce | Tüm temalar | 192 | 1.536 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 9 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 20 | 160 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 29 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Tüm Dersler | Dokuz dersin dengeli seçkisi | 312 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | Matematik | Tüm konular | 21 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | Fizik | Tüm konular | 22 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | Kimya | Tüm konular | 21 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | Biyoloji | Tüm konular | 19 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | Türk Dili ve Edebiyatı | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | Tarih | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | Coğrafya | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | İngilizce | Tüm temalar | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | Felsefe | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 10 | Tüm Dersler | On dersin dengeli seçkisi | 203 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 11 | Matematik | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 11 | Fizik | Tüm konular | 31 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 11 | Kimya | Tüm konular | 25 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
@@ -110,6 +124,7 @@ Her satır bir JSON nesnesi:
 | Türkiye | 11 | İngilizce | Tüm temalar | 64 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 11 | Felsefe | Tüm konular | 24 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 11 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 50 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | Tüm Dersler | On dersin dengeli seçkisi | 318 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
 
 Beş bağımsız ders paketinde toplam **116 konu anlatımı ve 2.500 soru** vardır.
 Ortak soru bankası bunlardan ders başına 400 soru seçen bir derlemedir; 2.000
@@ -129,6 +144,11 @@ vardır. Her soru GPT-5.6 Sol tarafından AI-only modunda incelenmiş onarım
 manifestine ve geçerli bir konu anlatımına bağlıdır; insan onayı yoktur.
 Paketlerin tamamı Question Contract 2.2 sıkı doğrulamasından 0 hata ve 0
 uyarıyla geçer.
+
+7, 8, 9 ve 11. sınıf ortak bankalarının her biri, kanonik ders paketlerinden
+konu anlatımı ve doğru cevap konumu dengesi korunarak seçilmiş **2.000 soru**
+içerir. Bu bankalar yeni soru üretmez; kaynak soruları yeniden paketler ve
+doğru cevap dağılımını 500 / 500 / 500 / 500 olarak korur.
 
 ## İçerik üretimi ve kalite
 

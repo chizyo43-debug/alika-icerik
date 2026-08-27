@@ -1,226 +1,41 @@
 {
-  "candidate": {
-    "bytes": 1186372,
-    "file": "tr_g09_din-kulturu-ve-ahlak-bilgisi_full_release_candidate_v4_472a0075.jsonl",
-    "lines": 181,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\release-candidate\\tr_g09_din-kulturu-ve-ahlak-bilgisi_full_release_candidate_v4_472a0075.jsonl",
-    "sha256": "f9206e993200fa73f7390327c47f941f501131129b410572b41aa4ccbbe4edc2"
-  },
-  "canonicalIntegration": "blocked-for-root",
-  "canonicalPreflight": {
-    "bytes": 2958,
-    "file": "g09_din-kulturu-ve-ahlak-bilgisi_full_canonical_preflight_v4_20f5df7f.json",
-    "lines": 53,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\release-candidate\\g09_din-kulturu-ve-ahlak-bilgisi_full_canonical_preflight_v4_20f5df7f.json",
-    "sha256": "20f5df7f27be8da8ca2413d475c913ba19b83b6e171a5a038ea4fb9cb1d0930a"
-  },
-  "canonicalWrite": false,
-  "counts": {
-    "families": 40,
-    "notes": 20,
+  "canonical": {
+    "answerBalance": [
+      134,
+      122,
+      122,
+      122
+    ],
+    "families": 125,
+    "notes": 29,
     "pack": 1,
-    "questions": 160,
-    "records": 181
+    "path": "turkiye/9-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
+    "questions": 500,
+    "records": 530,
+    "sha256": "75bf3c05db9b0035a9cf7054a454e2e27e14571409e3a89e4459f5796bba80b6"
   },
   "gates": {
-    "contentFindings": 0,
-    "exactDuplicates": 0,
-    "legacyAttestationRemaining": 0,
-    "nearDuplicates": 0,
-    "openPostStampFindings": 0,
+    "aiVerifiedRecords": "PASS 530/530",
+    "duplicateIds": 0,
+    "duplicateQuestionTexts": 0,
+    "noteLinks": "PASS 500/500",
+    "questionRange": "PASS 1/500-500/500",
     "strictErrors": 0,
     "strictWarnings": 0
   },
-  "gitWrite": false,
-  "postStampVerifier": {
-    "bytes": 906,
-    "file": "g09_din-kulturu-ve-ahlak-bilgisi_full_post_stamp_verification_v4_613c53e5.json",
-    "lines": 20,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\release-candidate\\g09_din-kulturu-ve-ahlak-bilgisi_full_post_stamp_verification_v4_613c53e5.json",
-    "sha256": "613c53e547760a1f533a619e37b3fdcf45325a7b7af9bf5884e8133b3bb4d285"
-  },
-  "publishBlocked": false,
+  "grade": 9,
   "publishReady": true,
-  "qualityScoreReceipt": {
-    "bytes": 1611,
-    "file": "g09_din-kulturu-ve-ahlak-bilgisi_full_quality_score_receipt_v4_995063ba.json",
-    "lines": 39,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\release-candidate\\g09_din-kulturu-ve-ahlak-bilgisi_full_quality_score_receipt_v4_995063ba.json",
-    "sha256": "995063ba72cf5743856aa33c512e343e5d662893d7858c39861a475781742499"
+  "review": {
+    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
+    "humanReviewed": false,
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol"
   },
-  "recordReviewLedger": {
-    "bytes": 85850,
-    "file": "g09_din-kulturu-ve-ahlak-bilgisi_full_record_review_ledger_v4_40993842.jsonl",
-    "lines": 181,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\release-candidate\\g09_din-kulturu-ve-ahlak-bilgisi_full_record_review_ledger_v4_40993842.jsonl",
-    "sha256": "4099384243de78537a519d449a6939c505edc17fe0626de0472a43c00e88fdbf"
+  "schema": "alika-local-final-subject-publish-receipt/1.0.0",
+  "sourceCandidate": {
+    "path": "chatgpt/9-sinif/din-kulturu-ve-ahlak-bilgisi/paket/final-bank-candidate/tr_g09_dkab_subject500_ai_verified_v1_2e1d3c6b.jsonl",
+    "sha256": "2e1d3c6b13f6aca86292cde40fc5ea70675cd621003b5330df0f4a6892ca5073"
   },
-  "releaseEvidenceBundle": {
-    "bytes": 3340,
-    "file": "g09_din-kulturu-ve-ahlak-bilgisi_full_release_bundle_v4_14a769b5.json",
-    "lines": 56,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\release-candidate\\g09_din-kulturu-ve-ahlak-bilgisi_full_release_bundle_v4_14a769b5.json",
-    "sha256": "14a769b59b19d2320454effc30c48a93a26e992a9ffd01ad7de2b417a569be85"
-  },
-  "reviewManifest": {
-    "bytes": 10152,
-    "file": "g09_din-kulturu-ve-ahlak-bilgisi_full_review_manifest_v4_02454f97.json",
-    "lines": 197,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\release-candidate\\g09_din-kulturu-ve-ahlak-bilgisi_full_review_manifest_v4_02454f97.json",
-    "sha256": "02454f977081023a55be3d6146121945a44969499342d95dcdd6d8e3b7357ecd"
-  },
-  "reviewModel": "gpt-5.6-sol",
-  "reviewStatus": "ai-verified",
-  "rubric": {
-    "bytes": 504,
-    "file": "g09_full_coverage_review_rubric_v4_5c35af79.json",
-    "lines": 18,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\release-candidate\\g09_full_coverage_review_rubric_v4_5c35af79.json",
-    "sha256": "5c35af79a14c6540e7c7be76a1a596e0114d8b68a410e8af3c013078056cf1bb"
-  },
-  "schema": "alika-g09-subject-release-candidate-receipt/4.0.0",
-  "sourceArtifacts": [
-    {
-      "bytes": 47838,
-      "file": "tr_g09_dkab_unit01_dkab_9_1_1_q0001_q0008_v1_407b68c0.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit01_dkab_9_1_1_q0001_q0008_v1_407b68c0.jsonl",
-      "sha256": "407b68c07c496f8935c12987ba94af2c98d8c4774378423e00fdaa05745ea01e"
-    },
-    {
-      "bytes": 46905,
-      "file": "tr_g09_dkab_unit01_dkab_9_1_2_q0009_q0016_v1_c68059a2.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit01_dkab_9_1_2_q0009_q0016_v1_c68059a2.jsonl",
-      "sha256": "c68059a2de8da7bbf4da7555bbfdc0039a76e8fc7ad014792efc5b2655a97b84"
-    },
-    {
-      "bytes": 44679,
-      "file": "tr_g09_dkab_unit01_dkab_9_1_3_q0017_q0024_v1_a03aaa07.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit01_dkab_9_1_3_q0017_q0024_v1_a03aaa07.jsonl",
-      "sha256": "a03aaa073735b3909bbe77c6ab816ae2c4ca0c7bf11e4aedb6c6e8fd78d539f8"
-    },
-    {
-      "bytes": 47487,
-      "file": "tr_g09_dkab_unit01_dkab_9_1_4_q0025_q0032_v1_5c04a020.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit01_dkab_9_1_4_q0025_q0032_v1_5c04a020.jsonl",
-      "sha256": "5c04a02072a684e3923b1299695b997d29e8564926076a62e25105a8ee2e8303"
-    },
-    {
-      "bytes": 44620,
-      "file": "tr_g09_dkab_unit02_dkab_9_2_1_q0033_q0040_v1_6f919ab8.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit02_dkab_9_2_1_q0033_q0040_v1_6f919ab8.jsonl",
-      "sha256": "6f919ab82b7b0acd789abcf473c713a2b55f9e602c2d9d14b4720ef24e4362be"
-    },
-    {
-      "bytes": 45551,
-      "file": "tr_g09_dkab_unit02_dkab_9_2_2_q0041_q0048_v1_eca632cc.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit02_dkab_9_2_2_q0041_q0048_v1_eca632cc.jsonl",
-      "sha256": "eca632cc3b011fd4bb52ab28d37488e39b1cdc2c0d103f2f1d6e3dd6aeb458fd"
-    },
-    {
-      "bytes": 47559,
-      "file": "tr_g09_dkab_unit02_dkab_9_2_3_q0049_q0056_v1_b7bd6717.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit02_dkab_9_2_3_q0049_q0056_v1_b7bd6717.jsonl",
-      "sha256": "b7bd67170a53678393ac44ffdf44143bb5726e2a97ad2aca990bffe493c1d847"
-    },
-    {
-      "bytes": 46719,
-      "file": "tr_g09_dkab_unit02_dkab_9_2_4_q0057_q0064_v1_25a9d925.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit02_dkab_9_2_4_q0057_q0064_v1_25a9d925.jsonl",
-      "sha256": "25a9d92581feaf28e32d587ddfc38b8ce1718a08b1943748b8c25d7eee4ec965"
-    },
-    {
-      "bytes": 45772,
-      "file": "tr_g09_dkab_unit03_dkab_9_3_1_q0065_q0072_v1_122872ca.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit03_dkab_9_3_1_q0065_q0072_v1_122872ca.jsonl",
-      "sha256": "122872caedaa25f6e2356e7c0b30d8c9d33d02c5e06c5a19abe9271c146a9118"
-    },
-    {
-      "bytes": 44990,
-      "file": "tr_g09_dkab_unit03_dkab_9_3_2_q0073_q0080_v1_4d1dadd7.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit03_dkab_9_3_2_q0073_q0080_v1_4d1dadd7.jsonl",
-      "sha256": "4d1dadd744889019a9b0e3e4506ca98a5253983e4b46ca70b9fbdd0f04a0ffd7"
-    },
-    {
-      "bytes": 44852,
-      "file": "tr_g09_dkab_unit03_dkab_9_3_3_q0081_q0088_v1_edf0a387.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit03_dkab_9_3_3_q0081_q0088_v1_edf0a387.jsonl",
-      "sha256": "edf0a38761e92dd522117239596f716babd0c6666856a2db30d94d80d2e70dc4"
-    },
-    {
-      "bytes": 47025,
-      "file": "tr_g09_dkab_unit03_dkab_9_3_4_q0089_q0096_v1_bb742584.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit03_dkab_9_3_4_q0089_q0096_v1_bb742584.jsonl",
-      "sha256": "bb7425848377e26296584936d610fc67ae54021f158f31e240e6c9ba7fa0984f"
-    },
-    {
-      "bytes": 45011,
-      "file": "tr_g09_dkab_unit04_dkab_9_4_1_q0097_q0104_v1_6f7f8738.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit04_dkab_9_4_1_q0097_q0104_v1_6f7f8738.jsonl",
-      "sha256": "6f7f87386ab70f1bb1d6db934419cb7074b7bc0349878464cb7b0303dab7f10b"
-    },
-    {
-      "bytes": 45987,
-      "file": "tr_g09_dkab_unit04_dkab_9_4_2_q0105_q0112_v1_78997864.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit04_dkab_9_4_2_q0105_q0112_v1_78997864.jsonl",
-      "sha256": "78997864161c720fd106ddf0b2971b947f24a019d7741e85e336c1806dc89be3"
-    },
-    {
-      "bytes": 46562,
-      "file": "tr_g09_dkab_unit04_dkab_9_4_3_q0113_q0120_v1_20a58a8d.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit04_dkab_9_4_3_q0113_q0120_v1_20a58a8d.jsonl",
-      "sha256": "20a58a8d69d8246af798d5cea9ed3150820df2b15aaad910b29d3cb290a7628d"
-    },
-    {
-      "bytes": 46102,
-      "file": "tr_g09_dkab_unit04_dkab_9_4_4_q0121_q0128_v1_847c49c5.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit04_dkab_9_4_4_q0121_q0128_v1_847c49c5.jsonl",
-      "sha256": "847c49c51bb74937ffbd762df2e2d98bd855d795ca3600cf7fb9833d1aa7d981"
-    },
-    {
-      "bytes": 49178,
-      "file": "tr_g09_dkab_unit05_dkab_9_5_1_q0129_q0136_v1_d58b9174.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit05_dkab_9_5_1_q0129_q0136_v1_d58b9174.jsonl",
-      "sha256": "d58b91740440622bebef53e725e9e3e5472fbad3861ed8022e1f815b59a0d652"
-    },
-    {
-      "bytes": 47904,
-      "file": "tr_g09_dkab_unit05_dkab_9_5_2_q0137_q0144_v1_6382d5ff.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit05_dkab_9_5_2_q0137_q0144_v1_6382d5ff.jsonl",
-      "sha256": "6382d5ffbc782e18a8118749033c48d86e50b0f568b6a7339ebc7f3fdefac43c"
-    },
-    {
-      "bytes": 48217,
-      "file": "tr_g09_dkab_unit05_dkab_9_5_3_q0145_q0152_v1_32841f15.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit05_dkab_9_5_3_q0145_q0152_v1_32841f15.jsonl",
-      "sha256": "32841f15c022cc54d8a8d0d874b42e62038283e129f711d099d5735fbe0ea8af"
-    },
-    {
-      "bytes": 47904,
-      "file": "tr_g09_dkab_unit05_dkab_9_5_4_q0153_q0160_v1_d0072037.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\din-kulturu-ve-ahlak-bilgisi\\paket\\onayli-aday\\tr_g09_dkab_unit05_dkab_9_5_4_q0153_q0160_v1_d0072037.jsonl",
-      "sha256": "d00720377e3dff7259a9126af704b99aad53b0376ee10c649f4af14831627440"
-    }
-  ],
   "status": "PASS",
   "subject": "Din Kültürü ve Ahlak Bilgisi"
 }
