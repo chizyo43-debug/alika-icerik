@@ -1,79 +1,41 @@
 {
+  "canonical": {
+    "answerBalance": [
+      134,
+      128,
+      122,
+      116
+    ],
+    "families": 125,
+    "notes": 17,
+    "pack": 1,
+    "path": "turkiye/7-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
+    "questions": 500,
+    "records": 518,
+    "sha256": "efbb4469d198a10318a1b61ad97e79f58313b40d0b6ffd56c7c873e4366cfbcb"
+  },
   "gates": {
-    "allRecordsAiVerified": true,
-    "byteIdenticalApprovedCandidate": true,
-    "canonicalShapedStrictValidator": {
-      "curriculum": "MEB-TYMM-2026",
-      "ephemeralRelativePath": "turkiye/7-sinif/din-kulturu-ve-ahlak-bilgisi/dkab-tum.jsonl",
-      "errors": 0,
-      "packContractSha256": "2a204725b971cca45e2d652db15f92f5bfb3531925833b45e09758ffe235b2fe",
-      "rule46Exercised": true,
-      "status": "PASS",
-      "warnings": 0
-    },
-    "contentFindings": 0,
-    "exactDuplicate": 0,
-    "nearDuplicateAt092": 0,
-    "packPublishReady": true,
-    "postStampHashVerifier": {
-      "attestationMismatch": 0,
-      "decisionMismatch": 0,
-      "projectionMismatch": 0,
-      "status": "PASS",
-      "verifiedRecords": 154
-    },
-    "shaByteLineBindings": true,
-    "strictValidator": {
-      "errors": 0,
-      "warnings": 0
-    }
+    "aiVerifiedRecords": "PASS 518/518",
+    "duplicateIds": 0,
+    "duplicateQuestionTexts": 0,
+    "noteLinks": "PASS 500/500",
+    "questionRange": "PASS 1/500-500/500",
+    "strictErrors": 0,
+    "strictWarnings": 0
   },
   "grade": 7,
-  "package": {
-    "bytes": 1137156,
-    "filename": "tr_g07_dkab_subject_q0001_q0136_v7_6a50ca7d.jsonl",
-    "lines": 154,
-    "sha256": "6a50ca7d87f14a14b8b1853113d12cb3421c170285ee8c11c883f8bf912e5ec4"
-  },
-  "packageManifest": {
-    "bytes": 2003,
-    "filename": "tr_g07_dkab_ai_verified_subject_manifest_v7_f22ddb82.json",
-    "sha256": "f22ddb82a9b9be6bfbd422f9003e75d06e10462f209cdbc79d84f1e10bda3b3a"
-  },
-  "prohibitions": {
-    "canonicalWritePerformed": false,
-    "gitOperationPerformed": false,
-    "mainModified": false
-  },
   "publishReady": true,
-  "recordCounts": {
-    "note": 17,
-    "pack": 1,
-    "question": 136,
-    "total": 154
-  },
-  "recordReviewLedger": {
-    "filename": "tr_g07_dkab_subject_record_review_ledger_v2_480eebb0.jsonl",
-    "lines": 154,
-    "sha256": "480eebb088d05ba5ff66f882b285a4932b68e366aec2d1b7c1640c6887db4dd8"
-  },
-  "reviewManifest": {
-    "bytes": 2252,
-    "filename": "tr_g07_dkab_immutable_subject_release_review_manifest_v2_188497d2.json",
-    "sha256": "188497d2ce76e8fa318200c20a63bbc8c609ec49685a18d3ed49f5cfb69aea00"
-  },
-  "reviewRubric": {
-    "filename": "tr_g07_dkab_subject_review_rubric_v2_34ef0656.json",
-    "sha256": "34ef06564a2357e536aa16182e9a3a9b72ea097e1f6ff211a6c5fc0abbfd3fa2"
-  },
-  "reviewer": {
+  "review": {
     "declaration": "ai-generated-and-ai-reviewed-no-human-review",
     "humanReviewed": false,
     "mode": "ai-only",
     "model": "gpt-5.6-sol"
   },
-  "schema": "alika-sol-hash-bound-subject-final-attestation-receipt/1.0.0",
-  "scope": "candidate-only; canonical/main/Git untouched",
+  "schema": "alika-local-final-subject-publish-receipt/1.0.0",
+  "sourceCandidate": {
+    "path": "chatgpt/7-sinif/din-kulturu-ve-ahlak-bilgisi/paket/final-bank-candidate/tr_g07_dkab_subject500_ai_verified_v1_6a2d0d5d.jsonl",
+    "sha256": "6a2d0d5d2649c7b1fe08fde2b4aae97bf622fd7b010f25c76495b6412a279142"
+  },
   "status": "PASS",
   "subject": "Din Kültürü ve Ahlak Bilgisi"
 }

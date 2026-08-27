@@ -1,219 +1,41 @@
 {
-  "candidate": {
-    "bytes": 1146092,
-    "file": "tr_g09_cografya_full_release_candidate_v4_dc0c484f.jsonl",
-    "lines": 172,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\release-candidate\\tr_g09_cografya_full_release_candidate_v4_dc0c484f.jsonl",
-    "sha256": "1ac0dbad0b513131544c427034b0dc100ae21024ba443698efe798b9a16d9af6"
-  },
-  "canonicalIntegration": "blocked-for-root",
-  "canonicalPreflight": {
-    "bytes": 2696,
-    "file": "g09_cografya_full_canonical_preflight_v4_0ef7e04e.json",
-    "lines": 53,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\release-candidate\\g09_cografya_full_canonical_preflight_v4_0ef7e04e.json",
-    "sha256": "0ef7e04ec02e85f08c9361763e431559c26e0955b2e4c66d9d09732931857c1e"
-  },
-  "canonicalWrite": false,
-  "counts": {
-    "families": 38,
-    "notes": 19,
+  "canonical": {
+    "answerBalance": [
+      134,
+      122,
+      122,
+      122
+    ],
+    "families": 125,
+    "notes": 31,
     "pack": 1,
-    "questions": 152,
-    "records": 172
+    "path": "turkiye/9-sinif/cografya/cografya-tum.jsonl",
+    "questions": 500,
+    "records": 532,
+    "sha256": "308db5b4da5e8c4e36e43653fa2538dcc6e2545847ac6f6d366ac89984dabdd8"
   },
   "gates": {
-    "contentFindings": 0,
-    "exactDuplicates": 0,
-    "legacyAttestationRemaining": 0,
-    "nearDuplicates": 0,
-    "openPostStampFindings": 0,
+    "aiVerifiedRecords": "PASS 532/532",
+    "duplicateIds": 0,
+    "duplicateQuestionTexts": 0,
+    "noteLinks": "PASS 500/500",
+    "questionRange": "PASS 1/500-500/500",
     "strictErrors": 0,
     "strictWarnings": 0
   },
-  "gitWrite": false,
-  "postStampVerifier": {
-    "bytes": 824,
-    "file": "g09_cografya_full_post_stamp_verification_v4_b3b1e9f3.json",
-    "lines": 20,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\release-candidate\\g09_cografya_full_post_stamp_verification_v4_b3b1e9f3.json",
-    "sha256": "b3b1e9f3ff079bf0014506d59b77a2320c6d242cbc6f46affd9a5c9c4e34a900"
-  },
-  "publishBlocked": false,
+  "grade": 9,
   "publishReady": true,
-  "qualityScoreReceipt": {
-    "bytes": 1551,
-    "file": "g09_cografya_full_quality_score_receipt_v4_43795bce.json",
-    "lines": 39,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\release-candidate\\g09_cografya_full_quality_score_receipt_v4_43795bce.json",
-    "sha256": "43795bce101eef2d44c7eaefcef0942e7636e7120061c2685ea8601416a0e67d"
+  "review": {
+    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
+    "humanReviewed": false,
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol"
   },
-  "recordReviewLedger": {
-    "bytes": 71600,
-    "file": "g09_cografya_full_record_review_ledger_v4_ead9b2f2.jsonl",
-    "lines": 172,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\release-candidate\\g09_cografya_full_record_review_ledger_v4_ead9b2f2.jsonl",
-    "sha256": "ead9b2f2f3fe84d6c33bd26f1760b459cf249f128847eec732952d28b14bd23e"
+  "schema": "alika-local-final-subject-publish-receipt/1.0.0",
+  "sourceCandidate": {
+    "path": "chatgpt/9-sinif/cografya/paket/final-bank-candidate/tr_g09_cografya_subject500_ai_verified_v1_290922af.jsonl",
+    "sha256": "290922afcf92a708a301cdb5eb29144fe412ae22cc98319f6270dc84e5d429a4"
   },
-  "releaseEvidenceBundle": {
-    "bytes": 2897,
-    "file": "g09_cografya_full_release_bundle_v4_391ba018.json",
-    "lines": 56,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\release-candidate\\g09_cografya_full_release_bundle_v4_391ba018.json",
-    "sha256": "391ba018eba4eacda76f100387c39a41e51fa11c98db8dbab8697592fefe20e0"
-  },
-  "reviewManifest": {
-    "bytes": 9362,
-    "file": "g09_cografya_full_review_manifest_v4_b2e2a35f.json",
-    "lines": 190,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\release-candidate\\g09_cografya_full_review_manifest_v4_b2e2a35f.json",
-    "sha256": "b2e2a35fcb671b4f13b866c3be76b99ff388ac799e510fa2957c5fe64712171b"
-  },
-  "reviewModel": "gpt-5.6-sol",
-  "reviewStatus": "ai-verified",
-  "rubric": {
-    "bytes": 504,
-    "file": "g09_full_coverage_review_rubric_v4_5c35af79.json",
-    "lines": 18,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\release-candidate\\g09_full_coverage_review_rubric_v4_5c35af79.json",
-    "sha256": "5c35af79a14c6540e7c7be76a1a596e0114d8b68a410e8af3c013078056cf1bb"
-  },
-  "schema": "alika-g09-subject-release-candidate-receipt/4.0.0",
-  "sourceArtifacts": [
-    {
-      "bytes": 47435,
-      "file": "tr_g09_cografya_unit01_cog_9_1_1_q0001_q0008_v1_e75b1d55.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit01_cog_9_1_1_q0001_q0008_v1_e75b1d55.jsonl",
-      "sha256": "e75b1d5526ed20c7b6342fcbbb9c328be83ccc280c93bba88e67915fa727fca3"
-    },
-    {
-      "bytes": 46949,
-      "file": "tr_g09_cografya_unit01_cog_9_1_2_q0009_q0016_v1_9977cdac.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit01_cog_9_1_2_q0009_q0016_v1_9977cdac.jsonl",
-      "sha256": "9977cdac99ce055925c5a63e1e6d94791136350a503f50903f8d9beeadcee51a"
-    },
-    {
-      "bytes": 47420,
-      "file": "tr_g09_cografya_unit01_cog_9_1_3_q0017_q0024_v1_cd7ca9d6.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit01_cog_9_1_3_q0017_q0024_v1_cd7ca9d6.jsonl",
-      "sha256": "cd7ca9d68c62e9e5954ff7682ffc07ce1f52feb1b47d13424534e6ce84a8a410"
-    },
-    {
-      "bytes": 45873,
-      "file": "tr_g09_cografya_unit02_cog_9_2_1_q0025_q0032_v1_eab28441.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit02_cog_9_2_1_q0025_q0032_v1_eab28441.jsonl",
-      "sha256": "eab2844162f5dc421661c30bc956c5a23bf9e9882ba0ab01c34465ad02f71372"
-    },
-    {
-      "bytes": 47350,
-      "file": "tr_g09_cografya_unit02_cog_9_2_2_q0033_q0040_v1_a30a49fc.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit02_cog_9_2_2_q0033_q0040_v1_a30a49fc.jsonl",
-      "sha256": "a30a49fc950f32bcf8d68c27547aa8f5fde69bc17aba4abc7a2d86ea114c3f02"
-    },
-    {
-      "bytes": 46868,
-      "file": "tr_g09_cografya_unit02_cog_9_2_3_q0041_q0048_v1_78ca0dff.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit02_cog_9_2_3_q0041_q0048_v1_78ca0dff.jsonl",
-      "sha256": "78ca0dffcf17dfd45788ed2bd46254b844ba0318a6835731d17cb03e97b22bb6"
-    },
-    {
-      "bytes": 45809,
-      "file": "tr_g09_cografya_unit03_cog_9_3_1_q0049_q0056_v1_d2cc52fd.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit03_cog_9_3_1_q0049_q0056_v1_d2cc52fd.jsonl",
-      "sha256": "d2cc52fdb779121f8dc53bab6f50fe823d3400380907e2d305ef787162ec20e7"
-    },
-    {
-      "bytes": 46107,
-      "file": "tr_g09_cografya_unit03_cog_9_3_2_q0057_q0064_v1_6e267c27.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit03_cog_9_3_2_q0057_q0064_v1_6e267c27.jsonl",
-      "sha256": "6e267c276c300fff2547b15a82662a02394207974210b4b97f7ed39d9c71b286"
-    },
-    {
-      "bytes": 48707,
-      "file": "tr_g09_cografya_unit03_cog_9_3_3_q0065_q0072_v1_53a5b7a1.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit03_cog_9_3_3_q0065_q0072_v1_53a5b7a1.jsonl",
-      "sha256": "53a5b7a1524e1049fcb89d40d42a036a1c9ea337b5e29389f279f219382101b7"
-    },
-    {
-      "bytes": 47952,
-      "file": "tr_g09_cografya_unit03_cog_9_3_4_q0073_q0080_v1_72da7193.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit03_cog_9_3_4_q0073_q0080_v1_72da7193.jsonl",
-      "sha256": "72da719343c8b4e0332dfc2ea5e984854f899b1720a4fef2be604ad52842d97c"
-    },
-    {
-      "bytes": 47493,
-      "file": "tr_g09_cografya_unit04_cog_9_4_1_q0081_q0088_v1_48fd3426.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit04_cog_9_4_1_q0081_q0088_v1_48fd3426.jsonl",
-      "sha256": "48fd34260e6e7c81ef232a91616bca2a6644bd9fd416f5682e9c1b954cd8a90a"
-    },
-    {
-      "bytes": 48765,
-      "file": "tr_g09_cografya_unit04_cog_9_4_2_q0089_q0096_v1_563174a1.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit04_cog_9_4_2_q0089_q0096_v1_563174a1.jsonl",
-      "sha256": "563174a124bf99f7840366359237c2749a26b944a7f199f936e4614f56b3d152"
-    },
-    {
-      "bytes": 48878,
-      "file": "tr_g09_cografya_unit04_cog_9_4_3_q0097_q0104_v1_d5796efd.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit04_cog_9_4_3_q0097_q0104_v1_d5796efd.jsonl",
-      "sha256": "d5796efd9a377a114c980ee80af6e32cb5fb9a5481aa04a816291d1e3218dcde"
-    },
-    {
-      "bytes": 48962,
-      "file": "tr_g09_cografya_unit04_cog_9_4_4_q0105_q0112_v1_bc2ff614.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit04_cog_9_4_4_q0105_q0112_v1_bc2ff614.jsonl",
-      "sha256": "bc2ff61441adae55c85e050d163c90d13ac3990ff0670eb0d7c969798d64a526"
-    },
-    {
-      "bytes": 49033,
-      "file": "tr_g09_cografya_unit05_cog_9_5_1_q0113_q0120_v1_22cc6278.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit05_cog_9_5_1_q0113_q0120_v1_22cc6278.jsonl",
-      "sha256": "22cc6278d84aafcca71cbb6f83c7bd4f2ab54225e43876e3b59f53df018a7578"
-    },
-    {
-      "bytes": 45946,
-      "file": "tr_g09_cografya_unit06_cog_9_6_1_q0121_q0128_v1_75e16432.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit06_cog_9_6_1_q0121_q0128_v1_75e16432.jsonl",
-      "sha256": "75e1643244c5f27b5fec3d10f17ed61aff83fbe45160c8b48b26d972c0c07ff8"
-    },
-    {
-      "bytes": 46398,
-      "file": "tr_g09_cografya_unit06_cog_9_6_2_q0129_q0136_v1_f8f065d7.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit06_cog_9_6_2_q0129_q0136_v1_f8f065d7.jsonl",
-      "sha256": "f8f065d7811e2c6c9f75756188dbe824012b4484e71cd4dade4284f579ce20fc"
-    },
-    {
-      "bytes": 47986,
-      "file": "tr_g09_cografya_unit06_cog_9_6_3_q0137_q0144_v1_063f1c13.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit06_cog_9_6_3_q0137_q0144_v1_063f1c13.jsonl",
-      "sha256": "063f1c13a5621ac59f5a6eec3631dd1a8aca1a4ab37038e295178b7dbe9c4288"
-    },
-    {
-      "bytes": 47544,
-      "file": "tr_g09_cografya_unit07_cog_9_7_1_q0145_q0152_v1_5ae2e9b7.jsonl",
-      "lines": 10,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\9-sinif\\cografya\\paket\\onayli-aday\\tr_g09_cografya_unit07_cog_9_7_1_q0145_q0152_v1_5ae2e9b7.jsonl",
-      "sha256": "5ae2e9b76db990254ce35e75128f19a1d9f6be47aab13f45853f5e63ff400a7d"
-    }
-  ],
   "status": "PASS",
   "subject": "Coğrafya"
 }

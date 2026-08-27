@@ -1,0 +1,144 @@
+{
+  "bank": "turkiye/11-sinif/soru-bankasi/11-sinif-tum-dersler-2000-soru.jsonl",
+  "counts": {
+    "notes": 318,
+    "pack": 1,
+    "questions": 2000,
+    "records": 2319
+  },
+  "grade": 11,
+  "publishReady": true,
+  "quality": {
+    "answerBalance": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "brokenNoteLinks": 0,
+    "duplicateIds": 0,
+    "duplicateQuestionTexts": 0,
+    "families": 1444,
+    "largestFamily": 4,
+    "perSubject": {
+      "Biyoloji": 200,
+      "Coğrafya": 200,
+      "Din Kültürü ve Ahlak Bilgisi": 200,
+      "Felsefe": 200,
+      "Fizik": 200,
+      "Kimya": 200,
+      "Matematik": 200,
+      "Tarih": 200,
+      "Türk Dili ve Edebiyatı": 200,
+      "İngilizce": 200
+    },
+    "strictErrors": 0,
+    "strictWarnings": 0
+  },
+  "review": {
+    "answerBalance": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "bankDecisionSha256": "4a795fd0d32fe5ac1c94cf6568a2f6beda5a4bf37e03fcc4a7b12133f17b7596",
+    "decision": "PASS",
+    "grade": 11,
+    "humanReviewed": false,
+    "methodVersion": "alika-missing-banks-ai-only-release/1.0.0",
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol",
+    "notes": 318,
+    "perSubject": {
+      "Biyoloji": 200,
+      "Coğrafya": 200,
+      "Din Kültürü ve Ahlak Bilgisi": 200,
+      "Felsefe": 200,
+      "Fizik": 200,
+      "Kimya": 200,
+      "Matematik": 200,
+      "Tarih": 200,
+      "Türk Dili ve Edebiyatı": 200,
+      "İngilizce": 200
+    },
+    "questions": 2000,
+    "schema": "alika-missing-question-bank-decision/1.0.0",
+    "selectionSha256": "179df726db48d48c57f3d25042426711892ca2382ef31f1604f6d64c50935216",
+    "sourcePackages": [
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g11.biyoloji.full",
+        "path": "turkiye/11-sinif/biyoloji/biyoloji-tum.jsonl",
+        "questions": 200,
+        "sha256": "2411bcf9e2f6c208bc63cb1dc0676c8dc8ada4c756fcdd664b022580b375767f"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g11.cografya.full",
+        "path": "turkiye/11-sinif/cografya/cografya-tum.jsonl",
+        "questions": 200,
+        "sha256": "e6f2be925595dac28f42d191e285a388d83b2326823470246472228774c9c852"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g11.dkab.full",
+        "path": "turkiye/11-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
+        "questions": 200,
+        "sha256": "dc0bbfbab3c35737868df7457465478229d022e012f0d44d7a451538b5792cbe"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g11.felsefe.full",
+        "path": "turkiye/11-sinif/felsefe/felsefe-tum.jsonl",
+        "questions": 200,
+        "sha256": "f7b26b320555df13da9159893336fd5d252d1b8930695c8c8fccaa97962c1d51"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g11.fizik.full",
+        "path": "turkiye/11-sinif/fizik/fizik-tum.jsonl",
+        "questions": 200,
+        "sha256": "de48744e208400ddec23378f10f7aacb6ac2da6d44a665b7b58115a19d0db7da"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g11.ingilizce.full",
+        "path": "turkiye/11-sinif/ingilizce/ingilizce-tum.jsonl",
+        "questions": 200,
+        "sha256": "f046b1c9b1b07cea53d9be935bbf43fe2dc2f2e5a98a1c33a852b27a61a161f7"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g11.kimya.full",
+        "path": "turkiye/11-sinif/kimya/kimya-tum.jsonl",
+        "questions": 200,
+        "sha256": "847436b8f0d42e87215b2202a1200a4e8e6cf98f4477a460d1639bf399102baa"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g11.matematik.current",
+        "path": "turkiye/11-sinif/matematik/matematik-tum.jsonl",
+        "questions": 200,
+        "sha256": "208426ccb26b16ff96a0d6c959da2884f8c595bcf4ed1a997bd5da785a9f3fc1"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g11.tarih.full",
+        "path": "turkiye/11-sinif/tarih/tarih-tum.jsonl",
+        "questions": 200,
+        "sha256": "83d1c474d62cbaa5f93f39a98baa6ffbae9896b3afd427bd60125b2b213fd7b1"
+      },
+      {
+        "hashScope": "raw-file-sha256",
+        "id": "tr.g11.turk-dili-ve-edebiyati.full",
+        "path": "turkiye/11-sinif/turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum.jsonl",
+        "questions": 200,
+        "sha256": "1c2bb0f9a8c0810d56e834777e473f2b642184ef1e68a38d062491615336499e"
+      }
+    ]
+  },
+  "schema": "alika-missing-question-bank-release-receipt/1.0.0",
+  "sha256": "5bc3c5e05bfe555f6b367028fdc3678dff20bfd4d7ad08fd8a0fad574668668e",
+  "status": "PASS"
+}
