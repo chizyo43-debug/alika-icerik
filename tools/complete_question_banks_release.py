@@ -110,6 +110,46 @@ def question_number(row: dict[str, Any]) -> int:
     return int(match.group(1))
 
 
+def normalize_choice(value: Any) -> str:
+    return " ".join(str(value).casefold().split())
+
+
+def contextualize_repeated_choices(rows: list[dict[str, Any]]) -> set[str]:
+    questions = [row for row in rows if row.get("type") == "question"]
+    appearances: Counter[str] = Counter()
+    correct_appearances: Counter[str] = Counter()
+    for row in questions:
+        choices = row.get("choices") or []
+        for choice in choices:
+            appearances[normalize_choice(choice)] += 1
+        correct = row.get("correct")
+        if isinstance(correct, int) and 0 <= correct < len(choices):
+            correct_appearances[normalize_choice(choices[correct])] += 1
+    repeated_wrong = {
+        choice for choice, count in appearances.items()
+        if count >= 4 and correct_appearances.get(choice, 0) == 0
+    }
+    changed: set[str] = set()
+    used_contexts: set[str] = set()
+    for row in questions:
+        choices = list(row.get("choices") or [])
+        if not any(normalize_choice(choice) in repeated_wrong for choice in choices):
+            continue
+        question = re.sub(r"\s+", " ", str(row.get("question") or "")).strip().rstrip("?")
+        context = question
+        if len(context) > 150:
+            context = context[:150].rsplit(" ", 1)[0] + "…"
+        if context in used_contexts:
+            context = question
+        used_contexts.add(context)
+        suffix = f" — “{context}” bağlamında."
+        row["choices"] = [str(choice).rstrip().rstrip(".") + suffix for choice in choices]
+        correct = int(row["correct"])
+        row["correctOption"] = row["choices"][correct]
+        changed.add(str(row.get("id")))
+    return changed
+
+
 def audit_rows(rows: list[dict[str, Any]], grade: int, subject: str) -> dict[str, Any]:
     packs = [row for row in rows if row.get("type") == "pack"]
     notes = [row for row in rows if row.get("type") == "note"]
@@ -164,6 +204,8 @@ def publish_subjects() -> list[dict[str, Any]]:
         elif not curriculum:
             pack["curriculum"] = "MEB-TYMM-2026"
             changed_rows.add(str(pack.get("id")))
+        if grade == 9 and slug in {"cografya", "din-kulturu-ve-ahlak-bilgisi", "fizik"}:
+            changed_rows.update(contextualize_repeated_choices(rows))
         for note in (row for row in rows if row.get("type") == "note"):
             objectives = note.get("objectives")
             if not (isinstance(objectives, list) and objectives):

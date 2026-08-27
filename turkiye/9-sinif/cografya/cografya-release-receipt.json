@@ -12,7 +12,7 @@
     "path": "turkiye/9-sinif/cografya/cografya-tum.jsonl",
     "questions": 500,
     "records": 532,
-    "sha256": "308db5b4da5e8c4e36e43653fa2538dcc6e2545847ac6f6d366ac89984dabdd8"
+    "sha256": "97d50444c8b180fc71408abe6104e9d1ffa4f5bb0bfd0fc637fcb084f3982b7d"
   },
   "gates": {
     "aiVerifiedRecords": "PASS 532/532",

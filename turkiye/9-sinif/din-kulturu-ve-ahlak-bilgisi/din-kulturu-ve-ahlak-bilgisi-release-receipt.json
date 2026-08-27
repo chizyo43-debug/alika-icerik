@@ -12,7 +12,7 @@
     "path": "turkiye/9-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
     "questions": 500,
     "records": 530,
-    "sha256": "9ebb85158f65ca0391e179e8ccd1d86917ed81bfceb42e90e22db8fba9c3fa7e"
+    "sha256": "09f91215c6a93863b09adb0abddee8343969c6123197babcc0378500003676f5"
   },
   "gates": {
     "aiVerifiedRecords": "PASS 530/530",
