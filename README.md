@@ -100,6 +100,16 @@ Her satır bir JSON nesnesi:
 | Türkiye | 9 | Coğrafya | Tüm konular | 19 | 152 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | İngilizce | Tüm temalar | 192 | 1.536 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 20 | 160 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | Matematik | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | Fizik | Tüm konular | 31 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | Kimya | Tüm konular | 25 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | Biyoloji | Tüm konular | 22 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | Türk Dili ve Edebiyatı | Tüm konular | 32 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | Tarih | Tüm konular | 22 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | Coğrafya | Tüm konular | 38 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | İngilizce | Tüm temalar | 64 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | Felsefe | Tüm konular | 24 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 11 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 50 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 
 Beş bağımsız ders paketinde toplam **116 konu anlatımı ve 2.500 soru** vardır.
 Ortak soru bankası bunlardan ders başına 400 soru seçen bir derlemedir; 2.000
@@ -113,6 +123,12 @@ vardır. Ortak 6. sınıf soru bankası yeni soru üretmez: Matematik, Fen, Tür
 İngilizce ve Sosyal Bilgilerden 380'er; Bilişim ile Din Kültüründen 50'şer
 soru seçer. Bütün 168 konu anlatımı ve kazanım korunur; doğru cevap konumları
 500 / 500 / 500 / 500'dür.
+
+On bağımsız 11. sınıf ders paketinde toplam **328 konu anlatımı ve 5.000 soru**
+vardır. Her soru GPT-5.6 Sol tarafından AI-only modunda incelenmiş onarım
+manifestine ve geçerli bir konu anlatımına bağlıdır; insan onayı yoktur.
+Paketlerin tamamı Question Contract 2.2 sıkı doğrulamasından 0 hata ve 0
+uyarıyla geçer.
 
 ## İçerik üretimi ve kalite
 

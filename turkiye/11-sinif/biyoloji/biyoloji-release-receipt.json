@@ -1,0 +1,3786 @@
+{
+  "counts": {
+    "note": 22,
+    "pack": 1,
+    "question": 500,
+    "total": 523
+  },
+  "curriculum": "MEB-TYMM-2024",
+  "decision": "PASS",
+  "gates": {
+    "duplicateId": 0,
+    "jsonlParse": "PASS 523/523",
+    "manifestContentHashes": "PASS 500/500",
+    "manifestCoverage": "PASS 500/500",
+    "noteQuestionLinks": "PASS 500/500",
+    "noteRichness": "PASS 22/22",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0
+  },
+  "grade": 11,
+  "humanReviewed": false,
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 4249674,
+    "path": "turkiye/11-sinif/biyoloji/biyoloji-tum.jsonl",
+    "records": 523,
+    "sha256": "7f2a2a6e3159ee35cd44dd213cb8364c7841b3f3fbd29e7c904af5ac66f297ff"
+  },
+  "publishBlocked": false,
+  "publishReady": true,
+  "quality": {
+    "answerBalance": [
+      125,
+      125,
+      125,
+      125
+    ],
+    "duplicateNoteBodies": 0,
+    "duplicateQuestionTexts": 0,
+    "errors": 0,
+    "families": 170,
+    "figuredQuestions": 0,
+    "largestFamily": 5,
+    "minimumNoteEvidenceCharacters": 10992,
+    "warnings": 0
+  },
+  "questionRange": [
+    1,
+    500
+  ],
+  "review": {
+    "changedRecords": {
+      "tr-g11-biyoloji-note-001": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-002": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-003": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-004": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-005": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-006": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-007": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-008": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-009": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-010": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-011": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-012": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-biyoloji-note-013": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-biyoloji-note-014": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-biyoloji-note-015": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-biyoloji-note-016": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-biyoloji-note-017": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-biyoloji-note-018": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-biyoloji-note-019": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-biyoloji-note-020": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-biyoloji-note-021": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-biyoloji-note-022": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-biyoloji-q0001": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0002": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0003": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0004": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0005": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0006": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0007": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0008": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0009": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0010": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0011": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0012": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0013": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0014": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0015": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0016": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0017": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0018": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0019": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0020": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0021": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0022": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0023": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0024": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0025": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0026": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0027": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0028": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0029": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0030": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0031": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0032": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0033": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0034": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0035": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0036": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0037": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0038": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0039": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0040": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0041": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0042": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0043": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0044": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0045": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0046": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0047": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0048": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0049": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0050": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0051": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0052": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0053": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0054": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0055": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0056": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0057": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0058": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0059": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0060": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0061": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0062": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0063": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0064": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0065": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0066": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0067": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0068": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0069": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0070": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0071": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0072": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0073": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0074": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0075": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0076": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0077": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0078": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0079": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0080": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0081": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0082": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0083": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0084": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0085": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0086": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0087": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0088": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0089": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0090": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0091": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0092": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0093": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0094": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0095": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0096": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0097": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0098": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0099": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0100": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0101": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0102": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0103": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0104": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0105": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0106": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0107": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0108": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0109": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0110": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0111": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0112": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0113": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0114": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0115": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0116": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0117": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0118": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0119": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0120": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0121": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0122": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0123": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0124": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0125": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0126": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0127": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0128": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0129": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0130": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0131": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0132": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0133": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0134": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0135": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0136": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0137": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0138": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0139": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0140": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0141": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0142": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0143": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0144": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0145": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0146": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0147": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0148": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0149": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0150": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0151": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0152": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0153": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0154": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0155": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0156": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0157": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0158": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0159": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0160": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0161": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0162": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0163": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0164": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0165": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0166": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0167": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0168": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0169": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0170": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0171": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0172": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0173": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0174": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0175": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0176": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0177": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0178": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0179": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0180": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0181": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0182": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0183": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0184": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0185": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0186": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0187": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0188": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0189": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0190": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0191": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0192": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0193": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0194": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0195": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0196": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0197": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0198": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0199": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0200": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0201": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0202": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0203": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0204": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0205": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0206": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0207": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0208": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0209": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0210": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0211": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0212": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0213": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0214": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0215": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0216": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0217": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0218": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0219": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0220": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0221": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0222": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0223": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0224": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0225": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0226": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0227": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0228": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0229": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0230": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0231": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0232": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0233": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0234": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0235": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0236": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0237": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0238": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0239": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0240": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0241": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0242": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0243": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0244": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0245": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0246": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0247": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0248": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0249": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0250": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0251": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0252": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0253": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0254": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0255": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0256": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0257": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0258": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0259": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0260": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0261": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0262": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0263": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0264": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0265": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0266": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0267": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0268": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0269": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0270": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0271": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0272": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0273": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0274": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0275": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0276": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0277": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0278": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0279": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0280": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0281": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0282": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0283": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0284": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0285": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0286": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0287": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0288": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0289": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0290": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0291": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0292": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0293": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0294": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0295": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0296": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0297": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0298": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0299": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0300": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0301": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0302": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0303": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0304": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0305": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0306": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0307": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0308": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0309": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0310": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0311": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0312": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0313": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0314": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0315": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0316": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0317": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0318": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0319": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0320": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0321": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0322": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0323": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0324": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0325": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0326": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0327": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0328": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0329": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0330": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0331": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0332": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0333": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0334": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0335": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0336": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0337": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0338": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0339": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0340": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0341": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0342": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0343": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0344": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0345": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0346": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0347": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0348": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0349": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0350": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0351": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0352": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0353": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0354": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0355": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0356": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0357": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0358": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0359": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0360": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0361": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0362": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0363": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0364": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0365": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0366": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0367": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0368": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0369": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0370": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0371": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0372": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0373": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0374": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0375": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0376": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0377": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0378": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0379": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0380": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0381": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0382": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0383": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0384": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0385": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0386": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0387": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0388": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0389": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0390": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0391": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0392": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0393": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0394": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0395": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0396": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0397": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0398": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0399": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0400": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0401": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0402": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0403": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0404": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0405": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0406": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0407": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0408": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0409": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0410": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0411": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0412": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0413": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0414": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0415": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0416": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0417": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0418": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0419": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0420": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0421": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0422": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0423": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0424": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0425": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0426": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0427": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0428": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0429": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0430": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0431": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0432": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0433": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0434": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0435": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0436": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0437": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0438": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0439": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0440": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0441": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0442": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0443": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0444": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0445": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0446": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0447": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0448": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0449": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0450": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0451": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0452": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0453": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0454": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0455": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0456": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0457": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0458": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0459": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0460": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0461": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0462": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0463": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0464": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0465": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0466": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0467": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0468": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0469": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0470": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0471": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0472": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0473": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0474": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0475": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0476": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0477": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0478": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0479": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0480": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0481": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0482": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0483": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0484": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0485": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0486": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0487": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0488": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0489": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0490": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0491": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0492": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0493": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0494": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0495": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0496": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0497": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0498": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0499": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-biyoloji-q0500": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr.g11.biyoloji.full": [
+        "productionStatus"
+      ]
+    },
+    "contentProjectionSetSha256": "f60e5054769b423c86b3c35658ba2b236c55f93419186f7404d456d25824dacb",
+    "decision": "PASS",
+    "gates": {
+      "duplicateIds": 0,
+      "duplicateNoteBodies": 0,
+      "duplicateQuestionTexts": 0,
+      "manifestContentHashes": "PASS 500/500",
+      "manifestCoverage": "PASS 500/500",
+      "noteQuestionLinks": "PASS 500/500",
+      "noteRichness": "PASS 22/22",
+      "strictErrors": 0,
+      "strictWarnings": 0
+    },
+    "grade": 11,
+    "humanReviewed": false,
+    "manifestReviewedQuestions": 500,
+    "manifests": [
+      {
+        "firstQuestionId": "tr-g11-biyoloji-q0001",
+        "lastQuestionId": "tr-g11-biyoloji-q0050",
+        "path": "biyoloji/staging/sol-repair/question-2.2/tr_g11_biyoloji_q0001_q0050_repair_manifest_v38_4241e0ed.json",
+        "questionCount": 50,
+        "sha256": "4241e0ed913ec4be10c3a2bcdf38ac30669bb4cc8f78b2d814cb88122b45a08a"
+      },
+      {
+        "firstQuestionId": "tr-g11-biyoloji-q0051",
+        "lastQuestionId": "tr-g11-biyoloji-q0100",
+        "path": "biyoloji/staging/sol-repair/question-2.2/tr_g11_biyoloji_q0051_q0100_repair_manifest_v39_05594eba.json",
+        "questionCount": 50,
+        "sha256": "05594eba591b82ef18b0111ae6c580a25c5856b9df78c75edf2e5f61b262cf90"
+      },
+      {
+        "firstQuestionId": "tr-g11-biyoloji-q0101",
+        "lastQuestionId": "tr-g11-biyoloji-q0150",
+        "path": "biyoloji/staging/sol-repair/question-2.2/tr_g11_biyoloji_q0101_q0150_repair_manifest_v40_7b122cd8.json",
+        "questionCount": 50,
+        "sha256": "7b122cd8e71573c9818df6dcb2ccca5456d7fbefdba0d4ec985ce110b24d2105"
+      },
+      {
+        "firstQuestionId": "tr-g11-biyoloji-q0151",
+        "lastQuestionId": "tr-g11-biyoloji-q0200",
+        "path": "biyoloji/staging/sol-repair/question-2.2/tr_g11_biyoloji_q0151_q0200_repair_manifest_v41_d9cf6d09.json",
+        "questionCount": 50,
+        "sha256": "d9cf6d097268afd5740ecf3154e35f22a7a162590dcb95a4b130b85412f152bc"
+      },
+      {
+        "firstQuestionId": "tr-g11-biyoloji-q0201",
+        "lastQuestionId": "tr-g11-biyoloji-q0250",
+        "path": "biyoloji/staging/sol-repair/question-2.2/tr_g11_biyoloji_q0201_q0250_repair_manifest_v42_2af08f49.json",
+        "questionCount": 50,
+        "sha256": "2af08f49fdecc314c0a3a83d9f3181c4f9e4ad5358e787426e1142f1c313870a"
+      },
+      {
+        "firstQuestionId": "tr-g11-biyoloji-q0251",
+        "lastQuestionId": "tr-g11-biyoloji-q0300",
+        "path": "biyoloji/staging/sol-repair/question-2.2/tr_g11_biyoloji_q0251_q0300_repair_manifest_v43_fc01e079.json",
+        "questionCount": 50,
+        "sha256": "fc01e079c9a3a48d4105c20a3ffdde1002b6852721aacb159f3cdd8dfc67f455"
+      },
+      {
+        "firstQuestionId": "tr-g11-biyoloji-q0301",
+        "lastQuestionId": "tr-g11-biyoloji-q0350",
+        "path": "biyoloji/staging/sol-repair/question-2.2/tr_g11_biyoloji_q0301_q0350_repair_manifest_v44_6e40da8c.json",
+        "questionCount": 50,
+        "sha256": "6e40da8c045b4ae8b307ab193dac31906970307c4bea3a7e398e61404310b23a"
+      },
+      {
+        "firstQuestionId": "tr-g11-biyoloji-q0351",
+        "lastQuestionId": "tr-g11-biyoloji-q0400",
+        "path": "biyoloji/staging/sol-repair/question-2.2/tr_g11_biyoloji_q0351_q0400_repair_manifest_v45_56ca8fdd.json",
+        "questionCount": 50,
+        "sha256": "56ca8fdd0fd5bd0d40dd65994d0fdb5c5bd824e3fd1d163551a449e87d38092f"
+      },
+      {
+        "firstQuestionId": "tr-g11-biyoloji-q0401",
+        "lastQuestionId": "tr-g11-biyoloji-q0450",
+        "path": "biyoloji/staging/sol-repair/question-2.2/tr_g11_biyoloji_q0401_q0450_repair_manifest_v46_68ab951e.json",
+        "questionCount": 50,
+        "sha256": "68ab951e0580b99055d6e6867da0747879bcfa324aa3658438bfdd629f1adadd"
+      },
+      {
+        "firstQuestionId": "tr-g11-biyoloji-q0451",
+        "lastQuestionId": "tr-g11-biyoloji-q0500",
+        "path": "biyoloji/staging/sol-repair/question-2.2/tr_g11_biyoloji_q0451_q0500_repair_manifest_v47_20f033dd.json",
+        "questionCount": 50,
+        "sha256": "20f033dd244084b57f33698b9945df9bfa931a84905e18fb4f843d47e3dc4ef7"
+      }
+    ],
+    "methodVersion": "alika-g11-manifest-backed-ai-only-release/1.0.0",
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol",
+    "packageDecisionSha256": "7854baba2cc584a3382f82b7b210b2e7daac685eef49440b0fe763ce00972197",
+    "questionManifestCount": 10,
+    "questionManifestSetSha256": "87ad63ebe74a28e8b5c73b5408a5fa687805eb3b725a9b829bf8bf6348002489",
+    "schema": "alika-g11-manifest-backed-package-decision/1.0.0",
+    "sourceCandidateSha256": "004f49485d1d58d101577fa64dd26381dbcdc4a2029e70d75a64f87183e12858",
+    "subject": "Biyoloji"
+  },
+  "schema": "alika-g11-manifest-backed-ai-only-release-receipt/1.0.0",
+  "sourceCandidate": {
+    "path": "chatgpt/11-sinif/biyoloji/staging/sol-repair/biology-full-validation-v2-004f4948.jsonl",
+    "sha256": "004f49485d1d58d101577fa64dd26381dbcdc4a2029e70d75a64f87183e12858"
+  },
+  "subject": "Biyoloji",
+  "subjectSlug": "biyoloji"
+}

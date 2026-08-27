@@ -1,0 +1,3914 @@
+{
+  "counts": {
+    "note": 50,
+    "pack": 1,
+    "question": 500,
+    "total": 551
+  },
+  "curriculum": "MEB-TYMM-2024",
+  "decision": "PASS",
+  "gates": {
+    "duplicateId": 0,
+    "jsonlParse": "PASS 551/551",
+    "manifestContentHashes": "PASS 500/500",
+    "manifestCoverage": "PASS 500/500",
+    "noteQuestionLinks": "PASS 500/500",
+    "noteRichness": "PASS 50/50",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0
+  },
+  "grade": 11,
+  "humanReviewed": false,
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 5072540,
+    "path": "turkiye/11-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
+    "records": 551,
+    "sha256": "d028b76dff7139964e59379ffedfdb18ef97e5ef5957ce372b0363a62559f03b"
+  },
+  "publishBlocked": false,
+  "publishReady": true,
+  "quality": {
+    "answerBalance": [
+      125,
+      125,
+      125,
+      125
+    ],
+    "duplicateNoteBodies": 0,
+    "duplicateQuestionTexts": 0,
+    "errors": 0,
+    "families": 250,
+    "figuredQuestions": 0,
+    "largestFamily": 2,
+    "minimumNoteEvidenceCharacters": 2166,
+    "warnings": 0
+  },
+  "questionRange": [
+    1,
+    500
+  ],
+  "review": {
+    "changedRecords": {
+      "tr-g11-dkab-note-001": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-002": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-003": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-004": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-005": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-006": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-007": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-008": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-009": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-010": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-011": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-012": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-013": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-014": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-015": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-016": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-017": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-018": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-019": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-020": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-021": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-022": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-023": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-024": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-025": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-026": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-027": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-028": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-029": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-030": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-031": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-032": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-033": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-034": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-035": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-036": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-037": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-038": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-039": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-040": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-041": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-042": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-043": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-044": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-045": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-046": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-047": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-048": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-049": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-note-050": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-dkab-q0001": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0002": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0003": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0004": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0005": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0006": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0007": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0008": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0009": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0010": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0011": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0012": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0013": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0014": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0015": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0016": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0017": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0018": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0019": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0020": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0021": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0022": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0023": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0024": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0025": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0026": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0027": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0028": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0029": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0030": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0031": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0032": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0033": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0034": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0035": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0036": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0037": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0038": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0039": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0040": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0041": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0042": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0043": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0044": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0045": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0046": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0047": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0048": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0049": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0050": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0051": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0052": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0053": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0054": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0055": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0056": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0057": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0058": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0059": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0060": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0061": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0062": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0063": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0064": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0065": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0066": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0067": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0068": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0069": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0070": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0071": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0072": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0073": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0074": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0075": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0076": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0077": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0078": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0079": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0080": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0081": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0082": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0083": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0084": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0085": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0086": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0087": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0088": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0089": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0090": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0091": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0092": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0093": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0094": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0095": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0096": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0097": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0098": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0099": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0100": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0101": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0102": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0103": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0104": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0105": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0106": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0107": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0108": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0109": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0110": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0111": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0112": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0113": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0114": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0115": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0116": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0117": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0118": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0119": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0120": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0121": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0122": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0123": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0124": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0125": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0126": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0127": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0128": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0129": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0130": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0131": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0132": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0133": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0134": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0135": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0136": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0137": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0138": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0139": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0140": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0141": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0142": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0143": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0144": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0145": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0146": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0147": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0148": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0149": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0150": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0151": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0152": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0153": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0154": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0155": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0156": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0157": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0158": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0159": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0160": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0161": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0162": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0163": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0164": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0165": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0166": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0167": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0168": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0169": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0170": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0171": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0172": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0173": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0174": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0175": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0176": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0177": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0178": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0179": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0180": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0181": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0182": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0183": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0184": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0185": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0186": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0187": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0188": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0189": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0190": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0191": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0192": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0193": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0194": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0195": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0196": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0197": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0198": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0199": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0200": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0201": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0202": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0203": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0204": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0205": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0206": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0207": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0208": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0209": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0210": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0211": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0212": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0213": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0214": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0215": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0216": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0217": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0218": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0219": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0220": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0221": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0222": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0223": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0224": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0225": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0226": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0227": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0228": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0229": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0230": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0231": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0232": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0233": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0234": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0235": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0236": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0237": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0238": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0239": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0240": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0241": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0242": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0243": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0244": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0245": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0246": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0247": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0248": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0249": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0250": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0251": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0252": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0253": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0254": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0255": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0256": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0257": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0258": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0259": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0260": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0261": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0262": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0263": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0264": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0265": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0266": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0267": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0268": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0269": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0270": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0271": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0272": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0273": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0274": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0275": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0276": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0277": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0278": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0279": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0280": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0281": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0282": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0283": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0284": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0285": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0286": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0287": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0288": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0289": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0290": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0291": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0292": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0293": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0294": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0295": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0296": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0297": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0298": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0299": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0300": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0301": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0302": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0303": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0304": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0305": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0306": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0307": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0308": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0309": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0310": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0311": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0312": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0313": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0314": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0315": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0316": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0317": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0318": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0319": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0320": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0321": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0322": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0323": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0324": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0325": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0326": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0327": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0328": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0329": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0330": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0331": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0332": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0333": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0334": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0335": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0336": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0337": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0338": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0339": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0340": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0341": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0342": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0343": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0344": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0345": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0346": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0347": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0348": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0349": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0350": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0351": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0352": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0353": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0354": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0355": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0356": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0357": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0358": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0359": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0360": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0361": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0362": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0363": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0364": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0365": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0366": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0367": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0368": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0369": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0370": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0371": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0372": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0373": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0374": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0375": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0376": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0377": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0378": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0379": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0380": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0381": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0382": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0383": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0384": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0385": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0386": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0387": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0388": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0389": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0390": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0391": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0392": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0393": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0394": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0395": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0396": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0397": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0398": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0399": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0400": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0401": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0402": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0403": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0404": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0405": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0406": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0407": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0408": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0409": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0410": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0411": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0412": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0413": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0414": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0415": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0416": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0417": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0418": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0419": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0420": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0421": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0422": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0423": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0424": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0425": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0426": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0427": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0428": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0429": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0430": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0431": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0432": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0433": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0434": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0435": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0436": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0437": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0438": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0439": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0440": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0441": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0442": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0443": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0444": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0445": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0446": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0447": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0448": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0449": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0450": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0451": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0452": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0453": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0454": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0455": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0456": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0457": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0458": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0459": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0460": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0461": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0462": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0463": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0464": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0465": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0466": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0467": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0468": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0469": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0470": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0471": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0472": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0473": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0474": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0475": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0476": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0477": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0478": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0479": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0480": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0481": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0482": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0483": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0484": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0485": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0486": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0487": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0488": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0489": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0490": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0491": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0492": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0493": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0494": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0495": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0496": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0497": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0498": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0499": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-dkab-q0500": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr.g11.dkab.full": [
+        "productionStatus"
+      ]
+    },
+    "contentProjectionSetSha256": "1812987743d054329a876d1d309d8ee53be54ee802b90c7cabcf5dcb29ef94a7",
+    "decision": "PASS",
+    "gates": {
+      "duplicateIds": 0,
+      "duplicateNoteBodies": 0,
+      "duplicateQuestionTexts": 0,
+      "manifestContentHashes": "PASS 500/500",
+      "manifestCoverage": "PASS 500/500",
+      "noteQuestionLinks": "PASS 500/500",
+      "noteRichness": "PASS 50/50",
+      "strictErrors": 0,
+      "strictWarnings": 0
+    },
+    "grade": 11,
+    "humanReviewed": false,
+    "manifestReviewedQuestions": 500,
+    "manifests": [
+      {
+        "firstQuestionId": "tr-g11-dkab-q0001",
+        "lastQuestionId": "tr-g11-dkab-q0050",
+        "path": "din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/question-2.2/tr_g11_din_kulturu_ve_ahlak_bilgisi_q0001_q0050_repair_manifest_v98_619fcaef.json",
+        "questionCount": 50,
+        "sha256": "619fcaefd1fb8d2f8b221e99ffe373c591f4f93c8b825305451604dbe6759d5f"
+      },
+      {
+        "firstQuestionId": "tr-g11-dkab-q0051",
+        "lastQuestionId": "tr-g11-dkab-q0100",
+        "path": "din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/question-2.2/tr_g11_din_kulturu_ve_ahlak_bilgisi_q0051_q0100_repair_manifest_v99_ce804732.json",
+        "questionCount": 50,
+        "sha256": "ce804732fc70153242674e2bb922bb65f2bc435c680303f7990c9bc0541e2323"
+      },
+      {
+        "firstQuestionId": "tr-g11-dkab-q0101",
+        "lastQuestionId": "tr-g11-dkab-q0150",
+        "path": "din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/question-2.2/tr_g11_din_kulturu_ve_ahlak_bilgisi_q0101_q0150_repair_manifest_v100_4e407b83.json",
+        "questionCount": 50,
+        "sha256": "4e407b836134086c8f7425a0b85d3ad2cf5e89e2888f1da68aae57a4f68a241d"
+      },
+      {
+        "firstQuestionId": "tr-g11-dkab-q0151",
+        "lastQuestionId": "tr-g11-dkab-q0200",
+        "path": "din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/question-2.2/tr_g11_din_kulturu_ve_ahlak_bilgisi_q0151_q0200_repair_manifest_v101_aefc8fbe.json",
+        "questionCount": 50,
+        "sha256": "aefc8fbe83bc7773ed402272e44e1990259e706621ba1d52e063dbdf3b39b14a"
+      },
+      {
+        "firstQuestionId": "tr-g11-dkab-q0201",
+        "lastQuestionId": "tr-g11-dkab-q0250",
+        "path": "din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/question-2.2/tr_g11_din_kulturu_ve_ahlak_bilgisi_q0201_q0250_repair_manifest_v102_73e5d735.json",
+        "questionCount": 50,
+        "sha256": "73e5d735cf4af2068c36e8759b795e3a6caf0edf135ba3ebfce843a55ae29fd2"
+      },
+      {
+        "firstQuestionId": "tr-g11-dkab-q0251",
+        "lastQuestionId": "tr-g11-dkab-q0300",
+        "path": "din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/question-2.2/tr_g11_din_kulturu_ve_ahlak_bilgisi_q0251_q0300_repair_manifest_v103_2b96c1bc.json",
+        "questionCount": 50,
+        "sha256": "2b96c1bc3543f7e64cf17485bcbb928c07dfbfc46a7fb0b0a2c354b177c03576"
+      },
+      {
+        "firstQuestionId": "tr-g11-dkab-q0301",
+        "lastQuestionId": "tr-g11-dkab-q0350",
+        "path": "din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/question-2.2/tr_g11_din_kulturu_ve_ahlak_bilgisi_q0301_q0350_repair_manifest_v104_d27b1171.json",
+        "questionCount": 50,
+        "sha256": "d27b11718d41e811188bee344bcfd446b55865e920f1e618b31f695dc725c1db"
+      },
+      {
+        "firstQuestionId": "tr-g11-dkab-q0351",
+        "lastQuestionId": "tr-g11-dkab-q0400",
+        "path": "din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/question-2.2/tr_g11_din_kulturu_ve_ahlak_bilgisi_q0351_q0400_repair_manifest_v105_43f35e88.json",
+        "questionCount": 50,
+        "sha256": "43f35e88fa01287e7f5f9f8dc2d6571969ee0ea4b2a189aa8a351820dc86493d"
+      },
+      {
+        "firstQuestionId": "tr-g11-dkab-q0401",
+        "lastQuestionId": "tr-g11-dkab-q0450",
+        "path": "din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/question-2.2/tr_g11_din_kulturu_ve_ahlak_bilgisi_q0401_q0450_repair_manifest_v106_f8370d5a.json",
+        "questionCount": 50,
+        "sha256": "f8370d5a9d3f41bca8d1aa97861e647503b2ff01a697824b4093bdbbd4127c38"
+      },
+      {
+        "firstQuestionId": "tr-g11-dkab-q0451",
+        "lastQuestionId": "tr-g11-dkab-q0500",
+        "path": "din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/question-2.2/tr_g11_din_kulturu_ve_ahlak_bilgisi_q0451_q0500_repair_manifest_v107_2e527e52.json",
+        "questionCount": 50,
+        "sha256": "2e527e524c60e827600e5d1dafed633292ee90877f1ab011c4c5f2f931d5838b"
+      }
+    ],
+    "methodVersion": "alika-g11-manifest-backed-ai-only-release/1.0.0",
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol",
+    "packageDecisionSha256": "36c777e64fa67c63803fd59dce7d60465a2470ae0a21cce4bde411613c7b00a3",
+    "questionManifestCount": 10,
+    "questionManifestSetSha256": "369d8e7516eef0e4543e84717c2003a10a2c57a474fdce90795efd473fefe64e",
+    "schema": "alika-g11-manifest-backed-package-decision/1.0.0",
+    "sourceCandidateSha256": "80c33a140dd509ea67721b430964b70ded734dc10139e2624bcb26ac2914dbf7",
+    "subject": "Din Kültürü ve Ahlak Bilgisi"
+  },
+  "schema": "alika-g11-manifest-backed-ai-only-release-receipt/1.0.0",
+  "sourceCandidate": {
+    "path": "chatgpt/11-sinif/din-kulturu-ve-ahlak-bilgisi/staging/sol-repair/dkab-full-validation-v2-80c33a14.jsonl",
+    "sha256": "80c33a140dd509ea67721b430964b70ded734dc10139e2624bcb26ac2914dbf7"
+  },
+  "subject": "Din Kültürü ve Ahlak Bilgisi",
+  "subjectSlug": "din-kulturu-ve-ahlak-bilgisi"
+}

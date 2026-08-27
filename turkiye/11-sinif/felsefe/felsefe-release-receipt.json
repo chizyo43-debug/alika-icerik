@@ -1,0 +1,3784 @@
+{
+  "counts": {
+    "note": 24,
+    "pack": 1,
+    "question": 500,
+    "total": 525
+  },
+  "curriculum": "MEB-TYMM-2024",
+  "decision": "PASS",
+  "gates": {
+    "duplicateId": 0,
+    "jsonlParse": "PASS 525/525",
+    "manifestContentHashes": "PASS 500/500",
+    "manifestCoverage": "PASS 500/500",
+    "noteQuestionLinks": "PASS 500/500",
+    "noteRichness": "PASS 24/24",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0
+  },
+  "grade": 11,
+  "humanReviewed": false,
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 4384638,
+    "path": "turkiye/11-sinif/felsefe/felsefe-tum.jsonl",
+    "records": 525,
+    "sha256": "fd580ca913e4a2ae11669344715938eb24a3ca2b8d073a92a657e4a45f4b5003"
+  },
+  "publishBlocked": false,
+  "publishReady": true,
+  "quality": {
+    "answerBalance": [
+      126,
+      126,
+      124,
+      124
+    ],
+    "duplicateNoteBodies": 0,
+    "duplicateQuestionTexts": 0,
+    "errors": 0,
+    "families": 252,
+    "figuredQuestions": 0,
+    "largestFamily": 2,
+    "minimumNoteEvidenceCharacters": 6045,
+    "warnings": 0
+  },
+  "questionRange": [
+    1,
+    500
+  ],
+  "review": {
+    "changedRecords": {
+      "tr-g11-felsefe-note-001": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-002": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-003": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-004": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-005": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-006": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-007": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-008": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-009": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-010": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-011": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-012": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-013": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-014": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-015": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-016": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-017": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-018": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-019": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-020": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-021": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-022": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-023": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-note-024": [
+        "productionStatus",
+        "packId",
+        "linkedPackId"
+      ],
+      "tr-g11-felsefe-q0001": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0002": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0003": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0004": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0005": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0006": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0007": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0008": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0009": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0010": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0011": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0012": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0013": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0014": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0015": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0016": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0017": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0018": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0019": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0020": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0021": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0022": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0023": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0024": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0025": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0026": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0027": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0028": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0029": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0030": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0031": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0032": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0033": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0034": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0035": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0036": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0037": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0038": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0039": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0040": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0041": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0042": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0043": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0044": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0045": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0046": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0047": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0048": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0049": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0050": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0051": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0052": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0053": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0054": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0055": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0056": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0057": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0058": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0059": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0060": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0061": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0062": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0063": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0064": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0065": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0066": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0067": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0068": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0069": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0070": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0071": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0072": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0073": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0074": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0075": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0076": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0077": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0078": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0079": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0080": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0081": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0082": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0083": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0084": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0085": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0086": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0087": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0088": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0089": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0090": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0091": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0092": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0093": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0094": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0095": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0096": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0097": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0098": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0099": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0100": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0101": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0102": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0103": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0104": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0105": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0106": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0107": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0108": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0109": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0110": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0111": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0112": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0113": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0114": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0115": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0116": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0117": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0118": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0119": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0120": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0121": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0122": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0123": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0124": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0125": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0126": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0127": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0128": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0129": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0130": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0131": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0132": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0133": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0134": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0135": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0136": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0137": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0138": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0139": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0140": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0141": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0142": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0143": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0144": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0145": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0146": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0147": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0148": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0149": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0150": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0151": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0152": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0153": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0154": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0155": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0156": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0157": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0158": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0159": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0160": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0161": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0162": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0163": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0164": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0165": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0166": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0167": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0168": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0169": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0170": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0171": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0172": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0173": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0174": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0175": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0176": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0177": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0178": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0179": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0180": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0181": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0182": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0183": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0184": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0185": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0186": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0187": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0188": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0189": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0190": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0191": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0192": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0193": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0194": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0195": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0196": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0197": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0198": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0199": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0200": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0201": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0202": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0203": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0204": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0205": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0206": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0207": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0208": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0209": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0210": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0211": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0212": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0213": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0214": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0215": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0216": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0217": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0218": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0219": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0220": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0221": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0222": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0223": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0224": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0225": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0226": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0227": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0228": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0229": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0230": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0231": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0232": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0233": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0234": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0235": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0236": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0237": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0238": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0239": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0240": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0241": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0242": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0243": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0244": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0245": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0246": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0247": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0248": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0249": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0250": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0251": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0252": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0253": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0254": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0255": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0256": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0257": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0258": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0259": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0260": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0261": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0262": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0263": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0264": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0265": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0266": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0267": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0268": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0269": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0270": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0271": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0272": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0273": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0274": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0275": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0276": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0277": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0278": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0279": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0280": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0281": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0282": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0283": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0284": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0285": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0286": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0287": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0288": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0289": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0290": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0291": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0292": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0293": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0294": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0295": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0296": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0297": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0298": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0299": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0300": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0301": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0302": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0303": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0304": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0305": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0306": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0307": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0308": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0309": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0310": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0311": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0312": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0313": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0314": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0315": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0316": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0317": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0318": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0319": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0320": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0321": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0322": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0323": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0324": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0325": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0326": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0327": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0328": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0329": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0330": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0331": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0332": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0333": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0334": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0335": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0336": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0337": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0338": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0339": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0340": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0341": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0342": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0343": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0344": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0345": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0346": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0347": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0348": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0349": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0350": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0351": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0352": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0353": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0354": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0355": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0356": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0357": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0358": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0359": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0360": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0361": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0362": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0363": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0364": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0365": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0366": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0367": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0368": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0369": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0370": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0371": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0372": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0373": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0374": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0375": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0376": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0377": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0378": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0379": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0380": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0381": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0382": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0383": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0384": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0385": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0386": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0387": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0388": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0389": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0390": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0391": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0392": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0393": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0394": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0395": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0396": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0397": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0398": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0399": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0400": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0401": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0402": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0403": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0404": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0405": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0406": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0407": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0408": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0409": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0410": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0411": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0412": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0413": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0414": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0415": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0416": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0417": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0418": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0419": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0420": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0421": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0422": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0423": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0424": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0425": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0426": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0427": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0428": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0429": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0430": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0431": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0432": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0433": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0434": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0435": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0436": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0437": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0438": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0439": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0440": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0441": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0442": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0443": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0444": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0445": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0446": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0447": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0448": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0449": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0450": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0451": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0452": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0453": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0454": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0455": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0456": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0457": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0458": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0459": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0460": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0461": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0462": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0463": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0464": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0465": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0466": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0467": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0468": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0469": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0470": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0471": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0472": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0473": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0474": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0475": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0476": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0477": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0478": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0479": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0480": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0481": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0482": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0483": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0484": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0485": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0486": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0487": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0488": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0489": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0490": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0491": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0492": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0493": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0494": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0495": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0496": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0497": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0498": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0499": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-felsefe-q0500": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr.g11.felsefe.full": [
+        "productionStatus"
+      ]
+    },
+    "contentProjectionSetSha256": "6380b6962a203478684b5007b2d437f95e06aa2043eb9a15c685995f2c8786f7",
+    "decision": "PASS",
+    "gates": {
+      "duplicateIds": 0,
+      "duplicateNoteBodies": 0,
+      "duplicateQuestionTexts": 0,
+      "manifestContentHashes": "PASS 500/500",
+      "manifestCoverage": "PASS 500/500",
+      "noteQuestionLinks": "PASS 500/500",
+      "noteRichness": "PASS 24/24",
+      "strictErrors": 0,
+      "strictWarnings": 0
+    },
+    "grade": 11,
+    "humanReviewed": false,
+    "manifestReviewedQuestions": 500,
+    "manifests": [
+      {
+        "firstQuestionId": "tr-g11-felsefe-q0001",
+        "lastQuestionId": "tr-g11-felsefe-q0050",
+        "path": "felsefe/staging/sol-repair/question-2.2/tr_g11_felsefe_q0001_q0050_repair_manifest_v78_3a5ddb72.json",
+        "questionCount": 50,
+        "sha256": "3a5ddb7253472dc352e9d153c28551ad32547c3af4b62765fbaeeda34a9f1e77"
+      },
+      {
+        "firstQuestionId": "tr-g11-felsefe-q0051",
+        "lastQuestionId": "tr-g11-felsefe-q0100",
+        "path": "felsefe/staging/sol-repair/question-2.2/tr_g11_felsefe_q0051_q0100_repair_manifest_v79_6f287eca.json",
+        "questionCount": 50,
+        "sha256": "6f287eca6ddc853c70beb5c01df0d2a7c22fae9d9308a545e8853f4f5a66329a"
+      },
+      {
+        "firstQuestionId": "tr-g11-felsefe-q0101",
+        "lastQuestionId": "tr-g11-felsefe-q0150",
+        "path": "felsefe/staging/sol-repair/question-2.2/tr_g11_felsefe_q0101_q0150_repair_manifest_v80_52c2c6b4.json",
+        "questionCount": 50,
+        "sha256": "52c2c6b487df35fc75e0944c99211273aef79e2103e56996034980d461290936"
+      },
+      {
+        "firstQuestionId": "tr-g11-felsefe-q0151",
+        "lastQuestionId": "tr-g11-felsefe-q0200",
+        "path": "felsefe/staging/sol-repair/question-2.2/tr_g11_felsefe_q0151_q0200_repair_manifest_v81_79573194.json",
+        "questionCount": 50,
+        "sha256": "795731946248e01f5a3bb4ce832fe57117b1305f1f945774e2980b07bc515dda"
+      },
+      {
+        "firstQuestionId": "tr-g11-felsefe-q0201",
+        "lastQuestionId": "tr-g11-felsefe-q0250",
+        "path": "felsefe/staging/sol-repair/question-2.2/tr_g11_felsefe_q0201_q0250_repair_manifest_v82_88266266.json",
+        "questionCount": 50,
+        "sha256": "882662667473098d0e1bdf103b0dd29abf1d5fb72d73d3fbc21ba3f52635d6b3"
+      },
+      {
+        "firstQuestionId": "tr-g11-felsefe-q0251",
+        "lastQuestionId": "tr-g11-felsefe-q0300",
+        "path": "felsefe/staging/sol-repair/question-2.2/tr_g11_felsefe_q0251_q0300_repair_manifest_v83_b424eed6.json",
+        "questionCount": 50,
+        "sha256": "b424eed611c77f216a80be79c9f03b1607bfec04dbc1c17e37fd00d7d1c57671"
+      },
+      {
+        "firstQuestionId": "tr-g11-felsefe-q0301",
+        "lastQuestionId": "tr-g11-felsefe-q0350",
+        "path": "felsefe/staging/sol-repair/question-2.2/tr_g11_felsefe_q0301_q0350_repair_manifest_v84_c4f7ac40.json",
+        "questionCount": 50,
+        "sha256": "c4f7ac409bcd3d2886ae1a036573056b177e6154b5856b513f22d463f34d64e4"
+      },
+      {
+        "firstQuestionId": "tr-g11-felsefe-q0351",
+        "lastQuestionId": "tr-g11-felsefe-q0400",
+        "path": "felsefe/staging/sol-repair/question-2.2/tr_g11_felsefe_q0351_q0400_repair_manifest_v85_cf570704.json",
+        "questionCount": 50,
+        "sha256": "cf570704b7e8a3c02a85c8d1fddd3afd5047b257d0bb23a90298a6f388090363"
+      },
+      {
+        "firstQuestionId": "tr-g11-felsefe-q0401",
+        "lastQuestionId": "tr-g11-felsefe-q0450",
+        "path": "felsefe/staging/sol-repair/question-2.2/tr_g11_felsefe_q0401_q0450_repair_manifest_v86_64a9915a.json",
+        "questionCount": 50,
+        "sha256": "64a9915adf73a2431261c7a3016b3bd87f4247c2e20df3fed016712ffe872140"
+      },
+      {
+        "firstQuestionId": "tr-g11-felsefe-q0451",
+        "lastQuestionId": "tr-g11-felsefe-q0500",
+        "path": "felsefe/staging/sol-repair/question-2.2/tr_g11_felsefe_q0451_q0500_repair_manifest_v87_b3e642eb.json",
+        "questionCount": 50,
+        "sha256": "b3e642ebc00679b7c9a97332b511e11027ad566380c81fef21c1131e5d77faef"
+      }
+    ],
+    "methodVersion": "alika-g11-manifest-backed-ai-only-release/1.0.0",
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol",
+    "packageDecisionSha256": "fbb20db6f53c095f49a88133b5166f7c380d467320d79ee621920ece7b65f685",
+    "questionManifestCount": 10,
+    "questionManifestSetSha256": "cc8826a6b0e6db3940d797e04a91924af727815ab3c1b8c1bc1b50c07a2f93c5",
+    "schema": "alika-g11-manifest-backed-package-decision/1.0.0",
+    "sourceCandidateSha256": "6ddd3aa5ae6e4a18f8558e7eddb6ca2c3a7a849bcfaca090671f267ab9a94038",
+    "subject": "Felsefe"
+  },
+  "schema": "alika-g11-manifest-backed-ai-only-release-receipt/1.0.0",
+  "sourceCandidate": {
+    "path": "chatgpt/11-sinif/felsefe/staging/sol-repair/philosophy-full-validation-v2-6ddd3aa5.jsonl",
+    "sha256": "6ddd3aa5ae6e4a18f8558e7eddb6ca2c3a7a849bcfaca090671f267ab9a94038"
+  },
+  "subject": "Felsefe",
+  "subjectSlug": "felsefe"
+}
