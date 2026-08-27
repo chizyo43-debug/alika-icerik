@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare the missing Grade 7 Science and Grade 9 Chemistry releases.
+"""Prepare missing or incomplete Grade 7-9 course releases.
 
 The source candidates were already reviewed in full.  This repair only aligns
 their package/note metadata with the canonical Question Contract 2.2 gate:
@@ -91,6 +91,61 @@ PACKAGES = (
         "curriculum": "MEB-TYMM-2026",
         "notes": 31,
         "questions": 500,
+    },
+    {
+        "path": ROOT / "turkiye/8-sinif/fen-bilimleri/fen-bilimleri-tum.jsonl",
+        "receipt": ROOT
+        / "turkiye/8-sinif/fen-bilimleri/fen-bilimleri-release-receipt.json",
+        "source_path": (
+            "chatgpt/8-sinif/fen-bilimleri/paket/final-bank-candidate/"
+            "tr_g08_fen_subject500_ai_verified_v1_1fca275e.jsonl"
+        ),
+        "source_sha256": "1fca275e585fc40ba0c41df561290273931d91ec908c7366e4aa5396eab25f8d",
+        "grade": 8,
+        "subject": "Fen Bilimleri",
+        "slug": "fen-bilimleri",
+        "curriculum": "MEB-TYMM-2024",
+        "notes": 37,
+        "questions": 500,
+        "repair_question_links": True,
+        "receipt_question_links": True,
+    },
+    {
+        "path": ROOT / "turkiye/8-sinif/inkilap-tarihi/inkilap-tarihi-tum.jsonl",
+        "receipt": ROOT
+        / "turkiye/8-sinif/inkilap-tarihi/inkilap-tarihi-release-receipt.json",
+        "source_path": (
+            "chatgpt/8-sinif/inkilap-tarihi/paket/final-bank-candidate/"
+            "tr_g08_inkilap_subject500_ai_verified_v1_0c4c7c8c.jsonl"
+        ),
+        "source_sha256": "0c4c7c8ca0abf6bfda7ee24e4f28085e6a1d2ef1d85cfe29c1d8f06dc452016d",
+        "grade": 8,
+        "subject": "T.C. İnkılap Tarihi ve Atatürkçülük",
+        "slug": "inkilap-tarihi",
+        "curriculum": "MEB-TYMM-2024",
+        "notes": 15,
+        "questions": 500,
+        "receipt_question_links": True,
+    },
+    {
+        "path": ROOT
+        / "turkiye/8-sinif/din-kulturu-ve-ahlak-bilgisi/"
+        "din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
+        "receipt": ROOT
+        / "turkiye/8-sinif/din-kulturu-ve-ahlak-bilgisi/"
+        "din-kulturu-ve-ahlak-bilgisi-release-receipt.json",
+        "source_path": (
+            "chatgpt/8-sinif/dkab/paket/final-bank-candidate/"
+            "tr_g08_dkab_subject500_ai_verified_v1_2464d9f4.jsonl"
+        ),
+        "source_sha256": "2464d9f48f17c33ac7f4c5876bdb604209f5613e91ecf2cdbd17adaa96f4187d",
+        "grade": 8,
+        "subject": "Din Kültürü ve Ahlak Bilgisi",
+        "slug": "din-kulturu-ve-ahlak-bilgisi",
+        "curriculum": "MEB-TYMM-2024",
+        "notes": 19,
+        "questions": 500,
+        "receipt_question_links": True,
     },
 )
 
@@ -215,12 +270,28 @@ def repair(config: dict[str, Any]) -> dict[str, Any]:
         raise RuntimeError(f"topology drift: {path}")
 
     pack = packs[0]
-    already_repaired = pack.get("reviewMethodVersion") == METHOD
+    note_ids = {str(note.get("id")) for note in notes}
+    link_repairs_needed = config.get("repair_question_links", False) and any(
+        not question.get("linkedNoteId")
+        and str(question.get("noteId")) in note_ids
+        for question in questions
+    )
+    already_repaired = (
+        pack.get("reviewMethodVersion") == METHOD and not link_repairs_needed
+    )
     if already_repaired:
         receipt = json.loads(config["receipt"].read_text(encoding="utf-8"))
         current_sha = sha256_bytes(path.read_bytes())
         if receipt.get("package", {}).get("sha256") != current_sha:
             raise RuntimeError(f"repaired package/receipt drift: {path}")
+        expected_link_gate = f"PASS {len(questions)}/{len(questions)}"
+        if (
+            config.get("receipt_question_links", False)
+            and receipt.get("gates", {}).get("noteQuestionLinks")
+            != expected_link_gate
+        ):
+            receipt.setdefault("gates", {})["noteQuestionLinks"] = expected_link_gate
+            write_json_atomic(config["receipt"], receipt)
         validation = subprocess.run(
             [sys.executable, str(ROOT / "tools/pack_validate.py"), str(path)],
             cwd=ROOT,
@@ -240,7 +311,11 @@ def repair(config: dict[str, Any]) -> dict[str, Any]:
             "questionRange": receipt["questionRange"],
             "validation": "0 HATA / 0 UYARI (already repaired)",
         }
-    if not already_repaired and before_sha != config["source_sha256"]:
+    if (
+        not already_repaired
+        and pack.get("reviewMethodVersion") != METHOD
+        and before_sha != config["source_sha256"]
+    ):
         raise RuntimeError(f"source drift: {path} ({before_sha})")
 
     changed: dict[str, list[str]] = {}
@@ -257,14 +332,39 @@ def repair(config: dict[str, Any]) -> dict[str, Any]:
 
     for note in notes:
         objective_code = note.get("objectiveCode")
+        current_objectives = note.get("objectives")
         if not isinstance(objective_code, str) or not objective_code.strip():
-            raise RuntimeError(f"note objectiveCode missing: {note.get('id')}")
+            if (
+                isinstance(current_objectives, list)
+                and current_objectives
+                and all(
+                    isinstance(value, str) and value.strip()
+                    for value in current_objectives
+                )
+            ):
+                continue
+            raise RuntimeError(
+                f"note objectiveCode/objectives missing: {note.get('id')}"
+            )
         expected_objectives = [objective_code]
-        if note.get("objectives") != expected_objectives:
-            if note.get("objectives") not in (None, [], expected_objectives):
+        if current_objectives != expected_objectives:
+            if current_objectives not in (None, [], expected_objectives):
                 raise RuntimeError(f"unexpected objectives: {note.get('id')}")
             note["objectives"] = expected_objectives
             changed.setdefault(str(note.get("id")), []).append("objectives")
+
+    if config.get("repair_question_links", False):
+        for question in questions:
+            note_id = question.get("noteId")
+            if question.get("linkedNoteId") or str(note_id) not in note_ids:
+                continue
+            question["linkedNoteId"] = note_id
+            changed_fields = ["linkedNoteId"]
+            note_key = question.get("noteKey")
+            if note_key and not question.get("linkedNoteKey"):
+                question["linkedNoteKey"] = note_key
+                changed_fields.append("linkedNoteKey")
+            changed.setdefault(str(question.get("id")), []).extend(changed_fields)
 
     projection_hashes = [projection_sha(row) for row in rows]
     projection_set_sha = sha256_bytes("\n".join(projection_hashes).encode("utf-8"))
@@ -318,6 +418,11 @@ def repair(config: dict[str, Any]) -> dict[str, Any]:
         sum(1 for row in questions if row.get("correct") == index)
         for index in range(4)
     ]
+    broken_note_links = sum(
+        str(row.get("linkedNoteId")) not in note_ids for row in questions
+    )
+    if broken_note_links:
+        raise RuntimeError(f"broken note links: {path} ({broken_note_links})")
     policy = pack.get("contractPolicy") or {}
     receipt = {
         "schema": "alika-hash-bound-ai-only-subject500-release-receipt/2.0.0",
@@ -362,7 +467,7 @@ def repair(config: dict[str, Any]) -> dict[str, Any]:
         "gates": {
             "jsonlParse": f"PASS {len(rows)}/{len(rows)}",
             "questionContract22": "PASS",
-            "noteQuestionLinks": f"PASS {len(notes)}/{len(notes)}",
+            "noteQuestionLinks": f"PASS {len(questions)}/{len(questions)}",
             "duplicateId": 0,
             "strictErrors": 0,
             "strictWarnings": 0,

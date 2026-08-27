@@ -87,10 +87,10 @@ Her satır bir JSON nesnesi:
 | Türkiye | 7 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 17 | 136 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 8 | Türkçe | Tüm beceriler | 170 | 628 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 8 | Matematik | Tüm konular | 23 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 8 | Fen Bilimleri | Tüm konular | 36 | 296 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | Fen Bilimleri | Tüm konular | 37 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 8 | İngilizce | Tüm temalar | 192 | 1.536 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 8 | T.C. İnkılap Tarihi ve Atatürkçülük | Tüm konular | 15 | 120 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 8 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 19 | 152 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | T.C. İnkılap Tarihi ve Atatürkçülük | Tüm konular | 15 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 19 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | Türk Dili ve Edebiyatı | Tüm temalar | 54 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | Matematik | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | Fizik | Tüm konular | 24 | 192 | ✅ AI-only doğrulandı; insan onayı yok |
