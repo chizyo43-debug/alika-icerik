@@ -81,6 +81,7 @@ Her satır bir JSON nesnesi:
 | Türkiye | 6 | Tüm Dersler | Yedi dersin ağırlıklı seçkisi | 168 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 7 | Türkçe | Tüm beceriler | 152 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 8 | Türkçe | Tüm beceriler | 154 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | Matematik | Tüm konular | 23 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | Matematik | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | Türk Dili ve Edebiyatı | Tüm temalar | 54 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 
