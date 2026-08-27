@@ -1,0 +1,3826 @@
+{
+  "counts": {
+    "note": 20,
+    "pack": 1,
+    "question": 500,
+    "total": 521
+  },
+  "curriculum": "MEB-TYMM-2024",
+  "decision": "PASS",
+  "gates": {
+    "duplicateId": 0,
+    "jsonlParse": "PASS 521/521",
+    "manifestContentHashes": "PASS 500/500",
+    "manifestCoverage": "PASS 500/500",
+    "noteQuestionLinks": "PASS 500/500",
+    "noteRichness": "PASS 20/20",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0
+  },
+  "grade": 11,
+  "humanReviewed": false,
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 3197311,
+    "path": "turkiye/11-sinif/matematik/matematik-tum.jsonl",
+    "records": 521,
+    "sha256": "6e9851a6cb1f2a0cf20d62982cb05d1cb15cc63a5b5c14df6558d9e77908be5b"
+  },
+  "publishBlocked": false,
+  "publishReady": true,
+  "quality": {
+    "answerBalance": [
+      125,
+      125,
+      125,
+      125
+    ],
+    "duplicateNoteBodies": 0,
+    "duplicateQuestionTexts": 0,
+    "errors": 0,
+    "families": 250,
+    "figuredQuestions": 1,
+    "largestFamily": 2,
+    "minimumNoteEvidenceCharacters": 1449,
+    "warnings": 0
+  },
+  "questionRange": [
+    1,
+    500
+  ],
+  "review": {
+    "changedRecords": {
+      "tr-g11-matematik-note-001": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-002": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-003": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-004": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-005": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-006": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-007": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-008": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-009": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-010": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-011": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-012": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-013": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-014": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-015": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-016": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-017": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-018": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-019": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-note-020": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "objectives"
+      ],
+      "tr-g11-matematik-q0001": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0002": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0003": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0004": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0005": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0006": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0007": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0008": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0009": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0010": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0011": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0012": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0013": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0014": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0015": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0016": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0017": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0018": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0019": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0020": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0021": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0022": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0023": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0024": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0025": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0026": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0027": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0028": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0029": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0030": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0031": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0032": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0033": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0034": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0035": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0036": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0037": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0038": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0039": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0040": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0041": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0042": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0043": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0044": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0045": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0046": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0047": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0048": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0049": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0050": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0051": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0052": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0053": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0054": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0055": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0056": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0057": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0058": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0059": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0060": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0061": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0062": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0063": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0064": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0065": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0066": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0067": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0068": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0069": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0070": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0071": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0072": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0073": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0074": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0075": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0076": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0077": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0078": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0079": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0080": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0081": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0082": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0083": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0084": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0085": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0086": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0087": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0088": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0089": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0090": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0091": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0092": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0093": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0094": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0095": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0096": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0097": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0098": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0099": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0100": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0101": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0102": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0103": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0104": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0105": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0106": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0107": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0108": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0109": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0110": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0111": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0112": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0113": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0114": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0115": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0116": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0117": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0118": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0119": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0120": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0121": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0122": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0123": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0124": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0125": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0126": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0127": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0128": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0129": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0130": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0131": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0132": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0133": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0134": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0135": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0136": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0137": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0138": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0139": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0140": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0141": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0142": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0143": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0144": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0145": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0146": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0147": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0148": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0149": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0150": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0151": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0152": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0153": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0154": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0155": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0156": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0157": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0158": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0159": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0160": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0161": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0162": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0163": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0164": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0165": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0166": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0167": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0168": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0169": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0170": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0171": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0172": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0173": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0174": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0175": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0176": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0177": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0178": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0179": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0180": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0181": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0182": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0183": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0184": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0185": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0186": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0187": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0188": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0189": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0190": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0191": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0192": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0193": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0194": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0195": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0196": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0197": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0198": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0199": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0200": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0201": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0202": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0203": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0204": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0205": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0206": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0207": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0208": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0209": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0210": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0211": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0212": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0213": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0214": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0215": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0216": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0217": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0218": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0219": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0220": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0221": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0222": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0223": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0224": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0225": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0226": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0227": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0228": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0229": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0230": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0231": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0232": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0233": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0234": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0235": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0236": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0237": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0238": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0239": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0240": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0241": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0242": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0243": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0244": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0245": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0246": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0247": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0248": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0249": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0250": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0251": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0252": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0253": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0254": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0255": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0256": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0257": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0258": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0259": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0260": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0261": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0262": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0263": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0264": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0265": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0266": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0267": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0268": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0269": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0270": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0271": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0272": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0273": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0274": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0275": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0276": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0277": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0278": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0279": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0280": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0281": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0282": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0283": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0284": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0285": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0286": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0287": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0288": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0289": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0290": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0291": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0292": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0293": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0294": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0295": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0296": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0297": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0298": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0299": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0300": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0301": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0302": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0303": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0304": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0305": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0306": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0307": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0308": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0309": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0310": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0311": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0312": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0313": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0314": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0315": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0316": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0317": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0318": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0319": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0320": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0321": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0322": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0323": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0324": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0325": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0326": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0327": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0328": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0329": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0330": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0331": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0332": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0333": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0334": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0335": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0336": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0337": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0338": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0339": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0340": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0341": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0342": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0343": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0344": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0345": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0346": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0347": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0348": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0349": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0350": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0351": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0352": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0353": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0354": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0355": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0356": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0357": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0358": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0359": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0360": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0361": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0362": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0363": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0364": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0365": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0366": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0367": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0368": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0369": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0370": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0371": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0372": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0373": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0374": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0375": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0376": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0377": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0378": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0379": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0380": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0381": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0382": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0383": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0384": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0385": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0386": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0387": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0388": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0389": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0390": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0391": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0392": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0393": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0394": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0395": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0396": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0397": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0398": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0399": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0400": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0401": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0402": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0403": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0404": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0405": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0406": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0407": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0408": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0409": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0410": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0411": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0412": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0413": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0414": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0415": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0416": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0417": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0418": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0419": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0420": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0421": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0422": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0423": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0424": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0425": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0426": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0427": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0428": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0429": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0430": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0431": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0432": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0433": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0434": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0435": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0436": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0437": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0438": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0439": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0440": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0441": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0442": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0443": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0444": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0445": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0446": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0447": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0448": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0449": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0450": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0451": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0452": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0453": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0454": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0455": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0456": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0457": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0458": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0459": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0460": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0461": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0462": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0463": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0464": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0465": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0466": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0467": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0468": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0469": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0470": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0471": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0472": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0473": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0474": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0475": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0476": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0477": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0478": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0479": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0480": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0481": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0482": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0483": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0484": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0485": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0486": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0487": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0488": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0489": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0490": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0491": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0492": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0493": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0494": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0495": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0496": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0497": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0498": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0499": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr-g11-matematik-q0500": [
+        "productionStatus",
+        "packId",
+        "linkedPackId",
+        "linkedNoteId",
+        "linkedNoteKey"
+      ],
+      "tr.g11.matematik.current": [
+        "productionStatus"
+      ]
+    },
+    "contentProjectionSetSha256": "e06d8a19ca9cacc1c7da78df8cfb6ca99b2e451d63dd6b96b974b4846a270f68",
+    "decision": "PASS",
+    "gates": {
+      "duplicateIds": 0,
+      "duplicateNoteBodies": 0,
+      "duplicateQuestionTexts": 0,
+      "manifestContentHashes": "PASS 500/500",
+      "manifestCoverage": "PASS 500/500",
+      "noteQuestionLinks": "PASS 500/500",
+      "noteRichness": "PASS 20/20",
+      "strictErrors": 0,
+      "strictWarnings": 0
+    },
+    "grade": 11,
+    "humanReviewed": false,
+    "manifestReviewedQuestions": 500,
+    "manifests": [
+      {
+        "firstQuestionId": "tr-g11-matematik-q0001",
+        "lastQuestionId": "tr-g11-matematik-q0008",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0001_q0008_repair_manifest_v1_569039fd.json",
+        "questionCount": 8,
+        "sha256": "569039fd197499730a5d343cae27d12fce2c73b35ef6b08c7e295366d6f521b4"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0009",
+        "lastQuestionId": "tr-g11-matematik-q0016",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0009_q0016_repair_manifest_v2_fedce0f1.json",
+        "questionCount": 8,
+        "sha256": "fedce0f16cce6b3e414d91c72b7d6388ff697c3bf2cb07c472ea5063c9638021"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0017",
+        "lastQuestionId": "tr-g11-matematik-q0024",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0017_q0024_repair_manifest_v3_f2e88477.json",
+        "questionCount": 8,
+        "sha256": "f2e884777b13fc95ad00141a201733a9bc08c6194b4ec898156a0e3e4c7995b6"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0025",
+        "lastQuestionId": "tr-g11-matematik-q0032",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0025_q0032_repair_manifest_v4_96da00fc.json",
+        "questionCount": 8,
+        "sha256": "96da00fc6b4c59d38203520e6d9a0f1bacf73dc132249eb7fbfa8a4edca88a66"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0033",
+        "lastQuestionId": "tr-g11-matematik-q0040",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0033_q0040_repair_manifest_v5_5771a6f0.json",
+        "questionCount": 8,
+        "sha256": "5771a6f00dda27c5b198fecbba3db7bc90c4855907027486e3f9618d9242fa37"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0041",
+        "lastQuestionId": "tr-g11-matematik-q0048",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0041_q0048_repair_manifest_v6_45d1ba92.json",
+        "questionCount": 8,
+        "sha256": "45d1ba92f4484012341ade2503a59a7dccdccb360340a6f9c79264363a004131"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0049",
+        "lastQuestionId": "tr-g11-matematik-q0056",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0049_q0056_repair_manifest_v7_76c146d4.json",
+        "questionCount": 8,
+        "sha256": "76c146d4a654a6053c03589dd1e858f35bb699194f3d27777c2c32a0f173e78a"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0057",
+        "lastQuestionId": "tr-g11-matematik-q0100",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0057_q0100_repair_manifest_v8_c96df1a0.json",
+        "questionCount": 44,
+        "sha256": "c96df1a0da975125756fa861e1040ccec4bd4aabe5d667efb1ac3de50f2baad8"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0101",
+        "lastQuestionId": "tr-g11-matematik-q0150",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0101_q0150_repair_manifest_v9_ea62b3eb.json",
+        "questionCount": 50,
+        "sha256": "ea62b3eb01a87d30381de6b7593551e8cf1b88b78c7d3dfd2786af232324efc2"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0151",
+        "lastQuestionId": "tr-g11-matematik-q0200",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0151_q0200_repair_manifest_v10_28278eb7.json",
+        "questionCount": 50,
+        "sha256": "28278eb7d32ee73b900d224141af8fe1c6208ae13d58291b38c6b7087b82859f"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0201",
+        "lastQuestionId": "tr-g11-matematik-q0250",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0201_q0250_repair_manifest_v11_c863a880.json",
+        "questionCount": 50,
+        "sha256": "c863a880be6cdcf93d7f99404d50d1b71986af1c904f750dddd60a79a8fe0364"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0251",
+        "lastQuestionId": "tr-g11-matematik-q0300",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0251_q0300_repair_manifest_v12_349dd43b.json",
+        "questionCount": 50,
+        "sha256": "349dd43bd6e0698c27afbde6815ea199db1350babb73c91407e12f15d5eb8ad5"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0301",
+        "lastQuestionId": "tr-g11-matematik-q0350",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0301_q0350_repair_manifest_v13_90588165.json",
+        "questionCount": 50,
+        "sha256": "90588165ec08460db5eecabcdedd31571ba80f6d3cc6e592a8c04caa3a07d9e7"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0351",
+        "lastQuestionId": "tr-g11-matematik-q0400",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0351_q0400_repair_manifest_v14_10cad797.json",
+        "questionCount": 50,
+        "sha256": "10cad797d2d7f139460abf830d53730bc8ee59bb7a0c20a3ff8f0421925fdade"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0401",
+        "lastQuestionId": "tr-g11-matematik-q0450",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0401_q0450_repair_manifest_v15_02aee2c8.json",
+        "questionCount": 50,
+        "sha256": "02aee2c81777ae50f4a7f4b4ffc60c204a79742d6e22091b78e57df00583b5e7"
+      },
+      {
+        "firstQuestionId": "tr-g11-matematik-q0451",
+        "lastQuestionId": "tr-g11-matematik-q0500",
+        "path": "matematik/staging/sol-repair/question-2.2/tr_g11_matematik_q0451_q0500_repair_manifest_v16_480146e3.json",
+        "questionCount": 50,
+        "sha256": "480146e32d385473f6e90ca3e80e46ea229ba0618c2b9e53f03e5b9df507dc28"
+      }
+    ],
+    "methodVersion": "alika-g11-manifest-backed-ai-only-release/1.0.0",
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol",
+    "packageDecisionSha256": "ad7d939e576a47870ab52115b6da19c961dc8b390fa69fb4245d86164d352b1f",
+    "questionManifestCount": 16,
+    "questionManifestSetSha256": "ca7e08425111dea0d97e895d8ad03aaa897031517ead14e33e1ee5484f797c58",
+    "schema": "alika-g11-manifest-backed-package-decision/1.0.0",
+    "sourceCandidateSha256": "c7c8d4e178e45f94d4301feb1a16d8089223157d24bec7711b26a2b65a77ba6d",
+    "subject": "Matematik"
+  },
+  "schema": "alika-g11-manifest-backed-ai-only-release-receipt/1.0.0",
+  "sourceCandidate": {
+    "path": "chatgpt/11-sinif/matematik/staging/sol-repair/mathematics-full-validation-v2-c7c8d4e1.jsonl",
+    "sha256": "c7c8d4e178e45f94d4301feb1a16d8089223157d24bec7711b26a2b65a77ba6d"
+  },
+  "subject": "Matematik",
+  "subjectSlug": "matematik"
+}
