@@ -80,9 +80,26 @@ Her satır bir JSON nesnesi:
 | Türkiye | 6 | Bilişim Teknolojileri ve Yazılım | Tüm konular | 25 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 6 | Tüm Dersler | Yedi dersin ağırlıklı seçkisi | 168 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 7 | Türkçe | Tüm beceriler | 152 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 8 | Türkçe | Tüm beceriler | 154 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
-| Türkiye | 9 | Matematik | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 7 | Matematik | Tüm konular | 30 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 7 | Fen Bilimleri | Tüm konular | 11 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 7 | İngilizce | Tüm temalar | 192 | 1.536 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 7 | Sosyal Bilgiler | Tüm konular | 17 | 136 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 7 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 17 | 136 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | Türkçe | Tüm beceriler | 170 | 628 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | Matematik | Tüm konular | 23 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | Fen Bilimleri | Tüm konular | 37 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | İngilizce | Tüm temalar | 192 | 1.536 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | T.C. İnkılap Tarihi ve Atatürkçülük | Tüm konular | 15 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 8 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 19 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 9 | Türk Dili ve Edebiyatı | Tüm temalar | 54 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Matematik | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Fizik | Tüm konular | 24 | 192 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Kimya | Tüm konular | 31 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Biyoloji | Tüm konular | 14 | 112 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Tarih | Tüm konular | 13 | 104 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Coğrafya | Tüm konular | 19 | 152 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | İngilizce | Tüm temalar | 192 | 1.536 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 9 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 20 | 160 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 11 | Matematik | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 11 | Fizik | Tüm konular | 31 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 11 | Kimya | Tüm konular | 25 | 500 | ✅ AI-only doğrulandı; insan onayı yok |

@@ -1,0 +1,174 @@
+{
+  "counts": {
+    "note": 31,
+    "pack": 1,
+    "question": 500,
+    "total": 532
+  },
+  "curriculum": "MEB-TYMM-2026",
+  "decision": "PASS",
+  "gates": {
+    "duplicateId": 0,
+    "jsonlParse": "PASS 532/532",
+    "noteQuestionLinks": "PASS 31/31",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0
+  },
+  "grade": 9,
+  "humanReviewed": false,
+  "mode": "ai-only",
+  "model": "gpt-5.6-sol",
+  "package": {
+    "bytes": 3977592,
+    "path": "turkiye/9-sinif/kimya/kimya-tum.jsonl",
+    "records": 532,
+    "sha256": "f1bdb506b37dc51b5cc769b9d6e5a257c52f531d56860a3be7f5698578082ec4"
+  },
+  "publishBlocked": false,
+  "publishReady": true,
+  "quality": {
+    "answerBalance": [
+      132,
+      124,
+      122,
+      122
+    ],
+    "errors": 0,
+    "families": 125,
+    "largestFamily": 4,
+    "warnings": 0
+  },
+  "questionRange": [
+    26,
+    525
+  ],
+  "schema": "alika-hash-bound-ai-only-subject500-release-receipt/2.0.0",
+  "schemaRepairReview": {
+    "changedRecords": {
+      "tr-g09-kimya-note-002": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-003": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-004": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-005": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-006": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-007": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-008": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-009": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-010": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-011": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-012": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-013": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-014": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-015": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-016": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-017": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-018": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-019": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-020": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-021": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-022": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-023": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-024": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-025": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-026": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-027": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-028": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-029": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-030": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-031": [
+        "objectives"
+      ],
+      "tr-g09-kimya-note-032": [
+        "objectives"
+      ],
+      "tr-g09-kimya-subject500-pack-v1": [
+        "curriculum"
+      ]
+    },
+    "contentProjectionSetSha256": "0d81ad938be9cf097d6c1f92f5872d5591aaeee155f7237f2abe37674944d28d",
+    "decision": "PASS",
+    "gates": {
+      "objectiveCodeEqualityRequired": true,
+      "semanticContentChanged": false,
+      "strictErrors": 0,
+      "strictWarnings": 0
+    },
+    "grade": 9,
+    "humanReviewed": false,
+    "methodVersion": "alika-hash-bound-ai-only-schema-repair-review/1.0.0",
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol",
+    "packageDecisionSha256": "03fda77f1622f84a9c26f2c7314fac6672399bf0f081674c127df4009a74bbb2",
+    "repairRules": {
+      "curriculum": "MEB-TYMM-2026",
+      "objectives": "[objectiveCode]"
+    },
+    "schema": "alika-ai-only-schema-repair-package-decision/1.0.0",
+    "sourceCandidateSha256": "5f65657b0b971d54b2b38d9342e5287c836ed509448617bbec29eb990e169649",
+    "subject": "Kimya"
+  },
+  "sourceCandidate": {
+    "path": "chatgpt/9-sinif/kimya/paket/final-bank-candidate/tr_g09_kimya_subject500_ai_verified_v1_5f65657b.jsonl",
+    "sha256": "5f65657b0b971d54b2b38d9342e5287c836ed509448617bbec29eb990e169649"
+  },
+  "subject": "Kimya",
+  "subjectSlug": "kimya"
+}

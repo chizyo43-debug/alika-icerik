@@ -1,77 +1,81 @@
 {
-  "boundary": {
-    "canonicalWritten": false,
-    "gitTouched": false,
-    "mainTouched": false
-  },
   "counts": {
     "note": 19,
     "pack": 1,
-    "question": 152,
-    "total": 172
+    "question": 500,
+    "total": 520
   },
-  "createdAt": "2026-08-24T19:03:21.780975+03:00",
+  "curriculum": "MEB-TYMM-2024",
   "decision": "PASS",
   "gates": {
-    "contentFindings": 0,
-    "exactDuplicates": 0,
-    "nearDuplicates": 0,
-    "postStampFindings": 0,
-    "scoreReceipt": {
-      "bytes": 2779,
-      "lines": 70,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\release-candidate\\tr_g08_dkab_full_single-pack_score_receipt_v4_f00e3899.json",
-      "sha256": "f00e3899436d577eba0607e0736051f8f331ca8e2cdc3671451420376745ff3b"
-    },
-    "strict": {
-      "canonicalRelativePath": "turkiye\\8-sinif\\dkab\\dkab-tum.jsonl",
-      "contract": {
-        "bytes": 1848,
-        "lines": 37,
-        "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\alika_icerik_current\\pack_contract.json",
-        "sha256": "2a204725b971cca45e2d652db15f92f5bfb3531925833b45e09758ffe235b2fe"
-      },
-      "errors": 0,
-      "exitCode": 0,
-      "summary": "TOPLAM: 0 HATA, 0 UYARI",
-      "warnings": 0
-    }
+    "duplicateId": 0,
+    "jsonlParse": "PASS 520/520",
+    "noteQuestionLinks": "PASS 500/500",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0
   },
+  "grade": 8,
+  "humanReviewed": false,
   "mode": "ai-only",
   "model": "gpt-5.6-sol",
   "package": {
-    "bytes": 1099195,
-    "lines": 172,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\release-candidate\\tr_g08_dkab_full_single-pack_release_v4_01883c47.jsonl",
-    "sha256": "01883c478cf372a8fc34f24e53efc2a1bcb86220bf938ddddce3e982bef0ed95"
+    "bytes": 3649170,
+    "path": "turkiye/8-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
+    "records": 520,
+    "sha256": "34a1cb99d850186781b87993f07861ed9da970fc6eab0344734e8348cf562398"
   },
-  "packagePreStampScopeSha256": "5cc7c7a882471f374f064e44157acad8e7981f66a979f262fb29ec1a9db90aef",
-  "protectedContentSha256": "0a759ff9550679eda0b9eef8c424a01932b20b1e54a3d3ecff125c66aa1cc0cb",
   "publishBlocked": false,
   "publishReady": true,
-  "qf009": {
-    "after": {
-      "genericNeverCorrectDistractors": 0,
-      "genericNeverCorrectOccurrences": 0,
-      "questionsInOptionSetsSharedAcrossFamilies": 0
-    },
-    "answerIndexDrift": 0,
-    "before": {
-      "genericNeverCorrectDistractors": 76,
-      "genericNeverCorrectOccurrences": 456,
-      "questionsInOptionSetsSharedAcrossFamilies": 152
-    },
-    "changedQuestionRecords": 152,
-    "objectiveSourceEvidenceFigureDrift": 0,
-    "restampedRecords": 172
+  "quality": {
+    "answerBalance": [
+      125,
+      125,
+      125,
+      125
+    ],
+    "errors": 0,
+    "families": 132,
+    "largestFamily": 4,
+    "warnings": 0
   },
-  "ruleset": "alika-g08-qf009-content-repair-v4",
-  "schema": "alika-hash-bound-sol-single-pack-release-receipt/4.0.0",
-  "sourceV3": {
-    "bytes": 966111,
-    "lines": 172,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\dkab\\paket\\onayli-aday\\release-candidate\\tr_g08_dkab_full_single-pack_release_v3_c15ae64a.jsonl",
-    "sha256": "c15ae64a59f039eb539fecb0a86ed5996d4625d8f4d3eadfc969bdecbef9233b"
+  "questionRange": [
+    1,
+    500
+  ],
+  "schema": "alika-hash-bound-ai-only-subject500-release-receipt/2.0.0",
+  "schemaRepairReview": {
+    "changedRecords": {
+      "tr-g08-dkab-subject500-pack-v1": [
+        "schemaRepairEnvelope"
+      ]
+    },
+    "contentProjectionSetSha256": "043da50866c1d41ec8307647f95b6ddb04e90c353829af5451fbf73bb565140d",
+    "decision": "PASS",
+    "gates": {
+      "objectiveCodeEqualityRequired": true,
+      "semanticContentChanged": false,
+      "strictErrors": 0,
+      "strictWarnings": 0
+    },
+    "grade": 8,
+    "humanReviewed": false,
+    "methodVersion": "alika-hash-bound-ai-only-schema-repair-review/1.0.0",
+    "mode": "ai-only",
+    "model": "gpt-5.6-sol",
+    "packageDecisionSha256": "a27edac978bf3d1fff17bbe0bf46dfa1f42e974a038805b51e4d9624b614c3c8",
+    "repairRules": {
+      "curriculum": "MEB-TYMM-2024",
+      "objectives": "[objectiveCode]"
+    },
+    "schema": "alika-ai-only-schema-repair-package-decision/1.0.0",
+    "sourceCandidateSha256": "2464d9f48f17c33ac7f4c5876bdb604209f5613e91ecf2cdbd17adaa96f4187d",
+    "subject": "Din Kültürü ve Ahlak Bilgisi"
   },
-  "subject": "dkab"
+  "sourceCandidate": {
+    "path": "chatgpt/8-sinif/dkab/paket/final-bank-candidate/tr_g08_dkab_subject500_ai_verified_v1_2464d9f4.jsonl",
+    "sha256": "2464d9f48f17c33ac7f4c5876bdb604209f5613e91ecf2cdbd17adaa96f4187d"
+  },
+  "subject": "Din Kültürü ve Ahlak Bilgisi",
+  "subjectSlug": "din-kulturu-ve-ahlak-bilgisi"
 }
