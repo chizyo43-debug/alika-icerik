@@ -1,0 +1,62 @@
+{
+  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "decision": "PASS",
+  "grade": 12,
+  "subject": "Biyoloji",
+  "model": "gpt-5.6-sol",
+  "mode": "ai-only",
+  "humanReviewed": false,
+  "publishReady": true,
+  "publishBlocked": false,
+  "curriculum": "MEB-TYMM-2026",
+  "package": {
+    "path": "turkiye/12-sinif/biyoloji/biyoloji-tum.jsonl",
+    "sha256": "99ef248a3fb9184190966bed5670cf8c27ab3d7143928d731cdb0be4adcf298e",
+    "bytes": 3263157,
+    "records": 521
+  },
+  "counts": {
+    "pack": 1,
+    "note": 20,
+    "question": 500
+  },
+  "gates": {
+    "jsonlParse": "PASS 521/521",
+    "duplicateId": 0,
+    "noteQuestionLinks": "PASS 500/500",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0,
+    "qualityScore": 100.0
+  },
+  "quality": {
+    "answerBalance": [
+      125,
+      125,
+      125,
+      125
+    ],
+    "families": 250,
+    "largestFamily": 2,
+    "duplicateQuestionTexts": 0,
+    "duplicateNoteBodies": 0,
+    "minimumNoteEvidenceCharacters": 2105,
+    "errors": 0,
+    "warnings": 0
+  },
+  "sourceEvidence": [
+    {
+      "sourceId": "tr-meb-biy-g09-g12-program-2026",
+      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/202651815105221-biyolojidöp.pdf",
+      "sha256": "758809eb508d40e0ffea01dd9b65f820d79e5a86d5c14a31e2b91b70cae60b7e",
+      "pageCount": 87,
+      "publicationYear": 2026
+    }
+  ],
+  "review": {
+    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
+    "decision": "PASS",
+    "humanReviewed": false,
+    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
+  }
+}
