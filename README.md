@@ -125,6 +125,17 @@ Her satır bir JSON nesnesi:
 | Türkiye | 11 | Felsefe | Tüm konular | 24 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 11 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 50 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
 | Türkiye | 11 | Tüm Dersler | On dersin dengeli seçkisi | 318 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | Matematik | Tüm konular | 21 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | Fizik | Tüm konular | 27 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | Kimya | Tüm konular | 24 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | Biyoloji | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | Türk Dili ve Edebiyatı | Tüm beceriler | 16 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | T.C. İnkılap Tarihi ve Atatürkçülük | Tüm konular | 16 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | Coğrafya | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | İngilizce | Tüm temalar | 24 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | Felsefe Grubu | Psikoloji, Mantık ve Sosyoloji | 33 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | Din Kültürü ve Ahlak Bilgisi | Tüm konular | 20 | 500 | ✅ AI-only doğrulandı; insan onayı yok |
+| Türkiye | 12 | Tüm Dersler | On dersin dengeli seçkisi | 201 | 2.000 | ✅ AI-only doğrulandı; insan onayı yok |
 
 Beş bağımsız ders paketinde toplam **116 konu anlatımı ve 2.500 soru** vardır.
 Ortak soru bankası bunlardan ders başına 400 soru seçen bir derlemedir; 2.000
@@ -145,7 +156,16 @@ manifestine ve geçerli bir konu anlatımına bağlıdır; insan onayı yoktur.
 Paketlerin tamamı Question Contract 2.2 sıkı doğrulamasından 0 hata ve 0
 uyarıyla geçer.
 
-7, 8, 9 ve 11. sınıf ortak bankalarının her biri, kanonik ders paketlerinden
+On bağımsız 12. sınıf ders paketinde toplam **201 konu anlatımı ve 5.000 soru**
+vardır. Dersler, MEB'in indirilebilir 2025-2026 öğretim programlarına dosya
+özeti ve PDF sayfa çapasıyla bağlanır. 12. sınıfta genel Tarih yerine resmî
+T.C. İnkılap Tarihi ve Atatürkçülük programı; ayrı bir 12. sınıf Felsefe
+programı yerine Psikoloji, Mantık ve 12. sınıf Sosyoloji çıktılarından oluşan
+Felsefe Grubu kullanılır. Bütün bağımsız paketler ve 2.000 soruluk derleme
+Question Contract 2.2 denetiminden 100/100 skor, 0 hata ve 0 uyarıyla geçer;
+inceleme AI-only'dir ve insan onayı yoktur.
+
+7, 8, 9, 11 ve 12. sınıf ortak bankalarının her biri, kanonik ders paketlerinden
 konu anlatımı ve doğru cevap konumu dengesi korunarak seçilmiş **2.000 soru**
 içerir. Bu bankalar yeni soru üretmez; kaynak soruları yeniden paketler ve
 doğru cevap dağılımını 500 / 500 / 500 / 500 olarak korur.

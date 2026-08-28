@@ -1,0 +1,62 @@
+{
+  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "decision": "PASS",
+  "grade": 12,
+  "subject": "Matematik",
+  "model": "gpt-5.6-sol",
+  "mode": "ai-only",
+  "humanReviewed": false,
+  "publishReady": true,
+  "publishBlocked": false,
+  "curriculum": "MEB-TYMM-2026",
+  "package": {
+    "path": "turkiye/12-sinif/matematik/matematik-tum.jsonl",
+    "sha256": "cff249dc2f55d88313ce91a874c5bbe8f83d3942853b505b66a4a1ac4439feae",
+    "bytes": 3339289,
+    "records": 522
+  },
+  "counts": {
+    "pack": 1,
+    "note": 21,
+    "question": 500
+  },
+  "gates": {
+    "jsonlParse": "PASS 522/522",
+    "duplicateId": 0,
+    "noteQuestionLinks": "PASS 500/500",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0,
+    "qualityScore": 100.0
+  },
+  "quality": {
+    "answerBalance": [
+      125,
+      125,
+      125,
+      125
+    ],
+    "families": 250,
+    "largestFamily": 2,
+    "duplicateQuestionTexts": 0,
+    "duplicateNoteBodies": 0,
+    "minimumNoteEvidenceCharacters": 2191,
+    "errors": 0,
+    "warnings": 0
+  },
+  "sourceEvidence": [
+    {
+      "sourceId": "tr-meb-mat-g09-g12-program-2026",
+      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/2026518151640408-matedöp.pdf",
+      "sha256": "8e1b0c98f0e42b08b7ed1c01ffd03d95111153c16176a749f9e0100942f1dda1",
+      "pageCount": 208,
+      "publicationYear": 2026
+    }
+  ],
+  "review": {
+    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
+    "decision": "PASS",
+    "humanReviewed": false,
+    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
+  }
+}

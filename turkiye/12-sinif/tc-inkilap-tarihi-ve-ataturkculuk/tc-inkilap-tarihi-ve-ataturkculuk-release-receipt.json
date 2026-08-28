@@ -1,0 +1,62 @@
+{
+  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "decision": "PASS",
+  "grade": 12,
+  "subject": "T.C. İnkılap Tarihi ve Atatürkçülük",
+  "model": "gpt-5.6-sol",
+  "mode": "ai-only",
+  "humanReviewed": false,
+  "publishReady": true,
+  "publishBlocked": false,
+  "curriculum": "MEB-TYMM-2026",
+  "package": {
+    "path": "turkiye/12-sinif/tc-inkilap-tarihi-ve-ataturkculuk/tc-inkilap-tarihi-ve-ataturkculuk-tum.jsonl",
+    "sha256": "d41a21f8b5f5e6f2b3d3c10e39cdbb0ebb39abeffb3157fbe09e011dc8b2180c",
+    "bytes": 3657640,
+    "records": 517
+  },
+  "counts": {
+    "pack": 1,
+    "note": 16,
+    "question": 500
+  },
+  "gates": {
+    "jsonlParse": "PASS 517/517",
+    "duplicateId": 0,
+    "noteQuestionLinks": "PASS 500/500",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0,
+    "qualityScore": 100.0
+  },
+  "quality": {
+    "answerBalance": [
+      125,
+      125,
+      125,
+      125
+    ],
+    "families": 250,
+    "largestFamily": 2,
+    "duplicateQuestionTexts": 0,
+    "duplicateNoteBodies": 0,
+    "minimumNoteEvidenceCharacters": 2177,
+    "errors": 0,
+    "warnings": 0
+  },
+  "sourceEvidence": [
+    {
+      "sourceId": "tr-meb-ita-g12-program-2026",
+      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/2026716114859749-ınkılaptarihi.pdf",
+      "sha256": "3b36236c47d80a05edd1e06caf97121eb22a4731f9588a71919a5fd190f8f0cc",
+      "pageCount": 40,
+      "publicationYear": 2026
+    }
+  ],
+  "review": {
+    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
+    "decision": "PASS",
+    "humanReviewed": false,
+    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
+  }
+}
