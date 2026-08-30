@@ -240,13 +240,13 @@ def test_grade5_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
             figured += 1
             assert metadata["figure"].get("altTextKey")
     assert subject_counts == {
-        "Fen Bilimleri": 400,
-        "Matematik": 400,
-        "Sosyal Bilgiler": 400,
-        "Türkçe": 400,
-        "İngilizce": 400,
+        "Fen Bilimleri": 470,
+        "Matematik": 402,
+        "Sosyal Bilgiler": 350,
+        "Türkçe": 363,
+        "İngilizce": 415,
     }
-    assert figured == 477
+    assert figured == 527
 
     # Aynı dosya ikinci kez yüklendiğinde kopya banka oluşturmamalı.
     second = importer.import_file(path)

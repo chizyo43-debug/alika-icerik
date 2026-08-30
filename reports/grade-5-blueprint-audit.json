@@ -1,0 +1,40 @@
+{
+  "answerPositions": {
+    "0": 500,
+    "1": 500,
+    "2": 500,
+    "3": 500
+  },
+  "difficulty": {
+    "1": 400,
+    "2": 500,
+    "3": 600,
+    "4": 400,
+    "5": 100
+  },
+  "errors": [],
+  "figures": 527,
+  "grade": 5,
+  "largestSkeletonShare": 0.0005,
+  "nearInternalAbove088": 0,
+  "nearSourceAbove088": 0,
+  "objectives": 116,
+  "questionTypes": {
+    "analysis": 500,
+    "application": 700,
+    "comprehension": 500,
+    "error-analysis": 300
+  },
+  "questions": 2000,
+  "schemaVersion": "alika-question-bank-blueprint-audit/1.0.0",
+  "skeletonDiversity": 1.0,
+  "status": "PASS",
+  "subjects": {
+    "Fen Bilimleri": 470,
+    "Matematik": 402,
+    "Sosyal Bilgiler": 350,
+    "Türkçe": 363,
+    "İngilizce": 415
+  },
+  "warnings": []
+}
