@@ -58,6 +58,11 @@ FIGUR_ATIF_RE = {
             r"(?:incele(?:yin|yiniz)?|kullan(?:ın|ınız)?|yorumla(?:yın|yınız)?)\b",
             re.I,
         ),
+        re.compile(
+            r"\b(?:yukarıdaki|aşağıdaki|verilen)\s+(?:deney\s+)?"
+            r"düzene(?:ğinde|ğini|ğine)\b",
+            re.I,
+        ),
         # Üretim paketlerinde doğal olarak kullanılan iki açık gönderim biçimi.
         # Önceki desenler yalnız "aşağıdaki tabloda" gibi dar kalıpları gördüğü
         # için "aşağıdaki seçenek tablosunu kullanınız" ve "görselde verilen
@@ -117,7 +122,7 @@ FIGUR_ATIF_RE = {
 }
 
 FIGUR_DOGRUDAN_TR_RE = re.compile(
-    r"\b(?:şekildeki|grafikteki|tablodaki|görseldeki|diyagramdaki|şemadaki)\b",
+    r"\b(?:şekildeki|grafikteki|tablodaki|görseldeki|diyagramdaki|şemadaki|düzenekteki)\b",
     re.I,
 )
 
@@ -126,7 +131,7 @@ FIGUR_DOGRUDAN_TR_RE = re.compile(
 # görsel istemez. Ancak aynı kayıtta gerçek bir figure varken "grafikte ...",
 # "look at the flow" veya "chart shows ..." açık kullanım kanıtıdır.
 FIGUR_MEVCUT_TR_RE = re.compile(
-    r"\b(?:şekilde|grafikte|tabloda|görselde|diyagramda|şemada|"
+    r"\b(?:şekilde|grafikte|tabloda|görselde|diyagramda|şemada|düzenekte|"
     r"akış\s+şemasında|akış\s+şemasındaki|şemadaki|"
     r"(?:basamak|özellik|ölçüm|izleme|tasarım|üretim|işlem-gözlem|devre)\s+"
     r"(?:tablosunda|tablosundaki|tablosuna|şemasında|şemasındaki|şemasına))\b|"
@@ -221,8 +226,20 @@ KATALOG = {
     "flow": {"zorunlu": {"nodes", "edges"}, "opsiyonel": {"direction"}},
     "circuit": {"zorunlu": {"elements"},
                 "opsiyonel": {"layout", "labelKeys"}},
+    "diagram": {"zorunlu": {"nodes", "edges"},
+                "opsiyonel": {"direction"}},
+    "map": {"zorunlu": {"base"},
+            "opsiyonel": {"polygons", "markers", "routes"}},
+    "experiment": {"zorunlu": {"apparatus"},
+                   "opsiyonel": {"connections", "measurements"}},
 }
 CIRCUIT_ELEM = {"battery", "lamp", "switch", "resistor", "wire"}
+EXPERIMENT_ELEM = {
+    "beaker", "testTube", "flask", "burner", "stand", "thermometer",
+    "balance", "magnet", "coil", "battery", "switch", "lamp", "resistor",
+    "ammeter", "voltmeter", "lens", "mirror", "prism", "screen", "spring",
+    "mass", "pulley", "ramp", "plant", "lightSource", "sensor",
+}
 
 # Kural 42: görsel temsil olmadan öğretilemeyen kazanım alanları.
 # MAT.5.3 geometri/çizim · MAT.5.4 alan-çevre · MAT.5.5 veri · MAT.5.6 olasılık
@@ -849,6 +866,74 @@ def figur_kontrol(fig: dict, sema: str = "2.0") -> list:
             eksik = gereken - set(etiketler)
             if eksik:
                 h.append(f"circuit: labelKeys eksik: {sorted(eksik)}")
+    elif kind == "diagram":
+        dugumler, kenarlar = fig.get("nodes"), fig.get("edges")
+        idler = set()
+        if not isinstance(dugumler, list) or not dugumler:
+            h.append("diagram: nodes liste değil/boş")
+        else:
+            for n in dugumler:
+                if (not isinstance(n, dict)
+                        or set(n) != {"id", "labelKey", "shape", "x", "y"}
+                        or not isinstance(n.get("id"), str) or not n["id"]
+                        or n.get("shape") not in {"rect", "circle", "diamond"}
+                        or not all(_sayi_mi(n.get(k)) and 0 <= n[k] <= 100 for k in ("x", "y"))):
+                    h.append(f"diagram: node geçersiz: {n!r}")
+                elif n["id"] in idler:
+                    h.append(f"diagram: yinelenen node id: {n['id']!r}")
+                else:
+                    idler.add(n["id"])
+        if not isinstance(kenarlar, list):
+            h.append("diagram: edges liste değil")
+        else:
+            for e in kenarlar:
+                if (not isinstance(e, dict) or not {"from", "to"} <= set(e)
+                        or not set(e) <= {"from", "to", "directed", "labelKey", "style"}
+                        or e.get("from") not in idler or e.get("to") not in idler
+                        or ("style" in e and e["style"] not in {"solid", "dashed"})):
+                    h.append(f"diagram: edge geçersiz: {e!r}")
+        if "direction" in fig and fig["direction"] not in {"horizontal", "vertical"}:
+            h.append("diagram: direction horizontal|vertical değil")
+    elif kind == "map":
+        if fig.get("base") not in {"world", "turkiye", "blank"}:
+            h.append("map: base world|turkiye|blank değil")
+        for alan, asgari in (("polygons", 3), ("routes", 2)):
+            for oge in fig.get(alan, []) or []:
+                noktalar = oge.get("points") if isinstance(oge, dict) else None
+                if (not isinstance(noktalar, list) or len(noktalar) < asgari
+                        or set(oge) - {"points", "labelKey"}
+                        or any(not (isinstance(p, list) and len(p) == 2
+                                   and all(_sayi_mi(v) and 0 <= v <= 100 for v in p))
+                               for p in noktalar)):
+                    h.append(f"map: {alan} girdisi geçersiz: {oge!r}")
+        for oge in fig.get("markers", []) or []:
+            if (not isinstance(oge, dict) or set(oge) != {"x", "y", "labelKey"}
+                    or not all(_sayi_mi(oge.get(k)) and 0 <= oge[k] <= 100 for k in ("x", "y"))):
+                h.append(f"map: marker geçersiz: {oge!r}")
+    elif kind == "experiment":
+        duzenek = fig.get("apparatus")
+        idler = set()
+        if not isinstance(duzenek, list) or not duzenek:
+            h.append("experiment: apparatus liste değil/boş")
+        else:
+            for oge in duzenek:
+                if (not isinstance(oge, dict) or not {"id", "type", "x", "y"} <= set(oge)
+                        or set(oge) - {"id", "type", "x", "y", "labelKey", "state"}
+                        or oge.get("type") not in EXPERIMENT_ELEM
+                        or oge.get("id") in idler
+                        or not all(_sayi_mi(oge.get(k)) and 0 <= oge[k] <= 100 for k in ("x", "y"))):
+                    h.append(f"experiment: apparatus girdisi geçersiz: {oge!r}")
+                else:
+                    idler.add(oge["id"])
+        for oge in fig.get("connections", []) or []:
+            if (not isinstance(oge, dict) or set(oge) != {"from", "to", "kind"}
+                    or oge.get("from") not in idler or oge.get("to") not in idler
+                    or oge.get("kind") not in {"wire", "tube", "beam", "support"}):
+                h.append(f"experiment: connection geçersiz: {oge!r}")
+        for oge in fig.get("measurements", []) or []:
+            if (not isinstance(oge, dict) or set(oge) != {"target", "labelKey"}
+                    or oge.get("target") not in idler):
+                h.append(f"experiment: measurement geçersiz: {oge!r}")
     return h
 
 
