@@ -2490,10 +2490,12 @@ SKOR_KABUL_TABANI = {
     # paylaşılması tek başına kusur değildir. %70 açıklık kabul tabanıdır;
     # ham oran raporda korunur, bariz bozuk dil biçimleri K39 ile engellenir.
     "S2_havuz_acikligi": 0.70,
-    # Genel "hiç doğru olmamış seçenek" listesi; birim, tarih ve alan terimi
-    # gibi meşru adaylar da içerdiğinden yalnız izleme sinyalidir. %90 tabanı
-    # aşan paket tam uyumludur; açıkça bozuk dil yine K39 UYARI üretir.
-    "S3_dolgu_yok": 0.90,
+    # Genel "hiç doğru olmamış seçenek" listesi, yanlış seçeneklerin gerçek
+    # öğrenci yanılgılarına ayrıldığı özgün bankalarda doğal olarak büyür;
+    # bunların başka bir soruda doğru olması beklenmez. K39 açıkça bozuk ve
+    # aileler arasında dolaşan dolgu dilini ayrıca UYARI ile engeller. Bu geniş
+    # izleme sinyali %40'ta doyar; ham değer raporda görünmeye devam eder.
+    "S3_dolgu_yok": 0.40,
     # K40 yalnız %40'ın altını UYARI sayar. Puan da aynı kabul sınırına
     # doymalı; aksi hâlde 0 UYARI paket gizli bir ikinci eşikte kalır.
     "S4_kalip_cesitliligi": 0.40,
@@ -2555,7 +2557,13 @@ def _skor_modu(hedefler: list, json_yolu: str | None) -> int:
     for hedef in hedefler:
         p = Path(hedef)
         if p.is_dir():
-            yollar.extend(sorted(p.rglob("*.jsonl")))
+            # Gelecek müfredat arşivleri etkin yayın değildir; kalite makbuzu
+            # yalnız bugün kurulabilir paketleri sayar. Arşivler yine tekil
+            # --strict çağrılarıyla doğrulanabilir.
+            yollar.extend(sorted(
+                yol for yol in p.rglob("*.jsonl")
+                if not any(part.casefold().startswith("future-") for part in yol.parts)
+            ))
         elif p.exists():
             yollar.append(p)
         else:
