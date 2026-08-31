@@ -1,62 +1,11 @@
 {
-  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "candidateSha256": "2d933060b42251a6d2bcbb76093c60a81a4caf348b9dc8d6416b1edb024c7ca1",
   "decision": "PASS",
   "grade": 12,
-  "subject": "Coğrafya",
-  "model": "gpt-5.6-sol",
-  "mode": "ai-only",
   "humanReviewed": false,
-  "publishReady": true,
-  "publishBlocked": false,
-  "curriculum": "MEB-TYMM-2026",
-  "package": {
-    "path": "turkiye/12-sinif/cografya/cografya-tum.jsonl",
-    "sha256": "94158f62dab284a09153f115e01575a4482c51e5336a311fc8498c6ea884e4f8",
-    "bytes": 3315583,
-    "records": 521
-  },
-  "counts": {
-    "pack": 1,
-    "note": 20,
-    "question": 500
-  },
-  "gates": {
-    "jsonlParse": "PASS 521/521",
-    "duplicateId": 0,
-    "noteQuestionLinks": "PASS 500/500",
-    "questionContract22": "PASS",
-    "strictErrors": 0,
-    "strictWarnings": 0,
-    "qualityScore": 100.0
-  },
-  "quality": {
-    "answerBalance": [
-      125,
-      125,
-      125,
-      125
-    ],
-    "families": 250,
-    "largestFamily": 2,
-    "duplicateQuestionTexts": 0,
-    "duplicateNoteBodies": 0,
-    "minimumNoteEvidenceCharacters": 2140,
-    "errors": 0,
-    "warnings": 0
-  },
-  "sourceEvidence": [
-    {
-      "sourceId": "tr-meb-cog-g09-g12-program-2026",
-      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/2026518151120283-cogdöp.pdf",
-      "sha256": "39aee8c83fb6775243ca06a67ae5c37bab7d96e0900d658bc7b8b6419f3f6773",
-      "pageCount": 125,
-      "publicationYear": 2026
-    }
-  ],
-  "review": {
-    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
-    "decision": "PASS",
-    "humanReviewed": false,
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
-  }
+  "reviewManifestSha256": "f7590edb37879c358a183b2ab314a2eda5c7545c914f83d4af003682bc838b1c",
+  "reviewedPackageSha256": "5794311bcd44e1963bbb8a6cb989d6d7fd7fd40909886e9fc5d209ca5594d81e",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Coğrafya"
 }

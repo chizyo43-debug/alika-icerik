@@ -1,0 +1,224 @@
+RAPOR [paket] kural 50: soru ailesi: 2000, en kalabalık aile 1 soru
+RAPOR [paket] kural 53: görselli soru: 261/2000 (%13.1)
+RAPOR [paket] kural 26: konu 'Ahlaki Davranışlar': 64 soru
+RAPOR [paket] kural 26: konu 'Aile Yaşamı ve Ev': 21 soru
+RAPOR [paket] kural 26: konu 'Bilgisayar Ağları ve İletişim': 36 soru
+RAPOR [paket] kural 26: konu 'Bilişim Etiği ve Siber Güvenlik': 47 soru
+RAPOR [paket] kural 26: konu 'Bilişim Teknolojilerinin Hayatımızdaki Yeri': 24 soru
+RAPOR [paket] kural 26: konu 'Birlikte Yaşamak': 42 soru
+RAPOR [paket] kural 26: konu 'Canlılarda Sistemler': 101 soru
+RAPOR [paket] kural 26: konu 'Dijital Ürün Tasarımı ve Geliştirme': 120 soru
+RAPOR [paket] kural 26: konu 'Dinleme/İzleme': 82 soru
+RAPOR [paket] kural 26: konu 'Doğada Yaşam ve Küresel Sorunlar': 26 soru
+RAPOR [paket] kural 26: konu 'Dünyada Yaşam ve Kültür': 22 soru
+RAPOR [paket] kural 26: konu 'Elektriğin İletimi ve Direnç': 25 soru
+RAPOR [paket] kural 26: konu 'Evimiz Dünya': 39 soru
+RAPOR [paket] kural 26: konu 'Evrende Yaşam ve Gelecek': 42 soru
+RAPOR [paket] kural 26: konu 'Geometrik Nicelikler': 70 soru
+RAPOR [paket] kural 26: konu 'Geometrik Şekiller': 63 soru
+RAPOR [paket] kural 26: konu 'Güneş Sistemi ve Tutulmalar': 55 soru
+RAPOR [paket] kural 26: konu 'Hayatımızdaki Ekonomi': 41 soru
+RAPOR [paket] kural 26: konu 'Işığın Yansıması ve Renkler': 54 soru
+RAPOR [paket] kural 26: konu 'Kişisel Yaşam ve İyi Oluş': 26 soru
+RAPOR [paket] kural 26: konu 'Konuşma': 66 soru
+RAPOR [paket] kural 26: konu 'Kuvvetin Etkisinde Hareket': 26 soru
+RAPOR [paket] kural 26: konu 'Kültürümüzdeki Dinî Motifler': 10 soru
+RAPOR [paket] kural 26: konu 'Maddenin Ayırt Edici Özellikleri': 79 soru
+RAPOR [paket] kural 26: konu 'Mahallede, Şehirde ve Sosyal Yaşamda Hayat': 24 soru
+RAPOR [paket] kural 26: konu 'Okul Yaşamı ve Eğitim': 60 soru
+RAPOR [paket] kural 26: konu 'Okuma': 99 soru
+RAPOR [paket] kural 26: konu 'Ortak Mirasımız': 52 soru
+RAPOR [paket] kural 26: konu 'Peygamber ve İlahi Kitap İnancı': 60 soru
+RAPOR [paket] kural 26: konu 'Peygamberliğinden Önce Hz. Muhammed': 46 soru
+RAPOR [paket] kural 26: konu 'Ramazan ve Oruç': 59 soru
+RAPOR [paket] kural 26: konu 'Sayılar ve Nicelikler': 64 soru
+RAPOR [paket] kural 26: konu 'Sürdürülebilir Yaşam ve Etkileşim': 41 soru
+RAPOR [paket] kural 26: konu 'Sınıf Yaşamı ve Öğrenme': 26 soru
+RAPOR [paket] kural 26: konu 'Teknoloji ve Sosyal Bilgiler': 13 soru
+RAPOR [paket] kural 26: konu 'Teknoloji ve Sosyal Bilimler': 13 soru
+RAPOR [paket] kural 26: konu 'Veriden Olasılığa': 13 soru
+RAPOR [paket] kural 26: konu 'Yapay Zekâ': 33 soru
+RAPOR [paket] kural 26: konu 'Yazma': 69 soru
+RAPOR [paket] kural 26: konu 'Yazılım Tasarımı ve Programlama': 33 soru
+RAPOR [paket] kural 26: konu 'Yaşayan Demokrasimiz': 39 soru
+RAPOR [paket] kural 26: konu 'İstatistiksel Araştırma Süreci': 53 soru
+RAPOR [paket] kural 26: konu 'İşlemlerle Cebirsel Düşünme ve Değişimler': 22 soru
+RAPOR [paket] kural 26: kazanım '6.1.1': 26 soru
+RAPOR [paket] kural 26: kazanım '6.1.2': 14 soru
+RAPOR [paket] kural 26: kazanım '6.1.3': 9 soru
+RAPOR [paket] kural 26: kazanım '6.1.4': 11 soru
+RAPOR [paket] kural 26: kazanım '6.2.1': 12 soru
+RAPOR [paket] kural 26: kazanım '6.2.2': 14 soru
+RAPOR [paket] kural 26: kazanım '6.3.1': 17 soru
+RAPOR [paket] kural 26: kazanım '6.3.2': 9 soru
+RAPOR [paket] kural 26: kazanım '6.4.1': 12 soru
+RAPOR [paket] kural 26: kazanım '6.4.2': 9 soru
+RAPOR [paket] kural 26: kazanım '6.5.1': 13 soru
+RAPOR [paket] kural 26: kazanım '6.5.2': 11 soru
+RAPOR [paket] kural 26: kazanım '6.6.1': 11 soru
+RAPOR [paket] kural 26: kazanım '6.6.2': 11 soru
+RAPOR [paket] kural 26: kazanım '6.7.1': 13 soru
+RAPOR [paket] kural 26: kazanım '6.7.2': 13 soru
+RAPOR [paket] kural 26: kazanım '6.8.1': 13 soru
+RAPOR [paket] kural 26: kazanım '6.8.2': 16 soru
+RAPOR [paket] kural 26: kazanım '6.8.3': 13 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.1.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.1.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.2.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.2.10': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.2.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.2.3': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.2.4': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.2.5': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.2.6': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.2.7': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.2.8': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.2.9': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.3.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.3.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.3.3': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.4.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.4.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.4.3': 12 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.4.4': 11 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.5.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.5.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.5.3': 11 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.6.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.6.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'BTY.6.6.3': 11 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.1.1': 15 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.1.2': 15 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.1.3': 15 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.1.4': 15 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.2.1': 15 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.2.2': 15 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.2.3': 15 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.2.4': 14 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.3.1': 14 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.3.2': 14 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.3.3': 12 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.3.4': 12 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.3.5': 12 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.4.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.4.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.4.3': 12 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.4.4': 10 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.6.5.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.1.1.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.1.1.2': 15 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.1.2.1': 15 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.1.2.2': 15 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.2.1.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.2.1.2': 10 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.2.2.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.3.1.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.3.1.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.3.1.3': 14 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.3.1.4': 8 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.3.1.5': 5 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.3.2.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.3.2.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.3.2.3': 14 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.3.2.4': 14 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.4.1.1': 8 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.4.1.2': 2 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.4.2.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.4.3.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.4.3.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.4.3.3': 12 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.4.3.4': 8 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.5.1.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.5.2.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.5.3.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.5.3.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.5.3.3': 33 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.5.3.4': 8 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.6.1.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.6.2.1': 5 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.6.2.2': 10 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.7.1.1': 13 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.7.1.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.7.2.1': 5 soru
+RAPOR [paket] kural 26: kazanım 'FB.6.7.2.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.1.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.1.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.1.3': 13 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.1.4': 4 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.1.5': 4 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.1.6': 13 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.1.7': 8 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.1.8': 3 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.2.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.2.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.2.3': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.3.1': 14 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.3.2': 18 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.3.3': 22 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.3.4': 9 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.4.1': 15 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.4.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.4.3': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.4.4': 20 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.4.5': 7 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.4.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.5.1': 20 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.5.2': 33 soru
+RAPOR [paket] kural 26: kazanım 'MAT.6.6.1': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.1.1': 14 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.1.2': 14 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.1.3': 14 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.2.1': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.2.2': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.2.3': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.3.1': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.3.2': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.3.3': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.3.4': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.4.1': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.4.2': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.4.3': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.5.1': 14 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.5.2': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.5.3': 14 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.6.1': 13 soru
+RAPOR [paket] kural 26: kazanım 'SB.6.6.2': 13 soru
+RAPOR [paket] kural 26: kazanım 'T.D.6.1': 16 soru
+RAPOR [paket] kural 26: kazanım 'T.D.6.15': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.D.6.19': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.D.6.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.D.6.25': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.D.6.4': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.D.6.5': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.K.6.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.K.6.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.K.6.22': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.K.6.26': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.K.6.3': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.K.6.9': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.O.6.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.O.6.16': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.O.6.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.O.6.21': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.O.6.27': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.O.6.3': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.O.6.4': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.O.6.5': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.O.6.6': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.Y.6.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.Y.6.18': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.Y.6.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.Y.6.21': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.Y.6.22': 14 soru
+RAPOR [paket] kural 26: kazanım 'T.Y.6.3': 11 soru
+RAPOR [paket] kural 26: objective boş: 0 soru
+RAPOR [paket] kural 26: kullanılan farklı kind: 6 (chart, coordinate, diagram, flow, table, timeline)
+RAPOR [paket] kural 39: aynı seçenek kümesi: 1 küme / 2 soru; en yüksek tekrar=2
+RAPOR [paket] kural 39: 313 seçenek birden çok soru ailesinde dolaşıyor ve hiçbirinde doğru değil: "Din Kültürü ve Ahlak Bilgisi: 'aleyke tevekkeltü' yalnız yemek çeşidini belirtir."×6, "Din Kültürü ve Ahlak Bilgisi: 'alâ rızkıke eftartü' rızık ve şükürle hiçbir ilişki taşımaz."×6, 'Din Kültürü ve Ahlak Bilgisi: adalet için iki tarafı dinlemek gereksizdir; ilk konuşan her zaman haklıdır.'×6, 'Din Kültürü ve Ahlak Bilgisi: adalet ve doğruluk yalnız kişisel zevke bağlıdır, sorumlulukla ilişkilendirilemez.'×6, "Din Kültürü ve Ahlak Bilgisi: allah'a sığınmak bütün güvenlik önlemlerini gereksiz kılar."×6, 'Din Kültürü ve Ahlak Bilgisi: ayın anlamı yalnız iftarda tüketilen yiyeceklerden oluşur.'×6, 'Din Kültürü ve Ahlak Bilgisi: bir canlıya acımak onun gerçek ihtiyacını araştırmayı gereksiz kılar.'×6, 'Din Kültürü ve Ahlak Bilgisi: bir davranışın merhametli olması için karşıdakine yarar sağlaması gerekmez.'×6
+RAPOR [paket] kural 36: kendi şıkkına sözcük bağı olan gerekçe: 5638/5638
+RAPOR [paket] kural 37: distractorWhy benzersiz iskelet: 5156/6000
+RAPOR [paket] kural 40: benzersiz soru kalıbı: 1802/2000
+RAPOR [paket] kural 41: kazanım dışından ödünç çeldirici: 30/5749
+RAPOR [paket] kural 45: kazanım dengesi kapsam modunda; 168 kazanımın not ve soru beyanı doğrulandı
+RAPOR [paket] kural 45: kazanım başına soru: en az 2, en çok 33, kazanım sayısı 168
+TOPLAM: 0 HATA, 0 UYARI

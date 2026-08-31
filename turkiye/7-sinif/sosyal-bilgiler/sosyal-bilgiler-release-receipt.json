@@ -1,41 +1,11 @@
 {
-  "canonical": {
-    "answerBalance": [
-      132,
-      123,
-      123,
-      122
-    ],
-    "families": 125,
-    "notes": 17,
-    "pack": 1,
-    "path": "turkiye/7-sinif/sosyal-bilgiler/sosyal-bilgiler-tum.jsonl",
-    "questions": 500,
-    "records": 518,
-    "sha256": "86b486e93f1f19f7f7fac36d0991b620d14d6fb72f5931a2fddff726019869be"
-  },
-  "gates": {
-    "aiVerifiedRecords": "PASS 518/518",
-    "duplicateIds": 0,
-    "duplicateQuestionTexts": 0,
-    "noteLinks": "PASS 500/500",
-    "questionRange": "PASS 1/500-500/500",
-    "strictErrors": 0,
-    "strictWarnings": 0
-  },
+  "candidateSha256": "a48c6658a9f945c49adba767a34693857ee68298b08a734232663d718e297ea2",
+  "decision": "PASS",
   "grade": 7,
-  "publishReady": true,
-  "review": {
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
-    "humanReviewed": false,
-    "mode": "ai-only",
-    "model": "gpt-5.6-sol"
-  },
-  "schema": "alika-local-final-subject-publish-receipt/1.0.0",
-  "sourceCandidate": {
-    "path": "chatgpt/7-sinif/sosyal-bilgiler/paket/final-bank-candidate/tr_g07_sosyal_subject500_ai_verified_v1_0395a04d.jsonl",
-    "sha256": "0395a04d966f78ac0cbae7ce1f4005a761ede8f33f90fc35bd15576d0626efe7"
-  },
-  "status": "PASS",
+  "humanReviewed": false,
+  "reviewManifestSha256": "7274f2d75829eb95d7e2c8f30f628c01441a5dcbb3492d048fa8694e9c959e9e",
+  "reviewedPackageSha256": "6f831b562a0fc4471f41e74de55e2a30572c1eda0a5a75d56048ae7cd1204cca",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
   "subject": "Sosyal Bilgiler"
 }

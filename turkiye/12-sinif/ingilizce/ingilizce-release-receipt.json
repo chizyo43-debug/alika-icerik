@@ -1,62 +1,24 @@
 {
-  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "audioValidation": {
+    "assets": 167,
+    "bytes": 104386228,
+    "durationMs": 2366869,
+    "errors": [],
+    "questions": 500,
+    "requirements": {
+      "audio-required": 167,
+      "none": 333
+    },
+    "status": "PASS",
+    "validFiles": 167
+  },
+  "candidateSha256": "f46f94fd0a90be42f986963e2882fd98272160504260a21cb19da3965df0f272",
   "decision": "PASS",
   "grade": 12,
-  "subject": "İngilizce",
-  "model": "gpt-5.6-sol",
-  "mode": "ai-only",
   "humanReviewed": false,
-  "publishReady": true,
-  "publishBlocked": false,
-  "curriculum": "MEB-TYMM-2025",
-  "package": {
-    "path": "turkiye/12-sinif/ingilizce/ingilizce-tum.jsonl",
-    "sha256": "96009e2c10c657e64e9b64be870db80ef665426a61c4d5106b0968596d72a70f",
-    "bytes": 3069626,
-    "records": 525
-  },
-  "counts": {
-    "pack": 1,
-    "note": 24,
-    "question": 500
-  },
-  "gates": {
-    "jsonlParse": "PASS 525/525",
-    "duplicateId": 0,
-    "noteQuestionLinks": "PASS 500/500",
-    "questionContract22": "PASS",
-    "strictErrors": 0,
-    "strictWarnings": 0,
-    "qualityScore": 100.0
-  },
-  "quality": {
-    "answerBalance": [
-      125,
-      125,
-      125,
-      125
-    ],
-    "families": 250,
-    "largestFamily": 2,
-    "duplicateQuestionTexts": 0,
-    "duplicateNoteBodies": 0,
-    "minimumNoteEvidenceCharacters": 1789,
-    "errors": 0,
-    "warnings": 0
-  },
-  "sourceEvidence": [
-    {
-      "sourceId": "tr-meb-english-g09-g12-program-2025",
-      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/202591214813382-ingilizce912.pdf",
-      "sha256": "aa708a0c2bd9d5e20b047838317940f6e4a511e13b93b5acdc96191c8bb104e0",
-      "pageCount": 741,
-      "publicationYear": 2025
-    }
-  ],
-  "review": {
-    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
-    "decision": "PASS",
-    "humanReviewed": false,
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
-  }
+  "reviewManifestSha256": "03d736a48176e63370ab2c5c1765d06c5bd8e3c22ae5514892ab42ede9d63cf9",
+  "reviewedPackageSha256": "f775c90d6d4a8cdb0aa72618e49edd443450be2c844ae04ff0969ad92ff9f5cd",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "İngilizce"
 }

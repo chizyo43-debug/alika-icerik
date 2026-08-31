@@ -1,0 +1,392 @@
+RAPOR [paket] kural 50: soru ailesi: 2000, en kalabalık aile 1 soru
+RAPOR [paket] kural 53: görselli soru: 500/2000 (%25.0)
+RAPOR [paket] kural 26: konu 'ALGORİTMA VE BİLİŞİM': 29 soru
+RAPOR [paket] kural 26: konu 'Afetler Ve Sürdürülebilir Çevre': 29 soru
+RAPOR [paket] kural 26: konu 'Akişkanlar': 60 soru
+RAPOR [paket] kural 26: konu 'Atomdan Periyodik Tabloya': 54 soru
+RAPOR [paket] kural 26: konu 'Beşerî Sistemler Ve Süreçler': 37 soru
+RAPOR [paket] kural 26: konu 'Bölgeler, Ülkeler Ve Küresel Bağlantilar': 10 soru
+RAPOR [paket] kural 26: konu 'Classroom Life': 72 soru
+RAPOR [paket] kural 26: konu 'Coğrafyanin Doğasi': 29 soru
+RAPOR [paket] kural 26: konu 'Dinleme/İzleme': 44 soru
+RAPOR [paket] kural 26: konu 'Doğal Sistemler Ve Süreçler': 37 soru
+RAPOR [paket] kural 26: konu 'Ekonomik Faaliyetler': 10 soru
+RAPOR [paket] kural 26: konu 'Enerji': 49 soru
+RAPOR [paket] kural 26: konu 'Eski Çağ Medeniyetleri': 58 soru
+RAPOR [paket] kural 26: konu 'Etkileşimden Maddeye': 63 soru
+RAPOR [paket] kural 26: konu 'Etkileşimler': 54 soru
+RAPOR [paket] kural 26: konu 'EŞLİK VE BENZERLİK': 45 soru
+RAPOR [paket] kural 26: konu 'Family Life': 72 soru
+RAPOR [paket] kural 26: konu 'Fizik Bilimi ve Kariyer Keşfi': 36 soru
+RAPOR [paket] kural 26: konu 'GEOMETRİK ŞEKİLLER': 9 soru
+RAPOR [paket] kural 26: konu 'Geçmişin İnşa Sürecinde Tarih': 48 soru
+RAPOR [paket] kural 26: konu 'Kimya Hayattır': 9 soru
+RAPOR [paket] kural 26: konu 'Konuşma': 40 soru
+RAPOR [paket] kural 26: konu 'Kuvvet Ve Hareket': 59 soru
+RAPOR [paket] kural 26: konu 'Life In The City & Country': 72 soru
+RAPOR [paket] kural 26: konu 'Life In The House & Neighbourhood': 72 soru
+RAPOR [paket] kural 26: konu 'Life In The Universe & Future': 72 soru
+RAPOR [paket] kural 26: konu 'Life In The World & Nature': 72 soru
+RAPOR [paket] kural 26: konu 'Mekânsal Bilgi Teknolojileri': 28 soru
+RAPOR [paket] kural 26: konu 'Nanoparçacıklar ve Ekolojik Sürdürülebilirlik': 8 soru
+RAPOR [paket] kural 26: konu 'NİCELİKLER VE DEĞİŞİMLER': 27 soru
+RAPOR [paket] kural 26: konu 'Okuma': 42 soru
+RAPOR [paket] kural 26: konu 'Organizasyon': 67 soru
+RAPOR [paket] kural 26: konu 'Orta Çağ Medeniyetleri': 48 soru
+RAPOR [paket] kural 26: konu 'Personal Life: Physical Appearance & Personality': 72 soru
+RAPOR [paket] kural 26: konu 'SAYILAR': 36 soru
+RAPOR [paket] kural 26: konu 'School Life': 96 soru
+RAPOR [paket] kural 26: konu 'VERİDEN OLASILIĞA': 18 soru
+RAPOR [paket] kural 26: konu 'Yazma': 40 soru
+RAPOR [paket] kural 26: konu 'Yaşam': 92 soru
+RAPOR [paket] kural 26: konu 'İSTATİSTİKSEL ARAŞTIRMA SÜRECİ': 19 soru
+RAPOR [paket] kural 26: konu 'İman Ve İmanin Mahiyeti': 41 soru
+RAPOR [paket] kural 26: konu 'İnsan Ve Din': 42 soru
+RAPOR [paket] kural 26: konu 'İslam Ve Ahlak': 42 soru
+RAPOR [paket] kural 26: konu 'İslam Ve İbadet': 41 soru
+RAPOR [paket] kural 26: kazanım 'Afetleri sınıflandırabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Ahlaki tutum ve davranışları idrak edebilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Ahlakın temel unsurlarını sentezleyebilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Akışkanın geçtiği borunun kesit alanı ile akışkanın sürati ve boru çeperlerine yaptığı basınç arasındaki ilişkiye yönelik tümevarımsal akıl yürütebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Algoritma temelli yaklaşımlarla problem çözebilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Algoritmik yapılar içerisindeki mantık bağlaçlarını ve niceleyicileri çözümleyebilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Allah (cc) ile iletişimin ibadet ve dua ile sağlandığını yansıtabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Aynı doğrultu üzerinde yer alan farklı vektörlerin yön ve büyüklüklerine yönelik bilimsel çıkarım yapabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Açık hava basıncına ilişkin çıkarım yapabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Bakara suresinin 177. ayetindeki mesajları anlamak için Kur’an-ı Kerim meallerine başvurabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Bakara suresinin 21, Zariyat suresinin 56 ve Hicr suresinin 99. ayetlerinin mesajlarını anlamak için Kur’an-ı Kerim meallerine başvurabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Basınca yönelik bilimsel çıkarımlarda bulunabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Başkaları tarafından oluşturulan tek nicel değişkenli veri dağılımlarına ilişkin istatistiksel sonuç veya yorumları tartışabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Besinlerin yapısında karbohidrat, lipit ve protein varlığının belirlenmesiyle ilgili deney yapabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Bilim ve teknoloji alanında faaliyet gösteren kurum veya kuruluşlarda fizik bilimi ile ilişkili kariyer olanaklarını sorgulayabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Bilimsel araştırma süreçlerinde bilimin doğasını yorumlayabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Bilimsel araştırmaların bilim etiğine uygunluğu ile ilgili bilgi toplayabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Bir üçgenden hareketle ona benzer üçgenler oluşturma ile ilgili yansıtma yapabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Birimleri SI birim sisteminde verilen temel ve türetilmiş nicelikleri sınıflandırabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Biyolojideki dönüm noktalarının insan hayatına katkılarını sorgulayabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Biyoçeşitliliği oluşturan unsurlarla ilgili bilimsel çıkarım yapabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Bölgelerin belirlenmesinde kullanılan kriterlere göre bölge hakkında çıkarım yapabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Bütüncül afet yönetimi uygulamalarını tablo, grafik, şekil veya diyagramlar aracılığıyla yorumlayabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Canlıları sınıflandırabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Coğrafya biliminin gelişimi hakkında bilgi toplayabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Coğrafya biliminin konusu ve bölümlerini çözümleyebilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Dijitalleşmenin tarih araştırma ve yazımının dönüşümüne etkisini değerlendirebilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Doğadaki temel kuvvetleri karşılaştırabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Doğal ve beşerî faktörlerin ekonomik faaliyetlere etkilerini sorgulayabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Doğrusal fonksiyonlarla ifade edilebilen denklem ve eşitsizlikler içeren problem çözebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Durgun sıvılarda basınca yönelik bilimsel çıkarımlarda bulunabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Dünya ve Türkiye’deki nüfusun dağılışı ve hareketlerini etkileyen faktörler hakkında haritalar üzerinden çıkarımda bulunabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.G1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.L1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.L2': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.L3': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.L4': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.P1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.R1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.R2': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.R3': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.R4': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.S1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.S2': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.S3': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.S4': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.S5': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.S6': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.V1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.W1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.W2': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.W3': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.W4': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.W5': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.W6': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.1.W7': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.2.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.3.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.4.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.5.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.6.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.7.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.9.8.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'Eski Çağ medeniyetlerinde hukukun toplumsal düzeni sağlamadaki rolünü sorgulayabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Eski Çağ toplumlarındaki inançlar ile bilim ve sanat anlayışları arasındaki ilişkiyi yorumlayabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Eski Çağ’daki farklı medeniyetlerin yönetim ve ordu sistemlerini özetleyebilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Eşlik ve benzerlikle ilgili çıkarım ve teoremleri içeren problemleri çözebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Farklı sayı kümelerinin özellikleri hakkında muhakeme yapabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Fizik bilimine katkıda bulunmuş bilim insanlarının deneyimlerini yansıtabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Fizik biliminin alt dallarını sınıflandırabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Fizik biliminin tanımına yönelik tümevarımsal akıl yürütebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Geometrik dönüşümlerle ilgili çıkarım yapabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Gerçek sayı aralıklarının gösteriminde ve aralıklarla ilgili işlemlerde küme sembol ve işlemlerinden yararlanabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Gerçek sayılarda f(x) = x şeklinde tanımlı doğrusal referans fonksiyonun nitel özellikleri ile bu fonksiyondan türetilen g(x) = a ∙ f(x ± r) ± k, (a, r, k ∈ ℝ, a ≠ 0) doğrusal fonksiyonların nitel özelliklerine ilişkin matematiksel muhakeme yapabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Gerçek sayılarda m(x) = ± |ax ± b| ± c (a, b, c ∈ℝ, a ≠ 0) şeklinde tanımlı mutlak değer fonksiyonlarının nitel özelliklerini incelemek için doğrusal fonksiyonlara bağlı analojik akıl yürütebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Gerçek sayıların işlem özelliklerini cebirsel olarak ifade etmede analojik akıl yürütebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Gerçek sayıların üslü ve köklü gösterimleriyle yapılan işlemlere dair muhakeme yapabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Günlük hayattaki deneyimlerinden yola çıkarak katı maddelerdeki ısı iletim hızını etkileyen etmenlere yönelik yansıtma yapabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Hareket türlerini sınıflandırabilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'Hareketin temel kavramlarının tanımlarına yönelik tümevarımsal akıl yürütebilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'Harita uygulamaları yapabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Hava olaylarının günlük hayata etkisini gözleme dayalı tahmin edebilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'Hâl değiştirme sıcaklığında bulunan saf bir maddenin hâl değiştirmesi için alınan veya verilen ısı miktarının bağlı olduğu değişkenler hakkında bilimsel çıkarım yapabilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'Hücre alt birimlerini ve bu birimlerin işlevleri arasındaki ilişkileri çözümleyebilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Hücre zarından madde geçişlerini sınıflandırabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Isı aktarım yollarını sınıflayabilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'Isı, öz ısı, ısı sığası ve sıcaklık farkı arasındaki matematiksel modele ilişkin tümevarımsal akıl yürütebilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'Isıl denge durumu hakkında bilimsel gözlem yapabilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'Kaldırma kuvveti ile sıvılardaki basınca neden olan kuvvet arasındaki ilişkiye yönelik çıkarım yapabilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'Kaldırma kuvvetini etkileyen değişkenleri belirlemeye yönelik deney yapabilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'Küçük moleküllerin hücre zarından pasif geçişi ile ilgili deney yapabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.1.2': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.1.3': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.1.4': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.1.5': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.1.6': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.1.7': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.1.8': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.10': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.11': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.12': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.13': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.2': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.3': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.4': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.5': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.6': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.7': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.8': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.2.9': 9 soru
+RAPOR [paket] kural 26: kazanım 'KİM.9.3.1': 8 soru
+RAPOR [paket] kural 26: kazanım 'Mantık bağlaçları ve niceleyicilerin algoritmalarda kullanımına yönelik edindiği deneyimi farklı matematiksel görev ve problemlere yansıtabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Mekânsal bilgi teknolojilerini oluşturan bileşenleri çözümleyebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Nüfusun zaman içerisindeki değişimini tablo ve grafikler aracılığı ile yorumlayabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Olayların olasılığına ilişkin tümevarımsal akıl yürütebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Olayların olasılığını gözleme dayalı tahmin edebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Organik moleküllerin yapısı ve çeşitleriyle ilgili bilgi toplayabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Orta Çağ’da yaşanan kitlesel göçlerin Avrupa ve Asya’da oluşturduğu değişimi neden ve sonuçlarıyla birlikte yorumlayabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Orta Çağ’daki başlıca devletlerin yönetim ve ordu yapılarını karşılaştırabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Orta Çağ’daki başlıca medeniyet havzalarının bilim, kültür ve sanata etkilerine ilişkin oluşturduğu ürünleri paylaşabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Orta Çağ’daki ticaret yollarının kendi çevresinde meydana getirdiği etkiyi sorgulayabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Rum suresinin 17-27. ayetlerinin mesajlarını anlamada temel kaynakları kullanabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Skaler ve vektörel nicelikleri karşılaştırabilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'Sıvılarda basıncın kullanıldığı günlük hayat örneklerine ilişkin sorgulama yapabilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'TDE1.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'TDE1.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'TDE1.3': 11 soru
+RAPOR [paket] kural 26: kazanım 'TDE1.4': 11 soru
+RAPOR [paket] kural 26: kazanım 'TDE2.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'TDE2.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'TDE2.3': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE2.4': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE3.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE3.2': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE3.3': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE3.4': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE4.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE4.2': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE4.3': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE4.4': 10 soru
+RAPOR [paket] kural 26: kazanım 'Tales, Öklid ve Pisagor teoremlerini ispatlayabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Tarih öğrenmenin bireye ve topluma faydalarını yorumlayabilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Tarihin doğasını farklı kaynaklar üzerinden inceleyebilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Tarihsel bilginin üretim sürecini çözümleyebilme': 12 soru
+RAPOR [paket] kural 26: kazanım 'Tarım Devrimi’nin Eski Çağ medeniyetlerindeki yerleşmeye ve ekonomik faaliyetlere etkisini değerlendirebilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Tehlike, risk ve afet kavramlarını çözümleyebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Tek nicel değişkenli veri dağılımları ile çalışabilme ve tek nicel değişken içeren veriye dayalı karar verebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Türkiye ve dünyadaki farklı iklim türlerine sahip yerlerin iklim verilerini kullanarak tablo, grafik, şekil veya diyagram hazırlayabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Türkiye ve farklı ülkelerdeki nüfusla ilgili fırsat ve sorunların nüfus politikalarının belirlenmesindeki etkisini sorgulayabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Türkiye ve farklı ülkelerin nüfus piramitlerinden yararlanarak demografik dönüşüm sürecini yorumlayabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Türkiye’nin konum özelliklerini algılayabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Türklerde konargöçer yaşama ilişkin bakış açısı geliştirebilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Vektörlerin toplanmasında kullanılan uç uca ekleme ve paralelkenar yöntemi ile bileşenlerine ayırma işlemine ilişkin tümevarımsal akıl yürütebilme': 8 soru
+RAPOR [paket] kural 26: kazanım 'pH ve sıcaklığın enzim aktivitesini etkilediğini gösteren deney yapabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Çevresindeki canlıların özelliklerini bilimsel olarak gözlemleyebilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Örnek olay, olgu veya konu üzerinden mekânsal düşünme ile coğrafya öğrenmenin önemini çözümleyebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'Üç üst âlem (domain) sisteminde yer alan canlıların özellikleri ile ilgili çıkarım yapabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'Üçgende açı ve kenarla ilgili özellikleri, üçgenin açıları ve kenarları arasındaki ilişkileri doğrulayabilme veya ispatlayabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'İki üçgenin eş veya benzer olması için gerekli olan asgari koşullarla ilgili çıkarım yapabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'İklim sistemi ve sürecinde meydana gelen değişiklikleri algılayabilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'İklim sisteminin bileşen ve değişkenlerini çözümleyebilme': 9 soru
+RAPOR [paket] kural 26: kazanım 'İmanın bireye ve topluma kazandırdıklarını idrak edebilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'İmanın mahiyetini müşahede edebilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'İnorganik moleküllerin önemi hakkında bilimsel çıkarım yapabilme': 11 soru
+RAPOR [paket] kural 26: kazanım 'İnsan ve ibadet ilişkisini yorumlayabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'İnsanın doğruyu arayan bir varlık olarak bilgiye ulaşma yolları hakkında eleştirel düşünebilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'İnsanın yaratılışını ve özelliklerini ayetlerden hareketle müşahede edebilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'İslam’da ahlakın mahiyetini müşahede edebilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'İslam’da ibadet ve ibadetin temel ilkeleri hakkında bilgi toplayabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'İslam’da temel ibadetleri sınıflandırabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'İslam’ın iman esaslarını ayet ve hadisler bağlamında özetleyebilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'İsra suresinin 23-29. ayetlerinin mesajlarını anlamak için Kur’an-ı Kerim meallerine başvurabilme': 10 soru
+RAPOR [paket] kural 26: kazanım 'İç enerjinin ısı ve sıcaklık ile arasındaki ilişki hakkında tümevarımsal akıl yürütebilme': 8 soru
+RAPOR [paket] kural 26: objective boş: 0 soru
+RAPOR [paket] kural 26: kullanılan farklı kind: 7 (chart, coordinate, flow, grid, numberline, shape, table)
+RAPOR [paket] kural 39: aynı seçenek kümesi: 99 küme / 561 soru; en yüksek tekrar=8
+RAPOR [paket] kural 39: 10 seçenek birden çok soru ailesinde dolaşıyor ve hiçbirinde doğru değil: "Fizik: cihaz veya kurum adına bakarak bilimsel kapsamı tahmin etmek. bu akıl yürütme 'kanıt, çıkarımın kapsamını belirler' bilgisini ilgisiz sayar ve 'çözümü karşı örnek ve tutarlılık kontrolüyle yeniden denetle' denetimini atlar. bu yorum verilen kanıtla çelişir ve şu denetim süreciyle bağdaşmaz: öğretmen bir yanlış örneği düzelttikten sonra ölçütün yeni bağlamda korunmasını ister."×4, "Fizik: cihaz veya kurum adına bakarak bilimsel kapsamı tahmin etmek. bu akıl yürütme 'kanıt, çıkarımın kapsamını belirler' bilgisini ilgisiz sayar ve 'çıkarımı kanıt sınırları içinde yaz' denetimini atlar. bu yorum verilen kanıtla çelişir ve şu denetim süreciyle bağdaşmaz: etkinlikte önce verilenler işaretlenir, ilgisiz bilgiler elenir ve sonuç gerekçelendirilir."×4, "Fizik: cihaz veya kurum adına bakarak bilimsel kapsamı tahmin etmek. bu akıl yürütme 'ölçüm ve kaynak zinciri izlenebilir olmalıdır' bilgisini ilgisiz sayar ve 'doğrudan ve güvenilir kanıtları seç' denetimini atlar. bu yorum verilen kanıtla çelişir ve şu denetim süreciyle bağdaşmaz: kavram haritasında neden, süreç ve sonuç oklarla ayrılır; ters bağlantılar sorgulanır."×4, "Fizik: cihaz veya kurum adına bakarak bilimsel kapsamı tahmin etmek. bu akıl yürütme 'ölçüm ve kaynak zinciri izlenebilir olmalıdır' bilgisini ilgisiz sayar ve 'karşı örnek ve yeni veriyle yeniden denetle' denetimini atlar. bu yorum verilen kanıtla çelişir ve şu denetim süreciyle bağdaşmaz: çalışma grubu iki karşı örnek arayıp genellemenin geçerli olduğu koşulları kaydeder."×4, "Fizik: tarihsel örneği güncel güvenlik kuralı gibi uygulamak. bu akıl yürütme 'ölçüm ve kaynak zinciri izlenebilir olmalıdır' bilgisini ilgisiz sayar ve 'karşı örnek ve alternatif açıklamayla denetle' denetimini atlar. bu yorum verilen kanıtla çelişir ve şu denetim süreciyle bağdaşmaz: etkinlikte önce verilenler işaretlenir, ilgisiz bilgiler elenir ve sonuç gerekçelendirilir."×4, "Fizik: tarihsel örneği güncel güvenlik kuralı gibi uygulamak. bu akıl yürütme 'ölçüm ve kaynak zinciri izlenebilir olmalıdır' bilgisini ilgisiz sayar ve 'ortak ve ayırt edici örüntüleri belirle' denetimini atlar. bu yorum verilen kanıtla çelişir ve şu denetim süreciyle bağdaşmaz: öğretmen bir yanlış örneği düzelttikten sonra ölçütün yeni bağlamda korunmasını ister."×4, "Fizik: tek örnekten aşırı genelleme yapmak. bu akıl yürütme 'kanıt, çıkarımın kapsamını belirler' bilgisini ilgisiz sayar ve 'i̇lk çıkarımı farklı bir örnekle karşılaştır' denetimini atlar. bu yorum verilen kanıtla çelişir ve şu denetim süreciyle bağdaşmaz: öğrenci çözümünü birim, zaman sırası ve kavram sınırı bakımından yeniden denetler."×4, "Fizik: tek örnekten aşırı genelleme yapmak. bu akıl yürütme 'kanıt, çıkarımın kapsamını belirler' bilgisini ilgisiz sayar ve 'çıkarımı kanıtın kapsadığı durumlarla sınırla' denetimini atlar. bu yorum verilen kanıtla çelişir ve şu denetim süreciyle bağdaşmaz: çalışma grubu iki karşı örnek arayıp genellemenin geçerli olduğu koşulları kaydeder."×4
+RAPOR [paket] kural 36: kendi şıkkına sözcük bağı olan gerekçe: 6000/6000
+RAPOR [paket] kural 37: distractorWhy benzersiz iskelet: 4866/6000
+RAPOR [paket] kural 40: benzersiz soru kalıbı: 1962/2000
+RAPOR [paket] kural 41: kazanım dışından ödünç çeldirici: 0/6000
+RAPOR [paket] kural 45: kazanım dengesi kapsam modunda; 335 kazanımın not ve soru beyanı doğrulandı
+RAPOR [paket] kural 45: kazanım başına soru: en az 3, en çok 12, kazanım sayısı 335
+TOPLAM: 0 HATA, 0 UYARI

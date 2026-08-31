@@ -1,77 +1,11 @@
 {
-  "boundary": {
-    "canonicalWritten": false,
-    "gitTouched": false,
-    "mainTouched": false
-  },
-  "counts": {
-    "note": 192,
-    "pack": 1,
-    "question": 1536,
-    "total": 1729
-  },
-  "createdAt": "2026-08-24T19:03:28.280116+03:00",
+  "candidateSha256": "7e15f33d8dae4eb2cb269918195651665086e6d251c9a85c78229f95eea37cc4",
   "decision": "PASS",
-  "gates": {
-    "contentFindings": 0,
-    "exactDuplicates": 0,
-    "nearDuplicates": 0,
-    "postStampFindings": 0,
-    "scoreReceipt": {
-      "bytes": 2827,
-      "lines": 70,
-      "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\ingilizce\\paket\\onayli-aday\\release-candidate\\tr_g08_ingilizce_full_single-pack_score_receipt_v4_69e255b2.json",
-      "sha256": "69e255b2c8bdb697a1b83cbe09414c392945035aec9b4a8fb1f0dc2fb53c26dd"
-    },
-    "strict": {
-      "canonicalRelativePath": "turkiye\\8-sinif\\ingilizce\\ingilizce-tum.jsonl",
-      "contract": {
-        "bytes": 1848,
-        "lines": 37,
-        "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\alika_icerik_current\\pack_contract.json",
-        "sha256": "2a204725b971cca45e2d652db15f92f5bfb3531925833b45e09758ffe235b2fe"
-      },
-      "errors": 0,
-      "exitCode": 0,
-      "summary": "TOPLAM: 0 HATA, 0 UYARI",
-      "warnings": 0
-    }
-  },
-  "mode": "ai-only",
-  "model": "gpt-5.6-sol",
-  "package": {
-    "bytes": 13502615,
-    "lines": 1729,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\ingilizce\\paket\\onayli-aday\\release-candidate\\tr_g08_ingilizce_full_single-pack_release_v4_e603942b.jsonl",
-    "sha256": "e603942b32cd846135f1e84ae5b9d508d5be05a1499c5daf3e68495e50d3eb66"
-  },
-  "packagePreStampScopeSha256": "1dfe4143e7fdbe322c1353e2ffecbf93c50e84297d008f912c53b618f7ca2e7a",
-  "protectedContentSha256": "e2b4fa0c2827a8dd906153d9f3d9168bc07b355d8a35d10cde69a7dc9768f52c",
-  "publishBlocked": false,
-  "publishReady": true,
-  "qf009": {
-    "after": {
-      "genericNeverCorrectDistractors": 0,
-      "genericNeverCorrectOccurrences": 0,
-      "questionsInOptionSetsSharedAcrossFamilies": 0
-    },
-    "answerIndexDrift": 0,
-    "before": {
-      "genericNeverCorrectDistractors": 51,
-      "genericNeverCorrectOccurrences": 4608,
-      "questionsInOptionSetsSharedAcrossFamilies": 384
-    },
-    "changedQuestionRecords": 1536,
-    "objectiveSourceEvidenceFigureDrift": 0,
-    "restampedRecords": 1729
-  },
-  "ruleset": "alika-g08-qf009-content-repair-v4",
-  "schema": "alika-hash-bound-sol-single-pack-release-receipt/4.0.0",
-  "sourceV3": {
-    "bytes": 12242355,
-    "lines": 1729,
-    "path": "C:\\Users\\Shadow\\Desktop\\AliKa atölye\\chatgpt\\8-sinif\\ingilizce\\paket\\onayli-aday\\release-candidate\\tr_g08_ingilizce_full_single-pack_release_v3_884a1c7c.jsonl",
-    "sha256": "884a1c7cb88fd4fbd9d61ce478574af40a99b594f867fe6b75bdb9c484357e30"
-  },
-  "subject": "ingilizce"
+  "grade": 8,
+  "humanReviewed": false,
+  "reviewManifestSha256": "05f9a760c71488bfb2a8c729e67ea32ca090082a021b44ddb947ef4b352cbc28",
+  "reviewedPackageSha256": "10bd9b392124ba012c5d218988bb912166a21818f9cee828322b0730a1b815c5",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "İngilizce"
 }

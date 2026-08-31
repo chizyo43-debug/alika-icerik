@@ -1,0 +1,11 @@
+{
+  "candidateSha256": "b1f3e32d5ed4a107d67e08aa9e6105f13292b550328374a22c8ee90248c0ffd6",
+  "decision": "PASS",
+  "grade": 10,
+  "humanReviewed": false,
+  "reviewManifestSha256": "ce8c484ffa1e7084f7c28b8d26ef1886804cd2883e8adc61f60b0377d743e227",
+  "reviewedPackageSha256": "9043883da69f16a8c639e7d21e9ece1e4900af92d2d0a318b7bf02809f98e248",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Felsefe"
+}

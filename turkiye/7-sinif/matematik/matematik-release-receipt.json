@@ -1,0 +1,11 @@
+{
+  "candidateSha256": "8a62ef3ea6f2c0e3600b1cc53b73e3761b4196fe20ceae38592f3f4f7edcfb47",
+  "decision": "PASS",
+  "grade": 7,
+  "humanReviewed": false,
+  "reviewManifestSha256": "7facf6aab8b7cf755151246c54d99c403bdf34da549f9b5ad443df09d98736f0",
+  "reviewedPackageSha256": "cbe4514d11977e53fc8965c0733a77edf3e0bda7df573d928daf97bd1f2a319c",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Matematik"
+}

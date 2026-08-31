@@ -1,135 +1,41 @@
 {
-  "bank": "turkiye/9-sinif/soru-bankasi/9-sinif-tum-dersler-2000-soru.jsonl",
-  "counts": {
-    "notes": 312,
-    "pack": 1,
-    "questions": 2000,
-    "records": 2313
-  },
+  "builder": "alika-note-grounded-unique-bank-builder/2.0.0",
+  "candidateSha256": "94970f714ebc6baffc40e0d27ed123913de5ce2a803aadf825e0e516495aa809",
+  "decision": "PASS",
   "grade": 9,
-  "publishReady": true,
-  "quality": {
+  "humanReviewed": false,
+  "metrics": {
     "answerBalance": [
       500,
       500,
       500,
       500
     ],
-    "brokenNoteLinks": 0,
-    "duplicateIds": 0,
-    "duplicateQuestionTexts": 0,
-    "families": 872,
-    "largestFamily": 5,
-    "perSubject": {
-      "Biyoloji": 223,
-      "Coğrafya": 223,
-      "Din Kültürü ve Ahlak Bilgisi": 222,
-      "Fizik": 222,
-      "Kimya": 222,
-      "Matematik": 222,
-      "Tarih": 222,
-      "Türk Dili ve Edebiyatı": 222,
-      "İngilizce": 222
+    "difficulty": {
+      "1": 300,
+      "2": 500,
+      "3": 600,
+      "4": 400,
+      "5": 200
     },
-    "strictErrors": 0,
-    "strictWarnings": 0
-  },
-  "review": {
-    "answerBalance": [
-      500,
-      500,
-      500,
-      500
-    ],
-    "bankDecisionSha256": "9a6546d6dc9613b87ccad6d6eeae78136e06c78f600dd7c3a574afd8db34e930",
-    "decision": "PASS",
+    "exactSourceIdOverlap": 0,
+    "exactSourceTextOverlap": 0,
     "grade": 9,
-    "humanReviewed": false,
-    "methodVersion": "alika-missing-banks-ai-only-release/1.0.0",
-    "mode": "ai-only",
-    "model": "gpt-5.6-sol",
-    "notes": 312,
-    "perSubject": {
-      "Biyoloji": 223,
-      "Coğrafya": 223,
-      "Din Kültürü ve Ahlak Bilgisi": 222,
-      "Fizik": 222,
-      "Kimya": 222,
-      "Matematik": 222,
-      "Tarih": 222,
-      "Türk Dili ve Edebiyatı": 222,
-      "İngilizce": 222
+    "mix": {
+      "analysis": 500,
+      "application": 700,
+      "comprehension": 500,
+      "error-analysis": 300
     },
+    "nearCopyAbove088": 0,
+    "notes": 335,
+    "objectives": 335,
     "questions": 2000,
-    "schema": "alika-missing-question-bank-decision/1.0.0",
-    "selectionSha256": "04caab0ea503d425a87b3390b9fdcbe2175239b2148552528778cd3e1d4950c2",
-    "sourcePackages": [
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g09-biyoloji-subject500-pack-v1",
-        "path": "turkiye/9-sinif/biyoloji/biyoloji-tum.jsonl",
-        "questions": 223,
-        "sha256": "21be99b751553b3446d5ebad8c84a6286160e3ebfe135233b88556308ac17091"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g09-cografya-subject500-pack-v1",
-        "path": "turkiye/9-sinif/cografya/cografya-tum.jsonl",
-        "questions": 223,
-        "sha256": "99eb131e8cf8882fa81a33cd0cc7865655a04440557dfef466d172c0ab50e846"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g09-dkab-subject500-pack-v1",
-        "path": "turkiye/9-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
-        "questions": 222,
-        "sha256": "75bf3c05db9b0035a9cf7054a454e2e27e14571409e3a89e4459f5796bba80b6"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g09-fizik-subject500-pack-v1",
-        "path": "turkiye/9-sinif/fizik/fizik-tum.jsonl",
-        "questions": 222,
-        "sha256": "2239cf3749138ea91f4450929d87dcfd666c2f71f31d6b02644e986bdfd6f9af"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g09-ingilizce-pack-full-v1",
-        "path": "turkiye/9-sinif/ingilizce/ingilizce-tum.jsonl",
-        "questions": 222,
-        "sha256": "d30bf7ec559a4af0e8977f1154f5edff60853bb2872ca112b373f0867abdd0cc"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g09-kimya-subject500-pack-v1",
-        "path": "turkiye/9-sinif/kimya/kimya-tum.jsonl",
-        "questions": 222,
-        "sha256": "266fc794d6e2fc4675a44c0911f1fbc79793c330fe4f3a34cb74e979bd9e0027"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr.g09.matematik.full",
-        "path": "turkiye/9-sinif/matematik/matematik-tum.jsonl",
-        "questions": 222,
-        "sha256": "b4743c37a0d3ad30b074960a4713d937d15a60d4718f160a00cc599c9e18b671"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g09-tarih-subject500-pack-v1",
-        "path": "turkiye/9-sinif/tarih/tarih-tum.jsonl",
-        "questions": 222,
-        "sha256": "122dc1ecf8d48794b4998f63c5dfe12a0a30d084427ea72918e92d6d199546a5"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr.g09.tde.full",
-        "path": "turkiye/9-sinif/turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum.jsonl",
-        "questions": 222,
-        "sha256": "91f7d04cd5f4716916243c1d9d0230e60ab8f04e6cd8934d221e806a56327efc"
-      }
-    ]
+    "visualQuestions": 500
   },
-  "schema": "alika-missing-question-bank-release-receipt/1.0.0",
-  "sha256": "c4720299420c1e881a335908a12a03214ed8a25d6c3f85a4e50037ae7f8bf1b3",
-  "status": "PASS"
+  "reviewManifestSha256": "e97d7ef62e870155f1b19f3157e628dbfc74f8d5d489a4e888d2ea803e0cd18f",
+  "reviewMethod": "alika-hash-bound-independent-ai-review/2.0.0",
+  "reviewedPackageSha256": "0c64f668b44d6a0eda38ecd40c772a4cedb2901505138cb09fa07925ed4292ff",
+  "schemaVersion": "alika-question-bank-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI"
 }

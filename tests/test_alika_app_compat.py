@@ -187,6 +187,238 @@ def test_grade5_packages_round_trip_through_alika(tmp_path, monkeypatch):
         assert result.content_id == content_id
 
 
+def test_grade8_current_subject_candidates_round_trip_through_alika(tmp_path, monkeypatch):
+    """Active 2026–2027 Grade 8 source packs install before replacement."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    expected = {
+        "din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl": ("Din Kültürü ve Ahlak Bilgisi", 28),
+        "fen-bilimleri/fen-bilimleri-tum.jsonl": ("Fen Bilimleri", 61),
+        "ingilizce/ingilizce-tum.jsonl": ("İngilizce", 70),
+        "inkilap-tarihi/inkilap-tarihi-tum.jsonl": ("T.C. İnkılap Tarihi ve Atatürkçülük", 39),
+        "matematik/matematik-tum.jsonl": ("Matematik", 52),
+        "turkce/turkce-tum.jsonl": ("Türkçe", 76),
+    }
+    root = ROOT / "build" / "grade8-current-subjects-reviewed"
+    init_all.init()
+    importer = Importer()
+    for relative, (subject, notes) in expected.items():
+        result = importer.import_file(root / relative)
+        assert result.success, (relative, result.error_code, result.error)
+        assert result.state == ImportState.AWAITING_APPROVAL
+        assert result.preview["subject"] == subject
+        assert result.preview["note_count"] == notes
+        assert result.preview["question_count"] == 500
+        assert importer.approve(result.content_id), relative
+
+    with connect() as connection:
+        question_rows = connection.execute(
+            "SELECT choices, correct, metadata, note_content_id FROM question_items WHERE active=1"
+        ).fetchall()
+        note_rows = connection.execute(
+            "SELECT description, provenance FROM content_items WHERE active=1 AND media_type='note'"
+        ).fetchall()
+        collection_count = connection.execute(
+            "SELECT COUNT(*) FROM question_collections WHERE active=1 AND trust_state='approved'"
+        ).fetchone()[0]
+    assert collection_count == 6
+    assert len(question_rows) == 3000
+    assert len(note_rows) == 326
+    for row in question_rows:
+        metadata = json.loads(row["metadata"])
+        assert len(json.loads(row["choices"])) == 4
+        assert 0 <= int(row["correct"]) <= 3
+        assert row["note_content_id"]
+        assert metadata.get("noteId") == metadata.get("noteKey")
+        assert metadata.get("objective")
+        assert "hints" not in metadata
+    for row in note_rows:
+        source = json.loads(row["provenance"])["source_record"]
+        assert len(row["description"]) > 800
+        assert source.get("noteKey")
+        if source.get("figure"):
+            assert source["figure"].get("altTextKey")
+
+
+def test_grade9_enriched_subject_candidates_round_trip_through_alika(tmp_path, monkeypatch):
+    """Quality-complete Grade 9 lesson notes must survive real app import."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    expected = {
+        "biyoloji/biyoloji-tum.jsonl": ("Biyoloji", 28, 500),
+        "cografya/cografya-tum.jsonl": ("Coğrafya", 31, 500),
+        "din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl": ("Din Kültürü ve Ahlak Bilgisi", 29, 500),
+        "fizik/fizik-tum.jsonl": ("Fizik", 35, 500),
+        "ingilizce/ingilizce-tum.jsonl": ("İngilizce", 192, 1536),
+        "kimya/kimya-tum.jsonl": ("Kimya", 31, 500),
+        "matematik/matematik-tum.jsonl": ("Matematik", 20, 500),
+        "tarih/tarih-tum.jsonl": ("Tarih", 28, 500),
+        "turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum.jsonl": ("Türk Dili ve Edebiyatı", 54, 500),
+    }
+    root = ROOT / "build" / "grade9-enriched-subjects-reviewed"
+    init_all.init()
+    importer = Importer()
+    for relative, (subject, notes, questions) in expected.items():
+        result = importer.import_file(root / relative)
+        assert result.success, (relative, result.error_code, result.error)
+        assert result.state == ImportState.AWAITING_APPROVAL
+        assert result.preview["subject"] == subject
+        assert result.preview["note_count"] == notes
+        assert result.preview["question_count"] == questions
+        assert importer.approve(result.content_id), relative
+
+    with connect() as connection:
+        question_rows = connection.execute(
+            "SELECT choices, correct, metadata, note_content_id FROM question_items WHERE active=1"
+        ).fetchall()
+        note_rows = connection.execute(
+            "SELECT description, provenance FROM content_items WHERE active=1 AND media_type='note'"
+        ).fetchall()
+        collection_count = connection.execute(
+            "SELECT COUNT(*) FROM question_collections WHERE active=1 AND trust_state='approved'"
+        ).fetchone()[0]
+    assert collection_count == 9
+    assert len(question_rows) == 5536
+    assert len(note_rows) == 448
+    for row in question_rows:
+        metadata = json.loads(row["metadata"])
+        assert len(json.loads(row["choices"])) == 4
+        assert 0 <= int(row["correct"]) <= 3
+        assert row["note_content_id"]
+        assert metadata.get("objective")
+        assert "hints" not in metadata
+    for row in note_rows:
+        source = json.loads(row["provenance"])["source_record"]
+        assert len(row["description"]) >= 800
+        assert source.get("noteKey")
+        if source.get("figure"):
+            assert source["figure"].get("altTextKey")
+
+
+def test_grade10_enriched_subject_candidates_round_trip_through_alika(tmp_path, monkeypatch):
+    """Quality-complete Grade 10 lesson notes must survive real app import."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    expected = {
+        "biyoloji/biyoloji-tum.jsonl": ("Biyoloji", 19, 500),
+        "cografya/cografya-tum.jsonl": ("Coğrafya", 20, 500),
+        "din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl": ("Din Kültürü ve Ahlak Bilgisi", 20, 500),
+        "felsefe/felsefe-tum.jsonl": ("Felsefe", 20, 500),
+        "fizik/fizik-tum.jsonl": ("Fizik", 22, 500),
+        "ingilizce/ingilizce-tum.jsonl": ("İngilizce", 20, 500),
+        "kimya/kimya-tum.jsonl": ("Kimya", 21, 500),
+        "matematik/matematik-tum.jsonl": ("Matematik", 21, 500),
+        "tarih/tarih-tum.jsonl": ("Tarih", 20, 500),
+        "turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum.jsonl": ("Türk Dili ve Edebiyatı", 20, 500),
+    }
+    root = ROOT / "build" / "grade10-enriched-subjects-reviewed"
+    init_all.init()
+    importer = Importer()
+    for relative, (subject, notes, questions) in expected.items():
+        result = importer.import_file(root / relative)
+        assert result.success, (relative, result.error_code, result.error)
+        assert result.state == ImportState.AWAITING_APPROVAL
+        assert result.preview["subject"] == subject
+        assert result.preview["note_count"] == notes
+        assert result.preview["question_count"] == questions
+        assert importer.approve(result.content_id), relative
+
+    with connect() as connection:
+        question_rows = connection.execute(
+            "SELECT choices, correct, metadata, note_content_id FROM question_items WHERE active=1"
+        ).fetchall()
+        note_rows = connection.execute(
+            "SELECT description, provenance FROM content_items WHERE active=1 AND media_type='note'"
+        ).fetchall()
+        collection_count = connection.execute(
+            "SELECT COUNT(*) FROM question_collections WHERE active=1 AND trust_state='approved'"
+        ).fetchone()[0]
+    assert collection_count == 10
+    assert len(question_rows) == 5000
+    assert len(note_rows) == 203
+    for row in question_rows:
+        metadata = json.loads(row["metadata"])
+        assert len(json.loads(row["choices"])) == 4
+        assert 0 <= int(row["correct"]) <= 3
+        assert row["note_content_id"]
+        assert metadata.get("objective")
+        assert "hints" not in metadata
+    for row in note_rows:
+        source = json.loads(row["provenance"])["source_record"]
+        assert len(row["description"]) >= 800
+        assert source.get("noteKey")
+        if source.get("figure"):
+            assert source["figure"].get("altTextKey")
+
+
+def test_grade11_enriched_subject_candidates_round_trip_through_alika(tmp_path, monkeypatch):
+    """Quality-complete Grade 11 lesson notes must survive real app import."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    expected = {
+        "biyoloji/biyoloji-tum.jsonl": ("Biyoloji", 22, 500),
+        "cografya/cografya-tum.jsonl": ("Coğrafya", 38, 500),
+        "din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl": ("Din Kültürü ve Ahlak Bilgisi", 50, 500),
+        "felsefe/felsefe-tum.jsonl": ("Felsefe", 24, 500),
+        "fizik/fizik-tum.jsonl": ("Fizik", 31, 500),
+        "ingilizce/ingilizce-tum.jsonl": ("İngilizce", 64, 500),
+        "kimya/kimya-tum.jsonl": ("Kimya", 25, 500),
+        "matematik/matematik-tum.jsonl": ("Matematik", 20, 500),
+        "tarih/tarih-tum.jsonl": ("Tarih", 22, 500),
+        "turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum.jsonl": ("Türk Dili ve Edebiyatı", 32, 500),
+    }
+    root = ROOT / "build" / "grade11-enriched-subjects-reviewed"
+    init_all.init()
+    importer = Importer()
+    for relative, (subject, notes, questions) in expected.items():
+        result = importer.import_file(root / relative)
+        assert result.success, (relative, result.error_code, result.error)
+        assert result.state == ImportState.AWAITING_APPROVAL
+        assert result.preview["subject"] == subject
+        assert result.preview["note_count"] == notes
+        assert result.preview["question_count"] == questions
+        assert importer.approve(result.content_id), relative
+
+    with connect() as connection:
+        question_rows = connection.execute(
+            "SELECT choices, correct, metadata, note_content_id FROM question_items WHERE active=1"
+        ).fetchall()
+        note_rows = connection.execute(
+            "SELECT description, provenance FROM content_items WHERE active=1 AND media_type='note'"
+        ).fetchall()
+        collection_count = connection.execute(
+            "SELECT COUNT(*) FROM question_collections WHERE active=1 AND trust_state='approved'"
+        ).fetchone()[0]
+    assert collection_count == 10
+    assert len(question_rows) == 5000
+    assert len(note_rows) == 328
+    for row in question_rows:
+        metadata = json.loads(row["metadata"])
+        assert len(json.loads(row["choices"])) == 4
+        assert 0 <= int(row["correct"]) <= 3
+        assert row["note_content_id"]
+        assert metadata.get("objective")
+        assert "hints" not in metadata
+    for row in note_rows:
+        source = json.loads(row["provenance"])["source_record"]
+        assert len(row["description"]) >= 800
+        assert source.get("noteKey")
+        if source.get("figure"):
+            assert source["figure"].get("altTextKey")
+
+
 def test_grade5_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
     _load_app(tmp_path, monkeypatch)
     from library import init_all
@@ -253,3 +485,522 @@ def test_grade5_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
     assert second.success
     assert second.state == ImportState.ACTIVATED
     assert second.content_id == result.content_id
+
+
+def test_grade6_reviewed_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
+    """Release candidate must install in the real app before atomic activation."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    path = (
+        ROOT / "build" / "question-banks" / "grade-6" / "reviewed"
+        / "6-sinif-tum-dersler-2000-soru.reviewed.jsonl"
+    )
+    assert path.is_file(), "6. sınıf gözden geçirilmiş yayın adayı bulunamadı"
+    init_all.init()
+    importer = Importer()
+    result = importer.import_file(path)
+    assert result.success, (result.error_code, result.error)
+    assert result.state == ImportState.AWAITING_APPROVAL
+    assert result.preview["subject"] == "Tüm Dersler"
+    assert result.preview["note_count"] == 168
+    assert result.preview["question_count"] == 2000
+    assert importer.approve(result.content_id)
+
+    with connect() as connection:
+        questions = connection.execute(
+            "SELECT subject, metadata, note_content_id "
+            "FROM question_items WHERE active=1"
+        ).fetchall()
+        collection = connection.execute(
+            "SELECT subject, question_count, trust_state "
+            "FROM question_collections WHERE active=1"
+        ).fetchone()
+
+    assert len(questions) == 2000
+    assert collection["subject"] == "Tüm Dersler"
+    assert collection["question_count"] == 2000
+    assert collection["trust_state"] == "approved"
+    subject_counts: dict[str, int] = {}
+    figured = 0
+    for row in questions:
+        subject_counts[row["subject"]] = subject_counts.get(row["subject"], 0) + 1
+        metadata = json.loads(row["metadata"])
+        assert row["note_content_id"]
+        assert metadata.get("noteId") == metadata.get("noteKey")
+        assert metadata.get("objective")
+        assert "hints" not in metadata
+        if metadata.get("figure"):
+            figured += 1
+            assert metadata["figure"].get("altTextKey")
+    assert subject_counts == {
+        "Bilişim Teknolojileri ve Yazılım": 293,
+        "Din Kültürü ve Ahlak Bilgisi": 239,
+        "Fen Bilimleri": 381,
+        "İngilizce": 247,
+        "Matematik": 285,
+        "Sosyal Bilgiler": 239,
+        "Türkçe": 316,
+    }
+    assert figured == 261
+
+    second = importer.import_file(path)
+    assert second.success
+    assert second.state == ImportState.ACTIVATED
+    assert second.content_id == result.content_id
+
+
+def test_grade7_reviewed_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
+    """Grade 7 release candidate must install before atomic activation."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    path = (
+        ROOT / "build" / "question-banks" / "grade-7" / "reviewed"
+        / "7-sinif-tum-dersler-2000-soru.reviewed.jsonl"
+    )
+    assert path.is_file(), "7. sınıf gözden geçirilmiş yayın adayı bulunamadı"
+    init_all.init()
+    importer = Importer()
+    result = importer.import_file(path)
+    assert result.success, (result.error_code, result.error)
+    assert result.state == ImportState.AWAITING_APPROVAL
+    assert result.preview["subject"] == "Tüm Dersler"
+    assert result.preview["note_count"] == 419
+    assert result.preview["question_count"] == 2000
+    assert importer.approve(result.content_id)
+
+    with connect() as connection:
+        questions = connection.execute(
+            "SELECT subject, metadata, note_content_id "
+            "FROM question_items WHERE active=1"
+        ).fetchall()
+        collection = connection.execute(
+            "SELECT subject, question_count, trust_state "
+            "FROM question_collections WHERE active=1"
+        ).fetchone()
+
+    assert len(questions) == 2000
+    assert collection["subject"] == "Tüm Dersler"
+    assert collection["question_count"] == 2000
+    assert collection["trust_state"] == "approved"
+    subject_counts: dict[str, int] = {}
+    figured = 0
+    for row in questions:
+        subject_counts[row["subject"]] = subject_counts.get(row["subject"], 0) + 1
+        metadata = json.loads(row["metadata"])
+        assert row["note_content_id"]
+        assert metadata.get("noteId") == metadata.get("noteKey")
+        assert metadata.get("objective")
+        assert "hints" not in metadata
+        if metadata.get("figure"):
+            figured += 1
+            assert metadata["figure"].get("altTextKey")
+    assert subject_counts == {
+        "Din Kültürü ve Ahlak Bilgisi": 191,
+        "Fen Bilimleri": 153,
+        "İngilizce": 600,
+        "Matematik": 265,
+        "Sosyal Bilgiler": 191,
+        "Türkçe": 600,
+    }
+    assert figured == 359
+
+    second = importer.import_file(path)
+    assert second.success
+    assert second.state == ImportState.ACTIVATED
+    assert second.content_id == result.content_id
+
+
+def test_grade8_reviewed_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
+    """Current-curriculum Grade 8 candidate must install before activation."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    path = (
+        ROOT / "build" / "question-banks" / "grade-8" / "reviewed"
+        / "8-sinif-tum-dersler-2000-soru.reviewed.jsonl"
+    )
+    assert path.is_file(), "8. sınıf gözden geçirilmiş yayın adayı bulunamadı"
+    init_all.init()
+    importer = Importer()
+    result = importer.import_file(path)
+    assert result.success, (result.error_code, result.error)
+    assert result.state == ImportState.AWAITING_APPROVAL
+    assert result.preview["subject"] == "Tüm Dersler"
+    assert result.preview["note_count"] == 326
+    assert result.preview["question_count"] == 2000
+    assert importer.approve(result.content_id)
+
+    with connect() as connection:
+        questions = connection.execute(
+            "SELECT subject, metadata, note_content_id "
+            "FROM question_items WHERE active=1"
+        ).fetchall()
+        collection = connection.execute(
+            "SELECT subject, question_count, trust_state "
+            "FROM question_collections WHERE active=1"
+        ).fetchone()
+
+    assert len(questions) == 2000
+    assert collection["subject"] == "Tüm Dersler"
+    assert collection["question_count"] == 2000
+    assert collection["trust_state"] == "approved"
+    subject_counts: dict[str, int] = {}
+    figured = 0
+    for row in questions:
+        subject_counts[row["subject"]] = subject_counts.get(row["subject"], 0) + 1
+        metadata = json.loads(row["metadata"])
+        assert row["note_content_id"]
+        assert metadata.get("noteId") == metadata.get("noteKey")
+        assert metadata.get("objective")
+        assert "hints" not in metadata
+        if metadata.get("figure"):
+            figured += 1
+            assert metadata["figure"].get("altTextKey")
+    assert subject_counts == {
+        "Din Kültürü ve Ahlak Bilgisi": 210,
+        "Fen Bilimleri": 361,
+        "İngilizce": 415,
+        "Matematik": 308,
+        "T.C. İnkılap Tarihi ve Atatürkçülük": 253,
+        "Türkçe": 453,
+    }
+    assert figured == 500
+
+    second = importer.import_file(path)
+    assert second.success
+    assert second.state == ImportState.ACTIVATED
+    assert second.content_id == result.content_id
+
+
+def test_grade9_reviewed_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
+    """Grade 9 release candidate must install before atomic activation."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    path = (
+        ROOT / "build" / "question-banks" / "grade-9" / "reviewed"
+        / "9-sinif-tum-dersler-2000-soru.reviewed.jsonl"
+    )
+    assert path.is_file(), "9. sınıf gözden geçirilmiş yayın adayı bulunamadı"
+    init_all.init()
+    importer = Importer()
+    result = importer.import_file(path)
+    assert result.success, (result.error_code, result.error)
+    assert result.state == ImportState.AWAITING_APPROVAL
+    assert result.preview["subject"] == "Tüm Dersler"
+    assert result.preview["note_count"] == 335
+    assert result.preview["question_count"] == 2000
+    assert importer.approve(result.content_id)
+
+    with connect() as connection:
+        questions = connection.execute(
+            "SELECT subject, metadata, note_content_id FROM question_items WHERE active=1"
+        ).fetchall()
+        collection = connection.execute(
+            "SELECT subject, question_count, trust_state FROM question_collections WHERE active=1"
+        ).fetchone()
+    assert len(questions) == 2000
+    assert collection["subject"] == "Tüm Dersler"
+    assert collection["question_count"] == 2000
+    assert collection["trust_state"] == "approved"
+    subject_counts: dict[str, int] = {}
+    figure_kinds: dict[str, int] = {}
+    for row in questions:
+        subject_counts[row["subject"]] = subject_counts.get(row["subject"], 0) + 1
+        metadata = json.loads(row["metadata"])
+        assert row["note_content_id"]
+        assert metadata.get("noteId") == metadata.get("noteKey")
+        assert metadata.get("objective")
+        assert "hints" not in metadata
+        if metadata.get("figure"):
+            figure = metadata["figure"]
+            assert figure.get("altTextKey")
+            figure_kinds[figure["kind"]] = figure_kinds.get(figure["kind"], 0) + 1
+    assert subject_counts == {
+        "Biyoloji": 159,
+        "Coğrafya": 180,
+        "Din Kültürü ve Ahlak Bilgisi": 166,
+        "Fizik": 204,
+        "İngilizce": 600,
+        "Kimya": 188,
+        "Matematik": 183,
+        "Tarih": 154,
+        "Türk Dili ve Edebiyatı": 166,
+    }
+    assert figure_kinds == {"flow": 240, "table": 260}
+
+    second = importer.import_file(path)
+    assert second.success
+    assert second.state == ImportState.ACTIVATED
+    assert second.content_id == result.content_id
+
+
+def test_grade10_reviewed_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
+    """Grade 10 release candidate must install before atomic activation."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    path = (
+        ROOT / "build" / "question-banks" / "grade-10" / "reviewed"
+        / "10-sinif-tum-dersler-2000-soru.reviewed.jsonl"
+    )
+    assert path.is_file(), "10. sınıf gözden geçirilmiş yayın adayı bulunamadı"
+    init_all.init()
+    importer = Importer()
+    result = importer.import_file(path)
+    assert result.success, (result.error_code, result.error)
+    assert result.state == ImportState.AWAITING_APPROVAL
+    assert result.preview["subject"] == "Tüm Dersler"
+    assert result.preview["note_count"] == 203
+    assert result.preview["question_count"] == 2000
+    assert importer.approve(result.content_id)
+
+    with connect() as connection:
+        questions = connection.execute(
+            "SELECT subject, metadata, note_content_id FROM question_items WHERE active=1"
+        ).fetchall()
+        collection = connection.execute(
+            "SELECT subject, question_count, trust_state FROM question_collections WHERE active=1"
+        ).fetchone()
+    assert len(questions) == 2000
+    assert collection["subject"] == "Tüm Dersler"
+    assert collection["question_count"] == 2000
+    assert collection["trust_state"] == "approved"
+    subject_counts: dict[str, int] = {}
+    figure_kinds: dict[str, int] = {}
+    for row in questions:
+        subject_counts[row["subject"]] = subject_counts.get(row["subject"], 0) + 1
+        metadata = json.loads(row["metadata"])
+        assert row["note_content_id"]
+        assert metadata.get("noteId") == metadata.get("noteKey")
+        assert metadata.get("objective")
+        assert "hints" not in metadata
+        assert metadata.get("mediaRequirement") not in {
+            "audio-required", "audio-reference-required", "audio-response-required"
+        }
+        if metadata.get("figure"):
+            figure = metadata["figure"]
+            assert figure.get("altTextKey")
+            figure_kinds[figure["kind"]] = figure_kinds.get(figure["kind"], 0) + 1
+    assert subject_counts == {
+        "Biyoloji": 193,
+        "Coğrafya": 198,
+        "Din Kültürü ve Ahlak Bilgisi": 198,
+        "Felsefe": 198,
+        "Fizik": 213,
+        "İngilizce": 198,
+        "Kimya": 203,
+        "Matematik": 203,
+        "Tarih": 198,
+        "Türk Dili ve Edebiyatı": 198,
+    }
+    assert figure_kinds == {"flow": 240, "table": 260}
+
+    second = importer.import_file(path)
+    assert second.success
+    assert second.state == ImportState.ACTIVATED
+    assert second.content_id == result.content_id
+
+
+def test_grade11_reviewed_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
+    """Grade 11 audio-enabled bank must install and expose only local media."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+    from library.quiz_bridge import quiz_bank
+
+    path = (
+        ROOT / "build" / "question-banks" / "grade-11" / "reviewed"
+        / "11-sinif-tum-dersler-2000-soru.reviewed.jsonl"
+    )
+    assert path.is_file(), "11. sınıf gözden geçirilmiş yayın adayı bulunamadı"
+    init_all.init()
+    importer = Importer()
+    result = importer.import_file(path)
+    assert result.success, (result.error_code, result.error)
+    assert result.state == ImportState.AWAITING_APPROVAL
+    assert result.preview["subject"] == "Tüm Dersler"
+    assert result.preview["note_count"] == 221
+    assert result.preview["question_count"] == 2000
+    assert importer.approve(result.content_id)
+
+    with connect() as connection:
+        questions = connection.execute(
+            "SELECT subject, metadata, note_content_id FROM question_items WHERE active=1"
+        ).fetchall()
+        collection = connection.execute(
+            "SELECT subject, question_count, trust_state FROM question_collections WHERE active=1"
+        ).fetchone()
+    assert len(questions) == 2000
+    assert collection["subject"] == "Tüm Dersler"
+    assert collection["question_count"] == 2000
+    assert collection["trust_state"] == "approved"
+    subject_counts: dict[str, int] = {}
+    figure_kinds: dict[str, int] = {}
+    audio_metadata = 0
+    response_metadata = 0
+    for row in questions:
+        subject_counts[row["subject"]] = subject_counts.get(row["subject"], 0) + 1
+        metadata = json.loads(row["metadata"])
+        assert row["note_content_id"]
+        assert metadata.get("noteId") == metadata.get("noteKey")
+        assert metadata.get("objective")
+        assert "hints" not in metadata
+        if str(metadata.get("mediaRequirement") or "").startswith("audio"):
+            audio_metadata += 1
+            assert len(metadata.get("audio", {}).get("contentSha256", "")) == 64
+            if metadata.get("spokenResponse"):
+                response_metadata += 1
+        if metadata.get("figure"):
+            figure = metadata["figure"]
+            assert figure.get("altTextKey")
+            figure_kinds[figure["kind"]] = figure_kinds.get(figure["kind"], 0) + 1
+    assert subject_counts == {
+        "Biyoloji": 166,
+        "Coğrafya": 156,
+        "Din Kültürü ve Ahlak Bilgisi": 147,
+        "Felsefe": 135,
+        "Fizik": 198,
+        "İngilizce": 600,
+        "Kimya": 175,
+        "Matematik": 144,
+        "Tarih": 132,
+        "Türk Dili ve Edebiyatı": 147,
+    }
+    assert figure_kinds == {"flow": 240, "table": 260}
+    assert audio_metadata == 275
+    assert response_metadata == 175
+
+    runtime_questions = quiz_bank()
+    assert len(runtime_questions) == 2000
+    audio_runtime = [row for row in runtime_questions if row.get("audio_path")]
+    assert len(audio_runtime) == 275
+    assert sum(row["recording_required"] for row in audio_runtime) == 175
+    assert all(Path(row["audio_path"]).is_file() for row in audio_runtime)
+
+    second = importer.import_file(path)
+    assert second.success
+    assert second.state == ImportState.ACTIVATED
+    assert second.content_id == result.content_id
+
+
+def test_grade12_reviewed_question_bank_round_trip_through_alika(tmp_path, monkeypatch):
+    """The active-current Grade 12 bank must install with local audio and figures."""
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+    from library.quiz_bridge import quiz_bank
+
+    path = (
+        ROOT / "build" / "question-banks" / "grade-12" / "reviewed"
+        / "12-sinif-tum-dersler-2000-soru.reviewed.jsonl"
+    )
+    assert path.is_file(), "12. sınıf gözden geçirilmiş yayın adayı bulunamadı"
+    init_all.init()
+    importer = Importer()
+    result = importer.import_file(path)
+    assert result.success, (result.error_code, result.error)
+    assert result.state == ImportState.AWAITING_APPROVAL
+    assert result.preview["subject"] == "Tüm Dersler"
+    assert result.preview["note_count"] == 499
+    assert result.preview["question_count"] == 2000
+    assert importer.approve(result.content_id)
+
+    with connect() as connection:
+        questions = connection.execute(
+            "SELECT subject, metadata, note_content_id FROM question_items WHERE active=1"
+        ).fetchall()
+    assert len(questions) == 2000
+    subject_counts: dict[str, int] = {}
+    figure_kinds: dict[str, int] = {}
+    audio_metadata = 0
+    for row in questions:
+        subject_counts[row["subject"]] = subject_counts.get(row["subject"], 0) + 1
+        metadata = json.loads(row["metadata"])
+        assert row["note_content_id"]
+        assert metadata.get("noteId") == metadata.get("noteKey")
+        assert metadata.get("objective")
+        if str(metadata.get("mediaRequirement") or "").startswith("audio"):
+            audio_metadata += 1
+            assert len(metadata.get("audio", {}).get("contentSha256", "")) == 64
+        if metadata.get("figure"):
+            figure = metadata["figure"]
+            assert figure.get("altTextKey")
+            figure_kinds[figure["kind"]] = figure_kinds.get(figure["kind"], 0) + 1
+    assert subject_counts == {
+        "Biyoloji": 141,
+        "Coğrafya": 148,
+        "Din Kültürü ve Ahlak Bilgisi": 131,
+        "Felsefe Grubu": 592,
+        "Fizik": 233,
+        "İngilizce": 185,
+        "Kimya": 144,
+        "Matematik": 148,
+        "T.C. İnkılap Tarihi ve Atatürkçülük": 147,
+        "Türk Dili ve Edebiyatı": 131,
+    }
+    assert figure_kinds == {"flow": 240, "table": 260}
+    assert audio_metadata == 63
+
+    runtime_questions = quiz_bank()
+    assert len(runtime_questions) == 2000
+    audio_runtime = [row for row in runtime_questions if row.get("audio_path")]
+    assert len(audio_runtime) == 63
+    assert not any(row["recording_required"] for row in audio_runtime)
+    assert all(Path(row["audio_path"]).is_file() for row in audio_runtime)
+
+    second = importer.import_file(path)
+    assert second.success
+    assert second.state == ImportState.ACTIVATED
+    assert second.content_id == result.content_id
+
+
+def test_grade5_reviewed_candidate_installs_before_activation(tmp_path, monkeypatch):
+    _load_app(tmp_path, monkeypatch)
+    from library import init_all
+    from library.catalog_repo import connect
+    from library.importer import ImportState, Importer
+
+    path = (
+        ROOT / "build" / "question-banks" / "grade-5" / "reviewed"
+        / "5-sinif-tum-dersler-2000-soru.reviewed.jsonl"
+    )
+    assert path.is_file(), "5. sınıf gözden geçirilmiş yayın adayı bulunamadı"
+    init_all.init()
+    importer = Importer()
+    result = importer.import_file(path)
+    assert result.success, (result.error_code, result.error)
+    assert result.state == ImportState.AWAITING_APPROVAL
+    assert result.preview["note_count"] == 116
+    assert result.preview["question_count"] == 2000
+    assert importer.approve(result.content_id)
+    with connect() as connection:
+        counts = dict(connection.execute(
+            "SELECT subject, COUNT(*) AS count FROM question_items "
+            "WHERE active=1 GROUP BY subject"
+        ).fetchall())
+        figured = sum(
+            bool(json.loads(row[0]).get("figure"))
+            for row in connection.execute(
+                "SELECT metadata FROM question_items WHERE active=1"
+            ).fetchall()
+        )
+    assert counts == {
+        "Fen Bilimleri": 464, "İngilizce": 410, "Matematik": 397,
+        "Sosyal Bilgiler": 345, "Türkçe": 384,
+    }
+    assert figured == 526

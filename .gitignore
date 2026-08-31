@@ -3,3 +3,11 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+
+# Reproducible local authoring/review intermediates.
+build/
+
+# Installable class bundles and their generated audio are published as
+# immutable GitHub Release assets; source JSONL, manifests and receipts stay in Git.
+*.alika.zip
+turkiye/**/assets/audio/*.wav

@@ -1,81 +1,11 @@
 {
-  "counts": {
-    "note": 19,
-    "pack": 1,
-    "question": 500,
-    "total": 520
-  },
-  "curriculum": "MEB-TYMM-2024",
+  "candidateSha256": "0006816bbe290885790ea361aad03ed1cd90b09d099b290832c6831759430c16",
   "decision": "PASS",
-  "gates": {
-    "duplicateId": 0,
-    "jsonlParse": "PASS 520/520",
-    "noteQuestionLinks": "PASS 500/500",
-    "questionContract22": "PASS",
-    "strictErrors": 0,
-    "strictWarnings": 0
-  },
   "grade": 8,
   "humanReviewed": false,
-  "mode": "ai-only",
-  "model": "gpt-5.6-sol",
-  "package": {
-    "bytes": 3649170,
-    "path": "turkiye/8-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
-    "records": 520,
-    "sha256": "34a1cb99d850186781b87993f07861ed9da970fc6eab0344734e8348cf562398"
-  },
-  "publishBlocked": false,
-  "publishReady": true,
-  "quality": {
-    "answerBalance": [
-      125,
-      125,
-      125,
-      125
-    ],
-    "errors": 0,
-    "families": 132,
-    "largestFamily": 4,
-    "warnings": 0
-  },
-  "questionRange": [
-    1,
-    500
-  ],
-  "schema": "alika-hash-bound-ai-only-subject500-release-receipt/2.0.0",
-  "schemaRepairReview": {
-    "changedRecords": {
-      "tr-g08-dkab-subject500-pack-v1": [
-        "schemaRepairEnvelope"
-      ]
-    },
-    "contentProjectionSetSha256": "043da50866c1d41ec8307647f95b6ddb04e90c353829af5451fbf73bb565140d",
-    "decision": "PASS",
-    "gates": {
-      "objectiveCodeEqualityRequired": true,
-      "semanticContentChanged": false,
-      "strictErrors": 0,
-      "strictWarnings": 0
-    },
-    "grade": 8,
-    "humanReviewed": false,
-    "methodVersion": "alika-hash-bound-ai-only-schema-repair-review/1.0.0",
-    "mode": "ai-only",
-    "model": "gpt-5.6-sol",
-    "packageDecisionSha256": "a27edac978bf3d1fff17bbe0bf46dfa1f42e974a038805b51e4d9624b614c3c8",
-    "repairRules": {
-      "curriculum": "MEB-TYMM-2024",
-      "objectives": "[objectiveCode]"
-    },
-    "schema": "alika-ai-only-schema-repair-package-decision/1.0.0",
-    "sourceCandidateSha256": "2464d9f48f17c33ac7f4c5876bdb604209f5613e91ecf2cdbd17adaa96f4187d",
-    "subject": "Din Kültürü ve Ahlak Bilgisi"
-  },
-  "sourceCandidate": {
-    "path": "chatgpt/8-sinif/dkab/paket/final-bank-candidate/tr_g08_dkab_subject500_ai_verified_v1_2464d9f4.jsonl",
-    "sha256": "2464d9f48f17c33ac7f4c5876bdb604209f5613e91ecf2cdbd17adaa96f4187d"
-  },
-  "subject": "Din Kültürü ve Ahlak Bilgisi",
-  "subjectSlug": "din-kulturu-ve-ahlak-bilgisi"
+  "reviewManifestSha256": "16c36b4666ed5e078418e96f2b34f845c0f0a273a6d6e7af31f92c6d12545255",
+  "reviewedPackageSha256": "2b3ea1e25645000dda31d94f500a16ec1b2d5c87b46099665c85d536b29f44a3",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Din Kültürü ve Ahlak Bilgisi"
 }

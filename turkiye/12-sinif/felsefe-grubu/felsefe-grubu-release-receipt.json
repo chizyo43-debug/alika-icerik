@@ -1,76 +1,11 @@
 {
-  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "candidateSha256": "001c3630471d7bf4ccfe67c2623aff16f227dff603c920a9d25d364e380eee41",
   "decision": "PASS",
   "grade": 12,
-  "subject": "Felsefe Grubu",
-  "model": "gpt-5.6-sol",
-  "mode": "ai-only",
   "humanReviewed": false,
-  "publishReady": true,
-  "publishBlocked": false,
-  "curriculum": "MEB-TYMM-2026",
-  "package": {
-    "path": "turkiye/12-sinif/felsefe-grubu/felsefe-grubu-tum.jsonl",
-    "sha256": "4a173690a662c9286c75de0caed1c62f7e55d8027819008b6fe502d9214ab41c",
-    "bytes": 3542470,
-    "records": 534
-  },
-  "counts": {
-    "pack": 1,
-    "note": 33,
-    "question": 500
-  },
-  "gates": {
-    "jsonlParse": "PASS 534/534",
-    "duplicateId": 0,
-    "noteQuestionLinks": "PASS 500/500",
-    "questionContract22": "PASS",
-    "strictErrors": 0,
-    "strictWarnings": 0,
-    "qualityScore": 100.0
-  },
-  "quality": {
-    "answerBalance": [
-      125,
-      125,
-      125,
-      125
-    ],
-    "families": 250,
-    "largestFamily": 2,
-    "duplicateQuestionTexts": 0,
-    "duplicateNoteBodies": 0,
-    "minimumNoteEvidenceCharacters": 1992,
-    "errors": 0,
-    "warnings": 0
-  },
-  "sourceEvidence": [
-    {
-      "sourceId": "tr-meb-psikoloji-program-2026",
-      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/202662515165385-Psikoloji%20döp.pdf",
-      "sha256": "97aaa8f2f4c1dec52fb8ab4a8547c864428e04704897e745b02631eb4a0866d5",
-      "pageCount": 34,
-      "publicationYear": 2026
-    },
-    {
-      "sourceId": "tr-meb-mantik-program-2026",
-      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/2026625151757399-Mantık%20döp.pdf",
-      "sha256": "8800162e356e01d7e3f3cdf5e968f05e42714ce54d8889c51e1080695dc058d2",
-      "pageCount": 32,
-      "publicationYear": 2026
-    },
-    {
-      "sourceId": "tr-meb-sosyoloji-program-2026",
-      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/2026625151446241-Sosyoloji%20döp.pdf",
-      "sha256": "07b87e196b35170705aff9b81af2207bcc8bcc799472b6f377f8b3ea33cb296a",
-      "pageCount": 48,
-      "publicationYear": 2026
-    }
-  ],
-  "review": {
-    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
-    "decision": "PASS",
-    "humanReviewed": false,
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
-  }
+  "reviewManifestSha256": "9c4b8608ff4aa5ec2bb4665552896c1ccc93508e06b0a71f6571d5f470727deb",
+  "reviewedPackageSha256": "bc4d5cde0c9471c13f9741c772b9f10ea95c88f3bb812ecb345787704c3da20f",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Felsefe Grubu"
 }

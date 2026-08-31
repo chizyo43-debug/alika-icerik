@@ -1,61 +1,11 @@
 {
-  "schema": "alika-hash-bound-ai-only-subject500-release-receipt/1.0.0",
+  "candidateSha256": "8a818bdac420844b7211ddc00136923d34d302ef682d0b4397a0995bfe8b0ae2",
   "decision": "PASS",
-  "createdAt": "2026-08-27T16:51:44.6986603+03:00",
   "grade": 8,
-  "subject": "Matematik",
-  "subjectSlug": "matematik",
-  "curriculum": "MEB-TYMM-2024",
   "humanReviewed": false,
-  "mode": "ai-only",
-  "model": "gpt-5.6-sol",
-  "publishBlocked": false,
-  "publishReady": true,
-  "questionRange": [
-    1,
-    500
-  ],
-  "counts": {
-    "pack": 1,
-    "note": 23,
-    "question": 500,
-    "total": 524
-  },
-  "quality": {
-    "errors": 0,
-    "warnings": 0,
-    "families": 129,
-    "largestFamily": 4,
-    "figuredQuestions": 62,
-    "answerBalance": [
-      125,
-      125,
-      125,
-      125
-    ]
-  },
-  "review": {
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
-    "methodVersion": "alika-hash-bound-ai-only-subject500-review/2.0.0",
-    "decisionSha256": "c617f0041a56c2513e35af0946ab40c349ffd703dd4df4bb9ff6369a966f1dac",
-    "contentProjectionSha256": "7feeac1baac037e48527e205d515f4dc961078d6faec42edbc8d01f943125468"
-  },
-  "package": {
-    "path": "turkiye/8-sinif/matematik/matematik-tum.jsonl",
-    "bytes": 3283169,
-    "records": 524,
-    "sha256": "2f23505dcb0eba8a56738101bb9f0a7a1090f1440d26d681474f02c3a8f9db79"
-  },
-  "sourceCandidate": {
-    "path": "chatgpt/8-sinif/matematik/paket/final-bank-candidate/tr_g08_matematik_subject500_ai_verified_v1_2f23505d.jsonl",
-    "sha256": "2f23505dcb0eba8a56738101bb9f0a7a1090f1440d26d681474f02c3a8f9db79"
-  },
-  "gates": {
-    "jsonlParse": "PASS 524/524",
-    "questionContract22": "PASS",
-    "noteQuestionLinks": "PASS 23/23",
-    "duplicateId": 0,
-    "strictErrors": 0,
-    "strictWarnings": 0
-  }
+  "reviewManifestSha256": "d7e82d516f67ad098d1486d3c25fa59b0c45d76bd06667828498043fe82f957f",
+  "reviewedPackageSha256": "93dac4a26b2b34e031cd4a80819383621c207a364243e018b10259c84c73297e",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Matematik"
 }

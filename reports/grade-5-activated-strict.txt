@@ -1,0 +1,211 @@
+RAPOR [paket] kural 50: soru ailesi: 2000, en kalabalık aile 1 soru
+RAPOR [paket] kural 53: görselli soru: 526/2000 (%26.3)
+RAPOR [paket] kural 26: konu 'Algoritmalar': 15 soru
+RAPOR [paket] kural 26: konu 'Ampul parlaklığını etkileyen değişkenler': 14 soru
+RAPOR [paket] kural 26: konu 'Atık yönetimi': 14 soru
+RAPOR [paket] kural 26: konu 'Ay’ın evreleri': 19 soru
+RAPOR [paket] kural 26: konu 'Ay’ın özellikleri ve hareketleri': 18 soru
+RAPOR [paket] kural 26: konu 'Açılar': 13 soru
+RAPOR [paket] kural 26: konu 'Birlikte Yaşamak': 115 soru
+RAPOR [paket] kural 26: konu 'Bitki ve hayvan hücreleri': 18 soru
+RAPOR [paket] kural 26: konu 'Destek ve hareket sistemi': 18 soru
+RAPOR [paket] kural 26: konu 'Destek ve hareket sistemi sağlığı': 19 soru
+RAPOR [paket] kural 26: konu 'Devre elemanları ve sembolleri': 14 soru
+RAPOR [paket] kural 26: konu 'Devre şeması ve deney': 15 soru
+RAPOR [paket] kural 26: konu 'Dikdörtgende alan': 7 soru
+RAPOR [paket] kural 26: konu 'Dikdörtgende alan ve çevre problemleri': 6 soru
+RAPOR [paket] kural 26: konu 'Dikdörtgende çevre': 9 soru
+RAPOR [paket] kural 26: konu 'Dinamometre tasarımı': 19 soru
+RAPOR [paket] kural 26: konu 'Dinleme/İzleme Materyali Seçimini Yönetme': 33 soru
+RAPOR [paket] kural 26: konu 'Dinlenen/İzlenen Konuşmaları Karşılaştırma': 32 soru
+RAPOR [paket] kural 26: konu 'Dinlenen/İzlenen İçeriğin Yüzey Anlamını Belirleme': 32 soru
+RAPOR [paket] kural 26: konu 'Doğal sayılarla problem çözme': 57 soru
+RAPOR [paket] kural 26: konu 'Doğrular ve açılar': 11 soru
+RAPOR [paket] kural 26: konu 'Evimiz Dünya': 124 soru
+RAPOR [paket] kural 26: konu 'Evsel atıkların sınıflandırılması': 15 soru
+RAPOR [paket] kural 26: konu 'Eşitlik ve işlem özellikleri': 19 soru
+RAPOR [paket] kural 26: konu 'Geri dönüşüm ve kaynak kullanımı': 14 soru
+RAPOR [paket] kural 26: konu 'Güneş, Dünya ve Ay modeli': 18 soru
+RAPOR [paket] kural 26: konu 'Güneş’in yapısı ve dönme hareketi': 19 soru
+RAPOR [paket] kural 26: konu 'Hayatımızdaki Ekonomi': 11 soru
+RAPOR [paket] kural 26: konu 'Hâl değişimi': 14 soru
+RAPOR [paket] kural 26: konu 'Hücreden organizmaya': 15 soru
+RAPOR [paket] kural 26: konu 'Isı alışverişi': 15 soru
+RAPOR [paket] kural 26: konu 'Isı iletkenliği': 15 soru
+RAPOR [paket] kural 26: konu 'Isı ve sıcaklık': 15 soru
+RAPOR [paket] kural 26: konu 'Isı yalıtımı': 14 soru
+RAPOR [paket] kural 26: konu 'Işığın doğrusal yayılması': 19 soru
+RAPOR [paket] kural 26: konu 'Kategorik veri': 6 soru
+RAPOR [paket] kural 26: konu 'Kesirleri karşılaştırma': 66 soru
+RAPOR [paket] kural 26: konu 'Kesirlerin farklı gösterimleri': 25 soru
+RAPOR [paket] kural 26: konu 'Konuşma sürecini yönetebilme': 11 soru
+RAPOR [paket] kural 26: konu 'Konuşmada Duygu ve Tutumu Amaca Uygun Yansıtma': 5 soru
+RAPOR [paket] kural 26: konu 'Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme': 12 soru
+RAPOR [paket] kural 26: konu 'Konuşmasında sesini uygun şekilde kullanabilme': 10 soru
+RAPOR [paket] kural 26: konu 'Kuvvetin büyüklüğü': 18 soru
+RAPOR [paket] kural 26: konu 'Kütle ve ağırlık': 18 soru
+RAPOR [paket] kural 26: konu 'Maddelerin ışığı geçirme durumu': 16 soru
+RAPOR [paket] kural 26: konu 'Maddenin tanecikli yapısı': 14 soru
+RAPOR [paket] kural 26: konu 'Medya Metinlerini Değerlendirme': 13 soru
+RAPOR [paket] kural 26: konu 'Medya İletisini Değerlendirme': 35 soru
+RAPOR [paket] kural 26: konu 'Metin Türlerini Ayırt Etme': 16 soru
+RAPOR [paket] kural 26: konu 'Metinde Gerçek ile Görüşü Ayırt Etme': 17 soru
+RAPOR [paket] kural 26: konu 'Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme': 26 soru
+RAPOR [paket] kural 26: konu 'Metnin yüzey anlamını belirleyebilme': 29 soru
+RAPOR [paket] kural 26: konu 'Okuduğundan Çıkarım Yapma': 23 soru
+RAPOR [paket] kural 26: konu 'Okunan öyküleyici metinde hikâye unsurları ve olay örgüsü': 17 soru
+RAPOR [paket] kural 26: konu 'Olasılık': 4 soru
+RAPOR [paket] kural 26: konu 'Ortak Mirasımız': 50 soru
+RAPOR [paket] kural 26: konu 'Sayı ve şekil örüntüleri': 19 soru
+RAPOR [paket] kural 26: konu 'Söz varlığını geliştirebilme': 7 soru
+RAPOR [paket] kural 26: konu 'Sözlü Etkileşimde Uygun Tepki Verme': 11 soru
+RAPOR [paket] kural 26: konu 'Sürtünme kuvvetinin etkileri': 19 soru
+RAPOR [paket] kural 26: konu 'Sürtünmeyi artırma ve azaltma': 19 soru
+RAPOR [paket] kural 26: konu 'Tam gölge': 19 soru
+RAPOR [paket] kural 26: konu 'Teknoloji ve Sosyal Bilimler': 5 soru
+RAPOR [paket] kural 26: konu 'Temel geometrik çizimler': 14 soru
+RAPOR [paket] kural 26: konu 'Theme 1 — School Life': 99 soru
+RAPOR [paket] kural 26: konu 'Theme 2 — Classroom Life': 83 soru
+RAPOR [paket] kural 26: konu 'Theme 3 — Personal Life': 66 soru
+RAPOR [paket] kural 26: konu 'Theme 4 — Family Life': 43 soru
+RAPOR [paket] kural 26: konu 'Theme 5 — Life in the Neighbourhood & City': 34 soru
+RAPOR [paket] kural 26: konu 'Theme 6 — Life in the World': 30 soru
+RAPOR [paket] kural 26: konu 'Theme 7 — Life in Nature': 28 soru
+RAPOR [paket] kural 26: konu 'Theme 8 — Life in the Universe & Future': 27 soru
+RAPOR [paket] kural 26: konu 'Yazma sürecini yönetebilme': 8 soru
+RAPOR [paket] kural 26: konu 'Yazıda cümle ve paragraflar arasında anlam bağlantıları kurma': 2 soru
+RAPOR [paket] kural 26: konu 'Yazım kuralları ve noktalama işaretlerini uygulayabilme': 5 soru
+RAPOR [paket] kural 26: konu 'Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme': 5 soru
+RAPOR [paket] kural 26: konu 'Yaşayan Demokrasimiz': 40 soru
+RAPOR [paket] kural 26: konu 'Çemberlerle üçgen inşası': 10 soru
+RAPOR [paket] kural 26: konu 'Çok basamaklı doğal sayılar': 86 soru
+RAPOR [paket] kural 26: konu 'Çokgenler': 13 soru
+RAPOR [paket] kural 26: konu 'İzlediğinden Çıkarım Yapma': 35 soru
+RAPOR [paket] kural 26: konu 'İşlem önceliği': 17 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.1.L2': 33 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.1.L3': 35 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.1.L4': 31 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.2.L2': 33 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.2.L3': 32 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.2.L4': 18 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.3.L2': 26 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.3.L3': 22 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.3.L4': 18 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.4.L2': 15 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.4.L3': 14 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.4.L4': 14 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.5.L2': 11 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.5.L3': 13 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.5.L4': 10 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.6.L2': 11 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.6.L3': 10 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.6.L4': 9 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.7.L2': 9 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.7.L3': 9 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.7.L4': 10 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.8.L2': 9 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.8.L3': 9 soru
+RAPOR [paket] kural 26: kazanım 'ENG.5.8.L4': 9 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.1.1.1': 19 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.1.2.1': 18 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.1.2.2': 19 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.1.3.1': 18 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.2.1.1': 18 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.2.1.2': 19 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.2.2.1': 18 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.2.3.1': 19 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.2.3.2': 19 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.3.1.1': 18 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.3.1.2': 15 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.3.2.1': 18 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.3.2.2': 19 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.4.1.1': 19 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.4.2.1': 16 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.4.3.1': 19 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.5.1.1': 14 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.5.2.1': 15 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.5.2.2': 15 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.5.3.1': 14 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.5.4.1': 15 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.5.4.2': 14 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.6.1.1': 14 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.6.1.2': 15 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.6.2.1': 14 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.7.1.1': 15 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.7.1.2': 14 soru
+RAPOR [paket] kural 26: kazanım 'FB.5.7.1.3': 14 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.1.1': 86 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.1.2': 57 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.1.3': 25 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.1.4': 66 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.2.1': 19 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.2.2': 17 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.2.3': 19 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.2.4': 15 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.3.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.3.2': 4 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.3.3': 13 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.3.4': 11 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.3.5': 7 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.3.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.3.7': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.4.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.4.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.4.3': 3 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.4.4': 3 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.5.1': 3 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.5.2': 3 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.6.1': 2 soru
+RAPOR [paket] kural 26: kazanım 'MAT.5.6.2': 2 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.1.1': 39 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.1.2': 40 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.1.3': 36 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.2.1': 37 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.2.2': 35 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.2.3': 27 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.2.4': 25 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.3.1': 20 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.3.2': 15 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.3.3': 15 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.4.1': 16 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.4.2': 10 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.4.3': 8 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.4.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.5.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.5.2': 3 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.5.3': 2 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.6.1': 3 soru
+RAPOR [paket] kural 26: kazanım 'SB.5.6.2': 2 soru
+RAPOR [paket] kural 26: kazanım 'T.D.5.1.': 33 soru
+RAPOR [paket] kural 26: kazanım 'T.D.5.10.': 32 soru
+RAPOR [paket] kural 26: kazanım 'T.D.5.22.': 35 soru
+RAPOR [paket] kural 26: kazanım 'T.D.5.5.': 32 soru
+RAPOR [paket] kural 26: kazanım 'T.D.5.7.': 35 soru
+RAPOR [paket] kural 26: kazanım 'T.K.5.1.': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.K.5.23.': 5 soru
+RAPOR [paket] kural 26: kazanım 'T.K.5.3.': 12 soru
+RAPOR [paket] kural 26: kazanım 'T.K.5.5.': 11 soru
+RAPOR [paket] kural 26: kazanım 'T.K.5.9.': 10 soru
+RAPOR [paket] kural 26: kazanım 'T.O.5.13.': 17 soru
+RAPOR [paket] kural 26: kazanım 'T.O.5.14.': 17 soru
+RAPOR [paket] kural 26: kazanım 'T.O.5.15.': 16 soru
+RAPOR [paket] kural 26: kazanım 'T.O.5.21.': 7 soru
+RAPOR [paket] kural 26: kazanım 'T.O.5.24.': 13 soru
+RAPOR [paket] kural 26: kazanım 'T.O.5.5.': 26 soru
+RAPOR [paket] kural 26: kazanım 'T.O.5.6.': 29 soru
+RAPOR [paket] kural 26: kazanım 'T.O.5.8.': 23 soru
+RAPOR [paket] kural 26: kazanım 'T.Y.5.1.': 8 soru
+RAPOR [paket] kural 26: kazanım 'T.Y.5.20.': 2 soru
+RAPOR [paket] kural 26: kazanım 'T.Y.5.21.': 5 soru
+RAPOR [paket] kural 26: kazanım 'T.Y.5.3.': 5 soru
+RAPOR [paket] kural 26: objective boş: 0 soru
+RAPOR [paket] kural 26: kullanılan farklı kind: 11 (angle, chart, circuit, diagram, flow, fraction, grid, map, numberline, shape, table)
+RAPOR [paket] kural 39: aynı seçenek kümesi: 104 küme / 392 soru; en yüksek tekrar=100
+RAPOR [paket] kural 39: 33 seçenek birden çok soru ailesinde dolaşıyor ve hiçbirinde doğru değil: 'Matematik: pay ile paydayı toplama: karşılaştırmayı yeni bir kesre dönüştürme'×5, 'Matematik: pay ve paydayı çapraz toplama: iki yeni ilişkisiz kesir üretme'×5, 'Matematik: paydalar eşit diye eşit sayma: iki kesri aynı kabul etme'×5, 'Matematik: paydalar farklı diye karşılaştırmayı imkânsız sayma: denk kesir kurmama'×5, 'Matematik: yaklaşık sonuç farklı diye reddetme: tahmin ile kesin sonucun eşit olmasını isteme'×5, 'Matematik: yalnız payları karşılaştırma: paydaların parça büyüklüğünü yok sayma'×5, 'Matematik: alan ile çevreyi aynı birimle karşılaştırma: cm ve cm2 farkını yok sayma'×4, 'Matematik: aynı çevrenin aynı alan verdiğini varsayma: kenar dağılımını incelememe'×4
+RAPOR [paket] kural 36: kendi şıkkına sözcük bağı olan gerekçe: 3260/5998
+RAPOR [paket] kural 37: distractorWhy benzersiz iskelet: 3782/6000
+RAPOR [paket] kural 40: benzersiz soru kalıbı: 1750/2000
+RAPOR [paket] kural 41: kazanım dışından ödünç çeldirici: 300/6000
+RAPOR [paket] kural 45: kazanım dengesi kapsam modunda; 116 kazanımın not ve soru beyanı doğrulandı
+RAPOR [paket] kural 45: kazanım başına soru: en az 2, en çok 86, kazanım sayısı 116
+TOPLAM: 0 HATA, 0 UYARI

@@ -1,62 +1,11 @@
 {
-  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "candidateSha256": "f435b5f784a6034ea62851edf653f66a7591ceb3ab9576717dd58507302c759d",
   "decision": "PASS",
   "grade": 12,
-  "subject": "Din Kültürü ve Ahlak Bilgisi",
-  "model": "gpt-5.6-sol",
-  "mode": "ai-only",
   "humanReviewed": false,
-  "publishReady": true,
-  "publishBlocked": false,
-  "curriculum": "MEB-TYMM-2026",
-  "package": {
-    "path": "turkiye/12-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
-    "sha256": "5ee95ad0d6b90bed8235312d45d77ae13a6cc08d55ad221bded675a2633232a8",
-    "bytes": 3486566,
-    "records": 521
-  },
-  "counts": {
-    "pack": 1,
-    "note": 20,
-    "question": 500
-  },
-  "gates": {
-    "jsonlParse": "PASS 521/521",
-    "duplicateId": 0,
-    "noteQuestionLinks": "PASS 500/500",
-    "questionContract22": "PASS",
-    "strictErrors": 0,
-    "strictWarnings": 0,
-    "qualityScore": 100.0
-  },
-  "quality": {
-    "answerBalance": [
-      125,
-      125,
-      125,
-      125
-    ],
-    "families": 250,
-    "largestFamily": 2,
-    "duplicateQuestionTexts": 0,
-    "duplicateNoteBodies": 0,
-    "minimumNoteEvidenceCharacters": 2104,
-    "errors": 0,
-    "warnings": 0
-  },
-  "sourceEvidence": [
-    {
-      "sourceId": "tr-meb-dkab-g09-g12-program-2026",
-      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/2026313101155916-dkab912.pdf",
-      "sha256": "c48c7083d24b106321ee5ba403ce05b54d9fc9b3a68ed1242bbf5989d5faa8c3",
-      "pageCount": 98,
-      "publicationYear": 2026
-    }
-  ],
-  "review": {
-    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
-    "decision": "PASS",
-    "humanReviewed": false,
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
-  }
+  "reviewManifestSha256": "535aa83ae51c004faf8fde561a146d8cb96ed0041d17ffc8d21ecd89e300740e",
+  "reviewedPackageSha256": "8bacad1d51edeae79174b0f7f25da5c3e72796de2062962f5a142f4723057430",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Din Kültürü ve Ahlak Bilgisi"
 }

@@ -1,108 +1,41 @@
 {
-  "bank": "turkiye/8-sinif/soru-bankasi/8-sinif-tum-dersler-2000-soru.jsonl",
-  "counts": {
-    "notes": 278,
-    "pack": 1,
-    "questions": 2000,
-    "records": 2279
-  },
+  "builder": "alika-note-grounded-unique-bank-builder/2.0.0",
+  "candidateSha256": "3b1934127a5d7763728e3262a296a2fd1a28f003ef0c91dad73686029d1688b0",
+  "decision": "PASS",
   "grade": 8,
-  "publishReady": true,
-  "quality": {
+  "humanReviewed": false,
+  "metrics": {
     "answerBalance": [
       500,
       500,
       500,
       500
     ],
-    "brokenNoteLinks": 0,
-    "duplicateIds": 0,
-    "duplicateQuestionTexts": 0,
-    "families": 750,
-    "largestFamily": 4,
-    "perSubject": {
-      "Din Kültürü ve Ahlak Bilgisi": 334,
-      "Fen Bilimleri": 334,
-      "Matematik": 333,
-      "T.C. İnkılap Tarihi ve Atatürkçülük": 333,
-      "Türkçe": 333,
-      "İngilizce": 333
+    "difficulty": {
+      "1": 300,
+      "2": 500,
+      "3": 600,
+      "4": 400,
+      "5": 200
     },
-    "strictErrors": 0,
-    "strictWarnings": 0
-  },
-  "review": {
-    "answerBalance": [
-      500,
-      500,
-      500,
-      500
-    ],
-    "bankDecisionSha256": "b72dad1f978668da0b6863bf21928a1f83e3185e404ded30ed96d58706dc46ee",
-    "decision": "PASS",
+    "exactSourceIdOverlap": 0,
+    "exactSourceTextOverlap": 0,
     "grade": 8,
-    "humanReviewed": false,
-    "methodVersion": "alika-missing-banks-ai-only-release/1.0.0",
-    "mode": "ai-only",
-    "model": "gpt-5.6-sol",
-    "notes": 278,
-    "perSubject": {
-      "Din Kültürü ve Ahlak Bilgisi": 334,
-      "Fen Bilimleri": 334,
-      "Matematik": 333,
-      "T.C. İnkılap Tarihi ve Atatürkçülük": 333,
-      "Türkçe": 333,
-      "İngilizce": 333
+    "mix": {
+      "analysis": 500,
+      "application": 700,
+      "comprehension": 500,
+      "error-analysis": 300
     },
+    "nearCopyAbove088": 0,
+    "notes": 326,
+    "objectives": 326,
     "questions": 2000,
-    "schema": "alika-missing-question-bank-decision/1.0.0",
-    "selectionSha256": "291deb11bee3ecd55d408ae375b5ba8d3399daf0a759343746a5807505fbfb05",
-    "sourcePackages": [
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g08-dkab-subject500-pack-v1",
-        "path": "turkiye/8-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
-        "questions": 334,
-        "sha256": "b3623d4d86a59c92c2c01381f3994646cd59cbda1eaf5cd35dce53bc776aff10"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g08-fen-subject500-pack-v1",
-        "path": "turkiye/8-sinif/fen-bilimleri/fen-bilimleri-tum.jsonl",
-        "questions": 334,
-        "sha256": "8b4a2d4a7fd0df92aa2638a83189482557afeaf4b634247030ae9c579b6ea3ec"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g08-ingilizce-full-v2",
-        "path": "turkiye/8-sinif/ingilizce/ingilizce-tum.jsonl",
-        "questions": 333,
-        "sha256": "f37274d8fe7ff0bbaf75779ba627b86d905d7be15199162a7a9be69e95dd474c"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g08-inkilap-subject500-pack-v1",
-        "path": "turkiye/8-sinif/inkilap-tarihi/inkilap-tarihi-tum.jsonl",
-        "questions": 333,
-        "sha256": "7768f26e5354a0c1176c6cd31c2229449a57448494a032e2ed0364f0224279d5"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g08-matematik-subject500-pack-v1",
-        "path": "turkiye/8-sinif/matematik/matematik-tum.jsonl",
-        "questions": 333,
-        "sha256": "09e2c44216a5f5b65064fdbfe3ce0dfc50b40889d2d6c76da6e6cb8c0b0040f6"
-      },
-      {
-        "hashScope": "raw-file-sha256",
-        "id": "tr-g08-turkce-full-v3",
-        "path": "turkiye/8-sinif/turkce/turkce-tum.jsonl",
-        "questions": 333,
-        "sha256": "d318f5fd61be699c1401f955b546e06d2003e37d6849750cf42bcf54b31c6b07"
-      }
-    ]
+    "visualQuestions": 500
   },
-  "schema": "alika-missing-question-bank-release-receipt/1.0.0",
-  "sha256": "0bf8d1c3cf054a01807adcbdc9cec7435bc66dbad9f0ed9b7499268637036ea5",
-  "status": "PASS"
+  "reviewManifestSha256": "a03a6cd66a8d923aa33d3ea8a56167ae40c74e115fee1a36cf44bdf6062a7259",
+  "reviewMethod": "alika-hash-bound-independent-ai-review/2.0.0",
+  "reviewedPackageSha256": "4d250115463562c3ebcfd8913c6e8db282ee23468c71f522dbb2c317acda9e91",
+  "schemaVersion": "alika-question-bank-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI"
 }

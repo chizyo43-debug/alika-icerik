@@ -1,0 +1,11 @@
+{
+  "candidateSha256": "cca2cc35ca82c77713bbdfb6b1803cd35e03c759f9f54094eea4d279ea266112",
+  "decision": "PASS",
+  "grade": 10,
+  "humanReviewed": false,
+  "reviewManifestSha256": "15ee18cfe9a5abf745b8621dd83c80d3f7d587fc87b9351f96e805755e01c018",
+  "reviewedPackageSha256": "b74b66c36f6833a1856e9ca033a266c0ae57309d4bd5d15c7428a6e324468d0c",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Fizik"
+}

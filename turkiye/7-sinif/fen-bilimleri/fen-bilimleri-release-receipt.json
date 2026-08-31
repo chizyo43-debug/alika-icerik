@@ -1,99 +1,11 @@
 {
-  "counts": {
-    "note": 11,
-    "pack": 1,
-    "question": 500,
-    "total": 512
-  },
-  "curriculum": "MEB-TYMM-2024",
+  "candidateSha256": "1e75d0744389627a00cd8bfbff8f8a3b5a1592be0555d3ccbbbfba7281056019",
   "decision": "PASS",
-  "gates": {
-    "duplicateId": 0,
-    "jsonlParse": "PASS 512/512",
-    "noteQuestionLinks": "PASS 11/11",
-    "questionContract22": "PASS",
-    "strictErrors": 0,
-    "strictWarnings": 0
-  },
   "grade": 7,
   "humanReviewed": false,
-  "mode": "ai-only",
-  "model": "gpt-5.6-sol",
-  "package": {
-    "bytes": 4057903,
-    "path": "turkiye/7-sinif/fen-bilimleri/fen-bilimleri-tum.jsonl",
-    "records": 512,
-    "sha256": "49965552f07116edeb06c92405775bf949903bf0f14347b8240e4c090b0b79f0"
-  },
-  "publishBlocked": false,
-  "publishReady": true,
-  "quality": {
-    "answerBalance": [
-      133,
-      123,
-      122,
-      122
-    ],
-    "errors": 0,
-    "families": 125,
-    "largestFamily": 4,
-    "warnings": 0
-  },
-  "questionRange": [
-    385,
-    884
-  ],
-  "schema": "alika-hash-bound-ai-only-subject500-release-receipt/2.0.0",
-  "schemaRepairReview": {
-    "changedRecords": {
-      "tr-g07-fen-note-fb-7-5-2-4-q0385-q0388": [
-        "objectives"
-      ],
-      "tr-g07-fen-note-fb-7-5-3-1": [
-        "objectives"
-      ],
-      "tr-g07-fen-note-fb-7-5-3-1-q0389-q0392": [
-        "objectives"
-      ],
-      "tr-g07-fen-note-fb-7-5-3-1-q0393-q0400": [
-        "objectives"
-      ],
-      "tr-g07-fen-note-fb-7-5-3-2": [
-        "objectives"
-      ],
-      "tr-g07-fen-note-fb-7-5-4-1": [
-        "objectives"
-      ],
-      "tr-g07-fen-subject-q0385-q0884-pack-v1": [
-        "schemaRepairEnvelope"
-      ]
-    },
-    "contentProjectionSetSha256": "ee6f6a22eb7dbd991187078ff094998ed9d832316cf512bb4a79e172eaede0da",
-    "decision": "PASS",
-    "gates": {
-      "objectiveCodeEqualityRequired": true,
-      "semanticContentChanged": false,
-      "strictErrors": 0,
-      "strictWarnings": 0
-    },
-    "grade": 7,
-    "humanReviewed": false,
-    "methodVersion": "alika-hash-bound-ai-only-schema-repair-review/1.0.0",
-    "mode": "ai-only",
-    "model": "gpt-5.6-sol",
-    "packageDecisionSha256": "5f6496888a839b90151e3cbcf36a70e3a06b2edf0f8896c9b7588278b5b86cb9",
-    "repairRules": {
-      "curriculum": "MEB-TYMM-2024",
-      "objectives": "[objectiveCode]"
-    },
-    "schema": "alika-ai-only-schema-repair-package-decision/1.0.0",
-    "sourceCandidateSha256": "7c4b0c48804e75df2b0f5884470a701da280e983ae358c57d305f44a943c8715",
-    "subject": "Fen Bilimleri"
-  },
-  "sourceCandidate": {
-    "path": "chatgpt/7-sinif/fen-bilimleri/paket/final-bank-candidate/tr_g07_fen_subject500_ai_verified_v1_7c4b0c48.jsonl",
-    "sha256": "7c4b0c48804e75df2b0f5884470a701da280e983ae358c57d305f44a943c8715"
-  },
-  "subject": "Fen Bilimleri",
-  "subjectSlug": "fen-bilimleri"
+  "reviewManifestSha256": "e702c29a1c5d4e4db25587fa911d37c130f535d62ffe14b732b07531775372e6",
+  "reviewedPackageSha256": "5ef4c1555904c82efacdacbfba92a4dd0f74f320e1cb83f4a300f7680f9979a5",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Fen Bilimleri"
 }

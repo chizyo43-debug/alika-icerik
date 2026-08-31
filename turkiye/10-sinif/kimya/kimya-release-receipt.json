@@ -1,0 +1,11 @@
+{
+  "candidateSha256": "631efe6d2272136894910dc73d1713ace2141dce85ad20dc2641d5489e2cd964",
+  "decision": "PASS",
+  "grade": 10,
+  "humanReviewed": false,
+  "reviewManifestSha256": "a69459f14419532e41b9a2e7c86597a5998df2bbb80ce9ecaf5863d9f6bf554a",
+  "reviewedPackageSha256": "49d966ae2b9934bc0a29eda1d1c6f41be5efb817df567eeaaa93e2f140117317",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Kimya"
+}

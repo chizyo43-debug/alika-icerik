@@ -1,41 +1,11 @@
 {
-  "canonical": {
-    "answerBalance": [
-      133,
-      123,
-      122,
-      122
-    ],
-    "families": 133,
-    "notes": 35,
-    "pack": 1,
-    "path": "turkiye/9-sinif/fizik/fizik-tum.jsonl",
-    "questions": 500,
-    "records": 536,
-    "sha256": "2239cf3749138ea91f4450929d87dcfd666c2f71f31d6b02644e986bdfd6f9af"
-  },
-  "gates": {
-    "aiVerifiedRecords": "PASS 536/536",
-    "duplicateIds": 0,
-    "duplicateQuestionTexts": 0,
-    "noteLinks": "PASS 500/500",
-    "questionRange": "PASS 1/500-500/500",
-    "strictErrors": 0,
-    "strictWarnings": 0
-  },
+  "candidateSha256": "1f5f7b4bc67e8ba50b239c7e55fb85d87580f07dd4bb65ab9ebb098ecea1e860",
+  "decision": "PASS",
   "grade": 9,
-  "publishReady": true,
-  "review": {
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
-    "humanReviewed": false,
-    "mode": "ai-only",
-    "model": "gpt-5.6-sol"
-  },
-  "schema": "alika-local-final-subject-publish-receipt/1.0.0",
-  "sourceCandidate": {
-    "path": "chatgpt/9-sinif/fizik/paket/final-bank-candidate/tr_g09_fizik_subject500_ai_verified_v1_c2935ed8.jsonl",
-    "sha256": "c2935ed8ed43eaa9c5009b06d03cb4adf696b29ee18ee3e051a05f407c350192"
-  },
-  "status": "PASS",
+  "humanReviewed": false,
+  "reviewManifestSha256": "a868a915895c09aae6c8ac8ec1b719d9e7dc7e20437dca1d25a3bada4fee9820",
+  "reviewedPackageSha256": "d02d961e89d106a1aa91e283ec09896ec812a02688baaaa3b87b575a5f77b4a0",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
   "subject": "Fizik"
 }

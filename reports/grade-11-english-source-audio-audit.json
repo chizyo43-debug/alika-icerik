@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "questions": 500,
+  "requirements": {
+    "audio-required": 78,
+    "audio-response-required": 138,
+    "none": 284
+  },
+  "assets": 216,
+  "validFiles": 216,
+  "bytes": 155501344,
+  "durationMs": 3525902,
+  "errors": []
+}

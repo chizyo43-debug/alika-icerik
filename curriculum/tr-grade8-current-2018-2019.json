@@ -1,0 +1,2036 @@
+{
+  "activationEvidence": [
+    "https://tymm.meb.gov.tr/taslak-cerceve-planlari",
+    "https://antalyaodm.meb.gov.tr/www/yillik-cerceve-planlar-ve-ogretim-programlari/icerik/49/tr"
+  ],
+  "authority": "T.C. Millî Eğitim Bakanlığı",
+  "country": "TR",
+  "grade": 8,
+  "programmeFamily": "pre-TYMM-current",
+  "schemaVersion": "alika-tr-current-curriculum/1.0.0",
+  "schoolYear": "2026-2027",
+  "subjects": [
+    {
+      "objectives": [
+        {
+          "code": "F.8.1.1.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Mevsimlerin oluşumuna yönelik tahminlerde bulunur"
+        },
+        {
+          "code": "F.8.1.2.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "İklim ve hava olayları arasındaki farkı açıklar"
+        },
+        {
+          "code": "F.8.1.2.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "İklim biliminin (klimatoloji) bir bilim dalı olduğunu ve bu alanda çalışan uzmanlara iklim bilimci (klimatolog) adı verildiğini söyler"
+        },
+        {
+          "code": "F.8.2.1.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Nükleotid, gen, DNA ve kromozom kavramlarını açıklayarak bu kavramlar arasında ilişki kurar"
+        },
+        {
+          "code": "F.8.2.1.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "DNA’nın yapısını model üzerinde gösterir"
+        },
+        {
+          "code": "F.8.2.1.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "DNA’nın kendini nasıl eşlediğini ifade eder"
+        },
+        {
+          "code": "F.8.2.2.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Kalıtım ile ilgili kavramları tanımlar"
+        },
+        {
+          "code": "F.8.2.2.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Tek karakter çaprazlamaları ile ilgili problemler çözerek sonuçlar hakkında yorum yapar"
+        },
+        {
+          "code": "F.8.2.2.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Akraba evliliklerinin genetik sonuçlarını tartışır"
+        },
+        {
+          "code": "F.8.2.3.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Örneklerden yola çıkarak mutasyonu açıklar"
+        },
+        {
+          "code": "F.8.2.3.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Örneklerden yola çıkarak modifikasyonu açıklar"
+        },
+        {
+          "code": "F.8.2.3.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Mutasyonla modifikasyon arasındaki farklar ile ilgili çıkarımda bulunur"
+        },
+        {
+          "code": "F.8.2.4.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Canlıların yaşadıkları çevreye uyumlarını gözlem yaparak açıklar"
+        },
+        {
+          "code": "F.8.2.5.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Genetik mühendisliğini ve biyoteknolojiyi ilişkilendirir"
+        },
+        {
+          "code": "F.8.2.5.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Biyoteknolojik uygulamalar kapsamında oluşturulan ikilemlerle bu uygulamaların insanlık için yararlı ve zararlı yönlerini tartışır"
+        },
+        {
+          "code": "F.8.2.5.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Gelecekteki genetik mühendisliği ve biyoteknoloji uygulamalarının neler olabileceği hakkında tahminde bulunur"
+        },
+        {
+          "code": "F.8.3.1.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Katı basıncını etkileyen değişkenleri deneyerek keşfeder"
+        },
+        {
+          "code": "F.8.3.1.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Sıvı basıncını etkileyen değişkenleri tahmin eder ve tahminlerini test eder"
+        },
+        {
+          "code": "F.8.3.1.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Katı, sıvı ve gazların basınç özelliklerinin günlük yaşam ve teknolojideki uygulamalarına örnekler verir"
+        },
+        {
+          "code": "F.8.4.1.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Periyodik sistemde, grup ve periyotların nasıl oluşturulduğunu açıklar"
+        },
+        {
+          "code": "F.8.4.1.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Elementleri periyodik tablo üzerinde metal, yarımetal ve ametal olarak sınıflandırır"
+        },
+        {
+          "code": "F.8.4.2.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Fiziksel ve kimyasal değişim arasındaki farkları, çeşitli olayları gözlemleyerek açıklar"
+        },
+        {
+          "code": "F.8.4.3.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Bileşiklerin kimyasal tepkime sonucunda oluştuğunu bilir"
+        },
+        {
+          "code": "F.8.4.4.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Asit ve bazların genel özelliklerini ifade eder"
+        },
+        {
+          "code": "F.8.4.4.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Asit ve bazlara günlük yaşamdan örnekler verir"
+        },
+        {
+          "code": "F.8.4.4.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Günlük hayatta ulaşılabilecek malzemeleri asit-baz ayracı olarak kullanır"
+        },
+        {
+          "code": "F.8.4.4.4",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Maddelerin asitlik ve bazlık durumlarına ilişkin pH değerlerini kullanarak çıkarımda bulunur"
+        },
+        {
+          "code": "F.8.4.4.5",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Asit ve bazların çeşitli maddeler üzerindeki etkilerini gözlemler"
+        },
+        {
+          "code": "F.8.4.4.6",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Asit ve bazların temizlik malzemesi olarak kullanılması esnasında oluşabilecek tehlikelerle ilgili gerekli tedbirleri alır"
+        },
+        {
+          "code": "F.8.4.4.7",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Asit yağmurlarının önlenmesine yönelik çözüm önerileri sunar"
+        },
+        {
+          "code": "F.8.4.5.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-53",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Isınmanın maddenin cinsine, kütlesine ve/veya sıcaklık değişimine bağlı olduğunu deney yaparak keşfeder"
+        },
+        {
+          "code": "F.8.4.5.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-53",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Hâl değiştirmek için gerekli ısının maddenin cinsi ve kütlesiyle ilişkili olduğunu deney yaparak keşfeder"
+        },
+        {
+          "code": "F.8.4.5.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-53",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Maddelerin hâl değişimi ve ısınma grafiğini çizerek yorumlar"
+        },
+        {
+          "code": "F.8.4.5.4",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-53",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Günlük yaşamda meydana gelen hâl değişimleri ile ısı alışverişini ilişkilendirir"
+        },
+        {
+          "code": "F.8.4.6.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-53",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Geçmişten günümüze Türkiye’deki kimya endüstrisinin gelişimini araştırır"
+        },
+        {
+          "code": "F.8.4.6.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-53",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Kimya endüstrisinde meslek dallarını araştırır ve gelecekteki yeni meslek alanları hakkında öneriler sunar"
+        },
+        {
+          "code": "F.8.5.1.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-53",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Basit makinelerin sağladığı avantajları örnekler üzerinden açıklar"
+        },
+        {
+          "code": "F.8.5.1.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-53",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Basit makinelerden yararlanarak günlük yaşamda iş kolaylığı sağlayacak bir düzenek tasarlar"
+        },
+        {
+          "code": "F.8.6.1.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-54",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Besin zincirindeki üretici, tüketici, ayrıştırıcılara örnekler verir"
+        },
+        {
+          "code": "F.8.6.2.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-54",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Bitkilerde besin üretiminde fotosentezin önemini fark eder"
+        },
+        {
+          "code": "F.8.6.2.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-54",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Fotosentez hızını etkileyen faktörler ile ilgili çıkarımlarda bulunur"
+        },
+        {
+          "code": "F.8.6.2.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-54",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Canlılarda solunumun önemini belirtir"
+        },
+        {
+          "code": "F.8.6.3.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-54",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Madde döngülerini şema üzerinde göstererek açıklar"
+        },
+        {
+          "code": "F.8.6.3.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-54",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Madde döngülerinin yaşam açısından önemini sorgular"
+        },
+        {
+          "code": "F.8.6.3.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-54",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Küresel iklim değişikliklerinin nedenlerini ve olası sonuçlarını tartışır"
+        },
+        {
+          "code": "F.8.6.4.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-55",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Kaynakların kullanımında tasarruflu davranmaya özen gösterir"
+        },
+        {
+          "code": "F.8.6.4.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-55",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Kaynakların tasarruflu kullanımına yönelik proje tasarlar"
+        },
+        {
+          "code": "F.8.6.4.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-55",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Geri dönüşüm için katı atıkların ayrıştırılmasının önemini açıklar"
+        },
+        {
+          "code": "F.8.6.4.4",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-55",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Geri dönüşümün ülke ekonomisine katkısına ilişkin araştırma verilerini kullanarak çözüm önerileri sunar"
+        },
+        {
+          "code": "F.8.6.4.5",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-55",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Kaynakların tasarruflu kullanılmaması durumunda gelecekte karşılaşılabilecek problemleri belirterek çözüm önerileri sunar"
+        },
+        {
+          "code": "F.8.7.1.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-55",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Elektriklenmeyi, bazı doğa olayları ve teknolojideki uygulama örnekleri ile açıklar"
+        },
+        {
+          "code": "F.8.7.1.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-55",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Elektrik yüklerini sınıflandırarak aynı ve farklı cins elektrik yüklerinin birbirlerine etkisini açıklar"
+        },
+        {
+          "code": "F.8.7.1.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-55",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Deneyler yaparak elektriklenme çeşitlerini fark eder"
+        },
+        {
+          "code": "F.8.7.2.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-55",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Cisimleri, sahip oldukları elektrik yükleri bakımından sınıflandırır"
+        },
+        {
+          "code": "F.8.7.2.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Topraklamayı açıklar"
+        },
+        {
+          "code": "F.8.7.3.1",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Elektrik enerjisinin ısı, ışık ve hareket enerjisine dönüştüğü uygulamalara örnekler verir"
+        },
+        {
+          "code": "F.8.7.3.2",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Elektirik enerjisinin ısı, ışık veya hareket enerjisine dönüşümü temel alan bir model tasarlar"
+        },
+        {
+          "code": "F.8.7.3.3",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Güç santrallerinde elektrik enerjisinin nasıl üretildiğini açıklar"
+        },
+        {
+          "code": "F.8.7.3.4",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Güç santrallerinin avantaj ve dezavantajları konusunda fikirler üretir"
+        },
+        {
+          "code": "F.8.7.3.5",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Elektrik enerjisinin bilinçli ve tasarruflu kullanılmasının aile ve ülke ekonomisi bakımından önemini tartışır"
+        },
+        {
+          "code": "F.8.7.3.6",
+          "objectiveEvidenceId": "tr-meb-fen-g03-g08-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "title": "Evlerde elektriği tasarruflu kullanmaya özen gösterir"
+        }
+      ],
+      "pageCount": 58,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-fen-g03-g08-program-2018",
+      "sourceSha256": "3a8aa21327083bf15c33b9c404f299ff784b11d26024522a8c24b61387c8c0c1",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+      "subject": "Fen Bilimleri"
+    },
+    {
+      "objectives": [
+        {
+          "code": "M.8.1.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-73",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Verilen pozitif tam sayıların pozitif tam sayı çarpanlarını bulur, pozitif tam sayıların pozitif tam sayı çarpanlarını üslü ifadelerin çarpımı şeklinde yazar"
+        },
+        {
+          "code": "M.8.1.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-73",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "İki doğal sayının en büyük ortak bölenini (EBOB) ve en küçük ortak katını (EKOK) hesaplar, ilgili problemleri çözer"
+        },
+        {
+          "code": "M.8.1.1.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-73",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Verilen iki doğal sayının aralarında asal olup olmadığını belirler"
+        },
+        {
+          "code": "M.8.1.2.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-73",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Tam sayıların, tam sayı kuvvetlerini hesaplar"
+        },
+        {
+          "code": "M.8.1.2.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-73",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Üslü ifadelerle ilgili temel kuralları anlar, birbirine denk ifadeler oluşturur"
+        },
+        {
+          "code": "M.8.1.2.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-73",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Sayıların ondalık gösterimlerini 10’un tam sayı kuvvetlerini kullanarak çözümler"
+        },
+        {
+          "code": "M.8.1.2.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-73",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Verilen bir sayıyı 10’un farklı tam sayı kuvvetlerini kullanarak ifade eder"
+        },
+        {
+          "code": "M.8.1.2.5",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-73",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Çok büyük ve çok küçük sayıları bilimsel gösterimle ifade eder ve karşılaştırır"
+        },
+        {
+          "code": "M.8.1.3.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-73",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Tam kare pozitif tam sayılarla bu sayıların karekökleri arasındaki ilişkiyi belirler"
+        },
+        {
+          "code": "M.8.1.3.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Tam kare olmayan kareköklü bir sayının hangi iki doğal sayı arasında olduğunu belirler"
+        },
+        {
+          "code": "M.8.1.3.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Kareköklü bir ifadeyi a b şeklinde yazar ve a b şeklindeki ifadede katsayıyı kök içine alır"
+        },
+        {
+          "code": "M.8.1.3.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Kareköklü ifadelerde çarpma ve bölme işlemlerini yapar"
+        },
+        {
+          "code": "M.8.1.3.5",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Kareköklü ifadelerde toplama ve çıkarma işlemlerini yapar"
+        },
+        {
+          "code": "M.8.1.3.6",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Kareköklü bir ifade ile çarpıldığında, sonucu bir doğal sayı yapan çarpanlara örnek verir"
+        },
+        {
+          "code": "M.8.1.3.7",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Ondalık ifadelerin kareköklerini belirler"
+        },
+        {
+          "code": "M.8.1.3.8",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Gerçek sayıları tanır, rasyonel ve irrasyonel sayılarla ilişkilendirir"
+        },
+        {
+          "code": "M.8.2.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Basit cebirsel ifadeleri anlar ve farklı biçimlerde yazar"
+        },
+        {
+          "code": "M.8.2.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Cebirsel ifadelerin çarpımını yapar"
+        },
+        {
+          "code": "M.8.2.1.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Özdeşlikleri modellerle açıklar"
+        },
+        {
+          "code": "M.8.2.1.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-74",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Cebirsel ifadeleri çarpanlara ayırır"
+        },
+        {
+          "code": "M.8.2.2.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-75",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Birinci dereceden bir bilinmeyenli denklemleri çözer"
+        },
+        {
+          "code": "M.8.2.2.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-75",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Koordinat sistemini özellikleriyle tanır ve sıralı ikilileri gösterir"
+        },
+        {
+          "code": "M.8.2.2.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-75",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Aralarında doğrusal ilişki bulunan iki değişkenden birinin diğerine bağlı olarak nasıl değiştiğini tablo ve denklem ile ifade eder"
+        },
+        {
+          "code": "M.8.2.2.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-75",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Doğrusal denklemlerin grafiğini çizer"
+        },
+        {
+          "code": "M.8.2.2.5",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-75",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Doğrusal ilişki içeren gerçek hayat durumlarına ait denklem, tablo ve grafiği oluşturur ve yorumlar"
+        },
+        {
+          "code": "M.8.2.2.6",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-75",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Doğrunun eğimini modellerle açıklar, doğrusal denklemleri ve grafiklerini eğimle ilişkilendirir"
+        },
+        {
+          "code": "M.8.2.3.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-75",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Birinci dereceden bir bilinmeyenli eşitsizlik içeren günlük hayat durumlarına uygun matematik cümleleri yazar"
+        },
+        {
+          "code": "M.8.2.3.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-75",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Birinci dereceden bir bilinmeyenli eşitsizlikleri sayı doğrusunda gösterir. x ≥ -1, -3 ≤ t < 7, a < 1 gibi durumlar inceletilir"
+        },
+        {
+          "code": "M.8.2.3.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-75",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Birinci dereceden bir bilinmeyenli eşitsizlikleri çözer"
+        },
+        {
+          "code": "M.8.3.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-76",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Üçgende kenarortay, açıortay ve yüksekliği inşa eder"
+        },
+        {
+          "code": "M.8.3.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-76",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Üçgenin iki kenar uzunluğunun toplamı veya farkı ile üçüncü kenarının uzunluğunu ilişkilendirir"
+        },
+        {
+          "code": "M.8.3.1.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-76",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Üçgenin kenar uzunlukları ile bu kenarların karşısındaki açıların ölçülerini ilişkilendirir"
+        },
+        {
+          "code": "M.8.3.1.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-76",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Yeterli sayıda elemanının ölçüleri verilen bir üçgeni çizer"
+        },
+        {
+          "code": "M.8.3.1.5",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-76",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Pisagor bağıntısını oluşturur, ilgili problemleri çözer"
+        },
+        {
+          "code": "M.8.3.2.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-76",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Nokta, doğru parçası ve diğer şekillerin öteleme sonucundaki görüntülerini çizer"
+        },
+        {
+          "code": "M.8.3.2.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-76",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Nokta, doğru parçası ve diğer şekillerin yansıma sonucu oluşan görüntüsünü oluşturur"
+        },
+        {
+          "code": "M.8.3.2.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-77",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Çokgenlerin öteleme ve yansımalar sonucunda ortaya çıkan görüntüsünü oluşturur"
+        },
+        {
+          "code": "M.8.3.3.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-77",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Eşlik ve benzerliği ilişkilendirir, eş ve benzer şekillerin kenar ve açı ilişkilerini belirler"
+        },
+        {
+          "code": "M.8.3.3.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-77",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Benzer çokgenlerin benzerlik oranını belirler, bir çokgene eş ve benzer çokgenler oluşturur"
+        },
+        {
+          "code": "M.8.3.4.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-77",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Dik prizmaları tanır, temel elemanlarını belirler, inşa eder ve açınımını çizer"
+        },
+        {
+          "code": "M.8.3.4.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-77",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Dik dairesel silindirin temel elemanlarını belirler, inşa eder ve açınımını çizer"
+        },
+        {
+          "code": "M.8.3.4.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-77",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Dik dairesel silindirin yüzey alanı bağıntısını oluşturur, ilgili problemleri çözer"
+        },
+        {
+          "code": "M.8.3.4.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-77",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Dik dairesel silindirin hacim bağıntısını oluşturur; ilgili problemleri çözer"
+        },
+        {
+          "code": "M.8.3.4.5",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-78",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Dik piramidi tanır, temel elemanlarını belirler, inşa eder ve açınımını çizer"
+        },
+        {
+          "code": "M.8.3.4.6",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-78",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Dik koniyi tanır, temel elemanlarını belirler, inşa eder ve açınımını çizer"
+        },
+        {
+          "code": "M.8.4.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-78",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "En fazla üç veri grubuna ait çizgi ve sütun grafiklerini yorumlar"
+        },
+        {
+          "code": "M.8.4.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-78",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Verileri sütun, daire veya çizgi grafiği ile gösterir ve bu gösterimler arasında uygun olan dönüşümleri yapar"
+        },
+        {
+          "code": "M.8.5.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-78",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Bir olaya ait olası durumları belirler"
+        },
+        {
+          "code": "M.8.5.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-78",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "“Daha fazla”, “eşit”, “daha az” olasılıklı olayları ayırt eder, örnek verir"
+        },
+        {
+          "code": "M.8.5.1.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-78",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Eşit şansa sahip olan olaylarda her bir çıktının olasılık değerinin eşit olduğunu ve bu değerin 1/n olduğunu açıklar"
+        },
+        {
+          "code": "M.8.5.1.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-78",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Olasılık değerinin 0 ile 1 arasında (0 ve 1 dâhil) olduğunu anlar"
+        },
+        {
+          "code": "M.8.5.1.5",
+          "objectiveEvidenceId": "tr-meb-matematik-g01-g08-program-2018:pdf-page-78",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "title": "Basit bir olayın olma olasılığını hesaplar"
+        }
+      ],
+      "pageCount": 80,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-matematik-g01-g08-program-2018",
+      "sourceSha256": "ca94096da33478c822772425b1384bacdbe40548b0813302257fec7e8c9f9c8b",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+      "subject": "Matematik"
+    },
+    {
+      "objectives": [
+        {
+          "code": "T.8.1.1",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinlediklerinde/izlediklerinde geçen olayların gelişimi ve sonucu hakkında tahminde bulunur"
+        },
+        {
+          "code": "T.8.1.2",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinlediklerinde/izlediklerinde geçen bilmediği kelimelerin anlamını tahmin eder"
+        },
+        {
+          "code": "T.8.1.3",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinlediklerini/izlediklerini özetler"
+        },
+        {
+          "code": "T.8.1.4",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinledikleri/izlediklerine yönelik sorulara cevap verir"
+        },
+        {
+          "code": "T.8.1.5",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinlediklerinin/izlediklerinin konusunu tespit eder"
+        },
+        {
+          "code": "T.8.1.6",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinlediklerinin/izlediklerinin ana fikrini/ana duygusunu tespit eder"
+        },
+        {
+          "code": "T.8.1.7",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinlediklerine/izlediklerine yönelik farklı başlıklar önerir"
+        },
+        {
+          "code": "T.8.1.8",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinlediği/izlediği hikâye edici metinleri canlandırır"
+        },
+        {
+          "code": "T.8.1.9",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinlediklerinde/izlediklerinde tutarlılığı sorgular"
+        },
+        {
+          "code": "T.8.1.10",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinledikleriyle/izledikleriyle ilgili görüşlerini bildirir"
+        },
+        {
+          "code": "T.8.1.11",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinledikleri/izledikleri medya metinlerini değerlendirir"
+        },
+        {
+          "code": "T.8.1.12",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinlediklerinde/izlediklerinde başvurulan düşünceyi geliştirme yollarını tespit eder"
+        },
+        {
+          "code": "T.8.1.13",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Konuşmacının sözlü olmayan mesajlarını kavrar"
+        },
+        {
+          "code": "T.8.1.14",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Dinleme stratejilerini uygular"
+        },
+        {
+          "code": "T.8.2.1",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Hazırlıklı konuşma yapar"
+        },
+        {
+          "code": "T.8.2.2",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Hazırlıksız konuşma yapar"
+        },
+        {
+          "code": "T.8.2.3",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Konuşma stratejilerini uygular"
+        },
+        {
+          "code": "T.8.2.4",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Konuşmalarında beden dilini etkili bir şekilde kullanır"
+        },
+        {
+          "code": "T.8.2.5",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Kelimeleri anlamlarına uygun kullanır"
+        },
+        {
+          "code": "T.8.2.6",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Konuşmalarında yabancı dillerden alınmış, dilimize henüz yerleşmemiş kelimelerin Türkçelerini kullanır"
+        },
+        {
+          "code": "T.8.2.7",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-49",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Konuşmalarında uygun geçiş ve bağlantı ifadelerini kullanır"
+        },
+        {
+          "code": "T.8.3.1",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Noktalama işaretlerine dikkat ederek sesli ve sessiz okur"
+        },
+        {
+          "code": "T.8.3.2",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metni türün özelliklerine uygun biçimde okur"
+        },
+        {
+          "code": "T.8.3.3",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Farklı yazı karakterleri ile yazılmış yazıları okur"
+        },
+        {
+          "code": "T.8.3.4",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Okuma stratejilerini kullanır"
+        },
+        {
+          "code": "T.8.3.5",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Bağlamdan yararlanarak bilmediği kelime ve kelime gruplarının anlamını tahmin eder"
+        },
+        {
+          "code": "T.8.3.6",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Deyim, atasözü ve özdeyişlerin metne katkısını belirler"
+        },
+        {
+          "code": "T.8.3.7",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metindeki söz sanatlarını tespit eder"
+        },
+        {
+          "code": "T.8.3.8",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metindeki anlatım bozukluklarını belirler"
+        },
+        {
+          "code": "T.8.3.9",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Fiilimsilerin cümledeki işlevlerini kavrar"
+        },
+        {
+          "code": "T.8.3.10",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Geçiş ve bağlantı ifadelerinin metnin anlamına olan katkısını değerlendirir"
+        },
+        {
+          "code": "T.8.3.11",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metindeki anlatım biçimlerini belirler"
+        },
+        {
+          "code": "T.8.3.12",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Görsel ve başlıktan hareketle okuyacağı metnin konusunu tahmin eder"
+        },
+        {
+          "code": "T.8.3.13",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Okuduklarını özetler"
+        },
+        {
+          "code": "T.8.3.14",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metinle ilgili soruları cevaplar"
+        },
+        {
+          "code": "T.8.3.15",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metinle ilgili sorular sorar"
+        },
+        {
+          "code": "T.8.3.16",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metnin konusunu belirler"
+        },
+        {
+          "code": "T.8.3.17",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metnin ana fikrini/ana duygusunu belirler"
+        },
+        {
+          "code": "T.8.3.18",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metindeki yardımcı fikirleri belirler"
+        },
+        {
+          "code": "T.8.3.19",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-50",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metnin içeriğine uygun başlık/başlıklar belirler"
+        },
+        {
+          "code": "T.8.3.20",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Okuduğu metinlerdeki hikâye unsurlarını belirler"
+        },
+        {
+          "code": "T.8.3.21",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metnin içeriğini yorumlar"
+        },
+        {
+          "code": "T.8.3.22",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metinde ele alınan sorunlara farklı çözümler üretir"
+        },
+        {
+          "code": "T.8.3.23",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metinler arasında karşılaştırma yapar"
+        },
+        {
+          "code": "T.8.3.24",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metindeki gerçek ve kurgusal unsurları ayırt eder"
+        },
+        {
+          "code": "T.8.3.25",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Okudukları ile ilgili çıkarımlarda bulunur"
+        },
+        {
+          "code": "T.8.3.26",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metin türlerini ayırt eder"
+        },
+        {
+          "code": "T.8.3.27",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Görsellerle ilgili soruları cevaplar"
+        },
+        {
+          "code": "T.8.3.28",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metinde önemli noktaların vurgulanış biçimlerini kavrar"
+        },
+        {
+          "code": "T.8.3.29",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Medya metinlerini analiz eder"
+        },
+        {
+          "code": "T.8.3.30",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Bilgi kaynaklarını etkili bir şekilde kullanır"
+        },
+        {
+          "code": "T.8.3.31",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Bilgi kaynaklarının güvenilirliğini sorgular"
+        },
+        {
+          "code": "T.8.3.32",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Grafik, tablo ve çizelgeyle sunulan bilgileri yorumlar"
+        },
+        {
+          "code": "T.8.3.33",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Edebî eserin yazılı metni ile medya sunumunu karşılaştırır"
+        },
+        {
+          "code": "T.8.3.34",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Okuduklarında kullanılan düşünceyi geliştirme yollarını belirler"
+        },
+        {
+          "code": "T.8.3.35",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-51",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Metindeki iş ve işlem basamaklarını kavrar"
+        },
+        {
+          "code": "T.8.4.1",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Şiir yazar"
+        },
+        {
+          "code": "T.8.4.2",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Bilgilendirici metin yazar"
+        },
+        {
+          "code": "T.8.4.3",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Hikâye edici metin yazar"
+        },
+        {
+          "code": "T.8.4.4",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Yazma stratejilerini uygular"
+        },
+        {
+          "code": "T.8.4.5",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Anlatımı desteklemek için grafik ve tablo kullanır"
+        },
+        {
+          "code": "T.8.4.6",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Bir işi işlem basamaklarına göre yazar"
+        },
+        {
+          "code": "T.8.4.7",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Yazılarını zenginleştirmek için atasözleri, deyimler ve özdeyişler kullanır"
+        },
+        {
+          "code": "T.8.4.8",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Yazılarında mizahi ögeler kullanır"
+        },
+        {
+          "code": "T.8.4.9",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Yazılarında anlatım biçimlerini kullanır"
+        },
+        {
+          "code": "T.8.4.10",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Yazdıklarında yabancı dillerden alınmış, dilimize henüz yerleşmemiş kelimelerin Türkçelerini kullanır"
+        },
+        {
+          "code": "T.8.4.11",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Formları yönergelerine uygun doldurur"
+        },
+        {
+          "code": "T.8.4.12",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Kısa metinler yazar"
+        },
+        {
+          "code": "T.8.4.13",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Yazdıklarının içeriğine uygun başlık belirler"
+        },
+        {
+          "code": "T.8.4.14",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Araştırmalarının sonuçlarını yazılı olarak sunar"
+        },
+        {
+          "code": "T.8.4.15",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Yazılarında uygun geçiş ve bağlantı ifadelerini kullanır"
+        },
+        {
+          "code": "T.8.4.16",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Yazdıklarını düzenler"
+        },
+        {
+          "code": "T.8.4.17",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Yazdıklarını paylaşır"
+        },
+        {
+          "code": "T.8.4.18",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Cümlenin ögelerini ayırt eder"
+        },
+        {
+          "code": "T.8.4.19",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Cümle türlerini tanır"
+        },
+        {
+          "code": "T.8.4.20",
+          "objectiveEvidenceId": "tr-meb-turkce-g01-g08-program-2019:pdf-page-52",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+          "title": "Fiillerin çatı özelliklerinin anlama olan katkısını kavrar"
+        }
+      ],
+      "pageCount": 66,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2019,
+      "sourceId": "tr-meb-turkce-g01-g08-program-2019",
+      "sourceSha256": "10e55d403a708d35abc192710977a47df933210a0c54a15e86ea7b9d09401633",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "subject": "Türkçe"
+    },
+    {
+      "objectives": [
+        {
+          "code": "E8.1.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-85",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand the specific information in short conversations on everyday topics, such as accepting and refusing an offer/invitation, apologizing and making simple inquiries"
+        },
+        {
+          "code": "E8.1.SI1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-85",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to interact with reasonable ease in structured situations and short conversations involving accepting and refusing an offer/invitation, apologizing and making simple inquiries"
+        },
+        {
+          "code": "E8.1.SP1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-85",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to structure a talk to make simple inquiries, give explanations and reasons"
+        },
+        {
+          "code": "E8.1.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-85",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand short and simple texts about friendship"
+        },
+        {
+          "code": "E8.1.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-85",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand short and simple invitation letters, cards and e-mails"
+        },
+        {
+          "code": "E8.1.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-85",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to write a short and simple letter apologizing and giving reasons for not attending a party in response to an invitation"
+        },
+        {
+          "code": "E8.2.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-86",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand phrases and expressions about regular activities of teenagers"
+        },
+        {
+          "code": "E8.2.SI1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-86",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to talk about regular activities of teenagers"
+        },
+        {
+          "code": "E8.2.SP1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-86",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to express what they prefer, like and dislike"
+        },
+        {
+          "code": "E8.2.SP2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-86",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to give a simple description of daily activities in a simple way"
+        },
+        {
+          "code": "E8.2.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-86",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand short and simple texts about regular activities of teenagers"
+        },
+        {
+          "code": "E8.2.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-86",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to write a short and simple paragraph about regular activities of teenagers"
+        },
+        {
+          "code": "E8.3.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-87",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to get the gist of short, clear, simple descriptions of a process"
+        },
+        {
+          "code": "E8.3.SI1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-87",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to ask and answer questions and exchange ideas and information on a topic related to how something is processed"
+        },
+        {
+          "code": "E8.3.SP1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-87",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to give a simple description about a process"
+        },
+        {
+          "code": "E8.3.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-87",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand the overall meaning of short texts about a process"
+        },
+        {
+          "code": "E8.3.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-87",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to guess the meaning of unknown words from the text"
+        },
+        {
+          "code": "E8.3.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-87",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to write a series of simple phrases and sentences by using linkers to describe a process"
+        },
+        {
+          "code": "E8.4.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-88",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand phrases and related vocabulary items"
+        },
+        {
+          "code": "E8.4.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-88",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to follow a phone conversation"
+        },
+        {
+          "code": "E8.4.SI1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-88",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to make a simple phone call asking and responding to questions"
+        },
+        {
+          "code": "E8.4.SP1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-88",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to express their decisions taken at the moment of conversation"
+        },
+        {
+          "code": "E8.4.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-88",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand short and simple texts with related vocabulary"
+        },
+        {
+          "code": "E8.4.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-88",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to write short and simple conversations"
+        },
+        {
+          "code": "E8.5.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-89",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand the gist of oral texts"
+        },
+        {
+          "code": "E8.5.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-89",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to comprehend phrases and related vocabulary items"
+        },
+        {
+          "code": "E8.5.SI1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-89",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to talk about their Internet habits"
+        },
+        {
+          "code": "E8.5.SI2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-89",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to exchange information about the Internet"
+        },
+        {
+          "code": "E8.5.SP1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-89",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to make excuses, and to accept and refuse offers by using a series of phrases and simple sentences"
+        },
+        {
+          "code": "E8.5.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-89",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to identify main ideas in short and simple texts about internet habits"
+        },
+        {
+          "code": "E8.5.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-89",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to find specific information about the Internet in various texts"
+        },
+        {
+          "code": "E8.5.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-89",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to write a basic paragraph to describe their internet habits"
+        },
+        {
+          "code": "E8.6.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-90",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to follow a discussion on adventures"
+        },
+        {
+          "code": "E8.6.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-90",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand the main points of simple messages"
+        },
+        {
+          "code": "E8.6.SI1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-90",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to interact with reasonable ease in short conversations"
+        },
+        {
+          "code": "E8.6.SI2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-90",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to talk about comparisons, preferences and their reasons"
+        },
+        {
+          "code": "E8.6.SP1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-90",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to make comparisons about sports and games by using simple descriptive language"
+        },
+        {
+          "code": "E8.6.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-90",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand short and simple texts to find the main points about adventures"
+        },
+        {
+          "code": "E8.6.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-90",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to write a short and simple paragraph comparing two objects"
+        },
+        {
+          "code": "E8.7.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-91",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand and extract the specific information from short and simple oral texts"
+        },
+        {
+          "code": "E8.7.SI1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-91",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to exchange information about tourism"
+        },
+        {
+          "code": "E8.7.SI2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-91",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to talk about their favorite tourist attractions by giving details"
+        },
+        {
+          "code": "E8.7.SP1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-91",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to express their preferences for particular tourist attractions and give reasons"
+        },
+        {
+          "code": "E8.7.SP2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-91",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to make simple comparisons between different tourist attractions"
+        },
+        {
+          "code": "E8.7.SP3",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-91",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to express their experiences about places"
+        },
+        {
+          "code": "E8.7.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-91",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to find specific information from various texts about tourism"
+        },
+        {
+          "code": "E8.7.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-91",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to design a brochure, advertisement or a postcard about their favorite tourist attraction(s)"
+        },
+        {
+          "code": "E8.8.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-92",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to identify the main points of a short talk describing the responsibilities of people"
+        },
+        {
+          "code": "E8.8.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-92",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand obligations, likes and dislikes in various oral texts"
+        },
+        {
+          "code": "E8.8.L3",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-92",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to follow topic change during factual, short talks"
+        },
+        {
+          "code": "E8.8.SI1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-92",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to interact during simple, routine tasks requiring a direct exchange of information"
+        },
+        {
+          "code": "E8.8.SI2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-92",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to talk about responsibilities"
+        },
+        {
+          "code": "E8.8.SP1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-92",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to express their obligations, likes and dislikes in simple terms"
+        },
+        {
+          "code": "E8.8.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-92",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand various short and simple texts about responsibilities"
+        },
+        {
+          "code": "E8.8.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-92",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to write short and simple poems/stories about their feelings and responsibilities"
+        },
+        {
+          "code": "E8.9.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-93",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to recognize main ideas and key information in short oral texts about science"
+        },
+        {
+          "code": "E8.9.SI1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-93",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to talk about actions happening currently and in the past"
+        },
+        {
+          "code": "E8.9.SI2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-93",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to involve in simple discussions about scientific achievements"
+        },
+        {
+          "code": "E8.9.SP1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-93",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to describe actions happening currently"
+        },
+        {
+          "code": "E8.9.SP2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-93",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to present information about scientific achievements in a simple way"
+        },
+        {
+          "code": "E8.9.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-93",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to understand short and simple texts about actions happening currently and in the past"
+        },
+        {
+          "code": "E8.9.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-93",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to identify main ideas and supporting details in short texts about science"
+        },
+        {
+          "code": "E8.9.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-93",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to write simple descriptions of scientific achievements in a short paragraph"
+        },
+        {
+          "code": "E8.10.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-94",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to identify the main points of TV news about natural forces and disasters"
+        },
+        {
+          "code": "E8.10.SI1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-94",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to talk about predictions concerning future of the Earth"
+        },
+        {
+          "code": "E8.10.SI2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-94",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to negotiate reasons and results to support their predictions about natural forces and disasters"
+        },
+        {
+          "code": "E8.10.SP1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-94",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to express predictions concerning future of the Earth"
+        },
+        {
+          "code": "E8.10.SP2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-94",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to give reasons and results to support their predictions about natural forces and disasters"
+        },
+        {
+          "code": "E8.10.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-94",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to identify specific information in simple texts about natural forces and disasters"
+        },
+        {
+          "code": "E8.10.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g02-g08-program-2018:pdf-page-94",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+          "title": "Students will be able to write a short and simple paragraph about reasons and results of natural forces and disasters"
+        }
+      ],
+      "pageCount": 100,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-ingilizce-g02-g08-program-2018",
+      "sourceSha256": "e976ae163c83bb1b3bcf79d7d77ce8cb8308dbdc97a630b941951b9b57653279",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/201812411191321-%C4%B0NG%C4%B0L%C4%B0ZCE%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20Klas%C3%B6r%C3%BC.pdf",
+      "subject": "İngilizce"
+    },
+    {
+      "objectives": [
+        {
+          "code": "8.1.1",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-43",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Kader ve kaza inancını ayet ve hadislerle açıklar"
+        },
+        {
+          "code": "8.1.2",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-43",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "İnsanın ilmi, iradesi, sorumluluğu ile kader arasında ilişki kurar"
+        },
+        {
+          "code": "8.1.3",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-43",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Kaza ve kader ile ilgili kavramları analiz eder"
+        },
+        {
+          "code": "8.1.4",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-43",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Toplumda kader ve kaza ile ilgili yaygın olan yanlış anlayışları sorgular"
+        },
+        {
+          "code": "8.1.5",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-43",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Musa’nın (a.s.) hayatını ana hatlarıyla tanır"
+        },
+        {
+          "code": "8.1.6",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-43",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Ayet el-Kürsi'yi okur, anlamını söyler"
+        },
+        {
+          "code": "8.2.1",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-44",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "İslam’ın paylaşma ve yardımlaşmaya verdiği önemi ayet ve hadisler ışığında yorumlar"
+        },
+        {
+          "code": "8.2.2",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-44",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Zekât ve sadaka ibadetini ayet ve hadislerle açıklar"
+        },
+        {
+          "code": "8.2.3",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-44",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Zekât, infak ve sadakanın bireysel ve toplumsal önemini fark eder"
+        },
+        {
+          "code": "8.2.4",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-44",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Şuayb’in (a.s.) hayatını ana hatlarıyla tanır"
+        },
+        {
+          "code": "8.2.5",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-44",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Maûn suresini okur, anlamını söyler"
+        },
+        {
+          "code": "8.3.1",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-45",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Din, birey ve toplum arasındaki ilişkiyi yorumlar"
+        },
+        {
+          "code": "8.3.2",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-45",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "İslam dininin can, nesil, akıl, mal ve din emniyetiyle ilgili ortaya koyduğu ilke ve hedefleri analiz eder"
+        },
+        {
+          "code": "8.3.3",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-45",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Yusuf’un (a.s.) örnek hayatından ilkeler çıkarır"
+        },
+        {
+          "code": "8.3.4",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-45",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Asr suresini okur, anlamını söyler"
+        },
+        {
+          "code": "8.4.1",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-46",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Muhammed’in (s.a.v.) doğruluğu ve güvenilir kişiliği ile peygamberlerin özellikleri arasında ilişki kurar"
+        },
+        {
+          "code": "8.4.2",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-46",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Muhammed’in (s.a.v.) merhametli ve affedici oluşunu davranışlarında yansıtmaya özen gösterir"
+        },
+        {
+          "code": "8.4.3",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-46",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Muhammed’in (s.a.v.) istişareye verdiği önemi ortaya koyan örnek olaylardan hareketle gündelik hayatla ilgili çıkarımlarda bulunur"
+        },
+        {
+          "code": "8.4.4",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-46",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Muhammed’in (s.a.v.) cesaret ve kararlılığını örnek olaylarla açıklar"
+        },
+        {
+          "code": "8.4.5",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-46",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Muhammed’in (s.a.v.) hakkı gözetmedeki hassasiyetine örnekler verir"
+        },
+        {
+          "code": "8.4.6",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-46",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Muhammed’in (s.a.v.) insanlara verdiği değeri örneklerle açıklar"
+        },
+        {
+          "code": "8.4.7",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-46",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Muhammed’in (s.a.v.) örnek davranışlarının toplumsal hayattaki önemini değerlendirir"
+        },
+        {
+          "code": "8.4.8",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-46",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Muhammed’in (s.a.v.) hikmetli söz ve davranışlarıyla insanları iyiye ve güzele yönlendirdiğini fark eder"
+        },
+        {
+          "code": "8.4.9",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-46",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Kureyş suresini okur, anlamını söyler"
+        },
+        {
+          "code": "8.5.1",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-47",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "İslam dininin temel kaynaklarını tanır"
+        },
+        {
+          "code": "8.5.2",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-47",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Ayetlerden hareketle Kur’an’ın ana konularını sınıflandırır"
+        },
+        {
+          "code": "8.5.3",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-47",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Kur’an-ı Kerim’in temel özelliklerini değerlendirir"
+        },
+        {
+          "code": "8.5.4",
+          "objectiveEvidenceId": "tr-meb-dkab-g04-g08-program-2018:pdf-page-47",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hz. Nuh’un (a.s.) tevhide davetini özetler"
+        }
+      ],
+      "pageCount": 47,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-dkab-g04-g08-program-2018",
+      "sourceSha256": "baace330fd3b7c5b5dde6061bbd0af3b885382d6eb5e7049095a30db8c075608",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/20221229134650712-DKAB_(4-8.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+      "subject": "Din Kültürü ve Ahlak Bilgisi"
+    },
+    {
+      "objectives": [
+        {
+          "code": "İTA.8.1.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Avrupa’daki gelişmelerin yansımaları bağlamında Osmanlı Devleti’nin yirminci yüzyılın başlarındaki siyasi ve sosyal durumunu kavrar"
+        },
+        {
+          "code": "İTA.8.1.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Mustafa Kemal’in çocukluk ve öğrenim hayatından hareketle onun kişilik özelliklerinin oluşumu hakkında çıkarımlarda bulunur"
+        },
+        {
+          "code": "İTA.8.1.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Gençlik döneminde Mustafa Kemal’in fikir hayatını etkileyen önemli kişileri ve olayları kavrar"
+        },
+        {
+          "code": "İTA.8.1.4",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Mustafa Kemal’in askerlik hayatı ile ilgili olayları ve olguları onun kişilik özellikleri ile ilişkilendirir"
+        },
+        {
+          "code": "İTA.8.2.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Birinci Dünya Savaşı’nın sebeplerini ve savaşın başlamasına yol açan gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.8.2.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Birinci Dünya Savaşı’nda Osmanlı Devleti’nin durumu hakkında çıkarımlarda bulunur"
+        },
+        {
+          "code": "İTA.8.2.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Mondros Ateşkes Antlaşması’nın imzalanması ve uygulanması karşısında Osmanlı yönetiminin, Mustafa Kemal’in ve halkın tutumunu analiz eder"
+        },
+        {
+          "code": "İTA.8.2.4",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Kuvâ-yı Millîye’nin oluşum sürecini ve sonrasında meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.8.2.5",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Millî Mücadele’nin hazırlık döneminde Mustafa Kemal’in yaptığı çalışmaları analiz eder"
+        },
+        {
+          "code": "İTA.8.2.6",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Misakımilli’nin kabulünü ve Büyük Millet Meclisinin açılışını vatanın bütünlüğü esası ile “ulusal egemenlik” ve “tam bağımsızlık” ilkeleri ile ilişkilendirir"
+        },
+        {
+          "code": "İTA.8.2.7",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Büyük Millet Meclisine karşı ayaklanmalar ile ayaklanmaların bastırılması için alınan tedbirleri analiz eder"
+        },
+        {
+          "code": "İTA.8.2.8",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Mustafa Kemal’in ve Türk milletinin Sevr Antlaşması’na karşı tepkilerini değerlendirir"
+        },
+        {
+          "code": "İTA.8.3.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Millî Mücadele Dönemi’nde Doğu Cephesi ve Güney Cephesi’nde meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.8.3.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Millî Mücadele Dönemi’nde Batı Cephesi’nde meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.8.3.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Millî Mücadele’nin zor bir döneminde Maarif Kongresi yapan Atatürk’ün, millî ve çağdaş eğitime verdiği önemi kavrar"
+        },
+        {
+          "code": "İTA.8.3.4",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Türk milletinin millî birlik, beraberlik ve dayanışmasının bir örneği olarak Tekalif-i Millîye Emirleri doğrultusunda yapılan uygulamaları analiz eder"
+        },
+        {
+          "code": "İTA.8.3.5",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Sakarya Meydan Savaşı’nın kazanılmasında ve Büyük Taarruz’un başarılı olmasında Mustafa Kemal’in rolüne ilişkin çıkarımlarda bulunur"
+        },
+        {
+          "code": "İTA.8.3.6",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Lozan Antlaşması’nın sağladığı kazanımları analiz eder"
+        },
+        {
+          "code": "İTA.8.3.7",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Millî Mücadele Dönemi’nin siyasi, sosyal ve kültürel olaylarının sanat ve edebiyat ürünlerine yansımalarına kanıtlar gösterir"
+        },
+        {
+          "code": "İTA.8.4.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Çağdaşlaşan Türkiye’nin temeli olan Atatürk ilkelerini açıklar"
+        },
+        {
+          "code": "İTA.8.4.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Siyasi alanda meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.8.4.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Hukuk alanında meydana gelen gelişmelerin toplumsal hayata yansımalarını kavrar"
+        },
+        {
+          "code": "İTA.8.4.4",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Eğitim ve kültür alanında yapılan inkılapları ve gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.8.4.5",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Toplumsal alanda yapılan inkılapları ve meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.8.4.6",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Ekonomi alanında meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.8.4.7",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Atatürk Dönemi’nde sağlık alanında yapılan çalışmaları devletin temel görevleri ile ilişkilendirir"
+        },
+        {
+          "code": "İTA.8.4.8",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Cumhuriyet’in sağladığı kazanımları ve Atatürk’ün Türk milleti için gösterdiği hedefleri analiz eder"
+        },
+        {
+          "code": "İTA.8.4.9",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Atatürk ilke ve inkılaplarını oluşturan temel esasları kavrar"
+        },
+        {
+          "code": "İTA.8.5.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Atatürk Dönemi’ndeki demokratikleşme yolunda atılan adımları açıklar"
+        },
+        {
+          "code": "İTA.8.5.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Mustafa Kemal’e suikast girişimini analiz eder"
+        },
+        {
+          "code": "İTA.8.5.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Cumhuriyetin ilk yıllarında Türkiye Cumhuriyetine yönelik tehditleri analiz eder"
+        },
+        {
+          "code": "İTA.8.6.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Atatürk Dönemi Türk dış politikasının temel ilkelerini ve amaçlarını açıklar"
+        },
+        {
+          "code": "İTA.8.6.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Atatürk Dönemi Türk dış politikasında yaşanan gelişmeleri analiz eder"
+        },
+        {
+          "code": "İTA.8.6.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Atatürk’ün Hatay’ı ülkemize katmak konusunda yaptıklarına ve bu uğurda gösterdiği özveriye kanıtlar gösterir"
+        },
+        {
+          "code": "İTA.8.7.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Atatürk’ün ölümüne ilişkin yansıma ve değerlendirmelerden hareketle onun fikir ve eserlerinin evrensel değerine ilişkin çıkarımlarda bulunur"
+        },
+        {
+          "code": "İTA.8.7.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Atatürk’ün Türk Milleti’ne bıraktığı eserlerinden örnekler verir"
+        },
+        {
+          "code": "İTA.8.7.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Atatürk’ün İkinci Dünya Savaşı öncesi tespitleri ve girişimleri Türkiye’nin savaşta izlediği denge siyaseti ile ilişkilendirilir"
+        },
+        {
+          "code": "İTA.8.7.4",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "İkinci Dünya Savaşı’ndaki gelişmelerin ve bu savaşın sonuçlarının Türkiye’ye etkilerini analiz eder"
+        },
+        {
+          "code": "İTA.8.7.5",
+          "objectiveEvidenceId": "tr-meb-inkilap-g08-program-2018:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+          "title": "Türkiye’de çok partili siyasi hayata geçişi hızlandıran gelişmeleri, demokrasinin gerekleri açısından analiz eder"
+        }
+      ],
+      "pageCount": 19,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-inkilap-g08-program-2018",
+      "sourceSha256": "38a24b11191f7ebca2fc85831d787e7187eca70e82f0bd36e7de5c81524357d5",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/201812104016155-%C4%B0NKILAP%20TAR%C4%B0H%C4%B0%20VE%20ATAT%C3%9CRK%C3%87%C3%9CL%C3%9CK%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI.pdf",
+      "subject": "T.C. İnkılap Tarihi ve Atatürkçülük"
+    }
+  ]
+}

@@ -62,17 +62,18 @@ def experiment(qid: str, note: dict[str, Any], context: str, evidence: str,
         )
         labels[f"{prefix}.battery"] = "Pil"
         labels[f"{prefix}.switch"] = "Anahtar"
+        labels[f"{prefix}.lamp"] = "Ampul"
         return {
-            "kind": "experiment", "altTextKey": alt,
-            "apparatus": [
-                {"id": "battery", "type": "battery", "x": 12, "y": 55, "labelKey": f"{prefix}.battery"},
-                {"id": "switch", "type": "switch", "x": 42, "y": 55, "labelKey": f"{prefix}.switch"},
-                {"id": "lamp", "type": "lamp", "x": 75, "y": 55, "labelKey": evidence_key},
+            "kind": "diagram", "direction": "horizontal", "altTextKey": alt,
+            "nodes": [
+                {"id": "battery", "labelKey": f"{prefix}.battery", "shape": "rect", "x": 10, "y": 45},
+                {"id": "switch", "labelKey": f"{prefix}.switch", "shape": "rect", "x": 42, "y": 45},
+                {"id": "lamp", "labelKey": f"{prefix}.lamp", "shape": "circle", "x": 74, "y": 45},
             ],
-            "connections": [
-                {"from": "battery", "to": "switch", "kind": "wire"},
-                {"from": "switch", "to": "lamp", "kind": "wire"},
-                {"from": "lamp", "to": "battery", "kind": "wire"},
+            "edges": [
+                {"from": "battery", "to": "switch", "directed": False, "style": "solid"},
+                {"from": "switch", "to": "lamp", "directed": False, "style": "solid"},
+                {"from": "lamp", "to": "battery", "directed": False, "style": "solid"},
             ],
         }
     return None

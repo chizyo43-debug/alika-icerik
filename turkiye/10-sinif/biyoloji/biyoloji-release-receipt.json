@@ -1,0 +1,11 @@
+{
+  "candidateSha256": "a6c97c5d6a37d60ff4b4db5ea8d86484c95949a675a7e838ea0798d75ba79ed7",
+  "decision": "PASS",
+  "grade": 10,
+  "humanReviewed": false,
+  "reviewManifestSha256": "60ccfa034359d4d49fa6a7421f7509a835ea9bd88e04dc97a43b38a576289c73",
+  "reviewedPackageSha256": "31186c089cd410bff10c406eba7197bdf49db92084d67dcc71ba242198f7c871",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Biyoloji"
+}
