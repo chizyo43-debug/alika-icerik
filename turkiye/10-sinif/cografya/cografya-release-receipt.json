@@ -1,0 +1,11 @@
+{
+  "candidateSha256": "085fbf8062e63a32ba382ea8df9426c960d93dfcd1205ed0723b21e7024c5c72",
+  "decision": "PASS",
+  "grade": 10,
+  "humanReviewed": false,
+  "reviewManifestSha256": "992f991886d0504eb10cb41b4a93b0c3bec31dd38b7c6c71b69c9a0fffde4993",
+  "reviewedPackageSha256": "50c378f2a25477a225987930f931dc60cedb2f7b92b84fb50056578db4235461",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Coğrafya"
+}

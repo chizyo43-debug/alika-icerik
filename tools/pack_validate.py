@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import re
 import sys
 import unicodedata
@@ -226,14 +227,40 @@ KATALOG = {
     "flow": {"zorunlu": {"nodes", "edges"}, "opsiyonel": {"direction"}},
     "circuit": {"zorunlu": {"elements"},
                 "opsiyonel": {"layout", "labelKeys"}},
-    "diagram": {"zorunlu": {"nodes", "edges"},
-                "opsiyonel": {"direction"}},
-    "map": {"zorunlu": {"base"},
-            "opsiyonel": {"polygons", "markers", "routes"}},
+    # Figure Spec 1.3 canonical records use ``elements``/``viewBox``.  The
+    # legacy nodes/edges form remains accepted so installed 2.0/2.2 packages
+    # continue to validate unchanged.
+    "diagram": {"zorunlu": set(),
+                "opsiyonel": {"elements", "viewBox", "nodes", "edges", "direction"}},
+    # Figure Spec 1.3 maps coexist with the pre-1.3 base/polygons form.  New
+    # authoring must use mapType/regions; legacy fields are read-only support.
+    "map": {"zorunlu": set(),
+            "opsiyonel": {"mapType", "regions", "viewBox", "points", "routes",
+                           "legend", "northArrow", "scaleKey", "boundarySetId",
+                           "boundaryVersion", "territoryReview", "base", "polygons",
+                           "markers"}},
+    "timeline": {"zorunlu": {"events"},
+                 "opsiyonel": {"orientation", "periods"}},
     "experiment": {"zorunlu": {"apparatus"},
                    "opsiyonel": {"connections", "measurements"}},
 }
 CIRCUIT_ELEM = {"battery", "lamp", "switch", "resistor", "wire"}
+DIAGRAM_TYPES = {"circle", "ellipse", "rect", "line", "polygon", "arc"}
+DIAGRAM_STYLES = {
+    "circle": {"plain", "sun", "earth", "moon", "planet", "pulley"},
+    "ellipse": {"plain", "orbit", "asteroid_belt"},
+    "rect": {"plain", "block", "battery"},
+    "line": {"plain", "ray", "rope", "force"},
+    "polygon": {"plain", "shadow", "support", "incline"},
+    "arc": {"plain", "orbit"},
+}
+FIGURE_COLORS = {
+    "ink", "muted", "accent", "gold", "success", "danger", "surface",
+    "blue", "teal", "purple", "orange", "earth", "land", "moon", "white", "none",
+}
+MAP_TYPES = {"schematic", "political", "physical", "thematic", "route", "hazard", "weather"}
+MAP_POINT_SYMBOLS = {"dot", "city", "capital", "station", "mountain", "port"}
+MAP_ROUTE_STYLES = {"route", "river", "border", "front", "wind"}
 EXPERIMENT_ELEM = {
     "beaker", "testTube", "flask", "burner", "stand", "thermometer",
     "balance", "magnet", "coil", "battery", "switch", "lamp", "resistor",
@@ -867,49 +894,145 @@ def figur_kontrol(fig: dict, sema: str = "2.0") -> list:
             if eksik:
                 h.append(f"circuit: labelKeys eksik: {sorted(eksik)}")
     elif kind == "diagram":
-        dugumler, kenarlar = fig.get("nodes"), fig.get("edges")
-        idler = set()
-        if not isinstance(dugumler, list) or not dugumler:
-            h.append("diagram: nodes liste değil/boş")
+        if "elements" in fig:
+            view = fig.get("viewBox", [0, 0, 100, 60])
+            if (
+                not isinstance(view, list) or len(view) != 4
+                or not all(_sayi_mi(v) and math.isfinite(float(v)) for v in view)
+                or float(view[2]) <= 0 or float(view[3]) <= 0
+            ):
+                h.append("diagram: viewBox [x,y,w,h] ve w,h>0 değil")
+            elemanlar = fig.get("elements")
+            if not isinstance(elemanlar, list) or not 1 <= len(elemanlar) <= 40:
+                h.append("diagram: elements 1..40 öğeli liste değil")
+            else:
+                for i, eleman in enumerate(elemanlar):
+                    if not isinstance(eleman, dict):
+                        h.append(f"diagram: elements[{i}] nesne değil")
+                        continue
+                    tur = eleman.get("type")
+                    if tur not in DIAGRAM_TYPES:
+                        h.append(f"diagram: elements[{i}].type beyaz liste dışı")
+                        continue
+                    if eleman.get("style", "plain") not in DIAGRAM_STYLES[tur]:
+                        h.append(f"diagram: elements[{i}].style beyaz liste dışı")
+                    for renk_alani in ("fill", "stroke"):
+                        if renk_alani in eleman and eleman[renk_alani] not in FIGURE_COLORS:
+                            h.append(f"diagram: elements[{i}].{renk_alani} beyaz liste dışı")
         else:
-            for n in dugumler:
-                if (not isinstance(n, dict)
-                        or set(n) != {"id", "labelKey", "shape", "x", "y"}
-                        or not isinstance(n.get("id"), str) or not n["id"]
-                        or n.get("shape") not in {"rect", "circle", "diamond"}
-                        or not all(_sayi_mi(n.get(k)) and 0 <= n[k] <= 100 for k in ("x", "y"))):
-                    h.append(f"diagram: node geçersiz: {n!r}")
-                elif n["id"] in idler:
-                    h.append(f"diagram: yinelenen node id: {n['id']!r}")
-                else:
-                    idler.add(n["id"])
-        if not isinstance(kenarlar, list):
-            h.append("diagram: edges liste değil")
-        else:
-            for e in kenarlar:
-                if (not isinstance(e, dict) or not {"from", "to"} <= set(e)
-                        or not set(e) <= {"from", "to", "directed", "labelKey", "style"}
-                        or e.get("from") not in idler or e.get("to") not in idler
-                        or ("style" in e and e["style"] not in {"solid", "dashed"})):
-                    h.append(f"diagram: edge geçersiz: {e!r}")
-        if "direction" in fig and fig["direction"] not in {"horizontal", "vertical"}:
-            h.append("diagram: direction horizontal|vertical değil")
+            # Pre-1.3 read compatibility.
+            dugumler, kenarlar = fig.get("nodes"), fig.get("edges")
+            idler = set()
+            if not isinstance(dugumler, list) or not dugumler:
+                h.append("diagram: nodes liste değil/boş")
+            else:
+                for n in dugumler:
+                    if (not isinstance(n, dict)
+                            or set(n) != {"id", "labelKey", "shape", "x", "y"}
+                            or not isinstance(n.get("id"), str) or not n["id"]
+                            or n.get("shape") not in {"rect", "circle", "diamond"}
+                            or not all(_sayi_mi(n.get(k)) and 0 <= n[k] <= 100 for k in ("x", "y"))):
+                        h.append(f"diagram: node geçersiz: {n!r}")
+                    elif n["id"] in idler:
+                        h.append(f"diagram: yinelenen node id: {n['id']!r}")
+                    else:
+                        idler.add(n["id"])
+            if not isinstance(kenarlar, list):
+                h.append("diagram: edges liste değil")
+            else:
+                for e in kenarlar:
+                    if (not isinstance(e, dict) or not {"from", "to"} <= set(e)
+                            or not set(e) <= {"from", "to", "directed", "labelKey", "style"}
+                            or e.get("from") not in idler or e.get("to") not in idler
+                            or ("style" in e and e["style"] not in {"solid", "dashed"})):
+                        h.append(f"diagram: edge geçersiz: {e!r}")
+            if "direction" in fig and fig["direction"] not in {"horizontal", "vertical"}:
+                h.append("diagram: direction horizontal|vertical değil")
     elif kind == "map":
-        if fig.get("base") not in {"world", "turkiye", "blank"}:
-            h.append("map: base world|turkiye|blank değil")
-        for alan, asgari in (("polygons", 3), ("routes", 2)):
-            for oge in fig.get(alan, []) or []:
-                noktalar = oge.get("points") if isinstance(oge, dict) else None
-                if (not isinstance(noktalar, list) or len(noktalar) < asgari
-                        or set(oge) - {"points", "labelKey"}
-                        or any(not (isinstance(p, list) and len(p) == 2
-                                   and all(_sayi_mi(v) and 0 <= v <= 100 for v in p))
-                               for p in noktalar)):
-                    h.append(f"map: {alan} girdisi geçersiz: {oge!r}")
-        for oge in fig.get("markers", []) or []:
-            if (not isinstance(oge, dict) or set(oge) != {"x", "y", "labelKey"}
-                    or not all(_sayi_mi(oge.get(k)) and 0 <= oge[k] <= 100 for k in ("x", "y"))):
-                h.append(f"map: marker geçersiz: {oge!r}")
+        if "mapType" in fig:
+            map_turu = fig.get("mapType")
+            if map_turu not in MAP_TYPES:
+                h.append("map: mapType beyaz liste dışı")
+            view = fig.get("viewBox", [0, 0, 100, 60])
+            if (not isinstance(view, list) or len(view) != 4
+                    or not all(_sayi_mi(v) and math.isfinite(float(v)) for v in view)
+                    or float(view[2]) <= 0 or float(view[3]) <= 0):
+                h.append("map: viewBox [x,y,w,h] ve w,h>0 değil")
+                view = [0, 0, 100, 60]
+            vx, vy, vw, vh = (float(value) for value in view)
+
+            def _icinde(pair):
+                return (isinstance(pair, list) and len(pair) == 2
+                        and all(_sayi_mi(value) and math.isfinite(float(value)) for value in pair)
+                        and vx <= float(pair[0]) <= vx + vw
+                        and vy <= float(pair[1]) <= vy + vh)
+
+            bolgeler = fig.get("regions")
+            if not isinstance(bolgeler, list) or not 1 <= len(bolgeler) <= 64:
+                h.append("map: regions 1..64 öğeli liste değil")
+            else:
+                for i, bolge in enumerate(bolgeler):
+                    noktalar = bolge.get("points") if isinstance(bolge, dict) else None
+                    if (not isinstance(bolge, dict) or not str(bolge.get("id") or "").strip()
+                            or not isinstance(noktalar, list) or not 3 <= len(noktalar) <= 512
+                            or not all(_icinde(p) for p in noktalar)):
+                        h.append(f"map: regions[{i}] geçersiz")
+            for i, nokta in enumerate(fig.get("points", []) or []):
+                if (not isinstance(nokta, dict) or not _icinde([nokta.get("x"), nokta.get("y")])
+                        or nokta.get("symbol", "dot") not in MAP_POINT_SYMBOLS):
+                    h.append(f"map: points[{i}] geçersiz")
+            for i, rota in enumerate(fig.get("routes", []) or []):
+                rota_noktalari = rota.get("points") if isinstance(rota, dict) else None
+                if (not isinstance(rota_noktalari, list) or not 2 <= len(rota_noktalari) <= 256
+                        or not all(_icinde(p) for p in rota_noktalari)
+                        or rota.get("style", "route") not in MAP_ROUTE_STYLES):
+                    h.append(f"map: routes[{i}] geçersiz")
+            if map_turu != "schematic" and (not str(fig.get("boundarySetId") or "").strip()
+                                               or not str(fig.get("boundaryVersion") or "").strip()):
+                h.append("map: doğrulanmış sınır veri kimliği/sürümü eksik")
+            if map_turu == "political" and fig.get("territoryReview") != "passed-human":
+                h.append("map: siyasi harita passed-human bölge incelemesi olmadan yayımlanamaz")
+        else:
+            if fig.get("base") not in {"world", "turkiye", "blank"}:
+                h.append("map: base world|turkiye|blank değil")
+            for alan, asgari in (("polygons", 3), ("routes", 2)):
+                for oge in fig.get(alan, []) or []:
+                    noktalar = oge.get("points") if isinstance(oge, dict) else None
+                    if (not isinstance(noktalar, list) or len(noktalar) < asgari
+                            or set(oge) - {"points", "labelKey"}
+                            or any(not (isinstance(p, list) and len(p) == 2
+                                       and all(_sayi_mi(v) and 0 <= v <= 100 for v in p))
+                                   for p in noktalar)):
+                        h.append(f"map: {alan} girdisi geçersiz: {oge!r}")
+            for oge in fig.get("markers", []) or []:
+                if (not isinstance(oge, dict) or set(oge) != {"x", "y", "labelKey"}
+                        or not all(_sayi_mi(oge.get(k)) and 0 <= oge[k] <= 100 for k in ("x", "y"))):
+                    h.append(f"map: marker geçersiz: {oge!r}")
+    elif kind == "timeline":
+        if fig.get("orientation", "horizontal") not in {"horizontal", "vertical"}:
+            h.append("timeline: orientation horizontal|vertical değil")
+        olaylar, onceki = fig.get("events"), -1.0
+        if not isinstance(olaylar, list) or not 2 <= len(olaylar) <= 40:
+            h.append("timeline: events 2..40 öğeli liste değil")
+        else:
+            for i, olay in enumerate(olaylar):
+                konum = olay.get("position") if isinstance(olay, dict) else None
+                if (not isinstance(olay, dict) or not str(olay.get("id") or "").strip()
+                        or not str(olay.get("labelKey") or "").strip()
+                        or not _sayi_mi(konum) or not 0 <= float(konum) <= 1
+                        or float(konum) <= onceki
+                        or ("color" in olay and olay["color"] not in FIGURE_COLORS)):
+                    h.append(f"timeline: events[{i}] geçersiz veya sırasız")
+                if _sayi_mi(konum):
+                    onceki = float(konum)
+        for i, donem in enumerate(fig.get("periods", []) or []):
+            bas = donem.get("start") if isinstance(donem, dict) else None
+            son = donem.get("end") if isinstance(donem, dict) else None
+            if (not isinstance(donem, dict) or not str(donem.get("labelKey") or "").strip()
+                    or not _sayi_mi(bas) or not _sayi_mi(son)
+                    or not 0 <= float(bas) < float(son) <= 1
+                    or ("color" in donem and donem["color"] not in FIGURE_COLORS)):
+                h.append(f"timeline: periods[{i}] geçersiz")
     elif kind == "experiment":
         duzenek = fig.get("apparatus")
         idler = set()
@@ -2367,10 +2490,12 @@ SKOR_KABUL_TABANI = {
     # paylaşılması tek başına kusur değildir. %70 açıklık kabul tabanıdır;
     # ham oran raporda korunur, bariz bozuk dil biçimleri K39 ile engellenir.
     "S2_havuz_acikligi": 0.70,
-    # Genel "hiç doğru olmamış seçenek" listesi; birim, tarih ve alan terimi
-    # gibi meşru adaylar da içerdiğinden yalnız izleme sinyalidir. %90 tabanı
-    # aşan paket tam uyumludur; açıkça bozuk dil yine K39 UYARI üretir.
-    "S3_dolgu_yok": 0.90,
+    # Genel "hiç doğru olmamış seçenek" listesi, yanlış seçeneklerin gerçek
+    # öğrenci yanılgılarına ayrıldığı özgün bankalarda doğal olarak büyür;
+    # bunların başka bir soruda doğru olması beklenmez. K39 açıkça bozuk ve
+    # aileler arasında dolaşan dolgu dilini ayrıca UYARI ile engeller. Bu geniş
+    # izleme sinyali %40'ta doyar; ham değer raporda görünmeye devam eder.
+    "S3_dolgu_yok": 0.40,
     # K40 yalnız %40'ın altını UYARI sayar. Puan da aynı kabul sınırına
     # doymalı; aksi hâlde 0 UYARI paket gizli bir ikinci eşikte kalır.
     "S4_kalip_cesitliligi": 0.40,
@@ -2432,7 +2557,13 @@ def _skor_modu(hedefler: list, json_yolu: str | None) -> int:
     for hedef in hedefler:
         p = Path(hedef)
         if p.is_dir():
-            yollar.extend(sorted(p.rglob("*.jsonl")))
+            # Gelecek müfredat arşivleri etkin yayın değildir; kalite makbuzu
+            # yalnız bugün kurulabilir paketleri sayar. Arşivler yine tekil
+            # --strict çağrılarıyla doğrulanabilir.
+            yollar.extend(sorted(
+                yol for yol in p.rglob("*.jsonl")
+                if not any(part.casefold().startswith("future-") for part in yol.parts)
+            ))
         elif p.exists():
             yollar.append(p)
         else:

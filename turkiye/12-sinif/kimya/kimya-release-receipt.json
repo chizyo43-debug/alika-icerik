@@ -1,62 +1,11 @@
 {
-  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "candidateSha256": "71a46c74dff0743f9f3bfc9d6000e78348e76039ce25b326db618751ea4d6f3b",
   "decision": "PASS",
   "grade": 12,
-  "subject": "Kimya",
-  "model": "gpt-5.6-sol",
-  "mode": "ai-only",
   "humanReviewed": false,
-  "publishReady": true,
-  "publishBlocked": false,
-  "curriculum": "MEB-TYMM-2026",
-  "package": {
-    "path": "turkiye/12-sinif/kimya/kimya-tum.jsonl",
-    "sha256": "0335a89f1ec3701efc011a7a8c7bb8f8fd80a74c71bcc87588247db648d4a9d4",
-    "bytes": 3294073,
-    "records": 525
-  },
-  "counts": {
-    "pack": 1,
-    "note": 24,
-    "question": 500
-  },
-  "gates": {
-    "jsonlParse": "PASS 525/525",
-    "duplicateId": 0,
-    "noteQuestionLinks": "PASS 500/500",
-    "questionContract22": "PASS",
-    "strictErrors": 0,
-    "strictWarnings": 0,
-    "qualityScore": 100.0
-  },
-  "quality": {
-    "answerBalance": [
-      125,
-      125,
-      125,
-      125
-    ],
-    "families": 250,
-    "largestFamily": 2,
-    "duplicateQuestionTexts": 0,
-    "duplicateNoteBodies": 0,
-    "minimumNoteEvidenceCharacters": 2033,
-    "errors": 0,
-    "warnings": 0
-  },
-  "sourceEvidence": [
-    {
-      "sourceId": "tr-meb-kim-g09-g12-program-2026",
-      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/2026518151539674-kimya.pdf",
-      "sha256": "8ebbc113d520eb118e254394ba4bde50c505bca38adafc178e553c73624a375f",
-      "pageCount": 113,
-      "publicationYear": 2026
-    }
-  ],
-  "review": {
-    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
-    "decision": "PASS",
-    "humanReviewed": false,
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
-  }
+  "reviewManifestSha256": "531e2d4828c36419de40b4aeb12b71495426100f7b9353618088e6452cb434b0",
+  "reviewedPackageSha256": "23dec9a59e6aacb0ede97eb83f6569bb6c8b4974e758c4c5e0ee40640853fccd",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Kimya"
 }

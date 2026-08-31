@@ -2,7 +2,9 @@
 """Profile lesson-note and semantic-input readiness for unique bank authoring."""
 from __future__ import annotations
 
+import argparse
 import json
+import sys
 import unicodedata
 from collections import Counter
 from pathlib import Path
@@ -118,8 +120,24 @@ def audit_grade(grade: int, activation: dict[str, Any]) -> dict[str, Any]:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--grade", type=int, action="append", choices=range(5, 13))
+    args = parser.parse_args()
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     activation = json.loads((ROOT / "curriculum" / "tr-2026-2027-activation.json").read_text(encoding="utf-8"))
-    grades = [audit_grade(grade, activation) for grade in range(5, 13)]
+    grades = []
+    for grade in args.grade or list(range(5, 13)):
+        try:
+            grades.append(audit_grade(grade, activation))
+        except (RuntimeError, ValueError) as exc:
+            grades.append({
+                "grade": grade,
+                "curriculum": activation["grades"][str(grade)],
+                "status": "BLOCKED",
+                "blockingFindings": [str(exc)],
+                "subjects": [],
+            })
     report = {
         "schemaVersion": "alika-bank-source-readiness/1.1.0",
         "intendedUse": "5–12. sınıf 2.000 özgün soruluk aktif banka üretimi",

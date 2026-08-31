@@ -15,6 +15,8 @@ import hashlib
 import json
 import math
 import re
+import shutil
+import sys
 import unicodedata
 from collections import Counter, defaultdict
 from dataclasses import dataclass
@@ -31,13 +33,7 @@ SUBJECT_MIN = 100
 SUBJECT_MAX = 600
 CONTRACT_HASH = "sha256:74b5ee649f01933fd50dfeb7e29706e7dc1ddf0fe3e014ead2fe5cd0896ae7a1"
 METHOD = "alika-note-grounded-unique-bank-builder/2.0.0"
-CURRENT_CURRICULUM_BLOCKS = {
-    # 2026–2027 official MEB staging: grades 8 and 12 still use the
-    # pre-TYMM programmes.  The repository currently contains future TYMM
-    # subject packs for both grades, so the builder must fail closed.
-    8: "8. sınıf kaynak paketleri gelecek TYMM programına bağlı; yürürlükteki program paketi gerekli",
-    12: "12. sınıf kaynak paketleri gelecek TYMM programına bağlı; yürürlükteki program paketi gerekli",
-}
+CURRENT_CURRICULUM_BLOCKS: dict[int, str] = {}
 REVIEW_FIELDS = {
     "aiReviewStatus", "aiVerification", "aiVerified", "approvalGranted",
     "approvalStatus", "approvedBy", "attestation", "contentHash", "disclosure",
@@ -175,7 +171,10 @@ def pending(row: dict[str, Any]) -> dict[str, Any]:
 
 
 def objective_of(question: dict[str, Any]) -> str:
-    value = question.get("objective") or question.get("objectiveId")
+    # ``objective`` is display text in several legacy lesson packages, while
+    # ``objectiveId`` remains the canonical curriculum code.  Prefer the ID so
+    # prose descriptions cannot inflate the quota universe as fake outcomes.
+    value = question.get("objectiveId") or question.get("objective")
     if not isinstance(value, str) or not value.strip() or value == "PENDING":
         raise ValueError(f"{question.get('id')}: canonical objective missing")
     return value.strip()
@@ -203,9 +202,29 @@ def discover(grade: int) -> list[SubjectData]:
         rows = read_jsonl(path)
         packs = [row for row in rows if row.get("type") == "pack"]
         notes = [row for row in rows if row.get("type") == "note"]
-        questions = [row for row in rows if row.get("type", "question") == "question"]
-        if len(packs) != 1 or not notes or not questions:
+        raw_questions = [row for row in rows if row.get("type", "question") == "question"]
+        if len(packs) != 1 or not notes or not raw_questions:
             raise ValueError(f"invalid subject topology: {path}")
+        note_objectives: dict[str, list[str]] = {
+            str(note.get("id")): [
+                str(value) for value in (note.get("objectives") or [note.get("objective")])
+                if value
+            ]
+            for note in notes
+            if note.get("id")
+        }
+        questions: list[dict[str, Any]] = []
+        for source in raw_questions:
+            question = dict(source)
+            linked = note_objectives.get(str(question.get("noteId") or ""), [])
+            # Some legacy TYMM packs display the full outcome sentence in the
+            # question while the linked note carries its canonical code.  The
+            # bank pipeline groups source evidence by the canonical curriculum
+            # identifier; a one-outcome note is an unambiguous alias bridge.
+            if len(linked) == 1:
+                question["objective"] = linked[0]
+                question["objectiveId"] = linked[0]
+            questions.append(question)
         by_objective: dict[str, list[dict[str, Any]]] = defaultdict(list)
         seen_semantic_inputs: set[str] = set()
         accepted_semantics: dict[str, list[tuple[str, set[tuple[str, ...]]]]] = defaultdict(list)
@@ -227,6 +246,14 @@ def discover(grade: int) -> list[SubjectData]:
             seen_semantic_inputs.add(signature)
             accepted_semantics[objective].append((signature, signature_shingles))
             by_objective[objective].append(question)
+        # Canonical objective coverage comes from the note/curriculum records,
+        # never from the availability of lesson questions.  Source questions
+        # are copy-detection evidence only; an objective with zero usable
+        # source questions must still receive its bank minimum.
+        for note in notes:
+            for objective in note.get("objectives") or [note.get("objective")]:
+                if objective:
+                    by_objective.setdefault(str(objective), [])
         if not by_objective:
             raise ValueError(f"no usable semantic inputs: {path}")
         result.append(SubjectData(path, packs[0], notes, questions, dict(by_objective)))
@@ -280,7 +307,7 @@ def subject_quotas(subjects: list[SubjectData]) -> dict[str, int]:
 
 
 def objective_quotas(subject: SubjectData, total: int) -> dict[str, int]:
-    weights = {key: len(value) for key, value in subject.by_objective.items()}
+    weights = {key: max(1, len(value)) for key, value in subject.by_objective.items()}
     minimums = {key: 2 for key in weights}
     maximums = {key: total for key in weights}
     return largest_remainder(total, weights, minimums, maximums)
@@ -329,6 +356,13 @@ def normalized(value: Any) -> str:
     return " ".join(text.split())
 
 
+def literal_normalized(value: Any) -> str:
+    """Normalize literal option content without similarity-only name/number masking."""
+    text = unicodedata.normalize("NFKC", str(value or "")).casefold()
+    text = re.sub(r"[^\w]+", " ", text, flags=re.UNICODE)
+    return " ".join(text.split())
+
+
 def combined(question: dict[str, Any]) -> str:
     return normalized(" ".join([str(question.get("question", "")), *map(str, question.get("choices", []))]))
 
@@ -352,16 +386,20 @@ def labels_used_by_figures(rows: Iterable[dict[str, Any]], labels: dict[str, Any
     """Collect label keys actually referenced by structured figures."""
     used: set[str] = set()
 
-    def visit(value: Any) -> None:
-        if isinstance(value, str):
-            if value in labels:
-                used.add(value)
-        elif isinstance(value, dict):
-            for child in value.values():
-                visit(child)
+    def visit(value: Any, field: str = "") -> None:
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if (key == "key" or key.endswith("Key")) and isinstance(child, str) and child in labels:
+                    used.add(child)
+                elif key.endswith("Keys") and isinstance(child, list):
+                    used.update(item for item in child if isinstance(item, str) and item in labels)
+                elif key in {"labels", "sideLabels", "axisKeys", "labelKeys"} and isinstance(child, dict):
+                    used.update(item for item in child.values() if isinstance(item, str) and item in labels)
+                else:
+                    visit(child, key)
         elif isinstance(value, list):
             for child in value:
-                visit(child)
+                visit(child, field)
 
     for row in rows:
         figure = row.get("figure")
@@ -581,7 +619,7 @@ def validate_candidate(
         seen_ids.add(qid); seen_texts.add(text); seen_full.add(full)
         choices = question.get("choices") or []
         correct = question.get("correct")
-        if len(choices) != 4 or len({normalized(choice) for choice in choices}) != 4:
+        if len(choices) != 4 or len({literal_normalized(choice) for choice in choices}) != 4:
             raise ValueError(f"{qid}: choices are not four unique values")
         if correct not in range(4) or question.get("correctOption") != choices[correct]:
             raise ValueError(f"{qid}: atomic answer mismatch")
@@ -697,6 +735,42 @@ def build_grade(grade: int, *, allow_blocked: bool = False) -> tuple[list[dict[s
         question["linkedNoteId"] = note_id
         question["linkedNoteKey"] = note_id
         questions.append(pending(question))
+    audio_policy: dict[str, Any] | None = None
+    if any(str(question.get("mediaRequirement") or "").startswith("audio") for question in questions):
+        audio_root = ROOT / "build" / "audio-authoring" / f"grade-{grade}"
+        audio_manifest_path = audio_root / "audio-assets.json"
+        if not audio_manifest_path.is_file():
+            raise RuntimeError(f"grade {grade}: audio-assets.json missing")
+        audio_manifest = json.loads(audio_manifest_path.read_text(encoding="utf-8"))
+        assets = audio_manifest.get("assets") if isinstance(audio_manifest.get("assets"), list) else []
+        by_id = {str(asset.get("assetId") or ""): asset for asset in assets}
+        audio_questions = 0
+        for question in questions:
+            requirement = str(question.get("mediaRequirement") or "")
+            if not requirement.startswith("audio"):
+                continue
+            audio_questions += 1
+            audio = question.get("audio") if isinstance(question.get("audio"), dict) else {}
+            asset_id = str(audio.get("assetId") or "")
+            asset = by_id.get(asset_id)
+            if asset is None:
+                raise RuntimeError(f"{question.get('id')}: unresolved audio asset {asset_id}")
+            audio["contentSha256"] = str(asset.get("sha256") or "")
+            question["audio"] = audio
+        if audio_questions != len(by_id) or int(audio_manifest.get("assetCount") or -1) != len(by_id):
+            raise RuntimeError(
+                f"grade {grade}: audio coverage mismatch questions={audio_questions} assets={len(by_id)}"
+            )
+        audio_policy = {
+            "schemaVersion": "alika-local-audio-policy/1.0.0",
+            "manifestPath": "audio-assets.json",
+            "manifestSha256": file_sha256(audio_manifest_path),
+            "assetCount": len(by_id),
+            "questionCount": audio_questions,
+            "storage": "local-offline-wav",
+            "remoteAssetsAllowed": False,
+            "recordingStorage": "local-temporary-only",
+        }
     coverage_notes: dict[str, set[str]] = defaultdict(set)
     coverage_counts: Counter[str] = Counter()
     for question in questions:
@@ -728,21 +802,21 @@ def build_grade(grade: int, *, allow_blocked: bool = False) -> tuple[list[dict[s
         "sourcePackages": source_packages,
         "labels": labels,
         "visualPolicy": {
-            "version": "2.0", "everyNote": False,
-            "questionMinimumPercent": 25, "balancedByObjective": True,
-            "rationale": "Veri ve seçenek çözümleme sorularında erişilebilir tablo zorunludur.",
+            "version": "1.3.0", "everyNote": False,
+            "questionMinimumPercent": 0, "balancedByObjective": False,
+            "rationale": "Görsel yalnız çözüm kanıtı gerektirdiğinde zorunludur; dekoratif kota uygulanmaz.",
         },
         "objectives": sorted(coverage),
         "counts": {"notes": len(notes_by_id), "questions": TARGET},
         "coverage": coverage,
         "levelScale": [1, 5],
         "contentContractVersion": "2.2", "contentContractHash": CONTRACT_HASH,
-        "figureSpecVersion": "2.0.0",
+        "figureSpecVersion": "1.3.0",
         "contractPolicy": {
             "questionCount": TARGET, "minFamilies": TARGET, "maxPerFamily": 1,
             "idScopeMode": "multi-subject",
             "answerBalance": [500, 500, 500, 500],
-            "minFiguredQuestions": 500, "everyNoteHasFigure": False,
+            "minFiguredQuestions": 0, "everyNoteHasFigure": False,
             "objectiveBalanceMode": "coverage",
         },
         "generationPolicy": {
@@ -754,10 +828,15 @@ def build_grade(grade: int, *, allow_blocked: bool = False) -> tuple[list[dict[s
             "subjectQuotas": quotas,
             "mix": MIX_RATIOS,
         },
+        **({"audioPolicy": audio_policy} if audio_policy is not None else {}),
     })
     rows = [pack, *notes_by_id.values(), *questions]
     metrics = validate_candidate(rows, [q for s in subjects for q in s.questions], grade)
     metrics["subjectQuotas"] = quotas
+    metrics["audioQuestions"] = sum(
+        str(question.get("mediaRequirement") or "").startswith("audio")
+        for question in questions
+    )
     metrics["contentProjectionSha256"] = hashlib.sha256(
         b"\n".join(canonical_bytes(row) for row in rows) + b"\n"
     ).hexdigest()
@@ -767,6 +846,14 @@ def build_grade(grade: int, *, allow_blocked: bool = False) -> tuple[list[dict[s
 def write_batches(grade: int, rows: list[dict[str, Any]], metrics: dict[str, Any]) -> Path:
     target_dir = ROOT / "build" / "question-banks" / f"grade-{grade}" / "pending"
     target_dir.mkdir(parents=True, exist_ok=True)
+    if rows[0].get("audioPolicy"):
+        source_root = ROOT / "build" / "audio-authoring" / f"grade-{grade}"
+        shutil.copy2(source_root / "audio-assets.json", target_dir / "audio-assets.json")
+        source_assets = source_root / "assets" / "audio"
+        target_assets = target_dir / "assets" / "audio"
+        target_assets.mkdir(parents=True, exist_ok=True)
+        for source in sorted(source_assets.glob("*.wav")):
+            shutil.copy2(source, target_assets / source.name)
     pack = rows[0]
     notes = [row for row in rows if row.get("type") == "note"]
     questions = [row for row in rows if row.get("type") == "question"]
@@ -794,6 +881,8 @@ def write_batches(grade: int, rows: list[dict[str, Any]], metrics: dict[str, Any
 
 
 def main() -> int:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser()
     parser.add_argument("--grade", type=int, choices=range(5, 13), action="append")
     parser.add_argument("--allow-blocked-curriculum", action="store_true", help=argparse.SUPPRESS)

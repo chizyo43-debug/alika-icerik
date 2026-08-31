@@ -1,0 +1,62 @@
+{
+  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "decision": "PASS",
+  "grade": 12,
+  "subject": "İngilizce",
+  "model": "gpt-5.6-sol",
+  "mode": "ai-only",
+  "humanReviewed": false,
+  "publishReady": true,
+  "publishBlocked": false,
+  "curriculum": "MEB-TYMM-2025",
+  "package": {
+    "path": "turkiye/12-sinif/ingilizce/ingilizce-tum.jsonl",
+    "sha256": "96009e2c10c657e64e9b64be870db80ef665426a61c4d5106b0968596d72a70f",
+    "bytes": 3069626,
+    "records": 525
+  },
+  "counts": {
+    "pack": 1,
+    "note": 24,
+    "question": 500
+  },
+  "gates": {
+    "jsonlParse": "PASS 525/525",
+    "duplicateId": 0,
+    "noteQuestionLinks": "PASS 500/500",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0,
+    "qualityScore": 100.0
+  },
+  "quality": {
+    "answerBalance": [
+      125,
+      125,
+      125,
+      125
+    ],
+    "families": 250,
+    "largestFamily": 2,
+    "duplicateQuestionTexts": 0,
+    "duplicateNoteBodies": 0,
+    "minimumNoteEvidenceCharacters": 1789,
+    "errors": 0,
+    "warnings": 0
+  },
+  "sourceEvidence": [
+    {
+      "sourceId": "tr-meb-english-g09-g12-program-2025",
+      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/202591214813382-ingilizce912.pdf",
+      "sha256": "aa708a0c2bd9d5e20b047838317940f6e4a511e13b93b5acdc96191c8bb104e0",
+      "pageCount": 741,
+      "publicationYear": 2025
+    }
+  ],
+  "review": {
+    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
+    "decision": "PASS",
+    "humanReviewed": false,
+    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
+  }
+}

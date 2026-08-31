@@ -1,41 +1,11 @@
 {
-  "canonical": {
-    "answerBalance": [
-      134,
-      122,
-      122,
-      122
-    ],
-    "families": 125,
-    "notes": 31,
-    "pack": 1,
-    "path": "turkiye/9-sinif/cografya/cografya-tum.jsonl",
-    "questions": 500,
-    "records": 532,
-    "sha256": "99eb131e8cf8882fa81a33cd0cc7865655a04440557dfef466d172c0ab50e846"
-  },
-  "gates": {
-    "aiVerifiedRecords": "PASS 532/532",
-    "duplicateIds": 0,
-    "duplicateQuestionTexts": 0,
-    "noteLinks": "PASS 500/500",
-    "questionRange": "PASS 1/500-500/500",
-    "strictErrors": 0,
-    "strictWarnings": 0
-  },
+  "candidateSha256": "354a12dff2a474696bb22ddf8e0ec74c461348b602e1a53624b581e7f1110619",
+  "decision": "PASS",
   "grade": 9,
-  "publishReady": true,
-  "review": {
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
-    "humanReviewed": false,
-    "mode": "ai-only",
-    "model": "gpt-5.6-sol"
-  },
-  "schema": "alika-local-final-subject-publish-receipt/1.0.0",
-  "sourceCandidate": {
-    "path": "chatgpt/9-sinif/cografya/paket/final-bank-candidate/tr_g09_cografya_subject500_ai_verified_v1_290922af.jsonl",
-    "sha256": "290922afcf92a708a301cdb5eb29144fe412ae22cc98319f6270dc84e5d429a4"
-  },
-  "status": "PASS",
+  "humanReviewed": false,
+  "reviewManifestSha256": "c88b4cf98314433de60ca6ae8b312a816bb16404558eed7ce41a7f9da3fe879a",
+  "reviewedPackageSha256": "e16b1ed102c8d6bacc8918290e5141558fc611f597f3baa0c0bb730649bbe7dc",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
   "subject": "Coğrafya"
 }

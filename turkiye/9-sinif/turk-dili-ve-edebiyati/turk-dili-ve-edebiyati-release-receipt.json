@@ -1,0 +1,11 @@
+{
+  "candidateSha256": "4b3c2f2a64427f292161f5129dd4d51050699f718d42fb3254a000c547094fe3",
+  "decision": "PASS",
+  "grade": 9,
+  "humanReviewed": false,
+  "reviewManifestSha256": "6de94f5ce52aa56a56ca1ac8301ebb4440cecdb739966db7e6925aba02de80f6",
+  "reviewedPackageSha256": "d3ac50cc86c5128950ad0b831ec11fd26104fbc5f6577c713ae026fcb392b7f0",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Türk Dili ve Edebiyatı"
+}

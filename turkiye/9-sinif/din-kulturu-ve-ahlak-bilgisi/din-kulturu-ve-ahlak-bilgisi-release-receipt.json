@@ -1,41 +1,11 @@
 {
-  "canonical": {
-    "answerBalance": [
-      134,
-      122,
-      122,
-      122
-    ],
-    "families": 125,
-    "notes": 29,
-    "pack": 1,
-    "path": "turkiye/9-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
-    "questions": 500,
-    "records": 530,
-    "sha256": "75bf3c05db9b0035a9cf7054a454e2e27e14571409e3a89e4459f5796bba80b6"
-  },
-  "gates": {
-    "aiVerifiedRecords": "PASS 530/530",
-    "duplicateIds": 0,
-    "duplicateQuestionTexts": 0,
-    "noteLinks": "PASS 500/500",
-    "questionRange": "PASS 1/500-500/500",
-    "strictErrors": 0,
-    "strictWarnings": 0
-  },
+  "candidateSha256": "5ee097908d167c7da176d8809f39df18537ff4bdfcc72b2515e294de9246a0ce",
+  "decision": "PASS",
   "grade": 9,
-  "publishReady": true,
-  "review": {
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
-    "humanReviewed": false,
-    "mode": "ai-only",
-    "model": "gpt-5.6-sol"
-  },
-  "schema": "alika-local-final-subject-publish-receipt/1.0.0",
-  "sourceCandidate": {
-    "path": "chatgpt/9-sinif/din-kulturu-ve-ahlak-bilgisi/paket/final-bank-candidate/tr_g09_dkab_subject500_ai_verified_v1_2e1d3c6b.jsonl",
-    "sha256": "2e1d3c6b13f6aca86292cde40fc5ea70675cd621003b5330df0f4a6892ca5073"
-  },
-  "status": "PASS",
+  "humanReviewed": false,
+  "reviewManifestSha256": "4a2415ab17370283cb9c1881aaf7b05de6f7e9629251bfc7de767aad2b0a8f57",
+  "reviewedPackageSha256": "2e76aa871011f5c793cea6b43e171e322bc98939897242644600d11d1090710d",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
   "subject": "Din Kültürü ve Ahlak Bilgisi"
 }

@@ -1,0 +1,62 @@
+{
+  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "decision": "PASS",
+  "grade": 12,
+  "subject": "Türk Dili ve Edebiyatı",
+  "model": "gpt-5.6-sol",
+  "mode": "ai-only",
+  "humanReviewed": false,
+  "publishReady": true,
+  "publishBlocked": false,
+  "curriculum": "MEB-TYMM-2026",
+  "package": {
+    "path": "turkiye/12-sinif/turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum.jsonl",
+    "sha256": "6951ae31713ff1a845fa55990ac34477998e60245df0b890115b4fa040dd5aee",
+    "bytes": 3333120,
+    "records": 517
+  },
+  "counts": {
+    "pack": 1,
+    "note": 16,
+    "question": 500
+  },
+  "gates": {
+    "jsonlParse": "PASS 517/517",
+    "duplicateId": 0,
+    "noteQuestionLinks": "PASS 500/500",
+    "questionContract22": "PASS",
+    "strictErrors": 0,
+    "strictWarnings": 0,
+    "qualityScore": 100.0
+  },
+  "quality": {
+    "answerBalance": [
+      125,
+      125,
+      125,
+      125
+    ],
+    "families": 250,
+    "largestFamily": 2,
+    "duplicateQuestionTexts": 0,
+    "duplicateNoteBodies": 0,
+    "minimumNoteEvidenceCharacters": 1958,
+    "errors": 0,
+    "warnings": 0
+  },
+  "sourceEvidence": [
+    {
+      "sourceId": "tr-meb-tde-g09-g12-program-2026",
+      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/2026518151228236-edebiyatdöp.pdf",
+      "sha256": "a04e1444eae5495ac9a4aef3c4644aa118381b78748c543cc64d27739dcdd13a",
+      "pageCount": 208,
+      "publicationYear": 2026
+    }
+  ],
+  "review": {
+    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
+    "decision": "PASS",
+    "humanReviewed": false,
+    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
+  }
+}

@@ -55,7 +55,11 @@ jobs:
 
       - name: kalite skoru
         run: |
-          python tools/pack_validate.py --skor turkiye \
+          # Strict kapı yukarıda bütün ders paketlerini denetler. Bu sürümün
+          # skor kabul nesnesi yalnız sekiz etkin 2.000 soruluk bankadır;
+          # future müfredat arşivleri ve korunmuş ders soruları yayın sayılmaz.
+          python tools/pack_validate.py --skor \
+            turkiye/{5,6,7,8,9,10,11,12}-sinif/soru-bankasi/*-2000-soru.jsonl \
             --json reports/quality_score.json
           cat reports/quality_score.json
 

@@ -13,6 +13,7 @@ import copy
 import hashlib
 import json
 import os
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -22,6 +23,7 @@ from build_unique_question_banks import (
     BATCH, METHOD, REVIEW_FIELDS, ROOT, TARGET, canonical_bytes, discover,
     objective_of, read_jsonl, validate_candidate,
 )
+from validate_audio_assets import validate as validate_audio_assets
 
 
 REVIEW_METHOD = "alika-hash-bound-independent-ai-review/2.0.0"
@@ -159,13 +161,50 @@ def main() -> int:
     verify_external_manifest(manifest, questions, candidate_sha, supporting_rows)
     subjects = discover(args.grade)
     metrics = validate_candidate(rows, [q for subject in subjects for q in subject.questions], args.grade)
+    audio_policy = rows[0].get("audioPolicy") if isinstance(rows[0].get("audioPolicy"), dict) else None
+    audio_report = None
+    pending_audio_manifest = pending_path.parent / "audio-assets.json"
+    if audio_policy is not None:
+        if hashlib.sha256(pending_audio_manifest.read_bytes()).hexdigest() != audio_policy.get("manifestSha256"):
+            raise ValueError("audio manifest is not bound to the candidate pack")
+        audio_report = validate_audio_assets(
+            pending_path, pending_audio_manifest, allow_runtime_pending=False,
+        )
+        if audio_report["status"] != "PASS":
+            raise ValueError(f"audio validation failed: {audio_report['errors'][:12]}")
     manifest_sha = hashlib.sha256(args.manifest.read_bytes()).hexdigest()
     reviewer = manifest["reviewerModel"]
     reviewed = [stamp(row, manifest_sha, reviewer) for row in rows]
     release_dir = ROOT / "build" / "question-banks" / f"grade-{args.grade}" / "reviewed"
     candidate = release_dir / f"{args.grade}-sinif-tum-dersler-2000-soru.reviewed.jsonl"
     write_jsonl(candidate, reviewed)
+    if audio_policy is not None:
+        shutil.copy2(pending_audio_manifest, release_dir / "audio-assets.json")
+        reviewed_assets = release_dir / "assets" / "audio"
+        reviewed_assets.mkdir(parents=True, exist_ok=True)
+        for source in sorted((pending_path.parent / "assets" / "audio").glob("*.wav")):
+            shutil.copy2(source, reviewed_assets / source.name)
     strict_output = strict_validate(candidate)
+    android_bundle = None
+    if audio_policy is not None:
+        bundle_path = release_dir / f"{args.grade}-sinif-tum-dersler-2000-soru.alika.zip"
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(ROOT / "tools" / "build_audio_class_bundle.py"),
+                "--package", str(candidate),
+                "--audio-manifest", str(release_dir / "audio-assets.json"),
+                "--output", str(bundle_path),
+            ],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+        )
+        if result.returncode:
+            raise RuntimeError((result.stdout or "") + (result.stderr or ""))
+        android_bundle = json.loads(result.stdout.strip().splitlines()[-1])
     receipt = {
         "schemaVersion": "alika-question-bank-release-receipt/2.0.0",
         "grade": args.grade, "decision": "PASS", "humanReviewed": False,
@@ -173,6 +212,8 @@ def main() -> int:
         "reviewedPackageSha256": hashlib.sha256(candidate.read_bytes()).hexdigest(),
         "builder": METHOD, "reviewMethod": REVIEW_METHOD, "metrics": metrics,
         "strictValidation": "0 HATA / 0 UYARI",
+        **({"audioValidation": audio_report} if audio_report is not None else {}),
+        **({"androidClassBundle": android_bundle} if android_bundle is not None else {}),
     }
     receipt_path = release_dir / f"grade-{args.grade}-release-receipt.json"
     receipt_path.write_text(json.dumps(receipt, ensure_ascii=False, sort_keys=True, indent=2) + "\n", encoding="utf-8", newline="\n")
@@ -183,6 +224,21 @@ def main() -> int:
         temporary = target.with_suffix(".jsonl.next")
         write_jsonl(temporary, reviewed)
         strict_validate(temporary)
+        if audio_policy is not None:
+            active_assets = target_dir / "assets" / "audio"
+            active_assets.mkdir(parents=True, exist_ok=True)
+            for source in sorted((release_dir / "assets" / "audio").glob("*.wav")):
+                shutil.copy2(source, active_assets / source.name)
+            audio_manifest_next = target_dir / "audio-assets.json.next"
+            shutil.copy2(release_dir / "audio-assets.json", audio_manifest_next)
+            os.replace(audio_manifest_next, target_dir / "audio-assets.json")
+            bundle_source = release_dir / f"{args.grade}-sinif-tum-dersler-2000-soru.alika.zip"
+            bundle_next = target_dir / f"{args.grade}-sinif-tum-dersler-2000-soru.alika.zip.next"
+            shutil.copy2(bundle_source, bundle_next)
+            os.replace(
+                bundle_next,
+                target_dir / f"{args.grade}-sinif-tum-dersler-2000-soru.alika.zip",
+            )
         os.replace(temporary, target)
         target_receipt.write_text(receipt_path.read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
     print(json.dumps({"candidate": str(candidate), "receipt": str(receipt_path), "activated": args.activate, "strict": strict_output.splitlines()[-1:]}, ensure_ascii=False))

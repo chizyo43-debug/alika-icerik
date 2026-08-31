@@ -1,0 +1,3140 @@
+{
+  "activationEvidence": [
+    "https://tymm.meb.gov.tr/taslak-cerceve-planlari",
+    "https://antalyaodm.meb.gov.tr/www/yillik-cerceve-planlar-ve-ogretim-programlari/icerik/49"
+  ],
+  "authority": "T.C. Millî Eğitim Bakanlığı",
+  "country": "TR",
+  "grade": 12,
+  "programmeFamily": "pre-TYMM-current",
+  "schemaVersion": "alika-tr-current-curriculum/1.0.0",
+  "schoolYear": "2026-2027",
+  "subjects": [
+    {
+      "objectives": [
+        {
+          "code": "12.1.1.1",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Nükleik asitlerin keşif sürecini özetler"
+        },
+        {
+          "code": "12.1.1.2",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Nükleik asitlerin çeşitlerini ve görevlerini açıklar"
+        },
+        {
+          "code": "12.1.1.3",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Hücredeki genetik materyalin organizasyonunda parça bütün ilişkisi kurar"
+        },
+        {
+          "code": "12.1.1.4",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "DNA' nın kendini eşlemesini açıklar"
+        },
+        {
+          "code": "12.1.2.1",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Protein sentezinin mekanizmasını açıklar"
+        },
+        {
+          "code": "12.1.2.2",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Genetik mühendisliği ve biyoteknoloji kavramlarını açıklar"
+        },
+        {
+          "code": "12.1.2.3",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Genetik mühendisliği ve biyoteknoloji uygulamalarını açıklar"
+        },
+        {
+          "code": "12.1.2.4",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Genetik mühendisliği ve biyoteknoloji uygulamalarının insan hayatına etkisini değerlendirir"
+        },
+        {
+          "code": "12.2.1.1",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Canlılığın devamı için enerjinin gerekliliğini açıklar"
+        },
+        {
+          "code": "12.2.2.1",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Fotosentezin canlılar açısından önemini sorgular"
+        },
+        {
+          "code": "12.2.2.2",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Fotosentez sürecini şema üzerinde açıklar"
+        },
+        {
+          "code": "12.2.2.3",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Fotosentez hızını etkileyen faktörleri değerlendirir"
+        },
+        {
+          "code": "12.2.3.1",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Kemosentez olayını açıklar"
+        },
+        {
+          "code": "12.2.4.1",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Hücresel solunumu açıklar"
+        },
+        {
+          "code": "12.2.4.2",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Oksijenli solunumda reaksiyona girenler ve reaksiyon sonunda açığa çıkan son ürünlere ilişkin deney yapar"
+        },
+        {
+          "code": "12.2.4.3",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Fotosentez ve solunum ilişkisi ile ilgili çıkarımlarda bulunur"
+        },
+        {
+          "code": "12.3.1.1",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Çiçekli bir bitkinin temel kısımlarının yapı ve görevlerini açıklar"
+        },
+        {
+          "code": "12.3.1.2",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Bitki gelişiminde hormonların etkisini örneklerle açıklar"
+        },
+        {
+          "code": "12.3.1.3",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Bitki hareketlerini gözlemleyebileceği kontrollü deney yapar"
+        },
+        {
+          "code": "12.3.2.1",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Köklerde su ve mineral emilimini açıklar"
+        },
+        {
+          "code": "12.3.2.2",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Bitkilerde su ve mineral taşınma mekanizmasını açıklar"
+        },
+        {
+          "code": "12.3.2.3",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Bitkilerde fotosentez ürünlerinin taşınma mekanizmasını açıklar"
+        },
+        {
+          "code": "12.3.2.4",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Bitkilerde su ve madde taşınması ile ilgili deney tasarlar"
+        },
+        {
+          "code": "12.3.3.1",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Çiçeğin kısımlarını ve bu kısımların görevlerini açıklar"
+        },
+        {
+          "code": "12.3.3.2",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Çiçekli bitkilerde döllenmeyi, tohum ve meyvenin oluşumunu açıklar"
+        },
+        {
+          "code": "12.3.3.3",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Tohum çimlenmesini gözleyebileceği deney tasarlar"
+        },
+        {
+          "code": "12.3.3.4",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Dormansi ve çimlenme arasında ilişki kurar"
+        },
+        {
+          "code": "12.4.1.1",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Çevre şartlarının genetik değişimlerin sürekliliğine olan etkisini açıklar"
+        },
+        {
+          "code": "12.4.1.2",
+          "objectiveEvidenceId": "tr-meb-biyoloji-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+          "title": "Tarım ve hayvancılıkta yapay seçilim uygulamalarına örnekler verir"
+        }
+      ],
+      "pageCount": 34,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-biyoloji-g09-g12-program-2018",
+      "sourceSha256": "187254fb4e173c95e767060f0c2f92f4d6abb36ab55dd47589b47a612fedf3d8",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/20182215535566-Biyoloji%20d%C3%B6p.pdf",
+      "subject": "Biyoloji"
+    },
+    {
+      "objectives": [
+        {
+          "code": "12.1.1",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Doğa olaylarının ekstrem durumlarını ve etkilerini açıklar"
+        },
+        {
+          "code": "12.1.2",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Doğal sistemlerdeki değişimlerle ilgili geleceğe yönelik çıkarımlarda bulunur"
+        },
+        {
+          "code": "12.2.1",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Bir bölgedeki baskın ekonomik faaliyet türünü sosyal ve kültürel hayata etkileri açısından analiz eder"
+        },
+        {
+          "code": "12.2.2",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Şehirleşme, göç ve sanayileşme ilişkisini toplumsal etkileri açısından yorumlar"
+        },
+        {
+          "code": "12.2.3",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Nüfus, yerleşme ve ekonomik faaliyetlerde gelecekte olabilecek değiş imlerle ilgili çıkarımlarda bulunur"
+        },
+        {
+          "code": "12.2.4",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Ülkemizdeki işlevsel bölgeleri özelliklerine göre analiz eder"
+        },
+        {
+          "code": "12.2.5",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Türkiye’deki bölgesel kalkınma projelerini ekonomik, sosyal ve kültürel etkileri açısından değerlendirir"
+        },
+        {
+          "code": "12.2.6",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Hizmet sektörünün Türkiye’nin ekonomik kalkınmasıyla olan ilişkisini açıklar"
+        },
+        {
+          "code": "12.2.7",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Ulaşım sisteminin gelişiminde etkili olan faktörleri açıklar"
+        },
+        {
+          "code": "12.2.8",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Ulaşım ağları ile yerleşme ve ekonomik faaliyetler arasında ilişki kurar"
+        },
+        {
+          "code": "12.2.9",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Türkiye’deki ulaşım sisteminin gelişim sürecini açıklar"
+        },
+        {
+          "code": "12.2.10",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Dünya ticaret merkezleri ve ağlarını küresel ekonomideki yerleri açısından analiz eder"
+        },
+        {
+          "code": "12.2.11",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Türkiye’deki ticaret merkezlerinin ticarete konu olan ürünlere ve akış yönlerine etkilerini açıklar"
+        },
+        {
+          "code": "12.2.12",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Tarihî ticaret yollarını Türkiye'nin konumu açısından değerlendirir"
+        },
+        {
+          "code": "12.2.13",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Türkiye’nin dış ticaretini ve dünya pazarlarındaki yerini ticarete konu olan ürünler açısından analiz eder"
+        },
+        {
+          "code": "12.2.14",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Türkiye'deki doğal ve kültürel sembollerin mekânla ilişkisini açıklar"
+        },
+        {
+          "code": "12.2.15",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Türkiye’nin turizm potansiyelini ve varlıklarını açıklar"
+        },
+        {
+          "code": "12.2.16",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Türkiye’nin turizm politikalarını çevresel, kültürel ve ekonomik etkileri açısından değerlendirir"
+        },
+        {
+          "code": "12.2.17",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Turizmin Türkiye ekonomisindeki yerini değerlendirir"
+        },
+        {
+          "code": "12.3.1",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Kıtaların ve okyanusların konumsal önemindeki değişimi örneklerle açıklar"
+        },
+        {
+          "code": "12.3.2",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Ülkelerin konumunun bölgesel ve küresel etkilerini değerlendirir"
+        },
+        {
+          "code": "12.3.3",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Tarihsel süreçte Türkiye’nin jeopolitik konumunu değerlendirir"
+        },
+        {
+          "code": "12.3.4",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Türkiye’nin içinde yer aldığı jeopolitik bölgelerle olan ilişkisini açıklar"
+        },
+        {
+          "code": "12.3.5",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Türk kültür bölgeleri ile ülkemiz arasındaki tarihî ve kültürel bağları açıklar"
+        },
+        {
+          "code": "12.3.6",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Teknolojik gelişmelerin, bölgeler ve ülkeler arası kültürel ve ekonomik etkileşimdeki rolünü açıklar"
+        },
+        {
+          "code": "12.3.7",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Ülkelerin gelişmişlik seviyelerinin belirlenmesinde etkili olan faktörleri açıklar"
+        },
+        {
+          "code": "12.3.8",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Gelişmiş ve gelişmekte olan ülkelerin ekonomik özelliklerini karşılaştırır"
+        },
+        {
+          "code": "12.3.9",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Ülkelerin bölgesel ve küresel ilişkilerini doğal kaynak potansiyeli açısından değerlendirir"
+        },
+        {
+          "code": "12.3.10",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Dünyadaki başlıca enerji nakil hatlarının bölge ve ülkelere etkisini açıklar"
+        },
+        {
+          "code": "12.3.11",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Ülkeler arasında sorun oluşturan mekânsal unsurları günümüz çatışma alanlarıyla ilişkilendirir"
+        },
+        {
+          "code": "12.4.1",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Doğal çevrenin sınırlılığını açıklar"
+        },
+        {
+          "code": "12.4.2",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Farklı gelişmişlik düzeyine sahip ülkelerin çevre sorunlarının önlenmesine yönelik politika ve uygulamalarını karşılaştırır"
+        },
+        {
+          "code": "12.4.3",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Çevresel örgüt ve anlaşmaların çevre yönetimi ve korunmasına etkilerini açıklar"
+        },
+        {
+          "code": "12.4.4",
+          "objectiveEvidenceId": "tr-meb-cografya-g09-g12-program-2018:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+          "title": "Ortak doğal ve kültürel mirasa yönelik tehditleri açıklar"
+        }
+      ],
+      "pageCount": 46,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-cografya-g09-g12-program-2018",
+      "sourceSha256": "074713f34edfd638dc59b99dc03350afb2f75d67c27fa4c953a7d6f8c7584df8",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/2018120203724482-Cografya%20dop%20pdf.pdf",
+      "subject": "Coğrafya"
+    },
+    {
+      "objectives": [
+        {
+          "code": "12.1.1",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Din -bilim ilişkisini tartışır"
+        },
+        {
+          "code": "12.1.2",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "İslam medeniyetinde bilim ve düşüncenin gelişim sürecini değerlendirir"
+        },
+        {
+          "code": "12.1.3",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "İslam medeniyetinde öne çıkan eğitim ve bilim kurumlarını tanır"
+        },
+        {
+          "code": "12.1.4",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Müslümanların bilim alanında yaptığı özgün çalışmaları sınıflandırır"
+        },
+        {
+          "code": "12.1.5",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "F âtır suresi 27-28. ayette verile n mesajları değerlendirir"
+        },
+        {
+          "code": "12.2.1",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Türklerin Müslüman olma sürecini açıklar"
+        },
+        {
+          "code": "12.2.2",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Dinî anlayış ve kültürümüzün oluşmasında etkili olan bazı şahsiyetleri tanır"
+        },
+        {
+          "code": "12.2.3",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Nisâ suresi 69. ayette verilen mesajları değerlendirir"
+        },
+        {
+          "code": "12.3.1",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "İslam düşüncesinde tasavvufi düşüncenin oluşum sürecini değerlendirir"
+        },
+        {
+          "code": "12.3.2",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Tasavvufi düşüncede ahlaki boyutun önemini fark eder"
+        },
+        {
+          "code": "12.3.3",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Kültürümüzde etkin olan bazı tasavvufi yorumları tanır"
+        },
+        {
+          "code": "12.3.4",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Alevilik -Bektaşi likteki t emel kavram ve erkânları tanır"
+        },
+        {
+          "code": "12.3.5",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hucurât Suresi 10. ayette verilen mesajları değerlendirir"
+        },
+        {
+          "code": "12.4.1",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Dinî meselelerin çözümüyle ilgili temel ilke ve yöntemleri analiz eder"
+        },
+        {
+          "code": "12.4.2",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "İslam’ın ekonomik hayatla ilgili ahlaki ölçülerini yorumlar"
+        },
+        {
+          "code": "12.4.3",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Gıda maddeleri ve bağımlılık konusundaki dinî ve ahlaki ilkeleri açıklar"
+        },
+        {
+          "code": "12.4.4",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Sağlık ve tıpla ilgili bazı meseleleri dinî ve ahlaki ölçüler çerçevesinde yorumlar"
+        },
+        {
+          "code": "12.4.5",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "En’âm suresi 151 -152. ayetlerde verilen mesajları değerlendirir"
+        },
+        {
+          "code": "12.5.1",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Hinduizm’in doğuşu nu ve gelişim süreci ni özetler"
+        },
+        {
+          "code": "12.5.2",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Budizm’in doğuşunu ve gelişim sürecini özetler"
+        },
+        {
+          "code": "12.5.3",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Konfüçyanizm’in doğuşunu ve gelişim sürecini özetler"
+        },
+        {
+          "code": "12.5.4",
+          "objectiveEvidenceId": "tr-meb-dkab-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+          "title": "Taoizm’i n doğuşunu ve gelişim sürecini özetler"
+        }
+      ],
+      "pageCount": 42,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-dkab-g09-g12-program-2018",
+      "sourceSha256": "da31fb7e62fa40f7ef7bbdb67582557ade943dd1e562d914e7be6b56ad915594",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/20221229134742302-DKAB_(9-12.%20S%C4%B1n%C4%B1f)_DOP_%202018.pdf",
+      "subject": "Din Kültürü ve Ahlak Bilgisi"
+    },
+    {
+      "objectives": [
+        {
+          "code": "12.1.1.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Düzgün çembersel hareketi açıklar"
+        },
+        {
+          "code": "12.1.1.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Düzgün çembersel harekette merkezcil kuvvetin bağlı olduğu değişkenleri analiz eder"
+        },
+        {
+          "code": "12.1.1.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Düzgün çembersel hareket yapan cisimlerin hareketini analiz eder"
+        },
+        {
+          "code": "12.1.1.4",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Yatay, düşey, eğimli zeminlerde araçların emniyetli dönüş şartları ile ilgili hesaplamalar yapar"
+        },
+        {
+          "code": "12.1.2.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Öteleme ve dönme hareketini karşılaştırır"
+        },
+        {
+          "code": "12.1.2.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Eylemsizlik momenti kavramını açıklar"
+        },
+        {
+          "code": "12.1.2.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Dönme ve dönerek öteleme hareketi yapan cismin kinetik enerjisinin bağlı olduğu değişkenleri açıklar"
+        },
+        {
+          "code": "12.1.3.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Açısal momentumun fiziksel bir nicelik olduğunu açıklar"
+        },
+        {
+          "code": "12.1.3.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Açısal momentumu çizgisel momentum ile ilişkilendirerek açıklar"
+        },
+        {
+          "code": "12.1.3.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Açısal momentumu torkla ilişkilendirir"
+        },
+        {
+          "code": "12.1.3.4",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Açısal momentumun korunumunu günlük hayattan örneklerle açıklar"
+        },
+        {
+          "code": "12.1.4.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Kütle çekim kuvvetini açıklar"
+        },
+        {
+          "code": "12.1.4.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Newton’ın Hareket Kanunları’nı kullanarak kütle çekim ivmesinin bağlı olduğu değişkenleri belirler"
+        },
+        {
+          "code": "12.1.4.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Kütle çekim potansiyel enerjisini açıklar"
+        },
+        {
+          "code": "12.1.5.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Kepler Kanunları’nı açıklar"
+        },
+        {
+          "code": "12.2.1.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Basit harmonik hareketi düzgün çembersel hareketi kullanarak açıklar"
+        },
+        {
+          "code": "12.2.1.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Basit harmonik harekette konumun zamana göre değişimini analiz eder"
+        },
+        {
+          "code": "12.2.1.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Basit harmonik harekette kuvvet, hız ve ivmenin konuma göre değişimi ile ilgili hesaplamalar yapar"
+        },
+        {
+          "code": "12.2.1.4",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Yay sarkacı ve basit sarkaçta periyodun bağlı olduğu değişkenleri belirler"
+        },
+        {
+          "code": "12.2.1.5",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Yay sarkacı ve basit sarkacın periyodu ile ilgili hesaplamalar yapar"
+        },
+        {
+          "code": "12.3.1.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Su dalgalarında kırınım olayının dalga boyu ve yarık genişliği ile ilişkisini belirler"
+        },
+        {
+          "code": "12.3.1.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Su dalgalarında girişim olayını açıklar"
+        },
+        {
+          "code": "12.3.1.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Işığın çift yarıkta girişimine etki eden değişkenleri açıklar"
+        },
+        {
+          "code": "12.3.1.4",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Işığın tek yarıkta kırınımına etki eden değişkenleri açıklar"
+        },
+        {
+          "code": "12.3.1.5",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Kırınım ve girişim olaylarını inceleyerek ışığın dalga doğası hakkında çıkarım yapar"
+        },
+        {
+          "code": "12.3.1.6",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Doppler olayının etkilerini ışık ve ses dalgalarından örneklerle açıklar"
+        },
+        {
+          "code": "12.3.2.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Elektromanyetik dalgaların ortak özelliklerini açıklar"
+        },
+        {
+          "code": "12.3.2.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Elektromanyetik spektrumu günlük hayattan örneklerle ilişkilendirerek açıklar"
+        },
+        {
+          "code": "12.4.1.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Atom kavramını açıklar"
+        },
+        {
+          "code": "12.4.1.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Atomun uyarılma yollarını açıklar"
+        },
+        {
+          "code": "12.4.1.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Modern atom teorisinin önemini açıklar"
+        },
+        {
+          "code": "12.4.2.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Büyük patlama teorisini açıklar"
+        },
+        {
+          "code": "12.4.2.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Atom altı parçacıkların özelliklerini temel düzeyde açıklar"
+        },
+        {
+          "code": "12.4.2.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Madde oluşum sürecini açıklar"
+        },
+        {
+          "code": "12.4.2.4",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Madde ve antimadde kavramlarını açıklar"
+        },
+        {
+          "code": "12.4.3.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Kararlı ve kararsız durumdaki atomların özelliklerini karşılaştırır"
+        },
+        {
+          "code": "12.4.3.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Radyoaktif bozunma sonucu atomun kütle numarası, atom numarası ve enerjisindeki değişimi açıklar"
+        },
+        {
+          "code": "12.4.3.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Nükleer fisyon ve füzyon olaylarını açıklar"
+        },
+        {
+          "code": "12.4.3.4",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Radyasyonun canlılar üzerindeki etkilerini açıklar"
+        },
+        {
+          "code": "12.5.1.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Michelson–Morley deneyinin amacını ve sonuçlarını açıklar"
+        },
+        {
+          "code": "12.5.1.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Einstein’ın özel görelilik teorisinin temel postülalarını ifade eder"
+        },
+        {
+          "code": "12.5.1.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Göreli zaman ve göreli uzunluk kavramlarını açıklar"
+        },
+        {
+          "code": "12.5.1.4",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Kütle-enerji eşdeğerliğini açıklar"
+        },
+        {
+          "code": "12.5.2.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Siyah cisim ışımasını açıklar"
+        },
+        {
+          "code": "12.5.3.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Foton kavramını açıklar"
+        },
+        {
+          "code": "12.5.3.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Fotoelektrik olayını açıklar"
+        },
+        {
+          "code": "12.5.3.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Farklı metaller için maksimum kinetik enerji-frekans grafiğini çizer"
+        },
+        {
+          "code": "12.5.3.4",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Fotoelektronların sahip olduğu maksimum kinetik enerji, durdurma gerilimi ve metalin eşik enerjisi arasındaki matematiksel ilişkiyi açıklar"
+        },
+        {
+          "code": "12.5.3.5",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Fotoelektrik olayın günlük hayattaki uygulamalarına örnekler verir"
+        },
+        {
+          "code": "12.5.3.6",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Fotoelektrik olayla ilgili hesaplamalar yapar"
+        },
+        {
+          "code": "12.5.4.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Compton olayında foton ve elektron etkileşimini açıklar"
+        },
+        {
+          "code": "12.5.4.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Compton ve fotoelektrik olaylarının benzer yönlerini belirterek ışığın tanecik doğası hakkında çıkarım yapar"
+        },
+        {
+          "code": "12.5.4.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Işığın ikili doğasını açıklar"
+        },
+        {
+          "code": "12.5.4.4",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Madde ve dalga arasındaki ilişkiyi açıklar"
+        },
+        {
+          "code": "12.6.1.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Görüntüleme cihazlarının çalışma prensiplerini açıklar"
+        },
+        {
+          "code": "12.6.1.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "LCD ve plazma teknolojilerinde fizik biliminin yerini açıklar"
+        },
+        {
+          "code": "12.6.2.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Yarı iletken maddelerin genel özelliklerini açıklar"
+        },
+        {
+          "code": "12.6.2.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Yarı iletken malzemelerin teknolojideki önemini açıklar"
+        },
+        {
+          "code": "12.6.2.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "LED teknolojisinin kullanıldığı yerlere örnekler verir"
+        },
+        {
+          "code": "12.6.2.4",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Güneş pillerinin çalışma şeklini açıklar"
+        },
+        {
+          "code": "12.6.2.5",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Günlük hayatı kolaylaştıran, güneş pillerinin kullanıldığı sistem tasarlar"
+        },
+        {
+          "code": "12.6.3.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Süper iletken maddenin temel özelliklerini açıklar"
+        },
+        {
+          "code": "12.6.3.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Süper iletkenlerin teknolojideki kullanım alanlarına örnekler verir"
+        },
+        {
+          "code": "12.6.4.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Nanobilimin temellerini açıklar"
+        },
+        {
+          "code": "12.6.4.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-42",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Nanomalzemelerin temel özelliklerini açıklar"
+        },
+        {
+          "code": "12.6.4.3",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-43",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "Nanomalzemelerin teknolojideki kullanım alanlarına örnekler verir"
+        },
+        {
+          "code": "12.6.5.1",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-43",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "LASER ışınlarının elde edilişini açıklar"
+        },
+        {
+          "code": "12.6.5.2",
+          "objectiveEvidenceId": "tr-meb-fizik-g09-g12-program-2018:pdf-page-43",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+          "title": "LASER ışınlarının teknolojideki kullanım alanlarına örnekler verir"
+        }
+      ],
+      "pageCount": 44,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-fizik-g09-g12-program-2018",
+      "sourceSha256": "6f0adf395fc98c961da08cbb10fa72fda04573aab8e796049f64388117a0f051",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/201812103112910-orta%C3%B6%C4%9Fretim_fizik_son.pdf",
+      "subject": "Fizik"
+    },
+    {
+      "objectives": [
+        {
+          "code": "E12.1.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to detect the embedded information in songs/media tools"
+        },
+        {
+          "code": "E12.1.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to infer people’s music preferences from their ideas about music in a reading text"
+        },
+        {
+          "code": "E12.1.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to analyze surveys/interviews to answer related questions"
+        },
+        {
+          "code": "E12.1.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-56",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write a survey report on their friends’/teachers’ music preferences"
+        },
+        {
+          "code": "E12.2.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-57",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to extract specific information from a conversation between friends"
+        },
+        {
+          "code": "E12.2.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-57",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to make inferences about the quatlities of a good friend through a recorded text"
+        },
+        {
+          "code": "E12.2.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-57",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to find irrelevant content about the descriptions of the people in a text"
+        },
+        {
+          "code": "E12.2.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-57",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to identify the main conclusions in argumentative texts"
+        },
+        {
+          "code": "E12.2.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-57",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write an opinion essay about qualities of a good friend by stating reasons"
+        },
+        {
+          "code": "E12.3.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-58",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to guess the meaning of lexis and jargon about human rights in a recorded text/video"
+        },
+        {
+          "code": "E12.3.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-58",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to distinguish the positive and negative expressions about human rights in a recorded text/video"
+        },
+        {
+          "code": "E12.3.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-58",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to find the supporting ideas in a text about good practices on human rights around the world"
+        },
+        {
+          "code": "E12.3.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-58",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to match the paragraphs with the correct phrases/visuals (children rights/gender equality/animal rights/the rights of disadvantaged people, etc.)"
+        },
+        {
+          "code": "E12.3.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-58",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write mottos/slogans about human rights"
+        },
+        {
+          "code": "E12.3.W2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-58",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write an argumentative essay including solutions for disadvantaged people’s problems"
+        },
+        {
+          "code": "E12.4.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-59",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to take notes during an informal debate/poster presentation/seminar in a video"
+        },
+        {
+          "code": "E12.4.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-59",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to match the topics with recorded passages corresponding to virtual reality and imaginary world"
+        },
+        {
+          "code": "E12.4.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-59",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to read (aloud) a text about cyber crimes and rights to distinguish the lexis and jargon"
+        },
+        {
+          "code": "E12.4.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-59",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to reorder the scrambled steps of a cyber game in a text"
+        },
+        {
+          "code": "E12.4.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-59",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write detailed descriptions of an imaginary future"
+        },
+        {
+          "code": "E12.4.W2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-59",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to compose a cyber game scenerio"
+        },
+        {
+          "code": "E12.5.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-60",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to list the suggestions to change mood given by a psychologist/friend in recorded text"
+        },
+        {
+          "code": "E12.5.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-60",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to identify the speaker’s mood, tone, etc in a recorded text"
+        },
+        {
+          "code": "E12.5.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-60",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to identify specific information in a real-life text"
+        },
+        {
+          "code": "E12.5.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-60",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to describe their current mood / mood reflected in a song/ painting/photograph through creative writing"
+        },
+        {
+          "code": "E12.6.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-61",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to identify phrases and the highest frequency vocabulary related to requests in various contexts in a recorded text"
+        },
+        {
+          "code": "E12.6.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-61",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to complete a conversation about favors in a recorded text/video"
+        },
+        {
+          "code": "E12.6.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-61",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to scan a text for the specific information about a charity organization/foundation"
+        },
+        {
+          "code": "E12.6.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-61",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write an announcement to invite people for a charity organization"
+        },
+        {
+          "code": "E12.6.W2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-61",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write an application letter to an organization for scholarship"
+        },
+        {
+          "code": "E12.7.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-62",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to list the sequences of the past events in a recorded text/video"
+        },
+        {
+          "code": "E12.7.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-62",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to complete a recorded text using cohesive devices"
+        },
+        {
+          "code": "E12.7.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-62",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to list vocabulary for narrating and describing events in a text"
+        },
+        {
+          "code": "E12.7.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-62",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to reorder the past events in a news story"
+        },
+        {
+          "code": "E12.7.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-62",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to paraphrase news/ stories/ past events"
+        },
+        {
+          "code": "E12.7.W2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-62",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write a news story/a past experience/an imaginary story"
+        },
+        {
+          "code": "E12.8.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-63",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to note down the solutions to the problems of excessive energy consumption around the world in a recorded text"
+        },
+        {
+          "code": "E12.8.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-63",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to summarize a reading passage about alternative energy"
+        },
+        {
+          "code": "E12.8.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-63",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to analyze a reading passage to find out solutions to environmental problems"
+        },
+        {
+          "code": "E12.8.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-63",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write an email/a letter of complaint to a local authority about an environmental problem to suggest solutions"
+        },
+        {
+          "code": "E12.8.W2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-63",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write their opinions about the usage of alternative energy"
+        },
+        {
+          "code": "E12.9.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-64",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to list the things needed to be done in a recorded text/video"
+        },
+        {
+          "code": "E12.9.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-64",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to find the main idea of a video about technological developments"
+        },
+        {
+          "code": "E12.9.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-64",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to identify the written lexis and jargon about a web-page on technology"
+        },
+        {
+          "code": "E12.9.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-64",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to categorize information in everyday material, such as websites, brochures and magazines"
+        },
+        {
+          "code": "E12.9.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-64",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write a note asking someone to have something done"
+        },
+        {
+          "code": "E12.9.W2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-64",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write a for and against essay discussing technology"
+        },
+        {
+          "code": "E12.9.W3",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-64",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write a description of a hi-tech product by using linking words"
+        },
+        {
+          "code": "E12.10.L1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-65",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to identify the phrases about wishes, regrets and apologies in a recorded text"
+        },
+        {
+          "code": "E12.10.L2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-65",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to classify the manners in a TV or radio program regarding their origin and practice in daily life"
+        },
+        {
+          "code": "E12.10.R1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-65",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to identify the main conclusions in argumentative texts"
+        },
+        {
+          "code": "E12.10.R2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-65",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to organize description of events, feelings and wishes in diaries and personal letters"
+        },
+        {
+          "code": "E12.10.W1",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-65",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write a letter, note or report on wishes, regrets and apology"
+        },
+        {
+          "code": "E12.10.W2",
+          "objectiveEvidenceId": "tr-meb-ingilizce-g09-g12-program-2018:pdf-page-65",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+          "title": "Students will be able to write personal letters describing experiences, feelings and events in detail in relation to the topic"
+        }
+      ],
+      "pageCount": 69,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-ingilizce-g09-g12-program-2018",
+      "sourceSha256": "6078d3eb804ecb1fd7583d790b6e50b66aec460bc08ded196d970335d820a473",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/201812020472656-OGM%20INGILIZCE%20PRG%2020.012018.pdf",
+      "subject": "İngilizce"
+    },
+    {
+      "objectives": [
+        {
+          "code": "12.1.1.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Redoks tepkimelerini tanır"
+        },
+        {
+          "code": "12.1.1.2",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Redoks tepkimeleriyle elektrik enerjisi arasındaki ilişkiyi açıklar"
+        },
+        {
+          "code": "12.1.2.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Elektrot ve elektrokimyasal hücre kavramlarını açıklar"
+        },
+        {
+          "code": "12.1.3.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Redoks tepkimelerinin istemliliğini standart elektrot potansiyellerini kullanarak açıklar"
+        },
+        {
+          "code": "12.1.4.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Standart koşullarda galvanik pillerin voltajını ve kullanım ömrünü örnekler vererek açıklar"
+        },
+        {
+          "code": "12.1.4.2",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Lityum iyon pillerinin önemini kullanım alanlarıyla ilişkilendirerek açıklar"
+        },
+        {
+          "code": "12.1.5.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Elektroliz olayını elektrik akımı, zaman ve değişime uğrayan madde kütlesi açısından açıklar"
+        },
+        {
+          "code": "12.1.5.2",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kimyasal maddelerin elektroliz yöntemiyle elde ediliş sürecini açıklar"
+        },
+        {
+          "code": "12.1.6.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Korozyon önleme yöntemlerinin elektrokimyasal temellerini açıklar"
+        },
+        {
+          "code": "12.2.1.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Anorganik ve organik bileşikleri ayırt eder"
+        },
+        {
+          "code": "12.2.2.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Organik bileşiklerin basit ve molekül formüllerinin bulunması ile ilgili hesaplamalar yapar"
+        },
+        {
+          "code": "12.2.3.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Karbon allotroplarının özelliklerini yapılarıyla ilişkilendirir"
+        },
+        {
+          "code": "12.2.4.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kovalent bağlı kimyasal türlerin Lewis formüllerini yazar"
+        },
+        {
+          "code": "12.2.5.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Tek, çift ve üçlü bağların oluşumunu hibrit ve atom orbitalleri temelinde açıklar"
+        },
+        {
+          "code": "12.2.5.2",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Moleküllerin geometrilerini merkez atomu orbitallerinin hibritleşmesi esasına göre belirler"
+        },
+        {
+          "code": "12.3.1.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Hidrokarbon türlerini ayırt eder"
+        },
+        {
+          "code": "12.3.1.2",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Basit alkanların adlarını, formüllerini, özelliklerini ve kullanım alanlarını açıklar"
+        },
+        {
+          "code": "12.3.1.3",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Basit alkenlerin adlarını, formüllerini, özelliklerini ve kullanım alanlarını açıklar"
+        },
+        {
+          "code": "12.3.1.4",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Basit alkinlerin adlarını, formüllerini, özelliklerini ve kullanım alanlarını açıklar"
+        },
+        {
+          "code": "12.3.1.5",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Basit aromatik bileşiklerin adlarını, formüllerini ve kullanım alanlarını açıklar"
+        },
+        {
+          "code": "12.3.2.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Organik bileşikleri fonksiyonel gruplarına göre sınıflandırır"
+        },
+        {
+          "code": "12.3.3.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Alkolleri sınıflandırarak adlarını, formüllerini, özelliklerini ve kullanım alanlarını açıklar"
+        },
+        {
+          "code": "12.3.4.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Eterleri sınıflandırarak adlarını, formüllerini, özelliklerini ve kullanım alanlarını açıklar"
+        },
+        {
+          "code": "12.3.5.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Karbonil bileşiklerini sınıflandırarak adlarını, formüllerini, özelliklerini ve kullanım alanlarını açıklar"
+        },
+        {
+          "code": "12.3.6.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Karboksilik asitleri sınıflandırarak adlarını, formüllerini ve kullanım alanlarını açıklar"
+        },
+        {
+          "code": "12.3.7.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Esterlerin adlarını, formüllerini ve kullanım alanlarını açıklar"
+        },
+        {
+          "code": "12.4.1.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Fosil yakıtların çevreye zararlı etkilerini azaltmak için çözüm önerilerinde bulunur"
+        },
+        {
+          "code": "12.4.2.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Alternatif enerji kaynaklarını tanır"
+        },
+        {
+          "code": "12.4.2.2",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Nükleer enerji kullanımını bilim, toplum, teknoloji, çevre ve ekonomi açısından değerlendirir"
+        },
+        {
+          "code": "12.4.3.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sürdürülebilir hayat ve kalkınmanın toplum ve çevre için önemini kimya bilimi ile ilişkilendirerek açıklar"
+        },
+        {
+          "code": "12.4.4.1",
+          "objectiveEvidenceId": "tr-meb-kimya-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Nanoteknoloji alanındaki gelişmeleri bilim, toplum, teknoloji, çevre ve ekonomiye etkileri açısından değerlendirir"
+        }
+      ],
+      "pageCount": 40,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-kimya-g09-g12-program-2018",
+      "sourceSha256": "fb17e88c798f42670c047e7023bbbde8525a8ce253370b05f67dc89364149fc4",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/201812102955190-19.01.2018%20Kimya%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+      "subject": "Kimya"
+    },
+    {
+      "objectives": [
+        {
+          "code": "12.1.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Üstel fonksiyonu açıklar"
+        },
+        {
+          "code": "12.1.2.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Logaritma fonksiyonu ile üstel fonksiyonu ilişkilendirerek problemler çözer"
+        },
+        {
+          "code": "12.1.2.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "10 ve e tabanında logaritma fonksiyonunu tanımlayarak problemler çözer"
+        },
+        {
+          "code": "12.1.2.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Logaritma fonksiyonunun özelliklerini kullanarak işlemler yapar"
+        },
+        {
+          "code": "12.1.3.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Üstel, logaritmik denklemlerin ve eşitsizliklerin çözüm kümelerini bulur"
+        },
+        {
+          "code": "12.1.3.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Üstel ve logaritmik fonksiyonları gerçek hayat durumlarını modellemede kullanır"
+        },
+        {
+          "code": "12.2.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Dizi kavramını fonksiyon kavramıyla ilişkilendirerek açıklar"
+        },
+        {
+          "code": "12.2.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Genel terimi veya indirgeme bağıntısı verilen bir sayı dizisinin terimlerini bulur"
+        },
+        {
+          "code": "12.2.1.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Aritmetik ve geometrik dizilerin özelliklerini kullanarak işlemler yapar"
+        },
+        {
+          "code": "12.2.1.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Diziler yardımıyla gerçek hayat durumları ile ilgili problemler çözer"
+        },
+        {
+          "code": "12.3.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "İki açının ölçüleri toplamının ve farkının trigonometrik değerlerine ait formülleri oluşturarak işlemler yapar"
+        },
+        {
+          "code": "12.3.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "İki kat açı formüllerini oluşturarak işlemler yapar"
+        },
+        {
+          "code": "12.3.2.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Trigonometrik denklemlerin çözüm kümelerini bulur"
+        },
+        {
+          "code": "12.4.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Analitik düzlemde koordinatları verilen bir noktanın öteleme, dönme ve simetri dönüşümleri altındaki görüntüsünün koordinatlarını bulur"
+        },
+        {
+          "code": "12.4.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Temel dönüşümler ve bileşkeleriyle ilgili problem çözer"
+        },
+        {
+          "code": "12.5.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Bir fonksiyonun bir noktadaki limiti, soldan limit ve sağdan limit kavramlarını açıklar"
+        },
+        {
+          "code": "12.5.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Limit ile ilgili özellikleri belirterek uygulamalar yapar"
+        },
+        {
+          "code": "12.5.1.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Bir fonksiyonun bir noktadaki sürekliliğini açıklar"
+        },
+        {
+          "code": "12.5.2.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Türev kavramını açıklayarak işlemler yapar"
+        },
+        {
+          "code": "12.5.2.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Bir fonksiyonun bir noktada ve bir aralıkta türevlenebilirliğini değerlendirir"
+        },
+        {
+          "code": "12.5.2.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Türevlenebilen iki fonksiyonun toplamı, farkı, çarpımı ve bölümünün türevine ait kurallar yardımıyla işlemler yapar"
+        },
+        {
+          "code": "12.5.2.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "İki fonksiyonun bileşkesinin türevine ait kuralı (zincir kuralı) oluşturularak türev hesabı yapar"
+        },
+        {
+          "code": "12.5.3.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Bir fonksiyonun artan veya azalan olduğu aralıkları türev yardımıyla belirler"
+        },
+        {
+          "code": "12.5.3.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Bir fonksiyonun mutlak maksimum ve mutla k minimum, yerel maksimum, yerel minimum noktalarını belirler"
+        },
+        {
+          "code": "12.5.3.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Türevi yardımıyla bir fonksiyonun grafiğini çizer"
+        },
+        {
+          "code": "12.5.3.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Maksimum ve minimum problemlerini türev yardımıyla çözer"
+        },
+        {
+          "code": "12.6.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Bir fonksiyonun belirsiz integralini açıklayarak integral alma kurallarını oluşturur"
+        },
+        {
+          "code": "12.6.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-40",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Değişken değiştirme yoluyla integral alma işlemleri yapar"
+        },
+        {
+          "code": "12.6.2.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Bir fonksiyonun grafiği ile x ekseni arasında kalan sınırlı bölgenin alanını Riemann toplamı yardımıyla yaklaşık olarak hesaplar"
+        },
+        {
+          "code": "12.6.2.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Bir fonksiyonun belirli ve belirsiz integralleri arasındaki ilişkiyi açıklayarak işlemler yapar"
+        },
+        {
+          "code": "12.6.2.3",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Belirli integralin özelliklerini kullanarak işlemler yapar"
+        },
+        {
+          "code": "12.6.2.4",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Belirli integral ile alan hesabı yapar"
+        },
+        {
+          "code": "12.7.1.1",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Merkezi ve yarıçapı verilen çemberin denklemini oluşturur"
+        },
+        {
+          "code": "12.7.1.2",
+          "objectiveEvidenceId": "tr-meb-matematik-g09-g12-program-2018:pdf-page-41",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+          "title": "Denklemleri verilen doğru ile çemberin birbirine göre durumlarını belirleyerek işlemler yapar"
+        }
+      ],
+      "pageCount": 48,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-matematik-g09-g12-program-2018",
+      "sourceSha256": "43f68f4e03e61ab677cac24400d3e89f18f364c72291577b4ebac603de4afbe7",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/201821102727101-OGM%20MATEMAT%C4%B0K%20PRG%2020.01.2018.pdf",
+      "subject": "Matematik"
+    },
+    {
+      "objectives": [
+        {
+          "code": "TDE.12.1.1",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-57",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Edebiyat ile düşünce akımları ve felsefe arasındaki ilişkiyi değerlendirir"
+        },
+        {
+          "code": "TDE.12.1.2",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-57",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Edebiyat ile psikoloji ve psikiyatri arasındaki ilişkiyi değerlendirir"
+        },
+        {
+          "code": "TDE.12.1.3",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-57",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Dilin tarihî süreçte değişimini etkileyen sebepleri açıklar"
+        },
+        {
+          "code": "TDE.12.1.4",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-57",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Türkçenin ilk örneklerden günümüze önemli sözlüklerini tanır"
+        },
+        {
+          "code": "TDE.12.1.5",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-57",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal değişme ve teknolojinin dile etkisi hakkında yazı ve sunum hazırlar"
+        },
+        {
+          "code": "TDE.12.2.1",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-58",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "1960 sonrası Cumhuriyet Dönemi hikâyelerini anlatım teknikleri bakımından çözümler"
+        },
+        {
+          "code": "TDE.12.2.2",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-58",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Küçürek hikâyenin özelliklerini örnek metinlerde belirler"
+        },
+        {
+          "code": "TDE.12.2.3",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-58",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Hikâye tekniklerini kullanarak özgün hikâye yazar ve dramatize eder"
+        },
+        {
+          "code": "TDE.12.3.1",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-59",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Cumhuriyet Dönemi şiir anlayışlarını metinlerden hareketle ayırt eder"
+        },
+        {
+          "code": "TDE.12.3.2",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-59",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Şiirde tema, yapı, dil, ahenk ve edebî anlayış ilişkisini çözümler"
+        },
+        {
+          "code": "TDE.12.3.3",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-59",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Bir şiiri çözümleyip dönem ve sanatçı bağlamında sözlü olarak sunar"
+        },
+        {
+          "code": "TDE.12.4.1",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-60",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Cumhuriyet Dönemi Türk romanını dönem ve anlayış özellikleriyle değerlendirir"
+        },
+        {
+          "code": "TDE.12.4.2",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-60",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Türk dünyası ve dünya edebiyatı romanlarını yapı ve tema bakımından karşılaştırır"
+        },
+        {
+          "code": "TDE.12.4.3",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-60",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Bir roman hakkında kanıta dayalı tanıtma ve değerlendirme yazısı yazar"
+        },
+        {
+          "code": "TDE.12.5.1",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-61",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "1950 sonrası Türk tiyatrosunun farklı anlayışlarını metinlerden ayırt eder"
+        },
+        {
+          "code": "TDE.12.5.2",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-61",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Tiyatro metnini tür özelliklerini koruyarak radyo tiyatrosuna dönüştürür"
+        },
+        {
+          "code": "TDE.12.5.3",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-61",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Radyo tiyatrosunu bilişim araçlarıyla seslendirip sunar"
+        },
+        {
+          "code": "TDE.12.6.1",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-62",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Dünya ve Cumhuriyet Dönemi denemelerini tür özellikleri bakımından çözümler"
+        },
+        {
+          "code": "TDE.12.6.2",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-62",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Özgün bir deneme yazar, gözden geçirir ve sözlü olarak sunar"
+        },
+        {
+          "code": "TDE.12.7.1",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-63",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Türk edebiyatının farklı dönemlerindeki söylev örneklerini karşılaştırır"
+        },
+        {
+          "code": "TDE.12.7.2",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-63",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Söylevde amaç, hedef kitle, kanıt ve hitabet özelliklerini çözümler"
+        },
+        {
+          "code": "TDE.12.7.3",
+          "objectiveEvidenceId": "tr-meb-tde-g09-g12-program-2018:pdf-page-63",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Güncel bir konuda söylev metni yazar ve etkili biçimde sunar"
+        }
+      ],
+      "pageCount": 64,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-tde-g09-g12-program-2018",
+      "sourceSha256": "26165bf1bde7c1372805b5e8bf5f5e3f1720f25bf5f1f9f969a9e0bedf0de105",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/20221229132522794-T%C3%BCrk%20Dili%20ve%20Edebiyat%C4%B1%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+      "subject": "Türk Dili ve Edebiyatı"
+    },
+    {
+      "objectives": [
+        {
+          "code": "İTA.12.1.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Mustafa Kemal’in Birinci Dünya Savaşı’na kadarki eğitim ve askerlik hayatını içinde bulunduğu toplumun siyasi, sosyal ve kültürel yapısı ile ilişkilendirir"
+        },
+        {
+          "code": "İTA.12.1.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "20. yüzyıl başlarında Osmanlı Devleti’nin siyasi, sosyal ve ekonomik durumunu analiz eder"
+        },
+        {
+          "code": "İTA.12.1.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "I. Dü nya Savaşı s ürecinde O smanlı Devleti ’nin durumunu siy asi, as kerî ve sosyal açılardan analiz eder"
+        },
+        {
+          "code": "İTA.12.1.4",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "I. Dünya Savaşı’nın sonuçlarını Osmanlı Devleti ve Batılı devletler açısından değerlendirir"
+        },
+        {
+          "code": "İTA.12.2.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kuvay-ı Millîye hareketinin oluşumundan Büyük Millet Mecli sinin açılışına kadar olan s üreçte meydana gelen gelişmeleri açıklar"
+        },
+        {
+          "code": "İTA.12.2.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Büyük Millet Meclisinin açılış sürecini ve sonrasında meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.2.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sevr Antlaşması’nın Millî Mücadele sürecine etkilerini analiz eder"
+        },
+        {
+          "code": "İTA.12.2.4",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Doğu ve G üney Cephelerinde verilen mücadelelerin ülkemizin bağımsızlık sürecine katkılarını kavrar"
+        },
+        {
+          "code": "İTA.12.2.5",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Düzenli ordunun kurulmasından Mudanya Ateşkes Antlaşması’na kadar meydana gelen gelişmeleri Türkiye’nin bağımsızlık sürecine katkıları açısından analiz eder"
+        },
+        {
+          "code": "İTA.12.2.6",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Millî Mücadele sonucunda kazanılan diplomatik başarıları ülkemizin bağımsızlığı açısından değerlendirir"
+        },
+        {
+          "code": "İTA.12.2.7",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Millî Mücadele sürecine katkıda bulunmuş önemli şahsiyetlerin kişilik özellikleri ile faaliyetlerini ilişkilendirir"
+        },
+        {
+          "code": "İTA.12.3.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Çağdaşlaşan Türkiye’nin temeli olan Atatürk ilkelerini kavrar"
+        },
+        {
+          "code": "İTA.12.3.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Siyasi alanda meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.3.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Hukuk alanında meydana gelen geli şmelerin Türk toplumunda meydana getirdiği değişimleri kavrar"
+        },
+        {
+          "code": "İTA.12.3.4",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Eğitim ve kültür alanında yapılan inkılapları ve gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.3.5",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal alanda yapılan inkılapları ve meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.3.6",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Ekonomi alanında meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.3.7",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-25",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Atatürk Dönemi’nde sağlık alanında yapılan çalışmaları kavrar"
+        },
+        {
+          "code": "İTA.12.3.8",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-25",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Atatürk ilke ve inkılaplarını oluşturan temel esasları Atatürkçü düşünce sistemi açısından analiz eder"
+        },
+        {
+          "code": "İTA.12.4.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-25",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Atatürk Dönemi’nde Türkiye Cumhuriyeti’nin iç politikasındaki önemli gelişmeleri açıklar"
+        },
+        {
+          "code": "İTA.12.4.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-25",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Atatürk Dönemi’nde (1923-1938) Türkiye Cumhuriyeti’nin dış politikasındaki başlıca gelişmeleri açıklar"
+        },
+        {
+          "code": "İTA.12.4.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-25",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "İki dünya savaşı arasındaki dönemde dünyada meydana gelen siy asi ve ekonomik geli şmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.5.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "II. Dünya Savaşı’nın sebepleri, başlaması ve yayılmasıyla ilgili başlıca gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.5.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "II. Dünya Savaşı sürecinde Türkiye’nin izlediği siyaset ile savaşın Türkiye üzerindeki ekonomik ve toplumsal etkilerini analiz eder"
+        },
+        {
+          "code": "İTA.12.5.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "II. Dünya Savaşı’nın sonuçlarını değerlendirir"
+        },
+        {
+          "code": "İTA.12.6.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "1945-1950 yılları arasında Türkiye’de meydana gelen siyasi, sosyal ve ekonomik gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.6.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "II. D ünya Savaşı son rası d önemde uluslarar ası ilişkilerde ve T ürk d ış poli tikasında meydana gelen gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.6.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "1950’ler Türkiye’sinde meydana gelen siyasi, sosyal ve ekonomik gelişmeleri analiz eder"
+        },
+        {
+          "code": "İTA.12.7.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "1960 sonrasında dünya siyasetinde ortaya çıkan gelişmeleri açıklar"
+        },
+        {
+          "code": "İTA.12.7.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "1960’lardan itibaren Türk dış politikasını etkileyen önemli gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.7.3",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "1960’lardan itibaren Türkiye’de meydana gelen siyasi, ekonomik ve sosyo-kültürel gelişmeleri analiz eder"
+        },
+        {
+          "code": "İTA.12.8.1",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "1990 sonrasında Türkiye’de meydana gelen ekonomik, siyasi, sosyal ve kültürel gelişmeleri kavrar"
+        },
+        {
+          "code": "İTA.12.8.2",
+          "objectiveEvidenceId": "tr-meb-inkilap-g12-program-2018:pdf-page-28",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "1990 sonrasında meydana gelen siyasi gelişmeleri Türkiye’ye etkileri ve dünya siyasi konjonktürü bağlamında analiz eder"
+        }
+      ],
+      "pageCount": 28,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-inkilap-g12-program-2018",
+      "sourceSha256": "0eeb61d5eef4c9ff65e709ca2043e2404e05d6f0926a4c4f011677387c4ea7f2",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/20221229131923491-T.C.%20%C4%B0nk%C4%B1lap%20Tarihi%20ve%20Atat%C3%BCrk%C3%A7%C3%BCl%C3%BCk%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+      "subject": "T.C. İnkılap Tarihi ve Atatürkçülük"
+    },
+    {
+      "objectives": [
+        {
+          "code": "MAN.12.1",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Mantık ve doğru düşünme arasındaki ilişkiyi değerlendirir"
+        },
+        {
+          "code": "MAN.12.2",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Akıl ilkelerinin önemini değerlendirir"
+        },
+        {
+          "code": "MAN.12.3",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Akıl yürütmede kullanılan temel terimleri analiz eder"
+        },
+        {
+          "code": "MAN.12.4",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Akıl yürütme yöntemlerini değerlendirir"
+        },
+        {
+          "code": "MAN.12.5",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Mantığın pratik yaşam açısından önemini fark eder"
+        },
+        {
+          "code": "MAN.12.6",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Teknolojimantık ilişkisini değerlendirir"
+        },
+        {
+          "code": "MAN.12.7",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Bilimlere yöntem oluşturması bakımından mantığı değerlendirir"
+        },
+        {
+          "code": "MAN.12.8",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Aristoteles’in mantık bilimi açısından önemini fark eder"
+        },
+        {
+          "code": "MAN.12.9",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "“Kavram”ın ne olduğunu açıklar"
+        },
+        {
+          "code": "MAN.12.10",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kavram ve terim arasındaki ilişkiyi analiz eder"
+        },
+        {
+          "code": "MAN.12.11",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kavram açısından; nelik, gerçeklik, kimlik ilişkisini analiz eder"
+        },
+        {
+          "code": "MAN.12.12",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kavramı, içlem ve kaplama göre değerlendirir"
+        },
+        {
+          "code": "MAN.12.13",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kavram çeşitlerini sınıflandırır"
+        },
+        {
+          "code": "MAN.12.14",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kavramları beş tümel açısından değerlendirir"
+        },
+        {
+          "code": "MAN.12.15",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kavramlar arasındaki ilişkiyi analiz eder"
+        },
+        {
+          "code": "MAN.12.16",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "“Tanım”ı analiz eder"
+        },
+        {
+          "code": "MAN.12.17",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Önerme olan cümlelerle, önerme olmayan cümleleri birbirinden ayırır"
+        },
+        {
+          "code": "MAN.12.18",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Önerme çeşitlerini sınıflandırır"
+        },
+        {
+          "code": "MAN.12.19",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Önermelerden sonuç çıkarır"
+        },
+        {
+          "code": "MAN.12.20",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Karşıolum çıkarımlarını analiz eder"
+        },
+        {
+          "code": "MAN.12.21",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Bir önermeden ona eş değer ikinci bir önerme çıkarır"
+        },
+        {
+          "code": "MAN.12.22",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "“Kıyas”ın yapısını değerlendirir"
+        },
+        {
+          "code": "MAN.12.23",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-25",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kıyas kurallarını uygular"
+        },
+        {
+          "code": "MAN.12.24",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "“Kıyas”ı, zorunluluk ve olasılık bakımından değerlendirir"
+        },
+        {
+          "code": "MAN.12.25",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "“Basit kıyas”ı analiz eder"
+        },
+        {
+          "code": "MAN.12.26",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "“Bileşik kıyas”ı analiz eder"
+        },
+        {
+          "code": "MAN.12.27",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Dilin birden çok işlevi olduğunu fark eder"
+        },
+        {
+          "code": "MAN.12.28",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Çok anlamlılığın sakıncalarını sorgular"
+        },
+        {
+          "code": "MAN.12.29",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Dildeki anlam belirsizliğinin nedenlerini sorgular"
+        },
+        {
+          "code": "MAN.12.30",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Dildeki anl am belirsizliğinin derecelerini sorgular"
+        },
+        {
+          "code": "MAN.12.31",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Dildeki anlam belirsizliğinin, günlük yaşam ve bilimdeki sakıncalarını görür"
+        },
+        {
+          "code": "MAN.12.32",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Olgusal ve sözel tartışmaların temelinde yatan nedenleri fark eder"
+        },
+        {
+          "code": "MAN.12.33",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Anlama ve tanımlama ilişkisini analiz eder"
+        },
+        {
+          "code": "MAN.12.34",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-28",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sembolik mantığın, klasik mantığın sembolleştirilmiş biçimi olduğunu fark eder"
+        },
+        {
+          "code": "MAN.12.35",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-28",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Bilgileri, doğru ve yanlış olarak değerlendirir"
+        },
+        {
+          "code": "MAN.12.36",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-28",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Basit ve bileşik önermeleri birbirinden ayırır"
+        },
+        {
+          "code": "MAN.12.37",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Önerme eklemlerinin işlevlerini belirtir"
+        },
+        {
+          "code": "MAN.12.38",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Ana eklem ve ana bileşenleri ayırt eder"
+        },
+        {
+          "code": "MAN.12.39",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Klasik mantıktaki çıkarımla sembolik mantıktaki çıkarımın farkını ayırt eder"
+        },
+        {
+          "code": "MAN.12.40",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Mantık değişmezlerini, önermeleri ve çıkarımları sembolleştirir"
+        },
+        {
+          "code": "MAN.12.41",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Önermelerin doğruluk değerlerini yorumlar"
+        },
+        {
+          "code": "MAN.12.42",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Temel doğruluk değerlerini, doğruluk çizelgesi üzerinde gösterir"
+        },
+        {
+          "code": "MAN.12.43",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Doğruluk çizelgesinde önermenin ve önermelerin tutarlılığını denetler"
+        },
+        {
+          "code": "MAN.12.44",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Önermelerin geçerlilik ve eşdeğerliğini denetler"
+        },
+        {
+          "code": "MAN.12.45",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Çıkarımların geçerliliğini denetler"
+        },
+        {
+          "code": "MAN.12.46",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Çözümleyici çizelgenin (ağaç yönteminin) temel kurallarını uygular"
+        },
+        {
+          "code": "MAN.12.47",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Önermeleri çözümleyici çizelgede denetler"
+        },
+        {
+          "code": "MAN.12.48",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Çıkarımları çözümleyici çizelgede denetler"
+        },
+        {
+          "code": "MAN.12.49",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Önermeler mantığı ile niceleme mantığının farkını analiz eder"
+        },
+        {
+          "code": "MAN.12.50",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Niceleme mantığında, önermeleri ve çıkarımları sembolleştirir"
+        },
+        {
+          "code": "MAN.12.51",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Niceleme mantığının temel kavramlarını açıklar"
+        },
+        {
+          "code": "MAN.12.52",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Niceleme mantığında temel kurallarını uygular"
+        },
+        {
+          "code": "MAN.12.53",
+          "objectiveEvidenceId": "tr-meb-mantik-program-2009:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "İki değerli mantık dışında çok değerli mantık sistemleri olduğunu fark eder"
+        }
+      ],
+      "pageCount": 76,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-mantik-program-2009",
+      "sourceSha256": "b501ea0ad28f338b0adf7cbb6b6f0c8dfb66741f8c009886574bd83b7e0fbf05",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/2019930144322531-Mant%C4%B1k%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+      "subject": "Mantık"
+    },
+    {
+      "objectives": [
+        {
+          "code": "PSK.12.1",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Psikolojinin konusunu kavrar"
+        },
+        {
+          "code": "PSK.12.2",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Psikolojinin bir bilim dalı olma sürecini kavrar"
+        },
+        {
+          "code": "PSK.12.3",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-13",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Psikolojinin bir bilim olarak ölçütlerini ve amaçlarını kavrar"
+        },
+        {
+          "code": "PSK.12.4",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Psikoloji araştırmalarında uygulanan yöntem ve teknikleri tanır"
+        },
+        {
+          "code": "PSK.12.5",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Psikolojinin, etik kurallara uyması gerektiğini kavrar"
+        },
+        {
+          "code": "PSK.12.6",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Psikolojinin alt dallarını bilir"
+        },
+        {
+          "code": "PSK.12.7",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Psikolojinin iş alanlarını bilir"
+        },
+        {
+          "code": "PSK.12.8",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-14",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Psikoloji ile diğer bilim dalları arasında ilişki kurar"
+        },
+        {
+          "code": "PSK.12.9",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Davranışın oluşum sürecini fark eder"
+        },
+        {
+          "code": "PSK.12.10",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-15",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Psikolojik süreçlerle biyolojik yapı ve süreçler arasında ilişki kurar"
+        },
+        {
+          "code": "PSK.12.11",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-16",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Kalıtım ve çevrenin, psikolojik süreçler ve davranışlar üzerindeki etkilerini tartışır"
+        },
+        {
+          "code": "PSK.12.12",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-17",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Gelişimin yaşam boyu d evam ettiğini kavrar"
+        },
+        {
+          "code": "PSK.12.13",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-17",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Gelişim dönemlerinin temel özelliklerini kavrar"
+        },
+        {
+          "code": "PSK.12.14",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-18",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Ergenlik döneminde ortaya çıkan hızlı değişimin, gelişme sürecinin bir parçası olduğunu fark eder"
+        },
+        {
+          "code": "PSK.12.15",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-18",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Ergenlik dönemi temel özelliklerinin farkına varır"
+        },
+        {
+          "code": "PSK.12.16",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-18",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Ergenlik dönemini ve bu dönemi etkileyen etkenleri irdeler"
+        },
+        {
+          "code": "PSK.12.17",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-18",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Duyumun özellikleri ve temel duyum bilgileri ile bilginin başlangıcı arasındaki ilişkiyi görür"
+        },
+        {
+          "code": "PSK.12.18",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-19",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Uyarılmanın bireyin davranışı üzerindeki etkilerini örneklendirir"
+        },
+        {
+          "code": "PSK.12.19",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-19",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Duyusal süreçlerde alışma ve duyarlılaşmanın etkilerini anlar"
+        },
+        {
+          "code": "PSK.12.20",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-19",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Algılamanın uyarıcıları anlamlandırma süreci olduğunu kavrar"
+        },
+        {
+          "code": "PSK.12.21",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-20",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Algıyı etkileyen etkenleri açıklar"
+        },
+        {
+          "code": "PSK.12.22",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-20",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Duyum ve algı arasındaki farkı kavrar"
+        },
+        {
+          "code": "PSK.12.23",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-20",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Güdülenmeyi ortaya çıkaran ve etkileyen etkenleri analiz eder"
+        },
+        {
+          "code": "PSK.12.24",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-20",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Güdülenmiş davranışı güdülenmemiş davranıştan ayırt eder"
+        },
+        {
+          "code": "PSK.12.25",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-20",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Kendi potansiyelini gerçekçi olarak değerlendirmenin önemini kavrar"
+        },
+        {
+          "code": "PSK.12.26",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Duyguyu tanımlar; duygu türlerini ayırt eder"
+        },
+        {
+          "code": "PSK.12.27",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Duyguların davranışlarımıza etkisini fark eder"
+        },
+        {
+          "code": "PSK.12.28",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Bilinç ve bilinçaltı kavramlarını ayırt eder"
+        },
+        {
+          "code": "PSK.12.29",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Dikkati tanımlar ve dikkat türlerini ayırt eder"
+        },
+        {
+          "code": "PSK.12.30",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Bilinçlilik türlerini öğrenir"
+        },
+        {
+          "code": "PSK.12.31",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Sosyal psikoloji ile sosyoloji arasındaki farkı ayırt eder"
+        },
+        {
+          "code": "PSK.12.32",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Sosyal biliş ve sosyal etki türlerini bilir"
+        },
+        {
+          "code": "PSK.12.33",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Davranışı etkileyen sosyal etkenleri analiz eder"
+        },
+        {
+          "code": "PSK.12.34",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Öğrenmeyi örneklendirerek açıklar"
+        },
+        {
+          "code": "PSK.12.35",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Öğrenme türlerini kendi öğrenme yaşantısıyla ilişkilendirir"
+        },
+        {
+          "code": "PSK.12.36",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Öğrenmeyi etkileyen etkenleri irdeler"
+        },
+        {
+          "code": "PSK.12.37",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Öğrenme stratejilerini bilir ve bunlardan yararlanır"
+        },
+        {
+          "code": "PSK.12.38",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Hayat boyu öğrenmenin önemini kavrar"
+        },
+        {
+          "code": "PSK.12.39",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Bellek türlerini açıklar"
+        },
+        {
+          "code": "PSK.12.40",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-25",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Öğrenme (kazanım), bellek (depolama) ve hatırlama (geri çağırma) arasındaki ilişkileri kavrar"
+        },
+        {
+          "code": "PSK.12.41",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-25",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Düşünmenin yapı taşlarını örneklerle açıklar"
+        },
+        {
+          "code": "PSK.12.42",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Dilin düşünmedeki rolünü kavrar"
+        },
+        {
+          "code": "PSK.12.43",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Doğru karar vermede irdelemenin önemini tartışır"
+        },
+        {
+          "code": "PSK.12.44",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Zekâ kavramını değerlendirir"
+        },
+        {
+          "code": "PSK.12.45",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Zekâ türlerini ayırt eder"
+        },
+        {
+          "code": "PSK.12.46",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Bireyin yaşamında zekâ ve yaratıcılığın etkisini analiz eder"
+        },
+        {
+          "code": "PSK.12.47",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-28",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Kişilik, kişilik gelişimi ve onu şekillendiren etkenleri tartışır"
+        },
+        {
+          "code": "PSK.12.48",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-28",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Kişilik konusundaki kuramları tanır"
+        },
+        {
+          "code": "PSK.12.49",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-28",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Bireysel farklılıkları tanır ve bu farklılıklara saygı duyar"
+        },
+        {
+          "code": "PSK.12.50",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-28",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Kişiliğin ölçülebilir bir nitelik olduğunu fark eder"
+        },
+        {
+          "code": "PSK.12.51",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Stresin nedenlerini örneklendirir"
+        },
+        {
+          "code": "PSK.12.52",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Stresin günlük yaşama etkilerini tespit eder"
+        },
+        {
+          "code": "PSK.12.53",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Günlük yaşamda kullanılan stresle başa çıkma davranışları ile savunma mekanizmalarını öğrenir"
+        },
+        {
+          "code": "PSK.12.54",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Ruh sağlığı kavramını bilir"
+        },
+        {
+          "code": "PSK.12.55",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Ruh sağlığının önemini ve ölçütlerini kavrar"
+        },
+        {
+          "code": "PSK.12.56",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Ruh sağlığını korumada denge, empati ve hobilere sahip olmanın önemini kavrar"
+        },
+        {
+          "code": "PSK.12.57",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Ruh sağlığı açısından normal ve normal dışı kavramlarını ayırt eder"
+        },
+        {
+          "code": "PSK.12.58",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Normal dışı davranış türlerini özellikleriyle bilir"
+        },
+        {
+          "code": "PSK.12.59",
+          "objectiveEvidenceId": "tr-meb-psikoloji-program-2011:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+          "title": "Psikolojik destek hakkında bilgi sahibi olur"
+        }
+      ],
+      "pageCount": 61,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-psikoloji-program-2011",
+      "sourceSha256": "048e3adb0c09294166cbffbeceed56bccf02228581f03a219ca16326a143c915",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/201993014469656-Psikoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1nda%20De%C4%9Fi%C5%9Fiklik%20Yap%C4%B1lams%C4%B114.02.11.pdf",
+      "subject": "Psikoloji"
+    },
+    {
+      "objectives": [
+        {
+          "code": "SOS.12.1",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-20",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sosyoloji hakkındaki bilgilerini sorgular"
+        },
+        {
+          "code": "SOS.12.2",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-20",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumu oluşturan ögelerin etkileşim içinde olduğunu fark eder"
+        },
+        {
+          "code": "SOS.12.3",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-20",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sosyolojinin bağımsız bir bilim haline gelişini kavrar"
+        },
+        {
+          "code": "SOS.12.4",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-20",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sosyolojik araştırmalarda kullanılan yöntemleri tanır"
+        },
+        {
+          "code": "SOS.12.5",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Türk sosyologlarının sosyolojiye katkılarını fark eder"
+        },
+        {
+          "code": "SOS.12.6",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sosyalleşme kavramını örneklerle açıklar"
+        },
+        {
+          "code": "SOS.12.7",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-21",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sosyalleşme sürecini etkileyen unsurları açıklar"
+        },
+        {
+          "code": "SOS.12.8",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sosyalleşmenin hayat boyu devam eden bir süreç olduğunu fark eder"
+        },
+        {
+          "code": "SOS.12.9",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-22",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sosyalleşmenin toplumsal ilişkiler üzerindeki etkilerini değerlendirir"
+        },
+        {
+          "code": "SOS.12.10",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal konum, statü ve rol kavramları arasında ilişki kurar"
+        },
+        {
+          "code": "SOS.12.11",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sosyal statü ile sosyal saygınlığı ayırt eder"
+        },
+        {
+          "code": "SOS.12.12",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal hayatın düzenlenmesinde değerlerin ve normların önemini ifade eder"
+        },
+        {
+          "code": "SOS.12.13",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal kontrolün işlevlerini ifade eder"
+        },
+        {
+          "code": "SOS.12.14",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-23",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Sosyal sapmanın nedenlerini araştırır"
+        },
+        {
+          "code": "SOS.12.15",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-24",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Statü ve rollerinden doğan hak ve görevlerin toplumsal yaşamdaki önemini bilir"
+        },
+        {
+          "code": "SOS.12.16",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-25",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal yapıyı oluşturan ögeleri analiz eder"
+        },
+        {
+          "code": "SOS.12.17",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-25",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal etkileşim tiplerini ayırt eder"
+        },
+        {
+          "code": "SOS.12.18",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal tabaka ve tabakalaşmanın yapısını kavrar"
+        },
+        {
+          "code": "SOS.12.19",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Türk toplumundaki tabakalaşmanın diğer toplumlardan farkını kavrar"
+        },
+        {
+          "code": "SOS.12.20",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-26",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal hareketliliğin çeşitlerini ve nedenlerini örneklerle açıklar"
+        },
+        {
+          "code": "SOS.12.21",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal değişme olgusunu kavrar"
+        },
+        {
+          "code": "SOS.12.22",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal değişmeyi etkileyen faktörleri değerlendirir"
+        },
+        {
+          "code": "SOS.12.23",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal değişmeyi etkileyen faktörlerin zamanla değişebileceğini fark eder"
+        },
+        {
+          "code": "SOS.12.24",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-27",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Bilim, teknoloji ve kitle iletişim araçlarının toplumsal değişmeye etkisini değerlendirir"
+        },
+        {
+          "code": "SOS.12.25",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-28",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Modernleşmenin toplumsal değişime etkilerini değerlendirir"
+        },
+        {
+          "code": "SOS.12.26",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-28",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Küreselleşmenin toplumsal değişime etkilerini yorumlar"
+        },
+        {
+          "code": "SOS.12.27",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal gelişmenin ögelerini tanır"
+        },
+        {
+          "code": "SOS.12.28",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal bütünleşmenin önemini ifade eder"
+        },
+        {
+          "code": "SOS.12.29",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal çözülmeye neden olan etmenleri analiz eder"
+        },
+        {
+          "code": "SOS.12.30",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-29",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal çözülmeyi önlemeye yönelik çözüm önerileri geliştirir"
+        },
+        {
+          "code": "SOS.12.31",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kültürün farklı anlamlarını ayırt eder"
+        },
+        {
+          "code": "SOS.12.32",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kültürün ögelerini analiz eder"
+        },
+        {
+          "code": "SOS.12.33",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kültürün işlevlerinin toplumdaki yerini ve önemini analiz eder"
+        },
+        {
+          "code": "SOS.12.34",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-30",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kültürün toplumsal bütünleşmeye katkısını değerlendirir"
+        },
+        {
+          "code": "SOS.12.35",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kültüre ilişkin kavramları birbirleriyle olan ilişkileri çerçevesinde değerlendirir"
+        },
+        {
+          "code": "SOS.12.36",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kültürlenme ve Kültürleşme sürecinde kendi toplumsal kültürünün önemini fark eder"
+        },
+        {
+          "code": "SOS.12.37",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumların kültürel tutumlarını, farklı kültürlere bakış açılarını sorgular"
+        },
+        {
+          "code": "SOS.12.38",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-31",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kültürler arası etkileşimde kendi kültürünün rolünü değerlendirir"
+        },
+        {
+          "code": "SOS.12.39",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kurum kavramının anlamını açıklar"
+        },
+        {
+          "code": "SOS.12.40",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal kurumların işlevlerini analiz eder"
+        },
+        {
+          "code": "SOS.12.41",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-32",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal yaşam ve sosyalleşme açısından ailenin önemini yorumlar"
+        },
+        {
+          "code": "SOS.12.42",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Evlilik ve boşanmanın birey ve toplum üzerindeki etkilerini analiz eder"
+        },
+        {
+          "code": "SOS.12.43",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Aile kurumunun sürekliliği açısından evliliklerde aranan koşulları değerlendirir"
+        },
+        {
+          "code": "SOS.12.44",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-33",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Farklı toplumlardaki aile yapısı ile Türk aile yapısını karşılaştırır"
+        },
+        {
+          "code": "SOS.12.45",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Kadının aile ve toplum içindeki konumunu değerlendirir"
+        },
+        {
+          "code": "SOS.12.46",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-34",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Atatürk’ün kadın haklarına verdiği öneme örnekler verir"
+        },
+        {
+          "code": "SOS.12.47",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Eğitimin toplumsal yaşamdaki önemini yorumlar"
+        },
+        {
+          "code": "SOS.12.48",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Eğitimin sosyalleşme sürecindeki önemi kavrar"
+        },
+        {
+          "code": "SOS.12.49",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-35",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Atatürk’ün eğitim konusundaki fikirlerini ifade eder"
+        },
+        {
+          "code": "SOS.12.50",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Dinin toplumsal yaşamdaki önemini kavrar"
+        },
+        {
+          "code": "SOS.12.51",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Din ve laiklik kavramlarının ilişkisini yorumlar"
+        },
+        {
+          "code": "SOS.12.52",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-36",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Atatürkçü düşünce sisteminde laiklik anlayışını ortaya koyar"
+        },
+        {
+          "code": "SOS.12.53",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Ekonominin toplumsal yaşamdaki önemini değerlendirir"
+        },
+        {
+          "code": "SOS.12.54",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-37",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Toplumsal yaşamda ekonominin temel ögelerini fark eder"
+        },
+        {
+          "code": "SOS.12.55",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Atatürk’ün ekonomik sistemlerle ilgili görüşlerine örnekler verir"
+        },
+        {
+          "code": "SOS.12.56",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-38",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Siyaset kurumunu tanır"
+        },
+        {
+          "code": "SOS.12.57",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Siyaset Kurumu ile ilgili temel kavramları ifade eder"
+        },
+        {
+          "code": "SOS.12.58",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Siyasal yönetim şekillerini tanır ve karşılaştırır"
+        },
+        {
+          "code": "SOS.12.59",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Bir yönetim biçimi olarak demokrasiyi toplumsal yaşam açısından değerlendirir"
+        },
+        {
+          "code": "SOS.12.60",
+          "objectiveEvidenceId": "tr-meb-sosyoloji-program-2009:pdf-page-39",
+          "objectiveSource": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+          "title": "Atatürkçü düşünce sisteminde vatandaşlık, hak ve sorumluluk kavramlarını ilişkilendirerek örnekler verir"
+        }
+      ],
+      "pageCount": 84,
+      "programmeFamily": "pre-TYMM-current",
+      "programmeYear": 2018,
+      "sourceId": "tr-meb-sosyoloji-program-2009",
+      "sourceSha256": "4582371f18106223fdf6937f87021a2e20793afa86dfbfba6d253caec6539596",
+      "sourceUrl": "https://mufredat.meb.gov.tr/Dosyalar/2019930144835783-Sosyoloji%20Dersi%20%C3%96%C4%9Fretim%20Program%C4%B1.pdf",
+      "subject": "Sosyoloji"
+    }
+  ]
+}

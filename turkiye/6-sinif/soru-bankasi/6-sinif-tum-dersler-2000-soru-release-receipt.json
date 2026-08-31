@@ -1,0 +1,41 @@
+{
+  "builder": "alika-note-grounded-unique-bank-builder/2.0.0",
+  "candidateSha256": "92d0ff1c257c545e613325b913beaa25e65f8dc12fdb07f7521d55b7c9d76ab3",
+  "decision": "PASS",
+  "grade": 6,
+  "humanReviewed": false,
+  "metrics": {
+    "answerBalance": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "difficulty": {
+      "1": 400,
+      "2": 500,
+      "3": 600,
+      "4": 400,
+      "5": 100
+    },
+    "exactSourceIdOverlap": 0,
+    "exactSourceTextOverlap": 0,
+    "grade": 6,
+    "mix": {
+      "analysis": 500,
+      "application": 700,
+      "comprehension": 500,
+      "error-analysis": 300
+    },
+    "nearCopyAbove088": 0,
+    "notes": 168,
+    "objectives": 168,
+    "questions": 2000,
+    "visualQuestions": 261
+  },
+  "reviewManifestSha256": "62b2e49262f7089ae2172ffd5dc0015c684ed1b5b8ac313becfa591f1678433b",
+  "reviewMethod": "alika-hash-bound-independent-ai-review/2.0.0",
+  "reviewedPackageSha256": "169aa7b584f9b9182eccb8afa2a402d1da4662d300a34aaa51f47f153e8f8376",
+  "schemaVersion": "alika-question-bank-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI"
+}

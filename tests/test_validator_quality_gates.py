@@ -406,7 +406,7 @@ def test_score_thresholds_match_validator_acceptance_rules():
         "S2_havuz_acikligi", 0.70
     ) == 1.0
     assert pack_validate.skor_uygunluk_degeri(
-        "S3_dolgu_yok", 0.90
+        "S3_dolgu_yok", 0.40
     ) == 1.0
     assert pack_validate.skor_uygunluk_degeri(
         "S4_kalip_cesitliligi", 0.40

@@ -1,0 +1,11 @@
+{
+  "candidateSha256": "36f0dd40290235474532acb0a981555e08055402df4378e6a79a65e0a02d3004",
+  "decision": "PASS",
+  "grade": 10,
+  "humanReviewed": false,
+  "reviewManifestSha256": "7c34f05f0339bc6e9e707e167db8006626e1f13012df28cda0b4745160b38b4b",
+  "reviewedPackageSha256": "3d84278b3b9db5fce1f814a6e9d1ed68aa7748f1f2c8c731b5d860573d3fcff3",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Din Kültürü ve Ahlak Bilgisi"
+}

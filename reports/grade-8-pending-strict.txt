@@ -1,0 +1,384 @@
+RAPOR [paket] kural 50: soru ailesi: 2000, en kalabalık aile 1 soru
+RAPOR [paket] kural 53: görselli soru: 500/2000 (%25.0)
+RAPOR [paket] kural 26: konu 'Adventures': 42 soru
+RAPOR [paket] kural 26: konu 'Atatürk dönemi dış politika': 18 soru
+RAPOR [paket] kural 26: konu "Atatürk'ün ölümü ve sonrası": 30 soru
+RAPOR [paket] kural 26: konu 'Atatürkçülük ve çağdaşlaşan Türkiye': 54 soru
+RAPOR [paket] kural 26: konu 'Basit makineler': 12 soru
+RAPOR [paket] kural 26: konu 'Basınç': 18 soru
+RAPOR [paket] kural 26: konu 'Bir kahraman doğuyor': 28 soru
+RAPOR [paket] kural 26: konu 'Cebirsel ifadeler ve özdeşlikler': 24 soru
+RAPOR [paket] kural 26: konu 'Chores': 48 soru
+RAPOR [paket] kural 26: konu 'DNA, kalıtım ve biyoteknoloji': 78 soru
+RAPOR [paket] kural 26: konu 'Demokratikleşme çabaları': 18 soru
+RAPOR [paket] kural 26: konu 'Din ve hayat': 31 soru
+RAPOR [paket] kural 26: konu 'Dinleme ve izleme': 84 soru
+RAPOR [paket] kural 26: konu 'Doğrusal denklemler': 36 soru
+RAPOR [paket] kural 26: konu 'Dönüşüm geometrisi': 18 soru
+RAPOR [paket] kural 26: konu 'Elektrik yükleri ve elektrik enerjisi': 61 soru
+RAPOR [paket] kural 26: konu 'Enerji dönüşümleri ve çevre bilimi': 72 soru
+RAPOR [paket] kural 26: konu 'Eşitsizlikler': 18 soru
+RAPOR [paket] kural 26: konu 'Eşlik ve benzerlik': 12 soru
+RAPOR [paket] kural 26: konu 'Friendship': 36 soru
+RAPOR [paket] kural 26: konu 'Geometrik cisimler': 36 soru
+RAPOR [paket] kural 26: konu "Hz. Muhammed'in örnekliği": 63 soru
+RAPOR [paket] kural 26: konu 'In The Kitchen': 36 soru
+RAPOR [paket] kural 26: konu 'Kader inancı': 48 soru
+RAPOR [paket] kural 26: konu 'Kareköklü ifadeler ve gerçek sayılar': 48 soru
+RAPOR [paket] kural 26: konu 'Konuşma': 42 soru
+RAPOR [paket] kural 26: konu "Kur'an-ı Kerim ve özellikleri": 28 soru
+RAPOR [paket] kural 26: konu 'Madde ve endüstri': 102 soru
+RAPOR [paket] kural 26: konu 'Mevsimler, iklim ve hava olayları': 18 soru
+RAPOR [paket] kural 26: konu 'Millî Mücadele': 49 soru
+RAPOR [paket] kural 26: konu 'Millî Uyanış ve bağımsızlık yolu': 56 soru
+RAPOR [paket] kural 26: konu 'Natural Forces': 37 soru
+RAPOR [paket] kural 26: konu 'Okuma': 210 soru
+RAPOR [paket] kural 26: konu 'Olasılık': 26 soru
+RAPOR [paket] kural 26: konu 'On The Phone': 36 soru
+RAPOR [paket] kural 26: konu 'Science': 48 soru
+RAPOR [paket] kural 26: konu 'Teen Life': 36 soru
+RAPOR [paket] kural 26: konu 'The Internet': 48 soru
+RAPOR [paket] kural 26: konu 'Tourism': 48 soru
+RAPOR [paket] kural 26: konu 'Veri analizi': 12 soru
+RAPOR [paket] kural 26: konu 'Yazma ve dil bilgisi': 117 soru
+RAPOR [paket] kural 26: konu 'Zekât ve sadaka': 40 soru
+RAPOR [paket] kural 26: konu 'Çarpanlar, EBOB ve EKOK': 18 soru
+RAPOR [paket] kural 26: konu 'Üslü ifadeler ve bilimsel gösterim': 30 soru
+RAPOR [paket] kural 26: konu 'Üçgenler': 30 soru
+RAPOR [paket] kural 26: kazanım '8.1.1': 8 soru
+RAPOR [paket] kural 26: kazanım '8.1.2': 8 soru
+RAPOR [paket] kural 26: kazanım '8.1.3': 8 soru
+RAPOR [paket] kural 26: kazanım '8.1.4': 8 soru
+RAPOR [paket] kural 26: kazanım '8.1.5': 8 soru
+RAPOR [paket] kural 26: kazanım '8.1.6': 8 soru
+RAPOR [paket] kural 26: kazanım '8.2.1': 8 soru
+RAPOR [paket] kural 26: kazanım '8.2.2': 8 soru
+RAPOR [paket] kural 26: kazanım '8.2.3': 8 soru
+RAPOR [paket] kural 26: kazanım '8.2.4': 8 soru
+RAPOR [paket] kural 26: kazanım '8.2.5': 8 soru
+RAPOR [paket] kural 26: kazanım '8.3.1': 8 soru
+RAPOR [paket] kural 26: kazanım '8.3.2': 8 soru
+RAPOR [paket] kural 26: kazanım '8.3.3': 8 soru
+RAPOR [paket] kural 26: kazanım '8.3.4': 7 soru
+RAPOR [paket] kural 26: kazanım '8.4.1': 7 soru
+RAPOR [paket] kural 26: kazanım '8.4.2': 7 soru
+RAPOR [paket] kural 26: kazanım '8.4.3': 7 soru
+RAPOR [paket] kural 26: kazanım '8.4.4': 7 soru
+RAPOR [paket] kural 26: kazanım '8.4.5': 7 soru
+RAPOR [paket] kural 26: kazanım '8.4.6': 7 soru
+RAPOR [paket] kural 26: kazanım '8.4.7': 7 soru
+RAPOR [paket] kural 26: kazanım '8.4.8': 7 soru
+RAPOR [paket] kural 26: kazanım '8.4.9': 7 soru
+RAPOR [paket] kural 26: kazanım '8.5.1': 7 soru
+RAPOR [paket] kural 26: kazanım '8.5.2': 7 soru
+RAPOR [paket] kural 26: kazanım '8.5.3': 7 soru
+RAPOR [paket] kural 26: kazanım '8.5.4': 7 soru
+RAPOR [paket] kural 26: kazanım 'E8.1.L1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.1.R1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.1.R2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.1.SI1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.1.SP1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.1.W1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.10.L1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.10.R1': 5 soru
+RAPOR [paket] kural 26: kazanım 'E8.10.SI1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.10.SI2': 5 soru
+RAPOR [paket] kural 26: kazanım 'E8.10.SP1': 5 soru
+RAPOR [paket] kural 26: kazanım 'E8.10.SP2': 5 soru
+RAPOR [paket] kural 26: kazanım 'E8.10.W1': 5 soru
+RAPOR [paket] kural 26: kazanım 'E8.2.L1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.2.R1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.2.SI1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.2.SP1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.2.SP2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.2.W1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.3.L1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.3.R1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.3.R2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.3.SI1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.3.SP1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.3.W1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.4.L1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.4.L2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.4.R1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.4.SI1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.4.SP1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.4.W1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.5.L1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.5.L2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.5.R1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.5.R2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.5.SI1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.5.SI2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.5.SP1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.5.W1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.6.L1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.6.L2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.6.R1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.6.SI1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.6.SI2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.6.SP1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.6.W1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.7.L1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.7.R1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.7.SI1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.7.SI2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.7.SP1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.7.SP2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.7.SP3': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.7.W1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.8.L1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.8.L2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.8.L3': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.8.R1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.8.SI1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.8.SI2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.8.SP1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.8.W1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.9.L1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.9.R1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.9.R2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.9.SI1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.9.SI2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.9.SP1': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.9.SP2': 6 soru
+RAPOR [paket] kural 26: kazanım 'E8.9.W1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.1.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.1.2.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.1.2.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.1.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.1.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.2.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.2.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.2.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.3.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.3.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.3.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.4.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.5.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.5.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.2.5.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.3.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.3.1.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.3.1.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.1.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.2.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.3.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.4.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.4.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.4.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.4.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.4.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.4.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.4.7': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.5.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.5.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.5.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.5.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.6.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.4.6.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.5.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.5.1.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.2.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.2.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.2.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.3.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.3.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.3.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.4.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.4.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.4.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.4.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.6.4.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.1.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.1.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.2.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.2.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.3.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.3.2': 5 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.3.3': 5 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.3.4': 5 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.3.5': 5 soru
+RAPOR [paket] kural 26: kazanım 'F.8.7.3.6': 5 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.1.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.1.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.2.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.2.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.2.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.2.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.2.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.3.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.3.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.3.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.3.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.3.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.3.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.3.7': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.1.3.8': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.1.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.1.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.1.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.2.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.2.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.2.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.2.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.2.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.2.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.3.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.3.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.2.3.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.1.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.1.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.1.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.1.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.2.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.2.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.2.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.3.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.3.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.4.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.4.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.4.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.4.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.4.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.3.4.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.4.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.4.1.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.5.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'M.8.5.1.2': 5 soru
+RAPOR [paket] kural 26: kazanım 'M.8.5.1.3': 5 soru
+RAPOR [paket] kural 26: kazanım 'M.8.5.1.4': 5 soru
+RAPOR [paket] kural 26: kazanım 'M.8.5.1.5': 5 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.10': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.11': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.12': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.13': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.14': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.7': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.8': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.1.9': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.2.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.2.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.2.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.2.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.2.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.2.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.2.7': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.10': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.11': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.12': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.13': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.14': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.15': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.16': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.17': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.18': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.19': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.20': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.21': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.22': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.23': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.24': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.25': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.26': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.27': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.28': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.29': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.30': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.31': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.32': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.33': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.34': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.35': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.7': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.8': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.3.9': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.10': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.11': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.12': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.13': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.14': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.15': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.16': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.17': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.18': 5 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.19': 5 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.20': 5 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.7': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.8': 6 soru
+RAPOR [paket] kural 26: kazanım 'T.8.4.9': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.1.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.1.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.1.3': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.1.4': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.2.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.2.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.2.3': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.2.4': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.2.5': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.2.6': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.2.7': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.2.8': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.3.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.3.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.3.3': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.3.4': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.3.5': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.3.6': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.3.7': 7 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.4.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.4.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.4.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.4.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.4.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.4.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.4.7': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.4.8': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.4.9': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.5.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.5.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.5.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.6.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.6.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.6.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.7.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.7.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.7.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.7.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'İTA.8.7.5': 6 soru
+RAPOR [paket] kural 26: objective boş: 0 soru
+RAPOR [paket] kural 26: kullanılan farklı kind: 1 (table)
+RAPOR [paket] kural 39: aynı seçenek kümesi: 177 küme / 413 soru; en yüksek tekrar=3
+RAPOR [paket] kural 39: 177 seçenek birden çok soru ailesinde dolaşıyor ve hiçbirinde doğru değil: 'İngilizce: for this outcome, a brochure may invent unsupported location facts. this conflicts with the evidence and ignores that after correcting one misconception, the teacher asks learners to preserve the same criterion in a new context.'×8, 'İngilizce: for this outcome, a brochure may invent unsupported location facts. this conflicts with the evidence and ignores that the group tests two counterexamples and records the exact condition under which the statement remains valid.'×8, 'İngilizce: for this outcome, a brochure may invent unsupported location facts. this conflicts with the evidence and ignores that the learner checks time reference, word meaning and discourse purpose before confirming the answer.'×8, 'İngilizce: for this outcome, a brochure may invent unsupported location facts. this conflicts with the evidence and ignores that the learner classifies the language evidence before selecting only the directly supported conclusion.'×8, 'İngilizce: for this outcome, a brochure may invent unsupported location facts. this conflicts with the evidence and ignores that the review separates purpose, language form and communicative result in three explicit steps.'×8, 'İngilizce: for this outcome, a brochure may invent unsupported location facts. this conflicts with the evidence and ignores that the team distinguishes source detail, observation and inference before making a language decision.'×8, 'İngilizce: for this outcome, a responsibility is always optional entertainment. this conflicts with the evidence and ignores that after correcting one misconception, the teacher asks learners to preserve the same criterion in a new context.'×8, 'İngilizce: for this outcome, a responsibility is always optional entertainment. this conflicts with the evidence and ignores that the group tests two counterexamples and records the exact condition under which the statement remains valid.'×8
+RAPOR [paket] kural 36: kendi şıkkına sözcük bağı olan gerekçe: 6000/6000
+RAPOR [paket] kural 37: distractorWhy benzersiz iskelet: 523/6000
+RAPOR [paket] kural 40: benzersiz soru kalıbı: 1976/2000
+RAPOR [paket] kural 41: kazanım dışından ödünç çeldirici: 0/6000
+RAPOR [paket] kural 45: kazanım dengesi kapsam modunda; 326 kazanımın not ve soru beyanı doğrulandı
+RAPOR [paket] kural 45: kazanım başına soru: en az 5, en çok 8, kazanım sayısı 326
+TOPLAM: 0 HATA, 0 UYARI

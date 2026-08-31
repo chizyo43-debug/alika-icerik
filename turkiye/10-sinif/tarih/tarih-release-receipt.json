@@ -1,0 +1,11 @@
+{
+  "candidateSha256": "36f98d88239243851295fa556981ce25b8671be1038374679d0b345ff0146463",
+  "decision": "PASS",
+  "grade": 10,
+  "humanReviewed": false,
+  "reviewManifestSha256": "260387ef3361941a6c482dd56e030608a898e6ade69b436a665e7830b65a03c8",
+  "reviewedPackageSha256": "e103d31896fb8dabe634248a8670425355218c058e89254512e9462b3a0ebc08",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Tarih"
+}

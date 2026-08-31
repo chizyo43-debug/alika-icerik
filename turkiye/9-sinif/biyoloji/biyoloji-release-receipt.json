@@ -1,41 +1,11 @@
 {
-  "canonical": {
-    "answerBalance": [
-      135,
-      122,
-      122,
-      121
-    ],
-    "families": 125,
-    "notes": 28,
-    "pack": 1,
-    "path": "turkiye/9-sinif/biyoloji/biyoloji-tum.jsonl",
-    "questions": 500,
-    "records": 529,
-    "sha256": "21be99b751553b3446d5ebad8c84a6286160e3ebfe135233b88556308ac17091"
-  },
-  "gates": {
-    "aiVerifiedRecords": "PASS 529/529",
-    "duplicateIds": 0,
-    "duplicateQuestionTexts": 0,
-    "noteLinks": "PASS 500/500",
-    "questionRange": "PASS 1/500-500/500",
-    "strictErrors": 0,
-    "strictWarnings": 0
-  },
+  "candidateSha256": "27907d53d4cfd3400238cfdf65e8979c51fb6dc22e647e54aae9de16fd126897",
+  "decision": "PASS",
   "grade": 9,
-  "publishReady": true,
-  "review": {
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
-    "humanReviewed": false,
-    "mode": "ai-only",
-    "model": "gpt-5.6-sol"
-  },
-  "schema": "alika-local-final-subject-publish-receipt/1.0.0",
-  "sourceCandidate": {
-    "path": "chatgpt/9-sinif/biyoloji/paket/final-bank-candidate/tr_g09_biyoloji_subject500_ai_verified_v1_c810154b.jsonl",
-    "sha256": "c810154b6a3051c594dbbd94d7cb52b44ce6f1a62a37fc71acda123dcf06ef6c"
-  },
-  "status": "PASS",
+  "humanReviewed": false,
+  "reviewManifestSha256": "751b8ec5207d4089fa1894e9399722ee8768da1e95a49ccb58246eb9fd56b5b3",
+  "reviewedPackageSha256": "12c3b1c1877f74579489ae2bc502bf3cac731b36956d436dbee6e8248e5e6c94",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
   "subject": "Biyoloji"
 }

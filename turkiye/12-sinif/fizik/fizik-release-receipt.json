@@ -1,62 +1,11 @@
 {
-  "schema": "alika-g12-ai-only-release-receipt/1.0.0",
+  "candidateSha256": "41998c4365625228cca1d71210de0fdac0f9b6b53042df6261baa4091ad94897",
   "decision": "PASS",
   "grade": 12,
-  "subject": "Fizik",
-  "model": "gpt-5.6-sol",
-  "mode": "ai-only",
   "humanReviewed": false,
-  "publishReady": true,
-  "publishBlocked": false,
-  "curriculum": "MEB-TYMM-2026",
-  "package": {
-    "path": "turkiye/12-sinif/fizik/fizik-tum.jsonl",
-    "sha256": "4ad79df163263d0e75b5fec0903d1ed44a44f0849a637862f599dbdf648d17cb",
-    "bytes": 3288719,
-    "records": 528
-  },
-  "counts": {
-    "pack": 1,
-    "note": 27,
-    "question": 500
-  },
-  "gates": {
-    "jsonlParse": "PASS 528/528",
-    "duplicateId": 0,
-    "noteQuestionLinks": "PASS 500/500",
-    "questionContract22": "PASS",
-    "strictErrors": 0,
-    "strictWarnings": 0,
-    "qualityScore": 100.0
-  },
-  "quality": {
-    "answerBalance": [
-      125,
-      125,
-      125,
-      125
-    ],
-    "families": 250,
-    "largestFamily": 2,
-    "duplicateQuestionTexts": 0,
-    "duplicateNoteBodies": 0,
-    "minimumNoteEvidenceCharacters": 2031,
-    "errors": 0,
-    "warnings": 0
-  },
-  "sourceEvidence": [
-    {
-      "sourceId": "tr-meb-fiz-g09-g12-program-2026",
-      "downloadUrl": "https://mufredat.meb.gov.tr/Dosyalar/2026518151437471-fizikdöp.pdf",
-      "sha256": "119b158574ebc2a4b0590ca1c00a2dca69f78af76324c0fe272fd44eae3c6feb",
-      "pageCount": 104,
-      "publicationYear": 2026
-    }
-  ],
-  "review": {
-    "methodVersion": "alika-g12-official-program-ai-only-release/1.0.0",
-    "decision": "PASS",
-    "humanReviewed": false,
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review"
-  }
+  "reviewManifestSha256": "836140411a00900d7ed1329e6eda12686053ff012f4e3d77bc3dd246a2e537f4",
+  "reviewedPackageSha256": "48f4eaefdb382f66c3fa28c7ee25e9a6121c579ced06c6c6190fa4934dcd807a",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Fizik"
 }

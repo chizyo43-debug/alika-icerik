@@ -1,0 +1,502 @@
+RAPOR [paket] kural 50: soru ailesi: 2000, en kalabalık aile 1 soru
+RAPOR [paket] kural 53: görselli soru: 500/2000 (%25.0)
+RAPOR [paket] kural 26: konu 'Afetler ve Sürdürülebilir Çevre': 24 soru
+RAPOR [paket] kural 26: konu 'Akıl ve İnanç': 22 soru
+RAPOR [paket] kural 26: konu 'Akım Geçen Düz Telin Manyetik Alanı': 6 soru
+RAPOR [paket] kural 26: konu 'Akım Makarasının Manyetik Alanı': 6 soru
+RAPOR [paket] kural 26: konu 'Alerjik tepkilerin oluşumunu sorgulayabilme': 8 soru
+RAPOR [paket] kural 26: konu 'Alternatif Akım': 7 soru
+RAPOR [paket] kural 26: konu 'Arrhenius ve Brønsted-Lowry Kuramları': 7 soru
+RAPOR [paket] kural 26: konu 'Asidik ve Bazik Ürünleri Bilinçli Seçme': 7 soru
+RAPOR [paket] kural 26: konu 'Asit ve Baz Kuvveti': 7 soru
+RAPOR [paket] kural 26: konu 'Açı Ölçüleri, Birim Çember ve Trigonometrik Referans Fonksiyonlar': 10 soru
+RAPOR [paket] kural 26: konu 'Bağ enerjileri temelinde tepkimelerin entalpi değişimine ilişkin tümevarımsal akıl yürütebilme': 7 soru
+RAPOR [paket] kural 26: konu 'Bağışıklığı sınıflandırabilme': 8 soru
+RAPOR [paket] kural 26: konu 'Başkalarının iki nicel değişkenli verilerden ürettiği sonuç ve yorumları tartışma': 10 soru
+RAPOR [paket] kural 26: konu 'Beşerî Sistemler ve Süreçler': 16 soru
+RAPOR [paket] kural 26: konu 'Bitkilerde yönelme hareketlerini gözlemleyebileceği deney yapabilme': 8 soru
+RAPOR [paket] kural 26: konu 'Bitkilerdeki tepki mekanizmalarını sınıflandırabilme': 8 soru
+RAPOR [paket] kural 26: konu 'Bitkisel hormonların meyve olgunlaşması ve bitki gelişimindeki etkileri hakkında analojik akıl yürütebilme': 8 soru
+RAPOR [paket] kural 26: konu 'Boşaltım Sistemi ve Homeostazi': 7 soru
+RAPOR [paket] kural 26: konu 'Bölgeler, Ülkeler ve Küresel Bağlantılar': 40 soru
+RAPOR [paket] kural 26: konu 'Classroom Life & Learning': 72 soru
+RAPOR [paket] kural 26: konu 'Coğrafyanın Doğası': 9 soru
+RAPOR [paket] kural 26: konu 'Denge Sabiti İfadesi': 7 soru
+RAPOR [paket] kural 26: konu 'Dengeyi Etkileyen Faktörler': 7 soru
+RAPOR [paket] kural 26: konu 'Değişen Dünyada Osmanlı Devleti (1683-1789)': 48 soru
+RAPOR [paket] kural 26: konu 'Din, Felsefe, Bilim ve Sanat': 36 soru
+RAPOR [paket] kural 26: konu 'Dinamik Denge Süreci': 7 soru
+RAPOR [paket] kural 26: konu 'Dinleme/İzleme Çözümleme ve Görüş Yansıtma': 19 soru
+RAPOR [paket] kural 26: konu 'Dolaşım Sistemi ve Homeostazi': 7 soru
+RAPOR [paket] kural 26: konu 'Doğal Sistemler ve Süreçler': 18 soru
+RAPOR [paket] kural 26: konu 'Duyu reseptörlerini ve duyu reseptörlerinin bulunduğu duyu organlarını sınıflandırabilme': 8 soru
+RAPOR [paket] kural 26: konu 'Dönüşüm Sürecinde Osmanlı (1789-1908)': 48 soru
+RAPOR [paket] kural 26: konu 'Dörtgenlerin Açı, Kenar, Köşegen, Simetri ve Alan Özellikleri': 10 soru
+RAPOR [paket] kural 26: konu 'Düzlem Aynalarla Bilimsel Model': 6 soru
+RAPOR [paket] kural 26: konu 'Dışbükey ve Düzgün Çokgenlerin Özellikleri': 10 soru
+RAPOR [paket] kural 26: konu 'E-posta Yazma Sürecini Yönetme ve İçerik': 18 soru
+RAPOR [paket] kural 26: konu 'E-postada Dil, Üslup, Yazım-Noktalama ve Değerlendirme': 18 soru
+RAPOR [paket] kural 26: konu 'Edebiyat ve Felsefe': 22 soru
+RAPOR [paket] kural 26: konu 'Ekonomik Faaliyetler ve Etkileri': 40 soru
+RAPOR [paket] kural 26: konu 'Elektrik Motorlarının Çalışma Prensibi': 6 soru
+RAPOR [paket] kural 26: konu 'Elektriksel Alanın Matematiksel Modeli': 7 soru
+RAPOR [paket] kural 26: konu 'Elektriksel Kuvvet ve Coulomb Yasası': 7 soru
+RAPOR [paket] kural 26: konu 'Elektromıknatısların Kullanım Alanları': 6 soru
+RAPOR [paket] kural 26: konu 'Endokrin Sistem ve Homeostazi': 7 soru
+RAPOR [paket] kural 26: konu 'Evsel Atıklardan Fermantasyonla Yeşil Hidrojen: Hipotez ve Deney Tasarımı': 7 soru
+RAPOR [paket] kural 26: konu 'Family Life & Home': 72 soru
+RAPOR [paket] kural 26: konu 'Faraday Kafesi ve Kullanım Alanları': 6 soru
+RAPOR [paket] kural 26: konu 'Farklı canlıların uyaranlara karşı oluşturduğu tepki mekanizmaları ile ilgili tümevarımsal akıl yürütebilme': 8 soru
+RAPOR [paket] kural 26: konu 'Fiber optik malzemelerin yapısı, çalışma prensibi ve kullanım alanlarına ilişkin bilgi toplayabilme': 6 soru
+RAPOR [paket] kural 26: konu 'Fiziksel ve kimyasal olaylardaki enerji değişimine ilişkin deney yapabilme': 7 soru
+RAPOR [paket] kural 26: konu 'Fonksiyonlarda Toplama Çıkarma Çarpma': 9 soru
+RAPOR [paket] kural 26: konu 'Fonksiyonların Bileşkesi': 9 soru
+RAPOR [paket] kural 26: konu 'Harekete dayalı tepkinin oluşmasında iskelet, kas ve eklemlerin eş güdümlü çalışmasıyla ilgili eleştirel düşünebilme': 8 soru
+RAPOR [paket] kural 26: konu 'Hayatın Anlamı': 22 soru
+RAPOR [paket] kural 26: konu 'Hayvanlardaki sinir sistemi farklılıkları ile ilgili analojik akıl yürütebilme': 8 soru
+RAPOR [paket] kural 26: konu 'Homeostatik Süreçler': 7 soru
+RAPOR [paket] kural 26: konu 'Homeostazi Bozuklukları ve Sağlık Problemleri': 7 soru
+RAPOR [paket] kural 26: konu 'Homeostazi ve Canlılar İçin Önemi': 7 soru
+RAPOR [paket] kural 26: konu 'Hukuk ve Felsefe': 22 soru
+RAPOR [paket] kural 26: konu 'Işık Şiddeti, Işık Akısı ve Aydınlanma': 6 soru
+RAPOR [paket] kural 26: konu 'Işığın saydam ortamlardaki davranışını kullanarak deney yapabilme': 6 soru
+RAPOR [paket] kural 26: konu 'Kader, İrade ve Sorumluluk': 30 soru
+RAPOR [paket] kural 26: konu 'Karagöz ve Geleneksel Türk Tiyatrosunda Okuma/Anlam': 18 soru
+RAPOR [paket] kural 26: konu 'Karagöz, Mektup, Dilekçe ve Metin Çözümleme': 18 soru
+RAPOR [paket] kural 26: konu 'Kimyasal tepkimelerin gerçekleşme şartlarını açıklamak için kanıt kullanabilme': 7 soru
+RAPOR [paket] kural 26: konu 'Kimyasal tepkimelerin hız denklemini bilimsel veriye dayalı tahmin edebilme': 7 soru
+RAPOR [paket] kural 26: konu 'Kimyasal tepkimelerin standart tepkime entalpilerini standart oluşum entalpi verilerini kullanarak tahmin edebilme': 7 soru
+RAPOR [paket] kural 26: konu 'Konuşma Kuralları, Beden Dili, Vurgu-Tonlama ve Değerlendirme': 18 soru
+RAPOR [paket] kural 26: konu 'Kuvvetli Asit-Baz Nötralleşmesi': 7 soru
+RAPOR [paket] kural 26: konu 'Kuvvetli Asit-Baz Titrasyonu': 7 soru
+RAPOR [paket] kural 26: konu 'Kuvvetli ve Zayıf Asit-Bazlarda pH': 7 soru
+RAPOR [paket] kural 26: konu 'Küresel Aynaların Özellikleri': 6 soru
+RAPOR [paket] kural 26: konu 'Küresel aynalarda görüntü oluşumu ile ilgili deney yapabilme': 6 soru
+RAPOR [paket] kural 26: konu 'Life in Nature & Global Problems': 72 soru
+RAPOR [paket] kural 26: konu 'Life in the Neighbourhood, City & Social Life': 72 soru
+RAPOR [paket] kural 26: konu 'Life in the Universe & Future': 72 soru
+RAPOR [paket] kural 26: konu 'Life in the World & Culture': 72 soru
+RAPOR [paket] kural 26: konu 'Limit Hız': 7 soru
+RAPOR [paket] kural 26: konu 'Logaritmik Fonksiyon, Dönüşümler ve İşlem Özellikleri': 9 soru
+RAPOR [paket] kural 26: konu 'Maddelerin enerji kaynağı olma potansiyeline ilişkin hipotezler oluşturabilme': 7 soru
+RAPOR [paket] kural 26: konu 'Manyetik Akı': 7 soru
+RAPOR [paket] kural 26: konu 'Manyetik Alanda Akım Geçen Tele Etki Eden Kuvvet': 6 soru
+RAPOR [paket] kural 26: konu 'Mekânsal Bilgi Teknolojileri': 9 soru
+RAPOR [paket] kural 26: konu 'Merceklerde görüntü oluşumu ile ilgili deney yapabilme': 6 soru
+RAPOR [paket] kural 26: konu 'Merceklerin özelliklerine ilişkin karşılaştırma yapabilme': 6 soru
+RAPOR [paket] kural 26: konu 'Mikroplastik ve Nanoplastik Etkilerini Bilimsel Olarak Sorgulama': 7 soru
+RAPOR [paket] kural 26: konu 'Molar Çözünürlük ve Çözünürlük Çarpımı': 7 soru
+RAPOR [paket] kural 26: konu 'Mıknatısların Etkileşimi ve Manyetik Alan Çizgileri': 6 soru
+RAPOR [paket] kural 26: konu 'Nanoteknolojik Ürün Seçiminde Eleştirel Düşünme': 7 soru
+RAPOR [paket] kural 26: konu 'Newton Hareket Yasaları ve Bileşke Kuvvet': 7 soru
+RAPOR [paket] kural 26: konu 'Personal Life & Well-Being': 72 soru
+RAPOR [paket] kural 26: konu 'Pozitif ve Negatif Geri Bildirim': 7 soru
+RAPOR [paket] kural 26: konu 'Prizmalar ve prizmalar ile kurulan birleşik sistemlerde ışığın izlediği yola ilişkin tümdengelimsel akıl yürütebilme': 6 soru
+RAPOR [paket] kural 26: konu 'Refleks olayını yorumlayabilme': 8 soru
+RAPOR [paket] kural 26: konu 'Savaşlar Sarmalında Osmanlı (1908-1918)': 36 soru
+RAPOR [paket] kural 26: konu 'Saydam ortamlarda görünür derinliğin, gerçek derinlik ve ortamların ışığı kırma indislerine bağlı olarak değiştiğine ilişkin bilimsel gözlem yapabilme': 6 soru
+RAPOR [paket] kural 26: konu 'School Life & Education': 96 soru
+RAPOR [paket] kural 26: konu 'Serbest Cisim Diyagramı': 7 soru
+RAPOR [paket] kural 26: konu 'Sinir Sistemi ve Homeostazi': 7 soru
+RAPOR [paket] kural 26: konu 'Sistemlerin Eş Güdümlü Çalışması': 7 soru
+RAPOR [paket] kural 26: konu 'Solunum Sistemi ve Homeostazi': 7 soru
+RAPOR [paket] kural 26: konu 'Statik ve Kinetik Sürtünme Kuvvetleri': 7 soru
+RAPOR [paket] kural 26: konu 'Suyun Otoiyonizasyonu': 7 soru
+RAPOR [paket] kural 26: konu 'Süper İletkenlerin Kullanım Alanları ve Önemi': 6 soru
+RAPOR [paket] kural 26: konu 'Sürtünme Kuvvetinin Matematiksel Modeli': 7 soru
+RAPOR [paket] kural 26: konu 'Teknoloji ve Hayat': 23 soru
+RAPOR [paket] kural 26: konu 'Tepkime Oranı ve Denge Yönü': 7 soru
+RAPOR [paket] kural 26: konu 'Tepkime hızına etki eden faktörleri bilimsel sorgulayabilme': 7 soru
+RAPOR [paket] kural 26: konu 'Tepkime hızının zamanla değişimini bilimsel veriye dayalı tahmin edebilme': 7 soru
+RAPOR [paket] kural 26: konu 'Ters Fonksiyon ve Logaritmaya Çıkarım': 9 soru
+RAPOR [paket] kural 26: konu 'Tersinir Tepkimelerin Gözlenmesi': 7 soru
+RAPOR [paket] kural 26: konu 'Transformatörler': 7 soru
+RAPOR [paket] kural 26: konu 'Trigonometrik Denklemler ve Problemler': 10 soru
+RAPOR [paket] kural 26: konu 'Yahudilik ve Hristiyanlık': 9 soru
+RAPOR [paket] kural 26: konu 'Yarı İletkenlerin Kullanım Alanları ve Önemi': 6 soru
+RAPOR [paket] kural 26: konu 'Çembersel Harekette Yörünge ve Hız Vektörü': 7 soru
+RAPOR [paket] kural 26: konu 'Çevre Sorunları ve Felsefe': 24 soru
+RAPOR [paket] kural 26: konu 'Çokgenlerin Özelliklerini İçeren Problemler': 10 soru
+RAPOR [paket] kural 26: konu 'Çözünürlüğe Ortak İyon ve Sıcaklık Etkisi': 7 soru
+RAPOR [paket] kural 26: konu 'Özel Dörtgenler Arasındaki Hiyerarşik İlişkiler': 10 soru
+RAPOR [paket] kural 26: konu 'Üstel Referans Fonksiyon ve Nitel Özellikleri': 9 soru
+RAPOR [paket] kural 26: konu 'Üstel-Logaritmik Denklem ve Eşitsizlik Problemleri': 9 soru
+RAPOR [paket] kural 26: konu 'İki nicel değişkenli veri ile çalışma ve ilişkililiğe dayalı karar verme': 10 soru
+RAPOR [paket] kural 26: konu 'İletişim Engelleri ve Drama Planlama/İçerik': 18 soru
+RAPOR [paket] kural 26: konu 'İletişim ve Çok Modlu Metin': 20 soru
+RAPOR [paket] kural 26: konu 'İnançla İlgili Meseleler': 36 soru
+RAPOR [paket] kural 26: konu 'İndüksiyon Gerilimi': 7 soru
+RAPOR [paket] kural 26: konu 'İnsanda sinir sistemi yapısını çözümleyebilme': 8 soru
+RAPOR [paket] kural 26: konu 'İskelet kaslarının kasılma ve gevşeme mekanizması ile ilgili bilimsel model oluşturabilme': 8 soru
+RAPOR [paket] kural 26: konu 'İslam Medeniyeti ve Gönül Coğrafyamız': 36 soru
+RAPOR [paket] kural 26: konu 'İçbükey ve Dışbükey Çokgenlerin Sınıflandırılması': 10 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.1': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.10': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.11': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.12': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.2': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.3': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.4': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.5': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.6': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.7': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.8': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.1.9': 8 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.2.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.2.10': 7 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.2.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.2.3': 7 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.2.4': 7 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.2.5': 7 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.2.6': 7 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.2.7': 7 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.2.8': 7 soru
+RAPOR [paket] kural 26: kazanım 'BİY.11.2.9': 7 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.1.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.2.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.3.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.3.2': 9 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.4.1': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.4.2': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.5.1': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.5.2': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.5.3': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.5.4': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.5.5': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.6.1': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.6.2': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.6.3': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.7.1': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.7.2': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.7.3': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.7.4': 8 soru
+RAPOR [paket] kural 26: kazanım 'COĞ.11.7.5': 8 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.1.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.1.2': 10 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.1.3': 10 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.2.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.2.2': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.2.3': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.2.4': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.3.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.3.2': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.3.3': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.3.4': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.4.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.4.2': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.4.3': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.4.4': 9 soru
+RAPOR [paket] kural 26: kazanım 'DKAB.11.5.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.G1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.L1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.L2': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.L3': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.L4': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.P1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.R1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.R2': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.R3': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.R4': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.S1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.S2': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.S3': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.S4': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.S5': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.S6': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.V1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.W1': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.W2': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.W3': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.W4': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.W5': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.W6': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.1.W7': 4 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.2.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.3.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.4.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.5.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.6.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.7.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.G1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.L1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.L2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.L3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.L4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.P1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.R1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.R2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.R3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.R4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.S1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.S2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.S3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.S4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.S5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.S6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.V1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.W1': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.W2': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.W3': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.W4': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.W5': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.W6': 3 soru
+RAPOR [paket] kural 26: kazanım 'ENG.11.8.W7': 3 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.1.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.1.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.2.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.2.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.3.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.3.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.4.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.4.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.5.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.5.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.6.1': 11 soru
+RAPOR [paket] kural 26: kazanım 'FEL.11.6.2': 11 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.1.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.1.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.1.3': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.1.4': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.1.5': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.1.6': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.10': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.11': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.12': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.13': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.7': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.8': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.2.9': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.3.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.3.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.4.1': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.4.10': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.4.2': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.4.3': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.4.4': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.4.5': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.4.6': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.4.7': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.4.8': 6 soru
+RAPOR [paket] kural 26: kazanım 'FİZ.11.4.9': 6 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.1.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.1.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.1.3': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.1.4': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.1.5': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.1.6': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.1.7': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.1.8': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.10': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.11': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.12': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.13': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.14': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.3': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.4': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.5': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.6': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.7': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.8': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.2.9': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.3.1': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.3.2': 7 soru
+RAPOR [paket] kural 26: kazanım 'KİM.11.3.3': 7 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.1.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.1.2': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.2.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.2.2': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.2.3': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.2.4': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.2.5': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.3.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.3.2': 10 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.3.3': 9 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.3.4': 9 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.3.5': 9 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.3.6': 9 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.3.7': 9 soru
+RAPOR [paket] kural 26: kazanım 'MAT.11.3.8': 9 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.1.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.1.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.1.3': 12 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.1.4': 12 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.2.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.2.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.2.3': 12 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.2.4': 12 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.3.1': 12 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.3.2': 12 soru
+RAPOR [paket] kural 26: kazanım 'TAR.11.3.3': 12 soru
+RAPOR [paket] kural 26: kazanım 'TDE1.1': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE1.2': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE1.3': 10 soru
+RAPOR [paket] kural 26: kazanım 'TDE1.4': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE2.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE2.2': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE2.3': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE2.4': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE3.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE3.2': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE3.3': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE3.4': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE4.1': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE4.2': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE4.3': 9 soru
+RAPOR [paket] kural 26: kazanım 'TDE4.4': 9 soru
+RAPOR [paket] kural 26: objective boş: 0 soru
+RAPOR [paket] kural 26: kullanılan farklı kind: 2 (flow, table)
+RAPOR [paket] kural 39: aynı seçenek kümesi: 217 küme / 628 soru; en yüksek tekrar=10
+RAPOR [paket] kural 39: 80 seçenek birden çok soru ailesinde dolaşıyor ve hiçbirinde doğru değil: "İngilizce: a learner ignores time reference or register because the sentence appears grammatically possible. this reasoning treats 'a supported response uses the supplied details and does not invent information outside the task' as irrelevant and skips the check 'narrow the claim when conflicting evidence appears'. this claim conflicts with the supplied evidence and is incompatible with this review process: the group tests counterexamples and records the exact condition under which the claim remains valid."×58, "İngilizce: a learner treats one familiar word in life in the world & culture as sufficient evidence for the whole response. this reasoning treats 'a valid response preserves time reference, register, communicative purpose and the limits of the supplied information' as irrelevant and skips the check 'narrow the claim when conflicting evidence appears'. this claim conflicts with the supplied evidence and is incompatible with this review process: the review separates purpose, language choice and communicative result in three explicit steps."×24, "İngilizce: limit claims to the event, source or community described and verify broader claims. this reasoning treats 'the life in the world & culture outcome asks learners to identify communicative purpose before selecting language' as irrelevant and skips the check 'compare details and infer meaning from evidence'. this claim conflicts with the supplied evidence and is incompatible with this review process: the learner classifies the evidence before selecting only the directly supported conclusion."×24, "İngilizce: treating one event as proof of what an entire culture is like. this reasoning treats 'a valid response preserves time reference, register, communicative purpose and the limits of the supplied information' as irrelevant and skips the check 'notice target vocabulary and structures in context'. this claim conflicts with the supplied evidence and is incompatible with this review process: the learner classifies the evidence before selecting only the directly supported conclusion."×24, "İngilizce: use therefore or thus only when the second idea follows as a conclusion or result. this reasoning treats 'time reference, register and discourse clues are checked together in the life in the world & culture task' as irrelevant and skips the check 'reject unsupported assumptions and justify the response with an explicit clue'. this claim conflicts with the supplied evidence and is incompatible with this review process: the group tests counterexamples and records the exact condition under which the claim remains valid."×24, "İngilizce: using therefore to add another detail rather than a result. this reasoning treats 'a supported response uses the supplied details and does not invent information outside the task' as irrelevant and skips the check 'compare the language choice with time reference, meaning and discourse context'. this claim conflicts with the supplied evidence and is incompatible with this review process: the group tests counterexamples and records the exact condition under which the claim remains valid."×24, "İngilizce: using therefore to add another detail rather than a result. this reasoning treats 'time reference, register and discourse clues are checked together in the life in the world & culture task' as irrelevant and skips the check 'test the final response for accuracy, register and communicative effect'. this claim conflicts with the supplied evidence and is incompatible with this review process: the review separates purpose, language choice and communicative result in three explicit steps."×24, "İngilizce: a learner chooses a related meaning without checking the communicative purpose. this reasoning treats 'time reference, register and discourse clues are checked together in the classroom life & learning task' as irrelevant and skips the check 'state the result together with source, purpose and validity limits'. this claim conflicts with the supplied evidence and is incompatible with this review process: the group tests counterexamples and records the exact condition under which the claim remains valid."×21
+RAPOR [paket] kural 36: kendi şıkkına sözcük bağı olan gerekçe: 6000/6000
+RAPOR [paket] kural 37: distractorWhy benzersiz iskelet: 5413/6000
+RAPOR [paket] kural 40: benzersiz soru kalıbı: 1983/2000
+RAPOR [paket] kural 41: kazanım dışından ödünç çeldirici: 0/6000
+RAPOR [paket] kural 45: kazanım dengesi kapsam modunda; 359 kazanımın not ve soru beyanı doğrulandı
+RAPOR [paket] kural 45: kazanım başına soru: en az 3, en çok 12, kazanım sayısı 359
+TOPLAM: 0 HATA, 0 UYARI

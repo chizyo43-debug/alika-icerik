@@ -12,398 +12,6 @@
   },
   "paketler": [
     {
-      "paket": "turkiye/10-sinif/biyoloji/biyoloji-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 95.4,
-        "S3_dolgu_yok": 99.4,
-        "S4_kalip_cesitliligi": 99.4,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/10-sinif/cografya/cografya-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 98.0,
-        "S3_dolgu_yok": 94.0,
-        "S4_kalip_cesitliligi": 99.8,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.8,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/10-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 96.0,
-        "S3_dolgu_yok": 90.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/10-sinif/felsefe/felsefe-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 93.4,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/10-sinif/fizik/fizik-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 93.4,
-        "S3_dolgu_yok": 98.8,
-        "S4_kalip_cesitliligi": 78.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 95.8,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/10-sinif/ingilizce/ingilizce-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 96.0,
-        "S3_dolgu_yok": 99.2,
-        "S4_kalip_cesitliligi": 99.6,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/10-sinif/kimya/kimya-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 84.2,
-        "S3_dolgu_yok": 97.4,
-        "S4_kalip_cesitliligi": 91.4,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 97.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/10-sinif/matematik/matematik-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 74.0,
-        "S3_dolgu_yok": 94.7,
-        "S4_kalip_cesitliligi": 54.4,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 83.5,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/10-sinif/soru-bankasi/10-sinif-tum-dersler-2000-soru.jsonl",
-      "soru": 2000,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 95.8,
-        "S3_dolgu_yok": 98.4,
-        "S4_kalip_cesitliligi": 94.8,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 98.9,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/10-sinif/tarih/tarih-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 97.7,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.9,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/10-sinif/turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 98.0,
-        "S4_kalip_cesitliligi": 99.8,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/5-sinif/fen-bilimleri/fen-bilimleri-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 97.4,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 98.3,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/5-sinif/ingilizce/ingilizce-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 72.6,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 92.3,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/5-sinif/matematik/matematik-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 97.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 71.2,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.6,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
       "paket": "turkiye/5-sinif/soru-bankasi/5-sinif-tum-dersler-2000-soru.jsonl",
       "soru": 2000,
       "hata": 0,
@@ -421,208 +29,12 @@
       },
       "hamOlcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 98.5,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 88.8,
+        "S2_havuz_acikligi": 80.4,
+        "S3_dolgu_yok": 98.3,
+        "S4_kalip_cesitliligi": 87.5,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 97.3,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/5-sinif/sosyal-bilgiler/sosyal-bilgiler-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.3,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/5-sinif/turkce/turkce-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 99.8,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/6-sinif/bilisim-teknolojileri/bilisim-teknolojileri-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 89.6,
-        "S3_dolgu_yok": 97.7,
-        "S4_kalip_cesitliligi": 99.4,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 96.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/6-sinif/din-kulturu/din-kulturu-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 96.6,
-        "S3_dolgu_yok": 98.6,
-        "S4_kalip_cesitliligi": 99.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 97.9,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/6-sinif/fen-bilimleri/fen-bilimleri-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 87.8,
-        "S3_dolgu_yok": 98.8,
-        "S4_kalip_cesitliligi": 99.8,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 90.9,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/6-sinif/ingilizce/ingilizce-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 89.0,
-        "S3_dolgu_yok": 97.2,
-        "S4_kalip_cesitliligi": 99.8,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 93.2,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/6-sinif/matematik/matematik-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 99.6,
-        "S4_kalip_cesitliligi": 99.8,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 98.9,
+        "S7_geri_donusum_yok": 95.0,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": true
@@ -645,19 +57,19 @@
       },
       "hamOlcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 99.1,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 99.8,
+        "S2_havuz_acikligi": 99.9,
+        "S3_dolgu_yok": 82.2,
+        "S4_kalip_cesitliligi": 90.1,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 97.4,
+        "S7_geri_donusum_yok": 99.5,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": true
     },
     {
-      "paket": "turkiye/6-sinif/sosyal-bilgiler/sosyal-bilgiler-tum.jsonl",
-      "soru": 500,
+      "paket": "turkiye/7-sinif/soru-bankasi/7-sinif-tum-dersler-2000-soru.jsonl",
+      "soru": 2000,
       "hata": 0,
       "uyari": 0,
       "skor": 100.0,
@@ -673,19 +85,19 @@
       },
       "hamOlcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 96.0,
-        "S3_dolgu_yok": 98.4,
-        "S4_kalip_cesitliligi": 100.0,
+        "S2_havuz_acikligi": 91.6,
+        "S3_dolgu_yok": 41.9,
+        "S4_kalip_cesitliligi": 92.3,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.7,
+        "S7_geri_donusum_yok": 100.0,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": true
     },
     {
-      "paket": "turkiye/6-sinif/turkce/turkce-tum.jsonl",
-      "soru": 500,
+      "paket": "turkiye/8-sinif/soru-bankasi/8-sinif-tum-dersler-2000-soru.jsonl",
+      "soru": 2000,
       "hata": 0,
       "uyari": 0,
       "skor": 100.0,
@@ -701,19 +113,19 @@
       },
       "hamOlcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 99.2,
-        "S3_dolgu_yok": 98.7,
-        "S4_kalip_cesitliligi": 98.4,
+        "S2_havuz_acikligi": 79.3,
+        "S3_dolgu_yok": 84.5,
+        "S4_kalip_cesitliligi": 98.8,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.7,
+        "S7_geri_donusum_yok": 100.0,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": true
     },
     {
-      "paket": "turkiye/7-sinif/matematik/matematik-tum.jsonl",
-      "soru": 500,
+      "paket": "turkiye/9-sinif/soru-bankasi/9-sinif-tum-dersler-2000-soru.jsonl",
+      "soru": 2000,
       "hata": 0,
       "uyari": 0,
       "skor": 100.0,
@@ -729,47 +141,19 @@
       },
       "hamOlcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 99.6,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 96.4,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/7-sinif/turkce/turkce-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
+        "S2_havuz_acikligi": 72.0,
+        "S3_dolgu_yok": 99.5,
+        "S4_kalip_cesitliligi": 98.1,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
         "S7_geri_donusum_yok": 100.0,
         "S8_alan_butunlugu": 100.0
       },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.9,
-        "S8_alan_butunlugu": 100.0
-      },
       "gecti": true
     },
     {
-      "paket": "turkiye/8-sinif/turkce/turkce-tum.jsonl",
-      "soru": 500,
+      "paket": "turkiye/10-sinif/soru-bankasi/10-sinif-tum-dersler-2000-soru.jsonl",
+      "soru": 2000,
       "hata": 0,
       "uyari": 0,
       "skor": 100.0,
@@ -786,18 +170,46 @@
       "hamOlcutler": {
         "S1_sizinti_yok": 100.0,
         "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
+        "S3_dolgu_yok": 67.7,
         "S4_kalip_cesitliligi": 100.0,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.7,
+        "S7_geri_donusum_yok": 100.0,
         "S8_alan_butunlugu": 100.0
       },
       "gecti": true
     },
     {
-      "paket": "turkiye/9-sinif/matematik/matematik-tum.jsonl",
-      "soru": 500,
+      "paket": "turkiye/11-sinif/soru-bankasi/11-sinif-tum-dersler-2000-soru.jsonl",
+      "soru": 2000,
+      "hata": 0,
+      "uyari": 0,
+      "skor": 99.7,
+      "olcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 98.0,
+        "S3_dolgu_yok": 100.0,
+        "S4_kalip_cesitliligi": 100.0,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "hamOlcutler": {
+        "S1_sizinti_yok": 100.0,
+        "S2_havuz_acikligi": 68.6,
+        "S3_dolgu_yok": 86.7,
+        "S4_kalip_cesitliligi": 99.2,
+        "S5_sekil_kapsamasi": 100.0,
+        "S6_kazanim_dengesi": 100.0,
+        "S7_geri_donusum_yok": 100.0,
+        "S8_alan_butunlugu": 100.0
+      },
+      "gecti": true
+    },
+    {
+      "paket": "turkiye/12-sinif/soru-bankasi/12-sinif-tum-dersler-2000-soru.jsonl",
+      "soru": 2000,
       "hata": 0,
       "uyari": 0,
       "skor": 100.0,
@@ -813,37 +225,9 @@
       },
       "hamOlcutler": {
         "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 99.6,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 99.1,
-        "S8_alan_butunlugu": 100.0
-      },
-      "gecti": true
-    },
-    {
-      "paket": "turkiye/9-sinif/turk-dili-ve-edebiyati/turk-dili-ve-edebiyati-tum.jsonl",
-      "soru": 500,
-      "hata": 0,
-      "uyari": 0,
-      "skor": 100.0,
-      "olcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
-        "S5_sekil_kapsamasi": 100.0,
-        "S6_kazanim_dengesi": 100.0,
-        "S7_geri_donusum_yok": 100.0,
-        "S8_alan_butunlugu": 100.0
-      },
-      "hamOlcutler": {
-        "S1_sizinti_yok": 100.0,
-        "S2_havuz_acikligi": 100.0,
-        "S3_dolgu_yok": 100.0,
-        "S4_kalip_cesitliligi": 100.0,
+        "S2_havuz_acikligi": 75.0,
+        "S3_dolgu_yok": 58.1,
+        "S4_kalip_cesitliligi": 99.9,
         "S5_sekil_kapsamasi": 100.0,
         "S6_kazanim_dengesi": 100.0,
         "S7_geri_donusum_yok": 100.0,

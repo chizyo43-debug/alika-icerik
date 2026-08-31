@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "alika-curriculum-activation/1.0.0",
+  "country": "TR",
+  "schoolYear": "2026-2027",
+  "authority": "T.C. Millî Eğitim Bakanlığı",
+  "verifiedAt": "2026-08-30",
+  "primaryEvidence": [
+    {
+      "title": "Türkiye Yüzyılı Maarif Modeli Taslak Çerçeve Planları",
+      "url": "https://tymm.meb.gov.tr/taslak-cerceve-planlari",
+      "evidence": "Ortaöğretimde TYMM 2026-2027 yılında hazırlık, 9 ve 10. sınıflarda sürer; 11. sınıfta başlar. Diğer sınıflarda hâlihazırdaki programlar uygulanır."
+    },
+    {
+      "title": "Yıllık Çerçeve Planlar ve Öğretim Programları",
+      "url": "https://antalyaodm.meb.gov.tr/www/yillik-cerceve-planlar-ve-ogretim-programlari/icerik/49",
+      "evidence": "MEB sayfası TYMM kapsamını 1,2,3; 5,6,7; 9,10,11 olarak, diğer program kapsamını 4,8,12 olarak ayırır."
+    }
+  ],
+  "grades": {
+    "5": {"activeProgrammeFamily": "TYMM", "repositorySourceStatus": "eligible"},
+    "6": {"activeProgrammeFamily": "TYMM", "repositorySourceStatus": "eligible"},
+    "7": {"activeProgrammeFamily": "TYMM", "repositorySourceStatus": "eligible"},
+    "8": {
+      "activeProgrammeFamily": "pre-TYMM-current",
+      "repositorySourceStatus": "eligible",
+      "registry": "curriculum/tr-grade8-current-2018-2019.json",
+      "futurePackageDisposition": "TYMM-2024 copies preserved under turkiye/8-sinif/future-tymm-2024; excluded from active bank"
+    },
+    "9": {"activeProgrammeFamily": "TYMM", "repositorySourceStatus": "eligible"},
+    "10": {"activeProgrammeFamily": "TYMM", "repositorySourceStatus": "eligible"},
+    "11": {"activeProgrammeFamily": "TYMM", "repositorySourceStatus": "eligible"},
+    "12": {
+      "activeProgrammeFamily": "pre-TYMM-current",
+      "repositorySourceStatus": "eligible",
+      "registry": "curriculum/tr-grade12-current-2018.json",
+      "futurePackageDisposition": "TYMM-2025/2026 copies preserved under turkiye/12-sinif/future-tymm-2025-2026; excluded from active bank"
+    }
+  }
+}

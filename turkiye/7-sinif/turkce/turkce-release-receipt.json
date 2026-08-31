@@ -1,0 +1,11 @@
+{
+  "candidateSha256": "c1f56ecf7f150328c02d84f4b3fe673e221bb943bdab60cc9e00106f4c673581",
+  "decision": "PASS",
+  "grade": 7,
+  "humanReviewed": false,
+  "reviewManifestSha256": "b33b08456af0379ee536d6b1c26b6090fd34236e5355455edd8af973ca994577",
+  "reviewedPackageSha256": "b25758ea7aabb24c9e6eac9ea0add37788a5f8069cb15fa75df8ba8eba57c430",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
+  "subject": "Türkçe"
+}

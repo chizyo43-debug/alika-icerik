@@ -1,41 +1,11 @@
 {
-  "canonical": {
-    "answerBalance": [
-      136,
-      122,
-      121,
-      121
-    ],
-    "families": 125,
-    "notes": 28,
-    "pack": 1,
-    "path": "turkiye/9-sinif/tarih/tarih-tum.jsonl",
-    "questions": 500,
-    "records": 529,
-    "sha256": "122dc1ecf8d48794b4998f63c5dfe12a0a30d084427ea72918e92d6d199546a5"
-  },
-  "gates": {
-    "aiVerifiedRecords": "PASS 529/529",
-    "duplicateIds": 0,
-    "duplicateQuestionTexts": 0,
-    "noteLinks": "PASS 500/500",
-    "questionRange": "PASS 1/500-500/500",
-    "strictErrors": 0,
-    "strictWarnings": 0
-  },
+  "candidateSha256": "9dfbe49c447912e4d09fe8a70a380bc0585298924cf6889f63965c78b8c6c648",
+  "decision": "PASS",
   "grade": 9,
-  "publishReady": true,
-  "review": {
-    "declaration": "ai-generated-and-ai-reviewed-no-human-review",
-    "humanReviewed": false,
-    "mode": "ai-only",
-    "model": "gpt-5.6-sol"
-  },
-  "schema": "alika-local-final-subject-publish-receipt/1.0.0",
-  "sourceCandidate": {
-    "path": "chatgpt/9-sinif/tarih/paket/final-bank-candidate/tr_g09_tarih_subject500_ai_verified_v1_c0bb6d18.jsonl",
-    "sha256": "c0bb6d18d323aa8996136e4b1ef361995d90c4dc6a82f702c7370e9aa5632800"
-  },
-  "status": "PASS",
+  "humanReviewed": false,
+  "reviewManifestSha256": "468ad53d2aaa78fd4a486cb4266230fac3c3ab36db283b315baccd5e69742ce3",
+  "reviewedPackageSha256": "eda82aa766809be7579794af95fb7256f7b29f34be1f22e467e1362e7f3b6325",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0",
+  "strictValidation": "0 HATA / 0 UYARI",
   "subject": "Tarih"
 }
