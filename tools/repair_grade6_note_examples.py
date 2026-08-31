@@ -9,6 +9,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
+DISCLOSURE = "ai-generated-and-ai-reviewed-no-human-review"
 TARGETS = {
     ROOT / "turkiye/6-sinif/fen-bilimleri/fen-bilimleri-tum.jsonl": {
         "tr-g06-fen-bilimleri-note-008",
@@ -89,10 +90,17 @@ def main() -> int:
                 changed_examples += enrich(row)
         if found != wanted:
             raise ValueError(f"{path}: hedef notlar eksik: {sorted(wanted - found)}")
-        if changed_examples:
+        # Question Contract 2.2 requires a package-level disclosure whenever
+        # the package contains generated visual material.  Keep this metadata
+        # when a later note repair returns the pack to the pending state.
+        metadata_changed = pack.get("disclosure") != DISCLOSURE
+        if metadata_changed:
+            pack["disclosure"] = DISCLOSURE
+        if changed_examples or metadata_changed:
             version = pack.get("version", 1)
             pack["version"] = int(version) + 1 if isinstance(version, int) or str(version).isdigit() else "2.0.0"
-            mark_pending(pack)
+            if changed_examples:
+                mark_pending(pack)
             path.write_text(
                 "\n".join(compact(row) for row in rows) + "\n",
                 encoding="utf-8",
@@ -102,8 +110,13 @@ def main() -> int:
             "path": path.relative_to(ROOT).as_posix(),
             "notes": len(found),
             "examplesEnriched": changed_examples,
+            "disclosureRepaired": metadata_changed,
             "version": pack.get("version"),
-            "status": "PENDING_INDEPENDENT_REVIEW" if changed_examples else "UNCHANGED",
+            "status": (
+                "PENDING_INDEPENDENT_REVIEW" if changed_examples
+                else "METADATA_REPAIRED" if metadata_changed
+                else "UNCHANGED"
+            ),
         })
     print(compact({"grade": 6, "packages": result}))
     return 0
