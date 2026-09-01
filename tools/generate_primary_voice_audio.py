@@ -66,6 +66,11 @@ def stable_seed(asset_id: str, seed_base: int) -> int:
     return seed_base + value % 1_000_000_000
 
 
+def transcript_shard(transcript: str, shard_count: int) -> int:
+    """Return a stable worker shard; identical transcripts always stay together."""
+    return int(text_digest(transcript.strip())[:16], 16) % shard_count
+
+
 def split_text(text: str, max_chars: int) -> list[str]:
     sentences = [part.strip() for part in re.split(r"(?<=[.!?])\s+", text.strip()) if part.strip()]
     chunks: list[str] = []
@@ -294,10 +299,14 @@ def main() -> int:
     parser.add_argument("--max-chars", type=int, default=400)
     parser.add_argument("--seed-base", type=int, default=20260901)
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--shard-count", type=int, default=1)
+    parser.add_argument("--shard-index", type=int, default=0)
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    if args.shard_count < 1 or not 0 <= args.shard_index < args.shard_count:
+        raise SystemExit("shard-index must be in [0, shard-count)")
     manifests = args.manifest or sorted(ROOT.glob("turkiye/**/audio-assets.json"))
     staging_root = args.staging_root.resolve()
     reference = args.reference.resolve()
@@ -325,11 +334,19 @@ def main() -> int:
         if transcript not in planned_transcripts:
             pending.append(job)
             planned_transcripts.add(transcript)
+    all_pending = pending
+    pending = [
+        job for job in all_pending
+        if transcript_shard(str(job.asset["transcript"]), args.shard_count) == args.shard_index
+    ]
     if args.limit is not None:
         pending = pending[:args.limit]
+    owned_transcripts = {str(job.asset["transcript"]).strip() for job in pending}
     print(json.dumps({
         "phase": "plan", "assets": len(jobs), "pendingGeneration": len(pending),
-        "pendingReuse": len(incomplete_jobs) - len(pending), "stagingRoot": str(staging_root),
+        "pendingOtherShards": len(all_pending) - len(pending),
+        "shard": [args.shard_index, args.shard_count],
+        "stagingRoot": str(staging_root),
     }, ensure_ascii=False), flush=True)
     if pending:
         os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
@@ -450,6 +467,8 @@ def main() -> int:
         ):
             continue
         transcript = str(job.asset["transcript"]).strip()
+        if transcript not in owned_transcripts:
+            continue
         source = valid_by_transcript.get(transcript)
         if source is None:
             continue

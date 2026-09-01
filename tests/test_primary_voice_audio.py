@@ -53,6 +53,10 @@ def test_primary_voice_seed_and_text_splitting_are_deterministic() -> None:
     chunks = generator.split_text("First sentence. Second sentence is longer.", 24)
     assert " ".join(chunks) == "First sentence. Second sentence is longer."
     assert all(len(chunk) <= 24 for chunk in chunks)
+    assert generator.transcript_shard("Same transcript.", 2) == generator.transcript_shard(
+        "Same transcript.", 2,
+    )
+    assert generator.transcript_shard("Same transcript.", 1) == 0
 
 
 def test_generated_asset_records_consented_voice_and_real_wave_hash(tmp_path: Path) -> None:
