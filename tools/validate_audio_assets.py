@@ -27,6 +27,54 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def valid_sha256(value: Any) -> bool:
+    return bool(re.fullmatch(r"[0-9a-f]{64}", str(value or "")))
+
+
+def validate_speaker_provenance(asset_id: str, asset: dict[str, Any]) -> list[str]:
+    """Accept legacy synthetic voices and the consented AliKa voice contract."""
+    errors: list[str] = []
+    speaker = asset.get("speaker")
+    if isinstance(speaker, str):
+        if not speaker.startswith("synthetic-"):
+            errors.append(f"{asset_id}: speaker-provenance-missing")
+        return errors
+    if not isinstance(speaker, dict):
+        return [f"{asset_id}: speaker-provenance-missing"]
+    if speaker.get("kind") != "consented-human-voice-clone":
+        errors.append(f"{asset_id}: speaker-kind-invalid")
+    for field in ("voiceProfileId", "rightsRecordId"):
+        if not str(speaker.get(field) or "").strip():
+            errors.append(f"{asset_id}: speaker-{field}-missing")
+    if not valid_sha256(speaker.get("referenceSha256")):
+        errors.append(f"{asset_id}: speaker-reference-hash-invalid")
+    if asset.get("licenseStatus") != "voice-owner-authorized-commercial-use":
+        errors.append(f"{asset_id}: voice-owner-license-missing")
+    if asset.get("redistributionReviewStatus") != "approved-project-owner-attestation":
+        errors.append(f"{asset_id}: audio-license-review-pending")
+    rights_record_id = str(asset.get("rightsRecordId") or "").strip()
+    if not rights_record_id or rights_record_id != speaker.get("rightsRecordId"):
+        errors.append(f"{asset_id}: rights-record-binding-invalid")
+    reference = asset.get("referenceAudio")
+    if not isinstance(reference, dict):
+        errors.append(f"{asset_id}: reference-audio-evidence-missing")
+    else:
+        if reference.get("sha256") != speaker.get("referenceSha256"):
+            errors.append(f"{asset_id}: reference-audio-hash-mismatch")
+        if reference.get("packaged") is not False:
+            errors.append(f"{asset_id}: private-reference-packaging-invalid")
+    voice_model = asset.get("voiceModel")
+    if not isinstance(voice_model, dict):
+        errors.append(f"{asset_id}: voice-model-evidence-missing")
+    else:
+        for field in ("modelId", "revision", "modelFileSha256", "license"):
+            if not str(voice_model.get(field) or "").strip():
+                errors.append(f"{asset_id}: voice-model-{field}-missing")
+        if not valid_sha256(voice_model.get("modelFileSha256")):
+            errors.append(f"{asset_id}: voice-model-hash-invalid")
+    return errors
+
+
 def validate(
     questions_path: Path, manifest_path: Path, allow_runtime_pending: bool = False,
 ) -> dict[str, Any]:
@@ -61,6 +109,8 @@ def validate(
         asset_families[asset_id].add(str(question.get("familyId") or qid))
         if audio.get("role") not in {"prompt", "reference"} or audio.get("playbackRequired") is not True:
             errors.append(f"{qid}: invalid-audio-link")
+        if audio.get("contentSha256") != by_id[asset_id].get("sha256"):
+            errors.append(f"{qid}: audio-content-hash-mismatch")
         response = question.get("spokenResponse")
         if requirement == "audio-response-required":
             if not isinstance(response, dict):
@@ -129,9 +179,11 @@ def validate(
                 errors.append(f"{asset_id}: audio-metadata-mismatch:{field}")
         if asset.get("mimeType") != "audio/wav" or asset.get("language") != "en-US":
             errors.append(f"{asset_id}: audio-format-language")
-        if not str(asset.get("speaker") or "").startswith("synthetic-"):
-            errors.append(f"{asset_id}: speaker-provenance-missing")
-        if asset.get("redistributionReviewStatus") != "approved":
+        errors.extend(validate_speaker_provenance(asset_id, asset))
+        if (
+            isinstance(asset.get("speaker"), str)
+            and asset.get("redistributionReviewStatus") != "approved"
+        ):
             errors.append(f"{asset_id}: audio-license-review-pending")
         valid_files += 1
         duration_ms += actual["durationMs"]

@@ -219,7 +219,10 @@ def test_audio_assets_may_vary_inside_family_but_not_cross_families(tmp_path: Pa
             "type": "question", "id": f"q{index}", "familyId": "family.one",
             "mediaRequirement": "audio-required", "correctOption": "Supported answer",
             "choices": ["Supported answer", "Wrong one", "Wrong two", "Wrong three"],
-            "audio": {"assetId": f"prompt.{index}", "role": "prompt", "playbackRequired": True},
+            "audio": {
+                "assetId": f"prompt.{index}", "role": "prompt", "playbackRequired": True,
+                "contentSha256": assets[index - 1]["sha256"],
+            },
         }
         for index in (1, 2)
     ]
@@ -235,6 +238,7 @@ def test_audio_assets_may_vary_inside_family_but_not_cross_families(tmp_path: Pa
 
     questions[1]["familyId"] = "family.two"
     questions[1]["audio"]["assetId"] = "prompt.1"
+    questions[1]["audio"]["contentSha256"] = assets[0]["sha256"]
     questions_path.write_text(
         "\n".join(json.dumps(row) for row in questions) + "\n", encoding="utf-8"
     )
@@ -244,6 +248,75 @@ def test_audio_assets_may_vary_inside_family_but_not_cross_families(tmp_path: Pa
     report = audio_validate.validate(questions_path, manifest_path)
     assert report["status"] == "FAIL"
     assert any("audio-asset-reused-across-question-families" in error for error in report["errors"])
+
+
+def test_consented_primary_voice_contract_is_accepted(tmp_path: Path) -> None:
+    audio_dir = tmp_path / "assets" / "audio"
+    audio_dir.mkdir(parents=True)
+    path = audio_dir / "prompt.wav"
+    with wave.open(str(path), "wb") as output:
+        output.setnchannels(1)
+        output.setsampwidth(2)
+        output.setframerate(48000)
+        output.writeframes(b"\x01\x00" * 4800)
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    asset = {
+        "assetId": "primary.prompt",
+        "path": "assets/audio/prompt.wav",
+        "sha256": digest,
+        "mimeType": "audio/wav",
+        "bytes": path.stat().st_size,
+        "durationMs": 100,
+        "sampleRate": 48000,
+        "channels": 1,
+        "sampleWidthBits": 16,
+        "language": "en-US",
+        "speaker": {
+            "kind": "consented-human-voice-clone",
+            "voiceProfileId": "alika-authorized-woman-voice-v1",
+            "rightsRecordId": "tr-authorized-woman-voice-rights-20260901",
+            "referenceSha256": "3ead7d03d36780933b0acb326e9a8eaf9ee443ad0a440e9b23ca8cccbdaa093e",
+        },
+        "rightsRecordId": "tr-authorized-woman-voice-rights-20260901",
+        "referenceAudio": {
+            "sha256": "3ead7d03d36780933b0acb326e9a8eaf9ee443ad0a440e9b23ca8cccbdaa093e",
+            "packaged": False,
+            "storage": "private-local-not-in-repository",
+        },
+        "voiceModel": {
+            "modelId": "openbmb/VoxCPM2",
+            "revision": "32279effe8c19989596f05d353d1447f51d9e915",
+            "modelFileSha256": "f7f964cfa9da23653baec6e6f7750719977ad944ed9f95fe52fe3a620506891d",
+            "license": "Apache-2.0",
+        },
+        "licenseStatus": "voice-owner-authorized-commercial-use",
+        "redistributionReviewStatus": "approved-project-owner-attestation",
+        "transcript": "A neutral listening prompt.",
+    }
+    question = {
+        "type": "question", "id": "q-primary", "familyId": "family.primary",
+        "mediaRequirement": "audio-required", "correctOption": "Supported answer",
+        "choices": ["Supported answer", "Wrong one", "Wrong two", "Wrong three"],
+        "audio": {
+            "assetId": "primary.prompt", "role": "prompt", "playbackRequired": True,
+            "contentSha256": digest,
+        },
+    }
+    questions_path = tmp_path / "questions.jsonl"
+    manifest_path = tmp_path / "audio-assets.json"
+    questions_path.write_text(json.dumps(question) + "\n", encoding="utf-8")
+    manifest_path.write_text(
+        json.dumps({"assetCount": 1, "assets": [asset]}), encoding="utf-8"
+    )
+    assert audio_validate.validate(questions_path, manifest_path)["status"] == "PASS"
+
+    asset["speaker"].pop("rightsRecordId")
+    manifest_path.write_text(
+        json.dumps({"assetCount": 1, "assets": [asset]}), encoding="utf-8"
+    )
+    report = audio_validate.validate(questions_path, manifest_path)
+    assert report["status"] == "FAIL"
+    assert any("speaker-rightsRecordId-missing" in error for error in report["errors"])
 
 
 def test_source_root_copy_inside_a_longer_composite_is_rejected() -> None:

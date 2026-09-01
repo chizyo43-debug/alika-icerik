@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "alika-model-license-evidence/1.0.0",
+  "modelId": "openbmb/VoxCPM2",
+  "revision": "32279effe8c19989596f05d353d1447f51d9e915",
+  "modelFileSha256": "f7f964cfa9da23653baec6e6f7750719977ad944ed9f95fe52fe3a620506891d",
+  "license": "Apache-2.0",
+  "commercialUseApproved": true,
+  "verifiedAt": "2026-09-01",
+  "officialModelCard": "https://huggingface.co/openbmb/VoxCPM2",
+  "officialRepository": "https://github.com/OpenBMB/VoxCPM"
+}

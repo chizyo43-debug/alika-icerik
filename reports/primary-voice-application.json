@@ -1,0 +1,127 @@
+{
+  "assetCount": 721,
+  "packages": [
+    {
+      "assets": 216,
+      "audioValidation": {
+        "assets": 216,
+        "bytes": 265088544,
+        "durationMs": 2761240,
+        "errors": [],
+        "questions": 500,
+        "requirements": {
+          "audio-required": 78,
+          "audio-response-required": 138,
+          "none": 284
+        },
+        "status": "PASS",
+        "validFiles": 216
+      },
+      "bundle": {
+        "audioAssets": 216,
+        "bytes": 206370926,
+        "output": "release/11-sinif-ingilizce-tum-alika-authorized-woman-voice-v1.alika.zip",
+        "sha256": "bfb3bb485a0b57d09b8dc6f5afcb1263bb1495373e7226806d0020850c766e5e"
+      },
+      "changedRecords": 217,
+      "manifest": "turkiye/11-sinif/ingilizce/audio-assets.json",
+      "manifestSha256": "354cbb14cfe6685410cbe145fbe0165710b891f65c93b6b8e0a02e8c30e17133",
+      "newPackageSha256": "f52c33ae1b9fae3024e51ba4c71bdcb489f455dcd94086d1711616d32061b8c2",
+      "oldPackageSha256": "4ba43a6b94eb21492078b021a27c2cef87364b0f903b3c7d43ac2ae8566e040e",
+      "package": "turkiye/11-sinif/ingilizce/ingilizce-tum.jsonl",
+      "strictValidation": "0 HATA / 0 UYARI"
+    },
+    {
+      "assets": 275,
+      "audioValidation": {
+        "assets": 275,
+        "bytes": 338726020,
+        "durationMs": 3528270,
+        "errors": [],
+        "questions": 2000,
+        "requirements": {
+          "audio-required": 100,
+          "audio-response-required": 175,
+          "none": 1725
+        },
+        "status": "PASS",
+        "validFiles": 275
+      },
+      "bundle": {
+        "audioAssets": 275,
+        "bytes": 263341837,
+        "output": "release/11-sinif-tum-dersler-2000-soru-alika-authorized-woman-voice-v1.alika.zip",
+        "sha256": "6cefd4eac9acd4375440c9de280018e9b9fbfb6228ad3044ea4a8cc8fb28d84f"
+      },
+      "changedRecords": 276,
+      "manifest": "turkiye/11-sinif/soru-bankasi/audio-assets.json",
+      "manifestSha256": "2b6c584da28794519e8ad28d59db0e6c9bff1a659dea4970325d68d85c946937",
+      "newPackageSha256": "06a26795028cd7a20ef336f4b80e8838294f6345ebc612ee8a730b48fb397003",
+      "oldPackageSha256": "9038275a8931d5f5f0885a748f1fb291864ba06bab5f96a5639b0976b1cf8df2",
+      "package": "turkiye/11-sinif/soru-bankasi/11-sinif-tum-dersler-2000-soru.jsonl",
+      "strictValidation": "0 HATA / 0 UYARI"
+    },
+    {
+      "assets": 167,
+      "audioValidation": {
+        "assets": 167,
+        "bytes": 188635828,
+        "durationMs": 1964880,
+        "errors": [],
+        "questions": 500,
+        "requirements": {
+          "audio-required": 167,
+          "none": 333
+        },
+        "status": "PASS",
+        "validFiles": 167
+      },
+      "bundle": {
+        "audioAssets": 167,
+        "bytes": 145951614,
+        "output": "release/12-sinif-ingilizce-tum-alika-authorized-woman-voice-v1.alika.zip",
+        "sha256": "86a687db113351293b1cb78ebba9a782bc99b167746bbba1881eb7e5ece04170"
+      },
+      "changedRecords": 168,
+      "manifest": "turkiye/12-sinif/ingilizce/audio-assets.json",
+      "manifestSha256": "d414ad5268d5aed7f365bd91445e834d907ae69b77a1b62cc23eaa7e4f240604",
+      "newPackageSha256": "f7f6a690eb8f9b1a5745b5dff466e264c73ee57a34dafa078b1c0b8b7874b67f",
+      "oldPackageSha256": "3b2317a5709058a439b5ff625b6612edfcc09439fcaaa3f295ff395ea744dceb",
+      "package": "turkiye/12-sinif/ingilizce/ingilizce-tum.jsonl",
+      "strictValidation": "0 HATA / 0 UYARI"
+    },
+    {
+      "assets": 63,
+      "audioValidation": {
+        "assets": 63,
+        "bytes": 72583572,
+        "durationMs": 756050,
+        "errors": [],
+        "questions": 2000,
+        "requirements": {
+          "audio-required": 63,
+          "none": 1937
+        },
+        "status": "PASS",
+        "validFiles": 63
+      },
+      "bundle": {
+        "audioAssets": 63,
+        "bytes": 57362324,
+        "output": "release/12-sinif-tum-dersler-2000-soru-alika-authorized-woman-voice-v1.alika.zip",
+        "sha256": "1494e63441e6128f01b1ba81e383b3c251e0b20794d24b4d8443156b5a4f47d9"
+      },
+      "changedRecords": 64,
+      "manifest": "turkiye/12-sinif/soru-bankasi/audio-assets.json",
+      "manifestSha256": "bf0bfdbe41622e591bf444ab76d4406f8b19c2c6b591741dc3566aa181120c9f",
+      "newPackageSha256": "cc8e9bda3d5dd29c2cff291fa554acecd79c812c84506b5c05dddfc3b0487021",
+      "oldPackageSha256": "f9a5bf85c254195b597598785abf2f3b6012115bde87ae43f913e7e7485ab2af",
+      "package": "turkiye/12-sinif/soru-bankasi/12-sinif-tum-dersler-2000-soru.jsonl",
+      "strictValidation": "0 HATA / 0 UYARI"
+    }
+  ],
+  "reviewReportSha256": "769951c19c1b604349420333338a3f70e0ef0b82158fb8a43e760ea1d7c179e7",
+  "schemaVersion": "alika-primary-voice-application/1.0.0",
+  "status": "PASS",
+  "voiceProfileId": "alika-authorized-woman-voice-v1"
+}

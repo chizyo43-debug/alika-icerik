@@ -1,8 +1,14 @@
 {
+  "androidClassBundle": {
+    "audioAssets": 167,
+    "bytes": 145951614,
+    "output": "release/12-sinif-ingilizce-tum-alika-authorized-woman-voice-v1.alika.zip",
+    "sha256": "86a687db113351293b1cb78ebba9a782bc99b167746bbba1881eb7e5ece04170"
+  },
   "audioValidation": {
     "assets": 167,
-    "bytes": 104386228,
-    "durationMs": 2366869,
+    "bytes": 188635828,
+    "durationMs": 1964880,
     "errors": [],
     "questions": 500,
     "requirements": {
@@ -16,8 +22,19 @@
   "decision": "PASS",
   "grade": 12,
   "humanReviewed": false,
+  "primaryVoiceRelease": {
+    "audioManifestSha256": "d414ad5268d5aed7f365bd91445e834d907ae69b77a1b62cc23eaa7e4f240604",
+    "audioReviewReportSha256": "769951c19c1b604349420333338a3f70e0ef0b82158fb8a43e760ea1d7c179e7",
+    "commercialUseApproved": true,
+    "modelId": "openbmb/VoxCPM2",
+    "modelLicense": "Apache-2.0",
+    "modelRevision": "32279effe8c19989596f05d353d1447f51d9e915",
+    "rightsRecordId": "tr-authorized-woman-voice-rights-20260901",
+    "schemaVersion": "alika-primary-voice-release/1.0.0",
+    "voiceProfileId": "alika-authorized-woman-voice-v1"
+  },
   "reviewManifestSha256": "03d736a48176e63370ab2c5c1765d06c5bd8e3c22ae5514892ab42ede9d63cf9",
-  "reviewedPackageSha256": "f775c90d6d4a8cdb0aa72618e49edd443450be2c844ae04ff0969ad92ff9f5cd",
+  "reviewedPackageSha256": "f7f6a690eb8f9b1a5745b5dff466e264c73ee57a34dafa078b1c0b8b7874b67f",
   "schemaVersion": "alika-subject-release-receipt/2.0.0",
   "strictValidation": "0 HATA / 0 UYARI",
   "subject": "İngilizce"

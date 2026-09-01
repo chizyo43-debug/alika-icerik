@@ -2,6 +2,11 @@
 
 AliKa uygulaması için indirilebilir **ders notu + soru bankası** paketleri.
 
+Türkiye sesli içeriklerinin kanonik konuşmacısı ve yerel üretim yöntemi
+[`voice/PRIMARY_VOICE.md`](voice/PRIMARY_VOICE.md) içinde tanımlıdır. Ham insan
+sesi referansı Git'e girmez; yayımlanan kayıtlarda yalnız izin, model lisansı ve
+SHA-256 kanıtı tutulur.
+
 Ayrıca AliKa'nın veri-only ortak ekran motoru için indirilebilir oyun
 paketleri `games/` altında yayımlanır. Oyun paketleri uygulama kodu veya
 eklenti taşımaz.
