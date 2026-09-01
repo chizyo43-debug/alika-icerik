@@ -46,7 +46,7 @@ def test_primary_voice_rights_and_model_license_are_public_but_reference_is_priv
 
 
 def test_primary_voice_seed_and_text_splitting_are_deterministic() -> None:
-    assert generator.GENERATOR_VERSION == "alika-primary-voice-generator/1.2.0"
+    assert generator.GENERATOR_VERSION == "alika-primary-voice-generator/1.3.0"
     first = generator.stable_seed("tr.g11.ingilizce.bank.a0807", 20260901)
     assert first == generator.stable_seed("tr.g11.ingilizce.bank.a0807", 20260901)
     assert first != generator.stable_seed("tr.g11.ingilizce.bank.a0808", 20260901)

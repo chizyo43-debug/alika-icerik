@@ -14,6 +14,7 @@ import math
 import os
 import random
 import re
+import shutil
 import sys
 import time
 import wave
@@ -35,7 +36,7 @@ REFERENCE_TEXT = (
 MODEL_ID = "openbmb/VoxCPM2"
 MODEL_REVISION = "32279effe8c19989596f05d353d1447f51d9e915"
 MODEL_FILE_SHA256 = "f7f964cfa9da23653baec6e6f7750719977ad944ed9f95fe52fe3a620506891d"
-GENERATOR_VERSION = "alika-primary-voice-generator/1.2.0"
+GENERATOR_VERSION = "alika-primary-voice-generator/1.3.0"
 GENERATED_AT = "2026-09-01T00:00:00+03:00"
 
 
@@ -170,7 +171,7 @@ def checkpoint_valid(
     except (OSError, ValueError, json.JSONDecodeError, wave.Error, EOFError):
         return False
     parameters = metadata.get("generationParameters") if isinstance(metadata.get("generationParameters"), dict) else {}
-    expected_seed = stable_seed(str(job.asset.get("assetId") or ""), seed_base)
+    expected_seed = stable_seed(text_digest(str(job.asset.get("transcript") or "").strip()), seed_base)
     return (
         metadata.get("assetId") == job.asset.get("assetId")
         and metadata.get("transcriptSha256") == text_digest(str(job.asset.get("transcript") or ""))
@@ -303,16 +304,33 @@ def main() -> int:
     if not reference.is_file() or digest(reference) != REFERENCE_SHA256:
         raise SystemExit("Primary voice reference is missing or has the wrong SHA-256")
     jobs, source_manifests = build_jobs(manifests, staging_root)
-    pending = [
+    incomplete_jobs = [
         job for job in jobs
         if args.force or not checkpoint_valid(
             job, cfg=args.cfg, steps=args.steps, max_chars=args.max_chars,
             seed_base=args.seed_base,
         )
     ]
+    valid_by_transcript = {
+        str(job.asset["transcript"]).strip(): job for job in jobs
+        if not args.force and checkpoint_valid(
+            job, cfg=args.cfg, steps=args.steps, max_chars=args.max_chars,
+            seed_base=args.seed_base,
+        )
+    }
+    pending = []
+    planned_transcripts = set(valid_by_transcript)
+    for job in incomplete_jobs:
+        transcript = str(job.asset["transcript"]).strip()
+        if transcript not in planned_transcripts:
+            pending.append(job)
+            planned_transcripts.add(transcript)
     if args.limit is not None:
         pending = pending[:args.limit]
-    print(json.dumps({"phase": "plan", "assets": len(jobs), "pending": len(pending), "stagingRoot": str(staging_root)}, ensure_ascii=False), flush=True)
+    print(json.dumps({
+        "phase": "plan", "assets": len(jobs), "pendingGeneration": len(pending),
+        "pendingReuse": len(incomplete_jobs) - len(pending), "stagingRoot": str(staging_root),
+    }, ensure_ascii=False), flush=True)
     if pending:
         os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
         import numpy as np
@@ -339,7 +357,7 @@ def main() -> int:
         for index, job in enumerate(pending, start=1):
             transcript = str(job.asset["transcript"]).strip()
             chunks = split_text(transcript, args.max_chars)
-            base_seed = stable_seed(str(job.asset["assetId"]), args.seed_base)
+            base_seed = stable_seed(text_digest(transcript), args.seed_base)
             started = time.time()
             last_error = ""
             for attempt in range(3):
@@ -414,6 +432,45 @@ def main() -> int:
                         torch.cuda.empty_cache()
             else:
                 raise RuntimeError(f"{job.asset['assetId']}: generation failed after 3 attempts: {last_error}")
+    # Exact duplicate transcripts reuse the already generated, hash-bound WAV.
+    # Each destination keeps its own checkpoint/asset identity while recording
+    # the source asset used for byte-for-byte reuse.
+    valid_by_transcript = {
+        str(job.asset["transcript"]).strip(): job for job in jobs
+        if checkpoint_valid(
+            job, cfg=args.cfg, steps=args.steps, max_chars=args.max_chars,
+            seed_base=args.seed_base,
+        )
+    }
+    reused = 0
+    for job in jobs:
+        if checkpoint_valid(
+            job, cfg=args.cfg, steps=args.steps, max_chars=args.max_chars,
+            seed_base=args.seed_base,
+        ):
+            continue
+        transcript = str(job.asset["transcript"]).strip()
+        source = valid_by_transcript.get(transcript)
+        if source is None:
+            continue
+        job.wav_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source.wav_path, job.wav_path)
+        metadata = json.loads(source.metadata_path.read_text(encoding="utf-8"))
+        metadata["assetId"] = job.asset["assetId"]
+        metadata["wavSha256"] = digest(job.wav_path)
+        metadata["reusedFromAssetId"] = source.asset["assetId"]
+        job.metadata_path.write_text(
+            json.dumps(metadata, ensure_ascii=False, sort_keys=True, indent=2) + "\n",
+            encoding="utf-8", newline="\n",
+        )
+        if not checkpoint_valid(
+            job, cfg=args.cfg, steps=args.steps, max_chars=args.max_chars,
+            seed_base=args.seed_base,
+        ):
+            raise RuntimeError(f"{job.asset['assetId']}: duplicate transcript reuse checkpoint failed")
+        reused += 1
+    if reused:
+        print(json.dumps({"phase": "duplicate-reuse", "assets": reused}, ensure_ascii=False), flush=True)
     incomplete = [
         job.asset["assetId"] for job in jobs
         if not checkpoint_valid(

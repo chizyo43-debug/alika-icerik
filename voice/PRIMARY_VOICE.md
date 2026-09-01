@@ -20,9 +20,12 @@ Git'e ve dağıtım paketlerine girmez; yalnız SHA-256 özeti ve hak kaydı yay
 - Referans WAV yalnız bir kez kodlanır; değişmez VoxCPM2 prompt cache aynı
   üretim koşusundaki bütün kayıtlar için yeniden kullanılır. Cache yalnız ham
   referanstan türetilir, üretilen kayıtlar birbirine prompt olarak bağlanmaz.
+- Aynı transkript birden fazla kayıt kimliğinde kullanılıyorsa bir kez
+  sentezlenir ve WAV baytları SHA-256 bağlı olarak yeniden kullanılır. Tohum
+  transkript özetinden türetilir; farklı metinler bu yola giremez.
 - Çıktı: mono, PCM 16-bit, 48 kHz yerel WAV.
 - Üretim: `tools/generate_primary_voice_audio.py`
-- Üretici sürümü: `alika-primary-voice-generator/1.2.0`
+- Üretici sürümü: `alika-primary-voice-generator/1.3.0`
 - Uygulama: `tools/apply_primary_voice_audio.py`
 
 Modelin resmî kaynakları:
