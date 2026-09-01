@@ -14,7 +14,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parent.parent
-PROFILE_ID = "alika-primary-woman-v1"
+PROFILE_ID = "alika-authorized-woman-voice-v1"
 REFERENCE_SHA256 = "3ead7d03d36780933b0acb326e9a8eaf9ee443ad0a440e9b23ca8cccbdaa093e"
 
 

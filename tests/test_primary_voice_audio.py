@@ -28,7 +28,7 @@ application = load_tool("apply_primary_voice_audio")
 
 def test_primary_voice_rights_and_model_license_are_public_but_reference_is_private() -> None:
     rights = json.loads(
-        (ROOT / "voice" / "rights" / "alika-primary-woman-v1.json").read_text(encoding="utf-8")
+        (ROOT / "voice" / "rights" / "alika-authorized-woman-voice-v1.json").read_text(encoding="utf-8")
     )
     model = json.loads(
         (ROOT / "voice" / "model-licenses" / "voxcpm2.json").read_text(encoding="utf-8")
@@ -59,6 +59,26 @@ def test_primary_voice_seed_and_text_splitting_are_deterministic() -> None:
     assert generator.transcript_shard("Same transcript.", 1) == 0
 
 
+def test_resumed_duplicate_reuse_is_owned_even_when_source_was_already_checkpointed() -> None:
+    transcript = "A source checkpoint from an earlier run."
+    shard = generator.transcript_shard(transcript, 4)
+    assert generator.transcript_owned_by_shard(transcript, 4, shard)
+    assert all(
+        not generator.transcript_owned_by_shard(transcript, 4, other)
+        for other in range(4)
+        if other != shard
+    )
+    assert generator.transcript_owned_by_shard(transcript, 1, 0)
+
+
+def test_checkpoint_seed_is_bound_to_recorded_retry_attempt() -> None:
+    base = 12345
+    assert generator.checkpoint_seed_valid({"attempt": 1, "seed": base}, base)
+    assert generator.checkpoint_seed_valid({"attempt": 4, "seed": base + 30_000}, base)
+    assert not generator.checkpoint_seed_valid({"attempt": 4, "seed": base}, base)
+    assert not generator.checkpoint_seed_valid({"attempt": 0, "seed": base - 10_000}, base)
+
+
 def test_generated_asset_records_consented_voice_and_real_wave_hash(tmp_path: Path) -> None:
     wav_path = tmp_path / "assets" / "audio" / "prompt.wav"
     wav_path.parent.mkdir(parents=True)
@@ -87,7 +107,12 @@ def test_generated_asset_records_consented_voice_and_real_wave_hash(tmp_path: Pa
     updated = generator.updated_asset(asset, job)
     assert updated["sha256"] == actual_sha
     assert updated["sampleRate"] == 48000
-    assert updated["speaker"]["voiceProfileId"] == "alika-primary-woman-v1"
+    assert updated["speaker"]["voiceProfileId"] == "alika-authorized-woman-voice-v1"
+    assert updated["rightsRecordId"] == "tr-authorized-woman-voice-rights-20260901"
+    assert updated["referenceAudio"]["sha256"] == generator.REFERENCE_SHA256
+    assert updated["referenceAudio"]["packaged"] is False
+    assert updated["voiceModel"]["revision"] == generator.MODEL_REVISION
+    assert updated["generationMethod"] == "local-voxcpm2-authorized-woman-voice-clone"
     assert updated["licenseStatus"] == "voice-owner-authorized-commercial-use"
 
 
@@ -101,3 +126,21 @@ def test_audio_migration_stamp_is_hash_bound_and_discloses_self_review() -> None
     assert stamped["reviewManifestSha256"] == "c" * 64
     assert stamped["reviewAttestation"]["changeScope"] == "audio-asset-and-hash-only"
     assert stamped["humanReviewed"] is False
+
+
+def test_audio_bundle_names_are_grade_qualified_and_collision_free() -> None:
+    grade11 = ROOT / "turkiye" / "11-sinif" / "ingilizce" / "ingilizce-tum.jsonl"
+    grade12 = ROOT / "turkiye" / "12-sinif" / "ingilizce" / "ingilizce-tum.jsonl"
+    bank11 = (
+        ROOT / "turkiye" / "11-sinif" / "soru-bankasi"
+        / "11-sinif-tum-dersler-2000-soru.jsonl"
+    )
+    names = {
+        application.bundle_name_for_package(grade11),
+        application.bundle_name_for_package(grade12),
+        application.bundle_name_for_package(bank11),
+    }
+    assert len(names) == 3
+    assert application.bundle_name_for_package(grade11).startswith("11-sinif-")
+    assert application.bundle_name_for_package(grade12).startswith("12-sinif-")
+    assert not application.bundle_name_for_package(bank11).startswith("11-sinif-11-sinif-")

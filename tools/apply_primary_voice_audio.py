@@ -18,7 +18,8 @@ from validate_audio_assets import validate as validate_audio_assets
 
 
 ROOT = Path(__file__).resolve().parent.parent
-PROFILE_ID = "alika-primary-woman-v1"
+PROFILE_ID = "alika-authorized-woman-voice-v1"
+RIGHTS_RECORD_ID = "tr-authorized-woman-voice-rights-20260901"
 REVIEW_METHOD = "alika-primary-voice-audio-migration-review/1.0.0"
 REVIEW_MODEL = "gpt-5.6-sol-codex-self-review"
 DECLARATION = "ai-audio-migration-and-codex-self-review-no-human-review"
@@ -38,6 +39,16 @@ def digest_value(value: Any) -> str:
 
 def projection(row: dict[str, Any]) -> dict[str, Any]:
     return {key: copy.deepcopy(value) for key, value in row.items() if key not in REVIEW_FIELDS}
+
+
+def bundle_name_for_package(package: Path) -> str:
+    relative = package.resolve().relative_to(ROOT)
+    if len(relative.parts) < 3:
+        raise ValueError(f"package path lacks country/grade segments: {relative}")
+    grade = relative.parts[1]
+    stem = package.stem
+    qualified_stem = stem if stem.startswith(f"{grade}-") else f"{grade}-{stem}"
+    return f"{qualified_stem}-{PROFILE_ID}.alika.zip"
 
 
 def stamp(row: dict[str, Any], review_sha: str, prior_manifest: str) -> dict[str, Any]:
@@ -190,7 +201,7 @@ def apply_manifest(
                 "storage": "local-offline-wav",
                 "remoteAssetsAllowed": False,
                 "voiceProfileId": PROFILE_ID,
-                "rightsRecordId": "voice-rights-alika-primary-woman-v1",
+                "rightsRecordId": RIGHTS_RECORD_ID,
             })
             row["audioPolicy"] = policy
             changed = True
@@ -217,7 +228,7 @@ def apply_manifest(
         raise ValueError(f"audio validation failed: {audio_report['errors'][:20]}")
     strict = strict_validate(package)
     release_root.mkdir(parents=True, exist_ok=True)
-    bundle_name = f"{package.stem}-{PROFILE_ID}.alika.zip"
+    bundle_name = bundle_name_for_package(package)
     bundle = build_bundle(package, source_manifest, release_root / bundle_name)
     receipts = sorted(source_manifest.parent.glob("*-release-receipt.json"))
     if len(receipts) != 1:
@@ -233,7 +244,7 @@ def apply_manifest(
         "primaryVoiceRelease": {
             "schemaVersion": "alika-primary-voice-release/1.0.0",
             "voiceProfileId": PROFILE_ID,
-            "rightsRecordId": "voice-rights-alika-primary-woman-v1",
+            "rightsRecordId": RIGHTS_RECORD_ID,
             "audioManifestSha256": manifest_sha,
             "audioReviewReportSha256": review_sha,
             "modelId": "openbmb/VoxCPM2",
@@ -278,6 +289,10 @@ def main() -> int:
         apply_manifest(path.resolve(), staging_root, review_sha, args.release_root.resolve())
         for path in manifests
     ]
+    expected_bundle_names = {Path(result["bundle"]["output"]).name for result in results}
+    for stale in args.release_root.resolve().glob(f"*-{PROFILE_ID}.alika.zip"):
+        if stale.name not in expected_bundle_names:
+            stale.unlink()
     application = {
         "schemaVersion": "alika-primary-voice-application/1.0.0",
         "status": "PASS",

@@ -25,7 +25,8 @@ def main() -> int:
     args = parser.parse_args()
     package = args.package.resolve()
     audio_manifest_path = args.audio_manifest.resolve()
-    audio_manifest = json.loads(audio_manifest_path.read_text(encoding="utf-8"))
+    audio_manifest_bytes = audio_manifest_path.read_bytes()
+    audio_manifest = json.loads(audio_manifest_bytes.decode("utf-8"))
     assets = audio_manifest.get("assets") if isinstance(audio_manifest.get("assets"), list) else []
     if int(audio_manifest.get("assetCount") or -1) != len(assets):
         raise SystemExit("audio manifest count mismatch")
@@ -60,6 +61,11 @@ def main() -> int:
             "bytes": package.stat().st_size,
         }],
         "audioManifestSha256": digest(audio_manifest_path),
+        "audioManifest": {
+            "path": "audio-assets.json",
+            "sha256": digest(audio_manifest_path),
+            "bytes": len(audio_manifest_bytes),
+        },
         "audioAssets": declared_assets,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -69,6 +75,7 @@ def main() -> int:
             json.dumps(manifest, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n",
         )
         archive.write(package, package_member)
+        archive.writestr("audio-assets.json", audio_manifest_bytes)
         for source, member in paths:
             archive.write(source, member)
     print(json.dumps({

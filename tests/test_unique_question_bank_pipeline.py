@@ -273,9 +273,21 @@ def test_consented_primary_voice_contract_is_accepted(tmp_path: Path) -> None:
         "language": "en-US",
         "speaker": {
             "kind": "consented-human-voice-clone",
-            "voiceProfileId": "alika-primary-woman-v1",
-            "rightsRecordId": "voice-rights-alika-primary-woman-v1",
+            "voiceProfileId": "alika-authorized-woman-voice-v1",
+            "rightsRecordId": "tr-authorized-woman-voice-rights-20260901",
             "referenceSha256": "3ead7d03d36780933b0acb326e9a8eaf9ee443ad0a440e9b23ca8cccbdaa093e",
+        },
+        "rightsRecordId": "tr-authorized-woman-voice-rights-20260901",
+        "referenceAudio": {
+            "sha256": "3ead7d03d36780933b0acb326e9a8eaf9ee443ad0a440e9b23ca8cccbdaa093e",
+            "packaged": False,
+            "storage": "private-local-not-in-repository",
+        },
+        "voiceModel": {
+            "modelId": "openbmb/VoxCPM2",
+            "revision": "32279effe8c19989596f05d353d1447f51d9e915",
+            "modelFileSha256": "f7f964cfa9da23653baec6e6f7750719977ad944ed9f95fe52fe3a620506891d",
+            "license": "Apache-2.0",
         },
         "licenseStatus": "voice-owner-authorized-commercial-use",
         "redistributionReviewStatus": "approved-project-owner-attestation",

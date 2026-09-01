@@ -1,14 +1,14 @@
 {
   "androidClassBundle": {
     "audioAssets": 275,
-    "bytes": 171862228,
-    "output": "C:\\Users\\Shadow\\Desktop\\AliKa at�lye\\alika_grade6_worktree\\build\\question-banks\\grade-11\\reviewed\\11-sinif-tum-dersler-2000-soru.alika.zip",
-    "sha256": "59bac890d8ff4b5521732687436fc0416274ea3f51a7481c2be4b01400be766f"
+    "bytes": 263341837,
+    "output": "release/11-sinif-tum-dersler-2000-soru-alika-authorized-woman-voice-v1.alika.zip",
+    "sha256": "6cefd4eac9acd4375440c9de280018e9b9fbfb6228ad3044ea4a8cc8fb28d84f"
   },
   "audioValidation": {
     "assets": 275,
-    "bytes": 191804228,
-    "durationMs": 4349023,
+    "bytes": 338726020,
+    "durationMs": 3528270,
     "errors": [],
     "questions": 2000,
     "requirements": {
@@ -53,9 +53,20 @@
     "questions": 2000,
     "visualQuestions": 500
   },
+  "primaryVoiceRelease": {
+    "audioManifestSha256": "2b6c584da28794519e8ad28d59db0e6c9bff1a659dea4970325d68d85c946937",
+    "audioReviewReportSha256": "769951c19c1b604349420333338a3f70e0ef0b82158fb8a43e760ea1d7c179e7",
+    "commercialUseApproved": true,
+    "modelId": "openbmb/VoxCPM2",
+    "modelLicense": "Apache-2.0",
+    "modelRevision": "32279effe8c19989596f05d353d1447f51d9e915",
+    "rightsRecordId": "tr-authorized-woman-voice-rights-20260901",
+    "schemaVersion": "alika-primary-voice-release/1.0.0",
+    "voiceProfileId": "alika-authorized-woman-voice-v1"
+  },
   "reviewManifestSha256": "a846eb0361d5ec987df11ed5ee3df23f5dcafe248208a585ebc6dd9a421ead2f",
   "reviewMethod": "alika-hash-bound-independent-ai-review/2.0.0",
-  "reviewedPackageSha256": "906453e4be6a9c133037c587c4bb43e2c977a2eff9d5b2343c7880148d705985",
+  "reviewedPackageSha256": "06a26795028cd7a20ef336f4b80e8838294f6345ebc612ee8a730b48fb397003",
   "schemaVersion": "alika-question-bank-release-receipt/2.0.0",
   "strictValidation": "0 HATA / 0 UYARI"
 }

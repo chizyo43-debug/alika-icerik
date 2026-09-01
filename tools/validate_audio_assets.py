@@ -52,6 +52,26 @@ def validate_speaker_provenance(asset_id: str, asset: dict[str, Any]) -> list[st
         errors.append(f"{asset_id}: voice-owner-license-missing")
     if asset.get("redistributionReviewStatus") != "approved-project-owner-attestation":
         errors.append(f"{asset_id}: audio-license-review-pending")
+    rights_record_id = str(asset.get("rightsRecordId") or "").strip()
+    if not rights_record_id or rights_record_id != speaker.get("rightsRecordId"):
+        errors.append(f"{asset_id}: rights-record-binding-invalid")
+    reference = asset.get("referenceAudio")
+    if not isinstance(reference, dict):
+        errors.append(f"{asset_id}: reference-audio-evidence-missing")
+    else:
+        if reference.get("sha256") != speaker.get("referenceSha256"):
+            errors.append(f"{asset_id}: reference-audio-hash-mismatch")
+        if reference.get("packaged") is not False:
+            errors.append(f"{asset_id}: private-reference-packaging-invalid")
+    voice_model = asset.get("voiceModel")
+    if not isinstance(voice_model, dict):
+        errors.append(f"{asset_id}: voice-model-evidence-missing")
+    else:
+        for field in ("modelId", "revision", "modelFileSha256", "license"):
+            if not str(voice_model.get(field) or "").strip():
+                errors.append(f"{asset_id}: voice-model-{field}-missing")
+        if not valid_sha256(voice_model.get("modelFileSha256")):
+            errors.append(f"{asset_id}: voice-model-hash-invalid")
     return errors
 
 

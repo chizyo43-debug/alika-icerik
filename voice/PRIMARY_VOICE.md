@@ -1,7 +1,7 @@
 # AliKa ana kadın sesi
 
 Türkiye içeriklerinde ses gerektiren bütün kayıtların kanonik konuşmacı profili
-`alika-primary-woman-v1` değeridir. Profil, proje sahibinin eşine ait izinli bir
+`alika-authorized-woman-voice-v1` değeridir. Profil, proje sahibinin eşine ait izinli bir
 insan sesinden yerel olarak üretilir. Ham referans biyometrik veri olduğu için
 Git'e ve dağıtım paketlerine girmez; yalnız SHA-256 özeti ve hak kaydı yayımlanır.
 
@@ -41,7 +41,7 @@ kapısıyla uyumlu değildir.
 
 Yerel referans varsayılan olarak şu Git dışı yolda tutulur:
 
-`voice/private/alika-primary-woman-v1/prompt.wav`
+`voice/private/alika-authorized-woman-voice-v1/prompt.wav`
 
 Beklenen referans SHA-256 değeri:
 

@@ -24,8 +24,8 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parent.parent
-PROFILE_ID = "alika-primary-woman-v1"
-RIGHTS_RECORD_ID = "voice-rights-alika-primary-woman-v1"
+PROFILE_ID = "alika-authorized-woman-voice-v1"
+RIGHTS_RECORD_ID = "tr-authorized-woman-voice-rights-20260901"
 REFERENCE_SHA256 = "3ead7d03d36780933b0acb326e9a8eaf9ee443ad0a440e9b23ca8cccbdaa093e"
 REFERENCE_TEXT = (
     "İsterseniz daha sonra kuralları istediğiniz zaman değiştirebilir, "
@@ -36,6 +36,7 @@ REFERENCE_TEXT = (
 MODEL_ID = "openbmb/VoxCPM2"
 MODEL_REVISION = "32279effe8c19989596f05d353d1447f51d9e915"
 MODEL_FILE_SHA256 = "f7f964cfa9da23653baec6e6f7750719977ad944ed9f95fe52fe3a620506891d"
+GENERATION_METHOD = "local-voxcpm2-authorized-woman-voice-clone"
 GENERATOR_VERSION = "alika-primary-voice-generator/1.3.0"
 GENERATED_AT = "2026-09-01T00:00:00+03:00"
 
@@ -69,6 +70,28 @@ def stable_seed(asset_id: str, seed_base: int) -> int:
 def transcript_shard(transcript: str, shard_count: int) -> int:
     """Return a stable worker shard; identical transcripts always stay together."""
     return int(text_digest(transcript.strip())[:16], 16) % shard_count
+
+
+def transcript_owned_by_shard(transcript: str, shard_count: int, shard_index: int) -> bool:
+    """Return whether this worker may materialize every asset for a transcript.
+
+    This deliberately derives ownership from the transcript itself instead of
+    the current run's pending-generation list. A valid source checkpoint may
+    predate a resumed run while one of its duplicate destinations is missing;
+    that destination still belongs to the same deterministic shard.
+    """
+    return transcript_shard(transcript, shard_count) == shard_index
+
+
+def checkpoint_seed_valid(parameters: dict[str, Any], expected_seed: int) -> bool:
+    """Bind a checkpoint seed to its one-based recorded generation attempt."""
+    attempt = parameters.get("attempt")
+    seed = parameters.get("seed")
+    return (
+        isinstance(attempt, int)
+        and 1 <= attempt <= 99
+        and seed == expected_seed + (attempt - 1) * 10_000
+    )
 
 
 def split_text(text: str, max_chars: int) -> list[str]:
@@ -188,7 +211,7 @@ def checkpoint_valid(
         and parameters.get("cfg") == cfg
         and parameters.get("inferenceTimesteps") == steps
         and parameters.get("maxChars") == max_chars
-        and parameters.get("seed") in {expected_seed, expected_seed + 10_000, expected_seed + 20_000}
+        and checkpoint_seed_valid(parameters, expected_seed)
     )
 
 
@@ -206,7 +229,19 @@ def updated_asset(asset: dict[str, Any], job: Job) -> dict[str, Any]:
             "rightsRecordId": RIGHTS_RECORD_ID,
             "referenceSha256": REFERENCE_SHA256,
         },
-        "generationMethod": "local-offline-voxcpm2-ultimate-cloning",
+        "rightsRecordId": RIGHTS_RECORD_ID,
+        "referenceAudio": {
+            "sha256": REFERENCE_SHA256,
+            "packaged": False,
+            "storage": "private-local-not-in-repository",
+        },
+        "voiceModel": {
+            "modelId": MODEL_ID,
+            "revision": MODEL_REVISION,
+            "modelFileSha256": MODEL_FILE_SHA256,
+            "license": "Apache-2.0",
+        },
+        "generationMethod": GENERATION_METHOD,
         "generationToolVersion": GENERATOR_VERSION,
         "generationParameters": metadata["generationParameters"],
         "generatedAt": GENERATED_AT,
@@ -301,6 +336,8 @@ def main() -> int:
     parser.add_argument("--limit", type=int)
     parser.add_argument("--shard-count", type=int, default=1)
     parser.add_argument("--shard-index", type=int, default=0)
+    parser.add_argument("--retry-asset-id", action="append", default=[])
+    parser.add_argument("--attempt-offset", type=int, default=0)
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
     if hasattr(sys.stdout, "reconfigure"):
@@ -313,16 +350,31 @@ def main() -> int:
     if not reference.is_file() or digest(reference) != REFERENCE_SHA256:
         raise SystemExit("Primary voice reference is missing or has the wrong SHA-256")
     jobs, source_manifests = build_jobs(manifests, staging_root)
+    known_asset_ids = {str(job.asset["assetId"]) for job in jobs}
+    requested_retry_ids = set(args.retry_asset_id)
+    unknown_retry_ids = sorted(requested_retry_ids - known_asset_ids)
+    if unknown_retry_ids:
+        raise SystemExit(f"unknown retry asset id(s): {unknown_retry_ids[:10]}")
+    if args.attempt_offset < 0 or (args.attempt_offset and not (args.force or requested_retry_ids)):
+        raise SystemExit("attempt-offset requires --force or --retry-asset-id and cannot be negative")
+    retry_transcripts = {
+        str(job.asset["transcript"]).strip() for job in jobs
+        if str(job.asset["assetId"]) in requested_retry_ids
+    }
+    refresh_transcripts = (
+        {str(job.asset["transcript"]).strip() for job in jobs}
+        if args.force else retry_transcripts
+    )
     incomplete_jobs = [
         job for job in jobs
-        if args.force or not checkpoint_valid(
+        if str(job.asset["transcript"]).strip() in refresh_transcripts or not checkpoint_valid(
             job, cfg=args.cfg, steps=args.steps, max_chars=args.max_chars,
             seed_base=args.seed_base,
         )
     ]
     valid_by_transcript = {
         str(job.asset["transcript"]).strip(): job for job in jobs
-        if not args.force and checkpoint_valid(
+        if str(job.asset["transcript"]).strip() not in refresh_transcripts and checkpoint_valid(
             job, cfg=args.cfg, steps=args.steps, max_chars=args.max_chars,
             seed_base=args.seed_base,
         )
@@ -341,7 +393,6 @@ def main() -> int:
     ]
     if args.limit is not None:
         pending = pending[:args.limit]
-    owned_transcripts = {str(job.asset["transcript"]).strip() for job in pending}
     print(json.dumps({
         "phase": "plan", "assets": len(jobs), "pendingGeneration": len(pending),
         "pendingOtherShards": len(all_pending) - len(pending),
@@ -371,17 +422,20 @@ def main() -> int:
             prompt_wav_path=str(reference),
             reference_wav_path=str(reference),
         )
+        generated_by_transcript: dict[str, Job] = {}
         for index, job in enumerate(pending, start=1):
             transcript = str(job.asset["transcript"]).strip()
             chunks = split_text(transcript, args.max_chars)
             base_seed = stable_seed(text_digest(transcript), args.seed_base)
             started = time.time()
             last_error = ""
+            transcript_attempt_offset = args.attempt_offset if transcript in refresh_transcripts else 0
             for attempt in range(3):
+                recorded_attempt = transcript_attempt_offset + attempt + 1
                 try:
                     generated = []
                     for chunk_index, chunk in enumerate(chunks):
-                        seed = base_seed + attempt * 10_000 + chunk_index
+                        seed = base_seed + (recorded_attempt - 1) * 10_000 + chunk_index
                         random.seed(seed)
                         np.random.seed(seed % (2**32 - 1))
                         torch.manual_seed(seed)
@@ -424,12 +478,12 @@ def main() -> int:
                         "generatorVersion": GENERATOR_VERSION,
                         "wavSha256": actual["sha256"],
                         "generationParameters": {
-                            "seed": base_seed + attempt * 10_000,
+                            "seed": base_seed + (recorded_attempt - 1) * 10_000,
                             "cfg": args.cfg,
                             "inferenceTimesteps": args.steps,
                             "maxChars": args.max_chars,
                             "chunkGapMs": 180,
-                            "attempt": attempt + 1,
+                            "attempt": recorded_attempt,
                         },
                         "basicQa": qa,
                     }
@@ -442,6 +496,7 @@ def main() -> int:
                         "assetId": job.asset["assetId"], "durationMs": actual["durationMs"],
                         "elapsedSeconds": round(time.time() - started, 2), "status": "PASS",
                     }, ensure_ascii=False), flush=True)
+                    generated_by_transcript[transcript] = job
                     break
                 except Exception as exc:  # checkpointed retry; final failure is fatal
                     last_error = f"{type(exc).__name__}: {exc}"
@@ -459,18 +514,23 @@ def main() -> int:
             seed_base=args.seed_base,
         )
     }
+    if pending:
+        valid_by_transcript.update(generated_by_transcript)
     reused = 0
     for job in jobs:
-        if checkpoint_valid(
+        transcript = str(job.asset["transcript"]).strip()
+        is_valid = checkpoint_valid(
             job, cfg=args.cfg, steps=args.steps, max_chars=args.max_chars,
             seed_base=args.seed_base,
-        ):
+        )
+        if is_valid and transcript not in refresh_transcripts:
             continue
-        transcript = str(job.asset["transcript"]).strip()
-        if transcript not in owned_transcripts:
+        if not transcript_owned_by_shard(transcript, args.shard_count, args.shard_index):
             continue
         source = valid_by_transcript.get(transcript)
         if source is None:
+            continue
+        if is_valid and source.asset["assetId"] == job.asset["assetId"]:
             continue
         job.wav_path.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source.wav_path, job.wav_path)
