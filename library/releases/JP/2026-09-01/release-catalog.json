@@ -1,0 +1,1141 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "jp-2026-09-01-safe-scope",
+  "country": "JP",
+  "releaseDate": "2026-09-01",
+  "status": "publishable-produced-safe-scope-codex-self-audited",
+  "publishable": true,
+  "fullCurriculumCoverage": false,
+  "releaseScope": "all safely assessable produced records; unassessed speaking objectives withheld",
+  "recordReviewContract": {
+    "reviewStatus": "pending",
+    "humanReviewed": false,
+    "releaseApproval": "passed-critical-codex-self-audit",
+    "userAuthorizedCodexAsReviewer": true
+  },
+  "totals": {
+    "audioAssets": 160,
+    "audioQuestionLinks": 800,
+    "coveredRequiredVisuals": 19270,
+    "families": 4092,
+    "figures": 21102,
+    "maps": 39,
+    "notes": 949,
+    "packages": 43,
+    "questions": 20460,
+    "requiredVisuals": 19270,
+    "withheldObjectives": 36
+  },
+  "runtimeEvidence": {
+    "windows": {
+      "playback": "winsound-local-wav",
+      "status": "platform-supported",
+      "tests": [
+        "windows/tests/test_quiz_audio.py",
+        "windows/tests/test_class_bundle.py"
+      ]
+    },
+    "android": {
+      "playback": "MediaPlayer-local-wav",
+      "status": "platform-supported",
+      "tests": [
+        "QuizAudioContractTest",
+        "LibraryAudioBindingContractTest",
+        "AlikaClassBundleReaderTest"
+      ]
+    }
+  },
+  "audioRights": {
+    "rightsRecordId": "jp-eigo-voice-rights-20260831",
+    "rightsRecordPath": "library/sources/JP/audio/jp-eigo-authorized-voice-rights.json",
+    "rightsRecordSha256": "1e67256657d69ac6e53861350e65597e35c6bf1356db5d93ae85200dfccfdba9",
+    "redistributionReviewStatus": "approved-project-owner-attestation"
+  },
+  "releaseBlockers": [],
+  "packages": [
+    {
+      "cellId": "jp-g05-eigo",
+      "subject": "外国語（英語）",
+      "subjectCode": "eigo",
+      "grade": 5,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g05-eigo.zip",
+      "bundleSha256": "f738707ba9f984ab44fe140a42b3a4be4b96891a2d8ce3e3bdd5001d796f08f7",
+      "bundleBytes": 4400223,
+      "sourceBundleSha256": "e862bf60bd3ecf72086007534ca8edac11fe367b2b4fcd8509a1d3c173734789",
+      "counts": {
+        "questions": 370,
+        "notes": 18,
+        "families": 74,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "JP5-EIGO-INTERACT-REQUEST",
+          "title": "指示・依頼に応じる",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP5-EIGO-INTERACT-EXCHANGE",
+          "title": "考えや気持ちを伝え合う",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP5-EIGO-INTERACT-QUESTION",
+          "title": "その場で質問し答える",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP5-EIGO-PRESENT-DAILY",
+          "title": "身近な事柄を発表する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        },
+        {
+          "objectiveId": "JP5-EIGO-PRESENT-SELF",
+          "title": "内容を整理して自己紹介する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        },
+        {
+          "objectiveId": "JP5-EIGO-PRESENT-IDEA",
+          "title": "考えや気持ちを整理して話す",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        }
+      ]
+    },
+    {
+      "cellId": "jp-g05-kokugo",
+      "subject": "国語",
+      "subjectCode": "kokugo",
+      "grade": 5,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g05-kokugo.zip",
+      "bundleSha256": "2ef6877dac2431caccfefde5461cbc9ae388e9b2d2c4fa29ffdb1f17bdd6b70a",
+      "bundleBytes": 100930,
+      "sourceBundleSha256": "19c33ae440a6952090ada593ed22de465e27923486d4acf4a25e63489aefbc06",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g05-rika",
+      "subject": "理科",
+      "subjectCode": "rika",
+      "grade": 5,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g05-rika.zip",
+      "bundleSha256": "da884245b6c3b1415da69ce3fa9ec9585d21d642c24804d55d36c6c0d0f5f114",
+      "bundleBytes": 129444,
+      "sourceBundleSha256": "e10b280efb65cb4d93c8f497a8c0e17d042cd5ad9e628e678a9f175ba049b361",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g05-sansuu",
+      "subject": "算数",
+      "subjectCode": "sansuu",
+      "grade": 5,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g05-sansuu.zip",
+      "bundleSha256": "4172cf1c75eb61d97933cc4a2c1405f2c7c5eebe7395c9c9f987a955269294e5",
+      "bundleBytes": 100438,
+      "sourceBundleSha256": "34bd5ae068d461364cdb67f88ee28bac9128f913db31e9fa4096166212014eec",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g05-shakai",
+      "subject": "社会",
+      "subjectCode": "shakai",
+      "grade": 5,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g05-shakai.zip",
+      "bundleSha256": "d666a40eecf1cb26fd68d73901548eb1df27b947e6e51b888440936f5f2aed31",
+      "bundleBytes": 537385,
+      "sourceBundleSha256": "5cd8e8bdd80e305afdbf5b46455c2cb906e3a2e5857e9825b2a408d17d22f8dd",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g06-eigo",
+      "subject": "外国語（英語）",
+      "subjectCode": "eigo",
+      "grade": 6,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g06-eigo.zip",
+      "bundleSha256": "153e46bec177cd7e93d6e1c5ac442f26fad9ede10893f1e7b75213526b7c3ed9",
+      "bundleBytes": 7050881,
+      "sourceBundleSha256": "1c3e59c13bbfc5a054461db9ebabb43ed8ea0da077a71492559b38fcfb51fa01",
+      "counts": {
+        "questions": 370,
+        "notes": 18,
+        "families": 74,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "JP6-EIGO-INTERACT-REQUEST",
+          "title": "指示・依頼に応じる",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP6-EIGO-INTERACT-EXCHANGE",
+          "title": "考えや気持ちを伝え合う",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP6-EIGO-INTERACT-QUESTION",
+          "title": "その場で質問し答える",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP6-EIGO-PRESENT-DAILY",
+          "title": "身近な事柄を発表する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        },
+        {
+          "objectiveId": "JP6-EIGO-PRESENT-SELF",
+          "title": "内容を整理して自己紹介する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        },
+        {
+          "objectiveId": "JP6-EIGO-PRESENT-IDEA",
+          "title": "考えや気持ちを整理して話す",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        }
+      ]
+    },
+    {
+      "cellId": "jp-g06-kokugo",
+      "subject": "国語",
+      "subjectCode": "kokugo",
+      "grade": 6,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g06-kokugo.zip",
+      "bundleSha256": "16ecd959446bb5343ef8b8e44d94f2ce67491ad1d58f1078c2fd6ed4fafb2da7",
+      "bundleBytes": 102931,
+      "sourceBundleSha256": "248ac35b328cdbc4ffbe73e8dc5e28c8fe9507d7721d0776b141ba28237e6dd2",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g06-rika",
+      "subject": "理科",
+      "subjectCode": "rika",
+      "grade": 6,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g06-rika.zip",
+      "bundleSha256": "f46b20fb9fb8db495ae54224269de5b7c6b187589440049807d2cd38c0ee2d53",
+      "bundleBytes": 128306,
+      "sourceBundleSha256": "d8b2e17325e608de1cc697d9290784c0fd66582ad8a2e2d53f734d94de5c6731",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g06-sansuu",
+      "subject": "算数",
+      "subjectCode": "sansuu",
+      "grade": 6,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g06-sansuu.zip",
+      "bundleSha256": "ec67be03b70a2c120aa401c88f2f26649a1c4e92a24947874134923243413582",
+      "bundleBytes": 92796,
+      "sourceBundleSha256": "31ceb85ff24947fc1a1caeee0a98194ee20a5d2404d8786928e73b1a879ea767",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g06-shakai",
+      "subject": "社会",
+      "subjectCode": "shakai",
+      "grade": 6,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g06-shakai.zip",
+      "bundleSha256": "5260b80c2338ca4e58622590343ce17b0600ab784c263f19d9f910a592348351",
+      "bundleBytes": 106623,
+      "sourceBundleSha256": "c4c1a9d1346877a64ce8cd89c41adb63ab986b3e062ebb10d7fb131b1e83ff66",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g07-eigo",
+      "subject": "外国語（英語）",
+      "subjectCode": "eigo",
+      "grade": 7,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g07-eigo.zip",
+      "bundleSha256": "1df0f637bd5da2b541e992a9290ef5273db7c0455dd0815bc32060cbfc08001d",
+      "bundleBytes": 9342898,
+      "sourceBundleSha256": "0d671d5f3285b4af00c59636e9c9a0e23ac277504bca7e46e6dad1fbf00f3175",
+      "counts": {
+        "questions": 370,
+        "notes": 18,
+        "families": 74,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "JP7-EIGO-INTERACT-EXCHANGE",
+          "title": "身近な話題でやり取りする",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP7-EIGO-INTERACT-INFORMATION-GAP",
+          "title": "質問して情報を補う",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP7-EIGO-PRESENT-FACTS",
+          "title": "事実や経験を整理して話す",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        },
+        {
+          "objectiveId": "JP7-EIGO-PRESENT-OPINION",
+          "title": "考えと理由を話す",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        }
+      ]
+    },
+    {
+      "cellId": "jp-g07-kokugo",
+      "subject": "国語",
+      "subjectCode": "kokugo",
+      "grade": 7,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g07-kokugo.zip",
+      "bundleSha256": "3b8ae881cae57896068461bc1029ec9b543903a29aeb6bee97217de7d5c84b64",
+      "bundleBytes": 101806,
+      "sourceBundleSha256": "f5c8ec8910e8667f01ad3e9f58a508250db747d6fedb14daf359482b972eaa5e",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g07-rika",
+      "subject": "理科",
+      "subjectCode": "rika",
+      "grade": 7,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g07-rika.zip",
+      "bundleSha256": "592c16921d75d2f7089f7a0f7dd520db23c54f89fdbf083fe209042242421945",
+      "bundleBytes": 136504,
+      "sourceBundleSha256": "7a6ff153c38dbaa4cbef03a7cc18d832f052e69513dff3f241724c52d4bcf9a9",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g07-shakai",
+      "subject": "社会",
+      "subjectCode": "shakai",
+      "grade": 7,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g07-shakai.zip",
+      "bundleSha256": "c7fee0f738f36edf54e0384a16ec231e3ce835c046397f01beb83f377c5d29b7",
+      "bundleBytes": 419423,
+      "sourceBundleSha256": "101cb19f416c7ef90ac35fa1ae132c7dc9e0e52f24716ec3274d9506abe3535c",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g07-suugaku",
+      "subject": "数学",
+      "subjectCode": "suugaku",
+      "grade": 7,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g07-suugaku.zip",
+      "bundleSha256": "ddd0c8142085c9615ae3667e9c3b0fa137370b8a0e1805b3b64d5ceec9edf920",
+      "bundleBytes": 88743,
+      "sourceBundleSha256": "a1a61c8bbb8a7933d67f7e6ad3f073c63a146118d0a6c2c5a5a46ea684e8d1db",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g08-eigo",
+      "subject": "外国語（英語）",
+      "subjectCode": "eigo",
+      "grade": 8,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g08-eigo.zip",
+      "bundleSha256": "a4ec84f1610ef213e0c4eb17ba7c0508502b64cab9a03fc0b0ce9f2717647af0",
+      "bundleBytes": 11624084,
+      "sourceBundleSha256": "aa73c9047dfd4853683469b1017718fab6cc7a92c3c9f9d158bdeb557d3b8c1f",
+      "counts": {
+        "questions": 370,
+        "notes": 18,
+        "families": 74,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "JP8-EIGO-INTERACT-EXCHANGE",
+          "title": "理由や説明を加えてやり取りする",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP8-EIGO-INTERACT-PROBLEM-SOLVE",
+          "title": "条件を調整して合意する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP8-EIGO-PRESENT-FACTS",
+          "title": "資料を基に説明する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        },
+        {
+          "objectiveId": "JP8-EIGO-PRESENT-OPINION",
+          "title": "意見・理由・例を構成して話す",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        }
+      ]
+    },
+    {
+      "cellId": "jp-g08-kokugo",
+      "subject": "国語",
+      "subjectCode": "kokugo",
+      "grade": 8,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g08-kokugo.zip",
+      "bundleSha256": "173a8f2aafff761ce863342f89a25d0cda093a9deda3b57ea6af19ae2b39c6d4",
+      "bundleBytes": 108780,
+      "sourceBundleSha256": "b131e40e5685f6fa3cebd823e9d35d2f366ab6a676fa3c6e6bd2d86a435fb637",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g08-rika",
+      "subject": "理科",
+      "subjectCode": "rika",
+      "grade": 8,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g08-rika.zip",
+      "bundleSha256": "0221f755efa5f65281b18da3a28b9824112fd7cca13870263bd3aba8bfcea642",
+      "bundleBytes": 140670,
+      "sourceBundleSha256": "41eff302bac0fb59ac6385288e66f70b1a9afbc54afba50dd81a20ecf30331c0",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g08-shakai",
+      "subject": "社会",
+      "subjectCode": "shakai",
+      "grade": 8,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g08-shakai.zip",
+      "bundleSha256": "10a1769e4e7c6c259a36252fe4f98173ae23296217a4427a604ecfe72ac3c6c8",
+      "bundleBytes": 107140,
+      "sourceBundleSha256": "c27803f92413a695bc5fed4c1a1aa5bb44703f5c0af01a39beed0b41b0cb0095",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g08-suugaku",
+      "subject": "数学",
+      "subjectCode": "suugaku",
+      "grade": 8,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g08-suugaku.zip",
+      "bundleSha256": "ce2a49f48a4f33d3680476db249ca1c63bb32e8808298e2f57dc2ec36d5dcfc3",
+      "bundleBytes": 86322,
+      "sourceBundleSha256": "94ca3a3a8bbbcfbca876fe2832e7c4f2d4a1af9a8a9185785202daf6bf316e8e",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g09-eigo",
+      "subject": "外国語（英語）",
+      "subjectCode": "eigo",
+      "grade": 9,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g09-eigo.zip",
+      "bundleSha256": "678617d0b2c220ae3639a8f029fefa403c6b335e4f008ddb10b2c3667ebe574c",
+      "bundleBytes": 15489960,
+      "sourceBundleSha256": "bd66eb41fa92aaf01a8ceeb67c5a35af8099ae8c6ff63816d310b48c886a1151",
+      "counts": {
+        "questions": 370,
+        "notes": 18,
+        "families": 74,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "JP9-EIGO-INTERACT-EXCHANGE",
+          "title": "根拠を示して即興でやり取りする",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP9-EIGO-INTERACT-CONSENSUS",
+          "title": "複数の立場を調整して合意する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP9-EIGO-PRESENT-EVIDENCE",
+          "title": "複数資料を基に説明する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        },
+        {
+          "objectiveId": "JP9-EIGO-PRESENT-ARGUMENT",
+          "title": "主張・根拠・反論を構成して話す",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        }
+      ]
+    },
+    {
+      "cellId": "jp-g09-kokugo",
+      "subject": "国語",
+      "subjectCode": "kokugo",
+      "grade": 9,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g09-kokugo.zip",
+      "bundleSha256": "5571e8a47352366169f63dfba2d54dea7c1baec8611ce6b1bd1eaa3668035622",
+      "bundleBytes": 115033,
+      "sourceBundleSha256": "ee6d96c1cec162ac5f2816519650f1a0cc5356907f66507390ad17a4b2ceedef",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g09-rika",
+      "subject": "理科",
+      "subjectCode": "rika",
+      "grade": 9,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g09-rika.zip",
+      "bundleSha256": "b05340cc5d9d2455d0ee725fbfcd110903f19fd3a9f64c898daf204be3660d8f",
+      "bundleBytes": 123724,
+      "sourceBundleSha256": "71eb8d3ed69b5498f8872e9ba69741c69cd58ee969da547bcc4eebc4e565aef1",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g09-shakai",
+      "subject": "社会",
+      "subjectCode": "shakai",
+      "grade": 9,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g09-shakai.zip",
+      "bundleSha256": "c399932153e62b175028449ca1a60ff3a1e3ffb2bef263f316f7ab40c503aff6",
+      "bundleBytes": 110712,
+      "sourceBundleSha256": "ec9018ad8601abae23dd4346ce7cc08e5bd2096194e441f037790b0624bca005",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g09-suugaku",
+      "subject": "数学",
+      "subjectCode": "suugaku",
+      "grade": 9,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g09-suugaku.zip",
+      "bundleSha256": "d7fe34976cebab2a1569aef074ed961a5ed5b81803190dbf8546dd2ea567196b",
+      "bundleBytes": 83506,
+      "sourceBundleSha256": "1a174c61d020c1515b05c975763aa8c0201c6bc39aca93e15ff9cfb0879fdb38",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g10-chirirekishi-koumin",
+      "subject": "地理歴史・公民",
+      "subjectCode": "chirirekishi-koumin",
+      "grade": 10,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g10-chirirekishi-koumin.zip",
+      "bundleSha256": "03415b3e0c9f0f7137b63471b441e6bb0d3b79c5580e5d9b10805e386bfe5c19",
+      "bundleBytes": 110577,
+      "sourceBundleSha256": "ccf9de31cfac26391ff9b48809a918c5e00f5168e66bd31b56ef23f035f00c50",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g10-eigo",
+      "subject": "外国語（英語）",
+      "subjectCode": "eigo",
+      "grade": 10,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g10-eigo.zip",
+      "bundleSha256": "f36a15b3ba8c582f53e3c2059f29d58a2786124156a08f9bd3199a5ad0ee2441",
+      "bundleBytes": 15215589,
+      "sourceBundleSha256": "e81b31adc18fbbc1c071aa0a4e54f84994d5e7693f33b1948800a699ab5f78c5",
+      "counts": {
+        "questions": 370,
+        "notes": 18,
+        "families": 74,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "JP10-EIGO-INTERACT-EXCHANGE",
+          "title": "根拠を示して即興でやり取りする",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP10-EIGO-INTERACT-CONSENSUS",
+          "title": "条件と立場を調整して合意する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP10-EIGO-PRESENT-EVIDENCE",
+          "title": "複数資料を基に説明する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        },
+        {
+          "objectiveId": "JP10-EIGO-PRESENT-ARGUMENT",
+          "title": "主張・根拠・応答を構成して話す",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        }
+      ]
+    },
+    {
+      "cellId": "jp-g10-jouhou",
+      "subject": "情報",
+      "subjectCode": "jouhou",
+      "grade": 10,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g10-jouhou.zip",
+      "bundleSha256": "6d231df90b5066542111b61fad661626d725d36f819c10248a0ca1bc0b7d71ce",
+      "bundleBytes": 109125,
+      "sourceBundleSha256": "f1d3115fb69ffaba6ec34442950adf8e3fa949f1a6a055d5d4728712231d9a50",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g10-kokugo",
+      "subject": "国語",
+      "subjectCode": "kokugo",
+      "grade": 10,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g10-kokugo.zip",
+      "bundleSha256": "f0e3e0bc4f1087b9172a157c7eec2161b4196d732aac7b00a66c796db8520c4c",
+      "bundleBytes": 112572,
+      "sourceBundleSha256": "5ec6de1a5e19cfd21001a7cf2eb1d0d32c390a39351ac72560cb9024a1dfb04a",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g10-rika",
+      "subject": "理科",
+      "subjectCode": "rika",
+      "grade": 10,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g10-rika.zip",
+      "bundleSha256": "ed8be23b3563b3932a62362b3289456f950a38ec8f7846a6fae3f35514072b24",
+      "bundleBytes": 123836,
+      "sourceBundleSha256": "42f0f4dc85a8df4345000a7a52e373585b5fb343d5ee741e1c79d5598fa41cdc",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g10-suugaku",
+      "subject": "数学",
+      "subjectCode": "suugaku",
+      "grade": 10,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g10-suugaku.zip",
+      "bundleSha256": "7d5f9784e6aabfb9b983e9bff6b9b3659adf4843eb628d2c4261006931c6d5b2",
+      "bundleBytes": 80163,
+      "sourceBundleSha256": "a09c471153c28ae84ae87ee6c8a078d59ea80f2ff404a6e48ca0d51a6c4ac9e1",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g11-chirirekishi-koumin",
+      "subject": "地理歴史・公民",
+      "subjectCode": "chirirekishi-koumin",
+      "grade": 11,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g11-chirirekishi-koumin.zip",
+      "bundleSha256": "ff33753cec763e7162c8bb1e5c5a9de06a21ef7591c156591f458645f811dbe3",
+      "bundleBytes": 102112,
+      "sourceBundleSha256": "8f18c990a76ec655029546befeac5f9a1725045b405fbb4d4bbfe1a638bc83eb",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g11-eigo",
+      "subject": "外国語（英語）",
+      "subjectCode": "eigo",
+      "grade": 11,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g11-eigo.zip",
+      "bundleSha256": "561e54777256d82f1a4bdd935eae7ece4a86fd1223288b9f418e9bc84dfb644d",
+      "bundleBytes": 15198779,
+      "sourceBundleSha256": "70d285168ef58882d87062c40eece07f6cf68756c09fbdc2074caf9bb236e224",
+      "counts": {
+        "questions": 370,
+        "notes": 18,
+        "families": 74,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "JP11-EIGO-INTERACT-EXCHANGE",
+          "title": "根拠と反証を伴ってやり取りする",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP11-EIGO-INTERACT-CONSENSUS",
+          "title": "立場と制約を調整して合意する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP11-EIGO-PRESENT-EVIDENCE",
+          "title": "複数資料を統合して発表する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        },
+        {
+          "objectiveId": "JP11-EIGO-PRESENT-ARGUMENT",
+          "title": "反対意見へ応答して話す",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        }
+      ]
+    },
+    {
+      "cellId": "jp-g11-jouhou",
+      "subject": "情報",
+      "subjectCode": "jouhou",
+      "grade": 11,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g11-jouhou.zip",
+      "bundleSha256": "e2e6ab5309a36f0fb1821b3ae2479f740665146e2dfb364765241ce9cd32eec8",
+      "bundleBytes": 111264,
+      "sourceBundleSha256": "dfee1914cfaff48b62abca92b07008c69699d8ad864e9efa2959c41c8ab8d4b5",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g11-kokugo",
+      "subject": "国語",
+      "subjectCode": "kokugo",
+      "grade": 11,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g11-kokugo.zip",
+      "bundleSha256": "9ef32d28613b524b66d654f1cf785b3376f9778972f67f0667a23a0527747634",
+      "bundleBytes": 113240,
+      "sourceBundleSha256": "2446cdc3bb1e4ccff5e33fd4d0ccd2d1d8a3c5128f18e72bcc6447cec271f078",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g11-rika",
+      "subject": "理科",
+      "subjectCode": "rika",
+      "grade": 11,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g11-rika.zip",
+      "bundleSha256": "117ca08058f8f62c9b9c02e26553bca0df3bc0ade7438e0111a9267baba353ec",
+      "bundleBytes": 122085,
+      "sourceBundleSha256": "aedf8eca20fbf1483543826d699f1625d0272c11bdfa81f89a7d2b5944959e62",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g11-suugaku",
+      "subject": "数学",
+      "subjectCode": "suugaku",
+      "grade": 11,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g11-suugaku.zip",
+      "bundleSha256": "9ea67a364973c9349160e2093b24392f7287bba016b617f0d29d08c1edc98bc6",
+      "bundleBytes": 77598,
+      "sourceBundleSha256": "de12004ed6c9aacddd0f1e5a13eb8745f9be7681fd876b511d3e5db466c966c9",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g12-chirirekishi-koumin",
+      "subject": "地理歴史・公民",
+      "subjectCode": "chirirekishi-koumin",
+      "grade": 12,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g12-chirirekishi-koumin.zip",
+      "bundleSha256": "5da5e92312fe508c1629ac9fd89eb3fc7fd7c9f9269aa0d7c008266b204fd046",
+      "bundleBytes": 104915,
+      "sourceBundleSha256": "0311b136959a801f88578310acc2a758ac7e2efb00adf5c4485911a131ead2f6",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g12-eigo",
+      "subject": "外国語（英語）",
+      "subjectCode": "eigo",
+      "grade": 12,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g12-eigo.zip",
+      "bundleSha256": "305801b976616440691667fd09a4683f045d83a6c862897e60249b12abc9e76e",
+      "bundleBytes": 18734039,
+      "sourceBundleSha256": "e144d639afc7efbb8a657ee09bb2de729d690de8ad90ea3f705435bd3d533b9a",
+      "counts": {
+        "questions": 370,
+        "notes": 18,
+        "families": 74,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "JP12-EIGO-INTERACT-EXCHANGE",
+          "title": "即興の質疑で論証を更新する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP12-EIGO-INTERACT-CONSENSUS",
+          "title": "複雑な制約下で合意を形成する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "interactive-speaking"
+        },
+        {
+          "objectiveId": "JP12-EIGO-PRESENT-EVIDENCE",
+          "title": "資料の限界を含めて発表する",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        },
+        {
+          "objectiveId": "JP12-EIGO-PRESENT-ARGUMENT",
+          "title": "反論と限定を統合して話す",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "prepared-speaking"
+        }
+      ]
+    },
+    {
+      "cellId": "jp-g12-jouhou",
+      "subject": "情報",
+      "subjectCode": "jouhou",
+      "grade": 12,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g12-jouhou.zip",
+      "bundleSha256": "bc3e67b8ebb4b7189355d930c28cf017053792ee2553e8facf8f3c6c2992f573",
+      "bundleBytes": 114847,
+      "sourceBundleSha256": "642dcd970ce2b693ee4d08ad61a1eeea56dc52e5682f5996e3fe4769a339db57",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g12-kokugo",
+      "subject": "国語",
+      "subjectCode": "kokugo",
+      "grade": 12,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g12-kokugo.zip",
+      "bundleSha256": "cace2a3ebad3168c28854e12782ec95dc33dd0bf73855aa0f8aca407b8e142c0",
+      "bundleBytes": 94909,
+      "sourceBundleSha256": "4b6ace6de6e8905abcf3973119437d1a14ff2f45aee052c9a74049a04b0e40c6",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g12-rika",
+      "subject": "理科",
+      "subjectCode": "rika",
+      "grade": 12,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g12-rika.zip",
+      "bundleSha256": "327ce84d5487eff6060ad096b8ce2a3ec59dc0a1d7a1633820e0939990a83127",
+      "bundleBytes": 118610,
+      "sourceBundleSha256": "9bb56189311e22455ddb48ab3f85f75cde5d92d7c9d1c6f61ac7090b03ce6918",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "jp-g12-suugaku",
+      "subject": "数学",
+      "subjectCode": "suugaku",
+      "grade": 12,
+      "bundlePath": "library/releases/JP/2026-09-01/bundles/jp-g12-suugaku.zip",
+      "bundleSha256": "2289f3eac10b341ea2f00d62cb38064e9b0adae10b4a2e2cfa4d8c57c86fe576",
+      "bundleBytes": 77366,
+      "sourceBundleSha256": "c04ad679818551022975d15ec4cf1ba3682aa02a1ead8a3ba4d961c6580aed2e",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    }
+  ]
+}

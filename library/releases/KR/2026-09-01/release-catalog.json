@@ -1,0 +1,3606 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "kr-2026-09-01-safe-scope",
+  "country": "KR",
+  "releaseDate": "2026-09-01",
+  "status": "publishable-produced-safe-scope-codex-self-audited",
+  "publishable": true,
+  "fullCurriculumCoverage": false,
+  "releaseScope": "all-produced-records; evidence-blocked curriculum objectives withheld",
+  "recordReviewContract": {
+    "reviewStatus": "pending",
+    "humanReviewed": false,
+    "releaseApproval": "passed-critical-codex-self-audit",
+    "userAuthorizedCodexAsReviewer": true
+  },
+  "totals": {
+    "audioAssets": 135,
+    "audioQuestionLinks": 675,
+    "coveredRequiredVisuals": 48743,
+    "families": 9400,
+    "maps": 137,
+    "notes": 2162,
+    "packages": 94,
+    "questions": 47000,
+    "requiredVisuals": 48743,
+    "spokenResponseQuestions": 225,
+    "withheldObjectives": 289
+  },
+  "runtimeEvidence": {
+    "windows": {
+      "playback": "winsound-local-wav",
+      "spokenResponseCapture": "winmm-wavein",
+      "status": "platform-supported",
+      "test": "windows/tests/test_quiz_audio.py"
+    },
+    "android": {
+      "playback": "MediaPlayer-local-wav",
+      "spokenResponseCapture": "MediaRecorder",
+      "status": "platform-supported",
+      "tests": [
+        "QuizAudioContractTest",
+        "LibraryAudioBindingContractTest",
+        "AlikaClassBundleReaderTest"
+      ]
+    }
+  },
+  "audioRights": {
+    "rightsRecordId": "kr-authorized-woman-voice-rights-20260901",
+    "rightsRecordPath": "library/sources/KR/audio/kr-authorized-woman-voice-rights-20260901.json",
+    "rightsRecordSha256": "8aa74391274d165eb40d833cac07f30ba4dc3bbb8635708a7ddd68de672fad1d",
+    "redistributionReviewStatus": "approved-project-owner-attestation"
+  },
+  "placementDisclosure": {
+    "middleSchool": "7-9 grade placement is an AliKa learning sequence within the official national band, not a claim of exclusive national grade assignment.",
+    "highElectives": "11-12 elective bundles require learner or school course selection at import/enrolment."
+  },
+  "releaseBlockers": [],
+  "packages": [
+    {
+      "cellId": "kr-g05-gugeo",
+      "subject": "국어",
+      "subjectCode": "gugeo",
+      "grade": 5,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g05-gugeo.zip",
+      "bundleSha256": "72027ae4e3c99be5a0a1af16573ff6ca3daec3d8cbcb35f2f942ab985e734574",
+      "bundleBytes": 98927,
+      "sourceManifestPath": "library/work/full/kr-g05-gugeo/manifest.json",
+      "sourceManifestSha256": "922dddc7c92a7066aa89464040844f545a2f9c9ce3196dea7d80d06c835c7dec",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g05-gwahak",
+      "subject": "과학",
+      "subjectCode": "gwahak",
+      "grade": 5,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g05-gwahak.zip",
+      "bundleSha256": "5701d3a9e56b01ef4b11ab96da748832e0f87799c5c69cec1a70dab206db2eee",
+      "bundleBytes": 98573,
+      "sourceManifestPath": "library/work/full/kr-g05-gwahak/manifest.json",
+      "sourceManifestSha256": "7441c699f3ecee192b65eacce3382993c5884426540f3ca99543790fdeb67ac6",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g05-sahoe",
+      "subject": "사회",
+      "subjectCode": "sahoe",
+      "grade": 5,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g05-sahoe.zip",
+      "bundleSha256": "1fdec71f29e2ddd1545a7fb53f9b1f8c83ca5179226461d28e8e13aa17e18ca5",
+      "bundleBytes": 3710541,
+      "sourceManifestPath": "library/work/full/kr-g05-sahoe/manifest.json",
+      "sourceManifestSha256": "49c3b2f9085e9752f42070036ae92ddff695cdf5a457bdde220c38a4a44478df",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "6사01-01",
+          "reason": "map-photo-or-source-evidence-required"
+        },
+        {
+          "objectiveId": "6사01-02",
+          "reason": "map-photo-or-source-evidence-required"
+        }
+      ],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g05-suhak",
+      "subject": "수학",
+      "subjectCode": "suhak",
+      "grade": 5,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g05-suhak.zip",
+      "bundleSha256": "e87234bd744f14d887e98aae1902335b6b089850a20312fac8ad1e64728b1007",
+      "bundleBytes": 85481,
+      "sourceManifestPath": "library/work/full/kr-g05-suhak/manifest.json",
+      "sourceManifestSha256": "d38efb3d6ca0fc77918bde95601a31f1ca68d60e5002240ee9dda042843fb0e8",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g05-yeongeo",
+      "subject": "영어",
+      "subjectCode": "yeongeo",
+      "grade": 5,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g05-yeongeo.zip",
+      "bundleSha256": "fcb81cad456a5153983135e9957024e5edba9806ba3301a0752667923d33351f",
+      "bundleBytes": 2080775,
+      "sourceManifestPath": "library/work/full/kr-g05-yeongeo/manifest.json",
+      "sourceManifestSha256": "5f2b6817af874f7616919640bfd0e511ed21db87f193e222027f6d53000ef3ac",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g06-gugeo",
+      "subject": "국어",
+      "subjectCode": "gugeo",
+      "grade": 6,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g06-gugeo.zip",
+      "bundleSha256": "177382216ba234c1923a29bcbff977794bfaf28616010f5724365dffdf173c08",
+      "bundleBytes": 99769,
+      "sourceManifestPath": "library/work/full/kr-g06-gugeo/manifest.json",
+      "sourceManifestSha256": "b7905d6df6b560bc468ddea4bdd987686b7dbc731712f904c2de9974c82a85ba",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g06-gwahak",
+      "subject": "과학",
+      "subjectCode": "gwahak",
+      "grade": 6,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g06-gwahak.zip",
+      "bundleSha256": "c55660dbf48328a24770da48daf212a1220b20f2767f0762e1918940cb6ffc95",
+      "bundleBytes": 66866,
+      "sourceManifestPath": "library/work/full/kr-g06-gwahak/manifest.json",
+      "sourceManifestSha256": "6858aaaaac143f65a2d597dae4f694930a08449ac3d8ee102f9166d7cd1e16f4",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g06-sahoe",
+      "subject": "사회",
+      "subjectCode": "sahoe",
+      "grade": 6,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g06-sahoe.zip",
+      "bundleSha256": "76723e048e883a74c7e298c927ef7cc83b7f8b78c9306811add999ed3642a3cf",
+      "bundleBytes": 80629,
+      "sourceManifestPath": "library/work/full/kr-g06-sahoe/manifest.json",
+      "sourceManifestSha256": "3ea5cfd5c0542abb0dbf818d5212fb94742c711441756ae2ac8e811b5dd19902",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "6사09-01",
+          "reason": "map-photo-or-source-evidence-required"
+        },
+        {
+          "objectiveId": "6사09-02",
+          "reason": "map-photo-or-source-evidence-required"
+        },
+        {
+          "objectiveId": "6사10-01",
+          "reason": "map-photo-or-source-evidence-required"
+        },
+        {
+          "objectiveId": "6사10-02",
+          "reason": "map-photo-or-source-evidence-required"
+        },
+        {
+          "objectiveId": "6사12-01",
+          "reason": "map-photo-or-source-evidence-required"
+        }
+      ],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g06-suhak",
+      "subject": "수학",
+      "subjectCode": "suhak",
+      "grade": 6,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g06-suhak.zip",
+      "bundleSha256": "b2f32f2f35648149c61c52e11951527e52b58eda9e6d34620fb352e12459572d",
+      "bundleBytes": 79388,
+      "sourceManifestPath": "library/work/full/kr-g06-suhak/manifest.json",
+      "sourceManifestSha256": "889d7fc3dd4878a8d383958f4b9f49668b53bd857ffb549c48fd616b7b5b9926",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g06-yeongeo",
+      "subject": "영어",
+      "subjectCode": "yeongeo",
+      "grade": 6,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g06-yeongeo.zip",
+      "bundleSha256": "ff3f0f0cef8366e42a79980b122ec198b5928d22352fd7cc893496b7be10104e",
+      "bundleBytes": 2082454,
+      "sourceManifestPath": "library/work/full/kr-g06-yeongeo/manifest.json",
+      "sourceManifestSha256": "a33b0e620cbfca98094792e77b5f6b3f8e6de8e3cbe02ec534e69b14d9cbffff",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g07-gugeo",
+      "subject": "국어",
+      "subjectCode": "gugeo",
+      "grade": 7,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g07-gugeo.zip",
+      "bundleSha256": "be30cb7874c9db15b480dd358315b0fdd17115817790a96e8a58f6557471b556",
+      "bundleBytes": 92291,
+      "sourceManifestPath": "library/work/full/kr-g07-gugeo/manifest.json",
+      "sourceManifestSha256": "7357fe3e6a9596131028d8f7ab923d8f1bf2b313197c20381afd24bded0725ed",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g07-gwahak",
+      "subject": "과학",
+      "subjectCode": "gwahak",
+      "grade": 7,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g07-gwahak.zip",
+      "bundleSha256": "7c56a14cfbe5bd64de204bd0457fc0c2db974cf788c19004e68be248b0221a20",
+      "bundleBytes": 69986,
+      "sourceManifestPath": "library/work/full/kr-g07-gwahak/manifest.json",
+      "sourceManifestSha256": "e81069b49731b8e9cb39a0838406d7902f797dda55ca87e9b07b6cfe0fd510c0",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g07-jeongbo",
+      "subject": "정보",
+      "subjectCode": "jeongbo",
+      "grade": 7,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g07-jeongbo.zip",
+      "bundleSha256": "68332b91312e2d11d939b05d850354a2891f520075d9f714acb65cbbfac1398e",
+      "bundleBytes": 62981,
+      "sourceManifestPath": "library/work/full/kr-g07-jeongbo/manifest.json",
+      "sourceManifestSha256": "7c8da99300f7e36d4580ca0a7483af0a7d1c834f0bedc875c2d49e86f5e68839",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g07-sahoe",
+      "subject": "사회",
+      "subjectCode": "sahoe",
+      "grade": 7,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g07-sahoe.zip",
+      "bundleSha256": "4a7c03e6e151e6d1ff8b15394e64331de7d332cc6d9dc90146392828fba4ae2f",
+      "bundleBytes": 67208,
+      "sourceManifestPath": "library/work/full/kr-g07-sahoe-safe/manifest.json",
+      "sourceManifestSha256": "fa4f29a55147063ebcf90937fbd01532d42da6717dbd6a3b3f74a22c8045f980",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g07-suhak",
+      "subject": "수학",
+      "subjectCode": "suhak",
+      "grade": 7,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g07-suhak.zip",
+      "bundleSha256": "ae350d5a166f973840f8bf09580464a514ae3b9b3c7570dfc5a43ef937988bed",
+      "bundleBytes": 85242,
+      "sourceManifestPath": "library/work/full/kr-g07-suhak/manifest.json",
+      "sourceManifestSha256": "3c2785aafced3e0c3da7c46b00a00e8a2ba673010c627be0ef746203cddfb2f0",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g07-yeongeo",
+      "subject": "영어",
+      "subjectCode": "yeongeo",
+      "grade": 7,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g07-yeongeo.zip",
+      "bundleSha256": "eec857698e2ff3c458312fa398a2d2c0b63bdfe240c7a45226a1e4cf2beb2a5d",
+      "bundleBytes": 2158084,
+      "sourceManifestPath": "library/work/full/kr-g07-yeongeo/manifest.json",
+      "sourceManifestSha256": "2855a2879061da31654a3acb395445163670d2c5fe6f2feca06d81bfa392236f",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g08-gugeo",
+      "subject": "국어",
+      "subjectCode": "gugeo",
+      "grade": 8,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g08-gugeo.zip",
+      "bundleSha256": "986763b2392b0bb9c756f750d2c207fd3ea99fa1f366c09bc0fff609037eb6fb",
+      "bundleBytes": 91793,
+      "sourceManifestPath": "library/work/full/kr-g08-gugeo/manifest.json",
+      "sourceManifestSha256": "e11d9fa0ebeee96235f500387b8f9283515b75cd9f2fd07fe908379b817f6645",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g08-gwahak",
+      "subject": "과학",
+      "subjectCode": "gwahak",
+      "grade": 8,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g08-gwahak.zip",
+      "bundleSha256": "2e73652c6139bb2703d6a9f3a1265013ea182f7d68e18e1a7b3c6badcd374961",
+      "bundleBytes": 63551,
+      "sourceManifestPath": "library/work/full/kr-g08-gwahak/manifest.json",
+      "sourceManifestSha256": "c28caf85a93b80ac22612a59a5997bce7faefe8face4b6650f10e69504753abe",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g08-jeongbo",
+      "subject": "정보",
+      "subjectCode": "jeongbo",
+      "grade": 8,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g08-jeongbo.zip",
+      "bundleSha256": "8a12fcf5b73cc9a1f83934eb83658324c1de8a8c383bbd46398074298637b37e",
+      "bundleBytes": 63843,
+      "sourceManifestPath": "library/work/full/kr-g08-jeongbo/manifest.json",
+      "sourceManifestSha256": "002a3bcbc2a4e2954018423dc96f5827127b1eb32f732839bcb057c147afd54e",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g08-sahoe",
+      "subject": "사회",
+      "subjectCode": "sahoe",
+      "grade": 8,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g08-sahoe.zip",
+      "bundleSha256": "2f258c31781075be10ccee350e94b048724daac62343a27818bf899e8c2cfebb",
+      "bundleBytes": 70293,
+      "sourceManifestPath": "library/work/full/kr-g08-sahoe-safe/manifest.json",
+      "sourceManifestSha256": "f3d760f8b2bc9aad2de1e11ae8aabb8524bc0e89dea5986700238103a6fef707",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g08-suhak",
+      "subject": "수학",
+      "subjectCode": "suhak",
+      "grade": 8,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g08-suhak.zip",
+      "bundleSha256": "6271d7a5c8c36b31d07571b01248457aabc79305f3b8fe494fa1a780a8dc56ee",
+      "bundleBytes": 77985,
+      "sourceManifestPath": "library/work/full/kr-g08-suhak/manifest.json",
+      "sourceManifestSha256": "35b22735156c491bcdd8a11d5ae74e1dc49cce12ab424db5f9c406165f307561",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g08-yeongeo",
+      "subject": "영어",
+      "subjectCode": "yeongeo",
+      "grade": 8,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g08-yeongeo.zip",
+      "bundleSha256": "21c1f00cda2344a09da9374ddc9033ab2eff85046dd23cc4bfb82ae9911f1bcb",
+      "bundleBytes": 83192,
+      "sourceManifestPath": "library/work/full/kr-g08-yeongeo/manifest.json",
+      "sourceManifestSha256": "f3fe9d20ed9f1c1d911e40ddf05be0c9ee3194b34693b72d0819decfa1b85606",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g09-gugeo",
+      "subject": "국어",
+      "subjectCode": "gugeo",
+      "grade": 9,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g09-gugeo.zip",
+      "bundleSha256": "f273681d277e30ba8d357e12fe026461ed50f4ef4359948e804ea8e36b65858d",
+      "bundleBytes": 86529,
+      "sourceManifestPath": "library/work/full/kr-g09-gugeo/manifest.json",
+      "sourceManifestSha256": "36cc7b57ffb7984842eafea6e12d2baa3a9d6b3c5808b89908926e32b167cb9d",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g09-gwahak",
+      "subject": "과학",
+      "subjectCode": "gwahak",
+      "grade": 9,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g09-gwahak.zip",
+      "bundleSha256": "9e1eba27bc167aa437695d72a81ad447807a29526bbb6305bec3a3523da10c59",
+      "bundleBytes": 65973,
+      "sourceManifestPath": "library/work/full/kr-g09-gwahak/manifest.json",
+      "sourceManifestSha256": "81abc9c60044cd2b9a45339a1efa30f5fa427f630e1709ed272121b8f7e971f7",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g09-jeongbo",
+      "subject": "정보",
+      "subjectCode": "jeongbo",
+      "grade": 9,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g09-jeongbo.zip",
+      "bundleSha256": "884abb1f5564e1543c77a995af2c6c66f414a412af85a7db8b2d222110c55e8b",
+      "bundleBytes": 64633,
+      "sourceManifestPath": "library/work/full/kr-g09-jeongbo/manifest.json",
+      "sourceManifestSha256": "11a641feb0df2df58a3e5cd70344e8d5fe14aadaf56ef76a526153941375a22a",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g09-sahoe",
+      "subject": "사회",
+      "subjectCode": "sahoe",
+      "grade": 9,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g09-sahoe.zip",
+      "bundleSha256": "0170815bab78e1b4c10e50287b472f0901215d54d83e484c831924643f4dd867",
+      "bundleBytes": 67357,
+      "sourceManifestPath": "library/work/full/kr-g09-sahoe-safe/manifest.json",
+      "sourceManifestSha256": "12678390db957ce470f8ae128a4188b5eae60d9b7ea6eba87aeef9fbc67f6a06",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g09-suhak",
+      "subject": "수학",
+      "subjectCode": "suhak",
+      "grade": 9,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g09-suhak.zip",
+      "bundleSha256": "b6055dbb2abc2b012b9d8f105458e457f2a007298b46691c4174e650a9f73bda",
+      "bundleBytes": 82885,
+      "sourceManifestPath": "library/work/full/kr-g09-suhak/manifest.json",
+      "sourceManifestSha256": "25e5669a92d8f6650818c3bfe487354a9766c096b52e284bdb8a2e6ba6dd85f0",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g09-yeongeo",
+      "subject": "영어",
+      "subjectCode": "yeongeo",
+      "grade": 9,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g09-yeongeo.zip",
+      "bundleSha256": "55953201cdc627e356351f3488957439d99929f9df43f7c3a5599db16c57106a",
+      "bundleBytes": 23673346,
+      "sourceManifestPath": "library/work/full/kr-g09-yeongeo/manifest.json",
+      "sourceManifestSha256": "718a4527d95375d6d6aed112c2754c5a2ff7eb676b289ddca2b80b62dc3a2a9a",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 55
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "project-sequence-within-national-7-9-band"
+    },
+    {
+      "cellId": "kr-g10-gugeo",
+      "subject": "국어",
+      "subjectCode": "gugeo",
+      "grade": 10,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g10-gugeo.zip",
+      "bundleSha256": "14b085acc897f2501b6f91542584c3f2a18f9ac6e9b1ec6abb3ea5fe6be4f4c3",
+      "bundleBytes": 83485,
+      "sourceManifestPath": "library/work/full/kr-g10-gugeo/manifest.json",
+      "sourceManifestSha256": "4efa2a48b1fc7641adde77b857cb2a022b7d775d471294758ac136bc4af428ba",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "10공국1-01-01",
+          "reason": "Gerçek yerel Korece ses varlığı veya konuşma yanıtı yakalama yolu yok; metin-only ikame yasaktır."
+        },
+        {
+          "objectiveId": "10공국1-01-02",
+          "reason": "Gerçek yerel Korece ses varlığı veya konuşma yanıtı yakalama yolu yok; metin-only ikame yasaktır."
+        },
+        {
+          "objectiveId": "10공국2-01-01",
+          "reason": "Gerçek yerel Korece ses varlığı veya konuşma yanıtı yakalama yolu yok; metin-only ikame yasaktır."
+        },
+        {
+          "objectiveId": "10공국2-01-02",
+          "reason": "Gerçek yerel Korece ses varlığı veya konuşma yanıtı yakalama yolu yok; metin-only ikame yasaktır."
+        },
+        {
+          "objectiveId": "10공국2-01-03",
+          "reason": "Gerçek yerel Korece ses varlığı veya konuşma yanıtı yakalama yolu yok; metin-only ikame yasaktır."
+        }
+      ],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g10-suhak",
+      "subject": "수학",
+      "subjectCode": "suhak",
+      "grade": 10,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g10-suhak.zip",
+      "bundleSha256": "c5c96bc8002c79263b814c29da54a9e555d81f4dcfc9aab561fcc199563344b5",
+      "bundleBytes": 76259,
+      "sourceManifestPath": "library/work/full/kr-g10-suhak/manifest.json",
+      "sourceManifestSha256": "6b6da6b2d5b56306d45d49c6b93a6a3377e61ce352af55cefcfd48f388817f98",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g10-tonghap-gwahak",
+      "subject": "통합과학",
+      "subjectCode": "tonghap-gwahak",
+      "grade": 10,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g10-tonghap-gwahak.zip",
+      "bundleSha256": "6689a6f4aabe8a5586300ed1ef48090997417dfb3cc02e2c48e67f52fbe910a4",
+      "bundleBytes": 74122,
+      "sourceManifestPath": "library/work/full/kr-g10-tonghap-gwahak/manifest.json",
+      "sourceManifestSha256": "b1e7baf152e24233a47927b8e30910ec56f0c55e7236ad7e9217421e18340fa2",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g10-tonghap-sahoe",
+      "subject": "통합사회",
+      "subjectCode": "tonghap-sahoe",
+      "grade": 10,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g10-tonghap-sahoe.zip",
+      "bundleSha256": "2aa4485e6921a23ddb339b7576511e88bdb5eb6e0d1257a9511aa8e35e36beb0",
+      "bundleBytes": 86986,
+      "sourceManifestPath": "library/work/full/kr-g10-tonghap-sahoe/manifest.json",
+      "sourceManifestSha256": "181220cc87edab9c7097f542882bd5f454961394afa7fc250b40c6d8592aca4d",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-g10-yeongeo",
+      "subject": "영어",
+      "subjectCode": "yeongeo",
+      "grade": 10,
+      "gradeBand": null,
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-g10-yeongeo.zip",
+      "bundleSha256": "f8023370f0aa7af058d5567a04891cccf40c9e776d02010db6a1c9a9c64eccab",
+      "bundleBytes": 73053,
+      "sourceManifestPath": "library/work/full/kr-g10-yeongeo/manifest.json",
+      "sourceManifestSha256": "bd3f0772a13a48d062e358668dd7b9a0ba10cdc3632beb76d8e9d5d0ee4c800a",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "fixed-grade"
+    },
+    {
+      "cellId": "kr-high-elective-beop-sahoe",
+      "subject": "법과 사회",
+      "subjectCode": "beop-sahoe",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-beop-sahoe.zip",
+      "bundleSha256": "3260e9718529fb59a69f3cbd69cf5b2234b6fae98d9af6078b084630e4285447",
+      "bundleBytes": 70248,
+      "sourceManifestPath": "library/work/full/kr-high-elective-beop-sahoe/manifest.json",
+      "sourceManifestSha256": "9eafa8eaf8a00ee05d0d25e3309180d0538e50e91bf1d41dfa61f7453ae0100c",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12법사01-01",
+          "reason": "current-korean-family-and-inheritance-law-source-required"
+        },
+        {
+          "objectiveId": "12법사02-01",
+          "reason": "current-korean-constitutional-separation-of-powers-source-required"
+        },
+        {
+          "objectiveId": "12법사02-02",
+          "reason": "current-korean-constitution-and-rights-case-source-required"
+        },
+        {
+          "objectiveId": "12법사02-03",
+          "reason": "current-korean-criminal-law-and-procedure-source-required"
+        },
+        {
+          "objectiveId": "12법사02-04",
+          "reason": "current-korean-court-and-constitutional-court-process-source-required"
+        },
+        {
+          "objectiveId": "12법사03-01",
+          "reason": "current-korean-labor-law-and-youth-worker-protection-source-required"
+        },
+        {
+          "objectiveId": "12법사03-02",
+          "reason": "current-korean-social-security-competition-and-consumer-law-source-required"
+        },
+        {
+          "objectiveId": "12법사03-03",
+          "reason": "current-korean-platform-and-intellectual-property-law-source-required"
+        },
+        {
+          "objectiveId": "12법사04-01",
+          "reason": "current-korean-youth-rights-and-school-rules-source-required"
+        },
+        {
+          "objectiveId": "12법사04-02",
+          "reason": "current-korean-school-violence-law-and-authentic-case-review-required"
+        },
+        {
+          "objectiveId": "12법사04-03",
+          "reason": "current-primary-legal-materials-and-authentic-civic-inquiry-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-daesu",
+      "subject": "대수",
+      "subjectCode": "daesu",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-daesu.zip",
+      "bundleSha256": "d7eb4fcfd2872e1239638b4577d0fdd01ad461cea5b4b98e5e0746533f1230be",
+      "bundleBytes": 69153,
+      "sourceManifestPath": "library/work/full/kr-high-elective-daesu/manifest.json",
+      "sourceManifestSha256": "05d07ce2d920314c9285a172efd57755886734fe59c18a8f82bf83c17fea3752",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-dokseo-jakmun",
+      "subject": "독서와 작문",
+      "subjectCode": "dokseo-jakmun",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-dokseo-jakmun.zip",
+      "bundleSha256": "65f055ef160c65755304cb273c55b73b698dd69ecb5eac7371c54c31d23f4d77",
+      "bundleBytes": 92737,
+      "sourceManifestPath": "library/work/full/kr-high-elective-dokseo-jakmun/manifest.json",
+      "sourceManifestSha256": "87cd5c1d3fbd7f8fbfefff35c92f631b590dd3c681b1525537585b6fd21f23fb",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-dokseo-toron-geulsseugi",
+      "subject": "독서 토론과 글쓰기",
+      "subjectCode": "dokseo-toron-geulsseugi",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-dokseo-toron-geulsseugi.zip",
+      "bundleSha256": "305a791a8449f36f65dc92543e908c8ec06b938fbbb5d313c60074667967523e",
+      "bundleBytes": 114856,
+      "sourceManifestPath": "library/work/full/kr-high-elective-dokseo-toron-geulsseugi/manifest.json",
+      "sourceManifestSha256": "bc079dab992599cc908bd083e98185ef4101c419cf8add9fed695e1f5915a921",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12독토01-01",
+          "reason": "한 권 이상의 실제 책을 긴 호흡으로 읽고 질문·해석 포트폴리오를 남겨야 하며 라이선스된 장문 도서와 독서 진행 경로가 없다."
+        },
+        {
+          "objectiveId": "12독토01-02",
+          "reason": "서로 다른 관점의 참여자와 실제 한국어 독서 토론을 수행해야 한다."
+        },
+        {
+          "objectiveId": "12독토01-03",
+          "reason": "실제 독서 토론 결과를 바탕으로 글을 쓰고 독자와 공유·피드백하는 경로가 필요하다."
+        },
+        {
+          "objectiveId": "12독토01-04",
+          "reason": "라이선스된 실제 책 읽기, 독서 토론, 글쓰기와 공유 활동이 모두 필요하다."
+        },
+        {
+          "objectiveId": "12독토01-05",
+          "reason": "여러 분야의 실제 책 읽기, 독서 토론과 지식 재구성 글쓰기 활동이 필요하다."
+        },
+        {
+          "objectiveId": "12독토01-06",
+          "reason": "사회 현안 도서의 실제 읽기, 토론, 글쓰기와 사회적 담론 참여 경로가 필요하다."
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-dongasia-yeoksa-gihaeng",
+      "subject": "동아시아 역사 기행",
+      "subjectCode": "dongasia-yeoksa-gihaeng",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-dongasia-yeoksa-gihaeng.zip",
+      "bundleSha256": "435f73f988f83ba23a61917df83f4aed3c88f64efebdbe180e4ec5c047bdc433",
+      "bundleBytes": 80996,
+      "sourceManifestPath": "library/work/full/kr-high-elective-dongasia-yeoksa-gihaeng/manifest.json",
+      "sourceManifestSha256": "40792827c1ff657782e845c414b3b3a7cb1a6460d420b9e29d1eb9cf53514cf8",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12동역04-02",
+          "reason": "current-economic-popular-culture-copyright-and-sensitive-multicultural-evidence-required"
+        },
+        {
+          "objectiveId": "12동역04-03",
+          "reason": "current-history-territory-conflict-versioned-boundary-human-review-and-live-deliberation-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-dosi-mirae-tamgu",
+      "subject": "도시의 미래 탐구",
+      "subjectCode": "dosi-mirae-tamgu",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-dosi-mirae-tamgu.zip",
+      "bundleSha256": "d3a4302b4d51586ff4648b91bc6d89735081e7c1138597466aa413e739bb3e96",
+      "bundleBytes": 92109,
+      "sourceManifestPath": "library/work/full/kr-high-elective-dosi-mirae-tamgu/manifest.json",
+      "sourceManifestSha256": "ce3809708378adc286cb935e442e88d7bb420bf2d6e99849f23a264cd8283ab5",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12도탐01-02",
+          "reason": "real-home-city-development-history-and-student-inquiry-required"
+        },
+        {
+          "objectiveId": "12도탐01-03",
+          "reason": "current-real-livable-city-case-evidence-and-student-preference-inquiry-required"
+        },
+        {
+          "objectiveId": "12도탐02-02",
+          "reason": "copyright-cleared-real-architecture-branding-assets-and-current-case-research-required"
+        },
+        {
+          "objectiveId": "12도탐02-04",
+          "reason": "current-advanced-industry-mobility-smart-city-evidence-and-student-forecast-required"
+        },
+        {
+          "objectiveId": "12도탐03-01",
+          "reason": "current-local-environment-disaster-data-spatial-justice-analysis-and-solution-required"
+        },
+        {
+          "objectiveId": "12도탐03-02",
+          "reason": "current-sensitive-real-estate-housing-data-and-spatial-justice-solution-required"
+        },
+        {
+          "objectiveId": "12도탐03-03",
+          "reason": "current-sensitive-migration-data-real-city-study-and-coexistence-proposal-required"
+        },
+        {
+          "objectiveId": "12도탐04-01",
+          "reason": "live-deliberation-current-urban-innovation-case-research-required"
+        },
+        {
+          "objectiveId": "12도탐04-02",
+          "reason": "authentic-civic-participation-and-local-urban-politics-evidence-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-eoneosaenghwal-tamgu",
+      "subject": "언어생활 탐구",
+      "subjectCode": "eoneosaenghwal-tamgu",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-eoneosaenghwal-tamgu.zip",
+      "bundleSha256": "996468640b8dadc5ff22bd5956cc2258e9fd43061ccf45b3f5934cac861e0148",
+      "bundleBytes": 117745,
+      "sourceManifestPath": "library/work/full/kr-high-elective-eoneosaenghwal-tamgu/manifest.json",
+      "sourceManifestSha256": "51a99ada0f06f1f1948b67911854323df5d2a097c5253bf28e1caf6eb687093f",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12언탐01-01",
+          "reason": "학습자 자신의 언어생활 자료를 동의·개인정보 보호 아래 수집하고 탐구 절차를 지속적으로 기록해야 한다."
+        },
+        {
+          "objectiveId": "12언탐01-02",
+          "reason": "실제 탐구 결과를 공동체와 공유하고 반응과 피드백을 바탕으로 책임감을 성찰하는 경로가 필요하다."
+        },
+        {
+          "objectiveId": "12언탐01-07",
+          "reason": "언어 습관을 일정 기간 실천·관찰하고 자기 성찰 포트폴리오로 증명해야 한다."
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-geumyung-gyeongje-saenghwal",
+      "subject": "금융과 경제생활",
+      "subjectCode": "geumyung-gyeongje-saenghwal",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-geumyung-gyeongje-saenghwal.zip",
+      "bundleSha256": "3cf76b8c952ff7364e07b2c855da9fb370c4727fd8e56edc9ade9d0a72973e95",
+      "bundleBytes": 100478,
+      "sourceManifestPath": "library/work/full/kr-high-elective-geumyung-gyeongje-saenghwal/manifest.json",
+      "sourceManifestSha256": "23c4c950c9bdf6fee7ed2df2b86335e89306e33f2a02561c1384eef47121b863",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12금융01-02",
+          "reason": "current-digital-financial-service-security-and-authentic-use-evidence-required"
+        },
+        {
+          "objectiveId": "12금융01-03",
+          "reason": "current-korean-contract-fraud-and-consumer-protection-primary-source-required"
+        },
+        {
+          "objectiveId": "12금융02-01",
+          "reason": "current-income-tax-social-insurance-and-labor-market-evidence-required"
+        },
+        {
+          "objectiveId": "12금융02-02",
+          "reason": "current-tax-payment-method-and-authentic-consumption-practice-required"
+        },
+        {
+          "objectiveId": "12금융02-03",
+          "reason": "personal-financial-data-and-authentic-budget-performance-required"
+        },
+        {
+          "objectiveId": "12금융03-01",
+          "reason": "current-financial-product-rate-tax-and-official-product-evidence-required"
+        },
+        {
+          "objectiveId": "12금융03-02",
+          "reason": "current-investment-product-market-data-and-suitability-review-required"
+        },
+        {
+          "objectiveId": "12금융03-03",
+          "reason": "current-korean-depositor-investor-protection-primary-source-required"
+        },
+        {
+          "objectiveId": "12금융04-01",
+          "reason": "current-korean-credit-system-and-debt-relief-primary-source-required"
+        },
+        {
+          "objectiveId": "12금융04-02",
+          "reason": "current-insurance-product-coverage-and-regulatory-source-required"
+        },
+        {
+          "objectiveId": "12금융04-03",
+          "reason": "current-korean-pension-system-and-personal-retirement-planning-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-giha",
+      "subject": "기하",
+      "subjectCode": "giha",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-giha.zip",
+      "bundleSha256": "3fb3a272a57db60ebf9c6d0f5e3819c2074f85179750d462d254bb1961a3969d",
+      "bundleBytes": 69294,
+      "sourceManifestPath": "library/work/full/kr-high-elective-giha/manifest.json",
+      "sourceManifestSha256": "67213aa4991fc3b3f360dc5a940de0845820f4d5a3907da39c7cf24408b8888e",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-gihu-hwangyeong-saengtae",
+      "subject": "기후변화와 환경생태",
+      "subjectCode": "gihu-hwangyeong-saengtae",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-gihu-hwangyeong-saengtae.zip",
+      "bundleSha256": "27ca4aafc33e81a3588b1c4e2e5439e7fdd4d057a58efebad66b67e65be0f268",
+      "bundleBytes": 76086,
+      "sourceManifestPath": "library/work/full/kr-high-elective-gihu-hwangyeong-saengtae/manifest.json",
+      "sourceManifestSha256": "796001b9d6b1cac371a014e2db72d175bf1d79f1635434aea4bf2e7fa4c3cc76",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12기환01-03",
+          "reason": "local-ecosystem-field-research-and-map-required"
+        },
+        {
+          "objectiveId": "12기환02-04",
+          "reason": "current-scenario-report-and-korea-species-map-required"
+        },
+        {
+          "objectiveId": "12기환02-05",
+          "reason": "real-flowering-time-series-research-required"
+        },
+        {
+          "objectiveId": "12기환02-08",
+          "reason": "current-public-health-and-vector-disease-evidence-required"
+        },
+        {
+          "objectiveId": "12기환03-02",
+          "reason": "live-discussion-and-current-disaster-case-evidence-required"
+        },
+        {
+          "objectiveId": "12기환03-03",
+          "reason": "current-carbon-technology-landscape-and-design-performance-required"
+        },
+        {
+          "objectiveId": "12기환03-04",
+          "reason": "current-international-policy-and-civic-proposal-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-gihu-jisok-segye",
+      "subject": "기후변화와 지속가능한 세계",
+      "subjectCode": "gihu-jisok-segye",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-gihu-jisok-segye.zip",
+      "bundleSha256": "dd831448799fff8c8ec220d149b1e6fc261741e3b2d1f92d1b55d737c8b39bda",
+      "bundleBytes": 74007,
+      "sourceManifestPath": "library/work/full/kr-high-elective-gihu-jisok-segye/manifest.json",
+      "sourceManifestSha256": "59cc663eb8051bb7a86931365aaeebbca8ca103d726f9d0d33e302bd7e3657e4",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12기지01-01",
+          "reason": "current-global-climate-case-and-scientific-severity-evidence-required"
+        },
+        {
+          "objectiveId": "12기지02-01",
+          "reason": "current-real-climate-disaster-and-regional-evidence-required"
+        },
+        {
+          "objectiveId": "12기지02-02",
+          "reason": "current-sensitive-differential-impact-and-regional-case-evidence-required"
+        },
+        {
+          "objectiveId": "12기지03-01",
+          "reason": "current-international-civil-society-action-and-stakeholder-evidence-required"
+        },
+        {
+          "objectiveId": "12기지03-02",
+          "reason": "current-national-policy-and-transition-case-evidence-required"
+        },
+        {
+          "objectiveId": "12기지03-03",
+          "reason": "current-local-community-transition-evidence-and-authentic-inquiry-required"
+        },
+        {
+          "objectiveId": "12기지04-01",
+          "reason": "current-sdg-localization-case-and-official-indicator-evidence-required"
+        },
+        {
+          "objectiveId": "12기지04-02",
+          "reason": "authentic-personal-lifestyle-inquiry-and-action-proposal-required"
+        },
+        {
+          "objectiveId": "12기지04-03",
+          "reason": "authentic-ecological-citizenship-case-and-participation-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-gukje-gwangye-ihae",
+      "subject": "국제 관계의 이해",
+      "subjectCode": "gukje-gwangye-ihae",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-gukje-gwangye-ihae.zip",
+      "bundleSha256": "9f606ef27092feceb0225e4562716064ed30bf6d46514d8c557883463897af0e",
+      "bundleBytes": 75462,
+      "sourceManifestPath": "library/work/full/kr-high-elective-gukje-gwangye-ihae/manifest.json",
+      "sourceManifestSha256": "d8ec9e291b0cb90605f6608432073d72c9f5b56901539a91235a1f91f6ad2bc7",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12국관01-03",
+          "reason": "current-international-actors-actions-and-outcomes-evidence-required"
+        },
+        {
+          "objectiveId": "12국관02-01",
+          "reason": "current-country-inequality-and-conflict-evidence-required"
+        },
+        {
+          "objectiveId": "12국관02-02",
+          "reason": "current-fair-trade-development-aid-and-actor-evidence-required"
+        },
+        {
+          "objectiveId": "12국관02-03",
+          "reason": "current-korean-international-standing-and-authentic-debate-required"
+        },
+        {
+          "objectiveId": "12국관03-01",
+          "reason": "current-sensitive-peace-security-event-evidence-required"
+        },
+        {
+          "objectiveId": "12국관03-02",
+          "reason": "current-security-threat-evidence-and-authentic-action-required"
+        },
+        {
+          "objectiveId": "12국관03-03",
+          "reason": "current-sensitive-korean-peninsula-security-evidence-required"
+        },
+        {
+          "objectiveId": "12국관04-02",
+          "reason": "current-international-law-and-icj-primary-legal-source-required"
+        },
+        {
+          "objectiveId": "12국관04-03",
+          "reason": "current-regional-integration-and-korean-role-evidence-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-gwahak-yeoksa-munhwa",
+      "subject": "과학의 역사와 문화",
+      "subjectCode": "gwahak-yeoksa-munhwa",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-gwahak-yeoksa-munhwa.zip",
+      "bundleSha256": "c558c191de8add051a77cdcf887fd7137fae1a5f160013c968daab68df3c3031",
+      "bundleBytes": 75555,
+      "sourceManifestPath": "library/work/full/kr-high-elective-gwahak-yeoksa-munhwa/manifest.json",
+      "sourceManifestSha256": "39c23086aca238cb77202d22027ec1dcf96fd429c9383ece390ae70b79d06c4f",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12과사01-04",
+          "reason": "licensed-artwork-analysis-and-independent-history-sources-required"
+        },
+        {
+          "objectiveId": "12과사02-01",
+          "reason": "licensed-futurist-artwork-analysis-required"
+        },
+        {
+          "objectiveId": "12과사02-04",
+          "reason": "health-history-case-sources-and-context-review-required"
+        },
+        {
+          "objectiveId": "12과사02-06",
+          "reason": "live-debate-performance-required"
+        },
+        {
+          "objectiveId": "12과사03-01",
+          "reason": "creative-artifact-production-and-presentation-required"
+        },
+        {
+          "objectiveId": "12과사03-02",
+          "reason": "current-media-corpus-research-required"
+        },
+        {
+          "objectiveId": "12과사03-03",
+          "reason": "ai-music-creation-or-robot-performance-required"
+        },
+        {
+          "objectiveId": "12과사03-04",
+          "reason": "current-technology-trend-evidence-required"
+        },
+        {
+          "objectiveId": "12과사03-05",
+          "reason": "vr-ar-content-production-and-debate-required"
+        },
+        {
+          "objectiveId": "12과사03-06",
+          "reason": "real-civic-decision-case-and-value-deliberation-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-gyeongje",
+      "subject": "경제",
+      "subjectCode": "gyeongje",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-gyeongje.zip",
+      "bundleSha256": "f8c44ce09e46982d457d74b69e30e3f1071e60a900defc83d649966fb28fbe74",
+      "bundleBytes": 79375,
+      "sourceManifestPath": "library/work/full/kr-high-elective-gyeongje/manifest.json",
+      "sourceManifestSha256": "31705dc165aa72782bdfcdeef2c73dcdd890c7eb7fbcd0c2e626444ff4946486",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12경제02-02",
+          "reason": "current-korean-tax-public-sector-and-regulatory-evidence-required"
+        },
+        {
+          "objectiveId": "12경제03-02",
+          "reason": "current-korean-economic-performance-official-statistics-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-gyeongje-suhak",
+      "subject": "경제 수학",
+      "subjectCode": "gyeongje-suhak",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-gyeongje-suhak.zip",
+      "bundleSha256": "75ba4e302417625320c3598caf19511825f5c17cc438f8aa862aefbe5fad3196",
+      "bundleBytes": 71094,
+      "sourceManifestPath": "library/work/full/kr-high-elective-gyeongje-suhak/manifest.json",
+      "sourceManifestSha256": "af981d11f9a5f088c0aea85a6cfdbdcbec9069259e67a9f582d21da6a28fe550",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-haengseong-uju-gwahak",
+      "subject": "행성우주과학",
+      "subjectCode": "haengseong-uju-gwahak",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-haengseong-uju-gwahak.zip",
+      "bundleSha256": "00d85624ccdfbd562f8b292dfa68f1fa5c8f942dcc434bbca3a66def846ee8ee",
+      "bundleBytes": 71082,
+      "sourceManifestPath": "library/work/full/kr-high-elective-haengseong-uju-gwahak/manifest.json",
+      "sourceManifestSha256": "acee9a5253146caf29624dc8e5dd6a3ec62f6cd864543cda0d9fe532052580d5",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12행우01-01",
+          "reason": "current-mission-research-and-evidence-debate-required"
+        },
+        {
+          "objectiveId": "12행우01-02",
+          "reason": "live-space-weather-and-hazard-monitoring-required"
+        },
+        {
+          "objectiveId": "12행우01-04",
+          "reason": "real-probe-data-and-telescope-observation-required"
+        },
+        {
+          "objectiveId": "12행우02-01",
+          "reason": "real-multiwavelength-solar-observation-required"
+        },
+        {
+          "objectiveId": "12행우03-04",
+          "reason": "real-large-redshift-survey-data-required"
+        },
+        {
+          "objectiveId": "12행우03-05",
+          "reason": "real-all-sky-galaxy-distribution-data-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-hanguk-jiri-tamgu",
+      "subject": "한국지리 탐구",
+      "subjectCode": "hanguk-jiri-tamgu",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-hanguk-jiri-tamgu.zip",
+      "bundleSha256": "36d9a84bad4ff32612bd7c65f3e48c52a1bdc9303b2291722925577f366530ae",
+      "bundleBytes": 89498,
+      "sourceManifestPath": "library/work/full/kr-high-elective-hanguk-jiri-tamgu/manifest.json",
+      "sourceManifestSha256": "4e3e8443aa7af24e21a2077a207dfd566d42133e11c3f6deffa207e90d49ec27",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12한탐01-02",
+          "reason": "authentic-fieldwork-gis-data-collection-analysis-and-visualization-required"
+        },
+        {
+          "objectiveId": "12한탐02-02",
+          "reason": "current-real-place-identity-tourism-data-and-student-proposal-required"
+        },
+        {
+          "objectiveId": "12한탐02-03",
+          "reason": "current-platform-mobility-evidence-user-research-and-student-alternative-required"
+        },
+        {
+          "objectiveId": "12한탐03-01",
+          "reason": "current-official-korean-demography-data-and-policy-evaluation-required"
+        },
+        {
+          "objectiveId": "12한탐03-02",
+          "reason": "current-korean-agriculture-evidence-and-student-policy-proposal-required"
+        },
+        {
+          "objectiveId": "12한탐03-03",
+          "reason": "current-regional-industry-transition-data-and-real-region-comparison-required"
+        },
+        {
+          "objectiveId": "12한탐03-04",
+          "reason": "current-regional-decline-data-and-student-balanced-development-policy-required"
+        },
+        {
+          "objectiveId": "12한탐04-01",
+          "reason": "verified-real-natural-heritage-assets-and-student-candidate-recommendation-required"
+        },
+        {
+          "objectiveId": "12한탐04-02",
+          "reason": "real-landform-change-imagery-fieldwork-and-restoration-case-required"
+        },
+        {
+          "objectiveId": "12한탐04-03",
+          "reason": "current-official-local-hazard-data-and-mitigation-evaluation-required"
+        },
+        {
+          "objectiveId": "12한탐04-04",
+          "reason": "current-official-energy-generation-data-and-student-policy-proposal-required"
+        },
+        {
+          "objectiveId": "12한탐05-01",
+          "reason": "current-verified-north-korea-data-and-sensitive-cooperation-evidence-required"
+        },
+        {
+          "objectiveId": "12한탐05-02",
+          "reason": "versioned-political-boundaries-territory-human-review-and-live-deliberation-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-hwabeop-eoneo",
+      "subject": "화법과 언어",
+      "subjectCode": "hwabeop-eoneo",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-hwabeop-eoneo.zip",
+      "bundleSha256": "7c3d06655aa0d4991ad92b406fa1ff793395dc64b2a9372a04b6f8c04bffb405",
+      "bundleBytes": 85048,
+      "sourceManifestPath": "library/work/full/kr-high-elective-hwabeop-eoneo/manifest.json",
+      "sourceManifestSha256": "c7bd82f738d9da12727033585466ad283949d2ed9397f20763d17d2113723d22",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12화언01-02",
+          "reason": "실제 한국어 음성 또는 말하기 응답 수집 경로가 없어 문자 문항으로 대체하지 않는다."
+        },
+        {
+          "objectiveId": "12화언01-08",
+          "reason": "실제 한국어 음성 또는 말하기 응답 수집 경로가 없어 문자 문항으로 대체하지 않는다."
+        },
+        {
+          "objectiveId": "12화언01-09",
+          "reason": "실제 한국어 음성 또는 말하기 응답 수집 경로가 없어 문자 문항으로 대체하지 않는다."
+        },
+        {
+          "objectiveId": "12화언01-10",
+          "reason": "실제 한국어 음성 또는 말하기 응답 수집 경로가 없어 문자 문항으로 대체하지 않는다."
+        },
+        {
+          "objectiveId": "12화언01-11",
+          "reason": "실제 한국어 음성 또는 말하기 응답 수집 경로가 없어 문자 문항으로 대체하지 않는다."
+        },
+        {
+          "objectiveId": "12화언01-12",
+          "reason": "실제 한국어 음성 또는 말하기 응답 수집 경로가 없어 문자 문항으로 대체하지 않는다."
+        },
+        {
+          "objectiveId": "12화언01-13",
+          "reason": "실제 한국어 음성 또는 말하기 응답 수집 경로가 없어 문자 문항으로 대체하지 않는다."
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-hwahak",
+      "subject": "화학",
+      "subjectCode": "hwahak",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-hwahak.zip",
+      "bundleSha256": "176305751009fd54a59a58db735a94f84671877a59885de1f8caa6e039b0498e",
+      "bundleBytes": 72729,
+      "sourceManifestPath": "library/work/full/kr-high-elective-hwahak/manifest.json",
+      "sourceManifestSha256": "32ba00d746115de8b04b734c9bce8ca15ad3d5b4f7cbf7158e8f681a6ff0c201",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12화학01-01",
+          "reason": "investigation-and-live-presentation-evidence-required"
+        },
+        {
+          "objectiveId": "12화학02-01",
+          "reason": "chemical-bond-electrical-experiment-required"
+        },
+        {
+          "objectiveId": "12화학04-02",
+          "reason": "standard-solution-preparation-required"
+        },
+        {
+          "objectiveId": "12화학04-04",
+          "reason": "neutralization-titration-experiment-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-hwahak-baneung-segye",
+      "subject": "화학 반응의 세계",
+      "subjectCode": "hwahak-baneung-segye",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-hwahak-baneung-segye.zip",
+      "bundleSha256": "ff2f1383daef5b45b574c5d43a205b76bb3bbcf64d7992dd4fda032fdc1f99b6",
+      "bundleBytes": 74305,
+      "sourceManifestPath": "library/work/full/kr-high-elective-hwahak-baneung-segye/manifest.json",
+      "sourceManifestSha256": "ae215991221957e24bfa16cd312a44640d454a5c72807f33585d3213f3df87d4",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12반응02-02",
+          "reason": "real-cell-construction-and-history-investigation-required"
+        },
+        {
+          "objectiveId": "12반응02-04",
+          "reason": "electrolysis-plating-experiment-and-presentation-required"
+        },
+        {
+          "objectiveId": "12반응02-05",
+          "reason": "redox-case-investigation-and-future-cell-design-required"
+        },
+        {
+          "objectiveId": "12반응03-02",
+          "reason": "functional-group-reaction-experiment-required"
+        },
+        {
+          "objectiveId": "12반응03-04",
+          "reason": "new-material-investigation-and-synthesis-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-hwakyul-tonggye",
+      "subject": "확률과 통계",
+      "subjectCode": "hwakyul-tonggye",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-hwakyul-tonggye.zip",
+      "bundleSha256": "b6b91eba1ed3de1f67e035d07c58d4059c4f354a6d83f8cfb1a926ace4d7e1d9",
+      "bundleBytes": 76411,
+      "sourceManifestPath": "library/work/full/kr-high-elective-hwakyul-tonggye/manifest.json",
+      "sourceManifestSha256": "e62c373a8a254c8d84733dc2c8c8bb100bfe2b742baa0d77ee8de6d376d50aba",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-ingongjineung-suhak",
+      "subject": "인공지능 수학",
+      "subjectCode": "ingongjineung-suhak",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-ingongjineung-suhak.zip",
+      "bundleSha256": "d7ede27ab2ca738d68a7d17737e8894b3fbf0f16ac13de9ec677a335d45b685f",
+      "bundleBytes": 71139,
+      "sourceManifestPath": "library/work/full/kr-high-elective-ingongjineung-suhak/manifest.json",
+      "sourceManifestSha256": "7301f5bc6656fd1cda63f4a5d73a614e1fd6a4153da0f4c0a94638b3627cc91f",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-jeongchi",
+      "subject": "정치",
+      "subjectCode": "jeongchi",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-jeongchi.zip",
+      "bundleSha256": "478c82e7352788c0961f7bc202e6c5400f01077fc67c689242201447d6efa063",
+      "bundleBytes": 76538,
+      "sourceManifestPath": "library/work/full/kr-high-elective-jeongchi/manifest.json",
+      "sourceManifestSha256": "4ed97f92da4755389f273620670789b48288455e9e0fc3df6fd37e5f63e6311b",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12정치02-03",
+          "reason": "current-korean-election-law-system-and-official-legal-source-required"
+        },
+        {
+          "objectiveId": "12정치02-04",
+          "reason": "current-political-media-evidence-youth-voter-context-and-authentic-participation-required"
+        },
+        {
+          "objectiveId": "12정치03-02",
+          "reason": "current-korean-constitution-government-form-legal-source-required"
+        },
+        {
+          "objectiveId": "12정치03-03",
+          "reason": "current-korean-constitutional-institutions-and-case-law-source-required"
+        },
+        {
+          "objectiveId": "12정치03-04",
+          "reason": "current-local-government-evidence-and-authentic-local-inquiry-required"
+        },
+        {
+          "objectiveId": "12정치04-02",
+          "reason": "current-international-problem-and-actor-evidence-required"
+        },
+        {
+          "objectiveId": "12정치04-03",
+          "reason": "current-korean-foreign-relations-and-sensitive-peninsula-order-evidence-required"
+        },
+        {
+          "objectiveId": "12정치04-04",
+          "reason": "current-international-conflict-evidence-and-authentic-civic-action-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-jeonjagi-yangja",
+      "subject": "전자기와 양자",
+      "subjectCode": "jeonjagi-yangja",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-jeonjagi-yangja.zip",
+      "bundleSha256": "07cef5d0e0c9272145363423a07821555a55e62bce7640fbdf3901d43b1e002b",
+      "bundleBytes": 74028,
+      "sourceManifestPath": "library/work/full/kr-high-elective-jeonjagi-yangja/manifest.json",
+      "sourceManifestSha256": "61992d773ea1bd5db72850564c5c8255d94063286701b2bbc8346234db7cad67",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12전자01-07",
+          "reason": "transistor-speaker-circuit-experiment-required"
+        },
+        {
+          "objectiveId": "12전자02-01",
+          "reason": "real-thin-film-interference-observation-required"
+        },
+        {
+          "objectiveId": "12전자02-03",
+          "reason": "sensor-polarizer-display-investigation-required"
+        },
+        {
+          "objectiveId": "12전자03-01",
+          "reason": "single-quantum-double-slit-simulation-required"
+        },
+        {
+          "objectiveId": "12전자03-03",
+          "reason": "tunneling-simulation-investigation-presentation-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-jigmu-suhak",
+      "subject": "직무 수학",
+      "subjectCode": "jigmu-suhak",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-jigmu-suhak.zip",
+      "bundleSha256": "3859a078cc2a4f00bc067387453238f6fb3dafbd869a0efa123c1ad91ee05f02",
+      "bundleBytes": 74920,
+      "sourceManifestPath": "library/work/full/kr-high-elective-jigmu-suhak/manifest.json",
+      "sourceManifestSha256": "2a5f427292e6c0126b2683ae8c75264b8d03e7a1c98709059d54b726a817034a",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-jigmu-uisasotong",
+      "subject": "직무 의사소통",
+      "subjectCode": "jigmu-uisasotong",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-jigmu-uisasotong.zip",
+      "bundleSha256": "15dba38be956c9eb4d77ad7b1a7e62f28a2b351bf9a2974b3e603356db21e935",
+      "bundleBytes": 114235,
+      "sourceManifestPath": "library/work/full/kr-high-elective-jigmu-uisasotong/manifest.json",
+      "sourceManifestSha256": "4ee6b79e48bbe8296cd9eb4a88556fd5bdd21eaeeedac3b5858a305fd17095cf",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12직의01-02",
+          "reason": "실제 한국어 모의 면접 참여와 말하기 응답 평가 경로가 없어 문자 문항으로 완료 처리하지 않는다."
+        },
+        {
+          "objectiveId": "12직의01-06",
+          "reason": "실제 대화와 협의를 통한 갈등 조정 참여가 필요하여 정적 시나리오 판단으로 대체하지 않는다."
+        },
+        {
+          "objectiveId": "12직의01-07",
+          "reason": "실제 토의·토론과 협력적 의사 결정 참여 경로가 필요하다."
+        },
+        {
+          "objectiveId": "12직의01-08",
+          "reason": "다양한 매체를 활용한 실제 구성원 간 협업과 소통 참여 경로가 필요하다."
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-jigmu-yeongeo",
+      "subject": "직무 영어",
+      "subjectCode": "jigmu-yeongeo",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-jigmu-yeongeo.zip",
+      "bundleSha256": "253964de6176ceb1c2488cd35e85b2bc2ab2910359769388c1bdc96535f9151e",
+      "bundleBytes": 88887,
+      "sourceManifestPath": "library/work/full/kr-high-elective-jigmu-yeongeo/manifest.json",
+      "sourceManifestSha256": "e1b56331cdcd84ba002364ddc2a5fa5a76a3c286896a27846f2fc1e9a391b9a7",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12직영01-02",
+          "reason": "authentic-listening-audio-and-speaker-relationship-evidence-required"
+        },
+        {
+          "objectiveId": "12직영01-04",
+          "reason": "authentic-interactive-spoken-question-answer-performance-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-jigu-gwahak",
+      "subject": "지구과학",
+      "subjectCode": "jigu-gwahak",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-jigu-gwahak.zip",
+      "bundleSha256": "df2c5869eb8b6589beb58b0e35ff925656cacade136114328b79bc2d25e8e285",
+      "bundleBytes": 78925,
+      "sourceManifestPath": "library/work/full/kr-high-elective-jigu-gwahak/manifest.json",
+      "sourceManifestSha256": "600bd1fb4052f76741086dc898097bab244b198b0fc8bd99a758ac4b74896adf",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12지구01-03",
+          "reason": "real-weather-map-satellite-radar-runtime-required"
+        },
+        {
+          "objectiveId": "12지구01-04",
+          "reason": "live-severe-weather-prediction-and-response-performance-required"
+        },
+        {
+          "objectiveId": "12지구01-06",
+          "reason": "climate-solution-investigation-performance-required"
+        },
+        {
+          "objectiveId": "12지구02-05",
+          "reason": "real-geopark-boundary-field-and-community-proposal-evidence-required"
+        },
+        {
+          "objectiveId": "12지구03-01",
+          "reason": "astronomy-simulation-model-performance-required"
+        },
+        {
+          "objectiveId": "12지구03-04",
+          "reason": "external-galaxy-observation-and-ai-classification-data-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-jigu-system-gwahak",
+      "subject": "지구시스템과학",
+      "subjectCode": "jigu-system-gwahak",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-jigu-system-gwahak.zip",
+      "bundleSha256": "e761f60c011ddc62dbe445d6014dfe0d0ee0a1eaf6f69ca560c32403b573ea6c",
+      "bundleBytes": 77350,
+      "sourceManifestPath": "library/work/full/kr-high-elective-jigu-system-gwahak/manifest.json",
+      "sourceManifestSha256": "c99c4cca30216944bd745185fc7f7c3cfd74228d98977eb732d6088d3bd9e202",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12지시01-05",
+          "reason": "real-seismic-data-and-korea-earthquake-prediction-required"
+        },
+        {
+          "objectiveId": "12지시02-03",
+          "reason": "real-tsunami-case-and-response-proposal-required"
+        },
+        {
+          "objectiveId": "12지시02-04",
+          "reason": "real-time-local-tide-data-required"
+        },
+        {
+          "objectiveId": "12지시03-06",
+          "reason": "upper-air-weather-map-and-planetary-wave-simulation-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-juje-tamgu-dokseo",
+      "subject": "주제 탐구 독서",
+      "subjectCode": "juje-tamgu-dokseo",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-juje-tamgu-dokseo.zip",
+      "bundleSha256": "ccb5b466bdb27716725fec39d6fd8ececded62231f388936faa80ea6c3925740",
+      "bundleBytes": 93328,
+      "sourceManifestPath": "library/work/full/kr-high-elective-juje-tamgu-dokseo/manifest.json",
+      "sourceManifestSha256": "02e11dd277b102f3a5176dc28d7beca8dd67e36877b0d671410f7510563b285b",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-maeche-uisasotong",
+      "subject": "매체 의사소통",
+      "subjectCode": "maeche-uisasotong",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-maeche-uisasotong.zip",
+      "bundleSha256": "e2c88dd9d5cee94441c624bfae4ce87aac2a507b498e3fc77671eadb1b4d8653",
+      "bundleBytes": 120052,
+      "sourceManifestPath": "library/work/full/kr-high-elective-maeche-uisasotong/manifest.json",
+      "sourceManifestSha256": "9eb4cc9db67f1dec1b71407c6e3c8c67536399a174949de801b7dfb273f6e6b1",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12매의01-06",
+          "reason": "설득력 있는 실제 매체 자료를 제작·내보내기·공유하고 수용자 반응을 확인하는 경로가 필요하다."
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-midieo-yeongeo",
+      "subject": "미디어 영어",
+      "subjectCode": "midieo-yeongeo",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-midieo-yeongeo.zip",
+      "bundleSha256": "4f52daf15ee31fe2cdaef981e0db3cc92b05d9097c0af3254f14a5ac68d1731f",
+      "bundleBytes": 85862,
+      "sourceManifestPath": "library/work/full/kr-high-elective-midieo-yeongeo/manifest.json",
+      "sourceManifestSha256": "d5a89d5f73972ef52a030179180b0a013c35cb4c8d2440ea5ea4f310d92ca179",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12미영01-01",
+          "reason": "live-english-search-engine-use-and-result-evidence-required"
+        },
+        {
+          "objectiveId": "12미영01-02",
+          "reason": "authentic-media-collaboration-process-evidence-required"
+        },
+        {
+          "objectiveId": "12미영01-04",
+          "reason": "live-search-selection-comparison-process-evidence-required"
+        },
+        {
+          "objectiveId": "12미영01-05",
+          "reason": "authentic-media-sharing-action-and-audience-evidence-required"
+        },
+        {
+          "objectiveId": "12미영01-06",
+          "reason": "authentic-media-tool-use-and-produced-content-evidence-required"
+        },
+        {
+          "objectiveId": "12미영01-07",
+          "reason": "authentic-audiovisual-media-cue-evidence-required"
+        },
+        {
+          "objectiveId": "12미영01-10",
+          "reason": "authentic-digital-correction-tool-use-evidence-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-mijeokbun1",
+      "subject": "미적분Ⅰ",
+      "subjectCode": "mijeokbun1",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-mijeokbun1.zip",
+      "bundleSha256": "c18b7e9ad3b5c267c161d56aaed1d9619722832a92f1e00be9d417a2ae84a435",
+      "bundleBytes": 68442,
+      "sourceManifestPath": "library/work/full/kr-high-elective-mijeokbun1/manifest.json",
+      "sourceManifestSha256": "f836a74c7dfde2edcd38af6b799548f43ed5e0e671adf3d7fbd9991cf550cd9e",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-mijeokbun2",
+      "subject": "미적분Ⅱ",
+      "subjectCode": "mijeokbun2",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-mijeokbun2.zip",
+      "bundleSha256": "08c3936a4bc10559ac009eb6b452f33cae5544d7059d0ebaf320ae26e6b68b87",
+      "bundleBytes": 68540,
+      "sourceManifestPath": "library/work/full/kr-high-elective-mijeokbun2/manifest.json",
+      "sourceManifestSha256": "ac85392f7b8e3e319620b82e05b00403f3c6c5dc97a5e9764f358342d734fc68",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-muljil-eneoji",
+      "subject": "물질과 에너지",
+      "subjectCode": "muljil-eneoji",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-muljil-eneoji.zip",
+      "bundleSha256": "4439f69444519c58b08dab7804b28fb21fce9312f096eb325234401e2458f849",
+      "bundleBytes": 71957,
+      "sourceManifestPath": "library/work/full/kr-high-elective-muljil-eneoji/manifest.json",
+      "sourceManifestSha256": "fefe6a28f3d5201a31ca54eefcdc448cc4020460777985c218dd5038354c8289",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12물에01-01",
+          "reason": "ideal-gas-identification-experiment-and-case-investigation-required"
+        },
+        {
+          "objectiveId": "12물에02-02",
+          "reason": "solution-boiling-freezing-sensor-experiment-required"
+        },
+        {
+          "objectiveId": "12물에02-03",
+          "reason": "osmosis-experiment-design-and-performance-required"
+        },
+        {
+          "objectiveId": "12물에03-02",
+          "reason": "hess-law-calorimetry-experiment-required"
+        },
+        {
+          "objectiveId": "12물에04-01",
+          "reason": "reaction-rate-sensor-experiment-required"
+        },
+        {
+          "objectiveId": "12물에04-02",
+          "reason": "first-order-half-life-case-presentation-required"
+        },
+        {
+          "objectiveId": "12물에04-04",
+          "reason": "concentration-temperature-catalyst-experiment-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-mulli",
+      "subject": "물리학",
+      "subjectCode": "mulli",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-mulli.zip",
+      "bundleSha256": "b038fcff269ddeaa70e4ca2f10b972997313d8bcacd4280949e24988d2da331b",
+      "bundleBytes": 71614,
+      "sourceManifestPath": "library/work/full/kr-high-elective-mulli/manifest.json",
+      "sourceManifestSha256": "8225f6a73314dc48257bc596264194f034364e69fc4a8312c1eb64460c2c31ba",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12물리01-02",
+          "reason": "video-motion-analysis-runtime-required"
+        },
+        {
+          "objectiveId": "12물리01-03",
+          "reason": "collision-experiment-and-digital-measurement-required"
+        },
+        {
+          "objectiveId": "12물리02-02",
+          "reason": "physical-circuit-measurement-required"
+        },
+        {
+          "objectiveId": "12물리02-05",
+          "reason": "speaker-design-and-fabrication-required"
+        },
+        {
+          "objectiveId": "12물리02-06",
+          "reason": "wireless-charging-implementation-required"
+        },
+        {
+          "objectiveId": "12물리03-01",
+          "reason": "double-slit-observation-required"
+        },
+        {
+          "objectiveId": "12물리03-02",
+          "reason": "convex-lens-observation-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-munhak",
+      "subject": "문학",
+      "subjectCode": "munhak",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-munhak.zip",
+      "bundleSha256": "8e856963e1940bc1ad99400ad249761e7a205d77b3aebe7c6c3069e6ab7beffd",
+      "bundleBytes": 92547,
+      "sourceManifestPath": "library/work/full/kr-high-elective-munhak/manifest.json",
+      "sourceManifestSha256": "1541940f89ecfebe324d40e932ae0d371e2308730421565f6036cfb865db148d",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-munhak-yeongsang",
+      "subject": "문학과 영상",
+      "subjectCode": "munhak-yeongsang",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-munhak-yeongsang.zip",
+      "bundleSha256": "938e7665f416edbd3e06727d88561b6ee36bd9e4162da8a8d54547f1500a65c4",
+      "bundleBytes": 108805,
+      "sourceManifestPath": "library/work/full/kr-high-elective-munhak-yeongsang/manifest.json",
+      "sourceManifestSha256": "07315c252bfccc2d761a45a8caa9693652f5244c021d0c237445ca9c47afc004",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12문영01-01",
+          "reason": "실제 영상의 시각·청각 요소를 평가해야 하며 정지 도식으로 대체할 수 없다."
+        },
+        {
+          "objectiveId": "12문영01-02",
+          "reason": "실제 영상물의 양식과 매체 효과를 수용해야 한다."
+        },
+        {
+          "objectiveId": "12문영01-03",
+          "reason": "문학과 실제 영상물의 상호 작용을 비교해야 한다."
+        },
+        {
+          "objectiveId": "12문영01-04",
+          "reason": "영상 제작·내보내기·재생 경로가 필요하다."
+        },
+        {
+          "objectiveId": "12문영01-05",
+          "reason": "문학 작품과 실제 영상물을 통합적으로 수용해야 한다."
+        },
+        {
+          "objectiveId": "12문영01-06",
+          "reason": "영상 공유와 재생 경로가 필요하다."
+        },
+        {
+          "objectiveId": "12문영01-08",
+          "reason": "실제 영상물을 비판적으로 수용해야 한다."
+        },
+        {
+          "objectiveId": "12문영01-09",
+          "reason": "영상 제작과 사회적 공유 경로가 필요하다."
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-saengmul-yujeon",
+      "subject": "생물의 유전",
+      "subjectCode": "saengmul-yujeon",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-saengmul-yujeon.zip",
+      "bundleSha256": "6657ae35c8f1aa6df0278bf4b5e25f6c73d5bb69bdc982692834f3aef59e0e8b",
+      "bundleBytes": 69639,
+      "sourceManifestPath": "library/work/full/kr-high-elective-saengmul-yujeon/manifest.json",
+      "sourceManifestSha256": "530ce950029a8bdabb5bb55664119f222aee78844d4bdc6388ec5d9192e56e2d",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12유전01-03",
+          "reason": "polygenic-case-investigation-collaboration-required"
+        },
+        {
+          "objectiveId": "12유전01-04",
+          "reason": "genetic-disease-investigation-plan-required"
+        },
+        {
+          "objectiveId": "12유전01-05",
+          "reason": "dna-history-presentation-and-extraction-observation-required"
+        },
+        {
+          "objectiveId": "12유전01-07",
+          "reason": "dna-replication-simulation-collaboration-required"
+        },
+        {
+          "objectiveId": "12유전02-03",
+          "reason": "gene-regulation-media-production-required"
+        },
+        {
+          "objectiveId": "12유전02-05",
+          "reason": "gene-regulation-welfare-case-investigation-collaboration-required"
+        },
+        {
+          "objectiveId": "12유전03-01",
+          "reason": "biotechnology-history-investigation-media-presentation-required"
+        },
+        {
+          "objectiveId": "12유전03-02",
+          "reason": "therapy-case-investigation-collaboration-required"
+        },
+        {
+          "objectiveId": "12유전03-03",
+          "reason": "biotechnology-case-investigation-material-production-virtual-experiment-required"
+        },
+        {
+          "objectiveId": "12유전03-05",
+          "reason": "bioethics-deliberative-decision-performance-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-saengmyeong-gwahak",
+      "subject": "생명과학",
+      "subjectCode": "saengmyeong-gwahak",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-saengmyeong-gwahak.zip",
+      "bundleSha256": "facbda89ccc8aa73475c72badb1acf9f782b860978294af387ffc4525e567173",
+      "bundleBytes": 72401,
+      "sourceManifestPath": "library/work/full/kr-high-elective-saengmyeong-gwahak/manifest.json",
+      "sourceManifestSha256": "2039a28db2ad7fc123a3be60d22031098e6017cfb85ec3fa91a536f72e83d1e6",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12생과01-01",
+          "reason": "collaborative-communication-performance-required"
+        },
+        {
+          "objectiveId": "12생과01-02",
+          "reason": "explanatory-material-production-required"
+        },
+        {
+          "objectiveId": "12생과01-05",
+          "reason": "metabolic-disease-investigation-and-discussion-required"
+        },
+        {
+          "objectiveId": "12생과01-07",
+          "reason": "population-community-investigation-presentation-required"
+        },
+        {
+          "objectiveId": "12생과02-02",
+          "reason": "drug-synapse-investigation-presentation-required"
+        },
+        {
+          "objectiveId": "12생과02-07",
+          "reason": "vaccine-investigation-collaboration-required"
+        },
+        {
+          "objectiveId": "12생과03-03",
+          "reason": "evolution-case-investigation-collaboration-required"
+        },
+        {
+          "objectiveId": "12생과03-05",
+          "reason": "phylogenetic-tree-production-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-sahoe-munhwa",
+      "subject": "사회와 문화",
+      "subjectCode": "sahoe-munhwa",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-sahoe-munhwa.zip",
+      "bundleSha256": "65361da2c2783597d3ad93074cca533ffa438ebaf3e9a66def84b3742ba603a3",
+      "bundleBytes": 87270,
+      "sourceManifestPath": "library/work/full/kr-high-elective-sahoe-munhwa/manifest.json",
+      "sourceManifestSha256": "9bc9d2fa59305b6b235828515017ed91a47d1cf0ded48633f521067408364896",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12사문01-04",
+          "reason": "student-research-ethics-deliberation-and-authentic-study-required"
+        },
+        {
+          "objectiveId": "12사문02-04",
+          "reason": "current-social-movement-case-research-and-participation-required"
+        },
+        {
+          "objectiveId": "12사문03-01",
+          "reason": "copyright-cleared-current-popular-culture-case-and-live-discussion-required"
+        },
+        {
+          "objectiveId": "12사문03-02",
+          "reason": "copyright-cleared-media-analysis-and-student-production-required"
+        },
+        {
+          "objectiveId": "12사문03-03",
+          "reason": "current-migration-evidence-sensitive-context-and-student-proposal-required"
+        },
+        {
+          "objectiveId": "12사문03-04",
+          "reason": "current-cultural-globalization-case-evidence-required"
+        },
+        {
+          "objectiveId": "12사문04-02",
+          "reason": "current-inequality-statistics-sensitive-case-and-student-solution-required"
+        },
+        {
+          "objectiveId": "12사문04-03",
+          "reason": "current-welfare-policy-evidence-and-live-deliberation-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-sahoe-munje-tamgu",
+      "subject": "사회문제 탐구",
+      "subjectCode": "sahoe-munje-tamgu",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-sahoe-munje-tamgu.zip",
+      "bundleSha256": "4ecc369a5908cc442d07930d872f98c1d36f2bec85061016d6df7c3769c527f0",
+      "bundleBytes": 70729,
+      "sourceManifestPath": "library/work/full/kr-high-elective-sahoe-munje-tamgu/manifest.json",
+      "sourceManifestSha256": "0131a5dc95998b3ac4e2f372844fceaeb900a322808175fd8c28d32266eacc6d",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12사탐01-03",
+          "reason": "authentic-research-case-and-source-dataset-required"
+        },
+        {
+          "objectiveId": "12사탐01-04",
+          "reason": "authentic-ethical-research-performance-required"
+        },
+        {
+          "objectiveId": "12사탐02-01",
+          "reason": "current-sensitive-gender-inequality-data-and-human-rights-review-required"
+        },
+        {
+          "objectiveId": "12사탐02-02",
+          "reason": "current-youth-media-use-data-and-authentic-self-reflection-required"
+        },
+        {
+          "objectiveId": "12사탐03-01",
+          "reason": "current-official-demographic-data-and-local-inquiry-required"
+        },
+        {
+          "objectiveId": "12사탐03-02",
+          "reason": "current-ai-social-impact-evidence-and-authentic-response-design-required"
+        },
+        {
+          "objectiveId": "12사탐04-01",
+          "reason": "learner-selected-authentic-social-problem-and-inquiry-plan-required"
+        },
+        {
+          "objectiveId": "12사탐04-02",
+          "reason": "authentic-data-collection-performance-required"
+        },
+        {
+          "objectiveId": "12사탐04-03",
+          "reason": "authentic-collected-data-analysis-and-solution-required"
+        },
+        {
+          "objectiveId": "12사탐04-04",
+          "reason": "authentic-report-presentation-and-civic-action-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-segye-munhwa-yeongeo",
+      "subject": "세계 문화와 영어",
+      "subjectCode": "segye-munhwa-yeongeo",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-segye-munhwa-yeongeo.zip",
+      "bundleSha256": "b257c751bda8b3c0941aeced284e305587b6051cef00c212084915cba0a972be",
+      "bundleBytes": 88131,
+      "sourceManifestPath": "library/work/full/kr-high-elective-segye-munhwa-yeongeo/manifest.json",
+      "sourceManifestSha256": "4070741aa89728ef2b7dbbc8b24190cc9b9fc4e9af12453916710e6739371bdb",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12세영01-07",
+          "reason": "sustained-voluntary-cultural-engagement-evidence-required"
+        },
+        {
+          "objectiveId": "12세영01-08",
+          "reason": "authentic-world-english-communication-participation-required"
+        },
+        {
+          "objectiveId": "12세영01-09",
+          "reason": "live-cross-media-search-and-collection-process-evidence-required"
+        },
+        {
+          "objectiveId": "12세영01-10",
+          "reason": "authentic-cultural-content-production-and-sharing-evidence-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-segye-sa",
+      "subject": "세계사",
+      "subjectCode": "segye-sa",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-segye-sa.zip",
+      "bundleSha256": "d1c4611ffc589c17f8cebaa74c176c2f41f28d2a1d79560e5f691533d48f70f2",
+      "bundleBytes": 77514,
+      "sourceManifestPath": "library/work/full/kr-high-elective-segye-sa/manifest.json",
+      "sourceManifestSha256": "8fb32fe8410fbeedae1b59a23795361a5c2d3129cdfbf0618c9c85f8c5df040c",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12세사04-03",
+          "reason": "current-global-challenge-evidence-and-student-originated-inquiry-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-segye-simin-jiri",
+      "subject": "세계시민과 지리",
+      "subjectCode": "segye-simin-jiri",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-segye-simin-jiri.zip",
+      "bundleSha256": "376b2b9597a778e2f273b2a1e2e3bc96cbe256ad284b30f5741afba1aa2999f1",
+      "bundleBytes": 102867,
+      "sourceManifestPath": "library/work/full/kr-high-elective-segye-simin-jiri/manifest.json",
+      "sourceManifestSha256": "d1171691f62ed9d4d3aa7252a38d9be1aca56eaf4a526302a1e8f06a1ac93743",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12세지01-02",
+          "reason": "current-regional-integration-and-separation-case-evidence-required"
+        },
+        {
+          "objectiveId": "12세지01-03",
+          "reason": "current-gis-tool-and-real-spatial-decision-case-required"
+        },
+        {
+          "objectiveId": "12세지02-02",
+          "reason": "real-landform-development-conflict-and-deliberation-required"
+        },
+        {
+          "objectiveId": "12세지04-01",
+          "reason": "current-global-energy-statistics-and-student-proposal-required"
+        },
+        {
+          "objectiveId": "12세지04-03",
+          "reason": "current-geopolitical-conflict-evidence-and-student-action-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-sepo-muljildaesa",
+      "subject": "세포와 물질대사",
+      "subjectCode": "sepo-muljildaesa",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-sepo-muljildaesa.zip",
+      "bundleSha256": "5b76e5d3dfc1aa7dfa54b63a99b712f51618e7c379087ed27a1d76774901dc78",
+      "bundleBytes": 73144,
+      "sourceManifestPath": "library/work/full/kr-high-elective-sepo-muljildaesa/manifest.json",
+      "sourceManifestSha256": "97664fc857a1d38149873798ac4e775acee2cb140cc965e7f949b993e1245b68",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12세포01-01",
+          "reason": "biomolecule-observation-required"
+        },
+        {
+          "objectiveId": "12세포01-02",
+          "reason": "nucleic-acid-protein-investigation-and-model-production-required"
+        },
+        {
+          "objectiveId": "12세포01-03",
+          "reason": "microscopy-centrifuge-and-collaborative-communication-required"
+        },
+        {
+          "objectiveId": "12세포02-03",
+          "reason": "enzyme-factor-experiment-design-and-performance-required"
+        },
+        {
+          "objectiveId": "12세포02-04",
+          "reason": "enzyme-media-collaborative-communication-required"
+        },
+        {
+          "objectiveId": "12세포02-05",
+          "reason": "enzyme-industry-investigation-presentation-required"
+        },
+        {
+          "objectiveId": "12세포03-02",
+          "reason": "cellular-respiration-media-collaboration-required"
+        },
+        {
+          "objectiveId": "12세포03-04",
+          "reason": "fermentation-investigation-plan-required"
+        },
+        {
+          "objectiveId": "12세포03-08",
+          "reason": "photosynthesis-history-investigation-visualization-collaboration-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-silsaenghwal-yeongeo-hoehwa",
+      "subject": "실생활 영어 회화",
+      "subjectCode": "silsaenghwal-yeongeo-hoehwa",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-silsaenghwal-yeongeo-hoehwa.zip",
+      "bundleSha256": "32855ea77a0f2d2da730ecc6cac52850d40cf5c82642003489a713a72a62e050",
+      "bundleBytes": 21362671,
+      "sourceManifestPath": "library/work/full/kr-high-elective-silsaenghwal-yeongeo-hoehwa/manifest.json",
+      "sourceManifestSha256": "25fb09f59ef6f18d382afe5bcfa7e55ad3fd683af5e2e65beb42adbea03cca04",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 20
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12실영01-03",
+          "reason": "authentic-learner-spoken-introduction-and-confidence-performance-required"
+        },
+        {
+          "objectiveId": "12실영01-04",
+          "reason": "authentic-listening-response-and-learner-emotion-expression-performance-required"
+        },
+        {
+          "objectiveId": "12실영01-06",
+          "reason": "authentic-learner-spoken-procedure-explanation-required"
+        },
+        {
+          "objectiveId": "12실영01-07",
+          "reason": "authentic-interactive-conversation-continuation-required"
+        },
+        {
+          "objectiveId": "12실영01-08",
+          "reason": "authentic-verbal-and-nonverbal-response-performance-required"
+        },
+        {
+          "objectiveId": "12실영01-09",
+          "reason": "authentic-interactive-conversation-participation-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-silyong-tonggye",
+      "subject": "실용 통계",
+      "subjectCode": "silyong-tonggye",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-silyong-tonggye.zip",
+      "bundleSha256": "15df54e87e3ec1e1756eb6111e63e500554729167122005258be2795b5c9763f",
+      "bundleBytes": 71429,
+      "sourceManifestPath": "library/work/full/kr-high-elective-silyong-tonggye/manifest.json",
+      "sourceManifestSha256": "bf4f686f23db1a3622d39df627df4d6fe2202c70cb5b800670b2c6bb829999f9",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-simhwa-dokhae-jakmun",
+      "subject": "심화 영어 독해와 작문",
+      "subjectCode": "simhwa-dokhae-jakmun",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-simhwa-dokhae-jakmun.zip",
+      "bundleSha256": "ec633725f3208800a3770ac50132b6be9ec7857ba50a41a2f2637d4b62607faf",
+      "bundleBytes": 89208,
+      "sourceManifestPath": "library/work/full/kr-high-elective-simhwa-dokhae-jakmun/manifest.json",
+      "sourceManifestSha256": "8033daeaa7fc789de1cc0ed5df3a1f9ac4df7ca4bb719e15e582f7b0baa849a5",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-simhwa-yeongeo",
+      "subject": "심화 영어",
+      "subjectCode": "simhwa-yeongeo",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-simhwa-yeongeo.zip",
+      "bundleSha256": "bb90199cd97cd5de2fc27481f5f8e5706349dfe747f58d583262d9bd1471d0ce",
+      "bundleBytes": 87977,
+      "sourceManifestPath": "library/work/full/kr-high-elective-simhwa-yeongeo/manifest.json",
+      "sourceManifestSha256": "4742711464d1c2e3c0c41fec5fd7776e24264f245043546de1ff2d6c3d1a8422",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12심영02-03",
+          "reason": "authentic-interactive-discussion-and-opinion-adjustment-performance-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-suhak-gwaje-tamgu",
+      "subject": "수학과제 탐구",
+      "subjectCode": "suhak-gwaje-tamgu",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-suhak-gwaje-tamgu.zip",
+      "bundleSha256": "b14d0b9b8c6a16eb60bb47e660b1d1c89559d9cc59e2a6d90f59f3bca508e950",
+      "bundleBytes": 74511,
+      "sourceManifestPath": "library/work/full/kr-high-elective-suhak-gwaje-tamgu/manifest.json",
+      "sourceManifestSha256": "261c7d10fe54a525d04310dc9885d50dbd8815a8def34f3739ccf1556ef7c137",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-suhak-munhwa",
+      "subject": "수학과 문화",
+      "subjectCode": "suhak-munhwa",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-suhak-munhwa.zip",
+      "bundleSha256": "ae2fd12b5471ab890093d480d9ea6a8d7bff01209e511428d542d32db77a173b",
+      "bundleBytes": 76241,
+      "sourceManifestPath": "library/work/full/kr-high-elective-suhak-munhwa/manifest.json",
+      "sourceManifestSha256": "a3a6a65922144ab82d0d4570ef79bddc93b3d9415b5fb1f3fe4e589690ab5357",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-yeohaeng-jiri",
+      "subject": "여행지리",
+      "subjectCode": "yeohaeng-jiri",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-yeohaeng-jiri.zip",
+      "bundleSha256": "a5f4401824e5e4aa1ff08e4df5176d708a4c642c7078295cad6405f4f6ab03ca",
+      "bundleBytes": 91939,
+      "sourceManifestPath": "library/work/full/kr-high-elective-yeohaeng-jiri/manifest.json",
+      "sourceManifestSha256": "fd358c22e7ca7e9ee290a9776b7aac90a1d4f454e4d6d434817e3f4fc8f8e735",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12여지01-01",
+          "reason": "personal-travel-experience-and-authentic-discussion-required"
+        },
+        {
+          "objectiveId": "12여지01-02",
+          "reason": "current-map-gis-route-safety-and-authentic-planning-required"
+        },
+        {
+          "objectiveId": "12여지02-02",
+          "reason": "objective-specific-achievement-evidence-and-authentic-cultural-context-required"
+        },
+        {
+          "objectiveId": "12여지02-03",
+          "reason": "current-climate-travel-impact-evidence-and-authentic-indirect-experience-required"
+        },
+        {
+          "objectiveId": "12여지02-04",
+          "reason": "objective-specific-achievement-evidence-real-geosite-evidence-and-program-production-required"
+        },
+        {
+          "objectiveId": "12여지03-01",
+          "reason": "objective-specific-achievement-evidence-and-authentic-heritage-source-required"
+        },
+        {
+          "objectiveId": "12여지03-02",
+          "reason": "sensitive-real-conflict-disaster-site-evidence-and-authentic-experience-required"
+        },
+        {
+          "objectiveId": "12여지03-03",
+          "reason": "objective-specific-achievement-evidence-local-fieldwork-and-monitoring-required"
+        },
+        {
+          "objectiveId": "12여지03-04",
+          "reason": "current-fair-travel-impact-evidence-and-authentic-reflection-required"
+        },
+        {
+          "objectiveId": "12여지04-01",
+          "reason": "current-media-travel-trend-evidence-and-authentic-future-inquiry-required"
+        },
+        {
+          "objectiveId": "12여지04-02",
+          "reason": "personal-portfolio-and-authentic-travel-practice-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-yeokhak-eneoji",
+      "subject": "역학과 에너지",
+      "subjectCode": "yeokhak-eneoji",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-yeokhak-eneoji.zip",
+      "bundleSha256": "ae505396be1e5386b6e87072661a23c318a7324e29ff52fa514729b32d9c96af",
+      "bundleBytes": 76078,
+      "sourceManifestPath": "library/work/full/kr-high-elective-yeokhak-eneoji/manifest.json",
+      "sourceManifestSha256": "75c285a0bd6f091a172c5844b95ad0b707cd8f04509d03ac9e7abc1039fb6cd3",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12역학01-02",
+          "reason": "projectile-video-analysis-runtime-required"
+        },
+        {
+          "objectiveId": "12역학01-04",
+          "reason": "real-planetary-observation-dataset-analysis-required"
+        },
+        {
+          "objectiveId": "12역학02-01",
+          "reason": "insulation-experiment-and-technology-investigation-required"
+        },
+        {
+          "objectiveId": "12역학03-04",
+          "reason": "real-noise-control-case-investigation-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-yeoksa-hyeondae-segye",
+      "subject": "역사로 탐구하는 현대 세계",
+      "subjectCode": "yeoksa-hyeondae-segye",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-yeoksa-hyeondae-segye.zip",
+      "bundleSha256": "8d3b8803e6e1f20236b5a3ff9488641a49d33652067f78d0db5600aa3b361b03",
+      "bundleBytes": 81873,
+      "sourceManifestPath": "library/work/full/kr-high-elective-yeoksa-hyeondae-segye/manifest.json",
+      "sourceManifestSha256": "04217ee5873c2bdacfb85877e85510ab48725c165d00347f02806ff4c455b9aa",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12역현01-02",
+          "reason": "student-selected-current-issue-research-evidence-required"
+        },
+        {
+          "objectiveId": "12역현02-03",
+          "reason": "authentic-memorial-site-evidence-and-perspective-review-required"
+        },
+        {
+          "objectiveId": "12역현03-02",
+          "reason": "current-consumption-environment-case-evidence-required"
+        },
+        {
+          "objectiveId": "12역현03-03",
+          "reason": "current-climate-agreement-and-report-evidence-required"
+        },
+        {
+          "objectiveId": "12역현04-02",
+          "reason": "current-post-cold-war-authoritarian-transition-case-evidence-required"
+        },
+        {
+          "objectiveId": "12역현04-03",
+          "reason": "authentic-history-policy-case-and-sensitive-conflict-review-required"
+        },
+        {
+          "objectiveId": "12역현05-02",
+          "reason": "current-multicultural-conflict-case-and-sensitive-group-review-required"
+        },
+        {
+          "objectiveId": "12역현05-03",
+          "reason": "current-cultural-diversity-norm-evidence-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-yeongeo-balpyo-toron",
+      "subject": "영어 발표와 토론",
+      "subjectCode": "yeongeo-balpyo-toron",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-yeongeo-balpyo-toron.zip",
+      "bundleSha256": "fd3156271b48dc085149788fb7bc9a026f12ad02ab961ce9f198576e2d6754de",
+      "bundleBytes": 87197,
+      "sourceManifestPath": "library/work/full/kr-high-elective-yeongeo-balpyo-toron/manifest.json",
+      "sourceManifestSha256": "674f181560d52e03d5feabe73a664f1dd91a57fb13eb0bbf762fc1bf01b2ca04",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12영발01-05",
+          "reason": "authentic-multimedia-presentation-performance-and-information-ethics-evidence-required"
+        },
+        {
+          "objectiveId": "12영발01-06",
+          "reason": "authentic-verbal-and-nonverbal-intercultural-presentation-performance-required"
+        },
+        {
+          "objectiveId": "12영발01-07",
+          "reason": "authentic-presentation-technique-performance-required"
+        },
+        {
+          "objectiveId": "12영발01-08",
+          "reason": "authentic-presentation-process-result-and-reflection-evidence-required"
+        },
+        {
+          "objectiveId": "12영발02-04",
+          "reason": "authentic-interactive-cross-examination-debate-performance-required"
+        },
+        {
+          "objectiveId": "12영발02-05",
+          "reason": "authentic-multimedia-debate-performance-and-information-ethics-evidence-required"
+        },
+        {
+          "objectiveId": "12영발02-06",
+          "reason": "authentic-verbal-and-nonverbal-intercultural-debate-performance-required"
+        },
+        {
+          "objectiveId": "12영발02-07",
+          "reason": "authentic-interactive-debate-technique-performance-required"
+        },
+        {
+          "objectiveId": "12영발02-08",
+          "reason": "authentic-debate-process-result-and-reflection-evidence-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-yeongeo-dokhae-jakmun",
+      "subject": "영어 독해와 작문",
+      "subjectCode": "yeongeo-dokhae-jakmun",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-yeongeo-dokhae-jakmun.zip",
+      "bundleSha256": "b71f21daa918893134909e9ce2554efba2742c5136833de834fd36a05fa97517",
+      "bundleBytes": 78840,
+      "sourceManifestPath": "library/work/full/kr-high-elective-yeongeo-dokhae-jakmun/manifest.json",
+      "sourceManifestSha256": "cf7f119d81f43a55efcf977aef72a9c34ba2eaf214c17170e40be01ac1af80ab",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-yeongeo1",
+      "subject": "영어Ⅰ",
+      "subjectCode": "yeongeo1",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-yeongeo1.zip",
+      "bundleSha256": "778c90661cf7fa4442b80a64ca8f4f596defec81c4d2f40899e5118a63fc16bd",
+      "bundleBytes": 77817,
+      "sourceManifestPath": "library/work/full/kr-high-elective-yeongeo1/manifest.json",
+      "sourceManifestSha256": "31049930b5bba9e709b9152c24601d43ee6b268154049d62fc4a7f6b06c223f6",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-yeongeo2",
+      "subject": "영어Ⅱ",
+      "subjectCode": "yeongeo2",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-yeongeo2.zip",
+      "bundleSha256": "1530d1a6478d6a7401b4b2ded3816c5c43b916ec293691163e4b7e6b30e9a045",
+      "bundleBytes": 78256,
+      "sourceManifestPath": "library/work/full/kr-high-elective-yeongeo2/manifest.json",
+      "sourceManifestSha256": "446750ff90fcf32a75ed2b776b629d1719934e076a15d0a96d02bdd2a8b5b332",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-yeongmi-munhak-ilgi",
+      "subject": "영미 문학 읽기",
+      "subjectCode": "yeongmi-munhak-ilgi",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-yeongmi-munhak-ilgi.zip",
+      "bundleSha256": "0e99a524141de4d82149b76aae7709e9843586660c9d042110e6a266d147102c",
+      "bundleBytes": 92174,
+      "sourceManifestPath": "library/work/full/kr-high-elective-yeongmi-munhak-ilgi/manifest.json",
+      "sourceManifestSha256": "7c30817cc8cbaa928c25312bca4531240bdfabbfef25e6a8bddc442c20f27473",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": [],
+      "selectionPolicy": "student-or-school-selection-required"
+    },
+    {
+      "cellId": "kr-high-elective-yunghap-gwahak-tamgu",
+      "subject": "융합과학 탐구",
+      "subjectCode": "yunghap-gwahak-tamgu",
+      "grade": "11-12",
+      "gradeBand": [
+        11,
+        12
+      ],
+      "bundlePath": "library/releases/KR/2026-09-01/bundles/kr-high-elective-yunghap-gwahak-tamgu.zip",
+      "bundleSha256": "30c10342ff0997b424b488546c863f7fb3a4f6220db0f5b64f4173112115a70f",
+      "bundleBytes": 72973,
+      "sourceManifestPath": "library/work/full/kr-high-elective-yunghap-gwahak-tamgu/manifest.json",
+      "sourceManifestSha256": "6b0dbdcfa21d6938e52675a9373c9eb5dbd4b027272f4a1580e4a94f9e33b23a",
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "12융탐01-04",
+          "reason": "current-digital-tool-research-and-household-measurement-required"
+        },
+        {
+          "objectiveId": "12융탐02-01",
+          "reason": "student-originated-real-or-open-data-problem-discovery-required"
+        },
+        {
+          "objectiveId": "12융탐02-02",
+          "reason": "student-hypothesis-model-and-procedure-design-required"
+        },
+        {
+          "objectiveId": "12융탐02-03",
+          "reason": "physical-or-digital-tool-data-collection-required"
+        },
+        {
+          "objectiveId": "12융탐02-04",
+          "reason": "student-generated-contextual-data-visualization-required"
+        },
+        {
+          "objectiveId": "12융탐02-07",
+          "reason": "live-presentation-and-discussion-required"
+        },
+        {
+          "objectiveId": "12융탐03-01",
+          "reason": "current-technology-landscape-evidence-required"
+        },
+        {
+          "objectiveId": "12융탐03-02",
+          "reason": "live-deliberation-and-solution-design-required"
+        },
+        {
+          "objectiveId": "12융탐03-03",
+          "reason": "live-ethical-deliberation-required"
+        },
+        {
+          "objectiveId": "12융탐03-04",
+          "reason": "real-citizen-participation-case-sources-required"
+        }
+      ],
+      "selectionPolicy": "student-or-school-selection-required"
+    }
+  ]
+}

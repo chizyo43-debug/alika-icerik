@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "kr-2026-09-01-safe-scope",
+  "status": "passed",
+  "publishable": true,
+  "catalogSha256": "21ee0996049cfe0f19e7c9f8ddc2de90b63616a99d64e73663bd4a0e7b7532e8",
+  "packagesChecked": 94,
+  "questionsChecked": 47000,
+  "notesChecked": 2162,
+  "requiredVisuals": 48743,
+  "coveredRequiredVisuals": 48743,
+  "audioAssetsChecked": 135,
+  "audioQuestionLinksChecked": 675,
+  "spokenResponseQuestionsChecked": 225,
+  "withheldObjectives": 289,
+  "errors": []
+}
