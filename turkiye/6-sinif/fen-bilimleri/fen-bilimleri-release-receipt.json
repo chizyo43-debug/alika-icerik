@@ -1,0 +1,28 @@
+{
+  "candidateSha256": "31f97b4a143e958c41d528bc8e8bbca7db4b4ee2db8f980c26366b23fa7d79b6",
+  "decision": "PASS",
+  "humanReviewed": false,
+  "metrics": {
+    "answerPositions": {
+      "0": 125,
+      "1": 125,
+      "2": 125,
+      "3": 125
+    },
+    "answerPositionsRebalanced": 0,
+    "figures": 318,
+    "grade": 6,
+    "notes": 36,
+    "objectives": 36,
+    "packId": "tr.g06.fen-bilimleri.full",
+    "questions": 500,
+    "records": 537,
+    "requiredFigures": 0,
+    "strictValidation": "0 HATA / 0 UYARI",
+    "subject": "Fen Bilimleri"
+  },
+  "reviewManifestSha256": "b9987a0c7f4cca9a778adc9f33e4e99e5e2ce3d85b65267a762596cfc2cedb21",
+  "reviewType": "codex-self-review",
+  "reviewedPackageSha256": "111d67ef8a6022c2456d591053ea926893c5a86fe4fb2b2221851dec0d0e49b3",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0"
+}
