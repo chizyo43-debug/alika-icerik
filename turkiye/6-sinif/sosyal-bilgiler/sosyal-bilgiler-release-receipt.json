@@ -1,0 +1,28 @@
+{
+  "candidateSha256": "bfc7944e1fb2e97475a0f532e6d740befacc6d4485ac319546b229857a28588f",
+  "decision": "PASS",
+  "humanReviewed": false,
+  "metrics": {
+    "answerPositions": {
+      "0": 125,
+      "1": 125,
+      "2": 125,
+      "3": 125
+    },
+    "answerPositionsRebalanced": 0,
+    "figures": 145,
+    "grade": 6,
+    "notes": 18,
+    "objectives": 18,
+    "packId": "tr.g06.sosyal-bilgiler.full",
+    "questions": 500,
+    "records": 519,
+    "requiredFigures": 0,
+    "strictValidation": "0 HATA / 0 UYARI",
+    "subject": "Sosyal Bilgiler"
+  },
+  "reviewManifestSha256": "647fe8d9b3493b5975b18eff7652d39db123dcf607c9ac3669dd310881625e6b",
+  "reviewType": "codex-self-review",
+  "reviewedPackageSha256": "6f643f2cf2b8bbe965b86350d45b7ddded014076affadd9637094aceb8a62739",
+  "schemaVersion": "alika-subject-release-receipt/2.0.0"
+}
