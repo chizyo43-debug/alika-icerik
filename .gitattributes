@@ -1,0 +1,8 @@
+# Deterministic generated catalogs are byte-checked by the test suite.
+games/*/catalog.json text eol=lf
+
+# Content packages, manifests and receipts are platform-neutral UTF-8 data.
+*.json text eol=lf
+*.jsonl text eol=lf
+*.md text eol=lf
+*.py text eol=lf

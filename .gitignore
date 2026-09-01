@@ -11,3 +11,7 @@ build/
 # immutable GitHub Release assets; source JSONL, manifests and receipts stay in Git.
 *.alika.zip
 turkiye/**/assets/audio/*.wav
+
+# The consented speaker reference is sensitive biometric source material.  It
+# is kept locally for reproducible generation but must never be pushed.
+voice/private/
