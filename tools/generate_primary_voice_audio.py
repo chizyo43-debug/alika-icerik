@@ -35,7 +35,7 @@ REFERENCE_TEXT = (
 MODEL_ID = "openbmb/VoxCPM2"
 MODEL_REVISION = "32279effe8c19989596f05d353d1447f51d9e915"
 MODEL_FILE_SHA256 = "f7f964cfa9da23653baec6e6f7750719977ad944ed9f95fe52fe3a620506891d"
-GENERATOR_VERSION = "alika-primary-voice-generator/1.1.0"
+GENERATOR_VERSION = "alika-primary-voice-generator/1.2.0"
 GENERATED_AT = "2026-09-01T00:00:00+03:00"
 
 
@@ -327,6 +327,15 @@ def main() -> int:
             device=args.device,
         )
         sample_rate = int(model.tts_model.sample_rate)
+        # Encoding the consented reference is deterministic and expensive. Keep
+        # one immutable cache for the whole run instead of re-encoding the same
+        # WAV for every asset. VoxCPM's cached path is the same generation path
+        # used by ``VoxCPM.generate`` after reference preparation.
+        prompt_cache = model.tts_model.build_prompt_cache(
+            prompt_text=REFERENCE_TEXT,
+            prompt_wav_path=str(reference),
+            reference_wav_path=str(reference),
+        )
         for index, job in enumerate(pending, start=1):
             transcript = str(job.asset["transcript"]).strip()
             chunks = split_text(transcript, args.max_chars)
@@ -343,17 +352,18 @@ def main() -> int:
                         torch.manual_seed(seed)
                         if torch.cuda.is_available():
                             torch.cuda.manual_seed_all(seed)
-                        waveform = model.generate(
-                            text=chunk,
-                            prompt_wav_path=str(reference),
-                            prompt_text=REFERENCE_TEXT,
-                            reference_wav_path=str(reference),
+                        waveform, _, _ = model.tts_model.generate_with_prompt_cache(
+                            target_text=chunk,
+                            prompt_cache=prompt_cache,
+                            min_len=2,
+                            max_len=4096,
                             cfg_value=args.cfg,
                             inference_timesteps=args.steps,
-                            normalize=False,
-                            denoise=False,
+                            retry_badcase=True,
+                            retry_badcase_max_times=3,
+                            retry_badcase_ratio_threshold=6.0,
                         )
-                        values = np.asarray(waveform, dtype=np.float32).reshape(-1)
+                        values = np.asarray(waveform.squeeze(0).cpu(), dtype=np.float32).reshape(-1)
                         start, end = active_bounds(values, sample_rate)
                         generated.append(values[start:end])
                     silence = np.zeros(round(sample_rate * 0.18), dtype=np.float32)

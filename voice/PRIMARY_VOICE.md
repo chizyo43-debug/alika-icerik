@@ -17,8 +17,12 @@ Git'e ve dağıtım paketlerine girmez; yalnız SHA-256 özeti ve hak kaydı yay
 - Parametreler: `cfg=2.0`, `inference_timesteps=10`, kayıt kimliğinden türetilen
   deterministik tohum, en çok 400 karakterlik parçalar ve parçalar arasında
   180 ms sessizlik.
+- Referans WAV yalnız bir kez kodlanır; değişmez VoxCPM2 prompt cache aynı
+  üretim koşusundaki bütün kayıtlar için yeniden kullanılır. Cache yalnız ham
+  referanstan türetilir, üretilen kayıtlar birbirine prompt olarak bağlanmaz.
 - Çıktı: mono, PCM 16-bit, 48 kHz yerel WAV.
 - Üretim: `tools/generate_primary_voice_audio.py`
+- Üretici sürümü: `alika-primary-voice-generator/1.2.0`
 - Uygulama: `tools/apply_primary_voice_audio.py`
 
 Modelin resmî kaynakları:
