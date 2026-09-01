@@ -6,3 +6,4 @@ games/*/catalog.json text eol=lf
 *.jsonl text eol=lf
 *.md text eol=lf
 *.py text eol=lf
+*.zip binary

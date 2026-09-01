@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0",
+  "recordId": "kr-authorized-woman-voice-rights-20260901",
+  "recordType": "voice-rights-holder-authorization",
+  "country": "KR",
+  "scope": {
+    "subjectCodes": ["gugeo", "yeongeo"],
+    "grades": [5, 6, 7, 8, 9, 10, 11, 12],
+    "uses": [
+      "voice-clone-reference",
+      "educational-content",
+      "commercial-use",
+      "modification",
+      "local-packaging",
+      "redistribution-with-alika-content"
+    ]
+  },
+  "voiceOwner": {
+    "identityDisclosure": "private",
+    "voicePresentation": "adult-woman",
+    "relationshipToProjectOwner": "spouse"
+  },
+  "authorization": {
+    "status": "approved-project-owner-attestation",
+    "assertedBy": "project-owner",
+    "assertionDate": "2026-09-01",
+    "assertionLanguage": "tr",
+    "authorizationEvidence": [
+      "Ses eşime ait; kullanıma engel yok.",
+      "Sesi biz üretiyoruz; o kadın sesini kullan. Sesi üreten modeller projede yazıyor."
+    ],
+    "externalReviewProviderUsed": false
+  },
+  "referenceAudio": {
+    "privateLocalSource": true,
+    "packagedWithContent": false,
+    "clonePromptFileName": "prompt_b_13s.wav",
+    "clonePromptSha256": "3ead7d03d36780933b0acb326e9a8eaf9ee443ad0a440e9b23ca8cccbdaa093e",
+    "clonePromptDurationMs": 13220,
+    "clonePromptSampleRate": 44100,
+    "clonePromptChannels": 1
+  },
+  "voiceModel": {
+    "modelId": "openbmb/VoxCPM2",
+    "revision": "32279effe8c19989596f05d353d1447f51d9e915",
+    "license": "Apache-2.0",
+    "licenseEvidence": "local-model-card",
+    "modelCardPath": "C:/Users/Shadow/Desktop/alika_tts_v2/models/models--openbmb--VoxCPM2/snapshots/32279effe8c19989596f05d353d1447f51d9e915/README.md"
+  },
+  "approvedAlternativeVoiceModels": [
+    {
+      "modelId": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "license": "Apache-2.0",
+      "licenseEvidenceRecord": "library/sources/JP/audio/jp-eigo-authorized-voice-rights.json",
+      "useCase": "long-form-local-authorized-woman-voice-clone"
+    }
+  ],
+  "privacy": {
+    "referenceAudioRemainsOutsideRepository": true,
+    "absoluteSourcePathRecordedInPackages": false,
+    "speakerLegalNameRecorded": false
+  }
+}

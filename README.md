@@ -2,6 +2,21 @@
 
 AliKa uygulaması için indirilebilir **ders notu + soru bankası** paketleri.
 
+## Ülke yayınları
+
+- **Türkiye:** `turkiye/` altında 5–12. sınıf ders paketleri.
+- **Japonya:** `library/releases/JP/2026-09-01/` altında 43 güvenli-kapsam
+  paket; 20.460 soru ve 949 konu anlatımı.
+- **Kore:** `library/releases/KR/2026-09-01/` altında 94 güvenli-kapsam
+  paket; 47.000 soru ve 2.162 konu anlatımı.
+
+Japonya ve Kore yayınlarının kanonik işaretçileri sırasıyla
+`library/curriculum/JP/current-publish-release.json` ve
+`library/curriculum/KR/current-publish-release.json` dosyalarıdır. Yalnız
+`publishable=true`, boş `releaseBlockers` ve hash-bağlı denetim sonucu taşıyan
+ZIP'ler yayımlanır. Güvenli kapsam dışında bırakılan kazanımlar kataloglarda
+`withheldObjectives` olarak açıkça belirtilir.
+
 Türkiye sesli içeriklerinin kanonik konuşmacısı ve yerel üretim yöntemi
 [`voice/PRIMARY_VOICE.md`](voice/PRIMARY_VOICE.md) içinde tanımlıdır. Ham insan
 sesi referansı Git'e girmez; yayımlanan kayıtlarda yalnız izin, model lisansı ve

@@ -346,7 +346,11 @@ def generate() -> None:
                     })
                 path = QUESTIONS / language / f"{band}.jsonl"
                 path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_text("".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in rows), encoding="utf-8")
+                with path.open("w", encoding="utf-8", newline="\n") as handle:
+                    handle.write("".join(
+                        json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n"
+                        for row in rows
+                    ))
 
 
 if __name__ == "__main__":

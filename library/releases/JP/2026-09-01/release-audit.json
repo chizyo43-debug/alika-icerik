@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "jp-2026-09-01-safe-scope",
+  "status": "passed",
+  "publishable": true,
+  "catalogSha256": "d7d152456b3f7aa210b519bcab6c03573d1caa6d1b280668087b6f2e114a5a47",
+  "packagesChecked": 43,
+  "questionsChecked": 20460,
+  "notesChecked": 949,
+  "requiredVisuals": 19270,
+  "coveredRequiredVisuals": 19270,
+  "figuresChecked": 21102,
+  "mapsChecked": 39,
+  "audioAssetsChecked": 160,
+  "audioQuestionLinksChecked": 800,
+  "withheldObjectives": 36,
+  "errors": []
+}
