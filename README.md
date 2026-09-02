@@ -14,6 +14,12 @@ AliKa uygulaması için indirilebilir **ders notu + soru bankası** paketleri.
   20.700, bankalarda 84.000 soru. Canlı konuşma performansı gerektiren 6
   kazanım yayımdan açıkça bekletilmiştir.
 
+Japonya ve Kore'nin ders paketlerinden ayrı soru bankası yayını
+`library/releases/question-banks/2026-09-02/` altındadır. Bu sürüm Japonya'nın
+43 ve Kore'nin 94 yayımlanabilir ders hücresinin her biri için ayrı 2.000
+soruluk banka sunar: toplam 137 paket ve 274.000 özgün banka sorusu. Sınıfın
+bütün derslerini birleştiren karma bankalar bu ders bankalarının yerine geçmez.
+
 Japonya, Kore ve İngiltere yayınlarının kanonik işaretçileri sırasıyla
 `library/curriculum/JP/current-publish-release.json` ve
 `library/curriculum/KR/current-publish-release.json` ile
