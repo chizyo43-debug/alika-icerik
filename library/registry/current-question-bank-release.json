@@ -1,0 +1,12 @@
+{
+  "schema": "alika-independent-subject-question-bank-release-pointer/v1",
+  "releaseId": "subject-question-banks-2026-09-02-v1",
+  "publishable": true,
+  "catalogPath": "library/releases/question-banks/2026-09-02/release-catalog.json",
+  "catalogSha256": "fca5a63d50ee447309ac7eaef2f3b9f346f7aaa1180d5feb8f001af1eeddf31e",
+  "auditPath": "library/releases/question-banks/2026-09-02/release-audit.json",
+  "auditSha256": "e7062252e19798d5afbd5fa1220634bb5dbd69b7187337965e83fb93cea7df4e",
+  "bundleCount": 6,
+  "questionCount": 12000,
+  "releaseBlockers": []
+}
