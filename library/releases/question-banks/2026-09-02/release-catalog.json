@@ -1,0 +1,173 @@
+{
+  "schema": "alika-independent-subject-question-bank-catalog/v1",
+  "releaseId": "subject-question-banks-2026-09-02-v1",
+  "releaseDate": "2026-09-02",
+  "publishable": true,
+  "reviewStatus": "passed-critical-codex-self-audit",
+  "humanReviewed": false,
+  "releaseBlockers": [],
+  "policy": {
+    "path": "library/registry/question-bank-policy.json",
+    "sha256": "af5699f5a63bf6c540e956dc3185b026e636f3741c1694502d63a92717a27c33",
+    "questionsPerCell": 2000,
+    "familiesPerCell": 400
+  },
+  "packages": [
+    {
+      "productId": "jp-g05-eigo-question-bank",
+      "cellId": "jp-g05-eigo",
+      "country": "JP",
+      "grade": 5,
+      "subject": "外国語（英語）",
+      "subjectCode": "eigo",
+      "title": "日本 5年・外国語（英語） — 独立2,000問問題バンク",
+      "bundlePath": "library/releases/question-banks/2026-09-02/bundles/jp-g05-eigo-question-bank.alika.zip",
+      "bundleSha256": "5b69e26167c4287aed1616acd9ae1e447f1625ab3b57062c7eaf185af4dad956",
+      "bundleBytes": 18975040,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 80
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "jp-g05-kokugo-question-bank",
+      "cellId": "jp-g05-kokugo",
+      "country": "JP",
+      "grade": 5,
+      "subject": "国語",
+      "subjectCode": "kokugo",
+      "title": "日本 5年・国語 — 独立2,000問問題バンク",
+      "bundlePath": "library/releases/question-banks/2026-09-02/bundles/jp-g05-kokugo-question-bank.alika.zip",
+      "bundleSha256": "53bf0cd51842d8df635d888b90a333041bdcbeaa5f968b1cc4809b90d10517c6",
+      "bundleBytes": 339654,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "jp-g05-rika-question-bank",
+      "cellId": "jp-g05-rika",
+      "country": "JP",
+      "grade": 5,
+      "subject": "理科",
+      "subjectCode": "rika",
+      "title": "日本 5年・理科 — 独立2,000問問題バンク",
+      "bundlePath": "library/releases/question-banks/2026-09-02/bundles/jp-g05-rika-question-bank.alika.zip",
+      "bundleSha256": "24eb72b1ab3ac2761a82cafe3f76283abeb54b357fdc4b0760e92a8758bc18c0",
+      "bundleBytes": 497103,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "jp-g05-sansuu-question-bank",
+      "cellId": "jp-g05-sansuu",
+      "country": "JP",
+      "grade": 5,
+      "subject": "算数",
+      "subjectCode": "sansuu",
+      "title": "日本 5年・算数 — 独立2,000問問題バンク",
+      "bundlePath": "library/releases/question-banks/2026-09-02/bundles/jp-g05-sansuu-question-bank.alika.zip",
+      "bundleSha256": "1f48f3e36d87b3718ced3a1272cb7f1fafd471297ce7570ddd8799e27093d9d8",
+      "bundleBytes": 380177,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "jp-g05-shakai-question-bank",
+      "cellId": "jp-g05-shakai",
+      "country": "JP",
+      "grade": 5,
+      "subject": "社会",
+      "subjectCode": "shakai",
+      "title": "日本 5年・社会 — 独立2,000問問題バンク",
+      "bundlePath": "library/releases/question-banks/2026-09-02/bundles/jp-g05-shakai-question-bank.alika.zip",
+      "bundleSha256": "f7d43cfe72fad3235ec6a055946112b73c098a43b23368c2a3683b674a5d4b98",
+      "bundleBytes": 2841077,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "kr-g05-suhak-question-bank",
+      "cellId": "kr-g05-suhak",
+      "country": "KR",
+      "grade": 5,
+      "subject": "수학",
+      "subjectCode": "suhak",
+      "title": "대한민국 5학년・수학 — 독립 2,000문항 문제은행",
+      "bundlePath": "library/releases/question-banks/2026-09-02/bundles/kr-g05-suhak-question-bank.alika.zip",
+      "bundleSha256": "d1c6afcfb07cc30754f30983a6d523449eee6d954660434e172066b331f81274",
+      "bundleBytes": 302777,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    }
+  ],
+  "totals": {
+    "packages": 6,
+    "questions": 12000,
+    "notes": 138,
+    "audioAssets": 80
+  }
+}
