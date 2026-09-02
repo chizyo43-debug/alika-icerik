@@ -1,8 +1,9 @@
 {
   "schema": "alika-question-bank-policy/1.0",
   "unitOfProduction": "country-grade-subject",
+  "bankScope": "single-publishable-subject",
   "requiredForEveryPublishableCell": true,
-  "classAggregateDoesNotSatisfySubjectBank": true,
+  "oneBankPerCell": true,
   "questionCount": 2000,
   "answerIndexBalance": [500, 500, 500, 500],
   "minimumFamilies": 400,
@@ -15,5 +16,6 @@
   "hintCount": 5,
   "answerLeakingHintsAllowed": 0,
   "catalogCollection": "question_banks",
-  "separateFromSubjectQuestionTotals": true
+  "separateFromSubjectQuestionTotals": true,
+  "mixedGradeBankPolicy": "optional-additional-product-never-substitutes-for-subject-bank"
 }
