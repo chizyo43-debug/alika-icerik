@@ -29,14 +29,28 @@ def test_independent_subject_question_bank_release_is_hash_bound_and_complete() 
     assert audit["catalogSha256"] == pointer["catalogSha256"]
     assert catalog["publishable"] is True
     assert catalog["humanReviewed"] is False
-    assert catalog["totals"] == {"packages": 6, "questions": 12000, "notes": 138, "audioAssets": 80}
-
-    expected = {
-        "jp-g05-eigo", "jp-g05-kokugo", "jp-g05-rika",
-        "jp-g05-sansuu", "jp-g05-shakai", "kr-g05-suhak",
+    assert catalog["totals"] == {
+        "packages": 44,
+        "questions": 88000,
+        "notes": 1012,
+        "audioAssets": 640,
     }
-    assert {row["cellId"] for row in catalog["packages"]} == expected
-    for row in catalog["packages"]:
+
+    packages = catalog["packages"]
+    japanese = [row for row in packages if row["country"] == "JP"]
+    korean = [row for row in packages if row["country"] == "KR"]
+    assert len(japanese) == 43
+    assert len(korean) == 1 and korean[0]["cellId"] == "kr-g05-suhak"
+    assert {row["grade"] for row in japanese} == set(range(5, 13))
+    assert len({(row["country"], row["grade"], row["subjectCode"]) for row in packages}) == 44
+    assert sum(row["counts"]["questions"] for row in japanese) == 86000
+    assert sum(row["counts"]["audioAssets"] for row in japanese) == 640
+    assert {row["grade"] for row in japanese if row["subjectCode"] == "eigo"} == set(range(5, 13))
+    assert all(
+        row["counts"]["audioAssets"] == (80 if row["country"] == "JP" and row["subjectCode"] == "eigo" else 0)
+        for row in packages
+    )
+    for row in packages:
         bundle = ROOT / row["bundlePath"]
         assert bundle.is_file()
         assert bundle.stat().st_size == row["bundleBytes"]
@@ -77,7 +91,8 @@ def test_independent_subject_question_bank_release_is_hash_bound_and_complete() 
             assert [sum(item["correct"] == index for item in questions) for index in range(4)] == [500] * 4
 
             audio_assets = manifest.get("audioAssets") or []
-            assert len(audio_assets) == (80 if row["cellId"] == "jp-g05-eigo" else 0)
+            expected_audio_count = 80 if row["country"] == "JP" and row["subjectCode"] == "eigo" else 0
+            assert len(audio_assets) == expected_audio_count
             for asset in audio_assets:
                 data = archive.read(asset["path"])
                 assert len(data) == asset["bytes"]

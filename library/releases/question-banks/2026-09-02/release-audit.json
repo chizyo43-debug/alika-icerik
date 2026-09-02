@@ -1,11 +1,11 @@
 {
   "schema": "alika-independent-subject-question-bank-release-audit/v1",
-  "releaseId": "subject-question-banks-2026-09-02-v1",
+  "releaseId": "subject-question-banks-2026-09-02-v2",
   "status": "passed",
   "publishable": true,
   "errors": [],
-  "packagesChecked": 6,
-  "questionsChecked": 12000,
-  "audioAssetsChecked": 80,
-  "catalogSha256": "fca5a63d50ee447309ac7eaef2f3b9f346f7aaa1180d5feb8f001af1eeddf31e"
+  "packagesChecked": 44,
+  "questionsChecked": 88000,
+  "audioAssetsChecked": 640,
+  "catalogSha256": "332681510af4e5a20e3d06943064bcfbcffd72aeffbe6e84dab76dca4e4f74ce"
 }
