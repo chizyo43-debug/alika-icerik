@@ -1,0 +1,1841 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+  "country": "GB",
+  "jurisdiction": "England",
+  "releaseDate": "2026-09-02",
+  "status": "publishable-produced-safe-scope-codex-self-audited",
+  "publishable": true,
+  "fullCurriculumCoverage": false,
+  "releaseScope": "all safely assessable produced records; live speaking-performance objectives withheld",
+  "recordReviewContract": {
+    "reviewStatus": "pending",
+    "humanReviewed": false,
+    "releaseApproval": "passed-critical-codex-self-audit",
+    "userAuthorizedCodexAsReviewer": true
+  },
+  "visualQualityEvidence": {
+    "status": "passed-rendered-and-semantic-codex-review",
+    "reportPath": "library/releases/GB/2026-09-02/visual-qa/report.json",
+    "reportSha256": "608c2df3665df32a5a8290bb32993a4442f2bf998b6b616205f4d585f12cafb1",
+    "contactSheetPath": "library/releases/GB/2026-09-02/visual-qa/contact-sheet.png",
+    "contactSheetSha256": "024062c7513145083e73a3f0df4596a4321b880a9fa9adebc51902ac844533fe",
+    "sourceFileCount": 84,
+    "profileSamples": 24,
+    "layoutPassed": true,
+    "semanticReview": {
+      "status": "passed-critical-codex-self-audit",
+      "reviewedBy": "codex",
+      "humanReviewed": false,
+      "contactSheetInspected": true
+    },
+    "files": {
+      "library/releases/GB/2026-09-02/visual-qa/angle--default.png": "42e0e661f0d3676001d632dababcf483c47eba180991ee0094e8926c654f1a87",
+      "library/releases/GB/2026-09-02/visual-qa/chart--bar.png": "4726bce5137e0c1fbecb720cd137206867f791bec09f52fe4098d2462a43bc97",
+      "library/releases/GB/2026-09-02/visual-qa/chart--line.png": "e61b222a298e7614f283f3877f801cf1e622ca24a6320f4e9982339d66e82cd8",
+      "library/releases/GB/2026-09-02/visual-qa/circuit--default.png": "7267125683cf541e55244fcec74d1dea477954112d8d4269a58999fd54fae166",
+      "library/releases/GB/2026-09-02/visual-qa/contact-sheet.png": "024062c7513145083e73a3f0df4596a4321b880a9fa9adebc51902ac844533fe",
+      "library/releases/GB/2026-09-02/visual-qa/coordinate--default.png": "bccbdf33619830dacaaf107a1b62af7234f16fd685469ba3cf4171f62d5bb014",
+      "library/releases/GB/2026-09-02/visual-qa/diagram--circle_plain-line_plain-rect_block-line_plain-circle_plain.png": "56c1e698d90234e7e22dc61bf84b8b7a0f0693c269f6c34911873811a876d20e",
+      "library/releases/GB/2026-09-02/visual-qa/diagram--circle_sun-line_ray-polygon_support-line_ray.png": "98100e33bb4fbed3674356dafdd93ea8f1ad55560f09db33b0d1eb3db67e341a",
+      "library/releases/GB/2026-09-02/visual-qa/diagram--ellipse_orbit-circle_sun-circle_planet.png": "dff556114659e325c5d1da02a366d11c451602f5132f9c52d60afe04442b852f",
+      "library/releases/GB/2026-09-02/visual-qa/diagram--ellipse_plain-circle_plain-line_plain.png": "3470adf905a56a7dfafbfff7592313100031221d41243bafd706344b5a55cca2",
+      "library/releases/GB/2026-09-02/visual-qa/diagram--line_ray-line_ray-line_ray-line_ray-line_ray-line_ray.png": "4c4c83c46f86c1d62eb9d07f1a51899aa25eb9973230a2cc7e7db59277ea45d0",
+      "library/releases/GB/2026-09-02/visual-qa/diagram--polygon_support-line_plain-rect_block-line_plain-polygon_support.png": "5b9a0deb959581f1f0e21f84b8226d008c3545ddff7ac03413f666ecfb330252",
+      "library/releases/GB/2026-09-02/visual-qa/diagram--rect_block-line_force-line_ray.png": "a12a9906e36b43d42a8fa060e89fe13d013b30a75b11778fb0e2012a962993a0",
+      "library/releases/GB/2026-09-02/visual-qa/diagram--rect_plain-rect_plain-rect_plain-line_force-rect_block.png": "6b713c4a08283d9b5f758613e402953ba809539375a8323ecbac623697a67c19",
+      "library/releases/GB/2026-09-02/visual-qa/flow--cycle.png": "0b1da1a4fb4cbfadcfe635fc9350ad6b59a69720d2211543dc0dd51d68810317",
+      "library/releases/GB/2026-09-02/visual-qa/flow--horizontal.png": "22082d6f1de28696d1027ccec26ebbf323ca04e5ca820c2fcd989a24379d8428",
+      "library/releases/GB/2026-09-02/visual-qa/fraction--bar.png": "13e3a448864d449598f3d19fb9c1b21b3d99f684a54c9be77b1f11b29d8c21f8",
+      "library/releases/GB/2026-09-02/visual-qa/fraction--grid.png": "13e3a448864d449598f3d19fb9c1b21b3d99f684a54c9be77b1f11b29d8c21f8",
+      "library/releases/GB/2026-09-02/visual-qa/fraction--pie.png": "c37faa353181a941f065857211292e53dc7a3f46dc090004bf1bdc8c0976832c",
+      "library/releases/GB/2026-09-02/visual-qa/grid--default.png": "bfecbf71d6553ae18c6b091e7bc6bf874d0838e38df9cdba423caa6b71b01b07",
+      "library/releases/GB/2026-09-02/visual-qa/numberline--default.png": "faedba24236b0bf57e24b9fdbd90d4bd196fec12ed41b3c34a928c201a0645cf",
+      "library/releases/GB/2026-09-02/visual-qa/report.json": "608c2df3665df32a5a8290bb32993a4442f2bf998b6b616205f4d585f12cafb1",
+      "library/releases/GB/2026-09-02/visual-qa/shape--default.png": "5ce27e9d655383874e941d8aaa67cf6591ae3de9a5e2cb3e99a27866453dc87a",
+      "library/releases/GB/2026-09-02/visual-qa/table--default.png": "e9e90e1bf5fd7e6248eae65153f1eb44716856e5eb9c8724753db4053834fff2",
+      "library/releases/GB/2026-09-02/visual-qa/timeline--horizontal.png": "2873901a3807c8272f252d807d92202606174e63b0d10ffcd1e05ba136f8ee25",
+      "library/releases/GB/2026-09-02/visual-qa/timeline--vertical.png": "a5f751fe199db14ce58ea60f0bf073af0df2405349e2f70b32fa76288926dddc"
+    }
+  },
+  "totals": {
+    "bankFamilies": 16800,
+    "bankNotes": 966,
+    "bankPackages": 42,
+    "bankQuestions": 84000,
+    "lessonFamilies": 4140,
+    "lessonNotes": 954,
+    "lessonPackages": 42,
+    "lessonQuestions": 20700,
+    "withheldObjectives": 6
+  },
+  "releaseBlockers": [],
+  "lessonPackages": [
+    {
+      "cellId": "gb-england-g05-mathematics",
+      "grade": 5,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g05-mathematics.zip",
+      "bundleSha256": "792f79b8cb90eb867a4445b4814d95f4143436727dd379c447a498805db922af",
+      "bundleBytes": 130000,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g05-science",
+      "grade": 5,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g05-science.zip",
+      "bundleSha256": "dc45252a683dfbe86b680054a6b492bc05d00f0d7a2b940718d843f1bba53887",
+      "bundleBytes": 142280,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g05-english",
+      "grade": 5,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g05-english.zip",
+      "bundleSha256": "900e6f248d638888634fb1276a3d3adde41a9453eb6c422e93e944686d011fe2",
+      "bundleBytes": 123099,
+      "counts": {
+        "questions": 450,
+        "notes": 21,
+        "families": 90
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "ENG5-ENGLISH-SPOKEN",
+          "title": "Spoken presentation",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "spoken-performance"
+        }
+      ]
+    },
+    {
+      "cellId": "gb-england-g05-geography",
+      "grade": 5,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g05-geography.zip",
+      "bundleSha256": "7669e84f8dd1b2bc05fe7af3fcf713291c1847ff1651dd40a832ffcef60a92b0",
+      "bundleBytes": 142165,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g05-history",
+      "grade": 5,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g05-history.zip",
+      "bundleSha256": "307a0793a88c2c16e383ef774fd02605104ab72cb9a6d224158d139542c22874",
+      "bundleBytes": 137146,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g07-mathematics",
+      "grade": 7,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g07-mathematics.zip",
+      "bundleSha256": "eb211a07b40a25ffc1c6cafa04450bf08d66a02933e609afef415628a38ee3f6",
+      "bundleBytes": 125341,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g07-science",
+      "grade": 7,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g07-science.zip",
+      "bundleSha256": "331ca323dc121615250f6407c3cd2395dd551f97ef815c8702cf8e33fa368d9f",
+      "bundleBytes": 128029,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g07-english",
+      "grade": 7,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g07-english.zip",
+      "bundleSha256": "8354cb3d9d39af61f775862c0f5ae90708fd6a62b3de02530ac0f0ff4532e24e",
+      "bundleBytes": 114494,
+      "counts": {
+        "questions": 450,
+        "notes": 21,
+        "families": 90
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "ENG7-ENG-SPOKEN",
+          "title": "Spoken English",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "spoken-performance"
+        }
+      ]
+    },
+    {
+      "cellId": "gb-england-g07-geography",
+      "grade": 7,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g07-geography.zip",
+      "bundleSha256": "c4e422597b168b17e90001b1fe74a3c2630ce3ad5c542fb1d53961296e4c8c89",
+      "bundleBytes": 138466,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g07-history",
+      "grade": 7,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g07-history.zip",
+      "bundleSha256": "1972da2baebd21aecda2f4b60e4b097b3101070fe8a0d872a390197893872bed",
+      "bundleBytes": 134265,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g08-mathematics",
+      "grade": 8,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g08-mathematics.zip",
+      "bundleSha256": "c32a881bfeafaa0240102a0f55f02ca1413c4c43974fa8c9a01917d5c682e286",
+      "bundleBytes": 128714,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g08-science",
+      "grade": 8,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g08-science.zip",
+      "bundleSha256": "379eb58ba9d6fe97793e1a56e3304866398789d2559c4a37ac2837f95059466b",
+      "bundleBytes": 135213,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g08-english",
+      "grade": 8,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g08-english.zip",
+      "bundleSha256": "95fefba476f151b0211d72bc7941cde5b1d467b5eb46904cb12978d0f7b885c7",
+      "bundleBytes": 123620,
+      "counts": {
+        "questions": 450,
+        "notes": 21,
+        "families": 90
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "ENG8-ENG-SPOKEN",
+          "title": "Spoken presentation choices",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "spoken-performance"
+        }
+      ]
+    },
+    {
+      "cellId": "gb-england-g08-geography",
+      "grade": 8,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g08-geography.zip",
+      "bundleSha256": "b4c74483ebd9edbfafb5a830d86de1a32d8842e1a7fa3c8256448cf850f012c2",
+      "bundleBytes": 138780,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g08-history",
+      "grade": 8,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g08-history.zip",
+      "bundleSha256": "23f3552c440a0386b5c24244f98f897af3335662bd7176f8620215d01c5d98f3",
+      "bundleBytes": 135873,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g09-mathematics",
+      "grade": 9,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g09-mathematics.zip",
+      "bundleSha256": "d0b405c3fd904d7bc466821bc3bbec7f03f2c506ec5f05eb90b2f7bf309ff5d2",
+      "bundleBytes": 124344,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g09-science",
+      "grade": 9,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g09-science.zip",
+      "bundleSha256": "3b0d37fa58c009d5cfe4231198bd7bb8e28bd70d05f3866f9a4d465aa30f306a",
+      "bundleBytes": 136168,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g09-english",
+      "grade": 9,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g09-english.zip",
+      "bundleSha256": "e4fb292823e02c4c2bbd732acb83c76a43810c46e2bbef24b9bd9b6cf56e8dca",
+      "bundleBytes": 123530,
+      "counts": {
+        "questions": 450,
+        "notes": 21,
+        "families": 90
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "ENG9-ENG-SPOKEN",
+          "title": "Debate and responsive listening",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "spoken-performance"
+        }
+      ]
+    },
+    {
+      "cellId": "gb-england-g09-geography",
+      "grade": 9,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g09-geography.zip",
+      "bundleSha256": "629b282556025a5014533dd29d9dbb2c73566cfc94a2d285d34a366d3f581f04",
+      "bundleBytes": 142022,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g09-history",
+      "grade": 9,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g09-history.zip",
+      "bundleSha256": "cd41e6071b3c592f8bee5b8ab7980bd1f380a4cad241d5fd881ae95bc63a527d",
+      "bundleBytes": 137369,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g10-mathematics",
+      "grade": 10,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g10-mathematics.zip",
+      "bundleSha256": "8c6d921a843627179f61091be3a31ab00fe8c6dd61e1275509865c49ddb5b0a5",
+      "bundleBytes": 129289,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g10-science",
+      "grade": 10,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g10-science.zip",
+      "bundleSha256": "ef5db13f81bc4ad5b1753a531c3fe67955b4fc50b1fd52b3c9f08f74d96f757f",
+      "bundleBytes": 138048,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g10-english",
+      "grade": 10,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g10-english.zip",
+      "bundleSha256": "43f1f35e2529b3371a253e336fe7ada86821c794d59ca5af1c10f17cce43e071",
+      "bundleBytes": 126873,
+      "counts": {
+        "questions": 450,
+        "notes": 21,
+        "families": 90
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "ENG10-ENG-SPOKEN",
+          "title": "Spoken argument",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "spoken-performance"
+        }
+      ]
+    },
+    {
+      "cellId": "gb-england-g10-geography",
+      "grade": 10,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g10-geography.zip",
+      "bundleSha256": "c2524af9d7476e8ce0e9d136d7fbe2594c8cb45e1e75e5300da2e6ec5922b829",
+      "bundleBytes": 137613,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g10-history",
+      "grade": 10,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g10-history.zip",
+      "bundleSha256": "69570ee27fb9f1158d91c3c08328f6f59047b8b8f4f219cab4b274e9b73680a0",
+      "bundleBytes": 132596,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g10-physics",
+      "grade": 10,
+      "subject": "Physics",
+      "subjectCode": "physics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g10-physics.zip",
+      "bundleSha256": "a928a9a67574792b15913686d2beae9e3a1f01563bf0d4abef99aa18c4f54322",
+      "bundleBytes": 138475,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g11-mathematics",
+      "grade": 11,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g11-mathematics.zip",
+      "bundleSha256": "3f2c674fe13481a50a2d94132ad4d8e4848a0a701f6a6c2699c6ee21fe26c708",
+      "bundleBytes": 131293,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g11-science",
+      "grade": 11,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g11-science.zip",
+      "bundleSha256": "c54245012ea603ebf5b4be4d9ec9eeec7000a722804a0a989c82c9d5f0bfbf08",
+      "bundleBytes": 136156,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g11-english",
+      "grade": 11,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g11-english.zip",
+      "bundleSha256": "a865ddaeed792b0c5fad3756cfb058d2b33cf3b6667bd5bee6c1b6737770e2aa",
+      "bundleBytes": 126650,
+      "counts": {
+        "questions": 450,
+        "notes": 21,
+        "families": 90
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": false,
+      "withheldObjectives": [
+        {
+          "objectiveId": "ENG11-ENG-SPOKEN",
+          "title": "Spoken-language strategy",
+          "reason": "speaking-performance-not-assessed",
+          "deliveryRequirement": "spoken-performance"
+        }
+      ]
+    },
+    {
+      "cellId": "gb-england-g11-geography",
+      "grade": 11,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g11-geography.zip",
+      "bundleSha256": "fadbec91c127df39a75addc85b90a63cce9a1ab5df25243fb16fc61267e86165",
+      "bundleBytes": 140513,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g11-history",
+      "grade": 11,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g11-history.zip",
+      "bundleSha256": "329e26faeaa338fe5ca12cc038e1881a438d0c8b28dc99e629abe2817e498895",
+      "bundleBytes": 134296,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g11-physics",
+      "grade": 11,
+      "subject": "Physics",
+      "subjectCode": "physics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g11-physics.zip",
+      "bundleSha256": "2f13145de72a4dc0f285729775678dc86d2d6c5053362579489a183180603f4f",
+      "bundleBytes": 138218,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g12-mathematics",
+      "grade": 12,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g12-mathematics.zip",
+      "bundleSha256": "3afc19d013e6d123c00b25ffc497fbacec53bb7bcad4c5b31471215f7ac9fb3e",
+      "bundleBytes": 129800,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g12-english",
+      "grade": 12,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g12-english.zip",
+      "bundleSha256": "8fca1c9f1ab8dfc035030dcb9805a4bd829b5c76372d857e8ecd3b1764be7238",
+      "bundleBytes": 138048,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g12-geography",
+      "grade": 12,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g12-geography.zip",
+      "bundleSha256": "dcea50033eb8b40bb915a12acf38723390fee9421d5eaf1db506a21fa8463379",
+      "bundleBytes": 140516,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g12-history",
+      "grade": 12,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g12-history.zip",
+      "bundleSha256": "f6bbf38c79c9d7aff4b63a2ee18074bc1a8271b2d3245f40838c9a023cb89372",
+      "bundleBytes": 136774,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g12-physics",
+      "grade": 12,
+      "subject": "Physics",
+      "subjectCode": "physics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g12-physics.zip",
+      "bundleSha256": "e49f4366f81f85ae5f663c200eab7f09e1ee0a8ca0be2f4ae9b29a3dac9ab8e8",
+      "bundleBytes": 137112,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g13-mathematics",
+      "grade": 13,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g13-mathematics.zip",
+      "bundleSha256": "6f7d9306f6bfb616d47ebcf5381bd992998d71f81fe58b493880ac6c56635391",
+      "bundleBytes": 128185,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g13-english",
+      "grade": 13,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g13-english.zip",
+      "bundleSha256": "431dd6bef6c531368cdf76b6f15cf7325b3d53cf971463f722aa5f237c086c75",
+      "bundleBytes": 137631,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g13-geography",
+      "grade": 13,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g13-geography.zip",
+      "bundleSha256": "8bf5d45f90ad180dfd2df5ab205760a3a4b097bb0675e201f1c87e59cdc21515",
+      "bundleBytes": 140440,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g13-history",
+      "grade": 13,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g13-history.zip",
+      "bundleSha256": "c9fec2587f045b69798f6f321f25bb7a89026b8926ff4e39cae12361f27382a6",
+      "bundleBytes": 136567,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    },
+    {
+      "cellId": "gb-england-g13-physics",
+      "grade": 13,
+      "subject": "Physics",
+      "subjectCode": "physics",
+      "bundlePath": "library/releases/GB/2026-09-02/bundles/gb-england-g13-physics.zip",
+      "bundleSha256": "748d240bec9dc502f6cf5f4408149c7f26dd43291166e922a8c3ca61f011bcfe",
+      "bundleBytes": 133545,
+      "counts": {
+        "questions": 500,
+        "notes": 23,
+        "families": 100
+      },
+      "publicationStatus": "publishable-produced-safe-scope",
+      "releaseBlockers": [],
+      "fullCurriculumCoverage": true,
+      "withheldObjectives": []
+    }
+  ],
+  "questionBankPackages": [
+    {
+      "productId": "gb-england-g05-mathematics-question-bank",
+      "cellId": "gb-england-g05-mathematics",
+      "grade": 5,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g05-mathematics-question-bank.alika.zip",
+      "bundleSha256": "56bffb498d6e9ea712b1a613511688fddb77e02df3c9a0fc91f528335358373d",
+      "bundleBytes": 542526,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g05-science-question-bank",
+      "cellId": "gb-england-g05-science",
+      "grade": 5,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g05-science-question-bank.alika.zip",
+      "bundleSha256": "78c90e4a0fe9141116d068621b40192208f520dca97ae469de43b94d52b5530b",
+      "bundleBytes": 599924,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g05-english-question-bank",
+      "cellId": "gb-england-g05-english",
+      "grade": 5,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g05-english-question-bank.alika.zip",
+      "bundleSha256": "d511787eb62de3878c7a9a80fcfd2394a59e21d831104bbe0562317395cc5886",
+      "bundleBytes": 580244,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g05-geography-question-bank",
+      "cellId": "gb-england-g05-geography",
+      "grade": 5,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g05-geography-question-bank.alika.zip",
+      "bundleSha256": "b89ae341bc6ad245b19a8a08fdf1adbe5dabe57269a25507b3565a356bc758be",
+      "bundleBytes": 608066,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g05-history-question-bank",
+      "cellId": "gb-england-g05-history",
+      "grade": 5,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g05-history-question-bank.alika.zip",
+      "bundleSha256": "5ec81551eac7d7ec3fcf45d9f2da0cef038626ab20154db555b11b6895f065e3",
+      "bundleBytes": 569758,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g07-mathematics-question-bank",
+      "cellId": "gb-england-g07-mathematics",
+      "grade": 7,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g07-mathematics-question-bank.alika.zip",
+      "bundleSha256": "c3b0e68fad743c1bbe41ef02f32025e48ae1b82ddce413ba90e8d12a9c237195",
+      "bundleBytes": 509675,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g07-science-question-bank",
+      "cellId": "gb-england-g07-science",
+      "grade": 7,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g07-science-question-bank.alika.zip",
+      "bundleSha256": "248a03ec1d66b99f56f0a232b0676dcda3343f96dc2b0af7312819d74fc78f90",
+      "bundleBytes": 521549,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g07-english-question-bank",
+      "cellId": "gb-england-g07-english",
+      "grade": 7,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g07-english-question-bank.alika.zip",
+      "bundleSha256": "99e934110ac02fec3589110474efb894cf1532c8658804e0fa3461432daa50ad",
+      "bundleBytes": 537919,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g07-geography-question-bank",
+      "cellId": "gb-england-g07-geography",
+      "grade": 7,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g07-geography-question-bank.alika.zip",
+      "bundleSha256": "82c740650d757a817743af6f7519cbf730b70252f70cc48b734a7dbfe5b4dbfd",
+      "bundleBytes": 593564,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g07-history-question-bank",
+      "cellId": "gb-england-g07-history",
+      "grade": 7,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g07-history-question-bank.alika.zip",
+      "bundleSha256": "25ea8a67ab00ad111dcd23c7acebcd91c5e2eb1db09636a67219abc1692d1a78",
+      "bundleBytes": 553752,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g08-mathematics-question-bank",
+      "cellId": "gb-england-g08-mathematics",
+      "grade": 8,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g08-mathematics-question-bank.alika.zip",
+      "bundleSha256": "f1d00dd3135e8d292734ad048f5031e1d7be4b7af6a2fe8bd7e2e1df6707c442",
+      "bundleBytes": 527288,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g08-science-question-bank",
+      "cellId": "gb-england-g08-science",
+      "grade": 8,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g08-science-question-bank.alika.zip",
+      "bundleSha256": "dfdd943119b5155bccf84b2189bfd11f014eb0dd6e756dbce6c02efb498a60de",
+      "bundleBytes": 574840,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g08-english-question-bank",
+      "cellId": "gb-england-g08-english",
+      "grade": 8,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g08-english-question-bank.alika.zip",
+      "bundleSha256": "b8be77ea5f4c525d207521aae408481edea48b62ba622930b59c6394cc070457",
+      "bundleBytes": 574171,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g08-geography-question-bank",
+      "cellId": "gb-england-g08-geography",
+      "grade": 8,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g08-geography-question-bank.alika.zip",
+      "bundleSha256": "f78df893ffcf63bfbddee79f51d73f0ef0d83057db68ef5811a7285d4be35904",
+      "bundleBytes": 575051,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g08-history-question-bank",
+      "cellId": "gb-england-g08-history",
+      "grade": 8,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g08-history-question-bank.alika.zip",
+      "bundleSha256": "2127441103394ce71529ea0eac08d81c93347f0a20ecd77539cb57512ed69891",
+      "bundleBytes": 568194,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g09-mathematics-question-bank",
+      "cellId": "gb-england-g09-mathematics",
+      "grade": 9,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g09-mathematics-question-bank.alika.zip",
+      "bundleSha256": "3fd04780a01eac2c9eef5125c53b7143828e9c1d3b6e105c7763067fb0c8792d",
+      "bundleBytes": 522370,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g09-science-question-bank",
+      "cellId": "gb-england-g09-science",
+      "grade": 9,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g09-science-question-bank.alika.zip",
+      "bundleSha256": "169031a8e6732b795da3ce72004f5d91f45afddbf9a0384e614daf7ca539adc1",
+      "bundleBytes": 577609,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g09-english-question-bank",
+      "cellId": "gb-england-g09-english",
+      "grade": 9,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g09-english-question-bank.alika.zip",
+      "bundleSha256": "bbd06a7c188384be9dd8d72c2539c9a32397067447e2c71a4c12c79633670fb1",
+      "bundleBytes": 579111,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g09-geography-question-bank",
+      "cellId": "gb-england-g09-geography",
+      "grade": 9,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g09-geography-question-bank.alika.zip",
+      "bundleSha256": "9e6ce99f56038d2d81fe76c905cf9a9c9ddb14cfc51d9d68339b7b2a45519035",
+      "bundleBytes": 603559,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g09-history-question-bank",
+      "cellId": "gb-england-g09-history",
+      "grade": 9,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g09-history-question-bank.alika.zip",
+      "bundleSha256": "1a66eaed60defe4a5a081c3ca9a7a8dd2a5f39706ed30468d0b5c49f6ff4da35",
+      "bundleBytes": 573699,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g10-mathematics-question-bank",
+      "cellId": "gb-england-g10-mathematics",
+      "grade": 10,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g10-mathematics-question-bank.alika.zip",
+      "bundleSha256": "f7b75b067f8d1c07b9238e6dc254cdad42c11884c80c368fd96ef8ceb559d8d7",
+      "bundleBytes": 528616,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g10-science-question-bank",
+      "cellId": "gb-england-g10-science",
+      "grade": 10,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g10-science-question-bank.alika.zip",
+      "bundleSha256": "ea5de083a906d9903606b90c8f3d96bf36217732749a2ec5b92e409bf5d9b19a",
+      "bundleBytes": 577770,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g10-english-question-bank",
+      "cellId": "gb-england-g10-english",
+      "grade": 10,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g10-english-question-bank.alika.zip",
+      "bundleSha256": "0649e1be2729717e04f290f20d7a0c0f13b3c9e5be2038383434e507098ded07",
+      "bundleBytes": 601290,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g10-geography-question-bank",
+      "cellId": "gb-england-g10-geography",
+      "grade": 10,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g10-geography-question-bank.alika.zip",
+      "bundleSha256": "16f0eeadd5fab1144734e4e5896ad2b26b02eede121f480ff23ad3215b7a4019",
+      "bundleBytes": 596062,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g10-history-question-bank",
+      "cellId": "gb-england-g10-history",
+      "grade": 10,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g10-history-question-bank.alika.zip",
+      "bundleSha256": "c5bddcf380652831d311b6a8d208f8f5f2eacf57dc67bcbb9e5624fafcafee3f",
+      "bundleBytes": 554170,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g10-physics-question-bank",
+      "cellId": "gb-england-g10-physics",
+      "grade": 10,
+      "subject": "Physics",
+      "subjectCode": "physics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g10-physics-question-bank.alika.zip",
+      "bundleSha256": "d403ee778e8c123c39fec6bb6029ffc0e5899d7d3382bc1dfe0170fb4d159399",
+      "bundleBytes": 565912,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g11-mathematics-question-bank",
+      "cellId": "gb-england-g11-mathematics",
+      "grade": 11,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g11-mathematics-question-bank.alika.zip",
+      "bundleSha256": "d458422ffeef04a8d71dfd37f64dcacc161f042330d8e36d3f3fc9918cd3e706",
+      "bundleBytes": 538844,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g11-science-question-bank",
+      "cellId": "gb-england-g11-science",
+      "grade": 11,
+      "subject": "Science",
+      "subjectCode": "science",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g11-science-question-bank.alika.zip",
+      "bundleSha256": "00e13ce1298d435bd9bb9c11d9eb6089ea8b785a23a74b6ad77f7957c1896140",
+      "bundleBytes": 571484,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g11-english-question-bank",
+      "cellId": "gb-england-g11-english",
+      "grade": 11,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g11-english-question-bank.alika.zip",
+      "bundleSha256": "e1e6a6ca9b46cf71b886a883753b824e66c3978a7228629a04456636cab27999",
+      "bundleBytes": 591904,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g11-geography-question-bank",
+      "cellId": "gb-england-g11-geography",
+      "grade": 11,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g11-geography-question-bank.alika.zip",
+      "bundleSha256": "2b2ea08b849387f672af261f8b0257f1c4210b1c2453026d99ca91de71f61e9b",
+      "bundleBytes": 595971,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g11-history-question-bank",
+      "cellId": "gb-england-g11-history",
+      "grade": 11,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g11-history-question-bank.alika.zip",
+      "bundleSha256": "7353a9e11b9bcd7748d60d5184b5e46b6a8b274b7000ee43345013ac2f53068b",
+      "bundleBytes": 564233,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g11-physics-question-bank",
+      "cellId": "gb-england-g11-physics",
+      "grade": 11,
+      "subject": "Physics",
+      "subjectCode": "physics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g11-physics-question-bank.alika.zip",
+      "bundleSha256": "fad5d238244fee1b90b03e46a5687951a346fa0dea2dafafe2c3cbae57b1f668",
+      "bundleBytes": 570052,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g12-mathematics-question-bank",
+      "cellId": "gb-england-g12-mathematics",
+      "grade": 12,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g12-mathematics-question-bank.alika.zip",
+      "bundleSha256": "e344530f36a12ce46feb81397d096e18796a5f9c508f036b385de0f80d407ad3",
+      "bundleBytes": 545058,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g12-english-question-bank",
+      "cellId": "gb-england-g12-english",
+      "grade": 12,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g12-english-question-bank.alika.zip",
+      "bundleSha256": "8f781a3f07da1b3371a5497d76294e7cccc15500e6c4f5779694c8262f76fe4a",
+      "bundleBytes": 590121,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g12-geography-question-bank",
+      "cellId": "gb-england-g12-geography",
+      "grade": 12,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g12-geography-question-bank.alika.zip",
+      "bundleSha256": "7729ee14bf2cffba38c84bc64cc660b09ffab6c69621fa4ad4c48d51a7e95a9b",
+      "bundleBytes": 615331,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g12-history-question-bank",
+      "cellId": "gb-england-g12-history",
+      "grade": 12,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g12-history-question-bank.alika.zip",
+      "bundleSha256": "8c66b1ff18a6e2fd9e48aaa68204cdb5337df4dbdd3f096439dc254a9f61b04a",
+      "bundleBytes": 585445,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g12-physics-question-bank",
+      "cellId": "gb-england-g12-physics",
+      "grade": 12,
+      "subject": "Physics",
+      "subjectCode": "physics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g12-physics-question-bank.alika.zip",
+      "bundleSha256": "143ee1c3b305e2b3fdeacfe390f8db39bfaa108ebb35136f5cdaea9e7bedb0a0",
+      "bundleBytes": 570541,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g13-mathematics-question-bank",
+      "cellId": "gb-england-g13-mathematics",
+      "grade": 13,
+      "subject": "Mathematics",
+      "subjectCode": "mathematics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g13-mathematics-question-bank.alika.zip",
+      "bundleSha256": "f0c8ec76aa2f845a961ca143b5299590021331e25af1f3bfd9383e0b8476557c",
+      "bundleBytes": 538285,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g13-english-question-bank",
+      "cellId": "gb-england-g13-english",
+      "grade": 13,
+      "subject": "English",
+      "subjectCode": "english",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g13-english-question-bank.alika.zip",
+      "bundleSha256": "d9d6d5149e94fbcbfe9dbe1c20252ffb89ff90d785f65039e4d685042abce4f4",
+      "bundleBytes": 570107,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g13-geography-question-bank",
+      "cellId": "gb-england-g13-geography",
+      "grade": 13,
+      "subject": "Geography",
+      "subjectCode": "geography",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g13-geography-question-bank.alika.zip",
+      "bundleSha256": "3ac40988403f67671d09995f7657785b4c56170b39f56b59b6d677819b2ccfde",
+      "bundleBytes": 604183,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g13-history-question-bank",
+      "cellId": "gb-england-g13-history",
+      "grade": 13,
+      "subject": "History",
+      "subjectCode": "history",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g13-history-question-bank.alika.zip",
+      "bundleSha256": "f1d551cd3b5201a1e8ae33eb56e5cadbb9bfb309fb3ad8da9eec9b0e67c0fadb",
+      "bundleBytes": 568308,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "productId": "gb-england-g13-physics-question-bank",
+      "cellId": "gb-england-g13-physics",
+      "grade": 13,
+      "subject": "Physics",
+      "subjectCode": "physics",
+      "bundlePath": "library/releases/GB/2026-09-02/question-banks/gb-england-g13-physics-question-bank.alika.zip",
+      "bundleSha256": "89c24b7a87816a63e1b28e73f493e3898cbd8a6902892172393de87060f1ceed",
+      "bundleBytes": 556366,
+      "counts": {
+        "questions": 2000,
+        "families": 400,
+        "notes": 23,
+        "audioAssets": 0
+      },
+      "publicationStatus": "publishable-independent-subject-question-bank",
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    }
+  ]
+}

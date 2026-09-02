@@ -1,0 +1,478 @@
+{
+  "schemaVersion": "1.0",
+  "country": "GB",
+  "jurisdiction": "England",
+  "selection": "longest-visible-label worst case per canonical kind and topology/style profile across GB lesson and independent bank sources",
+  "sampleCount": 24,
+  "sourceFileCount": 84,
+  "newestSourceMtimeNs": 1788371640037287100,
+  "generatorSha256": "007b7ae5eb954a8d5799ec07c5ff7d7060739c6bde60bb61070c9b92bf9e288a",
+  "qaScriptSha256": "0bf5c9a598a85edc89c8ebaf30621423f26ede669f70e041a0177187bc7d19a3",
+  "contactSheet": "library/reviews/gb-england-visual-qa-2026-09-02/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "angle",
+      "recordId": "gb-y05-mathematics-note-08",
+      "source": "library/work/full/gb-england-g05-mathematics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 4,
+      "textItemCount": 1,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "default",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/angle--default.png"
+    },
+    {
+      "kind": "chart",
+      "recordId": "gb-y11-mathematics-note-10",
+      "source": "library/work/full/gb-england-g11-mathematics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 8,
+      "textItemCount": 4,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "bar",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/chart--bar.png"
+    },
+    {
+      "kind": "chart",
+      "recordId": "gb-y12-mathematics-note-05",
+      "source": "library/work/full/gb-england-g12-mathematics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 15,
+      "textItemCount": 8,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "line",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/chart--line.png"
+    },
+    {
+      "kind": "circuit",
+      "recordId": "gb-y10-physics-note-06",
+      "source": "library/work/full/gb-england-g10-physics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 27,
+      "textItemCount": 7,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 10,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "default",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/circuit--default.png"
+    },
+    {
+      "kind": "coordinate",
+      "recordId": "gb-y07-mathematics-note-05",
+      "source": "library/work/full/gb-england-g07-mathematics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 4,
+      "textItemCount": 1,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "default",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/coordinate--default.png"
+    },
+    {
+      "kind": "diagram",
+      "recordId": "gb-y07-science-note-04",
+      "source": "library/work/full/gb-england-g07-science",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 8,
+      "textItemCount": 3,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "circle:plain-line:plain-rect:block-line:plain-circle:plain",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/diagram--circle_plain-line_plain-rect_block-line_plain-circle_plain.png"
+    },
+    {
+      "kind": "diagram",
+      "recordId": "gb-y13-geography-note-11",
+      "source": "library/work/full/gb-england-g13-geography",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 19,
+      "textItemCount": 3,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "circle:sun-line:ray-polygon:support-line:ray",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/diagram--circle_sun-line_ray-polygon_support-line_ray.png"
+    },
+    {
+      "kind": "diagram",
+      "recordId": "gb-y05-science-note-06",
+      "source": "library/work/full/gb-england-g05-science",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 21,
+      "textItemCount": 2,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "ellipse:orbit-circle:sun-circle:planet",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/diagram--ellipse_orbit-circle_sun-circle_planet.png"
+    },
+    {
+      "kind": "diagram",
+      "recordId": "q-2aa8a737cfa281af69e1",
+      "source": "library/work/full/gb-england-g07-science",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 5,
+      "textItemCount": 2,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "ellipse:plain-circle:plain-line:plain",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/diagram--ellipse_plain-circle_plain-line_plain.png"
+    },
+    {
+      "kind": "diagram",
+      "recordId": "gb-y07-science-note-10",
+      "source": "library/work/full/gb-england-g07-science",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 8,
+      "textItemCount": 2,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "line:ray-line:ray-line:ray-line:ray-line:ray-line:ray",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/diagram--line_ray-line_ray-line_ray-line_ray-line_ray-line_ray.png"
+    },
+    {
+      "kind": "diagram",
+      "recordId": "gb-y08-geography-note-11",
+      "source": "library/work/full/gb-england-g08-geography",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 8,
+      "textItemCount": 3,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "polygon:support-line:plain-rect:block-line:plain-polygon:support",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/diagram--polygon_support-line_plain-rect_block-line_plain-polygon_support.png"
+    },
+    {
+      "kind": "diagram",
+      "recordId": "q-33dc433207e9732f9740",
+      "source": "library/work/full/gb-england-g11-physics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 5,
+      "textItemCount": 2,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "rect:block-line:force-line:ray",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/diagram--rect_block-line_force-line_ray.png"
+    },
+    {
+      "kind": "diagram",
+      "recordId": "q-bf71865d353498c5636c",
+      "source": "library/work/full/gb-england-g09-geography",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 8,
+      "textItemCount": 3,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "rect:plain-rect:plain-rect:plain-line:force-rect:block",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/diagram--rect_plain-rect_plain-rect_plain-line_force-rect_block.png"
+    },
+    {
+      "kind": "flow",
+      "recordId": "gb-y08-science-note-17",
+      "source": "library/work/full/gb-england-g08-science",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 18,
+      "textItemCount": 6,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 8,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "cycle",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/flow--cycle.png"
+    },
+    {
+      "kind": "flow",
+      "recordId": "gb-y07-science-note-14",
+      "source": "library/work/full/gb-england-g07-science",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 17,
+      "textItemCount": 6,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "horizontal",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/flow--horizontal.png"
+    },
+    {
+      "kind": "fraction",
+      "recordId": "gb-y07-mathematics-note-08",
+      "source": "library/work/full/gb-england-g07-mathematics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 5,
+      "textItemCount": 0,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": null,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "bar",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/fraction--bar.png"
+    },
+    {
+      "kind": "fraction",
+      "recordId": "gb-y07-mathematics-note-17",
+      "source": "library/work/full/gb-england-g07-mathematics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 5,
+      "textItemCount": 0,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": null,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "grid",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/fraction--grid.png"
+    },
+    {
+      "kind": "fraction",
+      "recordId": "q-be1c2cbdbbb3f550f584",
+      "source": "library/work/full/gb-england-g07-mathematics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 5,
+      "textItemCount": 0,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": null,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "pie",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/fraction--pie.png"
+    },
+    {
+      "kind": "grid",
+      "recordId": "gb-y10-mathematics-note-20",
+      "source": "library/work/full/gb-england-g10-mathematics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 15,
+      "textItemCount": 0,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": null,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "default",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/grid--default.png"
+    },
+    {
+      "kind": "numberline",
+      "recordId": "q-c241c68579ebdb34be4b",
+      "source": "library/work/full/gb-england-g07-mathematics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 40,
+      "textItemCount": 13,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "default",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/numberline--default.png"
+    },
+    {
+      "kind": "shape",
+      "recordId": "gb-y05-mathematics-note-07",
+      "source": "library/work/full/gb-england-g05-mathematics",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 3,
+      "textItemCount": 2,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "default",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/shape--default.png"
+    },
+    {
+      "kind": "table",
+      "recordId": "gb-y07-science-note-16",
+      "source": "library/work/full/gb-england-g07-science",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 12,
+      "textItemCount": 6,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 10,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "default",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/table--default.png"
+    },
+    {
+      "kind": "timeline",
+      "recordId": "gb-y08-history-note-16",
+      "source": "library/work/full/gb-england-g08-history",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 10,
+      "textItemCount": 3,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "horizontal",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/timeline--horizontal.png"
+    },
+    {
+      "kind": "timeline",
+      "recordId": "gb-y08-history-note-06",
+      "source": "library/work/full/gb-england-g08-history",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 7,
+      "textItemCount": 3,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 10,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "profile": "vertical",
+      "screenshot": "library/reviews/gb-england-visual-qa-2026-09-02/timeline--vertical.png"
+    }
+  ],
+  "layoutPassed": true,
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true
+}

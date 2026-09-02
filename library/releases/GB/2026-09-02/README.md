@@ -1,0 +1,3 @@
+# England 2026-09-02 age-expanded safe-scope release
+
+This release contains 42 lesson bundles and 42 independent subject-question-bank bundles. It covers Year 5, Years 7–11 and Years 12–13. Year 5 contains Mathematics, Science, English, Geography and History; Physics remains integrated in Science. Post-16 contains optional GCE AS/A level Mathematics, English Language, Geography, History and Physics routes; no generic combined Science A level is claimed. Live English speaking performance is not claimed by multiple-choice records; six spoken-performance objectives are withheld across Year 5 and Years 7–11. Record-level `reviewStatus=pending` and `humanReviewed=false` are preserved.

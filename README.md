@@ -9,10 +9,15 @@ AliKa uygulaması için indirilebilir **ders notu + soru bankası** paketleri.
   paket; 20.460 soru ve 949 konu anlatımı.
 - **Kore:** `library/releases/KR/2026-09-01/` altında 94 güvenli-kapsam
   paket; 47.000 soru ve 2.162 konu anlatımı.
+- **İngiltere (England):** `library/releases/GB/2026-09-02/` altında 42
+  güvenli-kapsam ders paketi ile derslerden bağımsız 42 soru bankası; derslerde
+  20.700, bankalarda 84.000 soru. Canlı konuşma performansı gerektiren 6
+  kazanım yayımdan açıkça bekletilmiştir.
 
-Japonya ve Kore yayınlarının kanonik işaretçileri sırasıyla
+Japonya, Kore ve İngiltere yayınlarının kanonik işaretçileri sırasıyla
 `library/curriculum/JP/current-publish-release.json` ve
-`library/curriculum/KR/current-publish-release.json` dosyalarıdır. Yalnız
+`library/curriculum/KR/current-publish-release.json` ile
+`library/curriculum/GB/current-publish-release.json` dosyalarıdır. Yalnız
 `publishable=true`, boş `releaseBlockers` ve hash-bağlı denetim sonucu taşıyan
 ZIP'ler yayımlanır. Güvenli kapsam dışında bırakılan kazanımlar kataloglarda
 `withheldObjectives` olarak açıkça belirtilir.
