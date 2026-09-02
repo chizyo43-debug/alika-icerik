@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "country": "GB",
+  "jurisdiction": "England",
+  "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+  "status": "publishable-produced-safe-scope-codex-self-audited",
+  "publishable": true,
+  "fullCurriculumCoverage": false,
+  "catalogPath": "library/releases/GB/2026-09-02/release-catalog.json",
+  "catalogSha256": "ed8f685d06291833c32e84ba5034ff294de95bdef8bb9d3821f864212f1b43cc",
+  "auditPath": "library/releases/GB/2026-09-02/release-audit.json",
+  "auditSha256": "b94052d1fd6766e675ab346280f9b7c7fe7b7c7d2687945953eef5805d53ef21",
+  "visualQualityReportPath": "library/releases/GB/2026-09-02/visual-qa/report.json",
+  "visualQualityReportSha256": "608c2df3665df32a5a8290bb32993a4442f2bf998b6b616205f4d585f12cafb1",
+  "visualProfilesChecked": 24,
+  "lessonBundleCount": 42,
+  "questionBankBundleCount": 42,
+  "safeScopeLessonQuestionCount": 20700,
+  "questionBankQuestionCount": 84000,
+  "releaseBlockers": [],
+  "withheldObjectiveCount": 6
+}

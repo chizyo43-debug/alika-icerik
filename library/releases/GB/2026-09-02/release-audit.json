@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+  "status": "passed",
+  "publishable": true,
+  "catalogSha256": "ed8f685d06291833c32e84ba5034ff294de95bdef8bb9d3821f864212f1b43cc",
+  "countryCompletionAuditPassed": true,
+  "renderedVisualQualityPassed": true,
+  "visualProfilesChecked": 24,
+  "visualQualityReportSha256": "608c2df3665df32a5a8290bb32993a4442f2bf998b6b616205f4d585f12cafb1",
+  "lessonPackagesChecked": 42,
+  "lessonQuestionsChecked": 20700,
+  "lessonNotesChecked": 954,
+  "questionBankPackagesChecked": 42,
+  "questionBankQuestionsChecked": 84000,
+  "questionBankNotesChecked": 966,
+  "withheldObjectives": 6,
+  "errors": []
+}

@@ -6,4 +6,9 @@ games/*/catalog.json text eol=lf
 *.jsonl text eol=lf
 *.md text eol=lf
 *.py text eol=lf
+
+# Frozen release evidence is published byte-for-byte. Hashes in the GB release
+# catalog and pointer are over these exact bytes, so Git must not normalize EOLs.
+library/releases/GB/2026-09-02/** -text -eol
+library/curriculum/GB/current-publish-release.json -text -eol
 *.zip binary
