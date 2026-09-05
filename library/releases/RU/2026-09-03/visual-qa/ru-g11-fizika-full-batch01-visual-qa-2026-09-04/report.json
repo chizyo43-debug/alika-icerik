@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g11-fizika",
+  "stage": "full-batch-01",
+  "selection": "worst-case sample per figure kind in the selected production stage",
+  "sampleCount": 3,
+  "contactSheet": "library/reviews/ru-g11-fizika-full-batch01-visual-qa-2026-09-04/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "diagram",
+      "recordId": "ru.g11.fizika.full.b01.q001",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 6,
+      "textItemCount": 3,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g11-fizika-full-batch01-visual-qa-2026-09-04/diagram--ampere-force.png",
+      "profile": "diagram--ampere-force"
+    },
+    {
+      "kind": "diagram",
+      "recordId": "ru.g11.fizika.full.b01.q026",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 6,
+      "textItemCount": 3,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g11-fizika-full-batch01-visual-qa-2026-09-04/diagram--lorentz-force.png",
+      "profile": "diagram--lorentz-force"
+    },
+    {
+      "kind": "flow",
+      "recordId": "ru.g11.fizika.full.b01.q051",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 23,
+      "textItemCount": 8,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g11-fizika-full-batch01-visual-qa-2026-09-04/flow--long-label.png",
+      "profile": "flow--long-label"
+    }
+  ],
+  "layoutPassed": true,
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex-self-audit",
+    "humanReviewed": false,
+    "contactSheetInspected": true,
+    "findings": []
+  },
+  "passed": true
+}

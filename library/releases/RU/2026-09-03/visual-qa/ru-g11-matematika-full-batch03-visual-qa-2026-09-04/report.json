@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g11-matematika",
+  "stage": "full-batch-03",
+  "selection": "worst-case sample per figure kind in the selected production stage",
+  "sampleCount": 3,
+  "contactSheet": "library/reviews/ru-g11-matematika-full-batch03-visual-qa-2026-09-04/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "coordinate",
+      "recordId": "ru.g11.matematika.full.b03.q001",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 10,
+      "textItemCount": 1,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g11-matematika-full-batch03-visual-qa-2026-09-04/coordinate.png",
+      "profile": "coordinate"
+    },
+    {
+      "kind": "diagram",
+      "recordId": "ru.g11.matematika.full.b03.q051",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 6,
+      "textItemCount": 2,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g11-matematika-full-batch03-visual-qa-2026-09-04/diagram.png",
+      "profile": "diagram"
+    },
+    {
+      "kind": "table",
+      "recordId": "ru.g11.matematika.full.b03.q026",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 12,
+      "textItemCount": 6,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 10,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g11-matematika-full-batch03-visual-qa-2026-09-04/table.png",
+      "profile": "table"
+    }
+  ],
+  "layoutPassed": true,
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex-self-audit",
+    "humanReviewed": false,
+    "contactSheetInspected": true,
+    "findings": []
+  },
+  "passed": true
+}

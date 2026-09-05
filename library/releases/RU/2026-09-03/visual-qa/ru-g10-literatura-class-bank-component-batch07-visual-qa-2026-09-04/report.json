@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g10-literatura",
+  "productId": "ru-g10-literatura-class-bank-component",
+  "stage": "question-bank-component-batch-07",
+  "selection": "worst-case sample per required figure kind",
+  "sampleCount": 2,
+  "contactSheet": "library/reviews/ru-g10-literatura-class-bank-component-batch07-visual-qa-2026-09-04/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "flow",
+      "recordId": "ru.g10.lit.bank.b07.q036",
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g10-literatura-class-bank-component-batch07-visual-qa-2026-09-04/flow.png"
+    },
+    {
+      "kind": "table",
+      "recordId": "ru.g10.lit.bank.b07.q084",
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g10-literatura-class-bank-component-batch07-visual-qa-2026-09-04/table.png"
+    }
+  ],
+  "layoutPassed": true,
+  "platformValidators": {
+    "windows": "passed",
+    "android": "passed"
+  },
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true
+}

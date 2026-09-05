@@ -1,9 +1,9 @@
 {
-  "schema": "alika-question-bank-policy/1.0",
-  "unitOfProduction": "country-grade-subject",
-  "bankScope": "single-publishable-subject",
-  "requiredForEveryPublishableCell": true,
-  "oneBankPerCell": true,
+  "schema": "alika-question-bank-policy/2.0",
+  "unitOfProduction": "country-grade",
+  "bankScope": "mixed-publishable-subjects",
+  "requiredForEveryPublishableGrade": true,
+  "oneBankPerGrade": true,
   "questionCount": 2000,
   "answerIndexBalance": [500, 500, 500, 500],
   "minimumFamilies": 400,
@@ -12,10 +12,14 @@
   "questionsUsedAsSemanticInputs": 0,
   "exactDuplicateFindingsAllowed": 0,
   "nearDuplicateFindingsAllowed": 0,
-  "requiredVisualCoverage": 1.0,
+  "subjectCoverage": "all-publishable-subjects",
+  "subjectAllocation": "curriculum-and-exam-profile-weighted",
+  "visualRequirementPolicy": "per-question-pedagogical-need",
+  "requiredRecordVisualCoverage": 1.0,
+  "minimumOverallVisualCoverage": 0.0,
   "hintCount": 5,
   "answerLeakingHintsAllowed": 0,
   "catalogCollection": "question_banks",
   "separateFromSubjectQuestionTotals": true,
-  "mixedGradeBankPolicy": "optional-additional-product-never-substitutes-for-subject-bank"
+  "legacySubjectBankPolicy": "historical-input-or-optional-product-never-substitutes-for-grade-bank"
 }

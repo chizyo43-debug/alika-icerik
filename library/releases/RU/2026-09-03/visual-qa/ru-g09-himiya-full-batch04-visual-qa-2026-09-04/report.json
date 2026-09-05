@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g09-himiya",
+  "stage": "full-batch-04",
+  "selection": "worst-case sample per figure kind; headless PIL layout plus Windows/Android schema validation",
+  "sampleCount": 2,
+  "contactSheet": "library/reviews/ru-g09-himiya-full-batch04-visual-qa-2026-09-04/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "flow",
+      "recordId": "ru.g09.chem.full.b04.q011",
+      "canvas": {
+        "width": 760,
+        "height": 340
+      },
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g09-himiya-full-batch04-visual-qa-2026-09-04/flow.png"
+    },
+    {
+      "kind": "table",
+      "recordId": "ru.g09.chem.full.b04.q061",
+      "canvas": {
+        "width": 760,
+        "height": 340
+      },
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g09-himiya-full-batch04-visual-qa-2026-09-04/table.png"
+    }
+  ],
+  "layoutPassed": true,
+  "platformValidators": {
+    "windows": "passed",
+    "android": "passed"
+  },
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true
+}

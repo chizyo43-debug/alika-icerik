@@ -3,7 +3,7 @@
   "releaseId": "kr-2026-09-01-safe-scope",
   "status": "passed",
   "publishable": true,
-  "catalogSha256": "21ee0996049cfe0f19e7c9f8ddc2de90b63616a99d64e73663bd4a0e7b7532e8",
+  "catalogSha256": "c654c38be070243d9e70c88baf25ea2bfec60d2dc93761626e4cd17df255d05e",
   "packagesChecked": 94,
   "questionsChecked": 47000,
   "notesChecked": 2162,
@@ -13,5 +13,9 @@
   "audioQuestionLinksChecked": 675,
   "spokenResponseQuestionsChecked": 225,
   "withheldObjectives": 289,
-  "errors": []
+  "errors": [],
+  "classQuestionBankPackagesChecked": 8,
+  "classQuestionBankQuestionsChecked": 16000,
+  "questionBankUnitOfProduction": "country-grade",
+  "mixedClassQuestionBankAuditPassed": true
 }

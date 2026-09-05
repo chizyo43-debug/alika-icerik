@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g09-biologiya",
+  "stage": "question-bank-batch-09",
+  "selection": "worst-case sample per figure kind in the selected production stage",
+  "sampleCount": 1,
+  "contactSheet": "library/reviews/ru-g09-biologiya-question-bank-batch09-visual-qa-2026-09-04/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "table",
+      "recordId": "ru.g09.biologiya.bank.b09.q029",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 12,
+      "textItemCount": 6,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 10,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g09-biologiya-question-bank-batch09-visual-qa-2026-09-04/table.png",
+      "profile": "table"
+    }
+  ],
+  "layoutPassed": true,
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex-self-audit",
+    "humanReviewed": false,
+    "contactSheetInspected": true,
+    "findings": []
+  },
+  "passed": true
+}

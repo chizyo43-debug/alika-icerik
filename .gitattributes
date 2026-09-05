@@ -11,4 +11,10 @@ games/*/catalog.json text eol=lf
 # catalog and pointer are over these exact bytes, so Git must not normalize EOLs.
 library/releases/GB/2026-09-02/** -text -eol
 library/curriculum/GB/current-publish-release.json -text -eol
+library/releases/JP/2026-09-01/** -text -eol
+library/curriculum/JP/current-publish-release.json -text -eol
+library/releases/KR/2026-09-01/** -text -eol
+library/curriculum/KR/current-publish-release.json -text -eol
+library/releases/RU/2026-09-03/** -text -eol
+library/curriculum/RU/current-publish-release.json -text -eol
 *.zip binary

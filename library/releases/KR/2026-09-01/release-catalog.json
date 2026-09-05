@@ -24,7 +24,11 @@
     "questions": 47000,
     "requiredVisuals": 48743,
     "spokenResponseQuestions": 225,
-    "withheldObjectives": 289
+    "withheldObjectives": 289,
+    "classBankPackages": 8,
+    "classBankQuestions": 16000,
+    "classBankNotes": 3565,
+    "classBankFamilies": 3292
   },
   "runtimeEvidence": {
     "windows": {
@@ -3602,5 +3606,1159 @@
       ],
       "selectionPolicy": "student-or-school-selection-required"
     }
-  ]
+  ],
+  "classQuestionBankPackages": [
+    {
+      "bankId": "kr-g05-question-bank",
+      "gradeId": "kr-g05",
+      "bundlePath": "library/releases/KR/2026-09-01/class-question-banks/kr-g05-question-bank.alika.zip",
+      "bundleSha256": "e1a0dd9bf0ba281ccfdefee5b582516349a6f7a4c5c9e7030e724e8122bea06c",
+      "bundleBytes": 21560722,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "kr-2026-09-01-safe-scope",
+      "country": "KR",
+      "grade": 5,
+      "subject": "전 과목",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "kr-g05-gugeo",
+          "questionCount": 400,
+          "subject": "국어",
+          "subjectCode": "gugeo"
+        },
+        {
+          "cellId": "kr-g05-gwahak",
+          "questionCount": 400,
+          "subject": "과학",
+          "subjectCode": "gwahak"
+        },
+        {
+          "cellId": "kr-g05-sahoe",
+          "questionCount": 400,
+          "subject": "사회",
+          "subjectCode": "sahoe"
+        },
+        {
+          "cellId": "kr-g05-suhak",
+          "questionCount": 400,
+          "subject": "수학",
+          "subjectCode": "suhak"
+        },
+        {
+          "cellId": "kr-g05-yeongeo",
+          "questionCount": 400,
+          "subject": "영어",
+          "subjectCode": "yeongeo"
+        }
+      ],
+      "counts": {
+        "families": 400,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 40
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "kr-g06-question-bank",
+      "gradeId": "kr-g06",
+      "bundlePath": "library/releases/KR/2026-09-01/class-question-banks/kr-g06-question-bank.alika.zip",
+      "bundleSha256": "2f1c94ab2e8148bc9c54b62db132a205c3806bce91030f967165b6cdb297928b",
+      "bundleBytes": 16674293,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "kr-2026-09-01-safe-scope",
+      "country": "KR",
+      "grade": 6,
+      "subject": "전 과목",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "kr-g06-gugeo",
+          "questionCount": 400,
+          "subject": "국어",
+          "subjectCode": "gugeo"
+        },
+        {
+          "cellId": "kr-g06-gwahak",
+          "questionCount": 400,
+          "subject": "과학",
+          "subjectCode": "gwahak"
+        },
+        {
+          "cellId": "kr-g06-sahoe",
+          "questionCount": 400,
+          "subject": "사회",
+          "subjectCode": "sahoe"
+        },
+        {
+          "cellId": "kr-g06-suhak",
+          "questionCount": 400,
+          "subject": "수학",
+          "subjectCode": "suhak"
+        },
+        {
+          "cellId": "kr-g06-yeongeo",
+          "questionCount": 400,
+          "subject": "영어",
+          "subjectCode": "yeongeo"
+        }
+      ],
+      "counts": {
+        "families": 400,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 40
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "kr-g07-question-bank",
+      "gradeId": "kr-g07",
+      "bundlePath": "library/releases/KR/2026-09-01/class-question-banks/kr-g07-question-bank.alika.zip",
+      "bundleSha256": "4d3bd3286fbb399d1e64f5836ba08e63bee3b5119104c5db0e56d5358547963c",
+      "bundleBytes": 9309907,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "kr-2026-09-01-safe-scope",
+      "country": "KR",
+      "grade": 7,
+      "subject": "전 과목",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "kr-g07-gugeo",
+          "questionCount": 334,
+          "subject": "국어",
+          "subjectCode": "gugeo"
+        },
+        {
+          "cellId": "kr-g07-gwahak",
+          "questionCount": 334,
+          "subject": "과학",
+          "subjectCode": "gwahak"
+        },
+        {
+          "cellId": "kr-g07-jeongbo",
+          "questionCount": 333,
+          "subject": "정보",
+          "subjectCode": "jeongbo"
+        },
+        {
+          "cellId": "kr-g07-sahoe",
+          "questionCount": 333,
+          "subject": "사회",
+          "subjectCode": "sahoe"
+        },
+        {
+          "cellId": "kr-g07-suhak",
+          "questionCount": 333,
+          "subject": "수학",
+          "subjectCode": "suhak"
+        },
+        {
+          "cellId": "kr-g07-yeongeo",
+          "questionCount": 333,
+          "subject": "영어",
+          "subjectCode": "yeongeo"
+        }
+      ],
+      "counts": {
+        "families": 404,
+        "notes": 138,
+        "questions": 2000,
+        "audioAssets": 20
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "kr-g08-question-bank",
+      "gradeId": "kr-g08",
+      "bundlePath": "library/releases/KR/2026-09-01/class-question-banks/kr-g08-question-bank.alika.zip",
+      "bundleSha256": "35224dac588d220cdd3ffdef2d30e3aa538527c32f4a0acc0fd4661aebe45647",
+      "bundleBytes": 16764166,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "kr-2026-09-01-safe-scope",
+      "country": "KR",
+      "grade": 8,
+      "subject": "전 과목",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "kr-g08-gugeo",
+          "questionCount": 334,
+          "subject": "국어",
+          "subjectCode": "gugeo"
+        },
+        {
+          "cellId": "kr-g08-gwahak",
+          "questionCount": 334,
+          "subject": "과학",
+          "subjectCode": "gwahak"
+        },
+        {
+          "cellId": "kr-g08-jeongbo",
+          "questionCount": 333,
+          "subject": "정보",
+          "subjectCode": "jeongbo"
+        },
+        {
+          "cellId": "kr-g08-sahoe",
+          "questionCount": 333,
+          "subject": "사회",
+          "subjectCode": "sahoe"
+        },
+        {
+          "cellId": "kr-g08-suhak",
+          "questionCount": 333,
+          "subject": "수학",
+          "subjectCode": "suhak"
+        },
+        {
+          "cellId": "kr-g08-yeongeo",
+          "questionCount": 333,
+          "subject": "영어",
+          "subjectCode": "yeongeo"
+        }
+      ],
+      "counts": {
+        "families": 404,
+        "notes": 138,
+        "questions": 2000,
+        "audioAssets": 30
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "kr-g09-question-bank",
+      "gradeId": "kr-g09",
+      "bundlePath": "library/releases/KR/2026-09-01/class-question-banks/kr-g09-question-bank.alika.zip",
+      "bundleSha256": "32d41740f412f42536a2ee85cbc689f3ab6ffd841d60d58aaa76c6a10b6f8d4d",
+      "bundleBytes": 18965840,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "kr-2026-09-01-safe-scope",
+      "country": "KR",
+      "grade": 9,
+      "subject": "전 과목",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "kr-g09-gugeo",
+          "questionCount": 334,
+          "subject": "국어",
+          "subjectCode": "gugeo"
+        },
+        {
+          "cellId": "kr-g09-gwahak",
+          "questionCount": 334,
+          "subject": "과학",
+          "subjectCode": "gwahak"
+        },
+        {
+          "cellId": "kr-g09-jeongbo",
+          "questionCount": 333,
+          "subject": "정보",
+          "subjectCode": "jeongbo"
+        },
+        {
+          "cellId": "kr-g09-sahoe",
+          "questionCount": 333,
+          "subject": "사회",
+          "subjectCode": "sahoe"
+        },
+        {
+          "cellId": "kr-g09-suhak",
+          "questionCount": 333,
+          "subject": "수학",
+          "subjectCode": "suhak"
+        },
+        {
+          "cellId": "kr-g09-yeongeo",
+          "questionCount": 333,
+          "subject": "영어",
+          "subjectCode": "yeongeo"
+        }
+      ],
+      "counts": {
+        "families": 404,
+        "notes": 138,
+        "questions": 2000,
+        "audioAssets": 40
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "kr-g10-question-bank",
+      "gradeId": "kr-g10",
+      "bundlePath": "library/releases/KR/2026-09-01/class-question-banks/kr-g10-question-bank.alika.zip",
+      "bundleSha256": "800851d31703f0e615597726abfcc9c838b931678571d73f256b9bf164e18d92",
+      "bundleBytes": 355486,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "kr-2026-09-01-safe-scope",
+      "country": "KR",
+      "grade": 10,
+      "subject": "전 과목",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "kr-g10-gugeo",
+          "questionCount": 400,
+          "subject": "국어",
+          "subjectCode": "gugeo"
+        },
+        {
+          "cellId": "kr-g10-suhak",
+          "questionCount": 400,
+          "subject": "수학",
+          "subjectCode": "suhak"
+        },
+        {
+          "cellId": "kr-g10-tonghap-gwahak",
+          "questionCount": 400,
+          "subject": "통합과학",
+          "subjectCode": "tonghap-gwahak"
+        },
+        {
+          "cellId": "kr-g10-tonghap-sahoe",
+          "questionCount": 400,
+          "subject": "통합사회",
+          "subjectCode": "tonghap-sahoe"
+        },
+        {
+          "cellId": "kr-g10-yeongeo",
+          "questionCount": 400,
+          "subject": "영어",
+          "subjectCode": "yeongeo"
+        }
+      ],
+      "counts": {
+        "families": 400,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "kr-g11-question-bank",
+      "gradeId": "kr-g11",
+      "bundlePath": "library/releases/KR/2026-09-01/class-question-banks/kr-g11-question-bank.alika.zip",
+      "bundleSha256": "4946395f8f282dd2732c2cc31aa706de35cd1970803ac7a31e65fc12a1c4f50c",
+      "bundleBytes": 1321174,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "kr-2026-09-01-safe-scope",
+      "country": "KR",
+      "grade": 11,
+      "subject": "전 과목",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "kr-high-elective-beop-sahoe",
+          "questionCount": 33,
+          "subject": "법과 사회",
+          "subjectCode": "beop-sahoe"
+        },
+        {
+          "cellId": "kr-high-elective-daesu",
+          "questionCount": 33,
+          "subject": "대수",
+          "subjectCode": "daesu"
+        },
+        {
+          "cellId": "kr-high-elective-dokseo-jakmun",
+          "questionCount": 33,
+          "subject": "독서와 작문",
+          "subjectCode": "dokseo-jakmun"
+        },
+        {
+          "cellId": "kr-high-elective-dokseo-toron-geulsseugi",
+          "questionCount": 33,
+          "subject": "독서 토론과 글쓰기",
+          "subjectCode": "dokseo-toron-geulsseugi"
+        },
+        {
+          "cellId": "kr-high-elective-dongasia-yeoksa-gihaeng",
+          "questionCount": 33,
+          "subject": "동아시아 역사 기행",
+          "subjectCode": "dongasia-yeoksa-gihaeng"
+        },
+        {
+          "cellId": "kr-high-elective-dosi-mirae-tamgu",
+          "questionCount": 33,
+          "subject": "도시의 미래 탐구",
+          "subjectCode": "dosi-mirae-tamgu"
+        },
+        {
+          "cellId": "kr-high-elective-eoneosaenghwal-tamgu",
+          "questionCount": 33,
+          "subject": "언어생활 탐구",
+          "subjectCode": "eoneosaenghwal-tamgu"
+        },
+        {
+          "cellId": "kr-high-elective-geumyung-gyeongje-saenghwal",
+          "questionCount": 33,
+          "subject": "금융과 경제생활",
+          "subjectCode": "geumyung-gyeongje-saenghwal"
+        },
+        {
+          "cellId": "kr-high-elective-giha",
+          "questionCount": 33,
+          "subject": "기하",
+          "subjectCode": "giha"
+        },
+        {
+          "cellId": "kr-high-elective-gihu-hwangyeong-saengtae",
+          "questionCount": 33,
+          "subject": "기후변화와 환경생태",
+          "subjectCode": "gihu-hwangyeong-saengtae"
+        },
+        {
+          "cellId": "kr-high-elective-gihu-jisok-segye",
+          "questionCount": 33,
+          "subject": "기후변화와 지속가능한 세계",
+          "subjectCode": "gihu-jisok-segye"
+        },
+        {
+          "cellId": "kr-high-elective-gukje-gwangye-ihae",
+          "questionCount": 33,
+          "subject": "국제 관계의 이해",
+          "subjectCode": "gukje-gwangye-ihae"
+        },
+        {
+          "cellId": "kr-high-elective-gwahak-yeoksa-munhwa",
+          "questionCount": 33,
+          "subject": "과학의 역사와 문화",
+          "subjectCode": "gwahak-yeoksa-munhwa"
+        },
+        {
+          "cellId": "kr-high-elective-gyeongje",
+          "questionCount": 33,
+          "subject": "경제",
+          "subjectCode": "gyeongje"
+        },
+        {
+          "cellId": "kr-high-elective-gyeongje-suhak",
+          "questionCount": 33,
+          "subject": "경제 수학",
+          "subjectCode": "gyeongje-suhak"
+        },
+        {
+          "cellId": "kr-high-elective-haengseong-uju-gwahak",
+          "questionCount": 33,
+          "subject": "행성우주과학",
+          "subjectCode": "haengseong-uju-gwahak"
+        },
+        {
+          "cellId": "kr-high-elective-hanguk-jiri-tamgu",
+          "questionCount": 33,
+          "subject": "한국지리 탐구",
+          "subjectCode": "hanguk-jiri-tamgu"
+        },
+        {
+          "cellId": "kr-high-elective-hwabeop-eoneo",
+          "questionCount": 33,
+          "subject": "화법과 언어",
+          "subjectCode": "hwabeop-eoneo"
+        },
+        {
+          "cellId": "kr-high-elective-hwahak",
+          "questionCount": 33,
+          "subject": "화학",
+          "subjectCode": "hwahak"
+        },
+        {
+          "cellId": "kr-high-elective-hwahak-baneung-segye",
+          "questionCount": 33,
+          "subject": "화학 반응의 세계",
+          "subjectCode": "hwahak-baneung-segye"
+        },
+        {
+          "cellId": "kr-high-elective-hwakyul-tonggye",
+          "questionCount": 33,
+          "subject": "확률과 통계",
+          "subjectCode": "hwakyul-tonggye"
+        },
+        {
+          "cellId": "kr-high-elective-ingongjineung-suhak",
+          "questionCount": 33,
+          "subject": "인공지능 수학",
+          "subjectCode": "ingongjineung-suhak"
+        },
+        {
+          "cellId": "kr-high-elective-jeongchi",
+          "questionCount": 33,
+          "subject": "정치",
+          "subjectCode": "jeongchi"
+        },
+        {
+          "cellId": "kr-high-elective-jeonjagi-yangja",
+          "questionCount": 33,
+          "subject": "전자기와 양자",
+          "subjectCode": "jeonjagi-yangja"
+        },
+        {
+          "cellId": "kr-high-elective-jigmu-suhak",
+          "questionCount": 33,
+          "subject": "직무 수학",
+          "subjectCode": "jigmu-suhak"
+        },
+        {
+          "cellId": "kr-high-elective-jigmu-uisasotong",
+          "questionCount": 33,
+          "subject": "직무 의사소통",
+          "subjectCode": "jigmu-uisasotong"
+        },
+        {
+          "cellId": "kr-high-elective-jigmu-yeongeo",
+          "questionCount": 33,
+          "subject": "직무 영어",
+          "subjectCode": "jigmu-yeongeo"
+        },
+        {
+          "cellId": "kr-high-elective-jigu-gwahak",
+          "questionCount": 33,
+          "subject": "지구과학",
+          "subjectCode": "jigu-gwahak"
+        },
+        {
+          "cellId": "kr-high-elective-jigu-system-gwahak",
+          "questionCount": 33,
+          "subject": "지구시스템과학",
+          "subjectCode": "jigu-system-gwahak"
+        },
+        {
+          "cellId": "kr-high-elective-juje-tamgu-dokseo",
+          "questionCount": 33,
+          "subject": "주제 탐구 독서",
+          "subjectCode": "juje-tamgu-dokseo"
+        },
+        {
+          "cellId": "kr-high-elective-maeche-uisasotong",
+          "questionCount": 33,
+          "subject": "매체 의사소통",
+          "subjectCode": "maeche-uisasotong"
+        },
+        {
+          "cellId": "kr-high-elective-midieo-yeongeo",
+          "questionCount": 33,
+          "subject": "미디어 영어",
+          "subjectCode": "midieo-yeongeo"
+        },
+        {
+          "cellId": "kr-high-elective-mijeokbun1",
+          "questionCount": 33,
+          "subject": "미적분Ⅰ",
+          "subjectCode": "mijeokbun1"
+        },
+        {
+          "cellId": "kr-high-elective-mijeokbun2",
+          "questionCount": 33,
+          "subject": "미적분Ⅱ",
+          "subjectCode": "mijeokbun2"
+        },
+        {
+          "cellId": "kr-high-elective-muljil-eneoji",
+          "questionCount": 33,
+          "subject": "물질과 에너지",
+          "subjectCode": "muljil-eneoji"
+        },
+        {
+          "cellId": "kr-high-elective-mulli",
+          "questionCount": 33,
+          "subject": "물리학",
+          "subjectCode": "mulli"
+        },
+        {
+          "cellId": "kr-high-elective-munhak",
+          "questionCount": 33,
+          "subject": "문학",
+          "subjectCode": "munhak"
+        },
+        {
+          "cellId": "kr-high-elective-munhak-yeongsang",
+          "questionCount": 33,
+          "subject": "문학과 영상",
+          "subjectCode": "munhak-yeongsang"
+        },
+        {
+          "cellId": "kr-high-elective-saengmul-yujeon",
+          "questionCount": 33,
+          "subject": "생물의 유전",
+          "subjectCode": "saengmul-yujeon"
+        },
+        {
+          "cellId": "kr-high-elective-saengmyeong-gwahak",
+          "questionCount": 33,
+          "subject": "생명과학",
+          "subjectCode": "saengmyeong-gwahak"
+        },
+        {
+          "cellId": "kr-high-elective-sahoe-munhwa",
+          "questionCount": 33,
+          "subject": "사회와 문화",
+          "subjectCode": "sahoe-munhwa"
+        },
+        {
+          "cellId": "kr-high-elective-sahoe-munje-tamgu",
+          "questionCount": 33,
+          "subject": "사회문제 탐구",
+          "subjectCode": "sahoe-munje-tamgu"
+        },
+        {
+          "cellId": "kr-high-elective-segye-munhwa-yeongeo",
+          "questionCount": 33,
+          "subject": "세계 문화와 영어",
+          "subjectCode": "segye-munhwa-yeongeo"
+        },
+        {
+          "cellId": "kr-high-elective-segye-sa",
+          "questionCount": 33,
+          "subject": "세계사",
+          "subjectCode": "segye-sa"
+        },
+        {
+          "cellId": "kr-high-elective-segye-simin-jiri",
+          "questionCount": 33,
+          "subject": "세계시민과 지리",
+          "subjectCode": "segye-simin-jiri"
+        },
+        {
+          "cellId": "kr-high-elective-sepo-muljildaesa",
+          "questionCount": 33,
+          "subject": "세포와 물질대사",
+          "subjectCode": "sepo-muljildaesa"
+        },
+        {
+          "cellId": "kr-high-elective-silsaenghwal-yeongeo-hoehwa",
+          "questionCount": 33,
+          "subject": "실생활 영어 회화",
+          "subjectCode": "silsaenghwal-yeongeo-hoehwa"
+        },
+        {
+          "cellId": "kr-high-elective-silyong-tonggye",
+          "questionCount": 33,
+          "subject": "실용 통계",
+          "subjectCode": "silyong-tonggye"
+        },
+        {
+          "cellId": "kr-high-elective-simhwa-dokhae-jakmun",
+          "questionCount": 32,
+          "subject": "심화 영어 독해와 작문",
+          "subjectCode": "simhwa-dokhae-jakmun"
+        },
+        {
+          "cellId": "kr-high-elective-simhwa-yeongeo",
+          "questionCount": 32,
+          "subject": "심화 영어",
+          "subjectCode": "simhwa-yeongeo"
+        },
+        {
+          "cellId": "kr-high-elective-suhak-gwaje-tamgu",
+          "questionCount": 32,
+          "subject": "수학과제 탐구",
+          "subjectCode": "suhak-gwaje-tamgu"
+        },
+        {
+          "cellId": "kr-high-elective-suhak-munhwa",
+          "questionCount": 32,
+          "subject": "수학과 문화",
+          "subjectCode": "suhak-munhwa"
+        },
+        {
+          "cellId": "kr-high-elective-yeohaeng-jiri",
+          "questionCount": 32,
+          "subject": "여행지리",
+          "subjectCode": "yeohaeng-jiri"
+        },
+        {
+          "cellId": "kr-high-elective-yeokhak-eneoji",
+          "questionCount": 32,
+          "subject": "역학과 에너지",
+          "subjectCode": "yeokhak-eneoji"
+        },
+        {
+          "cellId": "kr-high-elective-yeoksa-hyeondae-segye",
+          "questionCount": 32,
+          "subject": "역사로 탐구하는 현대 세계",
+          "subjectCode": "yeoksa-hyeondae-segye"
+        },
+        {
+          "cellId": "kr-high-elective-yeongeo-balpyo-toron",
+          "questionCount": 32,
+          "subject": "영어 발표와 토론",
+          "subjectCode": "yeongeo-balpyo-toron"
+        },
+        {
+          "cellId": "kr-high-elective-yeongeo-dokhae-jakmun",
+          "questionCount": 32,
+          "subject": "영어 독해와 작문",
+          "subjectCode": "yeongeo-dokhae-jakmun"
+        },
+        {
+          "cellId": "kr-high-elective-yeongeo1",
+          "questionCount": 32,
+          "subject": "영어Ⅰ",
+          "subjectCode": "yeongeo1"
+        },
+        {
+          "cellId": "kr-high-elective-yeongeo2",
+          "questionCount": 32,
+          "subject": "영어Ⅱ",
+          "subjectCode": "yeongeo2"
+        },
+        {
+          "cellId": "kr-high-elective-yeongmi-munhak-ilgi",
+          "questionCount": 32,
+          "subject": "영미 문학 읽기",
+          "subjectCode": "yeongmi-munhak-ilgi"
+        },
+        {
+          "cellId": "kr-high-elective-yunghap-gwahak-tamgu",
+          "questionCount": 32,
+          "subject": "융합과학 탐구",
+          "subjectCode": "yunghap-gwahak-tamgu"
+        }
+      ],
+      "counts": {
+        "families": 440,
+        "notes": 1403,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "kr-g12-question-bank",
+      "gradeId": "kr-g12",
+      "bundlePath": "library/releases/KR/2026-09-01/class-question-banks/kr-g12-question-bank.alika.zip",
+      "bundleSha256": "1c39ba7cfeec3a7acfef401ac70a4b33516199f92651e018f1dd1260e3f13a71",
+      "bundleBytes": 1321311,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "kr-2026-09-01-safe-scope",
+      "country": "KR",
+      "grade": 12,
+      "subject": "전 과목",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "kr-high-elective-beop-sahoe",
+          "questionCount": 33,
+          "subject": "법과 사회",
+          "subjectCode": "beop-sahoe"
+        },
+        {
+          "cellId": "kr-high-elective-daesu",
+          "questionCount": 33,
+          "subject": "대수",
+          "subjectCode": "daesu"
+        },
+        {
+          "cellId": "kr-high-elective-dokseo-jakmun",
+          "questionCount": 33,
+          "subject": "독서와 작문",
+          "subjectCode": "dokseo-jakmun"
+        },
+        {
+          "cellId": "kr-high-elective-dokseo-toron-geulsseugi",
+          "questionCount": 33,
+          "subject": "독서 토론과 글쓰기",
+          "subjectCode": "dokseo-toron-geulsseugi"
+        },
+        {
+          "cellId": "kr-high-elective-dongasia-yeoksa-gihaeng",
+          "questionCount": 33,
+          "subject": "동아시아 역사 기행",
+          "subjectCode": "dongasia-yeoksa-gihaeng"
+        },
+        {
+          "cellId": "kr-high-elective-dosi-mirae-tamgu",
+          "questionCount": 33,
+          "subject": "도시의 미래 탐구",
+          "subjectCode": "dosi-mirae-tamgu"
+        },
+        {
+          "cellId": "kr-high-elective-eoneosaenghwal-tamgu",
+          "questionCount": 33,
+          "subject": "언어생활 탐구",
+          "subjectCode": "eoneosaenghwal-tamgu"
+        },
+        {
+          "cellId": "kr-high-elective-geumyung-gyeongje-saenghwal",
+          "questionCount": 33,
+          "subject": "금융과 경제생활",
+          "subjectCode": "geumyung-gyeongje-saenghwal"
+        },
+        {
+          "cellId": "kr-high-elective-giha",
+          "questionCount": 33,
+          "subject": "기하",
+          "subjectCode": "giha"
+        },
+        {
+          "cellId": "kr-high-elective-gihu-hwangyeong-saengtae",
+          "questionCount": 33,
+          "subject": "기후변화와 환경생태",
+          "subjectCode": "gihu-hwangyeong-saengtae"
+        },
+        {
+          "cellId": "kr-high-elective-gihu-jisok-segye",
+          "questionCount": 33,
+          "subject": "기후변화와 지속가능한 세계",
+          "subjectCode": "gihu-jisok-segye"
+        },
+        {
+          "cellId": "kr-high-elective-gukje-gwangye-ihae",
+          "questionCount": 33,
+          "subject": "국제 관계의 이해",
+          "subjectCode": "gukje-gwangye-ihae"
+        },
+        {
+          "cellId": "kr-high-elective-gwahak-yeoksa-munhwa",
+          "questionCount": 33,
+          "subject": "과학의 역사와 문화",
+          "subjectCode": "gwahak-yeoksa-munhwa"
+        },
+        {
+          "cellId": "kr-high-elective-gyeongje",
+          "questionCount": 33,
+          "subject": "경제",
+          "subjectCode": "gyeongje"
+        },
+        {
+          "cellId": "kr-high-elective-gyeongje-suhak",
+          "questionCount": 33,
+          "subject": "경제 수학",
+          "subjectCode": "gyeongje-suhak"
+        },
+        {
+          "cellId": "kr-high-elective-haengseong-uju-gwahak",
+          "questionCount": 33,
+          "subject": "행성우주과학",
+          "subjectCode": "haengseong-uju-gwahak"
+        },
+        {
+          "cellId": "kr-high-elective-hanguk-jiri-tamgu",
+          "questionCount": 33,
+          "subject": "한국지리 탐구",
+          "subjectCode": "hanguk-jiri-tamgu"
+        },
+        {
+          "cellId": "kr-high-elective-hwabeop-eoneo",
+          "questionCount": 33,
+          "subject": "화법과 언어",
+          "subjectCode": "hwabeop-eoneo"
+        },
+        {
+          "cellId": "kr-high-elective-hwahak",
+          "questionCount": 33,
+          "subject": "화학",
+          "subjectCode": "hwahak"
+        },
+        {
+          "cellId": "kr-high-elective-hwahak-baneung-segye",
+          "questionCount": 33,
+          "subject": "화학 반응의 세계",
+          "subjectCode": "hwahak-baneung-segye"
+        },
+        {
+          "cellId": "kr-high-elective-hwakyul-tonggye",
+          "questionCount": 33,
+          "subject": "확률과 통계",
+          "subjectCode": "hwakyul-tonggye"
+        },
+        {
+          "cellId": "kr-high-elective-ingongjineung-suhak",
+          "questionCount": 33,
+          "subject": "인공지능 수학",
+          "subjectCode": "ingongjineung-suhak"
+        },
+        {
+          "cellId": "kr-high-elective-jeongchi",
+          "questionCount": 33,
+          "subject": "정치",
+          "subjectCode": "jeongchi"
+        },
+        {
+          "cellId": "kr-high-elective-jeonjagi-yangja",
+          "questionCount": 33,
+          "subject": "전자기와 양자",
+          "subjectCode": "jeonjagi-yangja"
+        },
+        {
+          "cellId": "kr-high-elective-jigmu-suhak",
+          "questionCount": 33,
+          "subject": "직무 수학",
+          "subjectCode": "jigmu-suhak"
+        },
+        {
+          "cellId": "kr-high-elective-jigmu-uisasotong",
+          "questionCount": 33,
+          "subject": "직무 의사소통",
+          "subjectCode": "jigmu-uisasotong"
+        },
+        {
+          "cellId": "kr-high-elective-jigmu-yeongeo",
+          "questionCount": 33,
+          "subject": "직무 영어",
+          "subjectCode": "jigmu-yeongeo"
+        },
+        {
+          "cellId": "kr-high-elective-jigu-gwahak",
+          "questionCount": 33,
+          "subject": "지구과학",
+          "subjectCode": "jigu-gwahak"
+        },
+        {
+          "cellId": "kr-high-elective-jigu-system-gwahak",
+          "questionCount": 33,
+          "subject": "지구시스템과학",
+          "subjectCode": "jigu-system-gwahak"
+        },
+        {
+          "cellId": "kr-high-elective-juje-tamgu-dokseo",
+          "questionCount": 33,
+          "subject": "주제 탐구 독서",
+          "subjectCode": "juje-tamgu-dokseo"
+        },
+        {
+          "cellId": "kr-high-elective-maeche-uisasotong",
+          "questionCount": 33,
+          "subject": "매체 의사소통",
+          "subjectCode": "maeche-uisasotong"
+        },
+        {
+          "cellId": "kr-high-elective-midieo-yeongeo",
+          "questionCount": 33,
+          "subject": "미디어 영어",
+          "subjectCode": "midieo-yeongeo"
+        },
+        {
+          "cellId": "kr-high-elective-mijeokbun1",
+          "questionCount": 33,
+          "subject": "미적분Ⅰ",
+          "subjectCode": "mijeokbun1"
+        },
+        {
+          "cellId": "kr-high-elective-mijeokbun2",
+          "questionCount": 33,
+          "subject": "미적분Ⅱ",
+          "subjectCode": "mijeokbun2"
+        },
+        {
+          "cellId": "kr-high-elective-muljil-eneoji",
+          "questionCount": 33,
+          "subject": "물질과 에너지",
+          "subjectCode": "muljil-eneoji"
+        },
+        {
+          "cellId": "kr-high-elective-mulli",
+          "questionCount": 33,
+          "subject": "물리학",
+          "subjectCode": "mulli"
+        },
+        {
+          "cellId": "kr-high-elective-munhak",
+          "questionCount": 33,
+          "subject": "문학",
+          "subjectCode": "munhak"
+        },
+        {
+          "cellId": "kr-high-elective-munhak-yeongsang",
+          "questionCount": 33,
+          "subject": "문학과 영상",
+          "subjectCode": "munhak-yeongsang"
+        },
+        {
+          "cellId": "kr-high-elective-saengmul-yujeon",
+          "questionCount": 33,
+          "subject": "생물의 유전",
+          "subjectCode": "saengmul-yujeon"
+        },
+        {
+          "cellId": "kr-high-elective-saengmyeong-gwahak",
+          "questionCount": 33,
+          "subject": "생명과학",
+          "subjectCode": "saengmyeong-gwahak"
+        },
+        {
+          "cellId": "kr-high-elective-sahoe-munhwa",
+          "questionCount": 33,
+          "subject": "사회와 문화",
+          "subjectCode": "sahoe-munhwa"
+        },
+        {
+          "cellId": "kr-high-elective-sahoe-munje-tamgu",
+          "questionCount": 33,
+          "subject": "사회문제 탐구",
+          "subjectCode": "sahoe-munje-tamgu"
+        },
+        {
+          "cellId": "kr-high-elective-segye-munhwa-yeongeo",
+          "questionCount": 33,
+          "subject": "세계 문화와 영어",
+          "subjectCode": "segye-munhwa-yeongeo"
+        },
+        {
+          "cellId": "kr-high-elective-segye-sa",
+          "questionCount": 33,
+          "subject": "세계사",
+          "subjectCode": "segye-sa"
+        },
+        {
+          "cellId": "kr-high-elective-segye-simin-jiri",
+          "questionCount": 33,
+          "subject": "세계시민과 지리",
+          "subjectCode": "segye-simin-jiri"
+        },
+        {
+          "cellId": "kr-high-elective-sepo-muljildaesa",
+          "questionCount": 33,
+          "subject": "세포와 물질대사",
+          "subjectCode": "sepo-muljildaesa"
+        },
+        {
+          "cellId": "kr-high-elective-silsaenghwal-yeongeo-hoehwa",
+          "questionCount": 33,
+          "subject": "실생활 영어 회화",
+          "subjectCode": "silsaenghwal-yeongeo-hoehwa"
+        },
+        {
+          "cellId": "kr-high-elective-silyong-tonggye",
+          "questionCount": 33,
+          "subject": "실용 통계",
+          "subjectCode": "silyong-tonggye"
+        },
+        {
+          "cellId": "kr-high-elective-simhwa-dokhae-jakmun",
+          "questionCount": 32,
+          "subject": "심화 영어 독해와 작문",
+          "subjectCode": "simhwa-dokhae-jakmun"
+        },
+        {
+          "cellId": "kr-high-elective-simhwa-yeongeo",
+          "questionCount": 32,
+          "subject": "심화 영어",
+          "subjectCode": "simhwa-yeongeo"
+        },
+        {
+          "cellId": "kr-high-elective-suhak-gwaje-tamgu",
+          "questionCount": 32,
+          "subject": "수학과제 탐구",
+          "subjectCode": "suhak-gwaje-tamgu"
+        },
+        {
+          "cellId": "kr-high-elective-suhak-munhwa",
+          "questionCount": 32,
+          "subject": "수학과 문화",
+          "subjectCode": "suhak-munhwa"
+        },
+        {
+          "cellId": "kr-high-elective-yeohaeng-jiri",
+          "questionCount": 32,
+          "subject": "여행지리",
+          "subjectCode": "yeohaeng-jiri"
+        },
+        {
+          "cellId": "kr-high-elective-yeokhak-eneoji",
+          "questionCount": 32,
+          "subject": "역학과 에너지",
+          "subjectCode": "yeokhak-eneoji"
+        },
+        {
+          "cellId": "kr-high-elective-yeoksa-hyeondae-segye",
+          "questionCount": 32,
+          "subject": "역사로 탐구하는 현대 세계",
+          "subjectCode": "yeoksa-hyeondae-segye"
+        },
+        {
+          "cellId": "kr-high-elective-yeongeo-balpyo-toron",
+          "questionCount": 32,
+          "subject": "영어 발표와 토론",
+          "subjectCode": "yeongeo-balpyo-toron"
+        },
+        {
+          "cellId": "kr-high-elective-yeongeo-dokhae-jakmun",
+          "questionCount": 32,
+          "subject": "영어 독해와 작문",
+          "subjectCode": "yeongeo-dokhae-jakmun"
+        },
+        {
+          "cellId": "kr-high-elective-yeongeo1",
+          "questionCount": 32,
+          "subject": "영어Ⅰ",
+          "subjectCode": "yeongeo1"
+        },
+        {
+          "cellId": "kr-high-elective-yeongeo2",
+          "questionCount": 32,
+          "subject": "영어Ⅱ",
+          "subjectCode": "yeongeo2"
+        },
+        {
+          "cellId": "kr-high-elective-yeongmi-munhak-ilgi",
+          "questionCount": 32,
+          "subject": "영미 문학 읽기",
+          "subjectCode": "yeongmi-munhak-ilgi"
+        },
+        {
+          "cellId": "kr-high-elective-yunghap-gwahak-tamgu",
+          "questionCount": 32,
+          "subject": "융합과학 탐구",
+          "subjectCode": "yunghap-gwahak-tamgu"
+        }
+      ],
+      "counts": {
+        "families": 440,
+        "notes": 1403,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    }
+  ],
+  "questionBankPolicy": {
+    "unitOfProduction": "country-grade",
+    "questionsPerGrade": 2000,
+    "scope": "mixed-publishable-subjects",
+    "legacySubjectBanksCountTowardCompletion": false
+  }
 }

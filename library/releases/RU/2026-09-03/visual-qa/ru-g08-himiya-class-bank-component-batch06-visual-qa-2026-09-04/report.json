@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g08-himiya",
+  "productId": "ru-g08-himiya-class-bank-component",
+  "stage": "question-bank-component-batch-06",
+  "selection": "worst-case sample per required figure kind",
+  "sampleCount": 2,
+  "contactSheet": "library/reviews/ru-g08-himiya-class-bank-component-batch06-visual-qa-2026-09-04/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "flow",
+      "recordId": "ru.g08.chem.bank.b06.q041",
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g08-himiya-class-bank-component-batch06-visual-qa-2026-09-04/flow.png"
+    },
+    {
+      "kind": "table",
+      "recordId": "ru.g08.chem.bank.b06.q030",
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g08-himiya-class-bank-component-batch06-visual-qa-2026-09-04/table.png"
+    }
+  ],
+  "layoutPassed": true,
+  "platformValidators": {
+    "windows": "passed",
+    "android": "passed"
+  },
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true
+}

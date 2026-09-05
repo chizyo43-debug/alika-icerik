@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g05-matematika",
+  "stage": "question-bank-batch-20",
+  "selection": "worst-case sample per figure kind in the selected production stage",
+  "sampleCount": 5,
+  "contactSheet": "library/reviews/ru-g05-matematika-bank-batch20-visual-qa-2026-09-03/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "angle",
+      "recordId": "ru.g05.matematika.bank.b20.q055",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 4,
+      "textItemCount": 1,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-matematika-bank-batch20-visual-qa-2026-09-03/angle--maximum-degrees.png",
+      "profile": "angle--maximum-degrees"
+    },
+    {
+      "kind": "flow",
+      "recordId": "ru.g05.matematika.bank.b20.q026",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 17,
+      "textItemCount": 6,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-matematika-bank-batch20-visual-qa-2026-09-03/flow--long-label.png",
+      "profile": "flow--long-label"
+    },
+    {
+      "kind": "grid",
+      "recordId": "ru.g05.matematika.bank.b20.q070",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 50,
+      "textItemCount": 0,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": null,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-matematika-bank-batch20-visual-qa-2026-09-03/grid--maximum-cells.png",
+      "profile": "grid--maximum-cells"
+    },
+    {
+      "kind": "shape",
+      "recordId": "ru.g05.matematika.bank.b20.q005",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 3,
+      "textItemCount": 2,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-matematika-bank-batch20-visual-qa-2026-09-03/shape--rect.png",
+      "profile": "shape--rect"
+    },
+    {
+      "kind": "shape",
+      "recordId": "ru.g05.matematika.bank.b20.q020",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 3,
+      "textItemCount": 2,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-matematika-bank-batch20-visual-qa-2026-09-03/shape--square.png",
+      "profile": "shape--square"
+    }
+  ],
+  "layoutPassed": true,
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g10-istoriya",
+  "stage": "class-bank-component-batch-02",
+  "selection": "worst-case sample per figure kind in the selected production stage",
+  "sampleCount": 1,
+  "contactSheet": "library/reviews/ru-g10-istoriya-class-bank-component-batch02-visual-qa-2026-09-05/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "table",
+      "recordId": "ru.g10.istoriya.bank.b02.q090",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 12,
+      "textItemCount": 6,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g10-istoriya-class-bank-component-batch02-visual-qa-2026-09-05/table.png",
+      "profile": "table"
+    }
+  ],
+  "layoutPassed": true,
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true,
+  "productId": "ru-g10-istoriya-class-bank-component"
+}
