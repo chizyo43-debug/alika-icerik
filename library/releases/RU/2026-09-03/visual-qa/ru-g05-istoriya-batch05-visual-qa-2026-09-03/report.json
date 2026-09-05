@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g05-istoriya",
+  "stage": "full-batch-05",
+  "selection": "worst-case sample per figure kind in the selected production stage",
+  "sampleCount": 3,
+  "contactSheet": "library/reviews/ru-g05-istoriya-batch05-visual-qa-2026-09-03/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "flow",
+      "recordId": "ru.g05.istoriya.full.b05.q016",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 17,
+      "textItemCount": 6,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-istoriya-batch05-visual-qa-2026-09-03/flow--long-label.png",
+      "profile": "flow--long-label"
+    },
+    {
+      "kind": "table",
+      "recordId": "ru.g05.istoriya.full.b05.q065",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 12,
+      "textItemCount": 6,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 10,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-istoriya-batch05-visual-qa-2026-09-03/table.png",
+      "profile": "table"
+    },
+    {
+      "kind": "timeline",
+      "recordId": "ru.g05.istoriya.full.b05.q001",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 10,
+      "textItemCount": 3,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 10,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-istoriya-batch05-visual-qa-2026-09-03/timeline.png",
+      "profile": "timeline"
+    }
+  ],
+  "layoutPassed": true,
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true
+}

@@ -6,10 +6,13 @@
   "publishable": true,
   "fullCurriculumCoverage": false,
   "catalogPath": "library/releases/KR/2026-09-01/release-catalog.json",
-  "catalogSha256": "21ee0996049cfe0f19e7c9f8ddc2de90b63616a99d64e73663bd4a0e7b7532e8",
+  "catalogSha256": "c654c38be070243d9e70c88baf25ea2bfec60d2dc93761626e4cd17df255d05e",
   "auditPath": "library/releases/KR/2026-09-01/release-audit.json",
-  "auditSha256": "0817020dd916368828c120c7a6ebfd658de0b3069cfbfce2622385f0d3150c3b",
+  "auditSha256": "615bcbd3ed96a8cb24bc4c8587a34e305126d9353e83b90fa507befc2278a992",
   "bundleCount": 94,
   "releaseBlockers": [],
-  "withheldObjectiveCount": 289
+  "withheldObjectiveCount": 289,
+  "classQuestionBankBundleCount": 8,
+  "classQuestionBankQuestionCount": 16000,
+  "questionBankUnitOfProduction": "country-grade"
 }

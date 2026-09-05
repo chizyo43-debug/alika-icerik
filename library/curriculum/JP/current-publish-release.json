@@ -6,10 +6,13 @@
   "publishable": true,
   "fullCurriculumCoverage": false,
   "catalogPath": "library/releases/JP/2026-09-01/release-catalog.json",
-  "catalogSha256": "d7d152456b3f7aa210b519bcab6c03573d1caa6d1b280668087b6f2e114a5a47",
+  "catalogSha256": "a6adec1945ccc00d82f70cd76c7f7fea340f556136b7d85c87efb566ad81ae8e",
   "auditPath": "library/releases/JP/2026-09-01/release-audit.json",
-  "auditSha256": "97053a89d71abef08467284f335f77b535ef39a9e9a0988d13176c43abc90d08",
+  "auditSha256": "4ec03743885b2f2dd0dd216fc7471bfef028940d5071ac8ebdc9bc471cac0e3b",
   "bundleCount": 43,
   "releaseBlockers": [],
-  "withheldObjectiveCount": 36
+  "withheldObjectiveCount": 36,
+  "classQuestionBankBundleCount": 8,
+  "classQuestionBankQuestionCount": 16000,
+  "questionBankUnitOfProduction": "country-grade"
 }

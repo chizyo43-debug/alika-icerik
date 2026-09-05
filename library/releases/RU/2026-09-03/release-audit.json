@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "ru-2026-09-03-safe-scope",
+  "status": "passed",
+  "publishable": true,
+  "catalogSha256": "a3e4542216d05ba9343487597eb95e81394b300c92bd3613f9818c51707e2eb3",
+  "renderedVisualQualityPassed": true,
+  "visualProfilesChecked": 1217,
+  "lessonPackagesChecked": 58,
+  "lessonQuestionsChecked": 29000,
+  "lessonNotesChecked": 1334,
+  "fullCurriculumCoverage": false,
+  "unproducedCells": 0,
+  "errors": [],
+  "legacySubjectBankPackagesChecked": 12,
+  "legacySubjectBankQuestionsChecked": 24000,
+  "legacySubjectBankNotesChecked": 276,
+  "classQuestionBankPackagesChecked": 7,
+  "classQuestionBankQuestionsChecked": 14000,
+  "questionBankUnitOfProduction": "country-grade",
+  "mixedClassQuestionBankAuditPassed": true
+}

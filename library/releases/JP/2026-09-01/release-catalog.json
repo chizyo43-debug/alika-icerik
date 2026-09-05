@@ -24,7 +24,11 @@
     "packages": 43,
     "questions": 20460,
     "requiredVisuals": 19270,
-    "withheldObjectives": 36
+    "withheldObjectives": 36,
+    "classBankPackages": 8,
+    "classBankQuestions": 16000,
+    "classBankNotes": 989,
+    "classBankFamilies": 3289
   },
   "runtimeEvidence": {
     "windows": {
@@ -1137,5 +1141,487 @@
       "fullCurriculumCoverage": true,
       "withheldObjectives": []
     }
-  ]
+  ],
+  "classQuestionBankPackages": [
+    {
+      "bankId": "jp-g05-question-bank",
+      "gradeId": "jp-g05",
+      "bundlePath": "library/releases/JP/2026-09-01/class-question-banks/jp-g05-question-bank.alika.zip",
+      "bundleSha256": "a90f78f05779285cb53d9ead3b4a60a1be89c7328a604b96ce6dd26079d237d8",
+      "bundleBytes": 19049977,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "jp-2026-09-01-safe-scope",
+      "country": "JP",
+      "grade": 5,
+      "subject": "全教科",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "jp-g05-eigo",
+          "questionCount": 312,
+          "subject": "外国語（英語）",
+          "subjectCode": "eigo"
+        },
+        {
+          "cellId": "jp-g05-kokugo",
+          "questionCount": 422,
+          "subject": "国語",
+          "subjectCode": "kokugo"
+        },
+        {
+          "cellId": "jp-g05-rika",
+          "questionCount": 422,
+          "subject": "理科",
+          "subjectCode": "rika"
+        },
+        {
+          "cellId": "jp-g05-sansuu",
+          "questionCount": 422,
+          "subject": "算数",
+          "subjectCode": "sansuu"
+        },
+        {
+          "cellId": "jp-g05-shakai",
+          "questionCount": 422,
+          "subject": "社会",
+          "subjectCode": "shakai"
+        }
+      ],
+      "counts": {
+        "families": 420,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 60
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "jp-g06-question-bank",
+      "gradeId": "jp-g06",
+      "bundlePath": "library/releases/JP/2026-09-01/class-question-banks/jp-g06-question-bank.alika.zip",
+      "bundleSha256": "b91e3f0354c11624781c2782fb1cd842df2a89f6e3ab03a55fdee9113af33c9e",
+      "bundleBytes": 25602271,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "jp-2026-09-01-safe-scope",
+      "country": "JP",
+      "grade": 6,
+      "subject": "全教科",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "jp-g06-eigo",
+          "questionCount": 312,
+          "subject": "外国語（英語）",
+          "subjectCode": "eigo"
+        },
+        {
+          "cellId": "jp-g06-kokugo",
+          "questionCount": 422,
+          "subject": "国語",
+          "subjectCode": "kokugo"
+        },
+        {
+          "cellId": "jp-g06-rika",
+          "questionCount": 422,
+          "subject": "理科",
+          "subjectCode": "rika"
+        },
+        {
+          "cellId": "jp-g06-sansuu",
+          "questionCount": 422,
+          "subject": "算数",
+          "subjectCode": "sansuu"
+        },
+        {
+          "cellId": "jp-g06-shakai",
+          "questionCount": 422,
+          "subject": "社会",
+          "subjectCode": "shakai"
+        }
+      ],
+      "counts": {
+        "families": 409,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 60
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "jp-g07-question-bank",
+      "gradeId": "jp-g07",
+      "bundlePath": "library/releases/JP/2026-09-01/class-question-banks/jp-g07-question-bank.alika.zip",
+      "bundleSha256": "de98c5873151c1f0427142d952632fb1f681d355a5ab9072a63d0adb8542f36b",
+      "bundleBytes": 26064986,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "jp-2026-09-01-safe-scope",
+      "country": "JP",
+      "grade": 7,
+      "subject": "全教科",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "jp-g07-eigo",
+          "questionCount": 312,
+          "subject": "外国語（英語）",
+          "subjectCode": "eigo"
+        },
+        {
+          "cellId": "jp-g07-kokugo",
+          "questionCount": 422,
+          "subject": "国語",
+          "subjectCode": "kokugo"
+        },
+        {
+          "cellId": "jp-g07-rika",
+          "questionCount": 422,
+          "subject": "理科",
+          "subjectCode": "rika"
+        },
+        {
+          "cellId": "jp-g07-shakai",
+          "questionCount": 422,
+          "subject": "社会",
+          "subjectCode": "shakai"
+        },
+        {
+          "cellId": "jp-g07-suugaku",
+          "questionCount": 422,
+          "subject": "数学",
+          "subjectCode": "suugaku"
+        }
+      ],
+      "counts": {
+        "families": 408,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 60
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "jp-g08-question-bank",
+      "gradeId": "jp-g08",
+      "bundlePath": "library/releases/JP/2026-09-01/class-question-banks/jp-g08-question-bank.alika.zip",
+      "bundleSha256": "38a59527d9ac1c4243dc147b9982c81a5d2a38f7f0345af3ce69cd286aaee063",
+      "bundleBytes": 25964782,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "jp-2026-09-01-safe-scope",
+      "country": "JP",
+      "grade": 8,
+      "subject": "全教科",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "jp-g08-eigo",
+          "questionCount": 312,
+          "subject": "外国語（英語）",
+          "subjectCode": "eigo"
+        },
+        {
+          "cellId": "jp-g08-kokugo",
+          "questionCount": 422,
+          "subject": "国語",
+          "subjectCode": "kokugo"
+        },
+        {
+          "cellId": "jp-g08-rika",
+          "questionCount": 422,
+          "subject": "理科",
+          "subjectCode": "rika"
+        },
+        {
+          "cellId": "jp-g08-shakai",
+          "questionCount": 422,
+          "subject": "社会",
+          "subjectCode": "shakai"
+        },
+        {
+          "cellId": "jp-g08-suugaku",
+          "questionCount": 422,
+          "subject": "数学",
+          "subjectCode": "suugaku"
+        }
+      ],
+      "counts": {
+        "families": 409,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 60
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "jp-g09-question-bank",
+      "gradeId": "jp-g09",
+      "bundlePath": "library/releases/JP/2026-09-01/class-question-banks/jp-g09-question-bank.alika.zip",
+      "bundleSha256": "f471939ef5eb21f747ef857d2cda764345da760e8f211de9f4de0bc5ce8a3480",
+      "bundleBytes": 25899929,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "jp-2026-09-01-safe-scope",
+      "country": "JP",
+      "grade": 9,
+      "subject": "全教科",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "jp-g09-eigo",
+          "questionCount": 312,
+          "subject": "外国語（英語）",
+          "subjectCode": "eigo"
+        },
+        {
+          "cellId": "jp-g09-kokugo",
+          "questionCount": 422,
+          "subject": "国語",
+          "subjectCode": "kokugo"
+        },
+        {
+          "cellId": "jp-g09-rika",
+          "questionCount": 422,
+          "subject": "理科",
+          "subjectCode": "rika"
+        },
+        {
+          "cellId": "jp-g09-shakai",
+          "questionCount": 422,
+          "subject": "社会",
+          "subjectCode": "shakai"
+        },
+        {
+          "cellId": "jp-g09-suugaku",
+          "questionCount": 422,
+          "subject": "数学",
+          "subjectCode": "suugaku"
+        }
+      ],
+      "counts": {
+        "families": 407,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 60
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "jp-g10-question-bank",
+      "gradeId": "jp-g10",
+      "bundlePath": "library/releases/JP/2026-09-01/class-question-banks/jp-g10-question-bank.alika.zip",
+      "bundleSha256": "ecaf754f219ca781b92cb949dd27fba9a9c4bb56f1317be6caf22ca1f47b2c1b",
+      "bundleBytes": 23863712,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "jp-2026-09-01-safe-scope",
+      "country": "JP",
+      "grade": 10,
+      "subject": "全教科",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "jp-g10-chirirekishi-koumin",
+          "questionCount": 349,
+          "subject": "地理歴史・公民",
+          "subjectCode": "chirirekishi-koumin"
+        },
+        {
+          "cellId": "jp-g10-eigo",
+          "questionCount": 258,
+          "subject": "外国語（英語）",
+          "subjectCode": "eigo"
+        },
+        {
+          "cellId": "jp-g10-jouhou",
+          "questionCount": 349,
+          "subject": "情報",
+          "subjectCode": "jouhou"
+        },
+        {
+          "cellId": "jp-g10-kokugo",
+          "questionCount": 348,
+          "subject": "国語",
+          "subjectCode": "kokugo"
+        },
+        {
+          "cellId": "jp-g10-rika",
+          "questionCount": 348,
+          "subject": "理科",
+          "subjectCode": "rika"
+        },
+        {
+          "cellId": "jp-g10-suugaku",
+          "questionCount": 348,
+          "subject": "数学",
+          "subjectCode": "suugaku"
+        }
+      ],
+      "counts": {
+        "families": 411,
+        "notes": 138,
+        "questions": 2000,
+        "audioAssets": 55
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "jp-g11-question-bank",
+      "gradeId": "jp-g11",
+      "bundlePath": "library/releases/JP/2026-09-01/class-question-banks/jp-g11-question-bank.alika.zip",
+      "bundleSha256": "69696b6765831db3f9b0725cc1f10f1556706fccd033c9c052adc86daaa51867",
+      "bundleBytes": 23665988,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "jp-2026-09-01-safe-scope",
+      "country": "JP",
+      "grade": 11,
+      "subject": "全教科",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "jp-g11-chirirekishi-koumin",
+          "questionCount": 349,
+          "subject": "地理歴史・公民",
+          "subjectCode": "chirirekishi-koumin"
+        },
+        {
+          "cellId": "jp-g11-eigo",
+          "questionCount": 258,
+          "subject": "外国語（英語）",
+          "subjectCode": "eigo"
+        },
+        {
+          "cellId": "jp-g11-jouhou",
+          "questionCount": 349,
+          "subject": "情報",
+          "subjectCode": "jouhou"
+        },
+        {
+          "cellId": "jp-g11-kokugo",
+          "questionCount": 348,
+          "subject": "国語",
+          "subjectCode": "kokugo"
+        },
+        {
+          "cellId": "jp-g11-rika",
+          "questionCount": 348,
+          "subject": "理科",
+          "subjectCode": "rika"
+        },
+        {
+          "cellId": "jp-g11-suugaku",
+          "questionCount": 348,
+          "subject": "数学",
+          "subjectCode": "suugaku"
+        }
+      ],
+      "counts": {
+        "families": 410,
+        "notes": 138,
+        "questions": 2000,
+        "audioAssets": 53
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "jp-g12-question-bank",
+      "gradeId": "jp-g12",
+      "bundlePath": "library/releases/JP/2026-09-01/class-question-banks/jp-g12-question-bank.alika.zip",
+      "bundleSha256": "726318a330f16a6424b2e75172ad6d506d55de4484791e0cfd8ddb363843cd8c",
+      "bundleBytes": 37513018,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "jp-2026-09-01-safe-scope",
+      "country": "JP",
+      "grade": 12,
+      "subject": "全教科",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "jp-g12-chirirekishi-koumin",
+          "questionCount": 349,
+          "subject": "地理歴史・公民",
+          "subjectCode": "chirirekishi-koumin"
+        },
+        {
+          "cellId": "jp-g12-eigo",
+          "questionCount": 258,
+          "subject": "外国語（英語）",
+          "subjectCode": "eigo"
+        },
+        {
+          "cellId": "jp-g12-jouhou",
+          "questionCount": 349,
+          "subject": "情報",
+          "subjectCode": "jouhou"
+        },
+        {
+          "cellId": "jp-g12-kokugo",
+          "questionCount": 348,
+          "subject": "国語",
+          "subjectCode": "kokugo"
+        },
+        {
+          "cellId": "jp-g12-rika",
+          "questionCount": 348,
+          "subject": "理科",
+          "subjectCode": "rika"
+        },
+        {
+          "cellId": "jp-g12-suugaku",
+          "questionCount": 348,
+          "subject": "数学",
+          "subjectCode": "suugaku"
+        }
+      ],
+      "counts": {
+        "families": 415,
+        "notes": 138,
+        "questions": 2000,
+        "audioAssets": 54
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    }
+  ],
+  "questionBankPolicy": {
+    "unitOfProduction": "country-grade",
+    "questionsPerGrade": 2000,
+    "scope": "mixed-publishable-subjects",
+    "legacySubjectBanksCountTowardCompletion": false
+  }
 }

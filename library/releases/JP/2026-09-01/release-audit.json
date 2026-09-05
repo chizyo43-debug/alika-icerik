@@ -3,7 +3,7 @@
   "releaseId": "jp-2026-09-01-safe-scope",
   "status": "passed",
   "publishable": true,
-  "catalogSha256": "d7d152456b3f7aa210b519bcab6c03573d1caa6d1b280668087b6f2e114a5a47",
+  "catalogSha256": "a6adec1945ccc00d82f70cd76c7f7fea340f556136b7d85c87efb566ad81ae8e",
   "packagesChecked": 43,
   "questionsChecked": 20460,
   "notesChecked": 949,
@@ -14,5 +14,9 @@
   "audioAssetsChecked": 160,
   "audioQuestionLinksChecked": 800,
   "withheldObjectives": 36,
-  "errors": []
+  "errors": [],
+  "classQuestionBankPackagesChecked": 8,
+  "classQuestionBankQuestionsChecked": 16000,
+  "questionBankUnitOfProduction": "country-grade",
+  "mixedClassQuestionBankAuditPassed": true
 }

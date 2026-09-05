@@ -59,15 +59,19 @@
     }
   },
   "totals": {
-    "bankFamilies": 16800,
-    "bankNotes": 966,
-    "bankPackages": 42,
-    "bankQuestions": 84000,
     "lessonFamilies": 4140,
     "lessonNotes": 954,
     "lessonPackages": 42,
     "lessonQuestions": 20700,
-    "withheldObjectives": 6
+    "withheldObjectives": 6,
+    "legacySubjectBankPackages": 42,
+    "legacySubjectBankQuestions": 84000,
+    "legacySubjectBankNotes": 966,
+    "legacySubjectBankFamilies": 16800,
+    "classBankPackages": 8,
+    "classBankQuestions": 16000,
+    "classBankNotes": 966,
+    "classBankFamilies": 3475
   },
   "releaseBlockers": [],
   "lessonPackages": [
@@ -870,7 +874,7 @@
       "withheldObjectives": []
     }
   ],
-  "questionBankPackages": [
+  "legacySubjectQuestionBankPackages": [
     {
       "productId": "gb-england-g05-mathematics-question-bank",
       "cellId": "gb-england-g05-mathematics",
@@ -892,7 +896,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g05-science-question-bank",
@@ -915,7 +921,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g05-english-question-bank",
@@ -938,7 +946,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g05-geography-question-bank",
@@ -961,7 +971,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g05-history-question-bank",
@@ -984,7 +996,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g07-mathematics-question-bank",
@@ -1007,7 +1021,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g07-science-question-bank",
@@ -1030,7 +1046,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g07-english-question-bank",
@@ -1053,7 +1071,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g07-geography-question-bank",
@@ -1076,7 +1096,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g07-history-question-bank",
@@ -1099,7 +1121,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g08-mathematics-question-bank",
@@ -1122,7 +1146,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g08-science-question-bank",
@@ -1145,7 +1171,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g08-english-question-bank",
@@ -1168,7 +1196,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g08-geography-question-bank",
@@ -1191,7 +1221,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g08-history-question-bank",
@@ -1214,7 +1246,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g09-mathematics-question-bank",
@@ -1237,7 +1271,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g09-science-question-bank",
@@ -1260,7 +1296,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g09-english-question-bank",
@@ -1283,7 +1321,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g09-geography-question-bank",
@@ -1306,7 +1346,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g09-history-question-bank",
@@ -1329,7 +1371,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g10-mathematics-question-bank",
@@ -1352,7 +1396,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g10-science-question-bank",
@@ -1375,7 +1421,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g10-english-question-bank",
@@ -1398,7 +1446,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g10-geography-question-bank",
@@ -1421,7 +1471,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g10-history-question-bank",
@@ -1444,7 +1496,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g10-physics-question-bank",
@@ -1467,7 +1521,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g11-mathematics-question-bank",
@@ -1490,7 +1546,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g11-science-question-bank",
@@ -1513,7 +1571,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g11-english-question-bank",
@@ -1536,7 +1596,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g11-geography-question-bank",
@@ -1559,7 +1621,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g11-history-question-bank",
@@ -1582,7 +1646,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g11-physics-question-bank",
@@ -1605,7 +1671,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g12-mathematics-question-bank",
@@ -1628,7 +1696,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g12-english-question-bank",
@@ -1651,7 +1721,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g12-geography-question-bank",
@@ -1674,7 +1746,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g12-history-question-bank",
@@ -1697,7 +1771,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g12-physics-question-bank",
@@ -1720,7 +1796,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g13-mathematics-question-bank",
@@ -1743,7 +1821,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g13-english-question-bank",
@@ -1766,7 +1846,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g13-geography-question-bank",
@@ -1789,7 +1871,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g13-history-question-bank",
@@ -1812,7 +1896,9 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
-      "releaseBlockers": []
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
     },
     {
       "productId": "gb-england-g13-physics-question-bank",
@@ -1835,7 +1921,485 @@
       "humanReviewed": false,
       "sourceQuestionReuse": "forbidden",
       "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": [],
+      "countsTowardRequiredGradeBank": false,
+      "status": "historical-input-or-optional-product"
+    }
+  ],
+  "classQuestionBankPackages": [
+    {
+      "bankId": "gb-england-g05-question-bank",
+      "gradeId": "gb-england-g05",
+      "bundlePath": "library/releases/GB/2026-09-02/class-question-banks/gb-england-g05-question-bank.alika.zip",
+      "bundleSha256": "8749c7b08c6abc000ae897c50f1f2351935fcbbaf2e0522405b7b9a63c9bce99",
+      "bundleBytes": 1114946,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+      "country": "GB",
+      "grade": 5,
+      "subject": "Mixed subjects",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "gb-england-g05-english",
+          "questionCount": 368,
+          "subject": "English",
+          "subjectCode": "english"
+        },
+        {
+          "cellId": "gb-england-g05-geography",
+          "questionCount": 408,
+          "subject": "Geography",
+          "subjectCode": "geography"
+        },
+        {
+          "cellId": "gb-england-g05-history",
+          "questionCount": 408,
+          "subject": "History",
+          "subjectCode": "history"
+        },
+        {
+          "cellId": "gb-england-g05-mathematics",
+          "questionCount": 408,
+          "subject": "Mathematics",
+          "subjectCode": "mathematics"
+        },
+        {
+          "cellId": "gb-england-g05-science",
+          "questionCount": 408,
+          "subject": "Science",
+          "subjectCode": "science"
+        }
+      ],
+      "counts": {
+        "families": 432,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "gb-england-g07-question-bank",
+      "gradeId": "gb-england-g07",
+      "bundlePath": "library/releases/GB/2026-09-02/class-question-banks/gb-england-g07-question-bank.alika.zip",
+      "bundleSha256": "9fb5c7da9afcb4cb7274667b0966ad9c39b0c1ec9eab4907be85520ad32bda18",
+      "bundleBytes": 1133346,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+      "country": "GB",
+      "grade": 7,
+      "subject": "Mixed subjects",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "gb-england-g07-english",
+          "questionCount": 368,
+          "subject": "English",
+          "subjectCode": "english"
+        },
+        {
+          "cellId": "gb-england-g07-geography",
+          "questionCount": 408,
+          "subject": "Geography",
+          "subjectCode": "geography"
+        },
+        {
+          "cellId": "gb-england-g07-history",
+          "questionCount": 408,
+          "subject": "History",
+          "subjectCode": "history"
+        },
+        {
+          "cellId": "gb-england-g07-mathematics",
+          "questionCount": 408,
+          "subject": "Mathematics",
+          "subjectCode": "mathematics"
+        },
+        {
+          "cellId": "gb-england-g07-science",
+          "questionCount": 408,
+          "subject": "Science",
+          "subjectCode": "science"
+        }
+      ],
+      "counts": {
+        "families": 444,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "gb-england-g08-question-bank",
+      "gradeId": "gb-england-g08",
+      "bundlePath": "library/releases/GB/2026-09-02/class-question-banks/gb-england-g08-question-bank.alika.zip",
+      "bundleSha256": "337dba8194e135be8b7ad536cca1455f20b40b88aecc57e2f407b85641dd6cd4",
+      "bundleBytes": 1136683,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+      "country": "GB",
+      "grade": 8,
+      "subject": "Mixed subjects",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "gb-england-g08-english",
+          "questionCount": 368,
+          "subject": "English",
+          "subjectCode": "english"
+        },
+        {
+          "cellId": "gb-england-g08-geography",
+          "questionCount": 408,
+          "subject": "Geography",
+          "subjectCode": "geography"
+        },
+        {
+          "cellId": "gb-england-g08-history",
+          "questionCount": 408,
+          "subject": "History",
+          "subjectCode": "history"
+        },
+        {
+          "cellId": "gb-england-g08-mathematics",
+          "questionCount": 408,
+          "subject": "Mathematics",
+          "subjectCode": "mathematics"
+        },
+        {
+          "cellId": "gb-england-g08-science",
+          "questionCount": 408,
+          "subject": "Science",
+          "subjectCode": "science"
+        }
+      ],
+      "counts": {
+        "families": 434,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "gb-england-g09-question-bank",
+      "gradeId": "gb-england-g09",
+      "bundlePath": "library/releases/GB/2026-09-02/class-question-banks/gb-england-g09-question-bank.alika.zip",
+      "bundleSha256": "c2181340e1f1ef4a0606a133b2bf3c0749f5c735f02126777d576399b39e7a4b",
+      "bundleBytes": 1112310,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+      "country": "GB",
+      "grade": 9,
+      "subject": "Mixed subjects",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "gb-england-g09-english",
+          "questionCount": 368,
+          "subject": "English",
+          "subjectCode": "english"
+        },
+        {
+          "cellId": "gb-england-g09-geography",
+          "questionCount": 408,
+          "subject": "Geography",
+          "subjectCode": "geography"
+        },
+        {
+          "cellId": "gb-england-g09-history",
+          "questionCount": 408,
+          "subject": "History",
+          "subjectCode": "history"
+        },
+        {
+          "cellId": "gb-england-g09-mathematics",
+          "questionCount": 408,
+          "subject": "Mathematics",
+          "subjectCode": "mathematics"
+        },
+        {
+          "cellId": "gb-england-g09-science",
+          "questionCount": 408,
+          "subject": "Science",
+          "subjectCode": "science"
+        }
+      ],
+      "counts": {
+        "families": 437,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "gb-england-g10-question-bank",
+      "gradeId": "gb-england-g10",
+      "bundlePath": "library/releases/GB/2026-09-02/class-question-banks/gb-england-g10-question-bank.alika.zip",
+      "bundleSha256": "b1e3cfa7e3560b1c5f6c085b2a53c1c2153f339ddd9898d6ac1b32992b3b7809",
+      "bundleBytes": 1163070,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+      "country": "GB",
+      "grade": 10,
+      "subject": "Mixed subjects",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "gb-england-g10-english",
+          "questionCount": 305,
+          "subject": "English",
+          "subjectCode": "english"
+        },
+        {
+          "cellId": "gb-england-g10-geography",
+          "questionCount": 339,
+          "subject": "Geography",
+          "subjectCode": "geography"
+        },
+        {
+          "cellId": "gb-england-g10-history",
+          "questionCount": 339,
+          "subject": "History",
+          "subjectCode": "history"
+        },
+        {
+          "cellId": "gb-england-g10-mathematics",
+          "questionCount": 339,
+          "subject": "Mathematics",
+          "subjectCode": "mathematics"
+        },
+        {
+          "cellId": "gb-england-g10-physics",
+          "questionCount": 339,
+          "subject": "Physics",
+          "subjectCode": "physics"
+        },
+        {
+          "cellId": "gb-england-g10-science",
+          "questionCount": 339,
+          "subject": "Science",
+          "subjectCode": "science"
+        }
+      ],
+      "counts": {
+        "families": 433,
+        "notes": 138,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "gb-england-g11-question-bank",
+      "gradeId": "gb-england-g11",
+      "bundlePath": "library/releases/GB/2026-09-02/class-question-banks/gb-england-g11-question-bank.alika.zip",
+      "bundleSha256": "ae567acc0660bb880a2dfd351bb4f2524851d41d8cfdc7ba87164e544f35716d",
+      "bundleBytes": 1141740,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+      "country": "GB",
+      "grade": 11,
+      "subject": "Mixed subjects",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "gb-england-g11-english",
+          "questionCount": 305,
+          "subject": "English",
+          "subjectCode": "english"
+        },
+        {
+          "cellId": "gb-england-g11-geography",
+          "questionCount": 339,
+          "subject": "Geography",
+          "subjectCode": "geography"
+        },
+        {
+          "cellId": "gb-england-g11-history",
+          "questionCount": 339,
+          "subject": "History",
+          "subjectCode": "history"
+        },
+        {
+          "cellId": "gb-england-g11-mathematics",
+          "questionCount": 339,
+          "subject": "Mathematics",
+          "subjectCode": "mathematics"
+        },
+        {
+          "cellId": "gb-england-g11-physics",
+          "questionCount": 339,
+          "subject": "Physics",
+          "subjectCode": "physics"
+        },
+        {
+          "cellId": "gb-england-g11-science",
+          "questionCount": 339,
+          "subject": "Science",
+          "subjectCode": "science"
+        }
+      ],
+      "counts": {
+        "families": 433,
+        "notes": 138,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "gb-england-g12-question-bank",
+      "gradeId": "gb-england-g12",
+      "bundlePath": "library/releases/GB/2026-09-02/class-question-banks/gb-england-g12-question-bank.alika.zip",
+      "bundleSha256": "acb1d5b95a2d39e4abbce9b6ccd6d6699b4ba2725b32a07ea21e4545774e0dee",
+      "bundleBytes": 1110703,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+      "country": "GB",
+      "grade": 12,
+      "subject": "Mixed subjects",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "gb-england-g12-english",
+          "questionCount": 400,
+          "subject": "English",
+          "subjectCode": "english"
+        },
+        {
+          "cellId": "gb-england-g12-geography",
+          "questionCount": 400,
+          "subject": "Geography",
+          "subjectCode": "geography"
+        },
+        {
+          "cellId": "gb-england-g12-history",
+          "questionCount": 400,
+          "subject": "History",
+          "subjectCode": "history"
+        },
+        {
+          "cellId": "gb-england-g12-mathematics",
+          "questionCount": 400,
+          "subject": "Mathematics",
+          "subjectCode": "mathematics"
+        },
+        {
+          "cellId": "gb-england-g12-physics",
+          "questionCount": 400,
+          "subject": "Physics",
+          "subjectCode": "physics"
+        }
+      ],
+      "counts": {
+        "families": 431,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
+      "releaseBlockers": []
+    },
+    {
+      "bankId": "gb-england-g13-question-bank",
+      "gradeId": "gb-england-g13",
+      "bundlePath": "library/releases/GB/2026-09-02/class-question-banks/gb-england-g13-question-bank.alika.zip",
+      "bundleSha256": "da2283fc33b459aa31155b0fd78031ee9f65283417c59739fc2a971ab8de2aa9",
+      "bundleBytes": 1085584,
+      "publicationStatus": "publishable-independent-mixed-class-question-bank",
+      "releaseId": "gb-england-2026-09-02-age-expanded-safe-scope",
+      "country": "GB",
+      "grade": 13,
+      "subject": "Mixed subjects",
+      "subjectCode": "mixed",
+      "subjectCoverage": [
+        {
+          "cellId": "gb-england-g13-english",
+          "questionCount": 400,
+          "subject": "English",
+          "subjectCode": "english"
+        },
+        {
+          "cellId": "gb-england-g13-geography",
+          "questionCount": 400,
+          "subject": "Geography",
+          "subjectCode": "geography"
+        },
+        {
+          "cellId": "gb-england-g13-history",
+          "questionCount": 400,
+          "subject": "History",
+          "subjectCode": "history"
+        },
+        {
+          "cellId": "gb-england-g13-mathematics",
+          "questionCount": 400,
+          "subject": "Mathematics",
+          "subjectCode": "mathematics"
+        },
+        {
+          "cellId": "gb-england-g13-physics",
+          "questionCount": 400,
+          "subject": "Physics",
+          "subjectCode": "physics"
+        }
+      ],
+      "counts": {
+        "families": 431,
+        "notes": 115,
+        "questions": 2000,
+        "audioAssets": 0
+      },
+      "reviewStatus": "passed-critical-codex-self-audit",
+      "recordReviewStatus": "pending",
+      "humanReviewed": false,
+      "sourceQuestionReuse": "forbidden",
+      "questionsUsedAsSemanticInputs": 0,
       "releaseBlockers": []
     }
-  ]
+  ],
+  "questionBankPolicy": {
+    "unitOfProduction": "country-grade",
+    "questionsPerGrade": 2000,
+    "scope": "mixed-publishable-subjects",
+    "legacySubjectBanksCountTowardCompletion": false
+  }
 }

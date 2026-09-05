@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g07-matematika",
+  "stage": "question-bank-batch-02",
+  "selection": "worst-case sample per figure kind in the selected production stage",
+  "sampleCount": 1,
+  "contactSheet": "library/reviews/ru-g07-matematika-question-bank-batch02-visual-qa-2026-09-04/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "table",
+      "recordId": "ru.g07.matematika.bank.b02.q088",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 16,
+      "textItemCount": 8,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 10,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g07-matematika-question-bank-batch02-visual-qa-2026-09-04/table.png",
+      "profile": "table"
+    }
+  ],
+  "layoutPassed": true,
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true
+}

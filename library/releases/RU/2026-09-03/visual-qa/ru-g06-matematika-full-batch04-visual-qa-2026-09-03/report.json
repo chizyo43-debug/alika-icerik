@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g06-matematika",
+  "stage": "full-batch-04",
+  "selection": "worst-case sample per figure kind in the selected production stage",
+  "sampleCount": 2,
+  "contactSheet": "library/reviews/ru-g06-matematika-full-batch04-visual-qa-2026-09-03/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "chart",
+      "recordId": "ru.g06.matematika.full.b04.q051",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 14,
+      "textItemCount": 8,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 11,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g06-matematika-full-batch04-visual-qa-2026-09-03/chart.png",
+      "profile": "chart"
+    },
+    {
+      "kind": "coordinate",
+      "recordId": "ru.g06.matematika.full.b04.q001",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 10,
+      "textItemCount": 4,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g06-matematika-full-batch04-visual-qa-2026-09-03/coordinate.png",
+      "profile": "coordinate"
+    }
+  ],
+  "layoutPassed": true,
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true
+}

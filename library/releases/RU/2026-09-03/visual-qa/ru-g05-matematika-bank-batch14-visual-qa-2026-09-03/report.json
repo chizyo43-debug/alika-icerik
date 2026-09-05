@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g05-matematika",
+  "stage": "question-bank-batch-14",
+  "selection": "worst-case sample per figure kind in the selected production stage",
+  "sampleCount": 3,
+  "contactSheet": "library/reviews/ru-g05-matematika-bank-batch14-visual-qa-2026-09-03/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "fraction",
+      "recordId": "ru.g05.matematika.bank.b14.q025",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 22,
+      "textItemCount": 0,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": null,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-matematika-bank-batch14-visual-qa-2026-09-03/fraction--max-parts.png",
+      "profile": "fraction--max-parts"
+    },
+    {
+      "kind": "numberline",
+      "recordId": "ru.g05.matematika.bank.b14.q061",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 39,
+      "textItemCount": 13,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-matematika-bank-batch14-visual-qa-2026-09-03/numberline--multiple-marks.png",
+      "profile": "numberline--multiple-marks"
+    },
+    {
+      "kind": "numberline",
+      "recordId": "ru.g05.matematika.bank.b14.q056",
+      "canvas": {
+        "width": 736,
+        "height": 300
+      },
+      "canvasItemCount": 36,
+      "textItemCount": 12,
+      "clippedTextItems": [],
+      "overlappingTextItems": [],
+      "minimumTextSize": 9,
+      "requiredMinimumTextSize": 8,
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-matematika-bank-batch14-visual-qa-2026-09-03/numberline--single-mark.png",
+      "profile": "numberline--single-mark"
+    }
+  ],
+  "layoutPassed": true,
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true
+}

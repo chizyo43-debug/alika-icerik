@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "country": "RU",
+  "cellId": "ru-g05-literatura",
+  "stage": "full-batch-02",
+  "selection": "worst-case sample per figure kind; headless PIL layout plus Windows/Android schema validation",
+  "sampleCount": 2,
+  "contactSheet": "library/reviews/ru-g05-literatura-full-batch02-visual-qa-2026-09-04/contact-sheet.png",
+  "samples": [
+    {
+      "kind": "flow",
+      "recordId": "ru.g05.lit.full.b02.q031",
+      "canvas": {
+        "width": 760,
+        "height": 340
+      },
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-literatura-full-batch02-visual-qa-2026-09-04/flow.png"
+    },
+    {
+      "kind": "table",
+      "recordId": "ru.g05.lit.full.b02.q076",
+      "canvas": {
+        "width": 760,
+        "height": 340
+      },
+      "accessibleAltPresent": true,
+      "passed": true,
+      "screenshot": "library/reviews/ru-g05-literatura-full-batch02-visual-qa-2026-09-04/table.png"
+    }
+  ],
+  "layoutPassed": true,
+  "platformValidators": {
+    "windows": "passed",
+    "android": "passed"
+  },
+  "semanticReview": {
+    "status": "passed-critical-codex-self-audit",
+    "reviewedBy": "codex",
+    "humanReviewed": false,
+    "contactSheetInspected": true
+  },
+  "passed": true
+}
