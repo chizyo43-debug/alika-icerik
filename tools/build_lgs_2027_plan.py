@@ -309,39 +309,13 @@ def tables(plan: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
-FORMAT_MARKERS = {
-    "görsel": None,
-    "günlük yaşam bağlamı": ("günlük yaşam", "bağlam"),
-    "öncüllü": ("öncüllü", "numaralı", "numaralanmış"),
-    "olumsuz kök": ("olumsuz",),
-    "deney/düzenek": ("deney", "düzenek"),
-    "tablo/grafik": ("tablo", "grafik", "koordinat"),
-    "çok kazanımlı": ("çok kazanımlı", "çok adımlı"),
-    "kural/açıklama verip uygulama": ("kural", "açıklama verip", "tanım verip"),
-}
-
-
-def _has(question: dict[str, Any], words: tuple[str, ...] | None) -> bool:
-    if words is None:
-        visual = str(question.get("visual") or "").lower()
-        return bool(visual) and not visual.startswith(("none", "yok"))
-    text = " ".join([*question.get("format", []), str(question.get("visual") or "")]).lower()
-    return any(word in text for word in words)
-
-
 def appendix(inventory: dict[str, Any]) -> str:
-    """Per-subject format counts and per-question reference tables."""
+    """Per-question reference tables, one per subject and year."""
     lines = []
     for subject, definition in inventory["subjects"].items():
         units = {unit["key"]: unit["name"] for unit in definition["units"]}
         questions = [q for q in inventory["questions"] if q["subject"] == subject]
         lines.append(f"### {subject}\n")
-        lines.append("| Özellik | " + " | ".join(YEARS) + " |")
-        lines.append("|---|" + "---|" * len(YEARS))
-        for label, words in FORMAT_MARKERS.items():
-            row = [sum(1 for q in questions if str(q["year"]) == year and _has(q, words)) for year in YEARS]
-            lines.append(f"| {label} | " + " | ".join(str(value) for value in row) + " |")
-        lines.append("")
         for year in YEARS:
             year_questions = sorted((q for q in questions if str(q["year"]) == year), key=lambda q: q["qNo"])
             booklet = year_questions[0]["booklet"] if year_questions else "A"
@@ -365,7 +339,8 @@ def main() -> int:
     parser.add_argument("--check", action="store_true", help="fail if the committed plan is stale")
     parser.add_argument("--tables", action="store_true", help="print markdown unit tables")
     parser.add_argument("--appendix", action="store_true", help="print per-question reference tables")
-    parser.add_argument("--bank-size", type=int, default=None)
+    parser.add_argument("--bank-size", type=int, default=None,
+                        help="override planMethod.bankSize (the committed plan uses the default)")
     args = parser.parse_args()
     inventory = _load(INVENTORY)
     try:

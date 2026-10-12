@@ -5,7 +5,7 @@
   "curriculum": "MEB-CURRENT-2018-2019",
   "derivedFrom": {
     "inventory": "authoring/lgs-2027/lgs-2024-2026-soru-envanteri.json",
-    "inventorySha256": "47c64c79c3b1b5a1eeb3867b66f0babf59f306cf0baea6abb2e5c0c06c901598",
+    "inventorySha256": "d8a44f1bd3bbcf75c8b1527f1f43e88bd0e53e7425b0a6c9da4b00cd8590a29b",
     "registry": "curriculum/tr-grade8-current-2018-2019.json"
   },
   "method": {
@@ -39,8 +39,8 @@
       "session": "sozel",
       "unknownUnitPerYear": {
         "2024": 0,
-        "2025": 1,
-        "2026": 0
+        "2025": 0,
+        "2026": 2
       },
       "bankQuota": 445,
       "units": [
@@ -49,33 +49,33 @@
           "name": "Sözcük ve söz öbeğinde anlam (deyim, atasözü)",
           "observed": {
             "2024": 3,
-            "2025": 1,
+            "2025": 2,
             "2026": 0
           },
           "observedRange": [
             0,
             3
           ],
-          "weightedShare": 0.0559,
-          "expectedPerExam": 1.12,
+          "weightedShare": 0.0725,
+          "expectedPerExam": 1.45,
           "predictedPerExam": 1,
-          "bankQuota": 25,
+          "bankQuota": 32,
           "kazanimlar": [
             {
               "code": "T.8.3.5",
               "title": "Bağlamdan yararlanarak bilmediği kelime ve kelime gruplarının anlamını tahmin eder",
               "observedPrimary": 4,
-              "observedSecondary": 4,
+              "observedSecondary": 6,
               "testability": "core",
-              "bankQuota": 20
+              "bankQuota": 25
             },
             {
               "code": "T.8.3.6",
               "title": "Deyim, atasözü ve özdeyişlerin metne katkısını belirler",
               "observedPrimary": 1,
-              "observedSecondary": 0,
+              "observedSecondary": 1,
               "testability": "core",
-              "bankQuota": 5
+              "bankQuota": 7
             }
           ]
         },
@@ -84,41 +84,41 @@
           "name": "Cümlede anlam (cümle birleştirme dahil)",
           "observed": {
             "2024": 3,
-            "2025": 1,
-            "2026": 2
+            "2025": 2,
+            "2026": 3
           },
           "observedRange": [
-            1,
+            2,
             3
           ],
-          "weightedShare": 0.0959,
-          "expectedPerExam": 1.92,
-          "predictedPerExam": 2,
-          "bankQuota": 43,
+          "weightedShare": 0.1392,
+          "expectedPerExam": 2.78,
+          "predictedPerExam": 3,
+          "bankQuota": 61,
           "kazanimlar": [
             {
               "code": "T.8.3.14",
               "title": "Metinle ilgili soruları cevaplar",
-              "observedPrimary": 2,
-              "observedSecondary": 4,
+              "observedPrimary": 0,
+              "observedSecondary": 1,
               "testability": "core",
-              "bankQuota": 7
+              "bankQuota": 3
             },
             {
               "code": "T.8.3.25",
               "title": "Okudukları ile ilgili çıkarımlarda bulunur",
-              "observedPrimary": 13,
-              "observedSecondary": 13,
+              "observedPrimary": 12,
+              "observedSecondary": 12,
               "testability": "core",
-              "bankQuota": 32
+              "bankQuota": 53
             },
             {
               "code": "T.8.3.10",
               "title": "Geçiş ve bağlantı ifadelerinin metnin anlamına olan katkısını değerlendirir",
               "observedPrimary": 0,
-              "observedSecondary": 3,
+              "observedSecondary": 2,
               "testability": "core",
-              "bankQuota": 3
+              "bankQuota": 4
             },
             {
               "code": "T.8.4.15",
@@ -135,33 +135,33 @@
           "name": "Paragraf ve okuduğunu anlama",
           "observed": {
             "2024": 5,
-            "2025": 9,
+            "2025": 8,
             "2026": 8
           },
           "observedRange": [
             5,
-            9
+            8
           ],
-          "weightedShare": 0.3883,
-          "expectedPerExam": 7.77,
+          "weightedShare": 0.3803,
+          "expectedPerExam": 7.61,
           "predictedPerExam": 8,
-          "bankQuota": 173,
+          "bankQuota": 167,
           "kazanimlar": [
             {
               "code": "T.8.3.17",
               "title": "Metnin ana fikrini/ana duygusunu belirler",
-              "observedPrimary": 8,
-              "observedSecondary": 0,
+              "observedPrimary": 7,
+              "observedSecondary": 1,
               "testability": "core",
-              "bankQuota": 29
+              "bankQuota": 28
             },
             {
               "code": "T.8.3.18",
               "title": "Metindeki yardımcı fikirleri belirler",
               "observedPrimary": 1,
-              "observedSecondary": 4,
+              "observedSecondary": 3,
               "testability": "core",
-              "bankQuota": 12
+              "bankQuota": 10
             },
             {
               "code": "T.8.3.16",
@@ -190,18 +190,18 @@
             {
               "code": "T.8.3.21",
               "title": "Metnin içeriğini yorumlar",
-              "observedPrimary": 4,
-              "observedSecondary": 9,
+              "observedPrimary": 5,
+              "observedSecondary": 5,
               "testability": "core",
-              "bankQuota": 31
+              "bankQuota": 28
             },
             {
               "code": "T.8.3.25",
               "title": "Okudukları ile ilgili çıkarımlarda bulunur",
-              "observedPrimary": 13,
-              "observedSecondary": 13,
+              "observedPrimary": 12,
+              "observedSecondary": 12,
               "testability": "core",
-              "bankQuota": 68
+              "bankQuota": 64
             },
             {
               "code": "T.8.3.11",
@@ -209,7 +209,7 @@
               "observedPrimary": 2,
               "observedSecondary": 0,
               "testability": "core",
-              "bankQuota": 8
+              "bankQuota": 9
             },
             {
               "code": "T.8.3.34",
@@ -225,7 +225,7 @@
               "observedPrimary": 2,
               "observedSecondary": 0,
               "testability": "core",
-              "bankQuota": 8
+              "bankQuota": 9
             },
             {
               "code": "T.8.3.24",
@@ -239,9 +239,9 @@
               "code": "T.8.3.26",
               "title": "Metin türlerini ayırt eder",
               "observedPrimary": 0,
-              "observedSecondary": 1,
+              "observedSecondary": 2,
               "testability": "core",
-              "bankQuota": 3
+              "bankQuota": 5
             },
             {
               "code": "T.8.3.23",
@@ -265,15 +265,15 @@
               "observedPrimary": 0,
               "observedSecondary": 0,
               "testability": "partial",
-              "bankQuota": 1
+              "bankQuota": 0
             },
             {
               "code": "T.8.3.29",
               "title": "Medya metinlerini analiz eder",
               "observedPrimary": 0,
-              "observedSecondary": 0,
+              "observedSecondary": 1,
               "testability": "partial",
-              "bankQuota": 0
+              "bankQuota": 1
             },
             {
               "code": "T.8.3.31",
@@ -289,40 +289,40 @@
           "key": "sozel-mantik-gorsel",
           "name": "Sözel mantık, görsel, tablo ve grafik okuma",
           "observed": {
-            "2024": 3,
+            "2024": 4,
             "2025": 3,
-            "2026": 4
+            "2026": 3
           },
           "observedRange": [
             3,
             4
           ],
-          "weightedShare": 0.1728,
-          "expectedPerExam": 3.46,
+          "weightedShare": 0.1692,
+          "expectedPerExam": 3.38,
           "predictedPerExam": 3,
-          "bankQuota": 77,
+          "bankQuota": 75,
           "kazanimlar": [
             {
               "code": "T.8.3.27",
               "title": "Görsellerle ilgili soruları cevaplar",
-              "observedPrimary": 5,
-              "observedSecondary": 2,
+              "observedPrimary": 4,
+              "observedSecondary": 1,
               "testability": "core",
-              "bankQuota": 36
+              "bankQuota": 28
             },
             {
               "code": "T.8.3.32",
               "title": "Grafik, tablo ve çizelgeyle sunulan bilgileri yorumlar",
-              "observedPrimary": 3,
+              "observedPrimary": 4,
               "observedSecondary": 0,
               "testability": "core",
-              "bankQuota": 20
+              "bankQuota": 26
             },
             {
               "code": "T.8.3.35",
               "title": "Metindeki iş ve işlem basamaklarını kavrar",
-              "observedPrimary": 0,
-              "observedSecondary": 6,
+              "observedPrimary": 1,
+              "observedSecondary": 4,
               "testability": "core",
               "bankQuota": 20
             },
@@ -340,43 +340,43 @@
           "key": "dil-bilgisi",
           "name": "Dil bilgisi (fiilimsi, öge, çatı, cümle türü, anlatım bozukluğu)",
           "observed": {
-            "2024": 4,
+            "2024": 3,
             "2025": 3,
             "2026": 2
           },
           "observedRange": [
             2,
-            4
+            3
           ],
-          "weightedShare": 0.1453,
-          "expectedPerExam": 2.91,
+          "weightedShare": 0.1344,
+          "expectedPerExam": 2.69,
           "predictedPerExam": 3,
-          "bankQuota": 65,
+          "bankQuota": 59,
           "kazanimlar": [
             {
               "code": "T.8.3.9",
               "title": "Fiilimsilerin cümledeki işlevlerini kavrar",
-              "observedPrimary": 2,
+              "observedPrimary": 1,
               "observedSecondary": 0,
               "testability": "core",
-              "bankQuota": 15,
+              "bankQuota": 10,
               "predictionBonus": 2.0
             },
             {
               "code": "T.8.4.18",
               "title": "Cümlenin ögelerini ayırt eder",
               "observedPrimary": 1,
-              "observedSecondary": 2,
+              "observedSecondary": 1,
               "testability": "core",
-              "bankQuota": 11
+              "bankQuota": 8
             },
             {
               "code": "T.8.4.20",
               "title": "Fiillerin çatı özelliklerinin anlama olan katkısını kavrar",
-              "observedPrimary": 1,
-              "observedSecondary": 2,
+              "observedPrimary": 2,
+              "observedSecondary": 1,
               "testability": "core",
-              "bankQuota": 11
+              "bankQuota": 13
             },
             {
               "code": "T.8.4.19",
@@ -404,24 +404,24 @@
           "observed": {
             "2024": 1,
             "2025": 1,
-            "2026": 2
+            "2026": 1
           },
           "observedRange": [
             1,
-            2
+            1
           ],
-          "weightedShare": 0.0709,
-          "expectedPerExam": 1.42,
+          "weightedShare": 0.0522,
+          "expectedPerExam": 1.04,
           "predictedPerExam": 1,
-          "bankQuota": 31,
+          "bankQuota": 23,
           "kazanimlar": [
             {
               "code": "T.8.4.16",
               "title": "Yazdıklarını düzenler",
-              "observedPrimary": 4,
+              "observedPrimary": 5,
               "observedSecondary": 2,
               "testability": "core",
-              "bankQuota": 31
+              "bankQuota": 23
             }
           ]
         },
@@ -437,18 +437,18 @@
             0,
             1
           ],
-          "weightedShare": 0.0325,
-          "expectedPerExam": 0.65,
+          "weightedShare": 0.0347,
+          "expectedPerExam": 0.69,
           "predictedPerExam": 1,
-          "bankQuota": 14,
+          "bankQuota": 15,
           "kazanimlar": [
             {
               "code": "T.8.4.16",
               "title": "Yazdıklarını düzenler",
-              "observedPrimary": 4,
+              "observedPrimary": 5,
               "observedSecondary": 2,
               "testability": "core",
-              "bankQuota": 13
+              "bankQuota": 14
             },
             {
               "code": "T.8.3.1",
@@ -466,24 +466,24 @@
           "observed": {
             "2024": 0,
             "2025": 1,
-            "2026": 1
+            "2026": 0
           },
           "observedRange": [
             0,
             1
           ],
-          "weightedShare": 0.0384,
-          "expectedPerExam": 0.77,
-          "predictedPerExam": 1,
-          "bankQuota": 17,
+          "weightedShare": 0.0175,
+          "expectedPerExam": 0.35,
+          "predictedPerExam": 0,
+          "bankQuota": 13,
           "kazanimlar": [
             {
               "code": "T.8.3.7",
               "title": "Metindeki söz sanatlarını tespit eder",
               "observedPrimary": 1,
-              "observedSecondary": 2,
+              "observedSecondary": 1,
               "testability": "core",
-              "bankQuota": 17
+              "bankQuota": 13
             }
           ]
         }
@@ -551,14 +551,14 @@
       "styleRules": [
         "Test sırası: anlam soruları başta (S1-S6), görsel/grafik ve sözel mantık ortada, dil bilgisi-yazım-noktalama sonda (S17-S20).",
         "Metinler edebî/yazar odaklı (deneme, anı, şiir, betimleme; 2025-2026) ile gerçek yaşam bilgi metinlerinin (sosyal medya, tüketim, teknoloji, çevre) karışımı olmalı.",
-        "Olumsuz kökler sık: ulaşılamaz, örnek olamaz, yoktur, değildir, kullanılmamıştır (2024te en az 6 soru).",
+        "Olumsuz kökler sık: ulaşılamaz, örnek olamaz, yoktur, değildir, kullanılmamıştır (2024'te en az 6 soru).",
         "Dil bilgisi bağlam içinde ve numaralanmış cümle/sözcük biçiminde sorulur; yazım ve noktalama her yıl birer soru, bazen ortak metinli ikili soru.",
         "Her formda en az bir çok adımlı görsel madde: tablodan grafiğe dönüşüm, çok serili zaman grafiği veya mekanizma şeması (yan flüt, kilit, yelkenli).",
         "Kural/açıklama verip uygulatan maddeler (arka kapak yazısı ölçütü, laboratuvar kuralları afişi) her yıl var.",
         "Çeldiriciler metindeki ifadelere çok yakın kurulmalı; 2025 sınavı bu nedenle \"en zor Türkçe\" olarak değerlendirildi."
       ],
       "avoid": [
-        "Birden çok anlamı savunulabilen çok anlamlılık maddeleri (2024 S1 için dava açıldı).",
+        "Birden çok anlamı savunulabilen çok anlamlılık maddeleri (2024 1. soru için dava açıldı).",
         "Dinleme/izleme ve konuşma kazanımlarını doğrudan ölçmeye çalışmak (kâğıt-kalem biçiminde ölçülmüyor).",
         "Ses bilgisi gibi 8. sınıf programında yer almayan konular."
       ]
@@ -1335,7 +1335,7 @@
       "styleRules": [
         "Her formda 2-3 kısa doğrudan soru (irrasyonel sayı, kareköklü işlem, eşitsizlik çözümü, tam kare) testin başında yer alır.",
         "Soruların yaklaşık yarısı gerçek yaşam bağlamıyla açılır (müze ziyaretçileri, kilim, tabure, çekmece, gübre deposu, lunapark, tahterevalli, oyuncak tren).",
-        "Şekil/model ağırlıklı: kareli zemin, alan modeli, 3B cisim; 2025te 20 sorunun 12sinde şekil vardı.",
+        "Şekil/model ağırlıklı: kareli zemin, alan modeli, 3B cisim; her yıl 20 sorunun 15-18'inde şekil, tablo ya da grafik var.",
         "Formül verilmez; alan, çevre, hacim ve Pisagor önceki sınıf bilgisiyle kullanılır; π = 3 alınır, sayılar temiz çıkar.",
         "Her yıl tekrar eden kurgular: özdeşlik alan modelleri, bağlam içinde eğim, kareli zeminde dönüşüm/benzerlik, bir silindir sorusu (hacim → yanal alan → birleşik cisim yüzey alanı), \"en az/en fazla\" kısıtlı sayma.",
         "Formda 3-5 seçici çok kazanımlı soru: eğim + Pisagor + denklem; hacim + denklem + karekök; benzerlik + Pisagor; EBOB-EKOK + eşitsizlik; daire grafiği + bölünebilme.",
@@ -1343,7 +1343,7 @@
         "Seçenekler sayısal; çeldiriciler adlandırılmış yanılgılardan hesaplanır (çapı yarıçap almak, karekök almayı unutmak, eğimi ters kurmak)."
       ],
       "avoid": [
-        "Yolu ya da \"en kısa\" koşulu belirtilmemiş uzaklık soruları (2025 S15 itirazı).",
+        "Yolu ya da \"en kısa\" koşulu belirtilmemiş uzaklık soruları (2025 15. soru itirazı).",
         "Program dışı içerik (ikinci dereceden denklem, trigonometri, ispat).",
         "Hesap makinesi gerektiren büyük sayılar; 80 dakikada 40 soru için soru başına ~2 dakika vardır."
       ],
@@ -2081,7 +2081,7 @@
         "Düzeneklerde \"sürtünmeler ve ip/makara ağırlıkları önemsizdir\" gibi varsayımlar açıkça yazılır."
       ],
       "avoid": [
-        "Basit makine sorularında tork, moment, ivme veya eylemsizlik momenti gerektiren kurgular (2024 S13 mahkemece iptal edildi).",
+        "Basit makine sorularında tork, moment, ivme veya eylemsizlik momenti gerektiren kurgular (2024 13. soru mahkemece iptal edildi).",
         "Program dışı nicel hesaplar (formüllü basınç hesabı yerine nitel karşılaştırma).",
         "Değişkenleri belirsiz bırakılmış deney düzenekleri."
       ]
@@ -2608,10 +2608,10 @@
         "Her madde bir kaynakla açılır: bilgi metni, Atatürk sözü, hatıra (Kâzım Karabekir), roman kesiti (Kemal Tahir), parti programı (Serbest Cumhuriyet Fırkası), tablo.",
         "Kökler: \"bu bilgilere göre hangisine ulaşılabilir\", \"hangi ilkenin/temel esasın önemini vurgulamaktadır\", neden-sonuç ilişkisi.",
         "Atatürk ilkeleri ve temel esaslar (İTA.8.4.1, İTA.8.4.9) her yıl birden çok soruda kullanılır.",
-        "Ünite 2 (Millî Uyanış) her yıl 2-3 soru alır; 2025-2026da Ünite 5 ve 6dan da birer soru geldi."
+        "Ünite 2 (Millî Uyanış) her yıl 2-3 soru alır; 2025-2026'da Ünite 5 ve 6'dan da birer soru geldi."
       ],
       "avoid": [
-        "Tarih/ad ezberine dayalı bilgi soruları (2024-2026da gözlenmedi).",
+        "Tarih/ad ezberine dayalı bilgi soruları (2024-2026'da gözlenmedi).",
         "Ünite 7'ye aşırı ağırlık (2024-2026 kitapçıklarında gözlenmedi)."
       ]
     },
@@ -3046,9 +3046,9 @@
               "code": "E8.1.L1",
               "title": "Students will be able to understand the specific information in short conversations on everyday topics, such as accepting and refusing an offer/invitation, apologizing and making simple inquiries",
               "observedPrimary": 1,
-              "observedSecondary": 2,
+              "observedSecondary": 1,
               "testability": "core",
-              "bankQuota": 9
+              "bankQuota": 8
             },
             {
               "code": "E8.1.SI1",
@@ -3080,7 +3080,7 @@
               "observedPrimary": 2,
               "observedSecondary": 0,
               "testability": "core",
-              "bankQuota": 9
+              "bankQuota": 10
             },
             {
               "code": "E8.1.W1",
@@ -3246,18 +3246,18 @@
             {
               "code": "E8.4.L1",
               "title": "Students will be able to understand phrases and related vocabulary items",
-              "observedPrimary": 1,
-              "observedSecondary": 1,
+              "observedPrimary": 0,
+              "observedSecondary": 2,
               "testability": "core",
-              "bankQuota": 6
+              "bankQuota": 4
             },
             {
               "code": "E8.4.L2",
               "title": "Students will be able to follow a phone conversation",
-              "observedPrimary": 1,
-              "observedSecondary": 1,
+              "observedPrimary": 2,
+              "observedSecondary": 0,
               "testability": "core",
-              "bankQuota": 6
+              "bankQuota": 7
             },
             {
               "code": "E8.4.SI1",
@@ -3273,7 +3273,7 @@
               "observedPrimary": 0,
               "observedSecondary": 0,
               "testability": "core",
-              "bankQuota": 1
+              "bankQuota": 2
             },
             {
               "code": "E8.4.R1",
@@ -3839,7 +3839,7 @@
       "styleRules": [
         "Kökler İngilizce; her ünite bir kez, Tourism ve Friendship zaman zaman iki kez sorulur.",
         "En sık biçim: 3-4 kişinin kısa görüş/mesaj/diyaloğu → \"Who…?\" / \"Which two…?\".",
-        "Olumsuz kök sık: NOT, cannot, none (2025te en az 5, 2026da 4 soru).",
+        "Olumsuz kök sık: NOT, cannot, none (2025'te en az 5, 2026'da 4 soru).",
         "Tablo/ilan/afiş/blog tablosu okuma ve ölçüte uyan davetiye kartı seçimi her yıl var.",
         "Dilbilgisi ayrı sorulmaz; present continuous/past, tercih ve zorunluluk ifadeleri bağlam içinde ölçülür.",
         "Uzmanlar testi kolay buldu ama resmî p = 0,44 ve D = 0,69 (en ayırt edici test); çeldiriciler kelime bilgisine dayanır."

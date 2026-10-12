@@ -501,17 +501,17 @@
         {
           "code": "T.8.3.9",
           "bonus": 2.0,
-          "reason": "Fiilimsi 2024te soruldu, 2025-2026 kitapçıklarında gözlenmedi; dönüşümlü dil bilgisi konusu."
+          "reason": "Fiilimsi 2024'te soruldu, 2025-2026 kitapçıklarında gözlenmedi; dönüşümlü dil bilgisi konusu."
         },
         {
           "code": "T.8.4.19",
           "bonus": 1.0,
-          "reason": "Cümle türleri 2024te soruldu, 2026da gözlenmedi."
+          "reason": "Cümle türleri 2024'te soruldu, 2026'da gözlenmedi."
         },
         {
           "code": "T.8.3.8",
           "bonus": 1.0,
-          "reason": "Anlatım bozukluğu 2024-2025te soruldu, 2026da gözlenmedi."
+          "reason": "Anlatım bozukluğu 2024-2025'te soruldu, 2026'da gözlenmedi."
         }
       ],
       "styleProfile": {
@@ -534,14 +534,14 @@
         "styleRules": [
           "Test sırası: anlam soruları başta (S1-S6), görsel/grafik ve sözel mantık ortada, dil bilgisi-yazım-noktalama sonda (S17-S20).",
           "Metinler edebî/yazar odaklı (deneme, anı, şiir, betimleme; 2025-2026) ile gerçek yaşam bilgi metinlerinin (sosyal medya, tüketim, teknoloji, çevre) karışımı olmalı.",
-          "Olumsuz kökler sık: ulaşılamaz, örnek olamaz, yoktur, değildir, kullanılmamıştır (2024te en az 6 soru).",
+          "Olumsuz kökler sık: ulaşılamaz, örnek olamaz, yoktur, değildir, kullanılmamıştır (2024'te en az 6 soru).",
           "Dil bilgisi bağlam içinde ve numaralanmış cümle/sözcük biçiminde sorulur; yazım ve noktalama her yıl birer soru, bazen ortak metinli ikili soru.",
           "Her formda en az bir çok adımlı görsel madde: tablodan grafiğe dönüşüm, çok serili zaman grafiği veya mekanizma şeması (yan flüt, kilit, yelkenli).",
           "Kural/açıklama verip uygulatan maddeler (arka kapak yazısı ölçütü, laboratuvar kuralları afişi) her yıl var.",
           "Çeldiriciler metindeki ifadelere çok yakın kurulmalı; 2025 sınavı bu nedenle \"en zor Türkçe\" olarak değerlendirildi."
         ],
         "avoid": [
-          "Birden çok anlamı savunulabilen çok anlamlılık maddeleri (2024 S1 için dava açıldı).",
+          "Birden çok anlamı savunulabilen çok anlamlılık maddeleri (2024 1. soru için dava açıldı).",
           "Dinleme/izleme ve konuşma kazanımlarını doğrudan ölçmeye çalışmak (kâğıt-kalem biçiminde ölçülmüyor).",
           "Ses bilgisi gibi 8. sınıf programında yer almayan konular."
         ]
@@ -855,7 +855,7 @@
         "styleRules": [
           "Her formda 2-3 kısa doğrudan soru (irrasyonel sayı, kareköklü işlem, eşitsizlik çözümü, tam kare) testin başında yer alır.",
           "Soruların yaklaşık yarısı gerçek yaşam bağlamıyla açılır (müze ziyaretçileri, kilim, tabure, çekmece, gübre deposu, lunapark, tahterevalli, oyuncak tren).",
-          "Şekil/model ağırlıklı: kareli zemin, alan modeli, 3B cisim; 2025te 20 sorunun 12sinde şekil vardı.",
+          "Şekil/model ağırlıklı: kareli zemin, alan modeli, 3B cisim; her yıl 20 sorunun 15-18'inde şekil, tablo ya da grafik var.",
           "Formül verilmez; alan, çevre, hacim ve Pisagor önceki sınıf bilgisiyle kullanılır; π = 3 alınır, sayılar temiz çıkar.",
           "Her yıl tekrar eden kurgular: özdeşlik alan modelleri, bağlam içinde eğim, kareli zeminde dönüşüm/benzerlik, bir silindir sorusu (hacim → yanal alan → birleşik cisim yüzey alanı), \"en az/en fazla\" kısıtlı sayma.",
           "Formda 3-5 seçici çok kazanımlı soru: eğim + Pisagor + denklem; hacim + denklem + karekök; benzerlik + Pisagor; EBOB-EKOK + eşitsizlik; daire grafiği + bölünebilme.",
@@ -863,7 +863,7 @@
           "Seçenekler sayısal; çeldiriciler adlandırılmış yanılgılardan hesaplanır (çapı yarıçap almak, karekök almayı unutmak, eğimi ters kurmak)."
         ],
         "avoid": [
-          "Yolu ya da \"en kısa\" koşulu belirtilmemiş uzaklık soruları (2025 S15 itirazı).",
+          "Yolu ya da \"en kısa\" koşulu belirtilmemiş uzaklık soruları (2025 15. soru itirazı).",
           "Program dışı içerik (ikinci dereceden denklem, trigonometri, ispat).",
           "Hesap makinesi gerektiren büyük sayılar; 80 dakikada 40 soru için soru başına ~2 dakika vardır."
         ]
@@ -962,7 +962,7 @@
           "Düzeneklerde \"sürtünmeler ve ip/makara ağırlıkları önemsizdir\" gibi varsayımlar açıkça yazılır."
         ],
         "avoid": [
-          "Basit makine sorularında tork, moment, ivme veya eylemsizlik momenti gerektiren kurgular (2024 S13 mahkemece iptal edildi).",
+          "Basit makine sorularında tork, moment, ivme veya eylemsizlik momenti gerektiren kurgular (2024 13. soru mahkemece iptal edildi).",
           "Program dışı nicel hesaplar (formüllü basınç hesabı yerine nitel karşılaştırma).",
           "Değişkenleri belirsiz bırakılmış deney düzenekleri."
         ]
@@ -1045,10 +1045,10 @@
           "Her madde bir kaynakla açılır: bilgi metni, Atatürk sözü, hatıra (Kâzım Karabekir), roman kesiti (Kemal Tahir), parti programı (Serbest Cumhuriyet Fırkası), tablo.",
           "Kökler: \"bu bilgilere göre hangisine ulaşılabilir\", \"hangi ilkenin/temel esasın önemini vurgulamaktadır\", neden-sonuç ilişkisi.",
           "Atatürk ilkeleri ve temel esaslar (İTA.8.4.1, İTA.8.4.9) her yıl birden çok soruda kullanılır.",
-          "Ünite 2 (Millî Uyanış) her yıl 2-3 soru alır; 2025-2026da Ünite 5 ve 6dan da birer soru geldi."
+          "Ünite 2 (Millî Uyanış) her yıl 2-3 soru alır; 2025-2026'da Ünite 5 ve 6'dan da birer soru geldi."
         ],
         "avoid": [
-          "Tarih/ad ezberine dayalı bilgi soruları (2024-2026da gözlenmedi).",
+          "Tarih/ad ezberine dayalı bilgi soruları (2024-2026'da gözlenmedi).",
           "Ünite 7'ye aşırı ağırlık (2024-2026 kitapçıklarında gözlenmedi)."
         ]
       }
@@ -1232,7 +1232,7 @@
         "styleRules": [
           "Kökler İngilizce; her ünite bir kez, Tourism ve Friendship zaman zaman iki kez sorulur.",
           "En sık biçim: 3-4 kişinin kısa görüş/mesaj/diyaloğu → \"Who…?\" / \"Which two…?\".",
-          "Olumsuz kök sık: NOT, cannot, none (2025te en az 5, 2026da 4 soru).",
+          "Olumsuz kök sık: NOT, cannot, none (2025'te en az 5, 2026'da 4 soru).",
           "Tablo/ilan/afiş/blog tablosu okuma ve ölçüte uyan davetiye kartı seçimi her yıl var.",
           "Dilbilgisi ayrı sorulmaz; present continuous/past, tercih ve zorunluluk ifadeleri bağlam içinde ölçülür.",
           "Uzmanlar testi kolay buldu ama resmî p = 0,44 ve D = 0,69 (en ayırt edici test); çeldiriciler kelime bilgisine dayanır."
@@ -1258,10 +1258,10 @@
         "T.8.2.5"
       ],
       "lgsLabel": "sözcükte anlam (çok anlamlılık)",
-      "summary": "'Bırakmak' fiilinin farklı cümlelerde (ör. tamircinin yeni gelen müşteriyle ilgilenmek için işini bırakması) hangi anlamda kullanıldığına dayalı bir sözcükte anlam sorusu.",
+      "summary": "'Bırakmak' fiilinin farklı cümlelerdeki anlamları (ör. bir işi bırakıp başka biriyle ilgilenmek); çok anlamlılık.",
       "format": [
-        "seçenek cümleler",
-        "aynı sözcüğün farklı anlamları"
+        "seçenekler cümle",
+        "anlam eşleştirme"
       ],
       "visual": "none",
       "answer": "A",
@@ -1428,10 +1428,10 @@
       "unit": "paragraf",
       "kazanim": "T.8.3.17",
       "kazanimSecondary": [
-        "T.8.3.21"
+        "T.8.3.29"
       ],
       "lgsLabel": "paragraf (kök görülmedi)",
-      "summary": "paragraf – 'insanlar sosyal medyayı değil, sosyal medya insanları kullanıyor' (kök görülmedi)",
+      "summary": "Sosyal medyayı insanların değil, sosyal medyanın insanları kullandığı düşüncesini işleyen eleştirel paragraf; kök görülmedi.",
       "format": [
         "paragraf"
       ],
@@ -1457,9 +1457,9 @@
         "T.8.3.35"
       ],
       "lgsLabel": "sözel mantık / kural verip uygulama",
-      "summary": "Öğretmenin belirlediği üç koşulun tamamını karşılayan bahar ödevi etkinliğinin hangisi olduğu soruluyor.",
+      "summary": "Öğretmenin ilkbahar için verdiği ödev etkinliklerinden gözlem, uygulama ve tasarı gerçekleştirme koşullarının üçünü birden karşılayanı bulma.",
       "format": [
-        "koşullar verilip uygun seçeneği bulma"
+        "koşullar + seçenek etkinlikler"
       ],
       "visual": "none",
       "answer": "B",
@@ -1483,9 +1483,10 @@
         "T.8.3.2"
       ],
       "lgsLabel": "paragraf/şiir – ana düşünce",
-      "summary": "Verilen şiirin ana düşüncesi soruluyor.",
+      "summary": "Bir şiirin ana düşüncesi (seçeneklerde geçmişe takılmadan yaşamak, şimdinin değeri, hüzünlü anılardan uzak durmak gibi temalar).",
       "format": [
-        "şiir + ana düşünce"
+        "şiir",
+        "ana düşünce"
       ],
       "visual": "none",
       "answer": "A",
@@ -1560,12 +1561,12 @@
       "unit": "paragraf",
       "kazanim": "T.8.3.25",
       "kazanimSecondary": [
-        "T.8.3.14"
+        "T.8.1.9"
       ],
       "lgsLabel": "paragraf – anlatımda tutarlılık (kural verip uygulama)",
-      "summary": "açıklama + uygulama – bilgi, durum veya olaylar arasında mantıksal tutarlılık olmaması bir kusurdur (tutarlılık)",
+      "summary": "Bir metinde bilgi, durum ve olaylar arasında mantıksal tutarlılık bulunmamasının anlatım kusuru sayıldığını açıklayan bilgi; buna göre değerlendirme (kök tam görülmedi).",
       "format": [
-        "açıklama verilip uygun/aykırı örnek bulma"
+        "açıklama + uygulama"
       ],
       "visual": "none",
       "answer": "D",
@@ -1589,9 +1590,9 @@
         "T.8.3.21"
       ],
       "lgsLabel": "paragraf – açıklamaya göre değerlendirme",
-      "summary": "açıklama + uygulama – dil, bir milleti millet yapan temel unsurdur ve korunmalıdır; 'Bu açıklamaya göre…'",
+      "summary": "Dilin milleti millet yapan temel unsurlardan biri olduğu ve korunması gerektiği açıklaması; 'Bu açıklamaya göre…' kökü.",
       "format": [
-        "açıklama + 'bu açıklamaya göre'"
+        "açıklama + uygulama"
       ],
       "visual": "none",
       "answer": "A",
@@ -1613,9 +1614,9 @@
       "kazanim": "T.8.3.9",
       "kazanimSecondary": [],
       "lgsLabel": "fiilimsiler",
-      "summary": "fiilimsiler – 'ebe' oyunu parçası; numaralanmış sözcüklerden hangisi fiilimsi DEĞİLDİR (S19 ile aynı soru olabilir)",
+      "summary": "'Ebe' içeren bir çocuk oyununun anlatıldığı parçada numaralanmış sözcüklerden (I–IV) hangisinin fiilimsi olmadığı.",
       "format": [
-        "numaralanmış sözcükler",
+        "numaralanmış sözcükler (I–IV)",
         "olumsuz kök"
       ],
       "visual": "none",
@@ -1625,7 +1626,8 @@
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2024/06/lgs/2024sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
-      ]
+      ],
+      "note": "Kitapçık okuması: 'ebe' oyunu parçasında numaralanmış sözcüklerden hangisinin fiilimsi olmadığı; benzer içerik 19'a da okunmuştu."
     },
     {
       "id": "lgs-2024-turkce-a15",
@@ -1641,13 +1643,13 @@
         "T.8.3.25"
       ],
       "lgsLabel": "sözel mantık / tablo-grafik okuma",
-      "summary": "Rüzgâr türbinleri bağlamında Tablo 1 rüzgâr türlerini hızlarına göre küçükten büyüğe sıralıyor; Tablo 2'deki saat aralıklarında üretilen elektrik miktarını doğru gösteren sütun grafiği soruluyor.",
+      "summary": "Rüzgâr türbinleri bağlamı: Tablo 1 rüzgâr türlerini hızlarına göre (hafiften tam fırtınaya) sıralıyor; Tablo 2'deki saat aralıklarına göre üretilen elektriği doğru gösteren sütun grafiği.",
       "format": [
-        "tablo okuma (2 tablo)",
-        "seçenekleri grafik olan soru",
-        "çok adımlı veri eşleştirme (iş ve işlem basamakları)"
+        "iki tablo",
+        "seçenekler grafik",
+        "çok adımlı eşleştirme"
       ],
-      "visual": "2 tablo + seçeneklerde sütun grafikleri",
+      "visual": "table",
       "answer": "B",
       "confidence": "high",
       "sources": [
@@ -1667,16 +1669,14 @@
       "unit": "sozel-mantik-gorsel",
       "kazanim": "T.8.3.27",
       "kazanimSecondary": [
-        "T.8.3.35",
-        "T.8.3.25"
+        "T.8.3.35"
       ],
       "lgsLabel": "görsel okuma / sözel mantık",
-      "summary": "görsel okuma – yan flüt: hangi notalar için hangi parmakların hangi tuşlara bastığı (görselde tuşlar ve parmaklar)",
+      "summary": "Yan flütte notaların hangi parmakla hangi kapağa basılarak çalındığını gösteren görsel ve bilgi; kök görülmedi.",
       "format": [
-        "görsel/şema",
-        "eşleştirme"
+        "görsel + bilgi"
       ],
-      "visual": "görsel (yan flüt tuşları ve parmaklar)",
+      "visual": "picture",
       "answer": "C",
       "confidence": "medium",
       "sources": [
@@ -1693,12 +1693,12 @@
       "booklet": "A",
       "qNo": 17,
       "unit": "yazim",
-      "kazanim": "T.8.3.25",
+      "kazanim": "T.8.4.16",
       "kazanimSecondary": [
         "T.8.3.18"
       ],
       "lgsLabel": "paragraf / bilgi metni (kök görülmedi)",
-      "summary": "Konya-Hadim ve kiraz çeşitleri parçası (kök ve numara belirsiz; özel adlar içerdiği için yazım sorusu olabilir – tahmin)",
+      "summary": "Konya'nın Hadim ilçesinin Türkiye'de kirazın en geç hasat edildiği yerlerden biri olduğu ve buradaki bir kiraz çeşidinin uzak pazarlara gönderildiği bilgisi; kök görülmedi.",
       "format": [
         "bilgi metni"
       ],
@@ -1709,7 +1709,8 @@
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2024/06/lgs/2024sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
-      ]
+      ],
+      "note": "Yazım sorusu olduğu bildirildi (memurlar.net); numarası kitapçıkta doğrulanamadı, 17 ya da 19 aday."
     },
     {
       "id": "lgs-2024-turkce-a18",
@@ -1724,11 +1725,11 @@
         "T.8.3.1"
       ],
       "lgsLabel": "noktalama işaretleri (virgül)",
-      "summary": "Bir parçada virgülün seçeneklerde verilen işlevlerinden hangisinin kullanılmadığı soruluyor.",
+      "summary": "Şehirler ve öne çıkan kişiler üzerine parçada virgülün hangi işlevinde kullanılmadığı.",
       "format": [
         "paragraf",
-        "olumsuz kök (kullanılmamıştır)",
-        "işlev eşleştirme"
+        "işlev belirleme",
+        "olumsuz kök"
       ],
       "visual": "none",
       "answer": "D",
@@ -1746,28 +1747,25 @@
       "subject": "Türkçe",
       "booklet": "A",
       "qNo": 19,
-      "unit": "dil-bilgisi",
-      "kazanim": "T.8.3.9",
+      "unit": "sozel-mantik-gorsel",
+      "kazanim": "T.8.3.35",
       "kazanimSecondary": [
         "T.8.3.25"
       ],
       "lgsLabel": "sözel mantık (oyun kuralları) – olası",
-      "summary": "fiilimsiler – 'İlkbahar, Yaz, Sonbahar, Kış' oyunu parçası; numaralanmış sözcüklerden hangisi fiilimsi DEĞİLDİR (S14 ile aynı soru olabilir)",
+      "summary": "'İlkbahar, Yaz, Sonbahar, Kış' oyununun kuralları (oyunculardan biri hakem seçilir…); kök görülmedi – kurallara dayalı sözel mantık maddesi olması muhtemel.",
       "format": [
-        "numaralanmış sözcükler",
-        "olumsuz kök"
+        "kural metni"
       ],
       "visual": "none",
       "answer": "D",
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2024/06/lgs/2024sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
       ],
-      "conflicts": [
-        "kazanım turkce=T.8.3.9 vs booklet_sozel=T.8.3.35"
-      ]
+      "note": "'İlkbahar, Yaz, Sonbahar, Kış' oyun kuralları metni; kök görülmedi (yazım sorusu adayı da olabilir)."
     },
     {
       "id": "lgs-2024-turkce-a20",
@@ -1780,10 +1778,11 @@
       "kazanim": "T.8.4.19",
       "kazanimSecondary": [],
       "lgsLabel": "cümle türleri (olumsuz kök)",
-      "summary": "Verilen cümlenin yapı, yüklem türü, öge dizilişi ve anlam bakımından türüne ilişkin seçeneklerden hangisinin yanlış olduğu soruluyor.",
+      "summary": "Anadolu kültürünü Türkiye Yüzyılı'nın temel dayanağı olarak niteleyen cümlenin türüyle ilgili yanlış ifade.",
       "format": [
         "tek cümle",
-        "olumsuz kök (yanlıştır)"
+        "yargıların doğruluğu",
+        "olumsuz kök"
       ],
       "visual": "none",
       "answer": "C",
@@ -1804,12 +1803,12 @@
       "unit": "paragraf",
       "kazanim": "T.8.3.21",
       "kazanimSecondary": [
-        "T.8.3.25"
+        "T.8.3.5"
       ],
       "lgsLabel": "cümlede anlam / paragraf-yorum (kök görülmedi)",
-      "summary": "metin yorumu – 'hiç tanımadığımız ama ilk bakışta kendini belli eden' insanlar (kök bilinmiyor)",
+      "summary": "Hiç tanımadığımız hâlde ilk bakışta kendini belli eden insanlar üzerine kısa metin; kök görülmedi.",
       "format": [
-        "paragraf/cümle"
+        "kısa paragraf"
       ],
       "visual": "none",
       "answer": "B",
@@ -1833,9 +1832,9 @@
         "T.8.2.5"
       ],
       "lgsLabel": "sözcükte anlam / söz öbeği (boşluk tamamlama)",
-      "summary": "Arkadaşlarına karşı tutumu anlatan bir metinde iki boşluğa anlam bakımından sırasıyla getirilebilecek söz öbeği–sıfat ikilisi soruluyor.",
+      "summary": "Dostlara karşı tutumu anlatan metinde boşluklara düşüncenin akışına göre sırasıyla getirilecek ifadeler (ikili sıfat/söz öbeği seçenekleri, ör. 'pes etmemiş – koruyucu').",
       "format": [
-        "boşluk doldurma (iki boşluk, sırasıyla)"
+        "boşluk doldurma (iki boşluk)"
       ],
       "visual": "none",
       "answer": "A",
@@ -1856,12 +1855,13 @@
       "unit": "cumle-anlam",
       "kazanim": "T.8.3.25",
       "kazanimSecondary": [
-        "T.8.3.14"
+        "T.8.3.21"
       ],
       "lgsLabel": "cümlede anlam (kesin yargı/çıkarım)",
-      "summary": "Bir sanatçının birçok türde yazıp kendini en iyi şiirde ifade ettiğini söyleyen cümlesinden kesin olarak çıkarılabilecek yargı soruluyor.",
+      "summary": "Bir sanatçının 'birçok türde yazdım ama kendimi en iyi şiirle ifade ettim' anlamındaki sözünden kesin olarak çıkarılabilecek yargı.",
       "format": [
-        "cümle + kesin yargı"
+        "tek cümle/alıntı",
+        "kesin çıkarım"
       ],
       "visual": "none",
       "answer": "C",
@@ -1879,15 +1879,16 @@
       "subject": "Türkçe",
       "booklet": "A",
       "qNo": 4,
-      "unit": "dil-bilgisi",
-      "kazanim": "T.8.3.14",
+      "unit": "cumle-anlam",
+      "kazanim": "T.8.3.21",
       "kazanimSecondary": [
-        "T.8.3.21"
+        "T.8.3.5"
       ],
       "lgsLabel": "cümlede anlam (anlatılmak istenen)",
-      "summary": "Yabancı kültür ögelerini taklit etmek yerine millî değerlerle yorumlayıp yeni ürünler ortaya koymayı öneren cümlede anlatılmak istenen düşünce soruluyor.",
+      "summary": "Yabancı kültür ögelerini birebir kopyalamak yerine millî değerlerle yorumlayıp yeni ürünler ortaya koymaya çağıran cümlede anlatılmak istenen düşünce.",
       "format": [
-        "cümle + anlatılmak istenen"
+        "tek cümle",
+        "yorum"
       ],
       "visual": "none",
       "answer": "D",
@@ -1914,10 +1915,9 @@
         "T.8.4.18"
       ],
       "lgsLabel": "anlatım bozukluğu (öge eksikliği)",
-      "summary": "Seçenek cümlelerden hangisinde nesne eksikliğinden kaynaklanan anlatım bozukluğu olduğu (veya olmadığı) soruluyor.",
+      "summary": "Nesne eksikliğinden kaynaklanan anlatım bozukluğu (seçenek cümleleri deneme türü/yazarı üzerine; birinde eskimiş düşünceler-paslı çiviler benzetmesi).",
       "format": [
-        "seçenek cümleler",
-        "olumsuz kök olabilir"
+        "seçenekler cümle"
       ],
       "visual": "none",
       "answer": "C",
@@ -1936,15 +1936,15 @@
       "booklet": "A",
       "qNo": 6,
       "unit": "paragraf",
-      "kazanim": "T.8.3.14",
+      "kazanim": "T.8.3.25",
       "kazanimSecondary": [
-        "T.8.3.26",
-        "T.8.3.10"
+        "T.8.3.26"
       ],
       "lgsLabel": "paragraf tamamlama (düşüncenin akışı)",
-      "summary": "paragraf tamamlama – düşüncelerini özgürce dile getiren deneme yazarı; '- - - -' boşluğuna uygun cümle",
+      "summary": "Düşüncelerini özgürce dile getiren deneme yazarı üzerine metin; '- - - -' ile boş bırakılan yere getirilecek cümle.",
       "format": [
-        "paragraf + boşluk doldurma"
+        "paragraf",
+        "boşluk tamamlama"
       ],
       "visual": "none",
       "answer": "D",
@@ -1969,9 +1969,9 @@
       "kazanim": "T.8.3.7",
       "kazanimSecondary": [],
       "lgsLabel": "söz sanatları",
-      "summary": "Seçeneklerde verilen dizelerden hangisinde söz sanatı kullanılmadığı soruluyor.",
+      "summary": "Hangi seçenekteki dizelerde söz sanatı kullanılmadığı (dizelerden biri damların göğe bakmaktan usanmasıyla kişileştirme içeriyor).",
       "format": [
-        "şiir dizeleri",
+        "dize seçenekler",
         "olumsuz kök"
       ],
       "visual": "none",
@@ -1991,14 +1991,15 @@
       "booklet": "A",
       "qNo": 8,
       "unit": "paragraf",
-      "kazanim": "T.8.3.25",
+      "kazanim": "T.8.3.18",
       "kazanimSecondary": [
-        "T.8.3.21"
+        "T.8.3.25"
       ],
       "lgsLabel": "paragraf (yardımcı düşünce / vurgulanan özellik)",
-      "summary": "paragraf – yazarın vurgulanan özelliği (sözcükleri büyüteç gibi kullanan, İstanbul adalarından birini anlatan yazar; seçenekler: tarafsızlık, kararlılık, fedakârlık, alçak gönüllülük)",
+      "summary": "Sözcükleri büyüteç gibi kullanan ve İstanbul adalarından birini anlatan bir yazar üzerine metin; vurgulanan yazar özelliği (seçenekler: tarafsızlık, kararlılık, fedakârlık, alçak gönüllülük).",
       "format": [
-        "paragraf + vurgulanan özellik"
+        "paragraf",
+        "özellik çıkarımı"
       ],
       "visual": "none",
       "answer": "D",
@@ -2022,12 +2023,12 @@
       "unit": "paragraf",
       "kazanim": "T.8.3.25",
       "kazanimSecondary": [
-        "T.8.3.14"
+        "T.8.3.26"
       ],
       "lgsLabel": "paragraf – kural verip uygulama",
-      "summary": "İyi bir arka kapak yazısının özelliklerinin verildiği bilgilere uygun tanıtım yazısının seçilmesi isteniyor.",
+      "summary": "İyi bir arka kapak yazısının kitabın içeriğiyle uyumlu olması ölçütü; seçeneklerdeki kitap tanıtım yazılarından uygun olanı.",
       "format": [
-        "bilgi verip uygun örneği seçme"
+        "ölçüt + seçenek metinler"
       ],
       "visual": "none",
       "answer": "C",
@@ -2045,15 +2046,16 @@
       "subject": "Türkçe",
       "booklet": "A",
       "qNo": 10,
-      "unit": "paragraf",
+      "unit": "sozcuk-anlam",
       "kazanim": "T.8.3.5",
       "kazanimSecondary": [
-        "T.8.3.21"
+        "T.8.3.6"
       ],
       "lgsLabel": "söz öbeğinde anlam (altı çizili ifade) – olası",
-      "summary": "büyük şairler üzerine metin (kök bilinmiyor)",
+      "summary": "Büyük şairler hakkında yazılan eleştiri kitaplarındaki abartılı övgüler üzerine metin; altı çizili ifadenin anlamı (kesin değil).",
       "format": [
-        "paragraf"
+        "paragraf",
+        "altı çizili söz"
       ],
       "visual": "none",
       "answer": "A",
@@ -2062,7 +2064,8 @@
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2025/06/lgs/2025sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
-      ]
+      ],
+      "note": "Altı çizili söz öbeğinin anlamı (büyük şairler / Cemil Meriç metni); numara ±1 belirsiz."
     },
     {
       "id": "lgs-2025-turkce-a11",
@@ -2077,9 +2080,9 @@
         "T.8.3.25"
       ],
       "lgsLabel": "paragraf / hikâye unsurları (kök görülmedi)",
-      "summary": "anlatı parçası – 'Tarık, ikide bir kapağı işlemeli köstekli saatini…' (kök bilinmiyor; karakter/duygu çıkarımı olabilir)",
+      "summary": "Kapağı işlemeli köstekli saatini sık sık çıkaran Tarık'ın anlatıldığı öyküleyici parça; kök görülmedi (karakter/duygu çıkarımı olabilir).",
       "format": [
-        "anlatı parçası"
+        "anlatı paragrafı"
       ],
       "visual": "none",
       "answer": "D",
@@ -2101,7 +2104,7 @@
       "kazanim": "T.8.3.17",
       "kazanimSecondary": [],
       "lgsLabel": "paragraf (kök görülmedi)",
-      "summary": "paragraf – 'Okuma, rastgele ve bilinçsizce yapılırsa…' (kök bilinmiyor)",
+      "summary": "'Okumanın rastgele ve bilinçsizce yapılması' üzerine paragraf; kök görülmedi.",
       "format": [
         "paragraf"
       ],
@@ -2127,9 +2130,9 @@
         "T.8.3.1"
       ],
       "lgsLabel": "yazım kuralları + noktalama (ikili soru)",
-      "summary": "Otomobillerdeki dokunmatik ekranlar ve kullanılabilirlik testleri üzerine bir metne bağlı iki soru: biri yazım yanlışı olmayan numaralı cümleyi, diğeri üç nokta getirilmesi gereken numaralı yeri soruyor.",
+      "summary": "Otomobillerde dokunmatik ekran kullanımı ve kullanılabilirlik testleri metni: (a) numaralanmış cümlelerden hangisinde yazım yanlışı olmadığı, (b) numaralanmış yerlerden hangisine üç nokta getirileceği – aynı metne bağlı iki soru.",
       "format": [
-        "ortak metne bağlı ikili soru",
+        "ortak metinli ikili soru",
         "numaralanmış cümleler/yerler"
       ],
       "visual": "none",
@@ -2139,7 +2142,8 @@
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2025/06/lgs/2025sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
-      ]
+      ],
+      "note": "Ortak metne bağlı ikili sorunun yazım üyesi; üç nokta (noktalama) üyesinin numarası belirsiz."
     },
     {
       "id": "lgs-2025-turkce-a14",
@@ -2154,12 +2158,11 @@
         "T.8.3.25"
       ],
       "lgsLabel": "grafik okuma",
-      "summary": "Beyaz eşya satışlarının iç pazar, ihracat ve toplam olarak 2018–2023 yıllarına göre gösterildiği grafikle ilgili doğru yargı soruluyor.",
+      "summary": "Grafik: bir ülkede beyaz eşya satışlarının iç pazar, ihracat ve toplam hacmi (2018–2023).",
       "format": [
-        "grafik",
-        "yargı seçenekleri"
+        "grafik yorumlama"
       ],
-      "visual": "grafik (çok serili, yıllara göre)",
+      "visual": "graph",
       "answer": "A",
       "confidence": "medium",
       "sources": [
@@ -2176,27 +2179,22 @@
       "booklet": "A",
       "qNo": 15,
       "unit": "sozel-mantik-gorsel",
-      "kazanim": "T.8.3.27",
+      "kazanim": "T.8.3.32",
       "kazanimSecondary": [
-        "T.8.3.35",
         "T.8.3.25"
       ],
       "lgsLabel": "sözel mantık / tablo (aday)",
-      "summary": "Verilen açıklamaya göre anahtar çevrildiğinde açılabilir durumdaki kilidin hangi görselde gösterildiği soruluyor.",
+      "summary": "Bir ailenin yumurta üretimi, tüketimi ve satışına ilişkin bilgilerle tablo/sözel mantık maddesi (aday; kilit görseli 16. soru).",
       "format": [
-        "görsel seçenekler",
-        "mekanizma/koşul akıl yürütme"
+        "bilgi/tablo eşleştirme"
       ],
-      "visual": "görsel (kilit mekanizması seçenekleri)",
+      "visual": "table",
       "answer": "A",
-      "confidence": "medium",
+      "confidence": "low",
       "sources": [
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2025/06/lgs/2025sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
-      ],
-      "conflicts": [
-        "kazanım turkce=T.8.3.27 vs booklet_sozel=T.8.3.32"
       ]
     },
     {
@@ -2233,14 +2231,14 @@
       "booklet": "A",
       "qNo": 17,
       "unit": "dil-bilgisi",
-      "kazanim": "T.8.4.19",
+      "kazanim": "T.8.4.20",
       "kazanimSecondary": [
         "T.8.4.20"
       ],
       "lgsLabel": "numaralanmış cümleler (kök görülmedi; cümle türleri/fiilde çatı adayı)",
-      "summary": "Cemil Meriç (38 yaşında görme yetisini kaybeden düşünür) + numaralanmış yargılar (kök bilinmiyor)",
+      "summary": "Cemil Meriç'in Türk kültürüne katkıları ve 38 yaşında görme yetisini kaybetmesi üzerine numaralanmış cümleler; kök görülmedi (dil bilgisi sorusu olabilir).",
       "format": [
-        "numaralanmış cümleler/yargılar"
+        "numaralanmış cümleler"
       ],
       "visual": "none",
       "answer": "C",
@@ -2249,7 +2247,8 @@
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2025/06/lgs/2025sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
-      ]
+      ],
+      "note": "Numaralanmış cümleler; 2025'te fiilde çatı soruldu (Kavram raporu), yeri kesin değil."
     },
     {
       "id": "lgs-2025-turkce-a18",
@@ -2262,7 +2261,7 @@
       "kazanim": "T.8.3.17",
       "kazanimSecondary": [],
       "lgsLabel": "paragraf (kök görülmedi)",
-      "summary": "paragraf – bitki örtüsü (keçiboynuzu, badem ağaçları) (kök bilinmiyor)",
+      "summary": "Akdeniz bitki örtüsü (keçiboynuzu, badem ağaçları) üzerine paragraf; kök görülmedi.",
       "format": [
         "paragraf"
       ],
@@ -2288,7 +2287,7 @@
         "T.8.3.18"
       ],
       "lgsLabel": "paragraf (kök görülmedi)",
-      "summary": "paragraf – Türk eğitim tarihi (Türkistan bozkırlarından Anadolu'ya) (kök bilinmiyor)",
+      "summary": "Türk eğitim tarihinin Türkistan bozkırlarından Anadolu'ya uzanan gelişimi üzerine paragraf; kök görülmedi.",
       "format": [
         "paragraf"
       ],
@@ -2308,13 +2307,13 @@
       "subject": "Türkçe",
       "booklet": "A",
       "qNo": 20,
-      "unit": null,
-      "kazanim": "T.8.3.18",
+      "unit": "dil-bilgisi",
+      "kazanim": "T.8.4.19",
       "kazanimSecondary": [
         "T.8.4.19"
       ],
       "lgsLabel": "numaralanmış cümleler (kök görülmedi)",
-      "summary": "numaralanmış cümleler – Anadolu'nun bitki çeşitliliği (kök bilinmiyor; numaralı cümle biçimi dil bilgisi sorusuna işaret edebilir)",
+      "summary": "Anadolu'nun bitki çeşitliliği açısından dünyanın en zengin bölgelerinden biri olduğunu anlatan numaralanmış cümleler; kök görülmedi.",
       "format": [
         "numaralanmış cümleler"
       ],
@@ -2325,7 +2324,8 @@
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2025/06/lgs/2025sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
-      ]
+      ],
+      "note": "Numaralanmış cümleler; 2025 tablolarında cümle türleri 1 soru, yeri kesin değil."
     },
     {
       "id": "lgs-2026-turkce-a01",
@@ -2340,7 +2340,7 @@
         "T.8.3.5"
       ],
       "lgsLabel": "cümlede anlam (anlamca en yakın; S44) – kök kesin değil",
-      "summary": "Cahit Zarifoğlu üzerine kısa metin: yazılarının bütünü okununca yaşadığı dönemden bugünü okur gibi olunduğu (zamanı aşan gözlem) anlatılıyor; metindeki bir cümleye anlamca en yakın ifade (S44) ya da yazarın bakışına ilişkin anlam sorusu.",
+      "summary": "Cahit Zarifoğlu üzerine kısa metin: yazılarının bütünü okununca yaşadığı dönemden bugünü okur gibi olunduğu (zamanı aşan gözlem) anlatılıyor; metindeki bir cümleye anlamca en yakın ifade ya da yazarın bakışına ilişkin anlam sorusu.",
       "format": [
         "kısa paragraf",
         "anlamca en yakın (olası)"
@@ -2394,15 +2394,15 @@
       "subject": "Türkçe",
       "booklet": "A",
       "qNo": 3,
-      "unit": "paragraf",
+      "unit": "cumle-anlam",
       "kazanim": "T.8.3.25",
       "kazanimSecondary": [
         "T.8.3.5"
       ],
       "lgsLabel": "sözcükte anlam / cümlede anlam-çıkarım (belirsiz)",
-      "summary": "Bir yazarın meslektaşlarıyla karşılaştırılarak anlatıldığı parçadan çıkarım yapılması isteniyor (tahmini).",
+      "summary": "Bir yazarın çağdaşı/meslektaşı yazarlarla karşılaştırılarak anlatıldığı parça; parçadan çıkarım.",
       "format": [
-        "paragraf + çıkarım"
+        "kısa paragraf"
       ],
       "visual": "none",
       "answer": "D",
@@ -2450,26 +2450,21 @@
       "subject": "Türkçe",
       "booklet": "A",
       "qNo": 5,
-      "unit": "sozel-mantik-gorsel",
-      "kazanim": "T.8.3.27",
-      "kazanimSecondary": [
-        "T.8.3.35",
-        "T.8.3.25"
-      ],
+      "unit": null,
+      "kazanim": null,
+      "kazanimSecondary": [],
       "lgsLabel": null,
-      "summary": "Verilen bilgilere uygun biçimde düzenlenmiş laboratuvar kuralları afişinin seçilmesi isteniyor (tahmini).",
-      "format": [
-        "afiş/görsel",
-        "bilgi verip uygun örneği seçme"
-      ],
-      "visual": "poster/afiş",
+      "summary": null,
+      "format": [],
+      "visual": "none",
       "answer": "D",
-      "confidence": "low",
+      "confidence": "unknown",
       "sources": [
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2026/06/trlgs/a_2026_sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
-      ]
+      ],
+      "note": "İçerik bulunamadı (laboratuvar kuralları afişi 7. sorudur)."
     },
     {
       "id": "lgs-2026-turkce-a06",
@@ -2481,11 +2476,10 @@
       "unit": "paragraf",
       "kazanim": "T.8.3.17",
       "kazanimSecondary": [
-        "T.8.3.21",
-        "T.8.3.7"
+        "T.8.3.25"
       ],
       "lgsLabel": "paragraf (ana düşünce/çıkarım; kök görülmedi)",
-      "summary": "Sosyal medyayı gerçeği eğip büken bir ayna ve yakınlık yanılsaması yaratan bir perde olarak anlatan mecazlı bir paragraf; soru kökü görülmedi.",
+      "summary": "Sosyal medyanın gerçeği çarpıttığı ve insanlar arasında sahte bir yakınlık yanılsaması yarattığı anlatılan paragraf (çağın parlak aynası benzetmesi); kök görülmedi.",
       "format": [
         "paragraf"
       ],
@@ -2506,10 +2500,9 @@
       "booklet": "A",
       "qNo": 7,
       "unit": "sozel-mantik-gorsel",
-      "kazanim": "T.8.3.25",
+      "kazanim": "T.8.3.27",
       "kazanimSecondary": [
-        "T.8.3.27",
-        "T.8.3.18"
+        "T.8.3.25"
       ],
       "lgsLabel": "paragraf – kural verip uygulama (görsel/afiş seçenekli)",
       "summary": "Kuralların nitelikleri (toplumsal değerlere dayanma, davranışı yönlendirme, olumlu ve nesnel ifade, kuralın amacının belirtilmesi) anlatılıyor; seçeneklerdeki 'Laboratuvar Kuralları' afişlerinden bu ölçütlere uyanı bulma.",
@@ -2525,7 +2518,8 @@
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2026/06/trlgs/a_2026_sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
-      ]
+      ],
+      "note": "Kuralların nitelikleri metni + ölçüte uyan 'Laboratuvar Kuralları' afişi (aynı madde)."
     },
     {
       "id": "lgs-2026-turkce-a08",
@@ -2535,14 +2529,14 @@
       "booklet": "A",
       "qNo": 8,
       "unit": "paragraf",
-      "kazanim": "T.8.3.17",
+      "kazanim": "T.8.3.25",
       "kazanimSecondary": [
-        "T.8.3.25"
+        "T.8.3.17"
       ],
       "lgsLabel": "paragraf (duygu/çıkarım)",
-      "summary": "Behçet Necatigil'in şiirle geçen yaşamını ve bir kitapçıyı konu alan parçada anlatıcının duygularına ilişkin soru (tahmini).",
+      "summary": "Behçet Necatigil ve şiirle geçen hayatı / bir şair ile kitapçı üzerine anlatı; anlatıcının duyguları ya da metinden çıkarım.",
       "format": [
-        "anlatı parçası"
+        "anlatı paragrafı"
       ],
       "visual": "none",
       "answer": "D",
@@ -2569,9 +2563,10 @@
         "T.8.3.34"
       ],
       "lgsLabel": "anlatım biçimi (betimleme) / düşünceyi geliştirme yolları",
-      "summary": "9 veya 10: duyusal imgeli betimleyici metin; seçeneklerde 'tanımlama, karşılaştırma, niteleyici sözcük' → anlatım biçimi/düşünceyi geliştirme yolları (numara belirsiz)",
+      "summary": "Duyusal imgeler içeren betimleyici metin; seçeneklerde 'tanımlama, karşılaştırma, niteleyici sözcük kullanma' gibi anlatım teknikleri.",
       "format": [
-        "metin + teknik belirleme"
+        "paragraf",
+        "teknik belirleme"
       ],
       "visual": "none",
       "answer": "A",
@@ -2595,7 +2590,7 @@
         "T.8.3.22"
       ],
       "lgsLabel": "paragraf – örnekleme/çıkarım (olumsuz kök 'örnek olamaz')",
-      "summary": "9 veya 10: içerik belirsiz (tüketim alışkanlıkları metni de bu aralıkta olabilir)",
+      "summary": "Yaşamda karşılaşılan sorunlar ve çözüm arayışı üzerine metin; metne göre hangi davranışın bir çözüm yolu örneği olamayacağı.",
       "format": [
         "paragraf",
         "seçenekler davranış örnekleri",
@@ -2623,9 +2618,9 @@
         "T.8.3.25"
       ],
       "lgsLabel": "paragraf / hikâye unsurları (kök görülmedi)",
-      "summary": "anlatı parçası – odasını temizleyip kitaplığını düzenleyen kişi (kök bilinmiyor; hikâye unsurları olabilir)",
+      "summary": "Odasını temizleyip kitaplığını düzenlemeye başlayan bir kişinin anlatıldığı öyküleyici parça; kök görülmedi.",
       "format": [
-        "anlatı parçası"
+        "anlatı paragrafı"
       ],
       "visual": "none",
       "answer": "D",
@@ -2649,7 +2644,7 @@
         "T.8.3.18"
       ],
       "lgsLabel": "paragraf (ana düşünce/yardımcı düşünce; kök görülmedi)",
-      "summary": "paragraf – tüketim alışkanlıkları (XX. yüzyıl öncesi ihtiyaç kadar üretim-tüketim) (kök bilinmiyor)",
+      "summary": "XX. yüzyıl öncesinde insanların ihtiyacı kadar üretip tükettiğini, sonra tüketim alışkanlıklarının değiştiğini anlatan paragraf; kök görülmedi.",
       "format": [
         "paragraf"
       ],
@@ -2669,15 +2664,15 @@
       "subject": "Türkçe",
       "booklet": "A",
       "qNo": 13,
-      "unit": "soz-sanatlari",
+      "unit": "paragraf",
       "kazanim": "T.8.3.11",
       "kazanimSecondary": [
         "T.8.3.7"
       ],
       "lgsLabel": "anlatım biçimi (betimleme) / söz sanatları (belirsiz)",
-      "summary": "şiirsel betimleyici metin ('Hafif bir rüzgâr… Belli belirsiz bulutlar…') (kök bilinmiyor; anlatım tekniği/söz sanatı olabilir)",
+      "summary": "Şiirsel, betimleyici kısa metin (hafif rüzgâr, belli belirsiz bulutlar); kök görülmedi.",
       "format": [
-        "şiirsel metin"
+        "betimleyici metin"
       ],
       "visual": "none",
       "answer": "A",
@@ -2701,12 +2696,12 @@
         "T.8.3.25"
       ],
       "lgsLabel": "grafik okuma",
-      "summary": "Kıtaların orman alanlarındaki değişimi üç on yıllık dönem için gösteren grafiğe göre Okyanusya, Avrupa, Kuzey Amerika vb. karşılaştırmalarından hangisinin doğru olduğu soruluyor.",
+      "summary": "Grafik: kıtalara göre orman alanlarındaki değişim (1990–2000, 2000–2010, 2010–2020); seçeneklerde Okyanusya, Avrupa, Kuzey Amerika karşılaştırmaları.",
       "format": [
-        "grafik",
-        "karşılaştırmalı yargı seçenekleri"
+        "grafik yorumlama",
+        "veri karşılaştırma"
       ],
-      "visual": "grafik (çok dönemli)",
+      "visual": "graph",
       "answer": "C",
       "confidence": "medium",
       "sources": [
@@ -2722,20 +2717,21 @@
       "subject": "Türkçe",
       "booklet": "A",
       "qNo": 15,
-      "unit": "yazim",
+      "unit": null,
       "kazanim": null,
       "kazanimSecondary": [],
       "lgsLabel": null,
-      "summary": "bilinmiyor (yazım sorusu olabilir: 'yazım yanlışı olmayan sözcükler' sorusu D kitapçığında görüldü, A numarası belirsiz)",
+      "summary": null,
       "format": [],
       "visual": "none",
       "answer": "D",
-      "confidence": "low",
+      "confidence": "unknown",
       "sources": [
         "https://cdn.eba.gov.tr/yardimcikaynaklar/2026/06/trlgs/a_2026_sozel.pdf",
         "scratchpad/research/_notes_booklet_sozel.txt (kardeş ajan a089e7de…, arama dizini sorguları)",
         "https://www.dilbilgisi.net/lgs-sorulari-cevaplari/"
-      ]
+      ],
+      "note": "İçerik bulunamadı (aday: paragraf ya da üçüncü görsel/tablo maddesi)."
     },
     {
       "id": "lgs-2026-turkce-a16",
@@ -2751,12 +2747,12 @@
         "T.8.3.25"
       ],
       "lgsLabel": "görsel okuma / sözel mantık",
-      "summary": "Yelkenli teknenin yelken sistemini gösteren görsele dayanarak teknenin hangi durumdan dolayı zarar gördüğü soruluyor.",
+      "summary": "Görsel: yelkenli teknenin yelken sistemi ve tam açık hâli; verilen bilgiye göre teknenin hangi durumdan dolayı zarar gördüğü soruluyor.",
       "format": [
-        "görsel/şema",
-        "neden-sonuç çıkarımı"
+        "görsel + bilgi",
+        "neden çıkarımı"
       ],
-      "visual": "görsel/şema",
+      "visual": "picture",
       "answer": "C",
       "confidence": "high",
       "sources": [
@@ -2803,10 +2799,10 @@
         "T.8.3.1"
       ],
       "lgsLabel": "noktalama işaretleri",
-      "summary": "Reşat Nuri Güntekin ile Muhsin Ertuğrul'a ilişkin bir metinde yay ayraçla boş bırakılan yerlere gelecek noktalama işaretleri soruluyor.",
+      "summary": "Bir metinde ayraçla boş bırakılan yerlere (ör. bir yazar adından sonra) hangi noktalama işaretlerinin geleceği; metin Reşat Nuri Güntekin ile Muhsin Ertuğrul ilişkisi üzerine.",
       "format": [
-        "yay ayraçlı boşluklar",
-        "sırasıyla noktalama işaretleri"
+        "numaralı boşluklar",
+        "işaret belirleme"
       ],
       "visual": "none",
       "answer": "D",
@@ -2826,9 +2822,7 @@
       "qNo": 19,
       "unit": "dil-bilgisi",
       "kazanim": "T.8.4.18",
-      "kazanimSecondary": [
-        "T.8.4.20"
-      ],
+      "kazanimSecondary": [],
       "lgsLabel": "cümlenin ögeleri",
       "summary": "Gümüşhane'den başlayan bir yolculuğu anlatan parçada numaralanmış cümlelerden hangisinde yer tamlayıcısı (dolaylı tümleç) bulunduğu.",
       "format": [
@@ -2852,9 +2846,7 @@
       "qNo": 20,
       "unit": "dil-bilgisi",
       "kazanim": "T.8.4.20",
-      "kazanimSecondary": [
-        "T.8.4.18"
-      ],
+      "kazanimSecondary": [],
       "lgsLabel": "fiilde çatı",
       "summary": "Kervansarayları anlatan bir belgesel metninde numaralanmış cümlelerdeki fiillerden hangisinin nesnesine göre farklı çatıda olduğu (geçişli/geçişsiz).",
       "format": [
@@ -2906,7 +2898,7 @@
       "kazanim": "M.8.1.2.5",
       "kazanimSecondary": [],
       "taskId": "M8-T04",
-      "summary": "Seçenekleri 10'un kuvvetleriyle (ör. 3,5·10^7, 2,1·10^10 biçiminde) yazılmış bir bilimsel gösterim sorusu; kök metni çıkarılamadı.",
+      "summary": "Bilimsel gösterim sorusu; seçenekler 3,5·10^7, 2,1·10^10 biçiminde. Kök metni çıkarılamadı.",
       "format": [],
       "visual": null,
       "answer": "B",
@@ -3347,10 +3339,10 @@
         "M.8.5.1.1"
       ],
       "taskId": "M8-T11",
-      "summary": "1'den 9'a kadar sayılar dokuz kutucuklu bir tabloya yerleştirilip bazıları mavi kartlarla kapatılıyor; seçenekler tam sayı (17, 12, 11, 3).",
+      "summary": "1–9 sayılarının yazıldığı 3×3 tabloda bazı kutucuklar mavi kartlarla kapatılmış; verilen koşullara göre II. satırdaki kapalı sayıların toplamı (17/12/11/3).",
       "format": [
-        "kural/koşul verip akıl yürütme",
-        "tablo"
+        "tablo",
+        "koşul verip akıl yürütme"
       ],
       "visual": "table",
       "answer": "B",
@@ -3777,12 +3769,12 @@
       "kazanim": "M.8.3.1.5",
       "kazanimSecondary": [],
       "taskId": "M8-T22",
-      "summary": "Bir cisim üzerinde işaretlenen A ve B noktaları arasındaki uzaklık Pisagor bağıntısıyla isteniyor; kökte 'en kısa' ya da cismin içinden/çevresinden ölçüleceği belirtilmediği için tartışıldı.",
+      "summary": "8 cm uzunluğundaki dikdörtgen kâğıt üç parçaya kesilerek oluşturulan logo (Şekil II) üzerinde A ve B köşeleri arasındaki uzaklık — Pisagor.",
       "format": [
-        "şekil/geometri modeli",
-        "sözel problem"
+        "şekil/model",
+        "günlük yaşam bağlamı"
       ],
-      "visual": "figure (3B cisim)",
+      "visual": "figure",
       "answer": "B",
       "confidence": "high",
       "sources": [
@@ -4689,13 +4681,13 @@
       "unit": "u5",
       "kazanim": "F.8.5.1.1",
       "kazanimSecondary": [],
-      "summary": "Eşit bölmeli bir tahta, tavana ve tahtaya bağlı makaralardan geçen iple işçiler tarafından yatay dengede tutuluyor; işçilerin başlangıçta ve son durumda ipe uyguladıkları kuvvetin tahtanın ağırlığından küçük olup olmadığına dair yargılardan hangilerinin kesinlikle doğru olduğu soruluyor.",
+      "summary": "Eşit bölmeli tahtanın tavana ve tahtaya bağlı makaralarla işçilerce yatay dengede tutulması; ip kuvvetinin tahtanın ağırlığıyla karşılaştırılması ('kesinlikle doğru' yargıları).",
       "format": [
-        "öncüllü/yargı değerlendirme ('kesinlikle doğru')",
-        "günlük yaşam (iş) bağlamı",
-        "şekil üzerinden akıl yürütme"
+        "öncüllü yargılar",
+        "günlük yaşam bağlamı",
+        "düzenek"
       ],
-      "visual": "diagram (makara–tahta düzeneği)",
+      "visual": "diagram (makara)",
       "answer": "C",
       "confidence": "high",
       "sources": [
@@ -5567,7 +5559,7 @@
       "kazanimSecondary": [
         "F.8.7.1.2"
       ],
-      "summary": "Nötr iletken K ve L kürelerinin yüklü çubuklarla etki/dokunma yoluyla yüklenmesi (S38 okuması).",
+      "summary": "Nötr iletken K ve L kürelerinin yüklü çubuklarla etki/dokunma yoluyla yüklenmesi.",
       "format": [
         "deney/etkinlik aşamaları"
       ],
@@ -5799,7 +5791,7 @@
       "kazanimSecondary": [
         "F.8.4.5.1"
       ],
-      "summary": "Özdeş iki cam kaptaki saf suların ısıtılmasıyla ilgili deney (S52 okuması; 19. soruyla örtüşüyor olabilir).",
+      "summary": "Özdeş iki cam kaptaki saf suların ısıtılmasıyla ilgili deney (19. soruyla örtüşüyor olabilir).",
       "format": [
         "deney düzeneği"
       ],
@@ -6298,9 +6290,9 @@
       "kazanimSecondary": [
         "İTA.8.2.2"
       ],
-      "summary": "Kâzım Karabekir'in, İttihat ve Terakki yönetiminin İngiltere ve Fransa'dan güvence bulamayınca Almanya ile yakınlaştığını anlatan açıklaması üzerinden doğru neden-sonuç ilişkisinin kurulması bekleniyor.",
+      "summary": "Kâzım Karabekir'in, İttihat ve Terakki yönetiminin İngiltere ve Fransa'dan güvence alamayınca Almanya'ya yöneldiğini anlatan açıklaması; neden-sonuç ilişkisi.",
       "format": [
-        "hatıra/alıntı yorumlama",
+        "tarihî kişi açıklaması/hatıra",
         "neden-sonuç"
       ],
       "visual": "document",
@@ -6323,7 +6315,7 @@
       "unit": "u2",
       "kazanim": "İTA.8.2.5",
       "kazanimSecondary": [],
-      "summary": "unknown (tablo kodu: Millî Mücadele hazırlık dönemi)",
+      "summary": "Millî Mücadele hazırlık dönemi (Mustafa Kemal'in çalışmaları) – içerik ayrıntısı bulunamadı.",
       "format": [],
       "visual": null,
       "answer": "C",
@@ -6343,7 +6335,7 @@
       "unit": "u2",
       "kazanim": "İTA.8.2.7",
       "kazanimSecondary": [],
-      "summary": "TBMM'ye karşı ayaklanmalar YA DA Batı Cephesi (sıra belirsiz)",
+      "summary": "TBMM'ye karşı ayaklanmalar ve alınan tedbirler (aday) – içerik ayrıntısı bulunamadı.",
       "format": [],
       "visual": null,
       "answer": "A",
@@ -6367,7 +6359,7 @@
         "İTA.8.3.1",
         "İTA.8.3.5"
       ],
-      "summary": "Batı Cephesi YA DA TBMM'ye karşı ayaklanmalar (Q4 ile ikili)",
+      "summary": "Batı Cephesi: I. İnönü, II. İnönü, Kütahya-Eskişehir, Sakarya ve Büyük Taarruz muharebeleri / Mustafa Kemal'in Millî Mücadele cephelerine ilişkin değerlendirmesi.",
       "format": [
         "muharebe listesi/şema",
         "tarihî kişi değerlendirmesi"
@@ -6824,7 +6816,7 @@
       "unit": "u2",
       "kazanim": "8.2.2",
       "kazanimSecondary": [],
-      "summary": "Zekât konulu madde (S27: 5 ve 6 zekât).",
+      "summary": "Zekât konulu madde (5 ve 6 zekât).",
       "format": [],
       "visual": null,
       "answer": "A",
@@ -7646,13 +7638,13 @@
       "kazanimSecondary": [
         "E8.1.SP1"
       ],
-      "summary": "Miss June öğrencilerine bir yazma alıştırması verir; soru kökü (İngilizce) seçeneklerdeki paragraflardan hangisinde yalnızca olumlu şeylerden söz edildiğini sorar.",
+      "summary": "Miss June asks students to write a paragraph about their relationship with someone; which option paragraph mentions only positive things (shared hobbies, trust and respect, support).",
       "format": [
-        "görev yönergesi + paragraf seçenekler (seçenekler paragraf)",
-        "okuma-anlama",
+        "yazma görevi yönergesi",
+        "paragraf seçenekler",
         "tutum belirleme"
       ],
-      "visual": "unknown (metin çıkarımında görsel bilgisi yok)",
+      "visual": "none",
       "answer": "D",
       "confidence": "medium",
       "sources": [
@@ -7672,14 +7664,12 @@
       "unit": "u2",
       "kazanim": "E8.2.R1",
       "kazanimSecondary": [
-        "E8.2.SP1",
-        "E8.1.L1"
+        "E8.2.SP1"
       ],
-      "summary": "Dört kişi hafta sonu etkinliklerini anlatır; sevmediği bir etkinliğe katılacak kişi sorulur. Seçenekler: Betty, Melinda, Susan, Ursula; cevap anahtarına göre C (Susan).",
+      "summary": "Four teens describe weekend activities and likes/dislikes; who will join an activity they do not like.",
       "format": [
-        "çok konuşmacılı kısa metinler (4 kişi)",
-        "kişi seçme (Who…?)",
-        "çıkarım"
+        "çok konuşmacılı kısa metinler (4)",
+        "kişi seçme (Who…?)"
       ],
       "visual": "none",
       "answer": "C",
@@ -7703,10 +7693,9 @@
       "kazanimSecondary": [
         "E8.3.L1"
       ],
-      "summary": "Tina bir kek yapıp arkadaşı Jessica'ya ikram eder; Jessica elmayı ve balı sevdiğini, limonun biraz fazla geldiğini, bir dahaki sefere biraz çikolata eklenebileceğini söyler. Soru kökü ve seçenekler görülemedi.",
+      "summary": "Tina bakes a cake; friend Jessica's feedback on ingredients (likes apple and honey, too much lemon, add chocolate next time); stem not seen.",
       "format": [
-        "kısa anlatı + yorum/geri bildirim",
-        "okuma-anlama"
+        "kısa anlatı + geri bildirim"
       ],
       "visual": "none",
       "answer": "A",
@@ -7725,18 +7714,16 @@
       "booklet": "A",
       "qNo": 4,
       "unit": "u4",
-      "kazanim": "E8.4.L1",
+      "kazanim": "E8.4.L2",
       "kazanimSecondary": [
-        "E8.4.L2",
-        "E8.4.SI1"
+        "E8.4.SI1",
+        "E8.4.L1"
       ],
-      "summary": "Telefon konuşmasında aynı işlevi taşıyan üç cümle verilir; işlevi sorulur. Seçenekler: mesaj bırakma, görüşmeyi kapatma, arayandan tekrar isteme, karşı tarafa biraz beklemesini söyleme (D).",
+      "summary": "Three sentences from a phone call share one function; identify it (asking the caller to wait / hold on).",
       "format": [
-        "işlev tanıma (ifadeler → işlev)",
-        "dil işlevleri",
-        "ters format (cümleler verilmiş, işlev soruluyor)"
+        "işlev tanıma (cümleler → işlev)"
       ],
-      "visual": "none (madde işaretli cümle listesi; görsel bildirilmedi)",
+      "visual": "none",
       "answer": "D",
       "confidence": "high",
       "sources": [
@@ -7762,10 +7749,10 @@
       "kazanimSecondary": [
         "E8.7.SP3"
       ],
-      "summary": "Carol, Jones ve Katie katıldıkları bir tur hakkında yorum yazar; yorumlara göre hangi ifadenin doğru olduğu sorulur. Seçenek metinleri görülemedi.",
+      "summary": "Three people's comments about a tour they joined; which statement is true according to the comments.",
       "format": [
-        "yorum/değerlendirme metinleri (3 kişi)",
-        "doğru ifadeyi bulma (olumsuz kök olup olmadığı doğrulanmadı)"
+        "yorum metinleri (3)",
+        "doğru ifade"
       ],
       "visual": "none",
       "answer": "B",
@@ -7789,11 +7776,10 @@
       "kazanimSecondary": [
         "E8.6.SI2"
       ],
-      "summary": "Claire, Harry, Sue ve Ted boş zaman etkinliklerini anlatır; extreme sports ile ilgilenen iki arkadaş sorulur. Seçenekler Claire–Harry / Claire–Ted / Sue–Harry / Sue–Ted; anahtar B (Claire–Ted).",
+      "summary": "Four friends describe free-time activities; which two are interested in extreme sports.",
       "format": [
-        "çok konuşmacılı kısa metinler (4 kişi)",
-        "ikili eşleştirme (Which two…?)",
-        "kategoriye bağlama (vocabulary-in-context)"
+        "çok konuşmacılı kısa metinler (4)",
+        "ikili eşleştirme (Which two…?)"
       ],
       "visual": "none",
       "answer": "B",
@@ -7815,16 +7801,16 @@
       "unit": "u9",
       "kazanim": "E8.9.R1",
       "kazanimSecondary": [
-        "E8.9.SI1",
-        "E8.9.SP1"
+        "E8.9.SP1",
+        "E8.9.SI1"
       ],
-      "summary": "Dört ayrı konuşmadan kısa kesitler verilir (Linda–Jason, Bob–Janet, Clara–Mike, Martin–Mary); şu anda birlikte deney yapan ikili sorulur. 'Next step', 'test tubes' ipuçları; anahtar D (Martin–Mary).",
+      "summary": "Four short dialogue excerpts; which pair is doing an experiment right now (present continuous clues vs. past scientific discovery distractor).",
       "format": [
-        "diyalog parçaları (4 kısa konuşma)",
-        "ikili eşleştirme (Which two…?)",
-        "zaman (tense) ipucu çözümleme"
+        "diyalog parçaları (4)",
+        "ikili eşleştirme",
+        "zaman ipucu"
       ],
-      "visual": "dialogue fragments (balon olup olmadığı doğrulanmadı)",
+      "visual": "none",
       "answer": "D",
       "confidence": "high",
       "sources": [
@@ -7878,10 +7864,10 @@
         "E8.7.SP1",
         "E8.7.SP3"
       ],
-      "summary": "Dört kişi İstanbul hakkındaki görüşlerini paylaşır; İstanbul hakkında olumlu bir şey söyleyen kişi sorulur. Seçenekler Hillary / Lucy / Mandy / Todd; anahtar C (Mandy).",
+      "summary": "Four people's opinions about Istanbul; who says something positive about the city.",
       "format": [
-        "görüş metinleri (4 kişi)",
-        "kişi seçme (Who…?)"
+        "görüş metinleri (4)",
+        "kişi seçme"
       ],
       "visual": "none",
       "answer": "C",
@@ -7906,13 +7892,13 @@
       "kazanimSecondary": [
         "E8.5.R1"
       ],
-      "summary": "Dört arkadaş video çekip bloglarında paylaşır; tabloda video içerikleri (yerel konserler, kardeşle vakit, online oyun/alışveriş, rafting-mağaracılık gibi açık hava macera sporları) ve takipçi sayıları verilir. Hangi ifadenin yanlış olduğu sorulur; anahtar B.",
+      "summary": "Table of four friends' video blogs (content, follower numbers); which statement is NOT correct.",
       "format": [
         "tablo okuma",
-        "olumsuz kök ('hangisi yanlıştır' türü; İngilizce kök metni birebir doğrulanmadı)",
-        "sayısal karşılaştırma (more/less popular)"
+        "olumsuz kök (NOT correct)",
+        "sayısal karşılaştırma"
       ],
-      "visual": "table (blog içerikleri + takipçi sayıları)",
+      "visual": "table",
       "answer": "B",
       "confidence": "medium",
       "sources": [
