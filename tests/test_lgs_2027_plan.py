@@ -63,6 +63,18 @@ def test_predicted_exam_form_and_bank_quotas_add_up() -> None:
             assert sum(item["bankQuota"] for item in subject[mix]) == subject["bankQuota"], (name, mix)
 
 
+def test_level_splits_match_kazanim_quotas_and_subject_mix() -> None:
+    plan = built_plan()
+    for name, subject in plan["subjects"].items():
+        totals = {item["key"]: 0 for item in subject["difficultyMix"]}
+        for unit in subject["units"]:
+            for row in unit["kazanimlar"]:
+                assert sum(row["levelSplit"].values()) == row["bankQuota"], (name, row["code"])
+                for level, count in row["levelSplit"].items():
+                    totals[level] += count
+        assert totals == {item["key"]: item["bankQuota"] for item in subject["difficultyMix"]}, name
+
+
 def test_math_task_quotas_cover_every_current_task() -> None:
     plan = built_plan()
     math = plan["subjects"]["Matematik"]

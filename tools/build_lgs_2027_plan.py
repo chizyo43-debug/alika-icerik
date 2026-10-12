@@ -9,6 +9,7 @@ kazanım code and evidence level. This tool turns it into a deterministic plan
 * unit shares per subject, weighted towards recent exams,
 * the expected question count per unit on a 2027 exam form,
 * bank quotas per subject, unit and kazanım (and per math task id),
+* a difficulty-level split per kazanım that adds up to the subject mix,
 * the curated item-type, difficulty and style profile of each subject.
 
 `--check` fails when the committed plan is out of date. `--tables` and
@@ -155,6 +156,25 @@ def kazanim_observations(inventory: dict[str, Any], subject: str) -> tuple[Count
     return primary, secondary
 
 
+def spread(counts: dict[str, int]) -> list[str]:
+    """Interleave labels with exact counts so every stretch keeps the overall mix.
+
+    Smooth weighted round-robin: each step adds every label's count to its
+    credit and emits the label with the highest credit.
+    """
+    total = sum(counts.values())
+    credit = {label: 0 for label in counts}
+    order = list(counts)
+    sequence = []
+    for _ in range(total):
+        for label in order:
+            credit[label] += counts[label]
+        pick = max(order, key=lambda label: (credit[label], -order.index(label)))
+        credit[pick] -= total
+        sequence.append(pick)
+    return sequence
+
+
 def build_subject(inventory: dict[str, Any], subject: str, quota: int,
                   codes_by_subject: dict[str, dict[str, str]]) -> dict[str, Any]:
     definition = inventory["subjects"][subject]
@@ -232,6 +252,14 @@ def build_subject(inventory: dict[str, Any], subject: str, quota: int,
         })
 
     profile = definition["styleProfile"]
+    difficulty = _mix(profile["difficultyMix"], quota)
+    # Hand out difficulty levels slot by slot in unit → kazanım order so each
+    # kazanım gets a near-proportional share and the subject totals are exact.
+    levels = iter(spread({item["key"]: item["bankQuota"] for item in difficulty}))
+    for unit_row in unit_rows:
+        for row in unit_row["kazanimlar"]:
+            split = Counter(next(levels) for _ in range(row["bankQuota"]))
+            row["levelSplit"] = {item["key"]: split.get(item["key"], 0) for item in difficulty}
     result: dict[str, Any] = {
         "registrySubject": definition["registrySubject"],
         "questionsPerExam": per_exam,
@@ -241,7 +269,7 @@ def build_subject(inventory: dict[str, Any], subject: str, quota: int,
         "bankQuota": quota,
         "units": unit_rows,
         "itemTypeMix": _mix(profile["itemTypeMix"], quota),
-        "difficultyMix": _mix(profile["difficultyMix"], quota),
+        "difficultyMix": difficulty,
         "targetMeanP": profile["targetMeanP"],
         "styleRules": profile["styleRules"],
         "avoid": profile["avoid"],
