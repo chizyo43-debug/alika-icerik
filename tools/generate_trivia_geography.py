@@ -30,7 +30,7 @@ from trivia_language import (
 )
 
 
-DATA_PATH = ROOT / "games" / "trivia" / "data" / "wikidata_countries.json"
+DATA_PATH = ROOT / "games" / "word-wheel" / "data" / "wikidata_countries.json"
 ENDPOINT = "https://query.wikidata.org/sparql"
 QUERY = """
 SELECT DISTINCT ?country ?countryLabel ?iso2 ?capital ?capitalLabel ?continent ?continentLabel WHERE {
