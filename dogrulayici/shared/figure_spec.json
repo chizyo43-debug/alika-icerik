@@ -1,0 +1,373 @@
+{
+  "version": "1.8.0",
+  "genericFields": {
+    "required": ["altTextKey"],
+    "optional": ["captionKey", "notToScale"],
+    "rules": [
+      "altTextKey ve captionKey paket labels sözlüğünde bulunmalıdır.",
+      "altTextKey görselin ölçülen cevabını açıklamadan anlamını erişilebilir biçimde anlatır.",
+      "captionKey kısa görünen başlıktır; görsel içindeki metinlerin yerine geçmez.",
+      "notToScale yalnız çizim gerçek oranları temsil etmiyorsa true olur."
+    ]
+  },
+  "comment": "AliKa şekil kataloğu — Android Kotlin Canvas + Windows Tkinter Canvas tek kaynağı. Kapalı liste: tür eklenmez, ad değişmez, parametre uydurulmaz. Kapsam: matematik, fen, sosyal/coğrafya ve kronoloji için yapılandırılmış eğitim görselleri. Müfredattaki semantik görsel adları bu temel türlere yönlendirilir.",
+  "labelRule": "Görünecek her kelime …Key / …Keys alanında i18n anahtarı olarak yazılır ve karşılığı paketin labels sözlüğüne konur. Sayılar düz yazılır. Tablo hücresinde ayrım: {\"key\":\"elma\"} çevrilir, {\"v\":\"3/4\"} çevrilmez.",
+  "kinds": {
+    "numberline": {
+      "required": ["min", "max"],
+      "optional": ["step", "marks", "highlight", "intervals", "jumps"],
+      "constraints": {
+        "minMax": "min < max",
+        "marks": "her eleman [min, max] aralığında",
+        "highlight": "her eleman [min, max] aralığında",
+        "intervals": "1.6: en çok 4 öğe; {from?, to?, fromClosed?, toClosed?, labelKey?, color?}. En az bir uç yazılır; uçlar [min, max] içinde, ikisi varsa from < to. Yazılmayan uç o yöne eksen ucuna kadar oklu ışındır (x > 2 gibi eşitsizlik). fromClosed/toClosed yalnız o uç varken true/false; varsayılan true (kapalı = dolu daire, açık = içi beyaz daire). color diyagram renk listesinden, none olamaz; varsayılan blue",
+        "jumps": "1.6: 1..6 öğe; {from, to, labelKey?, color?}. from ve to [min, max] içinde sayı, from ≠ to. Toplama/çıkarma ve ardışık ekleme için from'dan to'ya eksen üstünde oklu yay; ad verilmezse işaretli fark yazılır (+5, −3; dile göre ondalık ayırıcı, U+2212). intervals ve marks ile birlikte yazılmaz; başlangıç highlight ile işaretlenebilir. color diyagram renk listesinden, none olamaz; varsayılan accent",
+        "jumpsRender": "1.6: her atlama yarım elips yaydır, yüksekliği açıklığın 0,35'i (16..46 px/dp); ok ucu varış noktasında aşağı bakar, ad tepenin 4 px/dp üstündedir. Önceki bir yay ya da ad bu yayın üstünde kalıyorsa (geri dönüş, iç içe binme) atlama bir kata çıkar: tabanı açıklıktaki önceki çizimlerin 10 px/dp üstüne alınır, uçları eksene kesik çizgiyle iner. Ad önceki ad ya da yaya binerse taban yükselir. Ortak tarif numberline_jumps_layout / FigureMath.numberlineJumps. Yer yetmezse eksen aşağı iner, yazı küçültülmez.",
+        "intervalsRender": "1.6: ilk aralık eksen üstünde (marks varsa 56 px/dp yukarıda), sonraki her aralık 22 px/dp, alttaki aralığın adı varsa ad yüksekliği + 4 daha yukarıda kademelenir; kademeli uçlar eksene kesik çizgiyle iner. Yer yetmezse eksen aşağı iner, yazı küçültülmez.",
+        "render": "1.5: çentik değeri min+i*step ile hesaplanır (birikimli toplama yok); ondalık ayırıcı dile göre (tr ve virgüllü dillerde ','), negatif işaret U+2212. Her mark nokta ve değer etiketiyle çizilir; step sonlu ondalıksa mark etiketi ondalık, değilse a/b kesir olarak yazılır."
+      }
+    },
+    "fraction": {
+      "required": ["style", "parts"],
+      "optional": ["filled", "wholes", "rows", "rowsFilled"],
+      "constraints": {
+        "style": ["bar", "pie", "grid", "area"],
+        "parts": "2 <= parts <= 24",
+        "filled": "0 <= filled <= parts * wholes",
+        "area": "1.6 kesirlerde çarpma alan modeli: style area ile birim kare parts sütun (2..12) × rows satır (2..12) bölünür; filled soldan taralı sütun sayısı (0..parts, mavi), rowsFilled üstten taralı satır sayısı (0..rows, sarı); kesişim çarpımdır ve koyu (accent) boyanır. Sütun kesri (filled/parts) karenin üstünde, satır kesri (rowsFilled/rows) solunda köşeli ayraçla otomatik yazılır; 0 olan kesir yazılmaz. wholes yazılmaz. Ortak tarif fraction_area_layout / FigureMath.fractionAreaLayout; kare kenarı yazı payı düşülerek seçilir, yazı küçültülmez.",
+        "rows": "1.6: yalnız style area; 2..12 tam sayı, zorunlu.",
+        "rowsFilled": "1.6: yalnız style area; 0..rows tam sayı (varsayılan 0).",
+        "wholes": "1.6: 1..4 tam sayı (varsayılan 1). Bileşik ve tam sayılı kesir için aynı modelden wholes adet çizilir: bar bütünleri alt alta, pie ve grid bütünleri parçayı en büyük yapan sütun sayısıyla (eşitlikte yan yana, eksik son satır ortada). filled birinci bütünden başlayarak doldurulur; ör. 2 3/4 = 11/4: parts 4, wholes 3, filled 11. Daire dilimleri iki platformda tepeden saat yönünde. Ortak tarif: windows/figure_contract.py fraction_layout."
+      }
+    },
+    "shape": {
+      "required": ["type"],
+      "optional": ["dims", "sideLabels", "marks", "sides", "points", "vertexKeys", "cubes", "circleParts", "centerKey", "net", "view", "projection"],
+      "constraints": {
+        "type": ["square", "rect", "triangle", "circle", "polygon", "cuboid", "prism", "pyramid", "cylinder", "cone", "cubes"],
+        "dims": "alanlar w,h,r,a,b,c ve yalnız cuboid için d; tüm değerler > 0. Üçgen kenarları (eksikler en uzun verilen kenarla şematik tamamlanır) üçgen eşitsizliğini sağlamalı.",
+        "vertices": "1.6: square/rect/triangle köşeleri sol alttan (v0) saat yönü tersine sıralanır; kenar i köşe i ile i+1 arasındadır. Dikdörtgende kenar 0 alt (w), 3 sol (h); üçgende kenar 0 = c (taban), 1 = a, 2 = b.",
+        "polygon": "1.6: yalnız type=polygon ile ya sides (3..12 tam sayı; tabanı yatay düzgün çokgen) ya da points (3..12 adet [x, y], y yukarı, yazılan sırayla köşe; kendini kesmeyen ve alanı sıfır olmayan) yazılır, ikisi birlikte yazılmaz. İkisi de yoksa düzgün altıgen çizilir. polygon sideLabels anahtarları kenar sırasıdır (\"0\"..\"n-1\").",
+        "vertexKeys": "1.6: circle dışında köşe sayısı kadar boş olmayan etiket anahtarı; köşe adı iki komşu kenarın dış yönünde şeklin dışında yazılır.",
+        "marks": "1.6: circle dışında {equal?, parallel?, right?, angles?, exterior?, height?, median?, bisector?}. equal: 1..3 grup, her grup ≥ 2 farklı kenar sırası, bir kenar tek grupta; grup k (0'dan) k+1 kısa dik çentikle çizilir ve gruptaki kenarlar çizimde eşit olmalı (göreli fark ≤ %1). parallel: 1..3 grup, her grup ≥ 2 farklı kenar sırası, bir kenar tek grupta; gruptaki kenarlar çizimde paralel (yön farkı 180° kipinde ≤ 1°); grup k k+1 iç içe ok başıyla çizilir, gruptaki oklar ilk kenarın yönünü gösterir, kenar equal çentiği de taşıyorsa oklar çentiklerin ötesine kayar (ortak tarif shape_parallel_marks). right: farklı köşe sıraları; köşe çizimde 90° ± 1° olmalı, küçük kare işaretle çizilir. angles: {\"köşe sırası\": anahtar} iç açı yayı ve adı (\"50°\", \"x\"); ad iki kenarın ortaortayında, şeklin içinde, kenarlara değmeden yazılır; dik açı işaretli köşede yay yerine kare kalır. exterior: aynı biçimde dış açı; gelen kenar köşeden öteye uzatılır, yay uzantı ile sonraki kenar arasında, ad dışarıda. angles/exterior yalnız dışbükey köşede (iç açı < 180°). height: {from, to, labelKey?} köşe from'dan kenar to'nun doğrusuna kesik dikme ve ayakta dik açı işareti; from, to kenarının ucu olamaz; ayak kenarın dışındaysa kenar kesik uzatılır (geniş açılı üçgen); dikme bir kenarla çakışırsa (dik kenar) reddedilir. Yükseklik çıktığı köşenin açı adı yüksekliğin ayırdığı büyük parçaya yazılır. median / bisector (yalnız üçgen): {from, labelKey?} köşe from'dan karşı kenara (kenar from+1) kenarortay ya da iç açıortay; kenarortayda karşı kenarın iki yarısı eş çentiklenir (karşı kenar equal içinde olamaz), açıortayda köşedeki iki eş yarı tek çentikli yaylarla gösterilir (o köşeye angles/exterior/right yazılmaz). Ad çizginin ortasında, ayırdığı büyük açı tarafında; başka çizgiye ya da yazıya binerse çizgi boyunca kayar. Ortak tarif: windows/figure_contract.py shape_height, shape_angle_mark, shape_cevian.",
+        "circleParts": "1.6: yalnız type=circle ile. 1..8 öğe {kind, at | from,to, labelKey?, shaded?}; açılar derece, 0 <= açı < 360, 0° sağ, saat yönü tersine. radius/diameter/point: at; chord/arc/sector: from ve to (farklı; sector/arc from'dan to'ya saat yönü tersine). point labelKey zorunlu (çevre noktası adı); shaded yalnız sector, varsayılan true (dilim sarı taralı). Yarıçap/çap adı çizginin ortasında üst yanda, kiriş adı merkeze doğru, nokta ve yay adı çemberin dışında, dilim (merkez açı) adı açı yayının ortaortayında dilimin içinde; sığmazsa dışarıda. Dış adlar sığmazsa çember küçülür, yazı küçülmez. circleParts'ta radius yoksa eski dims.r / sideLabels.r yarıçapı 0°'de çizilir. Ortak tarif: windows/figure_contract.py circle_layout.",
+        "centerKey": "1.6: yalnız type=circle ile; merkez noktasının adı (O). Merkez noktası centerKey varken ya da merkezden çizgi çıkınca çizilir; ad en geniş boş açıya yazılır.",
+        "render": "1.6: kenar adları kenarın dış normali yönünde, yazı kutusu kenara ve çentiklere değmeden yazılır; köşe adları kalın, beyaz haleli.",
+        "net": "1.6: true/false; true yalnız cuboid, prism, pyramid, cylinder, cone ile. Cisim yerine açınımı çizilir (yan yüzler surface, tabanlar paper): cuboid haç açınım (sol, ön, sağ, arka yan yana; üst ve alt ön yüze bağlı), prism yan dikdörtgenler yan yana ve iki taban ortadakine bağlı, pyramid taban ortada ve her kenara yan yüz yüksekliği √(h² + taban iç yarıçapı²) kadar açılan üçgen, cylinder 2πr × h dikdörtgen ve üstte/altta iki daire, cone ana doğru √(r² + h²) yarıçaplı 360·r/l derecelik daire dilimi ve yayın ortasına değen taban dairesi. Ölçü adları açınımın dış kenarında (piramitte a tabanın içinde); piramit/koni yüksekliği açınımda görünmez, sideLabels.h yazılmaz. Ortak tarif: windows/figure_contract.py solid_net.",
+        "view": "1.6: yalnız type=cubes ile front, top, right ya da left. Yapı yerine o yönden dik görünümü çizilir: görülen her birim kare mavi dolgulu (derinlik birleşir; front x-y, top x-z ve ön aşağıda, right z-y ve ön sağda, left z-y ve ön solda). projection ile birlikte yazılmaz. Ortak tarif: windows/figure_contract.py solid_drawing.",
+        "projection": "1.6: yalnız type=cubes ile oblique (varsayılan eğik izdüşüm) ya da isometric. isometric yapıyı izometrik çizer (x sağa aşağı, z sağa yukarı 30°, kenarlar birim; uzaktan yakına boyanır) ve altına izometrik nokta kağıdı koyar: küp köşeleri noktalara denk gelir, kağıt çizimin çevresinde bir aralık taşar (isometric_dots). Küp yapısında birim en çok çizim alanının dörtte biridir; şıklardaki yapılar aynı ölçekte görünür.",
+        "solid": "1.6 hazır cisimler: cuboid (dims w,h,d; yalnız w verilirse küp), prism (sides 3..8, varsayılan 3; dims a taban kenarı, h), pyramid (sides 3..8, varsayılan 4; dims a, h), cylinder ve cone (dims r, h), cubes (birim küp yapısı). Eksik ölçü şematik tamamlanır (prism/pyramid h = 1.5a, cylinder/cone h = 2r); çizilen en büyük/en küçük ölçü oranı ≤ 8. Cisimlerde points, vertexKeys ve marks yazılmaz; sides yalnız prism/pyramid; dims ve sideLabels anahtarları yalnız türün ölçü adlarıdır (sideLabels {\"w\": \"anahtar\"} gibi; yazılmayan ama dims'te olan ölçünün sayısı yazılır). cubes yalnız type=cubes ile: 1..40 farklı [x, y, z] (0..7 tam sayı; x sağa, y yukarı, z geriye); her küp yerde (y=0) ya da altındaki küpün üstünde durur. Çizim eğik izdüşümdür (derinlik yarım ölçek, 40°): görünen yüzler dolgulu, gizli kenarlar kesik; silindir/koni tabanının arka yarısı kesik, koni ve piramit yüksekliği h yazılınca kesik çizgiyle gösterilir. Ortak çizim tarifi: windows/figure_contract.py solid_drawing."
+      }
+    },
+    "angle": {
+      "required": ["degrees"],
+      "optional": ["rays", "labelKey", "transversal", "angleKeys", "lineKeys", "construction", "protractor", "adjacent", "rayKeys", "vertexKey"],
+      "constraints": {
+        "degrees": "0 < degrees <= 360",
+        "transversal": "1.6: true ise paralel iki yatay doğru (0 üstte, 1 altta, paralellik oklu) ve onları degrees açıyla (30 ≤ degrees ≤ 150; sağa doğru, 0. doğrunun sağ kolundan saat yönü tersine) kesen doğru (2) çizilir; rays ve labelKey yazılmaz. Açı sırası üst kesişimde 1 sağ üst, 2 sol üst, 3 sol alt, 4 sağ alt; alt kesişimde aynı sırayla 5..8 (1, 3, 5, 7 = degrees; 2, 4, 6, 8 = 180 - degrees).",
+        "angleKeys": "1.6: transversal=true ile (adjacent ile kullanımı adjacent maddesinde); {\"açı sırası 1..8\": anahtar}. Adlı açıya yay (90°'de kare) ve ad kolların ortaortayında, yaydan ve doğrulardan uzakta yazılır. Yazılmazsa yalnız 1. açıya ölçü yazılır.",
+        "lineKeys": "1.6: yalnız transversal=true ile; {\"0\"|\"1\"|\"2\": anahtar} doğru adları (d₁, d₂, k). Paralel adları kesenin üst ucunun karşı yanındaki uçta çizginin üstünde, kesenin adı üst ucunun yanında. Sığmazsa paraleller yaklaşır, yazı küçülmez. Ortak tarif: windows/figure_contract.py transversal_layout.",
+        "construction": "1.6: true/false; true yalnız rays=3 ve degrees ≤ 180 ile. Açıortayın pergel-cetvel izi çizilir: köşe merkezli yay iki ışını keser, o noktalardan çizilen eş yaylar açıortay üstünde kesişir. Yaylar ölçü yazısına değmez; kesişim ışın boyuna sığmazsa yalnız açıortay ışını tuval içinde uzar. Ortak tarif: windows/figure_contract.py angle_construction.",
+        "adjacent": "1.6: 1..6 sayı, her biri ≥ 15 derece, toplamı degrees. Tek köşede yan yana açılar çizilir: ilk ışın sağa, açılar saat yönünün tersine sırayla (toplam 90 tümler, 180 bütünler; 360'ta son ışın ilkine düşer: kesişen iki doğruda ters açılar, bir nokta etrafındaki açılar). Her açının kendi yayı vardır (yan yana yaylar küçük/büyük yarıçap ve iki renkle ayrılır, 90°'de kare); adı angleKeys {\"1..n\": anahtar} ile, verilmezse ölçüsü yazılır. rays, labelKey, transversal, construction, protractor ile yazılmaz. Ortak tarif: windows/figure_contract.py adjacent_layout.",
+        "rayKeys": "1.6: yalnız adjacent ile; ışın sayısı kadar (360'ta açı sayısı, değilse açı sayısı + 1) boş olmayan anahtar. Ad ışın ucunun ötesinde yazılır.",
+        "vertexKey": "1.6: yalnız adjacent ile; köşe adı (O). En geniş boşlukta yazılır; boşluk bir açının içindeyse o açının yayı adın dışına alınır.",
+        "protractor": "1.6: true/false; true yalnız rays=2 ve degrees ≤ 180 ile, transversal ve construction olmadan. Köşe tabanın ortasında yarım daire iletki çizilir: ölçek saat yönünün tersine 0..180, ilk ışın 0 çizgisinde (sağ). 10° uzun, 5° orta, yer varsa 1° kısa çentik; sayılar 10/20/30 derecede bir (aralık ≥ 30 px), 0 ve 180 tabanın üstünde. Ölçü yazısı kendiliğinden yazılmaz (öğrenci okur); labelKey verilirse açının ortaortayında, iletkinin iç bölgesinde yazılır. Ortak tarif: windows/figure_contract.py protractor_layout.",
+        "rays": "1.6: yalnız 2 (varsayılan) ya da 3 tam sayı; 3 açıortayı üçüncü ışın olarak çizer ve iki eş yarıyı tek çentikli iç yaylarla gösterir.",
+        "render": "1.6: köşe tuval ortasında, ilk ışın sağa, ışınlar oklu. labelKey yoksa ölçü dilin ondalık ayırıcısıyla yazılır (45,5°). Yazı yayın dışında ve ışınlara değmeden: rays=2'de açının ortaortayında, rays=3'te ilk yarının ortasında; ışınlar arasına sığmayan yazı ışın uçlarının ötesine geçer, tuvale sığmazsa ışınlar kısalır, yazı küçülmez. 360° yay tam çemberdir. Ortak tarif: windows/figure_contract.py angle_layout."
+      }
+    },
+    "grid": {
+      "required": ["cols", "rows"],
+      "optional": ["shaded", "labels"],
+      "constraints": {
+        "cols": "1 <= cols <= 20",
+        "rows": "1 <= rows <= 20",
+        "shaded": "her indeks 0 <= i < cols*rows",
+        "labels": "1.6: hücre adları {\"hücre sırası\": anahtar}; sıra 0 <= i < cols*rows (soldan sağa, yukarıdan aşağı), değer boş olmayan etiket anahtarı. Ad hücrenin ortasında, kalın ve beyaz haleyle yazılır. Eski paketlerdeki boş liste [] geçerlidir."
+      }
+    },
+    "coordinate": {
+      "required": ["xRange", "yRange"],
+      "optional": ["points", "segments", "labels", "step", "grid", "axes", "equalScale", "axisKeys", "polygons", "lines", "vectors"],
+      "constraints": {
+        "xRange": "[min, max], min < max, sonlu sayılar",
+        "yRange": "[min, max], min < max, sonlu sayılar",
+        "step": "1.6: > 0; max(xRange aralığı, yRange aralığı) / step <= 40. Yazılmazsa tam sayı uçlu ve 4..12 birimlik eksende 1, diğerlerinde en çok 12 aralık bırakan 1-2-5×10^n adımı",
+        "grid": "1.6: none|lines|dots; varsayılan none (dots = noktalı kâğıt)",
+        "axes": "1.6: true/false; varsayılan true. false ise eksen, çentik, sayı ve axisKeys çizilmez",
+        "equalScale": "1.6: true ise x ve y birimi aynı uzunlukta çizilir (kare birim, şekil bozulmaz); varsayılan false",
+        "axisKeys": "1.6: {\"x\": anahtar, \"y\": anahtar}; eksen adları (ör. zaman (s), konum (m)); axes=false iken yazılmaz",
+        "polygons": "1.6: en çok 8 öğe; {points: 3..24 adet [x, y] aralık içinde, labelKey?, color?}; color diyagram renk listesinden, none olamaz; varsayılan accent-soft dolgu ve ink kenar",
+        "lines": "1.6: en çok 4 öğe; {through: aralık içinde iki farklı [x, y], labelKey?, color?}; sonsuz doğru çizim alanına kırpılır, iki ucu oklu; varsayılan blue. 1.6 style: line (varsayılan) | axis; axis simetri eksenidir: kesik çizgi, ok ucu yok, varsayılan danger",
+        "vectors": "1.6: en çok 4 öğe; {from: [x, y], to: [x, y], labelKey?, color?}; iki farklı nokta aralık içinde. Öteleme oku from'dan to'ya düz çizgi ve uçta ok; varsayılan orange. Ad okun orta noktasından gidiş yönünün soluna dik açılır, kutusu oka 8 px/dp uzak; tuvalden taşarsa sağ yana geçer (ortak tarif coordinate_vector_label / FigureMath.coordinateVectorLabel). Ötelenmiş şekil ayrı polygons öğesi olarak yazılır.",
+        "render": "1.6: 0 aralıktaysa eksenler orijinden geçer, değilse alt/sol kenarda durur; pozitif uçta ok. Çizim sırası ızgara → çokgen → doğru → doğru parçası → eksen → öteleme oku → nokta → etiketler. Her adımda çentik; sayılar dile göre ondalık ayırıcı ve gerçek eksi işaretiyle yazılır, sığmazsa adımın katlarına seyreltilir; eksenler kesişiyorsa orijinde tek 0 yazılır"
+      }
+    },
+    "chart": {
+      "required": ["style", "categoryKeys", "values"],
+      "optional": ["axisKeys", "orientation", "seriesKeys", "showPercent", "binEdges", "unit", "unitKey", "symbol", "title", "titleStyle", "axisUnits"],
+      "constraints": {
+        "title": "1.8: AMI metni; şeklin üstünde sola yaslı çizilir. «Grafik: Başlık» biçiminde iki noktaya kadar olan kısa önek (en çok 12 karakter, tek sözcük) kalın, başlık normal yazılır. titleStyle yalnız prefix-above (varsayılan).",
+        "axisUnits": "1.8: {x?, y?} birim metni; yalnız axisKeys ile. Eksen adının yanına parantezle yazılır: «Fiyat (TL)».",
+        "style": ["bar", "line", "pie", "dot", "histogram", "pictograph", "tally"],
+        "lengths": "len(categoryKeys) == len(values) >= 1",
+        "pie": "style=pie ise axisKeys yazılmaz; değerler ≥ 0 ve toplamı > 0. 1.6: dilim adları renk kutulu lejantta yazılır (yer varsa dairenin yanında, yoksa altında); showPercent=true ise her adın yanında payı bir ondalıkla yüzde olarak yazılır (tr/az: %25, diğer diller: 25%).",
+        "showPercent": "1.6: yalnız style=pie ile true/false",
+        "orientation": "1.6: yalnız style=bar ile vertical|horizontal; varsayılan vertical. horizontal: kategori adları solda, değer ekseni altta, değer yazısı sütun ucunda; axisKeys.x kategori adı (sol üstte), axisKeys.y değer adı (altta).",
+        "seriesKeys": "1.6: yalnız style=bar|line ile 2..4 seri adı anahtarı; bu durumda values[i] seri sayısı kadar sonlu sayı listesidir (gruplu sütun / çok çizgili grafik). Seriler accent, gold, success, purple sırasıyla boyanır ve çizim alanının üstünde renk lejantı çizilir; dar gruplu sütuna sığmayan değer yazısı yazılmaz, ölçek okunur.",
+        "dot": "1.6: style=dot nokta (sıklık) grafiğidir; values 0..20 tam sayı, her kategorinin üstünde değeri kadar üst üste nokta çizilir, y ölçeği çizilmez.",
+        "histogram": "1.6: style=histogram değerleri ≥ 0; sütunlar bitişik çizilir. binEdges yalnız histogramda, len(values)+1 adet kesin artan sonlu sayıdır; yazılırsa kategori adları yerine sınır sayıları sütun kenarlarına yazılır, sığmayan ara sınırlar seyreltilir.",
+        "pictograph": "1.6: style=pictograph şekil grafiğidir: çerçeveli tabloda kategori adları solda, her satırda değer/unit kadar sembol (yarım değer sol yarı sembol), altta sembol anahtarı '● = unit unitKey'. unit pozitif sayı (varsayılan 1); her değer unit'in yarım katıdır ve satırda en çok 12 sembol olur. symbol ∈ circle|square|star (varsayılan circle); unitKey anahtarın birim adıdır. unit, unitKey, symbol yalnız pictograph ile yazılır; axisKeys yazılmaz. Ortak tarif: windows/figure_contract.py pictograph_symbol.",
+        "tally": "1.6: style=tally çetele tablosudur: kategori adları solda, her satırda değeri kadar çizgi; dört dik çizgiden sonra beşincisi onları çapraz keser (beşli demet). Değerler 0..30 tam sayı; sayı yazılmaz, axisKeys yazılmaz. Ortak tarif: windows/figure_contract.py tally_strokes.",
+        "render": "1.5: bar/line grafiğinde y ekseni sıfır tabanlı ve ortak ölçeklidir; 1-2-5×10^n adımlı 3..6 çentik, sayı etiketi ve açık ızgara çizgisi çizilir. Değer etiketleri dile göre ondalık ayırıcı kullanır.",
+        "lineValues": "1.7: style=line ve seriesKeys ile her nokta değeri noktanın üstüne yazılır; başka bir noktaya, değere ya da çizim alanı dışına çarparsa altına konur, ikisi de çarparsa yazılmaz (yazı küçülmez, ölçek okunur)."
+      }
+    },
+    "table": {
+      "required": ["headerKeys", "rows"],
+      "optional": ["highlight", "title", "titleStyle", "rowHeaderBold"],
+      "constraints": {
+        "rows": "her satır len(headerKeys) hücreli",
+        "cell": "hücre {\"key\":\"…\"} veya {\"v\":\"…\"}; 1.8: düz dize hücre {\"v\": dize} kısaltmasıdır. v metni AMI alır (yığılı kesir, üs, ✓).",
+        "title": "1.8: AMI metni. titleStyle=prefix-above (varsayılan): tablonun üstünde sola yaslı, «Tablo:» öneki kalın, başlık normal. titleStyle=header-row: başlık tablonun ilk satırıdır; tüm sütunlarda birleşik, açık dolgulu (surface), kalın, ortalı; sütun başlıkları altında.",
+        "rowHeaderBold": "1.8: true ise her satırın ilk hücresi kalın yazılır (satır başlığı)."
+      }
+    },
+    "flow": {
+      "required": ["nodes", "edges"],
+      "optional": ["direction", "numbered"],
+      "constraints": {
+        "nodes": "nodes[i] = {\"id\",\"labelKey\",\"shape\"?}",
+        "edges": "edges[i] = {\"from\",\"to\",\"labelKey\"?}",
+        "numbered": "1.7: true/false (dize değil); varsayılan true. false ise adım numarası rozetleri çizilmez ve kutu yazısı rozet için yer ayırmaz; sırayı yalnız oklar gösterir.",
+        "shape": "1.6: process|decision|terminal|io. Bir düğüm shape taşıyınca algoritma akış şemasıdır: yazılmayan process sayılır; direction yalnız horizontal|vertical (varsayılan vertical); decision ≥ 2 çıkış ve her çıkış labelKey (Evet/Hayır) taşır; diğer simgeler ≤ 1 çıkış; terminal ya girişsiz (başla) ya çıkışsız (bitir); düğüm kendine bağlanamaz. Döngü okları serbesttir.",
+        "render": "1.5: bağlantılar yönlü ve döngüsüzse düğümler en uzun yol katmanlarına yerleşir; aynı katmandaki düğümler dik eksende yayılır, dal ve birleşme korunur. Her bağlantı oklu çizilir ve ok ucu hedef kutunun kenarında biter. direction=cycle veya döngülü grafikte dairesel yerleşim kullanılır."
+      }
+    },
+    "circuit": {
+      "required": ["elements"],
+      "optional": ["layout", "labelKeys"],
+      "constraints": {
+        "elements": ["battery", "lamp", "switch", "resistor", "wire", "ammeter", "voltmeter", "motor", "buzzer", "led", "fuse"],
+        "element": "1.6: dize ya da {\"type\",\"labelKey\"?,\"state\"?,\"branch\"?,\"across\"?}. state ∈ open|closed yalnız switch (kapalı kol çizilir). branch 0..3 yalnız layout=parallel ve pil/tel dışı elemanda: ardışık, en az iki kol, kolda ve ana hatta ≤ 3; branch yazılmayan eleman ana hattadır. across yalnız seri düzende voltmetrede: ölçülen (voltmetre/tel olmayan) elemanın elements sırası; her elemana tek voltmetre, hatta değil üstte köprü olarak çizilir. labelKey yazılmazsa labelKeys[type].",
+        "layout": ["series", "parallel"],
+        "labelKeys": "kendi labelKey'i olmayan her element türü ve layout için labels anahtarı",
+        "render": "1.6: paralel düzende son kol alt teldir (ayrı alt tel yok) ve her kol elemanı kendi sembolü ve adıyla çizilir; eski biçimde pil ana hatta, her alıcı kendi kolundadır. Dar seri hatta adlar iki satıra dağılır."
+      }
+    },
+    "diagram": {
+      "required": ["elements"],
+      "optional": ["viewBox"],
+      "constraints": {
+        "viewBox": "[x,y,w,h], w>0 ve h>0; varsayılan [0,0,100,60]",
+        "elements": "1..40 güvenli yapılandırılmış öğe",
+        "types": ["circle", "ellipse", "rect", "line", "polygon", "arc"],
+        "styles": {
+          "circle": ["plain", "sun", "earth", "moon", "planet", "pulley", "dashed", "dotted"],
+          "ellipse": ["plain", "orbit", "asteroid_belt", "dashed", "dotted"],
+          "rect": ["plain", "block", "battery", "dashed", "dotted"],
+          "line": ["plain", "ray", "rope", "force", "dashed", "dotted"],
+          "polygon": ["plain", "shadow", "support", "incline", "dashed", "dotted"],
+          "arc": ["plain", "orbit", "dashed", "dotted"]
+        },
+        "strokeRender": "1.5: width viewBox birimidir ve 0.1..8 aralığındadır; çizgi kalınlığı px = clamp(width*scale*0.55, 1.5, 8). Ok ucu boyu max(9, 4w), yarı genişliği max(4, 1.7w); çizgi ok tabanında biter. Beyaz zeminde 3:1 altında kalan çizgi tonları yalnız kenar/çizgi olarak koyu eşleriyle çizilir: accent #0E7C8A, gold #A86B00, teal #13786F, orange #C2571F. Dolgu renkleri değişmez.",
+        "polygonPoints": "1.5: polygon points 3..128 (yay/daire dilimi yaklaşık çokgeni için); öğe sınırı 40 değişmez.",
+        "lineArrow": "1.7: line öğesinde arrow ∈ none|first|last|both (dize). Yazılmazsa style=force ve style=ray için last, diğer stillerde none; ok ucu strokeRender ölçüsündedir. Kuvvet/ışın okunu kaldırmak için arrow=none yazılır.",
+        "strokeStyles": "1.4: dashed=(6,4), dotted=(2,3) piksel desen; düz çizimin kesik/noktalı kenarıdır, anlamsal stil ile birleşmez. Eski dash=true (5,4) olarak korunur.",
+        "colors": ["ink", "muted", "accent", "gold", "success", "danger", "surface", "blue", "teal", "purple", "orange", "earth", "land", "moon", "white", "none", "paper", "gold-soft", "success-soft", "blue-soft", "muted-soft", "danger-soft", "accent-soft"],
+        "colorValues": {"paper": "#FFFFFF", "gold-soft": "#FBE3A6", "success-soft": "#CDEBD7", "blue-soft": "#CFE0FC", "muted-soft": "#C9D1DE", "danger-soft": "#F6D0CE", "accent-soft": "#C7F1F6"},
+        "patterns": ["hatch", "crosshatch"],
+        "patternRules": "pattern yalnız rect, polygon, circle ve ellipse için; patternColor yalnız pattern ile ve görünür renk (none değil), varsayılan muted. hatch 45° paralel çizgi, crosshatch iki köşegen ailesi; çizgiler şeklin içine çift-tek kuralıyla kırpılır, aralık max(6px, 2.2*scale), kalınlık max(1px, 0.25*scale); dolgu önce, tarama sonra, kenar en üstte yeniden çizilir. Gök cismi circle'ı taranmaz.",
+        "icons": ["sun", "mercury", "venus", "earth", "moon", "mars", "jupiter", "saturn", "uranus", "neptune"],
+        "iconRules": "icon yalnız circle için ve style plain/dashed/dotted iken yazılır; gerçek gök cismini adlandırır, renkleri sabittir, fill yok sayılır. Çizici gövdeyi, kuşak/kıta/krater ayrıntısını, parlamayı ve kenarı r içinde çizer. saturn halkası merkezden 1.9r yatay, 0.42r dikey uzanır; arka yarısı gezegenin arkasında, ön yarısı önünde çizilir ve x±1.9r viewBox içinde kalmalıdır. Ortak çizim tarifi: windows/library/diagram_paint.py icon_shapes.",
+        "labels": "görünen adlar labelKey ile, özel konum gerekirse labelX ve labelY birlikte verilir. Etiketler bütün geometriden sonra çizilir; her etiketin altında tuval zemin renginde 1px hale (8 yöne kaydırılmış kopya) bulunur. Konum yoksa circle/ellipse altına, rect merkezine, line ortasının üstüne, polygon ağırlık merkezine yazılır; metin dikeyde konuma ortalanır. 1.5: genişlik ≥720 ise etiket 13 pt (Android 14 dp), daha dar alanda 11 pt (Android 12 dp); Android'de kullanıcı yazı ölçeğiyle çarpılır, sığmayan metin satıra sarılır."
+      }
+    },
+    "map": {
+      "blankForm": {
+        "comment": "1.5: kurgusal harita için alternatif biçim. base alanı varsa mapType/regions/viewBox/points/legend yazılmaz; koordinatlar 0..100 normalize, y aşağı doğru artar. Çizici bunu mapType=schematic, viewBox [0,0,100,100] haritası olarak çizer (polygons→regions, colorToken→fill, markers→dot noktaları, routes→route).",
+        "required": ["base"],
+        "optional": ["polygons", "markers", "routes"],
+        "base": ["blank"],
+        "rejectedBases": "world ve turkiye reddedilir: depoda sürümlü sınır verisi yoktur.",
+        "polygons": "0..32 adet {id,points,labelKey?,colorToken?}; id benzersiz, points 3..128, colorToken diagram rengi (none değil)",
+        "markers": "0..64 adet {id?,x,y,labelKey?}",
+        "routes": "0..32 adet {points,labelKey?}; points 2..64",
+        "rules": ["En az bir polygon, marker veya route gerekir.", "Alt nesnelerde listelenmemiş alan reddedilir."]
+      },
+      "required": ["mapType", "regions"],
+      "optional": ["viewBox", "points", "routes", "legend", "northArrow", "scaleKey", "boundarySetId", "boundaryVersion", "territoryReview"],
+      "constraints": {
+        "mapType": ["schematic", "political", "physical", "thematic", "route", "hazard", "weather"],
+        "viewBox": "[x,y,w,h], w>0 ve h>0; varsayılan [0,0,100,60]",
+        "regions": "1..64 adet {id,points,labelKey?,fill?,stroke?}; points 3..512 koordinat çifti",
+        "points": "0..64 adet {x,y,labelKey?,symbol?}; symbol dot|city|capital|station|mountain|port",
+        "routes": "0..32 adet {points,labelKey?,style?,arrow?}; points 2..256, style route|river|border|front|wind",
+        "legend": "0..12 adet {labelKey,color}; renk Figure Spec renk anahtarıdır",
+        "boundaryEvidence": "schematic dışındaki haritalarda boundarySetId ve boundaryVersion zorunludur",
+        "territoryReview": "political haritalarda passed-human zorunludur; pending otomatik yayımlanamaz",
+        "rules": [
+          "Gerçek ülke/bölge sınırı tahmin edilmez; doğrulanmış boundarySetId kullanılır.",
+          "Harita başlığı captionKey, açıklaması altTextKey, kaynak gösterimi scaleKey/labels yerine paket provenance alanında tutulur.",
+          "Siyasi veya ihtilaflı sınır içeren harita bağımsız insan incelemesi olmadan yayımlanmaz."
+        ]
+      }
+    },
+    "timeline": {
+      "required": ["events"],
+      "optional": ["orientation", "periods"],
+      "constraints": {
+        "orientation": ["horizontal", "vertical"],
+        "events": "2..40 adet {id,position,labelKey,dateKey?,color?}; position 0..1 aralığında ve artan",
+        "periods": "0..12 adet {start,end,labelKey,color?}; 0<=start<end<=1",
+        "rules": [
+          "Tarih veya dönem metni düz yazılmaz; dateKey ve labelKey paket labels sözlüğüne çözülür.",
+          "Aynı konumdaki olaylar üst üste bindirilmez; üretici benzersiz position değerleri kullanır.",
+          "1.5: yatay çizelgede dateKey eksenin üstünde, labelKey altında yazılır; position değerleri eşit aralığa yayılmaz. Komşu metinler çakışırsa yalnız çakışan olay bir kat uzağa kaydırılır."
+        ]
+      }
+    },
+    "chance": {
+      "required": ["tool"],
+      "optional": ["items", "sectors", "pointer", "faces", "coins", "cards"],
+      "constraints": {
+        "tool": ["bag", "spinner", "dice", "coin", "cards"],
+        "colors": {"red": "#E5484D", "blue": "#3E7BFA", "green": "#2F9E57", "yellow": "#F5C518", "purple": "#8E5BD0", "orange": "#F2873A", "white": "#FFFFFF", "black": "#2A2F36"},
+        "items": "Yalnız bag ve zorunlu: 1..6 adet {color,count,labelKey?}; renkler farklı, count 1..30, toplam en çok 30 top.",
+        "sectors": "Yalnız spinner ve zorunlu: 2..12 adet {color,labelKey?,weight?}; weight 1..12 tam sayı (varsayılan 1), dilim açısı ağırlıkla orantılı.",
+        "pointer": "Yalnız spinner: okun gösterdiği dilim sırası (0'dan). Verilmezse ok çizilmez, yalnız merkez pimi.",
+        "faces": "Yalnız dice ve zorunlu: 1..3 adet 1..6 tam sayı; zarlar yan yana, yüz noktalarıyla.",
+        "coins": "1.6: yalnız coin ve zorunlu: 1..4 adet {side, labelKey?}; side heads (tura: ortada yıldız amblem) ya da tails (yazı: çizgilerle \"1\" rakamı). Paralar yan yana, yarıçap en çok 60; ad paranın altında yazılır, ad varken para küçülür. Ortak tarif: windows/figure_contract.py chance_coin_layout.",
+        "cards": "1.6: yalnız cards ve zorunlu: 1..12 adet {value?, labelKey?, color?, faceDown?}. Açık kartta value (0..99 tam sayı) ya da labelKey'den tam biri; faceDown true kartta ikisi de yazılmaz, sırtı (iç çerçeve ve eşkenar dörtgen) çizilir. color renk paletinden; açık kart varsayılanı white, kapalı kart blue; koyu renkte (red, blue, green, purple, black) yazı beyazdır. Kartlar sıra sıra (bir sırada en çok 6), en/boy 2:3; kart yazısı etiketten büyüktür ve sığmazsa sıradaki kart sayısı azalır, yazı küçülmez. Ortak tarif: windows/figure_contract.py chance_cards_layout.",
+        "rules": [
+          "1.6: torbadaki toplar renkler birer birer dönüşümlü alınarak alttan yukarı dizilir; adı verilen renkler torbanın altında lejantta yazılır. Çark dilimleri tepeden saat yönünde çizilir, adlar beyaz rozet içinde. Ortak tarif: windows/figure_contract.py chance_bag_layout, chance_spinner_layout, chance_dice_layout.",
+          "Olasılık cevabı figürden sayılarak bulunabilmeli; soru metni top/dilim sayısını figürle çelişecek biçimde yazmaz."
+        ]
+      }
+    },
+    "model": {
+      "required": [
+        "tool"
+      ],
+      "optional": [
+        "groups",
+        "operators",
+        "variable",
+        "left",
+        "right",
+        "tilt"
+      ],
+      "constraints": {
+        "tool": [
+          "tiles",
+          "counters",
+          "balance"
+        ],
+        "variable": "Tek küçük harf a-z (varsayılan x); karo, terazi x nesnesi ve x² karo yazısında kullanılır.",
+        "groups": "tiles ve counters için zorunlu: 1..3 grup. tiles grubu {x2?, x?, 1?, labelKey?}: işaretli tam sayılar, |x2| ≤ 4, |x| ≤ 10, |1| ≤ 10, en az biri sıfırdan farklı, tüm gruplarda toplam en çok 30 karo; eksi değer kırmızı (danger-soft) karodur. counters grubu {positive?, negative?, zeroPairs?, labelKey?}: positive/negative 0..15, toplam ≥ 1, zeroPairs 0..min(positive, negative) kesik çerçeveli sıfır çifti; tüm gruplarda en çok 40 pul.",
+        "operators": "Yalnız tiles/counters: grup sayısı − 1 öğe, her biri + | - | = | \"\" (boş = işaretsiz). Varsayılan hepsi boş.",
+        "left": "Yalnız balance ve zorunlu: 1..4 öğe {item, count?, labelKey?, color?}. item x (variable harfli yeşil kutu) | unit (1 yazılı birim küp) | weight (adı yazılı ağırlık) | object (adı yazılı nesne). count x/unit için 1..12, weight/object için 1..4 (varsayılan 1); weight/object için labelKey zorunlu, x/unit adsız; color yalnız object, diyagram renk listesinden, none olamaz. Kefe başına en çok 12 nesne.",
+        "right": "left ile aynı kurallar.",
+        "tilt": "Yalnız balance: level (varsayılan) | left (sol kefe aşağıda, 7°) | right.",
+        "render": "1.6: karolar x² (2,5s × 2,5s), x (s × 2,5s) ve ikişerli birim sütunlarıyla; pullar ikişerli sütunlarda, sıfır çiftleri önde. Birim s yazı genişliğinden küçük olmaz (en çok 44 px/dp); önce tek satır, sonra gruplar alt satıra, en son grup bölünür; satır başına düşen işlem işareti yeni satırın başına geçer. Grup adı bloğun altında. Terazide kefe genişliği min((w−48)/2, 180), nesneler kefeden taşmadan satırlanır; kol eğimi tilt'e göre. Ortak tarif model_layout / FigureMath.modelLayout. Yer yetmezse görünüm uzar, yazı küçültülmez.",
+        "rules": [
+          "Modelden okunan değer soru metniyle çelişmez; dengedeki terazi ancak iki kefe eşitse level yazılır.",
+          "Karo/pul ve terazi nesneleri figürden sayılabilmeli; cevap yalnız şeklin adından çıkarılmaz."
+        ]
+      }
+    },
+    "instrument": {
+      "required": [
+        "tool",
+        "min",
+        "max",
+        "step",
+        "readings"
+      ],
+      "optional": [
+        "minor",
+        "unit"
+      ],
+      "constraints": {
+        "tool": [
+          "thermometer",
+          "dynamometer",
+          "cylinder"
+        ],
+        "scale": "min < max, step > 0 sayı, |değer| ≤ 10000; (max − min) / step 2..10 tam sayı (ana aralık). dynamometer ve cylinder için min ≥ 0.",
+        "minor": "Ana aralık başına 1..10 alt bölme (varsayılan 1); toplam çentik ≤ 100.",
+        "unit": "thermometer °C (varsayılan) | °F; dynamometer N; cylinder mL (varsayılan) | cm³.",
+        "readings": "1..3 öğe, araçlar aynı ölçekle yan yana: {value, objectKey?, labelKey?}. value min..max aralığında ve bir çentiğe denk (min + k·step/minor). objectKey yalnız dynamometer (kancada asılı cisim) ve cylinder (dipte sıvıya batmış cisim; value ≥ min + (max − min)/4); labelKey aracın altındaki ad.",
+        "render": "1.6: termometrede kırmızı sıvı hazneden değere yükselir, çentik ve sayılar sağda; dinamometrede 0 üstte, değer aşağı artar, yay kırmızı göstergeye uzanır, çentik ve sayılar solda; silindirde mavi sıvının menisküs dibi değerde, çentikler cam içinde soldan, sayılar solda, birim sayı sütununun üstünde. Sayılar dilin ondalık ayırıcısıyla yazılır. Ölçek boyu L ≥ ana aralık × (satır + 4) ve ≥ alt çentik × 5, yer varsa en çok 300; sığmayan araç alt satıra geçer, yazı küçültülmez. Ortak tarif instrument_layout / FigureMath.instrumentLayout.",
+        "rules": [
+          "Okunan değer soru metniyle çelişmez; cevap figürdeki çentikten okunabilmeli.",
+          "Eşit kollu terazi için model tool=balance kullanılır."
+        ]
+      }
+    },
+    "light": {
+      "required": [
+        "surface",
+        "incidence"
+      ],
+      "optional": [
+        "refracted",
+        "denser",
+        "reflected",
+        "angleKeys",
+        "rayKeys",
+        "mediumKeys",
+        "normalKey"
+      ],
+      "constraints": {
+        "surface": [
+          "mirror",
+          "boundary"
+        ],
+        "incidence": "0..80 derece; gelen ışın ile normal arasındaki açı.",
+        "refracted": "Yalnız boundary, zorunlu: 0..85 derece. denser bottom → refracted < incidence (yoğun ortama geçen ışın normale yaklaşır); top → refracted > incidence; incidence 0 → refracted 0.",
+        "denser": "Yalnız boundary: top|bottom yoğun ortam, mavi tonla boyanır; incidence > 0 iken zorunlu.",
+        "reflected": "Yalnız boundary: true ise kısmi yansıyan ışın da çizilir. mirror her zaman yansıtır; yansıma açısı gelme açısına eşittir, ayrıca verilmez.",
+        "keys": "angleKeys {incidence|reflection|refraction: ad} yalnız çizilen ve en az 15° olan açılar; rayKeys {incident|reflected|refracted: ad} yalnız çizilen ışınlar; mediumKeys [üst ortam, alt ortam] yalnız boundary; normalKey normal çizgisinin adı.",
+        "render": "1.6: yüzey yatay, çarpma noktası ortada, normal kesik çizgi; gelen ışın sol üstten gelir, yansıyan sağ üste, kırılan sağ alta gider; ışınlar kırmızı ve oklu, açı yayları normalden ışına. Aynanın arkası taralı. Açı adı açıortayda iki kola değmeyene dek dışarı itilir; ortam adları ışınlara değmeyen köşeye yazılır. Işınlar yazı sığacak kadar kısalır (en az 60), yazı küçülmez, görünüm uzar.",
+        "rules": [
+          "Soru bir açıyı soruyorsa o açıya ölçü yazılmaz; ad (ör. x) verilir.",
+          "Kırılma yönü ortam yoğunluğuyla çelişmez; cevap figürdeki ışından okunabilmeli."
+        ]
+      }
+    },
+    "particles": {
+      "required": [
+        "panels"
+      ],
+      "optional": [
+        "arrows",
+        "motion"
+      ],
+      "constraints": {
+        "panels": "1..3 kapalı kutu, soldan sağa: {state solid|liquid|gas, labelKey?}. labelKey kutunun altına yazılır.",
+        "arrows": "1..2·(panel − 1) hal değişimi oku: {from, to, labelKey?}; from/to yan yana iki panelin sırası (|from − to| = 1), her yön bir kez. İleri ok (from < to) kutuların üstünde, geri ok altında yaydır.",
+        "motion": "true|false; true ise gaz taneciklerine hareket oku eklenir. Yalnız gas paneli varken yazılır.",
+        "render": "1.6: katıda 4×4 tanecik düzenli ve bitişik; sıvıda 5-4-3 tanecik dipte bitişik ama düzensiz sıralı; gazda 7 tanecik kutuya seyrek yayılır. Tanecikler örtüşmez. Ok adı yayın tepesinde, iki ad çakışırsa bir satır dışarı itilir. Kutu boyu genişlikten gelir; yazı küçülmez, görünüm uzar.",
+        "rules": [
+          "Hal adı ve hal değişimi adı labelKey ile verilir; şekil sözcük taşımaz.",
+          "Cevap tanecik dizilişinden okunabilmeli; soru metni çizimle çelişmez."
+        ]
+      }
+    }
+  },
+  "svg": {
+    "comment": "ŞERİT B — kısıtlı SVG, yalnız notlarda. Sorunun cevabı asla SVG'den okunmaz. Katalogda karşılığı olan şekil için asla SVG kullanılmaz. Orantı gerçeği yansıtmıyorsa notToScale: true eklenir.",
+    "allowedTags": ["svg", "g", "circle", "ellipse", "rect", "line", "polyline", "polygon", "text", "tspan"],
+    "allowedTransforms": ["translate", "rotate", "scale"],
+    "forbidden": ["path", "script", "foreignObject", "image", "style", "animate", "use", "href", "xlink:href", "<!ENTITY>", "<!DOCTYPE>"],
+    "colorTokens": ["ink", "muted", "accent", "gold", "success", "danger", "surface"],
+    "rootAttrs": ["viewBox", "xmlns"],
+    "rules": [
+      "Öznitelikler TEK TIRNAK: <circle cx='30' cy='40' r='10' fill='gold' /> — bu metin JSON string'inin içine girer; çift tırnak string'i bozar.",
+      "Her etiket kapatılır: <text …></text>, kendiliğinden kapananlarda ' />'.",
+      "Metin ayrı: <text data-i18n='anahtar' text-anchor='middle' x='…' y='…'></text> — etiketin içine düz metin yazılmaz; text-anchor='middle' zorunlu.",
+      "Ok ucu: yön gösteren her çizginin ucuna <polygon> ile üçgen konur."
+    ]
+  }
+}
