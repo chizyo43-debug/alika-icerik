@@ -16,10 +16,7 @@ from word_wheel_design import LABELS, wheel_config
 
 
 def test_every_current_game_has_rich_age_aware_play_and_visual_design():
-    games = ("trivia", "memory", "who-is-it", "taboo", "liar", "charades", "draw-guess",
-             "story-adventure", "word-hunt", "route-masters", "rhythm-stage",
-             "balance-workshop", "garden-masters", "light-laboratory", "robot-coding-arena",
-             "colorful-market", "family-escape-night", "name-city", "word-garden")
+    games = ("name-city",)
     bands = ("young", "mid", "teen", "senior")
     for game in games:
         for band in bands:
@@ -54,4 +51,4 @@ def test_word_wheel_has_local_labels_and_24_fair_equal_segments():
 def test_missing_visual_asset_fails_openly(monkeypatch, tmp_path):
     monkeypatch.setattr(game_visuals, "ROOT", tmp_path)
     with pytest.raises(ValueError, match="missing visual asset"):
-        game_visuals.visual_payloads("trivia", "young")
+        game_visuals.visual_payloads("name-city", "young")

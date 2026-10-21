@@ -29,7 +29,7 @@ from trivia_language import (
 )
 
 
-PEOPLE_PATH = ROOT / "games" / "who-is-it" / "data" / "wikidata_people.json"
+PEOPLE_PATH = ROOT / "games" / "word-wheel" / "data" / "wikidata_people.json"
 LANGUAGE_INDEX = {language: index for index, language in enumerate(LANGUAGES)}
 
 # Globally familiar figures with complete labels and descriptions in all nine

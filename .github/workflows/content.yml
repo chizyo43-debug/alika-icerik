@@ -25,26 +25,8 @@ jobs:
 
       - name: oyun paketleri güncel
         run: |
-          python tools/build_trivia_games.py --check
-          python tools/build_memory_games.py --check
           python tools/build_word_wheel_games.py --check
-          python tools/build_who_is_it_games.py --check
-          python tools/build_taboo_games.py --check
-          python tools/build_liar_games.py --check
-          python tools/build_charades_games.py --check
-          python tools/build_draw_guess_games.py --check
-          python tools/build_story_adventure_games.py --check
-          python tools/build_word_hunt_games.py --check
-          python tools/build_route_masters_games.py --check
-          python tools/build_rhythm_stage_games.py --check
-          python tools/build_balance_workshop_games.py --check
-          python tools/build_garden_masters_games.py --check
-          python tools/build_light_laboratory_games.py --check
-          python tools/build_robot_coding_games.py --check
-          python tools/build_colorful_market_games.py --check
-          python tools/build_family_escape_games.py --check
           python tools/build_name_city_games.py --check
-          python tools/build_word_garden_games.py --check
 
       - name: doğrulayıcı (her paket)
         run: |

@@ -13,7 +13,7 @@ from trivia_language import (
 )
 
 
-DATA_PATH = ROOT / "games" / "trivia" / "data" / "wikidata_countries.json"
+DATA_PATH = ROOT / "games" / "word-wheel" / "data" / "wikidata_countries.json"
 CATEGORIES = {
     "tr": ("Ülke", "Başkent"), "en": ("Country", "Capital"),
     "de": ("Land", "Hauptstadt"), "es": ("País", "Capital"),
