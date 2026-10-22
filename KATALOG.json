@@ -1489,5 +1489,20 @@
    "reviewStatus": "ai-verified",
    "sha256": "9924b8931f5a4c1b4e002b685cfb05a6b7fd7398ab54bdd40bb24f830dce390f"
   }
+ ],
+ "ilkokul": [
+  {
+   "yol": "ilkokul/gorsel-etkinlikler/ilkokul-gorsel-renkli-6-10.jsonl",
+   "paketId": "visual-colour-600-runtime-v3",
+   "tur": "gorsel-etkinlikler",
+   "lang": "zxx",
+   "yas": [
+    6,
+    10
+   ],
+   "soru": 600,
+   "reviewStatus": "pending",
+   "sha256": "e647745ec30fd1e44c025d2bd1722b9a123ebb10ab271f5ff4688c886876d756"
+  }
  ]
 }

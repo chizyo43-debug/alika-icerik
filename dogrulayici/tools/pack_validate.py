@@ -1369,7 +1369,8 @@ def validate_file(yol) -> list:
             if gorsel_gereksinimi not in {"required", "optional", "none"}:
                 ekle("HATA", 36, satir_no,
                      "visualRequirement required|optional|none olmalı")
-            elif gorsel_gereksinimi == "required" and not k.get("figure"):
+            elif (gorsel_gereksinimi == "required" and not k.get("figure")
+                  and not isinstance(k.get("visualChoice"), dict)):
                 ekle("HATA", 36, satir_no, "zorunlu görsel eksik")
         jenerik = [
             i for i, w in enumerate(why[:len(secenekler)])
