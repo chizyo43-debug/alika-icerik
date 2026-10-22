@@ -18,9 +18,11 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "accent": "#8B5CFF", "accent_2": "#23D5E8", "highlight": "#FFCF5A",
         "correct": "#3CE6A0", "wrong": "#FF6B81", "card": "#25205A",
     },
+    # Güncel iki oyun AliKa TV'nin uzay görünümünü taşır (2026-10-22): uzay zemini, metal kart,
+    # turkuaz odak, oyunun amblem rengi; kapak games/visuals altında aynı çizimden gelir.
     "word-wheel": {
-        "accent": "#00D7FF", "accent_2": "#FF3DBB", "highlight": "#FFE04B",
-        "correct": "#38E895", "wrong": "#FF526D", "card": "#152756",
+        "accent": "#00E5FF", "accent_2": "#E8609A", "highlight": "#FFD166",
+        "correct": "#4ADE80", "wrong": "#FF8A65", "card": "#0B1A3A", "background": "#060E22",
     },
     "who-is-it": {
         "accent": "#4FD8FF", "accent_2": "#FFB84A", "highlight": "#F4ED65",
@@ -83,8 +85,8 @@ GAME_STYLES: dict[str, dict[str, Any]] = {
         "correct": "#55E092", "wrong": "#FF6178", "card": "#252052",
     },
     "name-city": {
-        "accent": "#13DDE8", "accent_2": "#FF5E78", "highlight": "#FFD33D",
-        "correct": "#48E28B", "wrong": "#FF627B", "card": "#173A5B",
+        "accent": "#00E5FF", "accent_2": "#8C7CFF", "highlight": "#FFD166",
+        "correct": "#4ADE80", "wrong": "#FF8A65", "card": "#0B1A3A", "background": "#060E22",
     },
     "word-garden": {
         "accent": "#42D9F5", "accent_2": "#E65CFF", "highlight": "#FFD35A",
