@@ -42,6 +42,8 @@ WORD_LABELS = {"tr": "kelime", "en": "words", "de": "Wörter", "es": "palabras",
                "fr": "mots", "pt": "palavras", "ru": "слов", "ja": "語", "ko": "개 낱말"}
 RUNTIME_FIELDS = ("puzzle_id", "answer", "category", "clue", "explanation")
 CREATED_AT = "2026-08-25T00:00:00Z"
+# 4: uzay görünümlü kapak ve tema (2026-10-22).
+GAME_VERSION = 4
 ID_RE = re.compile(r"^[A-Za-z0-9_-]{8,80}$")
 ZIP_TIME = (1980, 1, 1, 0, 0, 0)
 
@@ -113,7 +115,7 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
         "schema_version": 1,
         "game_id": str(uuid.uuid5(uuid.NAMESPACE_URL,
                                   f"https://alika.tr/games/word-wheel/v1/{language}/{band}")),
-        "game_version": 3, "name": f"{NAMES[language]} · {age_min}–{age_max}",
+        "game_version": GAME_VERSION, "name": f"{NAMES[language]} · {age_min}–{age_max}",
         "description": f"{language.upper()} · {age_min}–{age_max} · {PUZZLES_PER_POOL} {WORD_LABELS[language]}",
         "game_type": "word_wheel", "min_app_version": "1.1.24",
         "min_players": 1, "max_players": 8, "age_min": age_min, "age_max": age_max,

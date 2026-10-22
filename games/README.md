@@ -7,6 +7,10 @@ AliKa TV'de dört oyun vardır. Işık Hızı Rallisi ile Uzay İstasyonu uygula
 içinde gelir ve paket gerektirmez; aşağıdaki iki oyun bu depodan indirilir.
 Eski oyun paketleri 2026-10-21'de kaldırıldı; geçmişleri Git'te durur.
 
+Kapaklar (`games/visuals/<oyun>/game_art.webp`, 960×540, yazısız) AliKa TV'nin uzay
+görünümündedir ve TV ana menüsündeki oyun kartı amblemleriyle aynı çizimden üretilir
+(uygulama deposunda `TvGameCoverArtTest`, 2026-10-22). Paket teması da aynı paleti taşır.
+
 ## Çarkıfelek v1
 
 `word-wheel` kataloğu dokuz dil ve dört yaş bandında 36 paket sunar. Her pakette

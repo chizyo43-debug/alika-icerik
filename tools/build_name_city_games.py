@@ -44,6 +44,8 @@ SUBJECTS = {
 RUNTIME_FIELDS = ("round_id", "initial", "initial_mode", "category_ids", "categories",
                   "culture_focus", "seconds", "special_event", "difficulty")
 CREATED_AT = "2026-08-14T00:00:00Z"
+# 2: uzay görünümlü kapak ve tema (2026-10-22).
+GAME_VERSION = 2
 ID_RE = re.compile(r"^[A-Za-z0-9_-]{8,80}$")
 ZIP_TIME = (1980, 1, 1, 0, 0, 0)
 
@@ -106,7 +108,7 @@ def _package(language: str, band: str, rows: list[dict[str, Any]]) -> tuple[byte
     manifest = {
         "schema_version": 1,
         "game_id": str(uuid.uuid5(uuid.NAMESPACE_URL, f"https://alika.tr/games/name-city/v1/{language}/{band}")),
-        "game_version": 1, "name": f"{NAMES[language]} · {age_min}–{age_max}",
+        "game_version": GAME_VERSION, "name": f"{NAMES[language]} · {age_min}–{age_max}",
         "description": f"{language.upper()} · {age_min}–{age_max} · {PER_POOL} tur",
         "game_type": "name_city", "min_app_version": "1.1.24",
         "min_players": 2, "max_players": 12, "age_min": age_min, "age_max": age_max,
@@ -137,7 +139,7 @@ def build(*, check: bool) -> None:
             outputs[ROOT / relative] = payload
             entries.append({"path": relative.as_posix(), "sha256": hashlib.sha256(payload).hexdigest(),
                             "size_bytes": len(payload), "round_count": PER_POOL,
-                            "game_id": manifest["game_id"], "game_version": 1,
+                            "game_id": manifest["game_id"], "game_version": GAME_VERSION,
                             "language": language, "age_min": manifest["age_min"],
                             "age_max": manifest["age_max"], "name": manifest["name"]})
     outputs[CATALOG] = _json_bytes({"schema_version": 1, "generated_at": CREATED_AT,
