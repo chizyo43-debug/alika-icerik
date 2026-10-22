@@ -1,3 +1,3 @@
-Uygulama deposu chizyo43-debug/alika, commit: 4706bb84 (origin/main, 2026-10-20) + damga-modelsiz-2026-10-20.patch (tools/pack_validate.py; reviewModel isteğe bağlı — kod tarafında birleştirilmeyi bekliyor: KOD-ISTEK-DAMGA-MODELSIZ-2026-10-20)
-Dosyalar: tools/pack_validate.py, windows/figure_contract.py, windows/lgs_exam_core.py, windows/ami.py, shared/figure_spec.json
+Uygulama deposu chizyo43-debug/alika, commit: 3c8aaa80 (origin/main, 2026-10-21; model adı yazmayan AI damgası 749505fe ile birleşti, ayrı yama gerekmez)
+Dosyalar: tools/pack_validate.py, windows/figure_contract.py, windows/lgs_exam_core.py, windows/ami.py, windows/visual_choice.py, shared/figure_spec.json
 Güncellemek için bu dosyaları alika main'den yeniden kopyalayın; elle değiştirmeyin.
