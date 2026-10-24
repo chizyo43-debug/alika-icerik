@@ -3454,6 +3454,22 @@ def figur_kontrol(fig: dict) -> list:
                         h.append(f"diagram: elements[{i}] çizgi uçları farklı ve viewBox içinde olmalı")
                     if "arrow" in eleman and eleman["arrow"] not in DIAGRAM_OK_UCU:
                         h.append(f"diagram: elements[{i}].arrow none|first|last|both olmalı")
+                # Android VisualContractValidator ile aynı sınır kuralı: taşan şekil kırpılır ve
+                # Android bütün paketi reddeder (7. sınıf DKAB d7-t01.q011, 2026-10-24).
+                elif tur == "rect":
+                    x, y, w, yuk = (eleman.get(k) for k in ("x", "y", "w", "h"))
+                    if (not all(_sayi_mi(v) and math.isfinite(float(v)) for v in (x, y, w, yuk))
+                            or w <= 0 or yuk <= 0
+                            or not diagram_inside([x, y]) or not diagram_inside([x + w, y + yuk])):
+                        h.append(f"diagram: elements[{i}] dikdörtgen viewBox içinde olmalı")
+                elif tur in ("circle", "ellipse", "arc"):
+                    x, y = eleman.get("x"), eleman.get("y")
+                    rx = eleman.get("r" if tur == "circle" else "rx")
+                    ry = rx if tur == "circle" else eleman.get("ry")
+                    if (not all(_sayi_mi(v) and math.isfinite(float(v)) for v in (x, y, rx, ry))
+                            or rx <= 0 or ry <= 0
+                            or not diagram_inside([x - rx, y - ry]) or not diagram_inside([x + rx, y + ry])):
+                        h.append(f"diagram: elements[{i}] daire/elips viewBox içinde olmalı")
     elif kind == "map":
         map_turu = fig.get("mapType")
         if map_turu not in MAP_TURLERI:
