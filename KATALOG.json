@@ -3,7 +3,7 @@
  "kapsam": "ortaokul 5–8",
  "ogretimYili": "2026–2027",
  "paketSayisi": 106,
- "soruSayisi": 28312,
+ "soruSayisi": 28762,
  "paketler": [
   {
    "yol": "turkiye/5-sinif/bilisim-teknolojileri/bilisim-teknolojileri-5-1-donem.jsonl",
@@ -1274,10 +1274,10 @@
    "lang": "tr",
    "schemaVersion": "2.2",
    "curriculum": "MEB-CURRENT-2018-2019",
-   "soru": 50,
+   "soru": 100,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "4b1372bc034e6b6c07b8d09fe68da5ed69a0d61b51d170d90b7e66dd00a9e29c"
+   "sha256": "dc8dab08fd704e8561c263099b2fca5aea752c09d570f4bc91c941ba60e44c84"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-fen-bilimleri.jsonl",
@@ -1288,10 +1288,10 @@
    "lang": "tr",
    "schemaVersion": "2.2",
    "curriculum": "MEB-CURRENT-2018-2019",
-   "soru": 100,
+   "soru": 200,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "1cd73619d9392eefb5c42f0e4f2949eb40450907480f38b7b515afd772e84b85"
+   "sha256": "51705f39c75d943030776dfd215d70a26c80da6e43f51a7a007f9af0c53d0b9e"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-ingilizce.jsonl",
@@ -1302,10 +1302,10 @@
    "lang": "tr",
    "schemaVersion": "2.2",
    "curriculum": "MEB-CURRENT-2018-2019",
-   "soru": 50,
+   "soru": 100,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "3556c9d39f310a77dc164d868884eca378eadf5c3f2ea294bb1bd922293e986d"
+   "sha256": "72f70acbf2cf5d2003b795399cab9f7d1943d863a3f6fbe65919d6224bbfea1a"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-inkilap-tarihi.jsonl",
@@ -1316,10 +1316,10 @@
    "lang": "tr",
    "schemaVersion": "2.2",
    "curriculum": "MEB-CURRENT-2018-2019",
-   "soru": 50,
+   "soru": 100,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "a43d39f48b9f68df3bc693e172d1ad4131571ac2e880ed7b484d1f8f1e9d3e5d"
+   "sha256": "d2e9146ec575e74a4cdee7f5172d7b131706ea28618c66402dee53f819f525a0"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-matematik.jsonl",
@@ -1330,10 +1330,10 @@
    "lang": "tr",
    "schemaVersion": "2.2",
    "curriculum": "MEB-CURRENT-2018-2019",
-   "soru": 100,
+   "soru": 200,
    "not": 12,
    "reviewStatus": "ai-verified",
-   "sha256": "8cf8f883797c262d61431bcc2f20591faa14e700a50f2b6a51d07e077dfbfb3c"
+   "sha256": "814c791777b22a2d8a9003bf27db46935cfd85a342213d4f5c34473c8a3faaea"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-turkce.jsonl",
@@ -1344,10 +1344,10 @@
    "lang": "tr",
    "schemaVersion": "2.2",
    "curriculum": "MEB-CURRENT-2018-2019",
-   "soru": 100,
+   "soru": 200,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "919b90cebeb95f60a40832390cd7a0223971fa78b5e54d75e2c0709a8d7ddc1e"
+   "sha256": "7b0447f4e9e285c133f6efe4a90fc588ded57009a73c60e39973242662078f3d"
   },
   {
    "yol": "turkiye/8-sinif/matematik/matematik-8-1-donem-a.jsonl",
