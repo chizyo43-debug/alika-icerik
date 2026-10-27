@@ -1305,7 +1305,7 @@
    "soru": 100,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "72f70acbf2cf5d2003b795399cab9f7d1943d863a3f6fbe65919d6224bbfea1a"
+   "sha256": "8f009972bac746acf5bd34a1a4d75cf8041256393601b3ad3ca4c4f49809f75d"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-inkilap-tarihi.jsonl",
@@ -1319,7 +1319,7 @@
    "soru": 100,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "d2e9146ec575e74a4cdee7f5172d7b131706ea28618c66402dee53f819f525a0"
+   "sha256": "b0fdad5b0545ebff9ed385cf86c6439e494059e87dd296d1f86e33d519342c04"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-matematik.jsonl",
@@ -1333,7 +1333,7 @@
    "soru": 200,
    "not": 12,
    "reviewStatus": "ai-verified",
-   "sha256": "814c791777b22a2d8a9003bf27db46935cfd85a342213d4f5c34473c8a3faaea"
+   "sha256": "6306e2775c29619d2feea0892bdf832f82b1e7b0f6ff2df90fdc9b8f665bfa57"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-turkce.jsonl",
@@ -1347,7 +1347,7 @@
    "soru": 200,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "7b0447f4e9e285c133f6efe4a90fc588ded57009a73c60e39973242662078f3d"
+   "sha256": "976969f657a43262e6858981babf1d9ffd549f552a9e9dcf334fc7ef01e7ffa5"
   },
   {
    "yol": "turkiye/8-sinif/matematik/matematik-8-1-donem-a.jsonl",
