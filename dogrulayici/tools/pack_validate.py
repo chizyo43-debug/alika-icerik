@@ -744,6 +744,26 @@ def lgs_kontrol(paket, sorular, ekle) -> None:
         ekle("HATA", 37, satirlar.get(kid, 0), mesaj)
 
 
+def lgs_set_kontrol(paket, sorular, ekle) -> None:
+    """Kural 39 (K5): ünite seti sorularının ``lgsSet`` blokları.
+
+    Ünite setleri deneme değildir: ``assessment`` taşıyan pakete giremez. Biçim ve
+    paket geneli kurallar ``windows/lgs_exam_core.py``'den gelir (iki platform aynı).
+    """
+    set_sorulari = [(s, k) for s, k in sorular if "lgsSet" in k]
+    if not set_sorulari:
+        return
+    if (paket or {}).get("assessment") is not None:
+        for satir_no, _ in set_sorulari:
+            ekle("HATA", 39, satir_no, "ünite seti sorusu (lgsSet) deneme paketinde olamaz")
+    for satir_no, k in set_sorulari:
+        for mesaj in _LGS_CORE.lgs_set_errors(k["lgsSet"]):
+            ekle("HATA", 39, satir_no, mesaj)
+    satirlar = {str(k.get("id") or ""): s for s, k in set_sorulari}
+    for kid, mesaj in _LGS_CORE.lgs_set_pack_errors([k for _, k in set_sorulari]):
+        ekle("HATA", 39, satirlar.get(kid, 0), mesaj)
+
+
 # --- gösterim kuralları (G-, içerik isteği K9) --------------------------------
 #
 # MEB 5-8. sınıf yazım biçimi: binlik, yüzde, ondalık, çarpma/bölme işareti,
@@ -760,7 +780,15 @@ _AMI = importlib.util.module_from_spec(_AMI_SPEC)
 sys.modules.setdefault("_alika_ami", _AMI)
 _AMI_SPEC.loader.exec_module(_AMI)
 
-_SAAT_BAGLAMI_RE = re.compile(r"\bsaat|\bdakika|\bsa\.", re.IGNORECASE)
+#: K6 (LGS 2028): "Tören 07.15'te başlar." gibi cümleler "saat" sözcüğü olmadan da saattir;
+#: başla*/biti* kök olarak eşleşir.
+_SAAT_BAGLAMI_RE = re.compile(
+    r"\b(?:saat|dakika|sa\.|sabah|öğle|öğleden|akşam|gece|başla|biti|açılış|kapanış|kalkış|"
+    r"varış|sefer|ders|teneffüs)", re.IGNORECASE)
+#: K6: TDK saat yazımı 00.00–23.59 ve gün sonu 24.00 (yalnız .00 ile).
+_SAAT_RE = re.compile(r"(?:[01]?\d|2[0-3])\.[0-5]\d|24\.00")
+#: K6: saate gelen bulunma/ayrılma eki ("24.00'te", "11.30'dan") o yazının saat bağlamıdır.
+_SAAT_EKI_RE = re.compile(r"['’][dt][ae]n?\b")
 _ORAN_BAGLAMI_RE = re.compile(r"\boran", re.IGNORECASE)
 #: G-EKSI-BOSLUKLU: "−" öncesindeki cebirsel terim (sayı/üs/AMI atomu, ")" ya da "|" ile biten;
 #: 2x, x², AB gibi en çok iki harfli değişken). U+FFFC: _ami_parcala'nın atom yer tutucusu.
@@ -951,8 +979,8 @@ def gosterim_kontrol(k: dict) -> list[tuple[str, str, str]]:
         if m := ara(r"%\s+\d"):
             bul("HATA", "G-YUZDE-BOSLUK", f"{alan}: yüzde ile sayı arası boşluk {m.group()!r}")
         for m in re.finditer(r"(?<![\d.,])\d+\.\d{1,2}(?![\d.,]*\d)", yazi):
-            saat = re.fullmatch(r"(?:[01]?\d|2[0-3])\.[0-5]\d", m.group())
-            if not (saat and saat_baglami):
+            saat = _SAAT_RE.fullmatch(m.group())
+            if not (saat and (saat_baglami or _SAAT_EKI_RE.match(yazi, m.end()))):
                 bul("HATA", "G-ONDALIK-NOKTA", f"{alan}: ondalık nokta {m.group()!r}; doğrusu «3,5»")
                 break
         if m := ara(r"\d\s*[xX]\s*\d"):
@@ -1493,6 +1521,8 @@ def validate_file(yol) -> list:
 
     # kural 37 — LGS deneme paketi: assessment başlığı ve soru başına lgs bloğu
     lgs_kontrol(paket, sorular, ekle)
+    # kural 39 — ünite seti (K5): lgsSet bloğu, alt set ardışıklığı, deneme dışı paket
+    lgs_set_kontrol(paket, sorular, ekle)
 
     # kural 38 — konu kartı tutarlılığı (17 Eki K9). Ders Arşivi konu kartlarını
     # (sınıf, ders) içinde topicKey ile gruplar ve adı MIN(topic) ile koyar:

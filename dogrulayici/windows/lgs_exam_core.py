@@ -34,9 +34,14 @@ HEAVY_SUBJECTS = ("Türkçe", "Matematik", "Fen Bilimleri")
 HEAVY_WEIGHT = 4
 LIGHT_WEIGHT = 1
 
-#: MEB kazanım kodu biçimi: M.8.1.1.2, F.8.1.1.1, T.8.3.8, İTA.8.1.1, 8.1.1, E8.1.R1
-OBJECTIVE_CODE = re.compile(r"^(?:[A-ZÇĞİÖŞÜ]{1,4}\.?)?\d+(?:\.[0-9A-Z]+)+$")
+#: MEB kazanım kodu biçimi: M.8.1.1.2, F.8.1.1.1, T.8.3.8, İTA.8.1.1, 8.1.1, E8.1.R1;
+#: TYMM'de iki harf öbeği de olur: T.O.7.10, DYS.DO.7.1 (Türkçe), MAT.7.4.7, FB.7.5.2
+OBJECTIVE_CODE = re.compile(r"^(?:[A-ZÇĞİÖŞÜ]{1,4}\.)?(?:[A-ZÇĞİÖŞÜ]{1,4}\.?)?\d+(?:\.[0-9A-Z]+)+$")
 _DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+#: K2: ``exam`` alanı olmayan kayıt bu sınıfın denemesidir (öncesinde tek deneme vardı).
+LEGACY_GRADE = 8
+GRADE_MIN, GRADE_MAX = 1, 12
+_EXAM_ID = re.compile(r"^lgs-(\d{4})(-hazirlik)?$")
 
 
 def _norm(value) -> str:
@@ -176,6 +181,94 @@ def pack_errors(assessment, questions) -> list[tuple[str, str]]:
     return errors
 
 
+# --- ünite setleri (K5) ----------------------------------------------------------
+#
+# Ünite sonu bağlam temelli alıştırma. Deneme değildir: ayrı, ``assessment``
+# taşımayan paketlerde gelir (kimlik ``tr.g07.<ders>.lgs2028u``), sorusu ``lgs``
+# değil ``lgsSet`` bloğu taşır ve bu yüzden L2 yalıtımına hiç girmez. Alt setin
+# soruları ``sharedText`` ile gruplanır ve ``setOrder`` sırasında art arda gelir.
+
+#: Kütüphane ve ödevde setin konu adı.
+UNIT_SET_TOPIC = "Ünite setleri — {unit}"
+
+
+def unit_set_topic(unit_name: str) -> str:
+    return UNIT_SET_TOPIC.format(unit=str(unit_name or "").strip())
+
+
+def is_lgs_set_question(question) -> bool:
+    return isinstance(question, dict) and "lgsSet" in question
+
+
+def lgs_set_errors(block) -> list[str]:
+    """Bir sorunun ``lgsSet`` bloğu için biçim hataları."""
+    if not isinstance(block, dict):
+        return ["lgsSet nesne değil"]
+    errors: list[str] = []
+    for key in ("unitNo", "setOrder"):
+        value = _int(block.get(key))
+        if value is None or value < 1:
+            errors.append(f"lgsSet.{key} pozitif tam sayı olmalı: {block.get(key)!r}")
+    for key in ("unitKey", "unitName"):
+        if not isinstance(block.get(key), str) or not block[key].strip():
+            errors.append(f"lgsSet.{key} boş")
+    requires = block.get("requires")
+    # Boş ``requires`` seti ünite işlenmeden önerilebilir kılardı; en az bir kod gerekir.
+    if not isinstance(requires, list) or not requires:
+        errors.append("lgsSet.requires boş olmayan liste olmalı")
+    else:
+        for code in requires:
+            if not isinstance(code, str) or not OBJECTIVE_CODE.match(code):
+                errors.append(f"lgsSet.requires kazanım kodu geçersiz: {code!r}")
+    shared = block.get("sharedText")
+    if shared is not None and (not isinstance(shared, str) or not shared.strip()):
+        errors.append("lgsSet.sharedText boş olmayan metin olmalı")
+    return errors
+
+
+def lgs_set_pack_errors(questions) -> list[tuple[str, str]]:
+    """Ünite seti paketi geneli kurallar; dönen değer (soru kimliği, mesaj).
+
+    ``lgs`` ile ``lgsSet`` aynı soruda olamaz; konu adı :func:`unit_set_topic`;
+    bir ``unitKey`` tek ünite adı taşır; ``setOrder`` ünite içinde teklidir; bir
+    ``sharedText`` alt seti aynı ünitede ardışık en az iki sorudur.
+    """
+    errors: list[tuple[str, str]] = []
+    names: dict[str, str] = {}
+    seen: dict[tuple, str] = {}
+    shared: dict[str, list[tuple[str, int]]] = {}
+    for q in questions:
+        block = q.get("lgsSet") if isinstance(q, dict) else None
+        if not isinstance(block, dict):
+            continue
+        qid = str(q.get("id") or "")
+        if "lgs" in q:
+            errors.append((qid, "lgs ve lgsSet aynı soruda olamaz"))
+        unit, name = block.get("unitKey"), block.get("unitName")
+        if not isinstance(unit, str) or not unit.strip() or not isinstance(name, str):
+            continue
+        expected = unit_set_topic(name)
+        if q.get("topic") != expected:
+            errors.append((qid, f"topic {expected!r} olmalı: {q.get('topic')!r}"))
+        if names.setdefault(unit, name) != name:
+            errors.append((qid, f"lgsSet.unitKey {unit!r} iki ünite adı taşıyor"))
+        order = _int(block.get("setOrder"))
+        if order is None:
+            continue
+        if (unit, order) in seen:
+            errors.append((qid, f"lgsSet {unit!r} setOrder {order} yinelenmiş ({seen[(unit, order)]})"))
+        else:
+            seen[(unit, order)] = qid
+        if isinstance(block.get("sharedText"), str) and block["sharedText"].strip():
+            shared.setdefault(block["sharedText"], []).append((unit, order))
+    for group, places in sorted(shared.items()):
+        orders = sorted(order for _, order in places)
+        if (len({unit for unit, _ in places}) > 1 or len(orders) < 2
+                or orders[-1] - orders[0] != len(orders) - 1):
+            errors.append(("", f"lgsSet.sharedText {group!r} aynı ünitede ardışık en az iki soru değil"))
+    return errors
+
+
 def merge_assessments(assessments) -> tuple[dict | None, list[str]]:
     """Ders paketlerinin ``assessment`` bloklarını tek deneme tanımında birleştirir.
 
@@ -214,6 +307,84 @@ def merge_assessments(assessments) -> tuple[dict | None, list[str]]:
 def is_lgs_question(question: dict) -> bool:
     """Kaynak soru (ya da depo metadata'sı) LGS deneme sorusu mu?"""
     return isinstance(question, dict) and isinstance(question.get("lgs"), dict)
+
+
+# --- birden çok deneme (K2) -------------------------------------------------------
+
+def exam_grade(grades) -> int:
+    """Denemenin sınıfı: sorularda en sık geçen geçerli sınıf (eşitlikte büyüğü).
+
+    Sınıf taşımayan eski paket ``LEGACY_GRADE`` sayılır (K2 öncesi tek deneme 8. sınıftı).
+    """
+    counts: dict[int, int] = {}
+    for value in grades or ():
+        if type(value) is int and GRADE_MIN <= value <= GRADE_MAX:
+            counts[value] = counts.get(value, 0) + 1
+    if not counts:
+        return LEGACY_GRADE
+    return max(counts, key=lambda g: (counts[g], g))
+
+
+def resolve_exam(exams: dict, wanted) -> str | None:
+    """Takvim oturumunun, anlık görüntünün ya da karnenin ait olduğu deneme.
+
+    ``exams``: kurulu deneme kimliği → sınıf. ``wanted`` doluysa yalnız o deneme
+    (kaldırılmışsa None). Boşsa kayıt K2 öncesidir: 8. sınıf denemesine aittir
+    (birden çoksa kimlik sırasıyla ilki); 8. sınıf denemesi yoksa None.
+    """
+    if isinstance(wanted, str) and wanted:
+        return wanted if wanted in exams else None
+    legacy = sorted(e for e, g in (exams or {}).items() if g == LEGACY_GRADE)
+    return legacy[0] if legacy else None
+
+
+def default_exam(exams: dict, child_grade) -> str | None:
+    """Panelde ilk seçili deneme: çocuğun sınıfına uyan (birden çoksa en yeni kimlik);
+    uyan yoksa 8. sınıf denemesi, o da yoksa kimlik sırasıyla ilki."""
+    if not exams:
+        return None
+    matches = sorted(e for e, g in exams.items() if type(child_grade) is int and g == child_grade)
+    if matches:
+        return matches[-1]
+    return resolve_exam(exams, None) or sorted(exams)[0]
+
+
+def record_exam(record, exams: dict) -> str | None:
+    """Takvim oturumu / anlık görüntü / karne kaydının denemesi (``resolve_exam``)."""
+    wanted = record.get("exam") if isinstance(record, dict) else None
+    return resolve_exam(exams, wanted)
+
+
+def exam_title(exam) -> dict | None:
+    """Panel adı için parçalar: ``lgs-2027`` → yıl 2027, ``lgs-2028-hazirlik`` → hazırlık.
+
+    Tanınmayan kimlikte None; çağıran kimliği olduğu gibi gösterir."""
+    match = _EXAM_ID.match(exam) if isinstance(exam, str) else None
+    if not match:
+        return None
+    return {"year": match.group(1), "prep": bool(match.group(2))}
+
+
+def shared_runs(keys) -> list:
+    """K4: ardışık aynı ``sharedText``'li sorular (en az iki) bir settir.
+
+    ``keys[i]``: i. sıradaki sorunun set anahtarı (yoksa None/boş). Her konum için
+    ``{"first", "last", "lead"}`` (0 tabanlı sıra; ``lead`` setin ilk sorusu) ya da
+    None döner. Tek kalan (kapsamla eşi düşmüş) soru set sayılmaz: bugünkü görünüm.
+    """
+    keys = list(keys or [])
+    out: list = [None] * len(keys)
+    i = 0
+    while i < len(keys):
+        key = keys[i] if isinstance(keys[i], str) and keys[i].strip() else None
+        j = i
+        while key is not None and j + 1 < len(keys) and keys[j + 1] == key:
+            j += 1
+        if j > i:
+            for k in range(i, j + 1):
+                out[k] = {"first": i, "last": j, "lead": k == i}
+        i = j + 1
+    return out
 
 
 # --- kapsam (L3) ----------------------------------------------------------------
@@ -400,14 +571,27 @@ def available_forms(questions, assessment: dict) -> list[int]:
 
 # --- puanlama (L6) ----------------------------------------------------------------
 
-def net_hundredths(correct: int, wrong: int) -> int:
-    """D − Y/3'ün yüzde biri, yarım yukarı yuvarlanmış tam sayı.
+def thirds_to_hundredths(thirds: int) -> int:
+    """Üçte bir cinsinden neti yüzde bire çevirir, yarım yukarı yuvarlar.
 
     Tam sayı aritmetiği: kayan nokta iki platformda farklı yuvarlanmasın.
-    (3D − Y) × 100 / 3 için floor((2x + 3) / 6) = floor(x/3 + 1/2).
+    thirds × 100 / 3 için floor((2x + 3) / 6) = floor(x/3 + 1/2).
     """
-    x = (3 * correct - wrong) * 100
+    x = thirds * 100
     return (2 * x + 3) // 6
+
+
+def net_hundredths(correct: int, wrong: int) -> int:
+    """D − Y/3'ün yüzde biri, yarım yukarı yuvarlanmış tam sayı."""
+    return thirds_to_hundredths(3 * correct - wrong)
+
+
+def weighted_hundredths(cells) -> int:
+    """Ağırlıklı netin yüzde biri: yuvarlanmamış netlerden toplanır, en sonda bir kez
+    yuvarlanır (Form 10: 4 × 17,667 + … = 260,67; ders netini yuvarlayıp çarpınca 260,68)."""
+    return thirds_to_hundredths(sum(
+        weight(cell["subject"]) * (3 * cell["correct"] - cell["wrong"]) for cell in cells
+    ))
 
 
 def net(correct: int, wrong: int) -> float:
@@ -454,11 +638,8 @@ def grade(questions, answers) -> dict:
             cell["wrong"] += 1
             unit[1] += 1
     rows = []
-    weighted = 0
-    for subject, cell in subjects.items():
-        hundredths = net_hundredths(cell["correct"], cell["wrong"])
-        cell["net"] = hundredths / 100
-        weighted += weight(subject) * hundredths
+    for cell in subjects.values():
+        cell["net"] = net_hundredths(cell["correct"], cell["wrong"]) / 100
         rows.append(cell)
     return {
         "total": len(questions),
@@ -466,6 +647,6 @@ def grade(questions, answers) -> dict:
         "wrong": sum(r["wrong"] for r in rows),
         "blank": sum(r["blank"] for r in rows),
         "subjects": rows,
-        "weighted_net": weighted / 100,
+        "weighted_net": weighted_hundredths(rows) / 100,
         "units": units,
     }
