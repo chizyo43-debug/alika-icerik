@@ -1,3 +1,4 @@
-Uygulama deposu chizyo43-debug/alika, commit: 657ebd6e (origin/main, 2026-10-24; figure_contract.py dikdörtgen/daire viewBox sınırı)
-Dosyalar: tools/pack_validate.py, windows/figure_contract.py, windows/lgs_exam_core.py, windows/ami.py, windows/visual_choice.py, shared/figure_spec.json
+Uygulama deposu chizyo43-debug/alika.
+- tools/pack_validate.py, windows/lgs_exam_core.py, windows/figure_contract.py, windows/ami.py: commit 5b1ce340 (dal ozellik/lgs2028-ek, 2026-10-30; K1–K6 dahil: iki öbekli TYMM kodu, sınıfa göre LGS denemesi, ünite seti lgsSet kuralı 39). Kod ekibinin bitiş raporuyla gönderildi.
+- windows/visual_choice.py, shared/figure_spec.json: commit 657ebd6e (origin/main, 2026-10-24).
 Güncellemek için bu dosyaları alika main'den yeniden kopyalayın; elle değiştirmeyin.

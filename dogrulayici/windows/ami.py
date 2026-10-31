@@ -81,6 +81,11 @@ def parse(text: str) -> tuple[Node, ...]:
 
 def validate(text: str) -> str | None:
     """Hata kodunu (ya da ``None``) döndürür; doğrulayıcılar için."""
+    # Hızlı yol: parse'ın reddedebileceği her işaret has_markup'ta aranır;
+    # işaretsiz metni karakter karakter ayrıştırmak paket içe aktarmayı ~9 kat
+    # yavaşlatıyordu (106 paket: 44,6 s → 4,8 s).
+    if isinstance(text, str) and not has_markup(text):
+        return None
     try:
         parse(text)
     except AmiError as exc:

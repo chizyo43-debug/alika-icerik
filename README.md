@@ -1,7 +1,8 @@
 # AliKa içerik deposu
 
 AliKa uygulamasının ders içeriği: Türkiye ortaokul **5–8. sınıf** soru bankaları ve konu anlatımları (2026–2027 öğretim yılı),
-**LGS 2027 deneme** paketi, **ilkokul (6–10 yaş) görsel etkinlik** paketi ve AliKa TV oyun paketleri.
+**LGS 2027 deneme** paketi, **LGS 2028 hazırlık (7. sınıf)** paketleri, **ilkokul (6–10 yaş) görsel etkinlik** paketi ve
+AliKa TV oyun paketleri.
 Diğer ülkeler ve eski Türkiye verisi bu sürümde kaldırıldı; geçmiş sürümler git geçmişinde durur.
 
 ## Düzen
@@ -9,6 +10,8 @@ Diğer ülkeler ve eski Türkiye verisi bu sürümde kaldırıldı; geçmiş sü
 ```
 turkiye/<N>-sinif/<ders-klasörü>/<paket>.jsonl   ders paketleri (Question/Note 2.2, JSON Lines)
 turkiye/8-sinif/lgs-2027/lgs-2027-<ders>.jsonl    LGS 2027 deneme paketi (6 ders, deneme formları)
+turkiye/7-sinif/lgs-2028/lgs-2028-<ders>.jsonl    LGS 2028 hazırlık deneme paketi, 7. sınıf (6 ders, 5 form)
+turkiye/7-sinif/lgs-2028-unite-setleri/…           LGS 2028 hazırlık ünite setleri, 7. sınıf (6 ders, 43 ünite)
 ilkokul/gorsel-etkinlikler/<paket>.jsonl          ilkokul görsel etkinlik paketi (dilden bağımsız, visualChoice v3)
 KATALOG.json                                      paket listesi, soru sayıları, sha256
 dogrulayici/                                      uygulamanın doğrulayıcısı (alika main kopyası) + kalite kapısı
@@ -22,6 +25,17 @@ Ders klasörleri: `turkce`, `matematik`, `fen-bilimleri`, `sosyal-bilgiler` (5�
 
 LGS paketi ders paketlerinden ayrıdır: kimlikler `tr.g08.<ders>.lgs2027`, başlıkta `assessment.kind: lgs-deneme`
 (`examOnly`); uygulama bu soruları yalnız LGS deneme bölümünde kullanır. Yeni deneme formları aynı paketin bir üst sürümüyle gelir.
+
+LGS 2028 hazırlık (7. sınıf, TYMM; İngilizce 2018 programı) iki parçadır:
+- Deneme paketi `tr.g07.<ders>.lgs2028`: `assessment.exam: lgs-2028-hazirlik`, `examOnly`; 5 form × 90 soru. Uygulama formu
+  çocuğun işlediği konulara göre kısaltır (`calendar`). 45 ünite notu yalnız ebeveyn panelinin LGS kartında görünür.
+- Ünite setleri `tr.g07.<ders>.lgs2028u`: `assessment` yok, her soruda `lgsSet` bloğu (ünite, set sırası, `requires`);
+  konu adı «Ünite setleri — <ünite>». 327 soru, 43 not; notlar Ders Arşivi'nde ünite altında görünür. Setler deneme
+  paketinin `calendar`'ıyla açılır, bu yüzden deneme paketi de kurulmalıdır.
+- AliKa Windows 1.2.15 ve sonrasını gerektirir (iki öbekli TYMM kodları ve `lgsSet`). Android'de bu kurallar bir sonraki
+  Play sürümüyle gelir; o zamana kadar Android bu paketleri reddeder.
+- İnceleme: `ai-verified`, insan incelemesi yapılmadı. Bağlam temelli sorular MEB Bağlam Temelli Çoktan Seçmeli Soru
+  Yazım Kılavuzu'na göre yazıldı; LGS sorusu değildir.
 
 Ders paketi başına en çok 500 soru; bir ders birden çok pakete (dönem/ünite) bölünür.
 
