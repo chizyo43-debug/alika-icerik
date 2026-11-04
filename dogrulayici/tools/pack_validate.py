@@ -67,6 +67,19 @@ class Bulgu(NamedTuple):
 
 DESTEKLENEN_DILLER = frozenset({"tr", "en", "de", "es", "fr", "ja", "ko", "pt", "ru"})
 
+# Kural 23: yönergesi paket dilinde, öğretilen metni Latin harfli yabancı dil
+# dersleri (JP 英語 gibi). Karşılaştırma NFKC + casefold + boşluksuz yapılır.
+YABANCI_DIL_DERSLERI = frozenset({
+    "英語", "外国語", "外国語(英語)", "영어", "외국어", "외국어(영어)",
+    "english", "foreignlanguage", "ingilizce", "yabancıdil",
+})
+
+
+def yabanci_dil_dersi(ders: object) -> bool:
+    """True when the pack subject is a foreign-language course (kural 23 muafı)."""
+    sade = "".join(unicodedata.normalize("NFKC", str(ders or "")).casefold().split())
+    return sade.replace("i\u0307", "i") in YABANCI_DIL_DERSLERI
+
 # Kural 2/3: tek başına "şekil", "tablo" veya "aşağıdaki" sözcüğü görsel
 # bağımlılığı kanıtlamaz ("şekil örüntüsü", "tablo oluştur", "aşağıdaki
 # ölçülerden" gibi). Yalnız dışarıdaki bir görsele açıkça işaret eden dil
@@ -922,12 +935,14 @@ def _oncul_anahtari(sik: str):
     return len(sayilar), sorted(sayilar)
 
 
-def gosterim_kontrol(k: dict) -> list[tuple[str, str, str]]:
+def gosterim_kontrol(k: dict, paket_dili: str = "") -> list[tuple[str, str, str]]:
     """Soru kaydının G- bulguları: ``(seviye, kural, mesaj)``.
 
-    Sınıf ``grade`` alanından okunur; 5-8 dışı kayıtta yalnız AMI ve
-    figure/figures kuralları çalışır. Türkçe dışı (``lang`` != tr) kayıtta
-    sayı/tırnak/olumsuz kök kuralları uygulanmaz (İngilizce «3.5» doğrudur).
+    Sınıf ``grade`` alanından okunur. AMI, figure/figures ve dilden bağımsız
+    kutu kuralları her sınıfta çalışır; MEB yazım kuralları yalnız 5-8. sınıf
+    Türkçe kayıtta. Kayıt dili ``lang``, yoksa ``paket_dili``, ikisi de yoksa
+    tr sayılır; Türkçe dışı kayıtta sayı/tırnak/olumsuz kök kuralları
+    uygulanmaz (İngilizce «3.5», Japonca 「0.5」 doğrudur).
     """
     bulgular: list[tuple[str, str, str]] = []
     gorulen: set[str] = set()
@@ -952,12 +967,12 @@ def gosterim_kontrol(k: dict) -> list[tuple[str, str, str]]:
         gorunur.append((alan, yazi))
         altlar.setdefault(alan, []).extend(alti)
 
+    for seviye, kural, mesaj in _kutu_bulgulari(k):
+        bul(seviye, kural, mesaj)
     sinif = k.get("grade")
     if type(sinif) is not int or not 5 <= sinif <= 8:
         return bulgular
-    for seviye, kural, mesaj in _kutu_bulgulari(k):
-        bul(seviye, kural, mesaj)
-    if str(k.get("lang") or "tr") != "tr":
+    if str(k.get("lang") or paket_dili or "tr") != "tr":
         return bulgular
 
     tum = " ".join(yazi for _, yazi in gorunur)
@@ -1163,7 +1178,7 @@ def validate_file(yol) -> list:
 
         # G- gösterim kuralları (K9): MEB 5-8 yazım biçimi ve AMI sözdizimi
         if tip == "question":
-            for seviye, kural, mesaj in gosterim_kontrol(k):
+            for seviye, kural, mesaj in gosterim_kontrol(k, dil):
                 ekle(seviye, kural, satir_no, mesaj)
 
         # kural 11 — id şeması ve teklik
@@ -1386,9 +1401,12 @@ def validate_file(yol) -> list:
             ekle("HATA", 19, satir_no,
                  f"distractorWhy uzunluğu şık sayısına eşit değil ({len(why)}≠{len(secenekler)})")
         elif dogru is not None:
-            if sv != "2.3" and "doğru" not in str(why[dogru]).casefold():
+            # 2.2'de Türkçe gerekçe «doğru» hükmünü taşır; başka dilde (kayıt
+            # lang, yoksa paket lang) 2.3 gibi gerekçenin özü aranır.
+            turkce = str(k.get("lang") or dil or "tr") == "tr"
+            if sv != "2.3" and turkce and "doğru" not in str(why[dogru]).casefold():
                 ekle("HATA", 19, satir_no, "doğru indekste 'doğru' yazmıyor")
-            elif sv == "2.3" and dogru_gerekcesi_jenerik(
+            elif (sv == "2.3" or not turkce) and dogru_gerekcesi_jenerik(
                     str(why[dogru] or ""), secenekler[dogru]):
                 ekle("HATA", 19, satir_no,
                      "doğru şık gerekçesi yalnız genel hüküm veya şık tekrarı içeriyor")
@@ -1463,8 +1481,9 @@ def validate_file(yol) -> list:
     if re.search(r"\d/\d", tum_metin) and any(c in tum_metin for c in VULGAR):
         ekle("UYARI", 22, 0, "pakette hem 1/2 hem ½ biçimi var")
 
-    # kural 23 — dil ↔ alfabe
-    if dil in ("ja", "ko"):
+    # kural 23 — dil ↔ alfabe. Yabancı dil dersinde yönerge paket dilinde,
+    # öğretilen metin Latin harfli olduğundan oran ölçütü uygulanmaz.
+    if dil in ("ja", "ko") and not yabanci_dil_dersi((paket or {}).get("subject")):
         latin, cjk = latin_cjk_sayimi(tum_metin)
         if latin > cjk:
             ekle("HATA", 23, 0,
