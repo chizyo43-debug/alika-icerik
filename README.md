@@ -2,8 +2,9 @@
 
 AliKa uygulamasının ders içeriği: Türkiye ortaokul **5–8. sınıf** soru bankaları ve konu anlatımları (2026–2027 öğretim yılı),
 **LGS 2027 deneme** paketi, **LGS 2028 hazırlık (7. sınıf)** paketleri, **ilkokul (6–10 yaş) görsel etkinlik** paketi ve
-AliKa TV oyun paketleri.
-Diğer ülkeler ve eski Türkiye verisi bu sürümde kaldırıldı; geçmiş sürümler git geçmişinde durur.
+AliKa TV oyun paketleri; ayrıca **Japonya ortaokul (中学校 1–3 = 7–9. sınıf)** soru bankaları ve konu anlatımları.
+Eski Türkiye verisi ve eski ülke paketleri kaldırıldı; geçmiş sürümler git geçmişinde durur. Japonya paketleri yeni sistemle
+baştan üretildi.
 
 ## Düzen
 
@@ -12,6 +13,7 @@ turkiye/<N>-sinif/<ders-klasörü>/<paket>.jsonl   ders paketleri (Question/Note
 turkiye/8-sinif/lgs-2027/lgs-2027-<ders>.jsonl    LGS 2027 deneme paketi (6 ders, deneme formları)
 turkiye/7-sinif/lgs-2028/lgs-2028-<ders>.jsonl    LGS 2028 hazırlık deneme paketi, 7. sınıf (6 ders, 5 form)
 turkiye/7-sinif/lgs-2028-unite-setleri/…           LGS 2028 hazırlık ünite setleri, 7. sınıf (6 ders, 43 ünite)
+japonya/<N>-sinif/<ders-slug>/<slug>-<N>-<parça>.jsonl  Japonya ders paketleri, 7–9. sınıf (Japonca)
 ilkokul/gorsel-etkinlikler/<paket>.jsonl          ilkokul görsel etkinlik paketi (dilden bağımsız, visualChoice v3)
 KATALOG.json                                      paket listesi, soru sayıları, sha256
 dogrulayici/                                      uygulamanın doğrulayıcısı (alika main kopyası) + kalite kapısı
@@ -38,6 +40,27 @@ LGS 2028 hazırlık (7. sınıf, TYMM; İngilizce 2018 programı) iki parçadır
   Yazım Kılavuzu'na göre yazıldı; LGS sorusu değildir.
 
 Ders paketi başına en çok 500 soru; bir ders birden çok pakete (dönem/ünite) bölünür.
+
+## Japonya ortaokul
+
+`japonya/<7|8|9>-sinif/` altında 28 paket, 9.500 soru, 190 konu anlatımı notu (2026–2027 öğretim yılı):
+
+| Ders klasörü | Ders | Sınıflar |
+|---|---|---|
+| `sugaku` | 数学 | 7, 8, 9 (sınıf başına 2 paket) |
+| `rika` | 理科 | 7, 8, 9 (sınıf başına 2 paket) |
+| `kokugo` | 国語 | 7, 8, 9 (sınıf başına 2 paket) |
+| `eigo` | 英語 | 7, 8, 9 |
+| `shakai-chiri` | 社会（地理的分野） | 7, 8 |
+| `shakai-rekishi` | 社会（歴史的分野） | 7, 8, 9 |
+| `shakai-komin` | 社会（公民的分野） | 9 (2 paket) |
+
+- Program: 中学校学習指導要領（平成29年告示）. Kaynak PDF'in adresi ve sha256'sı paket başlığındaki `sources` alanındadır.
+- Paketler: `country: "JP"`, `lang: "ja"`. Kimlikler `jp.g07.current.sugaku-1`, sorular `<paket>.q0001`.
+  - 社会'nin alanları programda sınıflara bölünmez. Burada her görev tek sınıfa yerleştirildi, yani her paket tek sınıflıdır.
+  - 英語 paketlerinde yönerge ve açıklamalar Japonca, ders metni İngilizcedir.
+- Uygulama gereksinimi: Japonca kurallar (kural 19 dile duyarlı, gösterim denetimi paket dilinde, yabancı dil dersinde kural 23) ve Japonya sınıf ZIP'leri alika main 2f6c22c5 ve sonrasını gerektirir. Android'de gerçek cihazda içe aktarma henüz denenmedi.
+- İnceleme: `ai-verified`, insan incelemesi yapılmadı (`humanReviewed: false`).
 
 ## İlkokul görsel etkinlikler
 
@@ -76,7 +99,7 @@ Bu özellikler AliKa Android 0.3.11 / Windows (alika main 2026-10-17) ve sonras�
 
 ## Yeni içerik eklemek
 
-1. Paketi `turkiye/<N>-sinif/<ders-klasörü>/` altına `.jsonl` olarak koyun (ya da mevcut paketi güncelleyin).
+1. Paketi `turkiye/<N>-sinif/<ders-klasörü>/` (Japonya için `japonya/…`) altına `.jsonl` olarak koyun (ya da mevcut paketi güncelleyin).
    **Mevcut paketin içeriği değişiyorsa başlıktaki `version` bir artırılır**: uygulama, kurulu paketin yerine ancak
    daha yüksek sürümü kurar («sürüm N, kurulu sürüm N değerinden yeni değil» hatası).
 2. Doğrulayın: `python dogrulayici/tools/pack_validate.py turkiye/<N>-sinif/<ders>/<paket>.jsonl` → **0 HATA** olmalı.

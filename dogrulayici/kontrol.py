@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """AliKa içerik deposu kalite kapısı.
 
-Her turkiye/*/*/*.jsonl paketini uygulamanın doğrulayıcısıyla (dogrulayici/tools/pack_validate.py) denetler.
+Her turkiye/*/*/*.jsonl ve japonya/*/*/*.jsonl paketini uygulamanın doğrulayıcısıyla (dogrulayici/tools/pack_validate.py) denetler.
 - HATA: bilinen-bulgular.json'da kayıtlı olmayan her HATA kapıyı düşürür (yeni hata yok kuralı).
   Bilinen bulgular uygulama ekibine raporlanmış yanlış alarmlardır; düzeldikçe listeden çıkar.
 - ilkokul/*/*.jsonl görsel etkinlik paketleri ders paketi değildir (pack_validate kuralları uymaz); her sorusu
@@ -24,6 +24,8 @@ from pathlib import Path
 KOK = Path(__file__).resolve().parents[1]
 TEMEL = KOK / "dogrulayici" / "bilinen-bulgular.json"
 KATALOG = KOK / "KATALOG.json"
+# Ülke klasörleri katalog sırasıyla: klasör → (ad, kapsam). Yeni ülke buraya eklenir.
+ULKELER = {"turkiye": ("Türkiye", "ortaokul 5–8"), "japonya": ("Japonya", "中学校 1–3 (7–9. sınıf)")}
 
 _spec = importlib.util.spec_from_file_location("pack_validate", KOK / "dogrulayici" / "tools" / "pack_validate.py")
 pv = importlib.util.module_from_spec(_spec)
@@ -34,7 +36,7 @@ _vspec.loader.exec_module(vc)
 
 
 def paketler() -> list[Path]:
-    return sorted((KOK / "turkiye").glob("*/*/*.jsonl"))
+    return [yol for ulke in ULKELER for yol in sorted((KOK / ulke).glob("*/*/*.jsonl"))]
 
 
 def ilkokul_paketleri() -> list[Path]:
@@ -110,7 +112,9 @@ def katalog_uret() -> dict:
             "soru": sum(1 for r in satir if r.get("type") == "question"),
             "not": sum(1 for r in satir if r.get("type") == "note"),
             "reviewStatus": bas.get("reviewStatus"), "sha256": hashlib.sha256(veri).hexdigest()})
-    liste.sort(key=lambda k: (k["sinif"], k["dersKlasoru"], k["yol"]))
+    sira = list(ULKELER)
+    liste.sort(key=lambda k: (sira.index(k["yol"].split("/")[0]), k["sinif"], k["dersKlasoru"], k["yol"]))
+    ulkeler = [u for u in ULKELER if any(k["yol"].startswith(u + "/") for k in liste)]
     ilkokul = []
     for yol in ilkokul_paketleri():
         satir = kayitlar(yol)
@@ -123,9 +127,13 @@ def katalog_uret() -> dict:
             "yas": [min(a for a, _ in yaslar), max(b for _, b in yaslar)] if yaslar else None,
             "soru": len(sorular), "reviewStatus": bas.get("reviewStatus"),
             "sha256": hashlib.sha256(yol.read_bytes()).hexdigest()})
-    return {"ulke": eski.get("ulke", "Türkiye"), "kapsam": eski.get("kapsam", "ortaokul 5–8"),
+    return {"ulke": ", ".join(ULKELER[u][0] for u in ulkeler),
+            "kapsam": "; ".join(f"{ULKELER[u][0]} {ULKELER[u][1]}" for u in ulkeler),
             "ogretimYili": eski.get("ogretimYili", "2026–2027"), "paketSayisi": len(liste),
-            "soruSayisi": sum(k["soru"] for k in liste), "paketler": liste, "ilkokul": ilkokul}
+            "soruSayisi": sum(k["soru"] for k in liste),
+            "ulkeler": {u: {"ad": ULKELER[u][0], "paket": sum(1 for k in liste if k["yol"].startswith(u + "/")),
+                            "soru": sum(k["soru"] for k in liste if k["yol"].startswith(u + "/"))} for u in ulkeler},
+            "paketler": liste, "ilkokul": ilkokul}
 
 
 def main(argv: list[str]) -> int:
