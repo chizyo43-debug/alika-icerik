@@ -25,11 +25,11 @@
    "dersKlasoru": "bilisim-teknolojileri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 100,
    "not": 2,
    "reviewStatus": "ai-verified",
-   "sha256": "40d13af3fcbb09835dc3e796d1f08df9293335c9ea59d08d0bded940a2820443"
+   "sha256": "a12215868093db302558281c1a61cdeb3523cfe2b13936b7aa56b98a55c19b75"
   },
   {
    "yol": "turkiye/5-sinif/bilisim-teknolojileri/bilisim-teknolojileri-5-2-donem.jsonl",
@@ -39,11 +39,11 @@
    "dersKlasoru": "bilisim-teknolojileri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 50,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "9eb32cfc68b16537a85afb9d422e2b26810250b1651ff3aa7aa319edfd131418"
+   "sha256": "f877d0ee02f6cc9cfe01e7561755ef8256de683a3b0b2674f7c95047f515656b"
   },
   {
    "yol": "turkiye/5-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-5-1-donem.jsonl",
@@ -53,11 +53,11 @@
    "dersKlasoru": "din-kulturu-ve-ahlak-bilgisi",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 50,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "501b399114b987b5bcdebe920e46118e5fc4975b0c9651e414fd6225fdd1de52"
+   "sha256": "8d3981312aefa3189f2711df77a924255a9739b11b4ccaa5fca1cb55ed0a0a72"
   },
   {
    "yol": "turkiye/5-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-5-2-donem.jsonl",
@@ -67,11 +67,11 @@
    "dersKlasoru": "din-kulturu-ve-ahlak-bilgisi",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 50,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "03ec7ed9052e4e61a4186efd9806e2bae20ff502869a800ae5cdb0aeec46404f"
+   "sha256": "ab77d97e7c573f11d553a9b0f1124f8c88915e42149ab0e9a12199b5a4dd84b2"
   },
   {
    "yol": "turkiye/5-sinif/fen-bilimleri/5-sinif-fen-bilimleri-1-donem-a-gokyuzu-kuvvet.jsonl",
@@ -81,11 +81,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "7f71969a4bd8d757d5c228a0d012cfd3d06c8b2c9114860e991a680114a5e03b"
+   "sha256": "135028808ef1413a25ab776002b1f13cacff7b802792b39552a59292cacbe75c"
   },
   {
    "yol": "turkiye/5-sinif/fen-bilimleri/5-sinif-fen-bilimleri-1-donem-b-canlilar.jsonl",
@@ -95,11 +95,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "d488a208b6d52f671869d911041e5d6abec9e5d9b1ec2f17407290efbdffd4c3"
+   "sha256": "45817b4385f2d83cf9bd2d2ef1423203133408aa6842c411ae0a1e67f1021d2a"
   },
   {
    "yol": "turkiye/5-sinif/fen-bilimleri/5-sinif-fen-bilimleri-2-donem-a-isik-madde.jsonl",
@@ -109,11 +109,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "c4f26eefe2cfd124b9f33919efc97dd250f9d43f32b0ea86f23bff336602449a"
+   "sha256": "83ccc0b8ab0edde650278c18cea0c8043709ad74b88f5b40c50684f3df6f4f7f"
   },
   {
    "yol": "turkiye/5-sinif/fen-bilimleri/5-sinif-fen-bilimleri-2-donem-b-elektrik-geri-donusum.jsonl",
@@ -123,11 +123,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "a356726478f8f99ac10f10d0dfc0220b4b62061daeaf50a71203818f93d9b366"
+   "sha256": "345dfaf43ee1911c8ec233aa369081cdb2c791185a5e4d165f4a9b1864927421"
   },
   {
    "yol": "turkiye/5-sinif/ingilizce/1-donem-a-school-classroom.jsonl",
@@ -137,11 +137,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "6e71deedaee3b58783c03518a07ea09117b47f8ad5995f7a6d8e9d3fb4b33b39"
+   "sha256": "716762eda736c1f0c42997e8f726cc5610d08816f5dd66d8c3f3cc8468dd2596"
   },
   {
    "yol": "turkiye/5-sinif/ingilizce/1-donem-b-personal-family.jsonl",
@@ -151,11 +151,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "46ff626a1caf9ac86f0808cc878d93a66a9ba9849bbf5835b1812555effeafb8"
+   "sha256": "9eff4fa873e7573ee1a0f9b409f3a5f1650d68aa23daf85efe8552f9a391e4ba"
   },
   {
    "yol": "turkiye/5-sinif/ingilizce/2-donem-a-neighbourhood-world.jsonl",
@@ -165,11 +165,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "ab129ba4d4182f0dc0bf68a20f218034e6ea082e22424a2d21123c40d91c523a"
+   "sha256": "6004ef56fa6a910268ca078c1249c62a9303705f20581e93f738e6e367352e3c"
   },
   {
    "yol": "turkiye/5-sinif/ingilizce/2-donem-b-nature-universe.jsonl",
@@ -179,11 +179,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "7f440a6c32800a8f6bdaf4d5c1fe9b478bdd65427f7a7822fe185736830e62e4"
+   "sha256": "8887c160aa88b830a8c0ce0cd748792ec570c3e99ee74ab4347bc8f65004dba8"
   },
   {
    "yol": "turkiye/5-sinif/matematik/5-sinif-matematik-1-donem-a-geometrik-sekiller.jsonl",
@@ -193,11 +193,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 350,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "be974626fec061f5595fd81deaf93d238ba4c54a09d8d1c1b3bd582e8795baf9"
+   "sha256": "e1ea5daf6c8be6e9fd6a93ae2547fde1af7b150a8669dce42527aebf0e53450c"
   },
   {
    "yol": "turkiye/5-sinif/matematik/5-sinif-matematik-1-donem-b-sayilar-geometrik-nicelikler.jsonl",
@@ -207,11 +207,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "c131994332884cd69b1944aa718619a8951de0e0816b05dd4ab5f24aebf4d9b3"
+   "sha256": "c483510474518469c75402cc6918de2260b07e40f497c5a98a2d68e59299cbc7"
   },
   {
    "yol": "turkiye/5-sinif/matematik/5-sinif-matematik-2-donem.jsonl",
@@ -221,11 +221,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "05124f58c34e07203294c3a369964ae139d8a2ec66bed4c0a040ddd3769f2ffd"
+   "sha256": "32ee1e434eaea99f0404738fd368c63e6b99c883784368562bf6419d9888b2b2"
   },
   {
    "yol": "turkiye/5-sinif/sosyal-bilgiler/1-donem-a-birlikte-yasamak-evimiz-dunya.jsonl",
@@ -235,11 +235,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 450,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "a4828036fca69ca7bf92111acadaf62c719c6acc63c1b2c5be8002efe6914690"
+   "sha256": "91cece1ffc1837a9f8a60839eff88cfcdf36fb98ee46adac83990355b9f302af"
   },
   {
    "yol": "turkiye/5-sinif/sosyal-bilgiler/1-donem-b-ortak-mirasimiz.jsonl",
@@ -249,11 +249,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 150,
    "not": 3,
    "reviewStatus": "ai-verified",
-   "sha256": "dc1460b07527919f548cd2ad3ca664a83417bffb04172f09620285cdca85c4d9"
+   "sha256": "b598af0f8694626a7ac89cf8eb0390e1a94dea8e7c454742086c4fe5f73eaad1"
   },
   {
    "yol": "turkiye/5-sinif/sosyal-bilgiler/2-donem-a-ortak-mirasimiz-demokrasi.jsonl",
@@ -263,11 +263,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "2b34ea30e3db22a7395a54b0baa676f51e364a6927857bb9ec171412e7363198"
+   "sha256": "c54dc707f75459b0dca683ee3e028d2b440cf7491c4d9897c6898feb7d2794fc"
   },
   {
    "yol": "turkiye/5-sinif/sosyal-bilgiler/2-donem-b-ekonomi-teknoloji.jsonl",
@@ -277,11 +277,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "435c2961a009209ed6e8990364b33fa699ea8c005ca2c6d517d172a1b34794a8"
+   "sha256": "85f21af335c92c0468bb5052b16e622cef75d80ae3cfc2ffe53eaa0896fe74a0"
   },
   {
    "yol": "turkiye/5-sinif/turkce/5-sinif-turkce-1-donem-a-oyun-ataturk.jsonl",
@@ -291,11 +291,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "4e756bc0fabf1f1c78a1bfeebf494a2581cc1c2264bd6af4766f409673d1ea7b"
+   "sha256": "27c6d65e246be3d11661980709fe6cd5859a22a792a971d4d69d01e59d89d65e"
   },
   {
    "yol": "turkiye/5-sinif/turkce/5-sinif-turkce-1-donem-b-duygular.jsonl",
@@ -305,11 +305,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "8e71a4f5074e4272e42915461a492e55e449e8622da5e94acaf21c838732c3da"
+   "sha256": "f9b1d7572fbce33c08aee6db9671146249589d96c9a31a6306da44d061e5a626"
   },
   {
    "yol": "turkiye/5-sinif/turkce/5-sinif-turkce-2-donem-a-gelenek-iletisim.jsonl",
@@ -319,11 +319,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "06034fe97b99393f9e43d6792ca0e198577b5d36672219505f4045744fcda48c"
+   "sha256": "c741fbff721d6533b4ff3e605d50c690401eb92e79208caba264f77914e30505"
   },
   {
    "yol": "turkiye/5-sinif/turkce/5-sinif-turkce-2-donem-b-saglikli-yasam.jsonl",
@@ -333,11 +333,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "3d597ce73f8c3d624696d7fc8ed21b2f444dcd59f048acd3a9a1dd12c4f03da5"
+   "sha256": "c9b0a594fda5aef7f8d1aaa41bb7d1e0a796d5dff07950d18ca6b24d1c80954c"
   },
   {
    "yol": "turkiye/6-sinif/bilisim-teknolojileri/bilisim-teknolojileri-6-1-donem.jsonl",
@@ -347,11 +347,11 @@
    "dersKlasoru": "bilisim-teknolojileri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 150,
    "not": 3,
    "reviewStatus": "ai-verified",
-   "sha256": "823f979c8c973d164498a456c6ab9e5fc99e44a1c809a13365c1fb3f96d0ac40"
+   "sha256": "8570890276b0d196f4390a307e882e583b443f105f45ed61073956a7d35fc352"
   },
   {
    "yol": "turkiye/6-sinif/bilisim-teknolojileri/bilisim-teknolojileri-6-2-donem.jsonl",
@@ -361,11 +361,11 @@
    "dersKlasoru": "bilisim-teknolojileri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 50,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "2a585704cc3e40913cee45772f05985f0ca242bf09ea0b1421781f652bf7ced0"
+   "sha256": "142d35bfbc2eb84dcc104b7ed20b982e1b7deb985765a71c8d350187c0e230b7"
   },
   {
    "yol": "turkiye/6-sinif/din-kulturu/din-kulturu-6-1-donem.jsonl",
@@ -375,11 +375,11 @@
    "dersKlasoru": "din-kulturu",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 50,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "7596d3c63d5a4bdc3d6903311e8f2ae083dca38a3cca9e97f9aae38fc6813a67"
+   "sha256": "9c0cfb9b3414dcc78eef7aa06b92cffbc558b212cfe9a341957d5a3e4da07378"
   },
   {
    "yol": "turkiye/6-sinif/din-kulturu/din-kulturu-6-2-donem.jsonl",
@@ -389,11 +389,11 @@
    "dersKlasoru": "din-kulturu",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 50,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "6d82119ffb73c2d48a82cd5ef74ba61df1f2e7270a4ce0e08b455e0e0f76ba1e"
+   "sha256": "b9a2172ac2baa97c71d60e5db6c851c142bcb0a9c1c3b1c29aa1c329078ad842"
   },
   {
    "yol": "turkiye/6-sinif/fen-bilimleri/fen-bilimleri-6-1-donem-a-gunes-kuvvet.jsonl",
@@ -403,11 +403,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 250,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "3d242bb88826e2d22743f1bf4d51d3ea9abb5d6fc406a3507bb58ce968ce1224"
+   "sha256": "c756492fe4a37a1716b9cf0ca0e6b86955b4197bdc95f5be38b0acccb1b3dccd"
   },
   {
    "yol": "turkiye/6-sinif/fen-bilimleri/fen-bilimleri-6-1-donem-b-canlilar.jsonl",
@@ -417,11 +417,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 450,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "f4d3e8a6c46d6536365d0521f28ef7338acc27f048be06547e475a42445c458b"
+   "sha256": "5dfddc50e8012ce84fb73911a488ff218227b19290d0b3320063af866f8cbde3"
   },
   {
    "yol": "turkiye/6-sinif/fen-bilimleri/fen-bilimleri-6-1-donem-c-isik.jsonl",
@@ -431,11 +431,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 250,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "7ba575f7383f10b7a94dcbd9b6a4acc6a4a6927efddc04ba54c937402630f38a"
+   "sha256": "1894f3055936ddfd4996510b54d87b29d6b0e8b5ad6eecf6868d611c2c98853a"
   },
   {
    "yol": "turkiye/6-sinif/fen-bilimleri/fen-bilimleri-6-2-donem-a-madde.jsonl",
@@ -445,11 +445,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "e9e8f9cf890a6701820e3a7513e35b2b30c9b71bae7672e28509b8e1f8083603"
+   "sha256": "0f9ed7a6b8f401c7ef8a5fe969a1b9e7acf0d787fb5c9249512fb5b2bef002ef"
   },
   {
    "yol": "turkiye/6-sinif/fen-bilimleri/fen-bilimleri-6-2-donem-b-elektrik-yasam.jsonl",
@@ -459,11 +459,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 250,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "bff419b9cf6ea0f9fc83ee13e256ea4d09704f2ad11ea393554295da3408d859"
+   "sha256": "d757235bc7c4d037cc462086c4afcb6868172b595d22d06433fc64eb8a09808c"
   },
   {
    "yol": "turkiye/6-sinif/ingilizce/ingilizce-6-1-donem-a-school-classroom.jsonl",
@@ -473,11 +473,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "c79ae5a9ea21e222cd41f9ca63c95ed7b5916ffdf761119b7a3865f0b2d2d005"
+   "sha256": "b8679d69d03b88909360da3e4a26cdc171cc23d0bae40fd2b4948b09a1252776"
   },
   {
    "yol": "turkiye/6-sinif/ingilizce/ingilizce-6-1-donem-b-personal-family.jsonl",
@@ -487,11 +487,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "b8e8c8694a9e21639fac936e323d03fbae41c5e3fa5f4d057b4ed5ae514b12e1"
+   "sha256": "8ccca954c1fb0f7094cd95f02464f480a798d5418967b2e152aa006d9a654c3c"
   },
   {
    "yol": "turkiye/6-sinif/ingilizce/ingilizce-6-2-donem-a-neighbourhood-world.jsonl",
@@ -501,11 +501,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "04e3f23b156952775ef62afb081b1975f4903e3d95e5e03572dc58c9749b3bef"
+   "sha256": "62fc7998599eed638113b6652669ccc49ec4c0534ac06f79fb4437dff3595900"
   },
   {
    "yol": "turkiye/6-sinif/ingilizce/ingilizce-6-2-donem-b-nature-universe.jsonl",
@@ -515,11 +515,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "024af4be897a089f02d0770a07b7cab65427f7eb45c0a6673bd7cb80fc0ba824"
+   "sha256": "743f0cc2152d7e13fe83ec8e0ac7f0b0f5be3c38fca790fc22314a5528e27b6c"
   },
   {
    "yol": "turkiye/6-sinif/matematik/matematik-6-1-donem-a-sayilar-olasilik.jsonl",
@@ -529,11 +529,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 450,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "ae85d7348fcdde41115c38ce31a0e01df7c14b9e835193f345eba90bea8a11c2"
+   "sha256": "c60ee7902056c3f0ac7bf5830425de77c3ee6eaf5e9662e89e5911770a80d44d"
   },
   {
    "yol": "turkiye/6-sinif/matematik/matematik-6-1-donem-b-istatistik.jsonl",
@@ -543,11 +543,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "2ed8b3635e198f1334d0c3cde6f8de1a9fd0a18b81f6a05fa3ac59afe3351062"
+   "sha256": "efb4fd683d8a612c0105e8ad620dd30794889b9ad0a6be7e9cca40e54059cd68"
   },
   {
    "yol": "turkiye/6-sinif/matematik/matematik-6-2-donem-a-geometrik-sekiller-cebir.jsonl",
@@ -557,11 +557,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "88c13cd5dae4cbf305c18285538ec1523b2fa34896fcc911411bea4b6e107f3d"
+   "sha256": "99faf9928d0d9afdcf6e6900353d9044962fcba6c65020397fe1389507d3afb5"
   },
   {
    "yol": "turkiye/6-sinif/matematik/matematik-6-2-donem-b-geometrik-nicelikler.jsonl",
@@ -571,11 +571,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 250,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "b5e0fc43f9c17465ca724f13e8f99f9ed507cea8266b9c0aff9daacbdb9978aa"
+   "sha256": "cdef172006076d45e2f76981d2e24525a076742249fb339457963f3d4d7f4901"
   },
   {
    "yol": "turkiye/6-sinif/sosyal-bilgiler/sosyal-bilgiler-6-1-donem-a-birlikte-dunya.jsonl",
@@ -585,11 +585,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "4981b2aa09c19a8c3e6d03399973c64dfe0a203622a7cf54cf13bef9723c6cf7"
+   "sha256": "cd959b032810045aa7490a0a4f2ac26a7711933c517660dbf3e41cc18a8eca06"
   },
   {
    "yol": "turkiye/6-sinif/sosyal-bilgiler/sosyal-bilgiler-6-1-donem-b-ortak-miras.jsonl",
@@ -599,11 +599,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 250,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "969b1c4184856137b8038908c19430246e92b4e900c7561ba68c1816a2e93c6d"
+   "sha256": "5080dfb008526a2c624faba02e7a1485dc363333fdde4a5e2ed3a43ccdc6da0f"
   },
   {
    "yol": "turkiye/6-sinif/sosyal-bilgiler/sosyal-bilgiler-6-2-donem-a-demokrasi-ekonomi.jsonl",
@@ -613,11 +613,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "4e7e3a717d248ea54d602dd9e3aa0765c8571219f8b86688e13ea0e3b1e1dd82"
+   "sha256": "6be534b6beac3870c900d859ed85552921c630951f4ebdf44f2427286b47d3ec"
   },
   {
    "yol": "turkiye/6-sinif/sosyal-bilgiler/sosyal-bilgiler-6-2-donem-b-teknoloji.jsonl",
@@ -627,11 +627,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 150,
    "not": 3,
    "reviewStatus": "ai-verified",
-   "sha256": "b5fe12828d31d9a05d8e491550994674ccd92b110eb6b7660f2ea14a3154640e"
+   "sha256": "5a36163fda2791cd90a635e7dfe0b40189e31e714e5f7341fba32effe0c6daeb"
   },
   {
    "yol": "turkiye/6-sinif/turkce/turkce-6-1-donem-a-dil-bagimsizlik.jsonl",
@@ -641,11 +641,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "43217a8955c9b872a10bda9165e8feba836bac15c6549ce33ccde1a077f3fecb"
+   "sha256": "31e1373c529ffb99e7c019d7150c00809e528f703f08b46d458fd32e639586c9"
   },
   {
    "yol": "turkiye/6-sinif/turkce/turkce-6-1-donem-b-farkli-dunyalar.jsonl",
@@ -655,11 +655,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "ec05028f42d4e73e85412ec44f898428c5a2f8dc3a222fe30dafd8d72d6e0925"
+   "sha256": "e106c4ef6df8ff0df75a96737e58c122a70bf3f2c08858f05a5e2749ae5fb1da"
   },
   {
    "yol": "turkiye/6-sinif/turkce/turkce-6-2-donem-a-iletisim-bilim.jsonl",
@@ -669,11 +669,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "f68dcd457d1df94a629f0745192af999ebac4ef4b51b7dd4344ad7249c3f1958"
+   "sha256": "b05b77d4fa4a8d78d19c0e82b0dc60b801e91e9c8df6bcbcde7ceadf9032ac80"
   },
   {
    "yol": "turkiye/6-sinif/turkce/turkce-6-2-donem-b-lider-ruhlar.jsonl",
@@ -683,11 +683,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "bf1085e6d33e8579d81934a9475c9b1e626176997fa45ed6d0a10dec3fd5f5da"
+   "sha256": "75490a9ba3eb753abdbcd8e453afc684ec738e68d3c674587454922ccea47d8f"
   },
   {
    "yol": "turkiye/7-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-7-1-donem.jsonl",
@@ -697,11 +697,11 @@
    "dersKlasoru": "din-kulturu-ve-ahlak-bilgisi",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 50,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "422feb9cb9f1a7e5fa08be733c898560a986b4872701b2b8cc54223de523847f"
+   "sha256": "2692e6da65135ac6beb221bbba6352a7c25db52b6cc2a1569cd343fbe196b739"
   },
   {
    "yol": "turkiye/7-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-7-2-donem.jsonl",
@@ -711,11 +711,11 @@
    "dersKlasoru": "din-kulturu-ve-ahlak-bilgisi",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 50,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "2d0838ed6008c589d34da9fafcf21d6ccf6beb546af412e4fad4ccc3d6a7370b"
+   "sha256": "3bec8551c41c398de67a8757b0559f774ce80116e9b11bcda861f43d09db97df"
   },
   {
    "yol": "turkiye/7-sinif/fen-bilimleri/fen-bilimleri-7-1-donem-a-uzay-kuvvet.jsonl",
@@ -725,11 +725,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "175a1e4d0cea4950cdd8913122a16541b983534441f2b4be3d36e2add9d5a51c"
+   "sha256": "d4e8a14f375a01875f035712a45cc4a80e2731d4b725cbd2e25f0a220e28c3e9"
   },
   {
    "yol": "turkiye/7-sinif/fen-bilimleri/fen-bilimleri-7-1-donem-b-sistemler.jsonl",
@@ -739,11 +739,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 450,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "1a2821278b830474fb52961e4de9e24a750db34c44c941462cbca90d0d3d3e94"
+   "sha256": "7fd363ffcf04a3f11f6b8b627a1a9fdbf4941d3ed51f8349d1d5177dc1766b8e"
   },
   {
    "yol": "turkiye/7-sinif/fen-bilimleri/fen-bilimleri-7-1-donem-c-isik.jsonl",
@@ -753,11 +753,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 100,
    "not": 2,
    "reviewStatus": "ai-verified",
-   "sha256": "9112652fe12f9c82aa096f41a6ed66a8880c37d389479c2e0bbd902f9df43aff"
+   "sha256": "b93d5649ec6315d42ae22a99edd49696f4ca0803e976b6a3daf31939e2afbffd"
   },
   {
    "yol": "turkiye/7-sinif/fen-bilimleri/fen-bilimleri-7-2-donem-a-madde.jsonl",
@@ -767,11 +767,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "a01d1b048b44b6f3643fce24c734b8b7e358bc1e6b991b057a2439b586ffd5f7"
+   "sha256": "ed481e2ad85abfbafdc70dd8f41d9707ee76e76b94c408b7f8100fdea31546ea"
   },
   {
    "yol": "turkiye/7-sinif/fen-bilimleri/fen-bilimleri-7-2-donem-b-elektrik-enerji.jsonl",
@@ -781,11 +781,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "c325c38ad57b03062b8dc5f0e3a6e1d8c82ce0f0ed87d8f6644f4fad22378440"
+   "sha256": "6ce063b142ebf9090d2c2b811f76dbcd1318360ed87fce91d13e29a1049b1050"
   },
   {
    "yol": "turkiye/7-sinif/ingilizce/ingilizce-7-1-donem-a-appearance-sports-biographies.jsonl",
@@ -795,11 +795,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "39e6ae9b5c2ca70146b2c41b5ee8400446107417aa91e0a8ea990e2e7282bc59"
+   "sha256": "ef33916d0bb3d0a6cb50d0c25f67bdf5bd9a9501a0e98c5ecc8a77311dcf7164"
   },
   {
    "yol": "turkiye/7-sinif/ingilizce/ingilizce-7-1-donem-b-animals-television.jsonl",
@@ -809,11 +809,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 250,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "75ac802ff0bdcaea6899d123233ff9723a427a7cf76fd1cfc64c59e6a676c9ee"
+   "sha256": "13cf9bb5afe6c460f5df66df45ac7c349305cfd70f84e6c87df5e5d0ef63e506"
   },
   {
    "yol": "turkiye/7-sinif/ingilizce/ingilizce-7-2-donem-a-celebrations-dreams-buildings.jsonl",
@@ -823,11 +823,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "6385fc43af5666811e7b17619b12dc6f2d673be0362478f3e6a658eb1e17d602"
+   "sha256": "92679dcad072541f63f3d80062bbe22544a71998691e9fdf3e9a4d4e79b48632"
   },
   {
    "yol": "turkiye/7-sinif/ingilizce/ingilizce-7-2-donem-b-environment-planets.jsonl",
@@ -837,11 +837,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "4d57a6f97028cd7838dd5f54a5733e7a65577a65bf1fadb97f2142cb06a9ece9"
+   "sha256": "30057fed3b68860e0df12ab96cda439abcc01e8855475ea90c694bcc53425402"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028/lgs-2028-din-kulturu-ve-ahlak-bilgisi.jsonl",
@@ -851,11 +851,11 @@
    "dersKlasoru": "lgs-2028",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM-2026",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 50,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "0626bcb18ac70fca797fa8498ef24e0579f72960cfbd4a58e5b623be6ed9ae2b"
+   "sha256": "68fdae0ad0013226620f04d942aa27c4259c4004e70715bc0676ddc6c1eb47f9"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028/lgs-2028-fen-bilimleri.jsonl",
@@ -865,11 +865,11 @@
    "dersKlasoru": "lgs-2028",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM-2026",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 100,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "8ac75fd7319ada323dcf26688412662218631799794137a36f6a42e64c0b9d1a"
+   "sha256": "00318710781506f1695ab218920b16cc9922f56fe67bf1dfe28d3ad3a05e9cc2"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028/lgs-2028-ingilizce.jsonl",
@@ -879,11 +879,11 @@
    "dersKlasoru": "lgs-2028",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-CURRENT-2018-2019",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 50,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "a68775283e79d01135d37bf27e234916ae27db9a1e2fd1c80da3f70dac6aabee"
+   "sha256": "3ae074e8a27f8eaae77cd570bb6849783208535ccf947422f716e16cc229e2e6"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028/lgs-2028-matematik.jsonl",
@@ -893,11 +893,11 @@
    "dersKlasoru": "lgs-2028",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM-2026",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 100,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "437751fc3fa7e1a2081e4fa16b07514687544d90d521d0c1045e3f1ce39f8d23"
+   "sha256": "d66d8dd6d0418321b3e4e6e3e09cd0ae503bb1ec7617683fca28f6b8806a8dab"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028/lgs-2028-sosyal-bilgiler.jsonl",
@@ -907,11 +907,11 @@
    "dersKlasoru": "lgs-2028",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM-2026",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 50,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "394eff78a3d3d6c0ad9d535dfbc131b55f1e397f89e329c8ac3297979b5cc690"
+   "sha256": "1b77c9ec130b01803ee78068b22456c17aca5054816bc8ed49e85b1f215a6ff4"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028/lgs-2028-turkce.jsonl",
@@ -921,11 +921,11 @@
    "dersKlasoru": "lgs-2028",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM-2026",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 100,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "824c6b8a74befd57e17ae1e2c0047f04a24796433c5b10b8339ace7fb32d9491"
+   "sha256": "427b53c46d110340f5baee089ee148be81cc8ee1f693eac4f574a66c72cda249"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028-unite-setleri/lgs-2028-unite-setleri-din-kulturu-ve-ahlak-bilgisi.jsonl",
@@ -935,11 +935,11 @@
    "dersKlasoru": "lgs-2028-unite-setleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM-2026",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 40,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "b13f60a889cecbed9368e45831c058a4a128b434b7184804cc06809ad997b65f"
+   "sha256": "4e5e4710d389e0fa62be948ad84472acfbb3a231c4c945e377bb94ee07670ff8"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028-unite-setleri/lgs-2028-unite-setleri-fen-bilimleri.jsonl",
@@ -949,11 +949,11 @@
    "dersKlasoru": "lgs-2028-unite-setleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM-2026",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 59,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "a55348f78ed205703c7a3dc13a769d4ffbdc3df7d0801317a6f40b8c207e897d"
+   "sha256": "c00a3f745b487bb4b7993421f4efe72cb51d786ecfd520db054e97575920ba04"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028-unite-setleri/lgs-2028-unite-setleri-ingilizce.jsonl",
@@ -963,11 +963,11 @@
    "dersKlasoru": "lgs-2028-unite-setleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-CURRENT-2018-2019",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 60,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "ff10644edd6bb667e345b9f596c5f37b7dc50229e0c020e1664d29d8acf2a317"
+   "sha256": "4e7e6e1fa58a3335eb089505700e3172553c046af19facdab2852b90ae84f583"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028-unite-setleri/lgs-2028-unite-setleri-matematik.jsonl",
@@ -977,11 +977,11 @@
    "dersKlasoru": "lgs-2028-unite-setleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM-2026",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 72,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "e5e108484fa172ef6997b589db27e8039c5a88ba482259973426aca99893b761"
+   "sha256": "77b504fa5555e3df37bcae9dc3e90b81d0749a74b045f6723ffdebac5cad9a2a"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028-unite-setleri/lgs-2028-unite-setleri-sosyal-bilgiler.jsonl",
@@ -991,11 +991,11 @@
    "dersKlasoru": "lgs-2028-unite-setleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM-2026",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 48,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "742cdd57b7d0b1f1b2f2feba6a6cc2ae90ce1a6ec1e078923c82c572508abdcb"
+   "sha256": "15792c8736b25d0ea98ffbaaff2e99ffe2b44b1135e53d3bff715c5474955707"
   },
   {
    "yol": "turkiye/7-sinif/lgs-2028-unite-setleri/lgs-2028-unite-setleri-turkce.jsonl",
@@ -1005,11 +1005,11 @@
    "dersKlasoru": "lgs-2028-unite-setleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM-2026",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 48,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "7b9ff2df0f161129509fac4ca562c6856330510b50ad0abc0b37c7e5c8fb54e4"
+   "sha256": "11510c9f51017f8bdd04cae14d707cac5ec9adb6a89abd2129e2e6c6d39fa0dc"
   },
   {
    "yol": "turkiye/7-sinif/matematik/matematik-7-1-donem-a-rasyonel.jsonl",
@@ -1019,11 +1019,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "ea74fed53e55fe979ddcadc93dc0b60aa23805421ff0ebba63111fbe6f396f7f"
+   "sha256": "ad3e6faa8c44bb8e14b177d56f79163dfdfce0722e30faa69f8ab88495785b48"
   },
   {
    "yol": "turkiye/7-sinif/matematik/matematik-7-1-donem-b-cisimler.jsonl",
@@ -1033,11 +1033,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "e58394445dcc224acff2dbbefa7af0302c904a66041ce19586d6c5b19a8fbc1d"
+   "sha256": "2f6d1af1aca9a9f2f51cf51a9ea56c0a5d431e01e1152109060815c4e0f03956"
   },
   {
    "yol": "turkiye/7-sinif/matematik/matematik-7-1-donem-c-istatistik-donusum.jsonl",
@@ -1047,11 +1047,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "385e93ff5f122a26904b7a2adfe276a258b47b80bf9e69c17d623472fa532621"
+   "sha256": "6fc2ca65958e1fbad099db21dba19cbd665b8917ec5c487d0d7aba60ee84abb4"
   },
   {
    "yol": "turkiye/7-sinif/matematik/matematik-7-1-donem-d-ucgen.jsonl",
@@ -1061,11 +1061,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 100,
    "not": 2,
    "reviewStatus": "ai-verified",
-   "sha256": "25de8cf7e6f390044f231491d748255b6268ed4241606b7c2a7108b65a17ce68"
+   "sha256": "efbcb89aacdd6c51846fd87c8ddd6a171e549ec9c9a5d2775344cb063f52eda7"
   },
   {
    "yol": "turkiye/7-sinif/matematik/matematik-7-2-donem-a-oran-olasilik.jsonl",
@@ -1075,11 +1075,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "9d1185b2641f8141054284ad06ad355f873ab451402e0f96b72c6a9da9cd3ecd"
+   "sha256": "09821b4cc8c21558a69c079c722aa49bb935bd75331ad015cce5340a6d6eb71c"
   },
   {
    "yol": "turkiye/7-sinif/matematik/matematik-7-2-donem-b-cebir.jsonl",
@@ -1089,11 +1089,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "552e1243acb57f482bf9cd20b3bebe323ffc984b046ea46e1dc2f315bf23ba0a"
+   "sha256": "60e85a5f60660e761937ce515838035d496de1d96cfc6f23a98019771dc0d528"
   },
   {
    "yol": "turkiye/7-sinif/matematik/matematik-7-2-donem-c-alan.jsonl",
@@ -1103,11 +1103,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "03c2a4a2f21b00a1b2f30ac78a4a7b8bca78adf16ba8d757090adf2f868dc1a7"
+   "sha256": "cc525da8cebd7ceed0bf3f320a8aad9468e2c18390a192e57bdc4960eb85292d"
   },
   {
    "yol": "turkiye/7-sinif/sosyal-bilgiler/sosyal-bilgiler-7-1-donem-a-birlikte-dunya.jsonl",
@@ -1117,11 +1117,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "5299093c9660d4e54f13e86f8724d23bc315125090aacf70e1b2289fa4522439"
+   "sha256": "47d072b951d902f5c221fc629c9d85f781a694f14c5d691f9aeb5aa84ec378b6"
   },
   {
    "yol": "turkiye/7-sinif/sosyal-bilgiler/sosyal-bilgiler-7-1-donem-b-miras.jsonl",
@@ -1131,11 +1131,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "c632796011829e4ec9de82e6e396ecf9ef5a154fa6692d411bb954a6d4329695"
+   "sha256": "aa2280e0f18cb779acd521d296caca946e99f04bd9c22fd58386fb1d326c9b44"
   },
   {
    "yol": "turkiye/7-sinif/sosyal-bilgiler/sosyal-bilgiler-7-2-donem-a-demokrasi-ekonomi.jsonl",
@@ -1145,11 +1145,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "b928ea3bb7cddc4b6648576ae1958aaec32eaa0004165260d2d4992a498a973e"
+   "sha256": "6897607f635ee75e5e22a82847c4bb88f2ca74edd1e05356ac4a325027c86676"
   },
   {
    "yol": "turkiye/7-sinif/sosyal-bilgiler/sosyal-bilgiler-7-2-donem-b-teknoloji.jsonl",
@@ -1159,11 +1159,11 @@
    "dersKlasoru": "sosyal-bilgiler",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "959f870b2a17afe7fabada2170ab05097c6d062cb3b5755841d8c1448aaafc81"
+   "sha256": "3c575e679b0464aa253a05a0b928167a8521af0a9c7c086876d2e3724ee2a4bb"
   },
   {
    "yol": "turkiye/7-sinif/teknoloji-ve-tasarim/teknoloji-ve-tasarim-7-1-donem.jsonl",
@@ -1173,11 +1173,11 @@
    "dersKlasoru": "teknoloji-ve-tasarim",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 62,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "e4449176acbe396b41c9ccdc406733dee5011e82af25391f776acbe1c45588a9"
+   "sha256": "acab5d64e5768152de5a68d6339492497e6b269cd3b247acedda07b81ae7e2f3"
   },
   {
    "yol": "turkiye/7-sinif/teknoloji-ve-tasarim/teknoloji-ve-tasarim-7-2-donem.jsonl",
@@ -1187,11 +1187,11 @@
    "dersKlasoru": "teknoloji-ve-tasarim",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 100,
    "not": 2,
    "reviewStatus": "ai-verified",
-   "sha256": "64fad1bfe02584be8c2f16f3cbe191f24ba427edd0c7648ba140a42cfefa472b"
+   "sha256": "18175f8859b0300fa03e43d72b0495d409cb2707905161fb2b21767b74ef16a0"
   },
   {
    "yol": "turkiye/7-sinif/turkce/turkce-7-1-donem-a-gelisim-hilal.jsonl",
@@ -1201,11 +1201,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "12b08e610584680003284fd1e30663059da5abebf058443d763e87cf1fb9f9cc"
+   "sha256": "20f609ae1842912d7a1815159b12c0c858cdac893ff2ba313ac7b00272ed02bb"
   },
   {
    "yol": "turkiye/7-sinif/turkce/turkce-7-1-donem-b-iletisim.jsonl",
@@ -1215,11 +1215,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "b3f45ce3c2153681636d71875698c4d1aedfb1414f929f81b97957acd5b3e903"
+   "sha256": "a043801db61de50bf0f9a111325e254412f0d0ba7ea2b20b95e7e40e6b2d6b69"
   },
   {
    "yol": "turkiye/7-sinif/turkce/turkce-7-2-donem-a-sanat-okuma.jsonl",
@@ -1229,11 +1229,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "b0ebc9d347e245825cf8a8acddb17432191eb8c285035360add6ae965027551f"
+   "sha256": "a36305827894ab096ddd6e18113926cf355996bb9e0a6a2e7719a2d42073bfbb"
   },
   {
    "yol": "turkiye/7-sinif/turkce/turkce-7-2-donem-b-haklar.jsonl",
@@ -1243,11 +1243,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-TYMM",
+   "curriculum": "Türkiye Yüzyılı Maarif Modeli",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "d54ebafba30e2141861cb78d6dc1fef67b4767f0d7a4569bc825a97c18220279"
+   "sha256": "c056a931d91aca41968d5329c1eaf51731623ea83873f2078ab17e43c1ffbc8a"
   },
   {
    "yol": "turkiye/8-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-8-1-donem.jsonl",
@@ -1257,11 +1257,11 @@
    "dersKlasoru": "din-kulturu-ve-ahlak-bilgisi",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 100,
    "not": 2,
    "reviewStatus": "ai-verified",
-   "sha256": "53e064fad593f143057efcf273e77efc7f38a982562f1676069f3f1daa8845e5"
+   "sha256": "f1ba0b7d7b42220efbebd13ab6752e4d27940cf4df7e0ce56c1365f5b4ffffa1"
   },
   {
    "yol": "turkiye/8-sinif/din-kulturu-ve-ahlak-bilgisi/din-kulturu-ve-ahlak-bilgisi-8-2-donem.jsonl",
@@ -1271,11 +1271,11 @@
    "dersKlasoru": "din-kulturu-ve-ahlak-bilgisi",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 100,
    "not": 2,
    "reviewStatus": "ai-verified",
-   "sha256": "361d524dd4387e9a32f5ca5902dea633c5c08af80810ee67389e241a9a994bff"
+   "sha256": "b2c48a0b004faafbd050f9ac21a64c31690cbe642415fdf171fea694f0ceb0b9"
   },
   {
    "yol": "turkiye/8-sinif/fen-bilimleri/fen-bilimleri-8-1-donem-a.jsonl",
@@ -1285,11 +1285,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "7a429344bce9ca88f05bdb1a01011cdc79cb575a15c92a29bbd7436eb28bb009"
+   "sha256": "4a76917a506d51abc7f31dea4ece1f4de2c07c4502f483a942846dc606777f99"
   },
   {
    "yol": "turkiye/8-sinif/fen-bilimleri/fen-bilimleri-8-1-donem-b.jsonl",
@@ -1299,11 +1299,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "af74a0a3731ffa6153e8cc91b534d06717ec82ea8eee7297ec194275fcd8c1ba"
+   "sha256": "9989ac94dc8296fdd06e334eb4118917abb7f76959adef60e2320e814c457408"
   },
   {
    "yol": "turkiye/8-sinif/fen-bilimleri/fen-bilimleri-8-2-donem-a.jsonl",
@@ -1313,11 +1313,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "fcae4b62bd9a537277438a88169e50d5701ff3619a25cc0317688263f2cd0c09"
+   "sha256": "df5e600838b10ec4b5b8c29c9a447e4bae30e910e1bb4daee976bdc37b6f6701"
   },
   {
    "yol": "turkiye/8-sinif/fen-bilimleri/fen-bilimleri-8-2-donem-b.jsonl",
@@ -1327,11 +1327,11 @@
    "dersKlasoru": "fen-bilimleri",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 200,
    "not": 4,
    "reviewStatus": "ai-verified",
-   "sha256": "45301f0a442652fc13d9bd0fb990d4e7abe091f49c84ff1461b62e67d5fcae6a"
+   "sha256": "2a12eae7168519284c436fc451d1d661327a2fc481c9ee72f7b377dce4c1c5ab"
   },
   {
    "yol": "turkiye/8-sinif/ingilizce/ingilizce-8-1-donem-a.jsonl",
@@ -1341,11 +1341,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "5f0904cb7a4cda775c3a0f09ac2a2509323dc68ed8e260eebf01033e5cab5063"
+   "sha256": "df7693bb4c99955fd266213bf170c0c9440275bca4b408e3864e52ceed94c9c5"
   },
   {
    "yol": "turkiye/8-sinif/ingilizce/ingilizce-8-1-donem-b.jsonl",
@@ -1355,11 +1355,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 150,
    "not": 3,
    "reviewStatus": "ai-verified",
-   "sha256": "3164a10b67f716f3021e7d20d7017a074a61b025f075f9df79475d1e7ad04bab"
+   "sha256": "2b4cbdff079ccf8e737ae3dac630d40fb13d2eaf218af3d7922c4597cbf62ff2"
   },
   {
    "yol": "turkiye/8-sinif/ingilizce/ingilizce-8-2-donem-a.jsonl",
@@ -1369,11 +1369,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "9444330364e97f0ad99a26d35f1537edff6fd211c1e84b0a57e28dd480706754"
+   "sha256": "4c1421f1e2c04178cb9618a216ca27fd931baaa9135220fa0f161ed24c2e50a1"
   },
   {
    "yol": "turkiye/8-sinif/ingilizce/ingilizce-8-2-donem-b.jsonl",
@@ -1383,11 +1383,11 @@
    "dersKlasoru": "ingilizce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 150,
    "not": 3,
    "reviewStatus": "ai-verified",
-   "sha256": "7e5edac9a3ca8bd2260dd5d4371c12b9b653ac55ddb1c44a6d78106c73844a5e"
+   "sha256": "2ba5de792790fc4fe89d452c944cab5102ba252b2a669d3532ae2f8476292ab1"
   },
   {
    "yol": "turkiye/8-sinif/inkilap-tarihi/inkilap-tarihi-8-1-donem-a.jsonl",
@@ -1397,11 +1397,11 @@
    "dersKlasoru": "inkilap-tarihi",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "5ce6ad96cec22352669fe5350fc7c2a7d57f1d92a9444da459c2c639cea47131"
+   "sha256": "d078331411f58296c64f27912c96054c73f047c30d61439b5d5f0c244ece7e27"
   },
   {
    "yol": "turkiye/8-sinif/inkilap-tarihi/inkilap-tarihi-8-1-donem-b.jsonl",
@@ -1411,11 +1411,11 @@
    "dersKlasoru": "inkilap-tarihi",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "c8b0e18a3e0597902eb42c6faab7872b7104114b320156a3fcfe63f31cb03317"
+   "sha256": "b5c7a19f4d67490a9e32af77fcd55bd3b5e3669d3a814a97abce38bc2c32446f"
   },
   {
    "yol": "turkiye/8-sinif/inkilap-tarihi/inkilap-tarihi-8-2-donem-a.jsonl",
@@ -1425,11 +1425,11 @@
    "dersKlasoru": "inkilap-tarihi",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "f67f68f670a5248e1576290d73adef1a57597665898ceefb3364282c1ecc1525"
+   "sha256": "11493e060626bdd4f2e0920111cdc0a887a36e5892d3b30d467e9b74d133ae48"
   },
   {
    "yol": "turkiye/8-sinif/inkilap-tarihi/inkilap-tarihi-8-2-donem-b.jsonl",
@@ -1439,11 +1439,11 @@
    "dersKlasoru": "inkilap-tarihi",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 100,
    "not": 2,
    "reviewStatus": "ai-verified",
-   "sha256": "d1a241b3f3bfd634f585595e399a986488708396d2abc50a9c78a2e6da56f8c8"
+   "sha256": "e59e77f0eb66bc0ef65e869040946a115fbc29ecf087d19f4cc0aadfbdd1f5f2"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-din-kulturu-ve-ahlak-bilgisi.jsonl",
@@ -1453,11 +1453,11 @@
    "dersKlasoru": "lgs-2027",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-CURRENT-2018-2019",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 100,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "dc8dab08fd704e8561c263099b2fca5aea752c09d570f4bc91c941ba60e44c84"
+   "sha256": "0a89df263add06db7600d830195aa2c183b96898fe008808ddf607fefa4dc33a"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-fen-bilimleri.jsonl",
@@ -1467,11 +1467,11 @@
    "dersKlasoru": "lgs-2027",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-CURRENT-2018-2019",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 200,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "51705f39c75d943030776dfd215d70a26c80da6e43f51a7a007f9af0c53d0b9e"
+   "sha256": "b3fe7e38c3e92180716d835b720340463083ae31432b3069fd908646b7b1e043"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-ingilizce.jsonl",
@@ -1481,11 +1481,11 @@
    "dersKlasoru": "lgs-2027",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-CURRENT-2018-2019",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 100,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "8f009972bac746acf5bd34a1a4d75cf8041256393601b3ad3ca4c4f49809f75d"
+   "sha256": "ba52989dd03cd5b2ba93fa7b690a0ccc7e480900fc57fc99fd1f89d2268748df"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-inkilap-tarihi.jsonl",
@@ -1495,11 +1495,11 @@
    "dersKlasoru": "lgs-2027",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-CURRENT-2018-2019",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 100,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "b0fdad5b0545ebff9ed385cf86c6439e494059e87dd296d1f86e33d519342c04"
+   "sha256": "46a992c4c39d7051e60c2b2377e33b433b0bce2ce790f512b730525df8fbc245"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-matematik.jsonl",
@@ -1509,11 +1509,11 @@
    "dersKlasoru": "lgs-2027",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-CURRENT-2018-2019",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 200,
    "not": 12,
    "reviewStatus": "ai-verified",
-   "sha256": "6306e2775c29619d2feea0892bdf832f82b1e7b0f6ff2df90fdc9b8f665bfa57"
+   "sha256": "b442f17d83b4b72e685224c9216e4d98dd7b3c1b7b6c84fdcbef94f1859ff90c"
   },
   {
    "yol": "turkiye/8-sinif/lgs-2027/lgs-2027-turkce.jsonl",
@@ -1523,11 +1523,11 @@
    "dersKlasoru": "lgs-2027",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-CURRENT-2018-2019",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 200,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "976969f657a43262e6858981babf1d9ffd549f552a9e9dcf334fc7ef01e7ffa5"
+   "sha256": "e983d9b73a0611c1ea76351947cf74dc93252bcd1895ea8cd22d8f2df5ab29c1"
   },
   {
    "yol": "turkiye/8-sinif/matematik/matematik-8-1-donem-a.jsonl",
@@ -1537,11 +1537,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "d8132828cf939e4ac9f0280302e3931591fd7120db6fca95c9da906efc7e95b5"
+   "sha256": "5e6bbeb6c8b1f7a1b5071966ab7ac79876159816a33489a00bd9d1504f6faee8"
   },
   {
    "yol": "turkiye/8-sinif/matematik/matematik-8-1-donem-b.jsonl",
@@ -1551,11 +1551,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "a238df619829f780a12ced633f8a96c4200bf19412fb53bee265ffede398e889"
+   "sha256": "040ba6b44fbfc759a705fa7f20fba66d9e9843b703fc6011fdd4cbc6c8b2c1aa"
   },
   {
    "yol": "turkiye/8-sinif/matematik/matematik-8-2-donem-a.jsonl",
@@ -1565,11 +1565,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "15f2e10820fdf7545fda40ebcec5b990be990748280a7c1449cbb785a615ee4b"
+   "sha256": "12a3ef15342ddd6ce4fccd256ca3f72e11b8f84ba2040325030d08d20ec93bc5"
   },
   {
    "yol": "turkiye/8-sinif/matematik/matematik-8-2-donem-b.jsonl",
@@ -1579,11 +1579,11 @@
    "dersKlasoru": "matematik",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "14406afff6de6106280b84f7581677f2306822c07e3c36288e21f57c07d46cdb"
+   "sha256": "32c3db6d33986d023e9b853aaa58dd870c4937c35ff564ffbeb9714fcca64a50"
   },
   {
    "yol": "turkiye/8-sinif/teknoloji-ve-tasarim/teknoloji-ve-tasarim-8-1-donem.jsonl",
@@ -1593,11 +1593,11 @@
    "dersKlasoru": "teknoloji-ve-tasarim",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 50,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "d2088bc87e96a67a1c18862af938fbd01e1a8acbe6e2e1fa74df043ec144c2e6"
+   "sha256": "9cc529a17243897df7c3381556c092424987f7e88f2ddc35feaef1bb8619cc7f"
   },
   {
    "yol": "turkiye/8-sinif/teknoloji-ve-tasarim/teknoloji-ve-tasarim-8-2-donem.jsonl",
@@ -1607,11 +1607,11 @@
    "dersKlasoru": "teknoloji-ve-tasarim",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 100,
    "not": 2,
    "reviewStatus": "ai-verified",
-   "sha256": "62b9b8b1b474cbcc5d9ecc8aad759844736dd8875bc1ca55e1c7befca812bc6a"
+   "sha256": "60b86dc7bffaa882fbf078dac6705b2faf17393f9e30b77ddc1c9a081ec60f25"
   },
   {
    "yol": "turkiye/8-sinif/turkce/turkce-8-1-donem-a.jsonl",
@@ -1621,11 +1621,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "2b0af0a2d91e80efb52ac9bc4c318fe3fee731aacaa3d63ebd788254e3f0f6b2"
+   "sha256": "29bc71d39e6e3d6507370f490417e4049cb2eeb5ddabf2205eb2ec648e154b71"
   },
   {
    "yol": "turkiye/8-sinif/turkce/turkce-8-1-donem-b.jsonl",
@@ -1635,11 +1635,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "dc45e50ce19faee7dc28b7de9bc5c0d67f3603cfa21c3d83f631a6278bb4468d"
+   "sha256": "09a4520481251a2d3976c94e47e9e9099c1e172555b837c272d615d877847140"
   },
   {
    "yol": "turkiye/8-sinif/turkce/turkce-8-2-donem-a.jsonl",
@@ -1649,11 +1649,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "89fb0aff4833b3e34183c09a7ef93a30f89a49dcebe629128e2c67516abeac84"
+   "sha256": "e79378b9436fd2ab9ce50da9a2a1c2fe8ecd040daa742b82cc5ff66862e273f8"
   },
   {
    "yol": "turkiye/8-sinif/turkce/turkce-8-2-donem-b.jsonl",
@@ -1663,11 +1663,11 @@
    "dersKlasoru": "turkce",
    "lang": "tr",
    "schemaVersion": "2.2",
-   "curriculum": "MEB-2018",
+   "curriculum": "2018–2019 Öğretim Programları",
    "soru": 350,
    "not": 7,
    "reviewStatus": "ai-verified",
-   "sha256": "95338e7c17cab63df5d31eefc06544a0fa1e81971cf82f703c5c486dec86b2b5"
+   "sha256": "cedd2c5d1a5d340ebd52d51b12f68ca5bfa484c9b98262f5b2b8a5bc40136fd5"
   },
   {
    "yol": "japonya/7-sinif/eigo/eigo-7-1.jsonl",
