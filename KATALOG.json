@@ -2078,7 +2078,7 @@
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "af1f7d38b9a9773e3ed91db2dfac101d407aa21e4a681bf11fbecb5d7e5e9909"
+   "sha256": "4c5c0e5d67bf63cefa463fcc0d099db23331c00b68d7908efc59e2e1a3db37fb"
   },
   {
    "yol": "kore/7-sinif/gwahak/gwahak-7-1.jsonl",
@@ -2092,7 +2092,7 @@
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "67a0f8d8b3fd10b1ee666be08d958df79da6c9e28a885a4831cf6744b7104b2b"
+   "sha256": "d08655b49b4ffc6e21bc70fb0a58c5b5d23e3cb70dbd71116bcb86bbc4937c9b"
   },
   {
    "yol": "kore/7-sinif/gwahak/gwahak-7-2.jsonl",
@@ -2106,7 +2106,7 @@
    "soru": 150,
    "not": 3,
    "reviewStatus": "ai-verified",
-   "sha256": "b9e9d87ea19a1fb77649de3fe3b10dc7d8031b9e887d5ec51b5e7ebbba106e5b"
+   "sha256": "2cea144f1576c28dcf6dfc395be8c6e391489b1560b6751152f0e641c15eb1ae"
   },
   {
    "yol": "kore/7-sinif/sahoe/sahoe-7-1.jsonl",
@@ -2120,7 +2120,7 @@
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "a9bc1578af7595267ef48026c53b02ed7f52fab953d81c7621ca1b19a746cb9f"
+   "sha256": "b73671a9e8fac39b7f6dd227b347820e5f94793c062b8cb7c94e159a4b444b91"
   },
   {
    "yol": "kore/7-sinif/sahoe/sahoe-7-2.jsonl",
@@ -2134,7 +2134,7 @@
    "soru": 100,
    "not": 2,
    "reviewStatus": "ai-verified",
-   "sha256": "2826c736874ce3a062c9c6b43b11a1b5b674058edb7bf8792bb5ae7ee080553d"
+   "sha256": "05d3705da39a4077200c4b7ae8a3fc3c9cd129b55c4438111eefb1cfa5168463"
   },
   {
    "yol": "kore/7-sinif/suhak/suhak-7-1.jsonl",
@@ -2148,7 +2148,7 @@
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "d0735de74c9385b6caf038885357ab7e8ae4182bb2bc8c5cbd5d91235bda72ae"
+   "sha256": "ba7ca8307302f582c9f7a01a79479596d609ecb194034d531db403ffdff05fd9"
   },
   {
    "yol": "kore/7-sinif/suhak/suhak-7-2.jsonl",
@@ -2162,7 +2162,7 @@
    "soru": 250,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "442405e02353e281e9dbd3ef474b60502d968512b84c7b255dde0a7f6efc84ae"
+   "sha256": "c20e753b6f505dbc7992e247671696249b722addc0a41348f3b26a44a34915ef"
   },
   {
    "yol": "kore/7-sinif/yeongeo/yeongeo-7-1.jsonl",
@@ -2176,7 +2176,7 @@
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "85e702893a87be4756c5a9926320f41c112f00267d5ee2ee289e6976d29c662b"
+   "sha256": "2e77d052d28ca0dbd046cc9907b2f0afb7d440f89879e1c90d7dcb33e590b387"
   },
   {
    "yol": "kore/8-sinif/gugeo/gugeo-8-1.jsonl",
@@ -2190,7 +2190,7 @@
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "d8737ef1611ecdf2e16acd54822192d62b8e4edca8c218641f94c7cbbfa14e3f"
+   "sha256": "77496167cebba2bb1cbb7d53d4e74b9c22dfb21bd2da1b0140a52d8970a6f826"
   },
   {
    "yol": "kore/8-sinif/gwahak/gwahak-8-1.jsonl",
@@ -2204,7 +2204,7 @@
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "0ebd0c620d5caa74b377a1cd1ec7bc6485a0216b2a803d6d01bd3e1aee781057"
+   "sha256": "4d25b9088726dcd60d04bfcebe3dc10d6ab4cd560fda2f42f61d76dc5683bf27"
   },
   {
    "yol": "kore/8-sinif/gwahak/gwahak-8-2.jsonl",
@@ -2218,7 +2218,7 @@
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "53968f17aa1efafee18a329317ab72345a1bf0dd7db8754a71894b38830e7846"
+   "sha256": "e3fc7297343d6510f02f9418ff8d494495c339738c11e560cfe4b006a81f2265"
   },
   {
    "yol": "kore/8-sinif/suhak/suhak-8-1.jsonl",
@@ -2232,7 +2232,7 @@
    "soru": 450,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "a557f7d6f38c82c8e232ebb46fa29de583420ecabc3273c7060abbbe2a04bcc2"
+   "sha256": "e8a1a31da550461a4e4b89238d739bf166bb38de1fa67133bb8a3a1697c97a81"
   },
   {
    "yol": "kore/8-sinif/suhak/suhak-8-2.jsonl",
@@ -2246,7 +2246,7 @@
    "soru": 250,
    "not": 5,
    "reviewStatus": "ai-verified",
-   "sha256": "c4e789fb73e00aa8530bd2edf7107dd7ef73888804fb37cd3b34dd53df092f5e"
+   "sha256": "6ce9ff20c4bcdb65e88bc1b14001d904fd12d466cfcaabf410a8c4a41ababfcc"
   },
   {
    "yol": "kore/8-sinif/yeoksa/yeoksa-8-1.jsonl",
@@ -2260,7 +2260,7 @@
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "790f513d05bee32b653173cd0698ed334a5c340aa17dd2cdbd2bcec3b462073b"
+   "sha256": "e4394505a2f992a2d87f40199ff5a965fecdd9e3ea27f10d824bb8b30038cc5c"
   },
   {
    "yol": "kore/8-sinif/yeongeo/yeongeo-8-1.jsonl",
@@ -2274,7 +2274,7 @@
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "a0c477720ef3a929f69d50f6b10aff43e6d5d4aca15d352d29ca07e2fbcff72b"
+   "sha256": "1360f7997a40272b4ca1b701dc47fc1f789dc50e9b0a6c9817c81e2c09f6cd17"
   },
   {
    "yol": "kore/9-sinif/gugeo/gugeo-9-1.jsonl",
@@ -2288,7 +2288,7 @@
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "3480eb1bd7e6fd32f5a6580ffb77fa08d533547e41aeef071af5219d120f5e43"
+   "sha256": "8f898c3542ea0925aad312b5ff628ca615cbc941d473e0ad74531bc867a5dab8"
   },
   {
    "yol": "kore/9-sinif/gwahak/gwahak-9-1.jsonl",
@@ -2302,7 +2302,7 @@
    "soru": 450,
    "not": 9,
    "reviewStatus": "ai-verified",
-   "sha256": "d3ac2143de29efa333e1fc8d3b5da18c71eb5a2a6212395e65327877db588c93"
+   "sha256": "c4685dd478f8f0ba5b2cb7b85ff0114d92c9cf66a40aa28471dcdd53b35407c6"
   },
   {
    "yol": "kore/9-sinif/gwahak/gwahak-9-2.jsonl",
@@ -2316,7 +2316,7 @@
    "soru": 300,
    "not": 6,
    "reviewStatus": "ai-verified",
-   "sha256": "b67716bf53d764ebf82b619a4b2dd59129135023afefc58c4888682af69a2681"
+   "sha256": "6ab4b9e0fe76224a8aeec79b8653f9e09856e2e318229aeaebc8c5891519c38e"
   },
   {
    "yol": "kore/9-sinif/sahoe/sahoe-9-1.jsonl",
@@ -2330,7 +2330,7 @@
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "83c6a5e87638a9623ce38fa3f3cac2e6d83c992a14a8507013adaeab2b55eb95"
+   "sha256": "9b32a458cd4236d31c876ebe28cc74d656420a3dc3a3c0d0c03807270eef3014"
   },
   {
    "yol": "kore/9-sinif/sahoe/sahoe-9-2.jsonl",
@@ -2344,7 +2344,7 @@
    "soru": 100,
    "not": 2,
    "reviewStatus": "ai-verified",
-   "sha256": "a72bb9721cd75a07e6cd25bf128ecc1f0064ac27ac979d81d8ba218ec21b62b1"
+   "sha256": "b43158935d8cd933264b25b05f7780c355bed4bb8323cc2267c9a8b5474a8521"
   },
   {
    "yol": "kore/9-sinif/suhak/suhak-9-1.jsonl",
@@ -2358,7 +2358,7 @@
    "soru": 500,
    "not": 10,
    "reviewStatus": "ai-verified",
-   "sha256": "3cb00f1f0ec3cf314512b1e4b7d2f7bf13464705d3062041e76aed665a0dd440"
+   "sha256": "fe06a8c6a5edbdfe857377bbd6bec1ddddd33316a76b9bdf33cdc5f717f1ab5f"
   },
   {
    "yol": "kore/9-sinif/suhak/suhak-9-2.jsonl",
@@ -2372,7 +2372,7 @@
    "soru": 50,
    "not": 1,
    "reviewStatus": "ai-verified",
-   "sha256": "9593c7b717d3133f00dd64fea73b84dee22e385092ba5c56c70d9f05fc2fdde1"
+   "sha256": "150854903d50a56fa6e38bb7c5ce57dd7f024c5890522fde8081e8e73b7c7728"
   },
   {
    "yol": "kore/9-sinif/yeoksa/yeoksa-9-1.jsonl",
@@ -2386,7 +2386,7 @@
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "236db7e832065f913a3aae12c3ea9d2bd63af4454f3d4fe6f7e8f492bba71265"
+   "sha256": "474d22ff81e9c2539b19195d100b4cfd91ed06da3a3570c39dbc4915f9ff98b0"
   },
   {
    "yol": "kore/9-sinif/yeongeo/yeongeo-9-1.jsonl",
@@ -2400,7 +2400,7 @@
    "soru": 400,
    "not": 8,
    "reviewStatus": "ai-verified",
-   "sha256": "78d1359b64c25033b87f9d14ea854fac1f4f9b38701ab5e60510209dece6c0c5"
+   "sha256": "2416c26eda77af10ff868275c1b0ae9201807d06dcc53ca48da1f4cdc1df25b9"
   }
  ],
  "ilkokul": [
