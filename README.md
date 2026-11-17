@@ -2,8 +2,9 @@
 
 AliKa uygulamasının ders içeriği: Türkiye ortaokul **5–8. sınıf** soru bankaları ve konu anlatımları (2026–2027 öğretim yılı),
 **LGS 2027 deneme** paketi, **LGS 2028 hazırlık (7. sınıf)** paketleri, **ilkokul (6–10 yaş) görsel etkinlik** paketi ve
-AliKa TV oyun paketleri; ayrıca **Japonya ortaokul (中学校 1–3 = 7–9. sınıf)** soru bankaları ve konu anlatımları.
-Eski Türkiye verisi ve eski ülke paketleri kaldırıldı; geçmiş sürümler git geçmişinde durur. Japonya paketleri yeni sistemle
+AliKa TV oyun paketleri; ayrıca **Japonya ortaokul (中学校 1–3 = 7–9. sınıf)** ve **Güney Kore ortaokul (중학교 1–3 = 7–9. sınıf)**
+soru bankaları ve konu anlatımları.
+Eski Türkiye verisi ve eski ülke paketleri kaldırıldı; geçmiş sürümler git geçmişinde durur. Japonya ve Kore paketleri yeni sistemle
 baştan üretildi.
 
 ## Düzen
@@ -14,6 +15,7 @@ turkiye/8-sinif/lgs-2027/lgs-2027-<ders>.jsonl    LGS 2027 deneme paketi (6 ders
 turkiye/7-sinif/lgs-2028/lgs-2028-<ders>.jsonl    LGS 2028 hazırlık deneme paketi, 7. sınıf (6 ders, 5 form)
 turkiye/7-sinif/lgs-2028-unite-setleri/…           LGS 2028 hazırlık ünite setleri, 7. sınıf (6 ders, 43 ünite)
 japonya/<N>-sinif/<ders-slug>/<slug>-<N>-<parça>.jsonl  Japonya ders paketleri, 7–9. sınıf (Japonca)
+kore/<N>-sinif/<ders-slug>/<slug>-<N>-<parça>.jsonl     Güney Kore ders paketleri, 7–9. sınıf (Korece)
 ilkokul/gorsel-etkinlikler/<paket>.jsonl          ilkokul görsel etkinlik paketi (dilden bağımsız, visualChoice v3)
 KATALOG.json                                      paket listesi, soru sayıları, sha256
 dogrulayici/                                      uygulamanın doğrulayıcısı (alika main kopyası) + kalite kapısı
@@ -62,6 +64,32 @@ Ders paketi başına en çok 500 soru; bir ders birden çok pakete (dönem/ünit
 - Uygulama gereksinimi: Japonca kurallar (kural 19 dile duyarlı, gösterim denetimi paket dilinde, yabancı dil dersinde kural 23) ve Japonya sınıf ZIP'leri alika main 2f6c22c5 ve sonrasını gerektirir. Android'de gerçek cihazda içe aktarma henüz denenmedi.
 - İnceleme: `ai-verified`, insan incelemesi yapılmadı (`humanReviewed: false`).
 
+## Güney Kore ortaokul
+
+`kore/<7|8|9>-sinif/` altında 24 paket, 8.600 soru, 172 konu anlatımı notu:
+
+| Ders klasörü | Ders | Sınıflar |
+|---|---|---|
+| `suhak` | 수학 | 7, 8, 9 (sınıf başına 2 paket) |
+| `gwahak` | 과학 | 7, 8, 9 (sınıf başına 2 paket) |
+| `gugeo` | 국어 | 7, 8, 9 |
+| `yeongeo` | 영어 | 7, 8, 9 |
+| `sahoe` | 사회 | 7, 9 (sınıf başına 2 paket) |
+| `yeoksa` | 역사 | 8, 9 |
+
+- Program: 2022 개정 교육과정. Kaynak PDF'lerin adresi ve sha256'sı paket başlığındaki `sources` alanındadır.
+- Paketler: `country: "KR"`, `lang: "ko"`. Kimlikler `kr.g07.current.suhak-1`, sorular `<paket>.q0001`.
+  - Programda sınıf bölüşümü verilmeyen kazanımlar, en az iki yayınevinin ders kitabı içindekilerine göre tek sınıfa yerleştirildi.
+  - 영어 paketlerinde yönerge ve açıklamalar Korece, ders metni İngilizcedir.
+  - Hassas konularda (독도, 동해, 북한, 일제 강점기 vb.) yalnız programdaki ve 편수자료'daki resmî ifade kullanıldı.
+- **9. sınıf ön hazırlıktır.** 2022 programı 중3'e Mart 2027'de (2027학년도) geçer; 2026 öğretim yılında 중3 hâlâ 2015
+  programıyla okur. 9. sınıf paketlerinde `schoolYear: "2027-2028"` ve paket adının sonunda «· 2027학년도 미리 보기» vardır.
+  7–8. sınıf paketleri 2026–2027 öğretim yılı içindir.
+- Uygulama: alika main 95150989 ile Windows'ta (içe aktarma, kayıpsız geri okuma, şekil çizimi) ve Android'de gerçek
+  cihazda (AliKa 0.3.18; sınıf ZIP'i, konu anlatımı, soru akışı, şekil) örnek paketle denendi.
+- İnceleme: `ai-verified`, insan incelemesi yapılmadı (`humanReviewed: false`). Hassas konulu 25 soruyu ayrıca içerik
+  sahibi onayladı; bu onay paketlerde değil karar belgelerinde kayıtlıdır. Korece anadil örneklemi yapılmadı.
+
 ## İlkokul görsel etkinlikler
 
 `ilkokul/gorsel-etkinlikler/ilkokul-gorsel-renkli-6-10.jsonl`: 6–10 yaş (ilkokul, ortaokul öncesi) için renkli
@@ -99,7 +127,7 @@ Bu özellikler AliKa Android 0.3.11 / Windows (alika main 2026-10-17) ve sonras�
 
 ## Yeni içerik eklemek
 
-1. Paketi `turkiye/<N>-sinif/<ders-klasörü>/` (Japonya için `japonya/…`) altına `.jsonl` olarak koyun (ya da mevcut paketi güncelleyin).
+1. Paketi `turkiye/<N>-sinif/<ders-klasörü>/` (Japonya için `japonya/…`, Kore için `kore/…`) altına `.jsonl` olarak koyun (ya da mevcut paketi güncelleyin).
    **Mevcut paketin içeriği değişiyorsa başlıktaki `version` bir artırılır**: uygulama, kurulu paketin yerine ancak
    daha yüksek sürümü kurar («sürüm N, kurulu sürüm N değerinden yeni değil» hatası).
 2. Doğrulayın: `python dogrulayici/tools/pack_validate.py turkiye/<N>-sinif/<ders>/<paket>.jsonl` → **0 HATA** olmalı.
