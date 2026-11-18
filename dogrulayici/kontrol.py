@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """AliKa içerik deposu kalite kapısı.
 
-Her turkiye/*/*/*.jsonl ve japonya/*/*/*.jsonl paketini uygulamanın doğrulayıcısıyla (dogrulayici/tools/pack_validate.py) denetler.
+Her turkiye/*/*/*.jsonl, japonya/*/*/*.jsonl ve kore/*/*/*.jsonl paketini uygulamanın doğrulayıcısıyla (dogrulayici/tools/pack_validate.py) denetler.
 - HATA: bilinen-bulgular.json'da kayıtlı olmayan her HATA kapıyı düşürür (yeni hata yok kuralı).
   Bilinen bulgular uygulama ekibine raporlanmış yanlış alarmlardır; düzeldikçe listeden çıkar.
 - ilkokul/*/*.jsonl görsel etkinlik paketleri ders paketi değildir (pack_validate kuralları uymaz); her sorusu
@@ -25,7 +25,8 @@ KOK = Path(__file__).resolve().parents[1]
 TEMEL = KOK / "dogrulayici" / "bilinen-bulgular.json"
 KATALOG = KOK / "KATALOG.json"
 # Ülke klasörleri katalog sırasıyla: klasör → (ad, kapsam). Yeni ülke buraya eklenir.
-ULKELER = {"turkiye": ("Türkiye", "ortaokul 5–8"), "japonya": ("Japonya", "中学校 1–3 (7–9. sınıf)")}
+ULKELER = {"turkiye": ("Türkiye", "ortaokul 5–8"), "japonya": ("Japonya", "中学校 1–3 (7–9. sınıf)"),
+           "kore": ("Güney Kore", "중학교 1–3 (7–9. sınıf)")}
 
 _spec = importlib.util.spec_from_file_location("pack_validate", KOK / "dogrulayici" / "tools" / "pack_validate.py")
 pv = importlib.util.module_from_spec(_spec)
